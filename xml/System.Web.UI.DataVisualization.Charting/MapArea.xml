@@ -1,10 +1,10 @@
-﻿<Type Name="MapArea" FullName="System.Web.UI.DataVisualization.Charting.MapArea">
+<Type Name="MapArea" FullName="System.Web.UI.DataVisualization.Charting.MapArea">
   <TypeSignature Language="C#" Value="public class MapArea : System.Web.UI.DataVisualization.Charting.ChartNamedElement, System.Web.UI.DataVisualization.Charting.IChartMapArea" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MapArea extends System.Web.UI.DataVisualization.Charting.ChartNamedElement implements class System.Web.UI.DataVisualization.Charting.IChartMapArea" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.MapArea" />
   <TypeSignature Language="VB.NET" Value="Public Class MapArea&#xA;Inherits ChartNamedElement&#xA;Implements IChartMapArea" />
-  <TypeSignature Language="C++ CLI" Value="public ref class MapArea : System::Web::UI::DataVisualization::Charting::ChartNamedElement, System::Web::UI::DataVisualization::Charting::IChartMapArea" />
   <TypeSignature Language="F#" Value="type MapArea = class&#xA;    inherit ChartNamedElement&#xA;    interface IChartMapArea" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MapArea : System::Web::UI::DataVisualization::Charting::ChartNamedElement, System::Web::UI::DataVisualization::Charting::IChartMapArea" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,7 +19,8 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.DefaultProperty("ToolTip")</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.DefaultProperty("ToolTip")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultProperty("ToolTip")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -93,8 +94,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string url, class System.Drawing.Drawing2D.GraphicsPath path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.MapArea.#ctor(System.String,System.Drawing.Drawing2D.GraphicsPath)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (url As String, path As GraphicsPath)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; MapArea(System::String ^ url, System::Drawing::Drawing2D::GraphicsPath ^ path);" />
       <MemberSignature Language="F#" Value="new System.Web.UI.DataVisualization.Charting.MapArea : string * System.Drawing.Drawing2D.GraphicsPath -&gt; System.Web.UI.DataVisualization.Charting.MapArea" Usage="new System.Web.UI.DataVisualization.Charting.MapArea (url, path)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MapArea(System::String ^ url, System::Drawing::Drawing2D::GraphicsPath ^ path);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -116,8 +117,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string url, valuetype System.Drawing.RectangleF rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.MapArea.#ctor(System.String,System.Drawing.RectangleF)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (url As String, rect As RectangleF)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; MapArea(System::String ^ url, System::Drawing::RectangleF rect);" />
       <MemberSignature Language="F#" Value="new System.Web.UI.DataVisualization.Charting.MapArea : string * System.Drawing.RectangleF -&gt; System.Web.UI.DataVisualization.Charting.MapArea" Usage="new System.Web.UI.DataVisualization.Charting.MapArea (url, rect)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MapArea(System::String ^ url, System::Drawing::RectangleF rect);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -139,8 +140,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Web.UI.DataVisualization.Charting.MapAreaShape shape, string url, float32[] coordinates) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.MapArea.#ctor(System.Web.UI.DataVisualization.Charting.MapAreaShape,System.String,System.Single[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (shape As MapAreaShape, url As String, coordinates As Single())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; MapArea(System::Web::UI::DataVisualization::Charting::MapAreaShape shape, System::String ^ url, cli::array &lt;float&gt; ^ coordinates);" />
       <MemberSignature Language="F#" Value="new System.Web.UI.DataVisualization.Charting.MapArea : System.Web.UI.DataVisualization.Charting.MapAreaShape * string * single[] -&gt; System.Web.UI.DataVisualization.Charting.MapArea" Usage="new System.Web.UI.DataVisualization.Charting.MapArea (shape, url, coordinates)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MapArea(System::Web::UI::DataVisualization::Charting::MapAreaShape shape, System::String ^ url, cli::array &lt;float&gt; ^ coordinates);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -164,8 +165,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string toolTip, string url, string attributes, string postBackValue, class System.Drawing.Drawing2D.GraphicsPath path, object tag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.MapArea.#ctor(System.String,System.String,System.String,System.String,System.Drawing.Drawing2D.GraphicsPath,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (toolTip As String, url As String, attributes As String, postBackValue As String, path As GraphicsPath, tag As Object)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; MapArea(System::String ^ toolTip, System::String ^ url, System::String ^ attributes, System::String ^ postBackValue, System::Drawing::Drawing2D::GraphicsPath ^ path, System::Object ^ tag);" />
       <MemberSignature Language="F#" Value="new System.Web.UI.DataVisualization.Charting.MapArea : string * string * string * string * System.Drawing.Drawing2D.GraphicsPath * obj -&gt; System.Web.UI.DataVisualization.Charting.MapArea" Usage="new System.Web.UI.DataVisualization.Charting.MapArea (toolTip, url, attributes, postBackValue, path, tag)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MapArea(System::String ^ toolTip, System::String ^ url, System::String ^ attributes, System::String ^ postBackValue, System::Drawing::Drawing2D::GraphicsPath ^ path, System::Object ^ tag);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -195,8 +196,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string toolTip, string url, string attributes, string postBackValue, valuetype System.Drawing.RectangleF rect, object tag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.MapArea.#ctor(System.String,System.String,System.String,System.String,System.Drawing.RectangleF,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (toolTip As String, url As String, attributes As String, postBackValue As String, rect As RectangleF, tag As Object)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; MapArea(System::String ^ toolTip, System::String ^ url, System::String ^ attributes, System::String ^ postBackValue, System::Drawing::RectangleF rect, System::Object ^ tag);" />
       <MemberSignature Language="F#" Value="new System.Web.UI.DataVisualization.Charting.MapArea : string * string * string * string * System.Drawing.RectangleF * obj -&gt; System.Web.UI.DataVisualization.Charting.MapArea" Usage="new System.Web.UI.DataVisualization.Charting.MapArea (toolTip, url, attributes, postBackValue, rect, tag)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MapArea(System::String ^ toolTip, System::String ^ url, System::String ^ attributes, System::String ^ postBackValue, System::Drawing::RectangleF rect, System::Object ^ tag);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -226,8 +227,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Web.UI.DataVisualization.Charting.MapAreaShape shape, string toolTip, string url, string attributes, string postBackValue, float32[] coordinates, object tag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.MapArea.#ctor(System.Web.UI.DataVisualization.Charting.MapAreaShape,System.String,System.String,System.String,System.String,System.Single[],System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (shape As MapAreaShape, toolTip As String, url As String, attributes As String, postBackValue As String, coordinates As Single(), tag As Object)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; MapArea(System::Web::UI::DataVisualization::Charting::MapAreaShape shape, System::String ^ toolTip, System::String ^ url, System::String ^ attributes, System::String ^ postBackValue, cli::array &lt;float&gt; ^ coordinates, System::Object ^ tag);" />
       <MemberSignature Language="F#" Value="new System.Web.UI.DataVisualization.Charting.MapArea : System.Web.UI.DataVisualization.Charting.MapAreaShape * string * string * string * string * single[] * obj -&gt; System.Web.UI.DataVisualization.Charting.MapArea" Usage="new System.Web.UI.DataVisualization.Charting.MapArea (shape, toolTip, url, attributes, postBackValue, coordinates, tag)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MapArea(System::Web::UI::DataVisualization::Charting::MapAreaShape shape, System::String ^ toolTip, System::String ^ url, System::String ^ attributes, System::String ^ postBackValue, cli::array &lt;float&gt; ^ coordinates, System::Object ^ tag);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -259,8 +260,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance float32[] Coordinates" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.MapArea.Coordinates" />
       <MemberSignature Language="VB.NET" Value="Public Property Coordinates As Single()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;float&gt; ^ Coordinates { cli::array &lt;float&gt; ^ get(); void set(cli::array &lt;float&gt; ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Coordinates : single[] with get, set" Usage="System.Web.UI.DataVisualization.Charting.MapArea.Coordinates" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;float&gt; ^ Coordinates { cli::array &lt;float&gt; ^ get(); void set(cli::array &lt;float&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -268,22 +269,28 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Bindable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Bindable(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.DataVisualization.Charting.MapAreaCoordinatesConverter))</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.TypeConverter(typeof(System.Web.UI.DataVisualization.Charting.MapAreaCoordinatesConverter))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.TypeConverter(typeof(System.Web.UI.DataVisualization.Charting.MapAreaCoordinatesConverter))&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -325,8 +332,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCustom" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.MapArea.IsCustom" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCustom As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCustom { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsCustom : bool" Usage="System.Web.UI.DataVisualization.Charting.MapArea.IsCustom" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCustom { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -334,19 +341,24 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -364,8 +376,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string MapAreaAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.MapArea.MapAreaAttributes" />
       <MemberSignature Language="VB.NET" Value="Public Property MapAreaAttributes As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MapAreaAttributes { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.MapAreaAttributes : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.MapArea.MapAreaAttributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MapAreaAttributes { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.DataVisualization.Charting.IChartMapArea.MapAreaAttributes</InterfaceMember>
@@ -376,19 +388,24 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Bindable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Bindable(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -403,7 +420,10 @@
 ## Remarks  
  If you set this property, a client-side image map will be automatically created, and a map area will be created with the attribute string appended to the \<MAP> tag that corresponds to the <xref:System.Web.UI.DataVisualization.Charting.Chart> object that this property is being set for. For example, setting the Target attribute using this property and setting the `Url` property of the first data point will result in HTML code that is similar to the following:  
   
- \<img id="Chart1" USEMAP="#Chart1ImageMap" src="ChartPic_000002.jpg?6735e83b-f0cd-4225-8be4-047695a61040" border="0" />...\<MAP NAME="Chart1ImageMap">\<AREA SHAPE="rect" HREF="http://www.SomeDomain.ca" COORDS="69,120,106,309" Target\=_Blank>\</MAP>  
+```html
+<img id="Chart1" USEMAP="#Chart1ImageMap" src="ChartPic_000002.jpg?6735e83b-f0cd-4225-8be4-047695a61040" border="0" />...
+<MAP NAME="Chart1ImageMap"><AREA SHAPE="rect" HREF="http://www.SomeDomain.ca" COORDS="69,120,106,309" Target=_Blank></MAP>
+```
   
  Because the entire string is appended to the \<MAP> tag, multiple attributes should be separated with a space.  
   
@@ -438,8 +458,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.MapArea.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Name As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.MapArea.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -447,13 +467,16 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("Map Area")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("Map Area")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("Map Area")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -470,8 +493,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string PostBackValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.MapArea.PostBackValue" />
       <MemberSignature Language="VB.NET" Value="Public Property PostBackValue As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PostBackValue { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.PostBackValue : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.MapArea.PostBackValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PostBackValue { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.DataVisualization.Charting.IChartMapArea.PostBackValue</InterfaceMember>
@@ -482,13 +505,16 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -505,8 +531,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataVisualization.Charting.MapAreaShape Shape" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.MapArea.Shape" />
       <MemberSignature Language="VB.NET" Value="Public Property Shape As MapAreaShape" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::MapAreaShape Shape { System::Web::UI::DataVisualization::Charting::MapAreaShape get(); void set(System::Web::UI::DataVisualization::Charting::MapAreaShape value); };" />
       <MemberSignature Language="F#" Value="member this.Shape : System.Web.UI.DataVisualization.Charting.MapAreaShape with get, set" Usage="System.Web.UI.DataVisualization.Charting.MapArea.Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::MapAreaShape Shape { System::Web::UI::DataVisualization::Charting::MapAreaShape get(); void set(System::Web::UI::DataVisualization::Charting::MapAreaShape value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -514,19 +540,24 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Bindable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Bindable(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Web.UI.DataVisualization.Charting.MapAreaShape), "Rectangle")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(typeof(System.Web.UI.DataVisualization.Charting.MapAreaShape), "Rectangle")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(typeof(System.Web.UI.DataVisualization.Charting.MapAreaShape), "Rectangle")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -562,8 +593,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ToolTip" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.MapArea.ToolTip" />
       <MemberSignature Language="VB.NET" Value="Public Property ToolTip As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTip { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.ToolTip : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.MapArea.ToolTip" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTip { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.DataVisualization.Charting.IChartMapArea.ToolTip</InterfaceMember>
@@ -574,19 +605,24 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Bindable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Bindable(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -621,8 +657,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Url" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.MapArea.Url" />
       <MemberSignature Language="VB.NET" Value="Public Property Url As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Url { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Url : string with get, set" Usage="System.Web.UI.DataVisualization.Charting.MapArea.Url" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Url { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.DataVisualization.Charting.IChartMapArea.Url</InterfaceMember>
@@ -633,25 +669,32 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Bindable(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Bindable(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.DataVisualization.Charting.UrlValueEditor, System.Web.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.DataVisualization.Charting.UrlValueEditor, System.Web.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Editor("System.Web.UI.Design.DataVisualization.Charting.UrlValueEditor, System.Web.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Editor("System.Web.UI.Design.DataVisualization.Charting.UrlValueEditor, System.Web.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.ComponentModel.Editor("System.Web.UI.Design.DataVisualization.Charting.UrlValueEditor, System.Web.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Editor("System.Web.UI.Design.DataVisualization.Charting.UrlValueEditor, System.Web.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -665,9 +708,12 @@
   
 ## Remarks  
  When you set this property, a client-side image map will automatically be created, and a map area will be created with the HREF attribute set to the specified anchor or URL. This map area will also use the dimensions that correspond to the relevant chart element. For example, if the HREF property is set for a data point, then HTML code similar to the following will be generated at run time:  
-  
- &lt;img id="Chart1" USEMAP="#Chart1ImageMap" src="ChartPic_000002.jpg?6735e83b-f0cd-4225-8be4-047695a61040" border="0" /&gt;\<BR>...\<BR>&lt;MAP NAME="Chart1ImageMap"&gt;\<BR>&lt;AREA SHAPE="rect" HREF="http://www.healthquotes.ca" COORDS= "69,120,106,309"&gt;\<BR>&lt;/MAP&gt;  
-  
+
+```html 
+<img id="Chart1" USEMAP="#Chart1ImageMap" src="ChartPic_000002.jpg?6735e83b-f0cd-4225-8be4-047695a61040" border="0" />
+<BR>...<BR><MAP NAME="Chart1ImageMap"><BR><AREA SHAPE="rect" HREF="http://www.healthquotes.ca" COORDS= "69,120,106,309"><BR></MAP>  
+```
+
  Setting this property will have no effect if the <xref:System.Web.UI.DataVisualization.Charting.Chart.IsMapEnabled%2A> property is set to `false`. The default value is `true`.  
   
  > [!IMPORTANT] 

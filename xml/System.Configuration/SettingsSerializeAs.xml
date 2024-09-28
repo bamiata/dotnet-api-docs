@@ -1,10 +1,10 @@
-﻿<Type Name="SettingsSerializeAs" FullName="System.Configuration.SettingsSerializeAs">
+<Type Name="SettingsSerializeAs" FullName="System.Configuration.SettingsSerializeAs">
   <TypeSignature Language="C#" Value="public enum SettingsSerializeAs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SettingsSerializeAs extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.SettingsSerializeAs" />
   <TypeSignature Language="VB.NET" Value="Public Enum SettingsSerializeAs" />
-  <TypeSignature Language="C++ CLI" Value="public enum class SettingsSerializeAs" />
   <TypeSignature Language="F#" Value="type SettingsSerializeAs = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SettingsSerializeAs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -12,9 +12,18 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+    <AssemblyVersion>4.0.3.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Configuration.ConfigurationManager" FromVersion="9.0.0.0" To="System" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
@@ -38,8 +47,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.SettingsSerializeAs Binary = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Configuration.SettingsSerializeAs.Binary" />
       <MemberSignature Language="VB.NET" Value="Binary" />
-      <MemberSignature Language="C++ CLI" Value="Binary" />
       <MemberSignature Language="F#" Value="Binary = 2" Usage="System.Configuration.SettingsSerializeAs.Binary" />
+      <MemberSignature Language="C++ CLI" Value="Binary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -48,9 +57,20 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Obsolete("BinaryFormatter serialization is obsolete and should not be used. See https://aka.ms/binaryformatter for more information.. Consider using Xml instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("BinaryFormatter serialization is obsolete and should not be used. See https://aka.ms/binaryformatter for more information.. Consider using Xml instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Configuration.SettingsSerializeAs</ReturnType>
       </ReturnValue>
@@ -64,8 +84,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.SettingsSerializeAs ProviderSpecific = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Configuration.SettingsSerializeAs.ProviderSpecific" />
       <MemberSignature Language="VB.NET" Value="ProviderSpecific" />
-      <MemberSignature Language="C++ CLI" Value="ProviderSpecific" />
       <MemberSignature Language="F#" Value="ProviderSpecific = 3" Usage="System.Configuration.SettingsSerializeAs.ProviderSpecific" />
+      <MemberSignature Language="C++ CLI" Value="ProviderSpecific" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -74,8 +94,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.SettingsSerializeAs</ReturnType>
@@ -90,8 +115,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.SettingsSerializeAs String = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Configuration.SettingsSerializeAs.String" />
       <MemberSignature Language="VB.NET" Value="String" />
-      <MemberSignature Language="C++ CLI" Value="String" />
       <MemberSignature Language="F#" Value="String = 0" Usage="System.Configuration.SettingsSerializeAs.String" />
+      <MemberSignature Language="C++ CLI" Value="String" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -100,8 +125,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.SettingsSerializeAs</ReturnType>
@@ -116,8 +146,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.SettingsSerializeAs Xml = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Configuration.SettingsSerializeAs.Xml" />
       <MemberSignature Language="VB.NET" Value="Xml" />
-      <MemberSignature Language="C++ CLI" Value="Xml" />
       <MemberSignature Language="F#" Value="Xml = 1" Usage="System.Configuration.SettingsSerializeAs.Xml" />
+      <MemberSignature Language="C++ CLI" Value="Xml" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -126,8 +156,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.SettingsSerializeAs</ReturnType>

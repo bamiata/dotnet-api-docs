@@ -1,16 +1,22 @@
-﻿<Type Name="ManualResetEventSlim" FullName="System.Threading.ManualResetEventSlim">
+<Type Name="ManualResetEventSlim" FullName="System.Threading.ManualResetEventSlim">
   <TypeSignature Language="C#" Value="public class ManualResetEventSlim : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ManualResetEventSlim extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Threading.ManualResetEventSlim" />
   <TypeSignature Language="VB.NET" Value="Public Class ManualResetEventSlim&#xA;Implements IDisposable" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ManualResetEventSlim : IDisposable" />
   <TypeSignature Language="F#" Value="type ManualResetEventSlim = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManualResetEventSlim : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -20,7 +26,16 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Threading" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Threading" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Threading" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Threading" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Threading" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Threading" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -30,11 +45,13 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Diagnostics.DebuggerDisplay("Set = {IsSet}")</AttributeName>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerDisplay("Set = {IsSet}")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("Set = {IsSet}")&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(false)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -45,18 +62,20 @@
 ## Remarks  
  You can use this class for better performance than <xref:System.Threading.ManualResetEvent> when wait times are expected to be very short, and when the event does not cross a process boundary. <xref:System.Threading.ManualResetEventSlim> uses busy spinning for a short time while it waits for the event to become signaled. When wait times are short, spinning can be much less expensive than waiting by using wait handles. However, if the event does not become signaled within a certain period of time, <xref:System.Threading.ManualResetEventSlim> resorts to a regular event handle wait.  
   
-   
+> [!NOTE]
+> In .NET Core and .NET 5+, the default spin-waiting duration is short: on the order of 10s of microseconds, depending on platform and processor. If you expect wait times to be much longer than that, you can still use this class instead of <xref:System.Threading.ManualResetEvent> (perhaps configured with less or no spin-waiting). However, the performance benefit would likely be only marginal.  
+  
   
 ## Examples  
  The following example shows how to use a <xref:System.Threading.ManualResetEventSlim>.
   
- [!code-csharp[System.Threading.ManualResetEventSlim#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.manualreseteventslim/cs/mres.cs#01)]
- [!code-vb[System.Threading.ManualResetEventSlim#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.manualreseteventslim/vb/mres.vb#01)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Threading/ManualResetEventSlim/Overview/mres.cs" id="Snippet01":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.manualreseteventslim/vb/mres.vb" id="Snippet01":::  
   
  ]]></format>
     </remarks>
     <threadsafe>All public and protected members of <see cref="T:System.Threading.ManualResetEventSlim" /> are thread-safe and may be used concurrently from multiple threads, with the exception of Dispose, which must only be used when all other operations on the <see cref="T:System.Threading.ManualResetEventSlim" /> have completed, and Reset, which should only be used when no other threads are accessing the event.</threadsafe>
-    <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+    <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -68,7 +87,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Threading.ManualResetEventSlim" /> class.</summary>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -84,6 +103,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -93,12 +118,13 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Threading.ManualResetEventSlim" /> class with an initial state of nonsignaled.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -106,8 +132,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool initialState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ManualResetEventSlim.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (initialState As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManualResetEventSlim(bool initialState);" />
       <MemberSignature Language="F#" Value="new System.Threading.ManualResetEventSlim : bool -&gt; System.Threading.ManualResetEventSlim" Usage="new System.Threading.ManualResetEventSlim initialState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManualResetEventSlim(bool initialState);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -115,6 +141,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -124,15 +156,16 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="initialState" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="initialState">true to set the initial state signaled; false to set the initial state to nonsignaled.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Threading.ManualResetEventSlim" /> class with a Boolean value indicating whether to set the intial state to signaled.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.ManualResetEventSlim" /> class with a Boolean value indicating whether to set the initial state to signaled.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -140,8 +173,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool initialState, int32 spinCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ManualResetEventSlim.#ctor(System.Boolean,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (initialState As Boolean, spinCount As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManualResetEventSlim(bool initialState, int spinCount);" />
       <MemberSignature Language="F#" Value="new System.Threading.ManualResetEventSlim : bool * int -&gt; System.Threading.ManualResetEventSlim" Usage="new System.Threading.ManualResetEventSlim (initialState, spinCount)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManualResetEventSlim(bool initialState, int spinCount);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -149,6 +182,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -158,6 +197,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="initialState" Type="System.Boolean" />
@@ -166,11 +206,11 @@
       <Docs>
         <param name="initialState">true to set the initial state to signaled; false to set the initial state to nonsignaled.</param>
         <param name="spinCount">The number of spin waits that will occur before falling back to a kernel-based wait operation.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Threading.ManualResetEventSlim" /> class with a Boolean value indicating whether to set the intial state to signaled and a specified spin count.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.ManualResetEventSlim" /> class with a Boolean value indicating whether to set the initial state to signaled and a specified spin count.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="spinCount" /> is less than 0 or greater than the maximum allowed value.</exception>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Dispose">
@@ -182,7 +222,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Releases resources used by the current instance of the <see cref="T:System.Threading.ManualResetEventSlim" /> class.</summary>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Dispose">
@@ -190,8 +230,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ManualResetEventSlim.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="manualResetEventSlim.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -202,6 +242,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -211,6 +257,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -224,14 +271,14 @@
 ## Remarks  
  Call `Dispose` when you are finished using the <xref:System.Threading.ManualResetEventSlim>. The `Dispose` method leaves the <xref:System.Threading.ManualResetEventSlim> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Threading.ManualResetEventSlim> so the garbage collector can reclaim the memory that the <xref:System.Threading.ManualResetEventSlim> was occupying.  
   
- For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+ For more information, see [Cleaning Up Unmanaged Resources](/dotnet/standard/garbage-collection/unmanaged) and [Implementing a Dispose Method](/dotnet/standard/garbage-collection/implementing-dispose).  
   
 > [!NOTE]
 >  Always call `Dispose` before you release your last reference to the <xref:System.Threading.ManualResetEventSlim>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Threading.ManualResetEventSlim> object's `Finalize` method.  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -239,8 +286,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ManualResetEventSlim.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="manualResetEventSlim.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -248,6 +295,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -257,6 +310,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -275,7 +329,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="IsSet">
@@ -283,8 +337,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSet" />
       <MemberSignature Language="DocId" Value="P:System.Threading.ManualResetEventSlim.IsSet" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSet As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSet { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsSet : bool" Usage="System.Threading.ManualResetEventSlim.IsSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSet { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -292,6 +346,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -301,6 +361,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -309,7 +370,7 @@
         <summary>Gets whether the event is set.</summary>
         <value>true if the event is set; otherwise, false.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -317,8 +378,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ManualResetEventSlim.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
       <MemberSignature Language="F#" Value="member this.Reset : unit -&gt; unit" Usage="manualResetEventSlim.Reset " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -326,6 +387,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -335,6 +402,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -351,7 +419,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The object has already been disposed.</exception>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="Set">
@@ -359,8 +427,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Set() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ManualResetEventSlim.Set" />
       <MemberSignature Language="VB.NET" Value="Public Sub Set ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Set();" />
       <MemberSignature Language="F#" Value="member this.Set : unit -&gt; unit" Usage="manualResetEventSlim.Set " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Set();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -368,6 +436,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -377,6 +451,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -385,7 +460,7 @@
       <Docs>
         <summary>Sets the state of the event to signaled, which allows one or more threads waiting on the event to proceed.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="SpinCount">
@@ -393,8 +468,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 SpinCount" />
       <MemberSignature Language="DocId" Value="P:System.Threading.ManualResetEventSlim.SpinCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SpinCount As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SpinCount { int get(); };" />
       <MemberSignature Language="F#" Value="member this.SpinCount : int" Usage="System.Threading.ManualResetEventSlim.SpinCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SpinCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -402,6 +477,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -411,6 +492,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -419,7 +501,7 @@
         <summary>Gets the number of spin waits that will occur before falling back to a kernel-based wait operation.</summary>
         <value>Returns the number of spin waits that will occur before falling back to a kernel-based wait operation.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Wait">
@@ -431,7 +513,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Blocks the current thread until the current <see cref="T:System.Threading.ManualResetEventSlim" /> is set.</summary>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Wait">
@@ -439,8 +521,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Wait() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ManualResetEventSlim.Wait" />
       <MemberSignature Language="VB.NET" Value="Public Sub Wait ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Wait();" />
       <MemberSignature Language="F#" Value="member this.Wait : unit -&gt; unit" Usage="manualResetEventSlim.Wait " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Wait();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -448,6 +530,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -457,7 +545,14 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.UnsupportedOSPlatform("browser")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.UnsupportedOSPlatform("browser")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -474,7 +569,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The maximum number of waiters has been exceeded.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has already been disposed.</exception>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="Wait">
@@ -482,8 +577,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Wait(int32 millisecondsTimeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ManualResetEventSlim.Wait(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Wait (millisecondsTimeout As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Wait(int millisecondsTimeout);" />
       <MemberSignature Language="F#" Value="member this.Wait : int -&gt; bool" Usage="manualResetEventSlim.Wait millisecondsTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Wait(int millisecondsTimeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -491,6 +586,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -500,7 +601,14 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.UnsupportedOSPlatform("browser")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.UnsupportedOSPlatform("browser")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -517,15 +625,16 @@
           <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite time-out.</exception>
         <exception cref="T:System.InvalidOperationException">The maximum number of waiters has been exceeded.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has already been disposed.</exception>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="Wait">
       <MemberSignature Language="C#" Value="public void Wait (System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Wait(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ManualResetEventSlim.Wait(System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Wait(System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Wait (cancellationToken As CancellationToken)" />
       <MemberSignature Language="F#" Value="member this.Wait : System.Threading.CancellationToken -&gt; unit" Usage="manualResetEventSlim.Wait cancellationToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Wait(System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -533,6 +642,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -542,7 +657,14 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.UnsupportedOSPlatform("browser")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.UnsupportedOSPlatform("browser")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -564,7 +686,10 @@
         <exception cref="T:System.OperationCanceledException">
           <paramref name="cancellationToken" /> was canceled.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has already been disposed or the <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has been disposed.</exception>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
+        <exception cref="T:System.OperationCanceledException">
+          <paramref name="cancellationToken" /> was
+            canceled.</exception>
       </Docs>
     </Member>
     <Member MemberName="Wait">
@@ -572,8 +697,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Wait(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ManualResetEventSlim.Wait(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function Wait (timeout As TimeSpan) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Wait(TimeSpan timeout);" />
       <MemberSignature Language="F#" Value="member this.Wait : TimeSpan -&gt; bool" Usage="manualResetEventSlim.Wait timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Wait(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -581,6 +706,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -590,7 +721,14 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.UnsupportedOSPlatform("browser")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.UnsupportedOSPlatform("browser")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -608,18 +746,19 @@
   
  -or-  
   
- The number of milliseconds in <paramref name="timeout" /> is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+ The number of milliseconds in <paramref name="timeout" /> is greater than <see cref="F:System.Int32.MaxValue">Int32.MaxValue</see>.</exception>
         <exception cref="T:System.InvalidOperationException">The maximum number of waiters has been exceeded.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has already been disposed.</exception>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="Wait">
       <MemberSignature Language="C#" Value="public bool Wait (int millisecondsTimeout, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Wait(int32 millisecondsTimeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ManualResetEventSlim.Wait(System.Int32,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Wait(int millisecondsTimeout, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="VB.NET" Value="Public Function Wait (millisecondsTimeout As Integer, cancellationToken As CancellationToken) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Wait : int * System.Threading.CancellationToken -&gt; bool" Usage="manualResetEventSlim.Wait (millisecondsTimeout, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Wait(int millisecondsTimeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -627,6 +766,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -636,7 +781,14 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.UnsupportedOSPlatform("browser")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.UnsupportedOSPlatform("browser")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -651,21 +803,22 @@
         <returns>
           <see langword="true" /> if the <see cref="T:System.Threading.ManualResetEventSlim" /> was set; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.OperationCanceledException">
-          <paramref name="cancellationToken" /> was canceled.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite time-out.</exception>
         <exception cref="T:System.InvalidOperationException">The maximum number of waiters has been exceeded.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has already been disposed or the <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has been disposed.</exception>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
+        <exception cref="T:System.OperationCanceledException">
+          <paramref name="cancellationToken" /> was canceled.</exception>
       </Docs>
     </Member>
     <Member MemberName="Wait">
       <MemberSignature Language="C#" Value="public bool Wait (TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Wait(valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ManualResetEventSlim.Wait(System.TimeSpan,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Wait(TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="VB.NET" Value="Public Function Wait (timeout As TimeSpan, cancellationToken As CancellationToken) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Wait : TimeSpan * System.Threading.CancellationToken -&gt; bool" Usage="manualResetEventSlim.Wait (timeout, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Wait(TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -673,6 +826,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -682,7 +841,14 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.UnsupportedOSPlatform("browser")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.UnsupportedOSPlatform("browser")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -697,17 +863,17 @@
         <returns>
           <see langword="true" /> if the <see cref="T:System.Threading.ManualResetEventSlim" /> was set; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.OperationCanceledException">
-          <paramref name="cancellationToken" /> was canceled.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="timeout" /> is a negative number other than -1 milliseconds, which represents an infinite time-out.  
   
  -or-  
   
- The number of milliseconds in <paramref name="timeout" /> is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+ The number of milliseconds in <paramref name="timeout" /> is greater than <see cref="F:System.Int32.MaxValue">Int32.MaxValue</see>.</exception>
         <exception cref="T:System.InvalidOperationException">The maximum number of waiters has been exceeded.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has already been disposed or the <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has been disposed.</exception>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
+        <exception cref="T:System.OperationCanceledException">
+          <paramref name="cancellationToken" /> was canceled.</exception>
       </Docs>
     </Member>
     <Member MemberName="WaitHandle">
@@ -715,8 +881,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Threading.WaitHandle WaitHandle" />
       <MemberSignature Language="DocId" Value="P:System.Threading.ManualResetEventSlim.WaitHandle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WaitHandle As WaitHandle" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::WaitHandle ^ WaitHandle { System::Threading::WaitHandle ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.WaitHandle : System.Threading.WaitHandle" Usage="System.Threading.ManualResetEventSlim.WaitHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::WaitHandle ^ WaitHandle { System::Threading::WaitHandle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -724,6 +890,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -733,13 +905,24 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.WaitHandle</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Gets the underlying <see cref="T:System.Threading.WaitHandle" /> object for this <see cref="T:System.Threading.ManualResetEventSlim" />.</summary>
-        <value>The underlying <see cref="T:System.Threading.WaitHandle" /> event object fore this <see cref="T:System.Threading.ManualResetEventSlim" />.</value>
+        <value>The underlying <see cref="T:System.Threading.WaitHandle" /> event object for this <see cref="T:System.Threading.ManualResetEventSlim" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -748,7 +931,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
+        <related type="Article" href="/dotnet/standard/threading/overview-of-synchronization-primitives">Overview of synchronization primitives</related>
       </Docs>
     </Member>
   </Members>

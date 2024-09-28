@@ -1,16 +1,30 @@
-﻿<Type Name="AspNetHostingPermission" FullName="System.Web.AspNetHostingPermission">
+<Type Name="AspNetHostingPermission" FullName="System.Web.AspNetHostingPermission">
   <TypeSignature Language="C#" Value="public sealed class AspNetHostingPermission : System.Security.CodeAccessPermission, System.Security.Permissions.IUnrestrictedPermission" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit AspNetHostingPermission extends System.Security.CodeAccessPermission implements class System.Security.Permissions.IUnrestrictedPermission" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AspNetHostingPermission extends System.Security.CodeAccessPermission implements class System.Security.Permissions.IUnrestrictedPermission" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netstandard-2.0;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
   <TypeSignature Language="DocId" Value="T:System.Web.AspNetHostingPermission" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AspNetHostingPermission&#xA;Inherits CodeAccessPermission&#xA;Implements IUnrestrictedPermission" />
-  <TypeSignature Language="C++ CLI" Value="public ref class AspNetHostingPermission sealed : System::Security::CodeAccessPermission, System::Security::Permissions::IUnrestrictedPermission" />
   <TypeSignature Language="F#" Value="type AspNetHostingPermission = class&#xA;    inherit CodeAccessPermission&#xA;    interface IUnrestrictedPermission" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AspNetHostingPermission sealed : System::Security::CodeAccessPermission, System::Security::Permissions::IUnrestrictedPermission" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit AspNetHostingPermission extends System.Security.CodeAccessPermission implements class System.Security.Permissions.IUnrestrictedPermission" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Permissions</AssemblyName>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+    <AssemblyVersion>4.0.3.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Security.Permissions" FromVersion="9.0.0.0" To="System" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Security.CodeAccessPermission</BaseTypeName>
   </Base>
@@ -20,8 +34,13 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
-      <AttributeName>System.Serializable</AttributeName>
+    <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0">
+      <AttributeName Language="C#">[System.Obsolete("Code Access Security is not supported or honored by the runtime.", DiagnosticId="SYSLIB0003", UrlFormat="https://aka.ms/dotnet-warnings/{0}")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("Code Access Security is not supported or honored by the runtime.", DiagnosticId="SYSLIB0003", UrlFormat="https://aka.ms/dotnet-warnings/{0}")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -29,10 +48,13 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
+## Remarks
+
+[!INCLUDE[cas-deprecated](~/includes/cas-deprecated.md)]
+
  The <xref:System.Web.AspNetHostingPermission> class is used in conjunction with code access security to help protect public types in the System.Web namespaces. Code must be assigned at least the <xref:System.Web.AspNetHostingPermissionLevel.Minimal> trust level to access protected ASP.NET classes.  
   
- The <xref:System.Web.AspNetHostingPermission> class's <xref:System.Web.AspNetHostingPermission.Level%2A> property is set by configuring the appropriate trust level in the [trust](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-1.1/tkscy493(v%3dvs.71)) configuration element. By default, the `level` attribute of the `trust` configuration element is set to `Full`. That is, by default, ASP.NET applications run under the <xref:System.Web.AspNetHostingPermissionLevel.Unrestricted> level. When an ASP.NET application domain is created, ASP.NET reads the value specified for the `level` attribute of the `trust` configuration element, creates an instance of the <xref:System.Web.AspNetHostingPermission> class with the specified <xref:System.Web.AspNetHostingPermission.Level%2A> attribute, and then adds the class to the permission set for the application domain. For more information, see [ASP.NET Trust Levels and Policy Files](https://msdn.microsoft.com/library/f897c794-10d3-414c-86b7-59b66564bbf1).  
+ The <xref:System.Web.AspNetHostingPermission> class's <xref:System.Web.AspNetHostingPermission.Level%2A> property is set by configuring the appropriate trust level in the [trust](https://learn.microsoft.com/previous-versions/dotnet/netframework-1.1/tkscy493(v%3dvs.71)) configuration element. By default, the `level` attribute of the `trust` configuration element is set to `Full`. That is, by default, ASP.NET applications run under the <xref:System.Web.AspNetHostingPermissionLevel.Unrestricted> level. When an ASP.NET application domain is created, ASP.NET reads the value specified for the `level` attribute of the `trust` configuration element, creates an instance of the <xref:System.Web.AspNetHostingPermission> class with the specified <xref:System.Web.AspNetHostingPermission.Level%2A> attribute, and then adds the class to the permission set for the application domain. For more information, see [ASP.NET Trust Levels and Policy Files](/previous-versions/wyts434y(v=vs.140)).  
   
  It is recommended that you set the `level` attribute of the `trust` configuration element to `High` for sites that are trusted. For sites that are not trusted, such as a Web server that hosts sites that run code from an external customer, it is recommended that you set the `level` attribute of the `trust` configuration element to `Medium`.  
   
@@ -43,15 +65,15 @@
 ## Examples  
  The following code example shows a class protected using the <xref:System.Web.AspNetHostingPermission> permission. Code must be running with at least <xref:System.Web.AspNetHostingPermissionLevel.Minimal><xref:System.Web.AspNetHostingPermission> permission <xref:System.Web.AspNetHostingPermission.Level%2A> in order to create an instance of the class.  
   
- [!code-csharp[System.Web.AspNetHostingPermission#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.AspNetHostingPermission/CS/CustomAspNetClass.cs#1)]
- [!code-vb[System.Web.AspNetHostingPermission#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.AspNetHostingPermission/VB/CustomAspNetClass.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_WebNet/System.Web.AspNetHostingPermission/CS/CustomAspNetClass.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.AspNetHostingPermission/VB/CustomAspNetClass.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.AspNetHostingPermissionAttribute" />
     <altmember cref="T:System.Web.AspNetHostingPermissionLevel" />
-    <related type="Article" href="~/docs/framework/misc/code-access-security.md">Code Access Security</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74">Using Libraries from Partially Trusted Code</related>
+    <related type="Article" href="/dotnet/framework/misc/code-access-security">Code Access Security</related>
+    <related type="Article" href="/dotnet/framework/misc/using-libraries-from-partially-trusted-code">Using Libraries from Partially Trusted Code</related>
     <related type="Article" href="https://msdn.microsoft.com/library/f897c794-10d3-414c-86b7-59b66564bbf1">ASP.NET Trust Levels and Policy Files</related>
   </Docs>
   <Members>
@@ -69,14 +91,24 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.AspNetHostingPermission.#ctor(System.Security.Permissions.PermissionState)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; AspNetHostingPermission(System::Security::Permissions::PermissionState state);" />
       <MemberSignature Language="F#" Value="new System.Web.AspNetHostingPermission : System.Security.Permissions.PermissionState -&gt; System.Web.AspNetHostingPermission" Usage="new System.Web.AspNetHostingPermission state" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AspNetHostingPermission(System::Security::Permissions::PermissionState state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="state" Type="System.Security.Permissions.PermissionState" />
@@ -94,14 +126,24 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Web.AspNetHostingPermissionLevel level) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.AspNetHostingPermission.#ctor(System.Web.AspNetHostingPermissionLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (level As AspNetHostingPermissionLevel)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; AspNetHostingPermission(System::Web::AspNetHostingPermissionLevel level);" />
       <MemberSignature Language="F#" Value="new System.Web.AspNetHostingPermission : System.Web.AspNetHostingPermissionLevel -&gt; System.Web.AspNetHostingPermission" Usage="new System.Web.AspNetHostingPermission level" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AspNetHostingPermission(System::Web::AspNetHostingPermissionLevel level);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="level" Type="System.Web.AspNetHostingPermissionLevel" />
@@ -118,14 +160,24 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Copy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.AspNetHostingPermission.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As IPermission" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
       <MemberSignature Language="F#" Value="override this.Copy : unit -&gt; System.Security.IPermission" Usage="aspNetHostingPermission.Copy " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.IPermission</ReturnType>
@@ -141,14 +193,25 @@
       <MemberSignature Language="C#" Value="public override void FromXml (System.Security.SecurityElement securityElement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXml(class System.Security.SecurityElement securityElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.AspNetHostingPermission.FromXml(System.Security.SecurityElement)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ securityElement);" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub FromXml (securityElement As SecurityElement)" />
       <MemberSignature Language="F#" Value="override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="aspNetHostingPermission.FromXml securityElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ securityElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -184,14 +247,24 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Intersect(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.AspNetHostingPermission.Intersect(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Intersect (target As IPermission) As IPermission" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
       <MemberSignature Language="F#" Value="override this.Intersect : System.Security.IPermission -&gt; System.Security.IPermission" Usage="aspNetHostingPermission.Intersect target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.IPermission</ReturnType>
@@ -215,14 +288,24 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsSubsetOf(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.AspNetHostingPermission.IsSubsetOf(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSubsetOf (target As IPermission) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSubsetOf(System::Security::IPermission ^ target);" />
       <MemberSignature Language="F#" Value="override this.IsSubsetOf : System.Security.IPermission -&gt; bool" Usage="aspNetHostingPermission.IsSubsetOf target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSubsetOf(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -247,8 +330,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUnrestricted() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.AspNetHostingPermission.IsUnrestricted" />
       <MemberSignature Language="VB.NET" Value="Public Function IsUnrestricted () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsUnrestricted : unit -&gt; bool&#xA;override this.IsUnrestricted : unit -&gt; bool" Usage="aspNetHostingPermission.IsUnrestricted " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsUnrestricted();" />
-      <MemberSignature Language="F#" Value="override this.IsUnrestricted : unit -&gt; bool" Usage="aspNetHostingPermission.IsUnrestricted " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.Permissions.IUnrestrictedPermission.IsUnrestricted</InterfaceMember>
@@ -258,6 +341,16 @@
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -275,8 +368,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.AspNetHostingPermissionLevel Level" />
       <MemberSignature Language="DocId" Value="P:System.Web.AspNetHostingPermission.Level" />
       <MemberSignature Language="VB.NET" Value="Public Property Level As AspNetHostingPermissionLevel" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::AspNetHostingPermissionLevel Level { System::Web::AspNetHostingPermissionLevel get(); void set(System::Web::AspNetHostingPermissionLevel value); };" />
       <MemberSignature Language="F#" Value="member this.Level : System.Web.AspNetHostingPermissionLevel with get, set" Usage="System.Web.AspNetHostingPermission.Level" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::AspNetHostingPermissionLevel Level { System::Web::AspNetHostingPermissionLevel get(); void set(System::Web::AspNetHostingPermissionLevel value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -284,9 +377,20 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -303,14 +407,24 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.SecurityElement ToXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.AspNetHostingPermission.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As SecurityElement" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::SecurityElement ^ ToXml();" />
       <MemberSignature Language="F#" Value="override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="aspNetHostingPermission.ToXml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::SecurityElement ^ ToXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.SecurityElement</ReturnType>
@@ -327,14 +441,24 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Union(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.AspNetHostingPermission.Union(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Union (target As IPermission) As IPermission" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Union(System::Security::IPermission ^ target);" />
       <MemberSignature Language="F#" Value="override this.Union : System.Security.IPermission -&gt; System.Security.IPermission" Usage="aspNetHostingPermission.Union target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Union(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.IPermission</ReturnType>

@@ -1,18 +1,23 @@
-﻿<Type Name="LinqDataSource" FullName="System.Web.UI.WebControls.LinqDataSource">
-  <TypeSignature Language="C#" Value="public class LinqDataSource : System.Web.UI.WebControls.ContextDataSource, System.Web.DynamicData.IDynamicDataSource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LinqDataSource extends System.Web.UI.WebControls.ContextDataSource implements class System.Web.DynamicData.IDynamicDataSource, class System.Web.UI.IDataSource" />
+<Type Name="LinqDataSource" FullName="System.Web.UI.WebControls.LinqDataSource">
+  <TypeSignature Language="C#" Value="public class LinqDataSource : System.Web.UI.DataSourceControl, System.Web.DynamicData.IDynamicDataSource" FrameworkAlternate="netframework-3.5" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LinqDataSource extends System.Web.UI.DataSourceControl implements class System.Web.DynamicData.IDynamicDataSource, class System.Web.UI.IDataSource" FrameworkAlternate="netframework-3.5" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LinqDataSource" />
-  <TypeSignature Language="VB.NET" Value="Public Class LinqDataSource&#xA;Inherits ContextDataSource&#xA;Implements IDynamicDataSource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class LinqDataSource : System::Web::UI::WebControls::ContextDataSource, System::Web::DynamicData::IDynamicDataSource" />
-  <TypeSignature Language="F#" Value="type LinqDataSource = class&#xA;    inherit ContextDataSource&#xA;    interface IDynamicDataSource&#xA;    interface IDataSource" />
+  <TypeSignature Language="VB.NET" Value="Public Class LinqDataSource&#xA;Inherits DataSourceControl&#xA;Implements IDynamicDataSource" FrameworkAlternate="netframework-3.5" />
+  <TypeSignature Language="F#" Value="type LinqDataSource = class&#xA;    inherit DataSourceControl&#xA;    interface IDynamicDataSource&#xA;    interface IDataSource" FrameworkAlternate="netframework-3.5" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LinqDataSource : System::Web::UI::DataSourceControl, System::Web::DynamicData::IDynamicDataSource" FrameworkAlternate="netframework-3.5" />
+  <TypeSignature Language="C#" Value="public class LinqDataSource : System.Web.UI.WebControls.ContextDataSource, System.Web.DynamicData.IDynamicDataSource" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LinqDataSource extends System.Web.UI.WebControls.ContextDataSource implements class System.Web.DynamicData.IDynamicDataSource, class System.Web.UI.IDataSource" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  <TypeSignature Language="VB.NET" Value="Public Class LinqDataSource&#xA;Inherits ContextDataSource&#xA;Implements IDynamicDataSource" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  <TypeSignature Language="F#" Value="type LinqDataSource = class&#xA;    inherit ContextDataSource&#xA;    interface IDynamicDataSource&#xA;    interface IDataSource" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LinqDataSource : System::Web::UI::WebControls::ContextDataSource, System::Web::DynamicData::IDynamicDataSource" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>System.Web.UI.WebControls.ContextDataSource</BaseTypeName>
-    <BaseTypeName FrameworkAlternate="netframework-3.5">System.Web.UI.DataSourceControl</BaseTypeName>
+    <BaseTypeName>System.Web.UI.DataSourceControl</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">System.Web.UI.WebControls.ContextDataSource</BaseTypeName>
   </Base>
   <Interfaces>
     <Interface>
@@ -24,31 +29,40 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.DefaultEvent("Selecting")</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.DefaultEvent("Selecting")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultEvent("Selecting")&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.ComponentModel.DefaultProperty("ContextTypeName")</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.DefaultProperty("ContextTypeName")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultProperty("ContextTypeName")&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.LinqDataSourceDesigner, System.Web.Extensions.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    <Attribute FrameworkAlternate="netframework-3.5">
+      <AttributeName Language="C#">[System.ComponentModel.Designer("System.Web.UI.Design.WebControls.LinqDataSourceDesigner, System.Web.Extensions.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.Designer("System.Web.UI.Design.WebControls.LinqDataSourceDesigner, System.Web.Extensions.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.Drawing.ToolboxBitmap(typeof(System.Web.UI.WebControls.LinqDataSource), "LinqDataSource.bmp")</AttributeName>
+    <Attribute FrameworkAlternate="netframework-3.5">
+      <AttributeName Language="C#">[System.ComponentModel.ToolboxItemFilter("System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", System.ComponentModel.ToolboxItemFilterType.Require)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.ToolboxItemFilter("System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", System.ComponentModel.ToolboxItemFilterType.Require)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5">
+      <AttributeName Language="C#">[System.Drawing.ToolboxBitmap(typeof(System.Web.UI.WebControls.LinqDataSource), "LinqDataSource.ico")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Drawing.ToolboxBitmap(typeof(System.Web.UI.WebControls.LinqDataSource), "LinqDataSource.ico")&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Web.UI.ParseChildren(true)</AttributeName>
+      <AttributeName Language="C#">[System.Web.UI.ParseChildren(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Web.UI.ParseChildren(true)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Web.UI.PersistChildren(false)</AttributeName>
+      <AttributeName Language="C#">[System.Web.UI.PersistChildren(false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Web.UI.PersistChildren(false)&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-3.5">
-      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.LinqDataSourceDesigner, System.Web.Extensions.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.ComponentModel.Designer("System.Web.UI.Design.WebControls.LinqDataSourceDesigner, System.Web.Extensions.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.Designer("System.Web.UI.Design.WebControls.LinqDataSourceDesigner, System.Web.Extensions.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-3.5">
-      <AttributeName>System.ComponentModel.ToolboxItemFilter("System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", System.ComponentModel.ToolboxItemFilterType.Require)</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netframework-3.5">
-      <AttributeName>System.Drawing.ToolboxBitmap(typeof(System.Web.UI.WebControls.LinqDataSource), "LinqDataSource.ico")</AttributeName>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Drawing.ToolboxBitmap(typeof(System.Web.UI.WebControls.LinqDataSource), "LinqDataSource.bmp")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Drawing.ToolboxBitmap(typeof(System.Web.UI.WebControls.LinqDataSource), "LinqDataSource.bmp")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -79,11 +93,11 @@
 ## Introduction  
  Language-Integrated Query (LINQ) is a query syntax that defines a set of query operators that enable traversal, filter, and projection operations to be expressed in a declarative way in any .NET-based programming language. The data object can be an in-memory data collection or an object that represents data from a database. You can retrieve or modify the data without having to write SQL commands for each operation.  
   
- The <xref:System.Web.UI.WebControls.LinqDataSource> control enables you to use LINQ in an ASP.NET Web page by setting properties in markup text. The <xref:System.Web.UI.WebControls.LinqDataSource> control uses LINQ to SQL to automatically generate the data commands. For more information about LINQ to SQL, see [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655).  
+ The <xref:System.Web.UI.WebControls.LinqDataSource> control enables you to use LINQ in an ASP.NET Web page by setting properties in markup text. The <xref:System.Web.UI.WebControls.LinqDataSource> control uses LINQ to SQL to automatically generate the data commands. For more information about LINQ to SQL, see [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/).  
   
  When you are retrieving data from an in-memory data collection, you set the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property to the class that contains the data collection. You set the <xref:System.Web.UI.WebControls.LinqDataSource.TableName%2A> property to the property or field that returns the data collection. For example, you might have a class named `Person` that contains a property named `FavoriteCities` that returns an array of string values. In that case, you set the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property to `Person` and set the <xref:System.Web.UI.WebControls.LinqDataSource.TableName%2A> property to `FavoriteCities`.  
   
- When you are querying a database, you must first create entity classes that represent the database and its tables. You can use the [!INCLUDE[vs_ordesigner_long](~/includes/vs-ordesigner-long-md.md)] or the SqlMetal.exe utility to generate these classes. You then set the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property to the class that represents the database and set the <xref:System.Web.UI.WebControls.LinqDataSource.TableName%2A> property to the property that represents the database table.  
+ When you are querying a database, you must first create entity classes that represent the database and its tables. You can use the Object Relational Designer or the SqlMetal.exe utility to generate these classes. You then set the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property to the class that represents the database and set the <xref:System.Web.UI.WebControls.LinqDataSource.TableName%2A> property to the property that represents the database table.  
   
 <a name="order_of_operations"></a>   
 ## Order of Operations  
@@ -110,7 +124,7 @@
  You use the <xref:System.Web.UI.WebControls.LinqDataSource.OrderBy%2A> property to specify the names of properties from the returned data to sort by.  
   
 > [!NOTE]
->  When you use the <xref:System.Web.UI.WebControls.LinqDataSource> control with [!INCLUDE[ss2k](~/includes/ss2k-md.md)] or [!INCLUDE[ssEW](~/includes/ssew-md.md)] and the <xref:System.Web.UI.WebControls.LinqDataSource.AutoPage%2A> property is set to `true`, you must provide a value in the <xref:System.Web.UI.WebControls.LinqDataSource.OrderBy%2A> property. By default, the <xref:System.Web.UI.WebControls.LinqDataSource.AutoPage%2A> property is `true`. If you assign a value to the <xref:System.Web.UI.WebControls.LinqDataSource.Select%2A> property, you must also include all identity columns in the list of properties that is returned in the query.  
+>  When you use the <xref:System.Web.UI.WebControls.LinqDataSource> control with SQL Server 2000 or SQL Server Compact 3.5 and the <xref:System.Web.UI.WebControls.LinqDataSource.AutoPage%2A> property is set to `true`, you must provide a value in the <xref:System.Web.UI.WebControls.LinqDataSource.OrderBy%2A> property. By default, the <xref:System.Web.UI.WebControls.LinqDataSource.AutoPage%2A> property is `true`. If you assign a value to the <xref:System.Web.UI.WebControls.LinqDataSource.Select%2A> property, you must also include all identity columns in the list of properties that is returned in the query.  
   
 <a name="grouping_data"></a>   
 ## Grouping Data  
@@ -202,34 +216,34 @@
    
   
 ## Examples  
- The following example shows a <xref:System.Web.UI.WebControls.LinqDataSource> control that retrieves data from an entity class named `Products`. The entity class could have been generated by using the [!INCLUDE[vs_ordesigner_short](~/includes/vs-ordesigner-short-md.md)] or the SqlMetal.exe utility. The <xref:System.Web.UI.WebControls.LinqDataSource.Where%2A> property is set to return only records that have a value in the `Price` property greater than 50. A <xref:System.Web.UI.WebControls.GridView> control is bound to the <xref:System.Web.UI.WebControls.LinqDataSource> control to display the data.  
+ The following example shows a <xref:System.Web.UI.WebControls.LinqDataSource> control that retrieves data from an entity class named `Products`. The entity class could have been generated by using the O/R Designer or the SqlMetal.exe utility. The <xref:System.Web.UI.WebControls.LinqDataSource.Where%2A> property is set to return only records that have a value in the `Price` property greater than 50. A <xref:System.Web.UI.WebControls.GridView> control is bound to the <xref:System.Web.UI.WebControls.LinqDataSource> control to display the data.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default5.aspx#5)]
- [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default5.aspx#5)]  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#5](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default5.aspx#5)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#5](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default5.aspx#5)]  
   
  The following example shows a <xref:System.Web.UI.WebControls.LinqDataSource> control that enables users to update, delete, and insert records in the data source. A <xref:System.Web.UI.WebControls.DetailsView> control is bound to the <xref:System.Web.UI.WebControls.LinqDataSource> control and enables users to see and modify the data. Notice that no SQL commands are required in order to select, update, delete, or insert the records.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default2.aspx#2)]
- [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default2.aspx#2)]  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#2](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default2.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#2](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default2.aspx#2)]  
   
  The following example shows an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Selecting> event that sets the data object based on a value in the Web page.  
   
- [!code-csharp[System.Web.UI.WebControls.LinqDataSourceSelectEventArgs#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceSelectEventArgs/cs/Default3.aspx.cs#3)]
- [!code-vb[System.Web.UI.WebControls.LinqDataSourceSelectEventArgs#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceSelectEventArgs/vb/Default3.aspx.vb#3)]  
+ [!code-csharp[System.Web.UI.WebControls.LinqDataSourceSelectEventArgs#3](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceSelectEventArgs/cs/Default3.aspx.cs#3)]
+ [!code-vb[System.Web.UI.WebControls.LinqDataSourceSelectEventArgs#3](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceSelectEventArgs/vb/Default3.aspx.vb#3)]  
   
  The following example shows a <xref:System.Web.UI.WebControls.LinqDataSource> control that is configured to group by two columns. The `Key` property references an object that has two properties, `ProductCategory` and `Color`. The object represented by `It` is renamed (aliased) to `Products`. The renamed `Products` object contains a collection of the individual records in a grouping. Each instance will contain all the columns from the `Products` table.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource.GroupBy#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.GroupBy/cs/Default.aspx#1)]
- [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource.GroupBy#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.GroupBy/vb/Default.aspx#1)]  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource.GroupBy#1](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.GroupBy/cs/Default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource.GroupBy#1](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.GroupBy/vb/Default.aspx#1)]  
   
  The following example shows two <xref:System.Web.UI.WebControls.ListView> controls that display the data from the <xref:System.Web.UI.WebControls.LinqDataSource> control in the previous example. One <xref:System.Web.UI.WebControls.ListView> control displays the grouped data, and the other <xref:System.Web.UI.WebControls.ListView> control displays the individual names of products that belong to that group. The nested data-bound control's <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property is set to `Products`, which is the alias for the `It` object.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource.GroupBy#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.GroupBy/cs/Default.aspx#2)]
- [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource.GroupBy#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.GroupBy/vb/Default.aspx#2)]  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource.GroupBy#2](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.GroupBy/cs/Default.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource.GroupBy#2](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.GroupBy/vb/Default.aspx#2)]  
   
  ]]></format>
     </remarks>
-    <related type="Article" href="https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655">LINQ to SQL</related>
+    <related type="Article" href="/dotnet/framework/data/adonet/sql/linq/">LINQ to SQL</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -246,7 +260,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -260,8 +275,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoGenerateOrderByClause" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSource.AutoGenerateOrderByClause" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoGenerateOrderByClause As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoGenerateOrderByClause { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.AutoGenerateOrderByClause : bool with get, set" Usage="System.Web.UI.WebControls.LinqDataSource.AutoGenerateOrderByClause" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoGenerateOrderByClause { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -270,10 +285,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Behavior")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Behavior")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -296,8 +313,8 @@
 ## Examples  
  The following example shows a <xref:System.Web.UI.WebControls.LinqDataSource> control with the <xref:System.Web.UI.WebControls.LinqDataSource.AutoGenerateOrderByClause%2A> set to `true`. A parameter is included in the <xref:System.Web.UI.WebControls.LinqDataSource.OrderByParameters%2A> collection that orders the data based on the property name that a user selects from a <xref:System.Web.UI.WebControls.DropDownList> control.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default8.aspx#8)]
- [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default8.aspx#8)]  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#8](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default8.aspx#8)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#8](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default8.aspx#8)]  
   
  ]]></format>
         </remarks>
@@ -308,8 +325,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoGenerateWhereClause" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSource.AutoGenerateWhereClause" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoGenerateWhereClause As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoGenerateWhereClause { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.AutoGenerateWhereClause : bool with get, set" Usage="System.Web.UI.WebControls.LinqDataSource.AutoGenerateWhereClause" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoGenerateWhereClause { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IDynamicDataSource.AutoGenerateWhereClause</InterfaceMember>
@@ -321,10 +338,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Behavior")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Behavior")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -349,8 +368,8 @@
 ## Examples  
  The following example shows a <xref:System.Web.UI.WebControls.LinqDataSource> control with the <xref:System.Web.UI.WebControls.LinqDataSource.AutoGenerateWhereClause%2A> set to `true`. A <xref:System.Web.UI.WebControls.GridView> control is bound to the <xref:System.Web.UI.WebControls.LinqDataSource> control to display the data that is returned from the query. A <xref:System.Web.UI.WebControls.DropDownList> control is included that is populated with three values. A parameter is included in the <xref:System.Web.UI.WebControls.LinqDataSource.WhereParameters%2A> collection with the name set to `Category,` which matches one of the properties of the data object. Its <xref:System.Web.UI.WebControls.ControlParameter.ControlID%2A> property is set to the ID of the <xref:System.Web.UI.WebControls.DropDownList> control. The <xref:System.Web.UI.WebControls.LinqDataSource> control automatically creates the <xref:System.Web.UI.WebControls.LinqDataSource.Where%2A> property to filter records based on the value that the user selects from the <xref:System.Web.UI.WebControls.DropDownList> control. The query returns the records whose `Category` property matches the value that the user has selected from the <xref:System.Web.UI.WebControls.DropDownList> control.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default7.aspx#7)]
- [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default7.aspx#7)]  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#7](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default7.aspx#7)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#7](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default7.aspx#7)]  
   
  ]]></format>
         </remarks>
@@ -361,8 +380,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoPage" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSource.AutoPage" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoPage As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoPage { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.AutoPage : bool with get, set" Usage="System.Web.UI.WebControls.LinqDataSource.AutoPage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoPage { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -371,10 +390,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Behavior")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Behavior")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -395,8 +416,8 @@
 ## Examples  
  The following example shows a <xref:System.Web.UI.WebControls.LinqDataSource> control with the <xref:System.Web.UI.WebControls.LinqDataSource.AutoPage%2A> property set to `true` and a <xref:System.Web.UI.WebControls.GridView> control that is bound to the <xref:System.Web.UI.WebControls.LinqDataSource> control. The <xref:System.Web.UI.WebControls.GridView.AllowPaging%2A> property of the <xref:System.Web.UI.WebControls.GridView> control is set to `true` to provide the interface that lets users page through the data.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default.aspx#1)]
- [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default.aspx#1)]  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#1](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#1](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -407,8 +428,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoSort" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSource.AutoSort" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoSort As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoSort { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.AutoSort : bool with get, set" Usage="System.Web.UI.WebControls.LinqDataSource.AutoSort" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoSort { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -417,10 +438,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Behavior")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Behavior")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -445,8 +468,8 @@
 ## Examples  
  The following example shows a <xref:System.Web.UI.WebControls.LinqDataSource> control with the <xref:System.Web.UI.WebControls.LinqDataSource.AutoSort%2A> property set to `true` and a <xref:System.Web.UI.WebControls.GridView> control that is bound to the <xref:System.Web.UI.WebControls.LinqDataSource> control. The <xref:System.Web.UI.WebControls.GridView.AllowSorting%2A> property of the <xref:System.Web.UI.WebControls.GridView> control is set to `true` to provide the interface that lets users sort the data.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default.aspx#1)]
- [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default.aspx#1)]  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#1](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#1](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -457,8 +480,8 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.UI.WebControls.LinqDataSourceStatusEventArgs&gt; ContextCreated" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.LinqDataSource.ContextCreated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ContextCreated As EventHandler(Of LinqDataSourceStatusEventArgs) " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::LinqDataSourceStatusEventArgs ^&gt; ^ ContextCreated;" />
       <MemberSignature Language="F#" Value="member this.ContextCreated : EventHandler&lt;System.Web.UI.WebControls.LinqDataSourceStatusEventArgs&gt; " Usage="member this.ContextCreated : System.EventHandler&lt;System.Web.UI.WebControls.LinqDataSourceStatusEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::LinqDataSourceStatusEventArgs ^&gt; ^ ContextCreated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -467,7 +490,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Data")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Data")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -494,8 +518,8 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.UI.WebControls.LinqDataSourceContextEventArgs&gt; ContextCreating" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.LinqDataSource.ContextCreating" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ContextCreating As EventHandler(Of LinqDataSourceContextEventArgs) " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::LinqDataSourceContextEventArgs ^&gt; ^ ContextCreating;" />
       <MemberSignature Language="F#" Value="member this.ContextCreating : EventHandler&lt;System.Web.UI.WebControls.LinqDataSourceContextEventArgs&gt; " Usage="member this.ContextCreating : System.EventHandler&lt;System.Web.UI.WebControls.LinqDataSourceContextEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::LinqDataSourceContextEventArgs ^&gt; ^ ContextCreating;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -504,7 +528,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Data")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Data")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -516,7 +541,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the <xref:System.Web.UI.WebControls.LinqDataSource> control creates an instance of the type that is specified in the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property. The <xref:System.Web.UI.WebControls.LinqDataSource> control calls the default constructor of the data context object to create an instance of the object. It is possible that you have to use a non-default constructor or you have to create an object that differs from the one specified in the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property. In that case, you must handle the <xref:System.Web.UI.WebControls.LinqDataSource.ContextCreating> event and manually create the data context object.  
+ By default, the <xref:System.Web.UI.WebControls.LinqDataSource> control creates an instance of the type that is specified in the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property. The <xref:System.Web.UI.WebControls.LinqDataSource> control calls the parameterless constructor of the data context object to create an instance of the object. It is possible that you have to use a non-parameterless constructor or you have to create an object that differs from the one specified in the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property. In that case, you must handle the <xref:System.Web.UI.WebControls.LinqDataSource.ContextCreating> event and manually create the data context object.  
   
  The context type object is created during select, update, insert, and delete operations.  
   
@@ -525,10 +550,10 @@
    
   
 ## Examples  
- The following example shows how to create the data context object by using a non-default constructor during the <xref:System.Web.UI.WebControls.LinqDataSource.ContextCreating> event. The code assigns the object to the <xref:System.Web.UI.WebControls.LinqDataSourceContextEventArgs.ObjectInstance%2A> property.  
+ The following example shows how to create the data context object by using a non-parameterless constructor during the <xref:System.Web.UI.WebControls.LinqDataSource.ContextCreating> event. The code assigns the object to the <xref:System.Web.UI.WebControls.LinqDataSourceContextEventArgs.ObjectInstance%2A> property.  
   
- [!code-csharp[System.Web.UI.WebControls.LinqDataSource.ContextCreating#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.ContextCreating/cs/Default.aspx.cs#1)]
- [!code-vb[System.Web.UI.WebControls.LinqDataSource.ContextCreating#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.ContextCreating/vb/Default.aspx.vb#1)]  
+ [!code-csharp[System.Web.UI.WebControls.LinqDataSource.ContextCreating#1](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.ContextCreating/cs/Default.aspx.cs#1)]
+ [!code-vb[System.Web.UI.WebControls.LinqDataSource.ContextCreating#1](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.ContextCreating/vb/Default.aspx.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -539,8 +564,8 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.UI.WebControls.LinqDataSourceDisposeEventArgs&gt; ContextDisposing" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.LinqDataSource.ContextDisposing" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ContextDisposing As EventHandler(Of LinqDataSourceDisposeEventArgs) " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::LinqDataSourceDisposeEventArgs ^&gt; ^ ContextDisposing;" />
       <MemberSignature Language="F#" Value="member this.ContextDisposing : EventHandler&lt;System.Web.UI.WebControls.LinqDataSourceDisposeEventArgs&gt; " Usage="member this.ContextDisposing : System.EventHandler&lt;System.Web.UI.WebControls.LinqDataSourceDisposeEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::LinqDataSourceDisposeEventArgs ^&gt; ^ ContextDisposing;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -549,7 +574,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Data")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Data")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -568,12 +594,15 @@
       </Docs>
     </Member>
     <Member MemberName="ContextTypeName">
-      <MemberSignature Language="C#" Value="public override string ContextTypeName { get; set; }" />
+      <MemberSignature Language="C#" Value="public string ContextTypeName { get; set; }" FrameworkAlternate="netframework-3.5" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContextTypeName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSource.ContextTypeName" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Property ContextTypeName As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ContextTypeName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContextTypeName As String" FrameworkAlternate="netframework-3.5" />
       <MemberSignature Language="F#" Value="member this.ContextTypeName : string with get, set" Usage="System.Web.UI.WebControls.LinqDataSource.ContextTypeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContextTypeName { System::String ^ get(); void set(System::String ^ value); };" FrameworkAlternate="netframework-3.5" />
+      <MemberSignature Language="C#" Value="public override string ContextTypeName { get; set; }" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ContextTypeName As String" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ContextTypeName { System::String ^ get(); void set(System::String ^ value); };" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -582,10 +611,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Data")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Data")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -600,7 +631,7 @@
 ## Remarks  
  When you use the <xref:System.Web.UI.WebControls.LinqDataSource> control to retrieve data from either an in-memory data collection or a database, you must specify two properties. The first is a data context class that represents the data source. The second is a property in the data context class that contains the data. You set the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property to the name of the data context class and you set the <xref:System.Web.UI.WebControls.LinqDataSource.TableName%2A> property to the data collection that contains the data.  
   
- For example, when you retrieve data from a database, set the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property to the name of the class that represents the database. Also set the <xref:System.Web.UI.WebControls.LinqDataSource.TableName%2A> property to the property that represents the table in the database. To generate classes from a database, use the [!INCLUDE[vs_ordesigner_short](~/includes/vs-ordesigner-short-md.md)] or the SqlMetal.exe utility to automatically generate those classes.  
+ For example, when you retrieve data from a database, set the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property to the name of the class that represents the database. Also set the <xref:System.Web.UI.WebControls.LinqDataSource.TableName%2A> property to the property that represents the table in the database. To generate classes from a database, use the O/R Designer or the SqlMetal.exe utility to automatically generate those classes.  
   
  When you retrieve data from an in-memory data collection such as an array, set the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property to the name of the class that contains the array property. Then set the <xref:System.Web.UI.WebControls.LinqDataSource.TableName%2A> property to the property that gets the array.  
   
@@ -611,21 +642,21 @@
    
   
 ## Examples  
- The following example shows how to set the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property to a class that contains an array of strings. It also shows how to set the property to a class (generated by the [!INCLUDE[vs_ordesigner_short](~/includes/vs-ordesigner-short-md.md)]) that represents a database.  
+ The following example shows how to set the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property to a class that contains an array of strings. It also shows how to set the property to a class (generated by the O/R Designer) that represents a database.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Overview/cs/Default.aspx#2)]
- [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Overview/vb/Default.aspx#2)]  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Overview#2](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Overview/cs/Default.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Overview#2](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Overview/vb/Default.aspx#2)]  
   
- The class named `ExampleDataContext` that represents the database table is not shown in this example. For this example to work, you must create this class by adding a LINQ To SQL class named Example.dbml and dragging a table named Movie onto the [!INCLUDE[vs_ordesigner_short](~/includes/vs-ordesigner-short-md.md)]. A class named `ExampleDataContext` with a property named `Movies` is generated.  
+ The class named `ExampleDataContext` that represents the database table is not shown in this example. For this example to work, you must create this class by adding a LINQ To SQL class named Example.dbml and dragging a table named Movie onto the O/R Designer. A class named `ExampleDataContext` with a property named `Movies` is generated.  
   
  The following example shows the class named `MovieLibrary` that is referenced in the <xref:System.Web.UI.WebControls.LinqDataSource> control.  
   
- [!code-csharp[System.Web.UI.WebControls.LinqDataSource_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Overview/cs/App_Code/MovieLibrary.cs#1)]
- [!code-vb[System.Web.UI.WebControls.LinqDataSource_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Overview/vb/App_Code/MovieLibrary.vb#1)]  
+ [!code-csharp[System.Web.UI.WebControls.LinqDataSource_Overview#1](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Overview/cs/App_Code/MovieLibrary.cs#1)]
+ [!code-vb[System.Web.UI.WebControls.LinqDataSource_Overview#1](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Overview/vb/App_Code/MovieLibrary.vb#1)]  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655">LINQ to SQL</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/linq/">LINQ to SQL</related>
       </Docs>
     </Member>
     <Member MemberName="CreateQueryableView">
@@ -633,8 +664,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.WebControls.QueryableDataSourceView CreateQueryableView() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSource.CreateQueryableView" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateQueryableView () As QueryableDataSourceView" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::QueryableDataSourceView ^ CreateQueryableView();" />
       <MemberSignature Language="F#" Value="override this.CreateQueryableView : unit -&gt; System.Web.UI.WebControls.QueryableDataSourceView" Usage="linqDataSource.CreateQueryableView " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::QueryableDataSourceView ^ CreateQueryableView();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -642,7 +673,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -660,8 +692,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.WebControls.LinqDataSourceView CreateView() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSource.CreateView" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateView () As LinqDataSourceView" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::LinqDataSourceView ^ CreateView();" />
       <MemberSignature Language="F#" Value="abstract member CreateView : unit -&gt; System.Web.UI.WebControls.LinqDataSourceView&#xA;override this.CreateView : unit -&gt; System.Web.UI.WebControls.LinqDataSourceView" Usage="linqDataSource.CreateView " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::LinqDataSourceView ^ CreateView();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -690,8 +722,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Delete(class System.Collections.IDictionary keys, class System.Collections.IDictionary oldValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSource.Delete(System.Collections.IDictionary,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Function Delete (keys As IDictionary, oldValues As IDictionary) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Delete(System::Collections::IDictionary ^ keys, System::Collections::IDictionary ^ oldValues);" />
       <MemberSignature Language="F#" Value="member this.Delete : System.Collections.IDictionary * System.Collections.IDictionary -&gt; int" Usage="linqDataSource.Delete (keys, oldValues)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Delete(System::Collections::IDictionary ^ keys, System::Collections::IDictionary ^ oldValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -725,8 +757,8 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.UI.WebControls.LinqDataSourceStatusEventArgs&gt; Deleted" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.LinqDataSource.Deleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Deleted As EventHandler(Of LinqDataSourceStatusEventArgs) " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::LinqDataSourceStatusEventArgs ^&gt; ^ Deleted;" />
       <MemberSignature Language="F#" Value="member this.Deleted : EventHandler&lt;System.Web.UI.WebControls.LinqDataSourceStatusEventArgs&gt; " Usage="member this.Deleted : System.EventHandler&lt;System.Web.UI.WebControls.LinqDataSourceStatusEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::LinqDataSourceStatusEventArgs ^&gt; ^ Deleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -735,7 +767,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Data")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Data")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -758,8 +791,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.ParameterCollection DeleteParameters" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSource.DeleteParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeleteParameters As ParameterCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ DeleteParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.DeleteParameters : System.Web.UI.WebControls.ParameterCollection" Usage="System.Web.UI.WebControls.LinqDataSource.DeleteParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ DeleteParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -768,19 +801,24 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Data")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Data")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.MergableProperty(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.MergableProperty(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -797,8 +835,8 @@
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs&gt; Deleting" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.LinqDataSource.Deleting" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Deleting As EventHandler(Of LinqDataSourceDeleteEventArgs) " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::LinqDataSourceDeleteEventArgs ^&gt; ^ Deleting;" />
       <MemberSignature Language="F#" Value="member this.Deleting : EventHandler&lt;System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs&gt; " Usage="member this.Deleting : System.EventHandler&lt;System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::LinqDataSourceDeleteEventArgs ^&gt; ^ Deleting;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -807,7 +845,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Data")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Data")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -828,8 +867,8 @@
 ## Examples  
  The following example shows an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Deleting> event. The code cancels the delete operation based on a property in the <xref:System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs.OriginalObject%2A> property and a value from the Web page. In the example, when the `OnSale` property is set to `true`, the user must select a <xref:System.Web.UI.WebControls.CheckBox> control to confirm that a record should be deleted.  
   
- [!code-csharp[System.Web.UI.WebControls.LinqDataSource.Deleting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Deleting/cs/Default.aspx.cs#1)]
- [!code-vb[System.Web.UI.WebControls.LinqDataSource.Deleting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Deleting/vb/Default.aspx.vb#1)]  
+ [!code-csharp[System.Web.UI.WebControls.LinqDataSource.Deleting#1](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Deleting/cs/Default.aspx.cs#1)]
+ [!code-vb[System.Web.UI.WebControls.LinqDataSource.Deleting#1](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Deleting/vb/Default.aspx.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -840,8 +879,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableDelete" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSource.EnableDelete" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableDelete As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableDelete { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.EnableDelete : bool with get, set" Usage="System.Web.UI.WebControls.LinqDataSource.EnableDelete" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableDelete { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IDynamicDataSource.EnableDelete</InterfaceMember>
@@ -853,10 +892,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Behavior")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Behavior")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -879,12 +920,12 @@
 ## Examples  
  The following example shows a <xref:System.Web.UI.WebControls.LinqDataSource> control that has <xref:System.Web.UI.WebControls.LinqDataSource.EnableDelete%2A> set to `true`. A <xref:System.Web.UI.WebControls.DetailsView> control displays the data and creates a button that lets users delete a data record.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default2.aspx#2)]
- [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default2.aspx#2)]  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#2](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default2.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#2](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default2.aspx#2)]  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655">LINQ to SQL</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/linq/">LINQ to SQL</related>
       </Docs>
     </Member>
     <Member MemberName="EnableInsert">
@@ -892,8 +933,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableInsert" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSource.EnableInsert" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableInsert As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableInsert { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.EnableInsert : bool with get, set" Usage="System.Web.UI.WebControls.LinqDataSource.EnableInsert" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableInsert { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IDynamicDataSource.EnableInsert</InterfaceMember>
@@ -905,10 +946,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Behavior")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Behavior")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -931,12 +974,12 @@
 ## Examples  
  The following example shows a <xref:System.Web.UI.WebControls.LinqDataSource> control that has <xref:System.Web.UI.WebControls.LinqDataSource.EnableInsert%2A> set to `true`. A <xref:System.Web.UI.WebControls.DetailsView> control displays the data and displays a button that switches the control to insert mode where users can create and save a new record.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default2.aspx#2)]
- [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default2.aspx#2)]  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#2](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default2.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#2](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default2.aspx#2)]  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655">LINQ to SQL</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/linq/">LINQ to SQL</related>
       </Docs>
     </Member>
     <Member MemberName="EnableObjectTracking">
@@ -944,8 +987,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableObjectTracking" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSource.EnableObjectTracking" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableObjectTracking As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableObjectTracking { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.EnableObjectTracking : bool with get, set" Usage="System.Web.UI.WebControls.LinqDataSource.EnableObjectTracking" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableObjectTracking { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -954,10 +997,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Behavior")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Behavior")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -985,8 +1030,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableUpdate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSource.EnableUpdate" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableUpdate As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableUpdate { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.EnableUpdate : bool with get, set" Usage="System.Web.UI.WebControls.LinqDataSource.EnableUpdate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableUpdate { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IDynamicDataSource.EnableUpdate</InterfaceMember>
@@ -998,10 +1043,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Behavior")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Behavior")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1024,8 +1071,8 @@
 ## Examples  
  The following example shows a <xref:System.Web.UI.WebControls.LinqDataSource> control that has <xref:System.Web.UI.WebControls.LinqDataSource.EnableUpdate%2A> set to `true`. A <xref:System.Web.UI.WebControls.DetailsView> control displays the data and creates a button that lets users update a data record.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default2.aspx#2)]
- [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default2.aspx#2)]  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#2](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default2.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#2](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default2.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -1036,8 +1083,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.DataSourceView GetView(string viewName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSource.GetView(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetView (viewName As String) As DataSourceView" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::DataSourceView ^ GetView(System::String ^ viewName);" />
       <MemberSignature Language="F#" Value="override this.GetView : string -&gt; System.Web.UI.DataSourceView" Usage="linqDataSource.GetView viewName" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::DataSourceView ^ GetView(System::String ^ viewName);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IDataSource.GetView(System.String)</InterfaceMember>
@@ -1050,7 +1097,7 @@
         <ReturnType>System.Web.UI.DataSourceView</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="viewName" Type="System.String" />
+        <Parameter Name="viewName" Type="System.String" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="viewName">The name of the view to retrieve, which must be "DefaultView".</param>
@@ -1067,8 +1114,8 @@ The <xref:System.Web.UI.WebControls.LinqDataSource> control supports only one da
         <exception cref="T:System.ArgumentException">
           <p>viewName is null (Nothing in Visual Basic) or something other than "DefaultView".</p>
         </exception>
-        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
-        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178359(v=vs.110)">ASP.NET Data Access Overview</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/ms178359(v=vs.110)">ASP.NET Data Access Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetViewNames">
@@ -1076,8 +1123,8 @@ The <xref:System.Web.UI.WebControls.LinqDataSource> control supports only one da
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.ICollection GetViewNames() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSource.GetViewNames" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetViewNames () As ICollection" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::ICollection ^ GetViewNames();" />
       <MemberSignature Language="F#" Value="override this.GetViewNames : unit -&gt; System.Collections.ICollection" Usage="linqDataSource.GetViewNames " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::ICollection ^ GetViewNames();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IDataSource.GetViewNames</InterfaceMember>
@@ -1101,8 +1148,8 @@ The <xref:System.Web.UI.WebControls.LinqDataSource> control supports only one vi
 
 ]]></format>
         </remarks>
-        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
-        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178359(v=vs.110)">ASP.NET Data Access Overview</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/ms178359(v=vs.110)">ASP.NET Data Access Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GroupBy">
@@ -1110,8 +1157,8 @@ The <xref:System.Web.UI.WebControls.LinqDataSource> control supports only one vi
       <MemberSignature Language="ILAsm" Value=".property instance string GroupBy" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSource.GroupBy" />
       <MemberSignature Language="VB.NET" Value="Public Property GroupBy As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ GroupBy { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.GroupBy : string with get, set" Usage="System.Web.UI.WebControls.LinqDataSource.GroupBy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ GroupBy { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1120,10 +1167,12 @@ The <xref:System.Web.UI.WebControls.LinqDataSource> control supports only one vi
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Data")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Data")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1162,25 +1211,25 @@ The <xref:System.Web.UI.WebControls.LinqDataSource> control supports only one vi
   
 -   `All(` *condition* `)`  
   
- For more information, see [NIB: LinqDataSource Web Server Control Overview](https://msdn.microsoft.com/library/104cfc3f-7385-47d3-8a51-830dfa791136) and [How to: Group and Aggregate Data Using the LinqDataSource Control](https://msdn.microsoft.com/library/b922cf69-251f-4158-b405-ea960993a1af).  
+ For more information, see [LinqDataSource Web Server Control Overview](https://learn.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)) and [How to: Group and Aggregate Data Using the LinqDataSource Control](https://learn.microsoft.com/previous-versions/aspnet/bb470251(v=vs.100)).  
   
    
   
 ## Examples  
  The following example shows a <xref:System.Web.UI.WebControls.LinqDataSource> control that groups the returned data by a property named `Category`. It returns the shared values and calculates the average price for the grouped records.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default3.aspx#3)]
- [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default3.aspx#3)]  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#3](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default3.aspx#3)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#3](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default3.aspx#3)]  
   
  The following example shows a <xref:System.Web.UI.WebControls.LinqDataSource> control that is configured to group by two columns. The `Key` property references an object that has two properties, `ProductCategory` and `Color`. The object represented by `It` is renamed `Products`. The renamed `Products` object contains a collection of the individual records in a grouping, and each instance contains all the columns from the Products table.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource.GroupBy#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.GroupBy/cs/Default.aspx#1)]
- [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource.GroupBy#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.GroupBy/vb/Default.aspx#1)]  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource.GroupBy#1](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.GroupBy/cs/Default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource.GroupBy#1](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.GroupBy/vb/Default.aspx#1)]  
   
  The following example shows two <xref:System.Web.UI.WebControls.ListView> controls for displaying the data from the <xref:System.Web.UI.WebControls.LinqDataSource> control in the previous example. One <xref:System.Web.UI.WebControls.ListView> control displays the grouped data and the other <xref:System.Web.UI.WebControls.ListView> control displays the individual names of products that belong to that group. The nested data-bound control's <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property is set to `Products`, which is the alias for the `It` object.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource.GroupBy#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.GroupBy/cs/Default.aspx#2)]
- [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource.GroupBy#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.GroupBy/vb/Default.aspx#2)]  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource.GroupBy#2](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.GroupBy/cs/Default.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource.GroupBy#2](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.GroupBy/vb/Default.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -1191,8 +1240,8 @@ The <xref:System.Web.UI.WebControls.LinqDataSource> control supports only one vi
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.ParameterCollection GroupByParameters" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSource.GroupByParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GroupByParameters As ParameterCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ GroupByParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.GroupByParameters : System.Web.UI.WebControls.ParameterCollection" Usage="System.Web.UI.WebControls.LinqDataSource.GroupByParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ GroupByParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1201,19 +1250,24 @@ The <xref:System.Web.UI.WebControls.LinqDataSource> control supports only one vi
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Data")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Data")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.MergableProperty(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.MergableProperty(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1243,8 +1297,8 @@ The <xref:System.Web.UI.WebControls.LinqDataSource> control supports only one vi
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Insert(class System.Collections.IDictionary values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSource.Insert(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Function Insert (values As IDictionary) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Insert(System::Collections::IDictionary ^ values);" />
       <MemberSignature Language="F#" Value="member this.Insert : System.Collections.IDictionary -&gt; int" Usage="linqDataSource.Insert values" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Insert(System::Collections::IDictionary ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1272,13 +1326,13 @@ The <xref:System.Web.UI.WebControls.LinqDataSource> control supports only one vi
 ## Examples  
  The following example shows how to programmatically insert a new record in the data source after the user clicks a button. The code passes a <xref:System.Collections.Specialized.ListDictionary> object that contains default values to the <xref:System.Web.UI.WebControls.LinqDataSource.Insert%2A> method.  
   
- [!code-csharp[System.Web.UI.WebControls.LinqDataSource.Insert#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Insert/cs/Default2.aspx.cs#1)]
- [!code-vb[System.Web.UI.WebControls.LinqDataSource.Insert#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Insert/vb/Default2.aspx.vb#1)]  
+ [!code-csharp[System.Web.UI.WebControls.LinqDataSource.Insert#1](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Insert/cs/Default2.aspx.cs#1)]
+ [!code-vb[System.Web.UI.WebControls.LinqDataSource.Insert#1](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Insert/vb/Default2.aspx.vb#1)]  
   
  The following example shows the markup for the previous example.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource.Insert#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Insert/cs/Default2.aspx#2)]
- [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource.Insert#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Insert/vb/Default2.aspx#2)]  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource.Insert#2](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Insert/cs/Default2.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource.Insert#2](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Insert/vb/Default2.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -1289,8 +1343,8 @@ The <xref:System.Web.UI.WebControls.LinqDataSource> control supports only one vi
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.UI.WebControls.LinqDataSourceStatusEventArgs&gt; Inserted" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.LinqDataSource.Inserted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Inserted As EventHandler(Of LinqDataSourceStatusEventArgs) " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::LinqDataSourceStatusEventArgs ^&gt; ^ Inserted;" />
       <MemberSignature Language="F#" Value="member this.Inserted : EventHandler&lt;System.Web.UI.WebControls.LinqDataSourceStatusEventArgs&gt; " Usage="member this.Inserted : System.EventHandler&lt;System.Web.UI.WebControls.LinqDataSourceStatusEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::LinqDataSourceStatusEventArgs ^&gt; ^ Inserted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1299,7 +1353,8 @@ The <xref:System.Web.UI.WebControls.LinqDataSource> control supports only one vi
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Data")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Data")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1318,8 +1373,8 @@ The <xref:System.Web.UI.WebControls.LinqDataSource> control supports only one vi
 ## Examples  
  The following example shows how to create an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Inserted> event that checks for exceptions and retrieves the identity property for the new record.  
   
- [!code-csharp[System.Web.UI.WebControls.LinqDataSourceStatusEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceStatusEventArgs/cs/Default.aspx#1)]
- [!code-vb[System.Web.UI.WebControls.LinqDataSourceStatusEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceStatusEventArgs/vb/Default.aspx#1)]  
+ [!code-csharp[System.Web.UI.WebControls.LinqDataSourceStatusEventArgs#1](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceStatusEventArgs/cs/Default.aspx#1)]
+ [!code-vb[System.Web.UI.WebControls.LinqDataSourceStatusEventArgs#1](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceStatusEventArgs/vb/Default.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -1330,8 +1385,8 @@ The <xref:System.Web.UI.WebControls.LinqDataSource> control supports only one vi
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.UI.WebControls.LinqDataSourceInsertEventArgs&gt; Inserting" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.LinqDataSource.Inserting" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Inserting As EventHandler(Of LinqDataSourceInsertEventArgs) " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::LinqDataSourceInsertEventArgs ^&gt; ^ Inserting;" />
       <MemberSignature Language="F#" Value="member this.Inserting : EventHandler&lt;System.Web.UI.WebControls.LinqDataSourceInsertEventArgs&gt; " Usage="member this.Inserting : System.EventHandler&lt;System.Web.UI.WebControls.LinqDataSourceInsertEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::LinqDataSourceInsertEventArgs ^&gt; ^ Inserting;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1340,7 +1395,8 @@ The <xref:System.Web.UI.WebControls.LinqDataSource> control supports only one vi
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Data")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Data")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1363,8 +1419,8 @@ The <xref:System.Web.UI.WebControls.LinqDataSource> control supports only one vi
 ## Examples  
  The following example shows an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Inserting> event that modifies data before the insert operation. The object from the <xref:System.Web.UI.WebControls.LinqDataSourceInsertEventArgs.NewObject%2A> property is cast to a type named `Product`. The `DateModified` property of the `Product` object is set to the current date and time.  
   
- [!code-csharp[System.Web.UI.WebControls.LinqDataSource.Inserting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Inserting/cs/Default.aspx.cs#1)]
- [!code-vb[System.Web.UI.WebControls.LinqDataSource.Inserting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Inserting/vb/Default.aspx.vb#1)]  
+ [!code-csharp[System.Web.UI.WebControls.LinqDataSource.Inserting#1](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Inserting/cs/Default.aspx.cs#1)]
+ [!code-vb[System.Web.UI.WebControls.LinqDataSource.Inserting#1](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Inserting/vb/Default.aspx.vb#1)]  
   
  The following example shows an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Inserting> event that retrieves validation exceptions.  
   
@@ -1428,8 +1484,8 @@ End Sub
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.ParameterCollection InsertParameters" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSource.InsertParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InsertParameters As ParameterCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ InsertParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.InsertParameters : System.Web.UI.WebControls.ParameterCollection" Usage="System.Web.UI.WebControls.LinqDataSource.InsertParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ InsertParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1438,19 +1494,24 @@ End Sub
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Data")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Data")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.MergableProperty(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.MergableProperty(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1472,8 +1533,8 @@ End Sub
 ## Examples  
  The following example shows a <xref:System.Web.UI.WebControls.LinqDataSource> control with a parameter that provides a default value in the <xref:System.Web.UI.WebControls.LinqDataSource.InsertParameters%2A> collection. If the user does not provide a value for the `Category` property, the default value that is provided by the parameter is saved in the database.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default9.aspx#9)]
- [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default9.aspx#9)]  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#9](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default9.aspx#9)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#9](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default9.aspx#9)]  
   
  ]]></format>
         </remarks>
@@ -1484,8 +1545,8 @@ End Sub
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadViewState(object savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSource.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
       <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="linqDataSource.LoadViewState savedState" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1495,7 +1556,7 @@ End Sub
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="savedState" Type="System.Object" />
+        <Parameter Name="savedState" Type="System.Object" Index="0" FrameworkAlternate="netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="savedState">An object that represents the state of the <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control.</param>
@@ -1508,8 +1569,8 @@ The `LoadViewState` method is used to load the previously saved view state of th
 
 ]]></format>
         </remarks>
-        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
-        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178359(v=vs.110)">ASP.NET Data Access Overview</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/ms178359(v=vs.110)">ASP.NET Data Access Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -1517,8 +1578,8 @@ The `LoadViewState` method is used to load the previously saved view state of th
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSource.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
       <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="linqDataSource.OnInit e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1542,8 +1603,8 @@ The `LoadViewState` method is used to load the previously saved view state of th
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnUnload(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSource.OnUnload(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnUnload (e As EventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnUnload(EventArgs ^ e);" />
       <MemberSignature Language="F#" Value="override this.OnUnload : EventArgs -&gt; unit" Usage="linqDataSource.OnUnload e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnUnload(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1568,8 +1629,8 @@ The `LoadViewState` method is used to load the previously saved view state of th
       <MemberSignature Language="ILAsm" Value=".property instance string OrderBy" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSource.OrderBy" />
       <MemberSignature Language="VB.NET" Value="Public Property OrderBy As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OrderBy { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.OrderBy : string with get, set" Usage="System.Web.UI.WebControls.LinqDataSource.OrderBy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OrderBy { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1578,10 +1639,12 @@ The `LoadViewState` method is used to load the previously saved view state of th
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Data")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Data")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1599,7 +1662,7 @@ The `LoadViewState` method is used to load the previously saved view state of th
  You can provide more than one property in the <xref:System.Web.UI.WebControls.LinqDataSource.OrderBy%2A> property by separating each property by using a comma. For example, to order by properties named `LastName` and `FirstName`, set the <xref:System.Web.UI.WebControls.LinqDataSource.OrderBy%2A> property to "LastName, FirstName".  
   
 > [!NOTE]
->  When you use the <xref:System.Web.UI.WebControls.LinqDataSource> control with [!INCLUDE[ss2k](~/includes/ss2k-md.md)] or [!INCLUDE[ssEW](~/includes/ssew-md.md)] and the <xref:System.Web.UI.WebControls.LinqDataSource.AutoPage%2A> property is set to `true`, you must provide a value in the <xref:System.Web.UI.WebControls.LinqDataSource.OrderBy%2A> property. By default, the <xref:System.Web.UI.WebControls.LinqDataSource.AutoPage%2A> property is `true`. If you assign a value to the <xref:System.Web.UI.WebControls.LinqDataSource.Select%2A> property, you must also include all identity columns in the list of properties that is returned in the query.  
+>  When you use the <xref:System.Web.UI.WebControls.LinqDataSource> control with SQL Server 2000 or SQL Server Compact 3.5 and the <xref:System.Web.UI.WebControls.LinqDataSource.AutoPage%2A> property is set to `true`, you must provide a value in the <xref:System.Web.UI.WebControls.LinqDataSource.OrderBy%2A> property. By default, the <xref:System.Web.UI.WebControls.LinqDataSource.AutoPage%2A> property is `true`. If you assign a value to the <xref:System.Web.UI.WebControls.LinqDataSource.Select%2A> property, you must also include all identity columns in the list of properties that is returned in the query.  
   
  If the <xref:System.Web.UI.WebControls.LinqDataSource.AutoSort%2A> property is set to `true`, a data-bound control can pass a sort expression to the <xref:System.Web.UI.WebControls.LinqDataSource> control at run time. The <xref:System.Web.UI.WebControls.LinqDataSource> control will apply the sort expression from the data-bound control after it applies the <xref:System.Web.UI.WebControls.LinqDataSource.OrderBy%2A> property. Therefore, the data is returned according to the sort expression from the data-bound control.  
   
@@ -1608,8 +1671,8 @@ The `LoadViewState` method is used to load the previously saved view state of th
 ## Examples  
  The following example returns data in reverse alphabetical order based on values in the `Category` property.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default4.aspx#4)]
- [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default4.aspx#4)]  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#4](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default4.aspx#4)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#4](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default4.aspx#4)]  
   
  ]]></format>
         </remarks>
@@ -1620,8 +1683,8 @@ The `LoadViewState` method is used to load the previously saved view state of th
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.ParameterCollection OrderByParameters" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSource.OrderByParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OrderByParameters As ParameterCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ OrderByParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.OrderByParameters : System.Web.UI.WebControls.ParameterCollection" Usage="System.Web.UI.WebControls.LinqDataSource.OrderByParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ OrderByParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1630,19 +1693,24 @@ The `LoadViewState` method is used to load the previously saved view state of th
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Data")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Data")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.MergableProperty(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.MergableProperty(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1666,8 +1734,8 @@ The `LoadViewState` method is used to load the previously saved view state of th
 ## Examples  
  The following example shows a <xref:System.Web.UI.WebControls.LinqDataSource> control with the <xref:System.Web.UI.WebControls.LinqDataSource.AutoGenerateOrderByClause%2A> property set to `true`. A parameter is included in the <xref:System.Web.UI.WebControls.LinqDataSource.OrderByParameters%2A> collection that orders the data based on the property name that a user selects from a <xref:System.Web.UI.WebControls.DropDownList> control.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default8.aspx#8)]
- [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default8.aspx#8)]  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#8](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default8.aspx#8)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#8](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default8.aspx#8)]  
   
  ]]></format>
         </remarks>
@@ -1678,8 +1746,8 @@ The `LoadViewState` method is used to load the previously saved view state of th
       <MemberSignature Language="ILAsm" Value=".property instance string OrderGroupsBy" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSource.OrderGroupsBy" />
       <MemberSignature Language="VB.NET" Value="Public Property OrderGroupsBy As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OrderGroupsBy { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.OrderGroupsBy : string with get, set" Usage="System.Web.UI.WebControls.LinqDataSource.OrderGroupsBy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OrderGroupsBy { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1688,10 +1756,12 @@ The `LoadViewState` method is used to load the previously saved view state of th
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Data")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Data")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1717,13 +1787,13 @@ The `LoadViewState` method is used to load the previously saved view state of th
 ## Examples  
  The following example shows how to group the data by using two properties, and how to sort the grouped data by using one of those properties. The data from a table named `Products` is grouped by using properties named `CategoryID` and `Discontinued`. The grouped data is sorted by the `CategoryID` property.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource.OrderGroupsBy#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.OrderGroupsBy/cs/Default.aspx#1)]
- [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource.OrderGroupsBy#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.OrderGroupsBy/vb/Default.aspx#1)]  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource.OrderGroupsBy#1](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.OrderGroupsBy/cs/Default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource.OrderGroupsBy#1](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.OrderGroupsBy/vb/Default.aspx#1)]  
   
  The following example shows how to group the data by using a property, and how to sort it based on the results of an aggregation function. The data from the `Products` table is grouped by using the `CategoryID` property. It is sorted based on the average of the `UnitPrice` property within each group.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource.OrderGroupsBy#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.OrderGroupsBy/cs/Default2.aspx#2)]
- [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource.OrderGroupsBy#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.OrderGroupsBy/vb/Default2.aspx#2)]  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource.OrderGroupsBy#2](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.OrderGroupsBy/cs/Default2.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource.OrderGroupsBy#2](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.OrderGroupsBy/vb/Default2.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -1734,8 +1804,8 @@ The `LoadViewState` method is used to load the previously saved view state of th
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.ParameterCollection OrderGroupsByParameters" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSource.OrderGroupsByParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OrderGroupsByParameters As ParameterCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ OrderGroupsByParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.OrderGroupsByParameters : System.Web.UI.WebControls.ParameterCollection" Usage="System.Web.UI.WebControls.LinqDataSource.OrderGroupsByParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ OrderGroupsByParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1744,19 +1814,24 @@ The `LoadViewState` method is used to load the previously saved view state of th
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Data")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Data")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.MergableProperty(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.MergableProperty(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1784,8 +1859,8 @@ The `LoadViewState` method is used to load the previously saved view state of th
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSource.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
       <MemberSignature Language="F#" Value="override this.SaveViewState : unit -&gt; obj" Usage="linqDataSource.SaveViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1799,8 +1874,8 @@ The `LoadViewState` method is used to load the previously saved view state of th
         <summary>Saves the current view state of the <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control.</summary>
         <returns>An object that contains the saved state of the <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
-        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178359(v=vs.110)">ASP.NET Data Access Overview</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/ms178359(v=vs.110)">ASP.NET Data Access Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -1808,8 +1883,8 @@ The `LoadViewState` method is used to load the previously saved view state of th
       <MemberSignature Language="ILAsm" Value=".property instance string Select" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSource.Select" />
       <MemberSignature Language="VB.NET" Value="Public Property Select As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Select { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Select : string with get, set" Usage="System.Web.UI.WebControls.LinqDataSource.Select" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Select { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1818,10 +1893,12 @@ The `LoadViewState` method is used to load the previously saved view state of th
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Data")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Data")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1847,7 +1924,7 @@ The `LoadViewState` method is used to load the previously saved view state of th
 |Select|Use of new|Example|  
 |------------|----------------|-------------|  
 |Single property.|`new` not needed.|`Select="Category"`|  
-|Multiple properties.|`new` needed.|`Select="new(Cateogry, Name)"`|  
+|Multiple properties.|`new` needed.|`Select="new(Category, Name)"`|  
 |Single or multiple properties that have an alias.|`new` needed.|`Select="new(Category As CategoryGroup)"`|  
   
  If you want to enable automatic data modifications, but you do not want to display all the properties from the data object, do not set the <xref:System.Web.UI.WebControls.LinqDataSource.Select%2A> property. Instead, manage the display through the data-bound control. When you use the <xref:System.Web.UI.WebControls.DetailsView> control or the <xref:System.Web.UI.WebControls.GridView> control, you must also set the <xref:System.Web.UI.WebControls.DetailsView.AutoGenerateRows%2A> or the <xref:System.Web.UI.WebControls.GridView.AutoGenerateColumns%2A> property to `false`. Any values that are not displayed in the data-bound control are stored in view state. They are passed unchanged to the data source when the data update is performed.  
@@ -1870,7 +1947,7 @@ The `LoadViewState` method is used to load the previously saved view state of th
   
 -   `All(` *condition* `)`  
   
- For more information, see [NIB: LinqDataSource Web Server Control Overview](https://msdn.microsoft.com/library/104cfc3f-7385-47d3-8a51-830dfa791136) and [How to: Group and Aggregate Data Using the LinqDataSource Control](https://msdn.microsoft.com/library/b922cf69-251f-4158-b405-ea960993a1af).  
+ For more information, see [LinqDataSource Web Server Control Overview](https://learn.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)) and [How to: Group and Aggregate Data Using the LinqDataSource Control](https://learn.microsoft.com/previous-versions/aspnet/bb470251(v=vs.100)).  
   
  When you group data, you can include `Key` and `It`, which are dynamically created properties, in the <xref:System.Web.UI.WebControls.LinqDataSource.Select%2A> property. The `Key` property refers to the values in the property or properties that were used to group the data. For example, if you group by a property named `Category`, the `Key` property will contain each unique value in the `Category` property. The `It` property refers to a collection of individual records in a grouping of data. You can iterate over the `It` property to retrieve the individual records that have been consolidated in the grouping operation. For example, if you group by a property named `Category`, the `It` property contains all the individual records that share a common value in the `Category` property.  
   
@@ -1881,13 +1958,13 @@ The `LoadViewState` method is used to load the previously saved view state of th
 ## Examples  
  The following example shows how to set the <xref:System.Web.UI.WebControls.LinqDataSource.Select%2A> property to a subset of properties in the data object.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#10](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default10.aspx#10)]
- [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default10.aspx#10)]  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#10](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default10.aspx#10)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#10](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default10.aspx#10)]  
   
  The following example shows how to retrieve values in a property that has been used to group data, and to retrieve the average for the grouped records. The `Key` keyword contains the property that has been used for grouping data. In this example, `Key` will contain the shared values from the `ProductCategory` property.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default3.aspx#3)]
- [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default3.aspx#3)]  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#3](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default3.aspx#3)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#3](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default3.aspx#3)]  
   
  ]]></format>
         </remarks>
@@ -1898,8 +1975,8 @@ The `LoadViewState` method is used to load the previously saved view state of th
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.UI.WebControls.LinqDataSourceStatusEventArgs&gt; Selected" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.LinqDataSource.Selected" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Selected As EventHandler(Of LinqDataSourceStatusEventArgs) " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::LinqDataSourceStatusEventArgs ^&gt; ^ Selected;" />
       <MemberSignature Language="F#" Value="member this.Selected : EventHandler&lt;System.Web.UI.WebControls.LinqDataSourceStatusEventArgs&gt; " Usage="member this.Selected : System.EventHandler&lt;System.Web.UI.WebControls.LinqDataSourceStatusEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::LinqDataSourceStatusEventArgs ^&gt; ^ Selected;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1908,7 +1985,8 @@ The `LoadViewState` method is used to load the previously saved view state of th
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Data")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Data")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1931,8 +2009,8 @@ The `LoadViewState` method is used to load the previously saved view state of th
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.UI.WebControls.LinqDataSourceSelectEventArgs&gt; Selecting" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.LinqDataSource.Selecting" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Selecting As EventHandler(Of LinqDataSourceSelectEventArgs) " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::LinqDataSourceSelectEventArgs ^&gt; ^ Selecting;" />
       <MemberSignature Language="F#" Value="member this.Selecting : EventHandler&lt;System.Web.UI.WebControls.LinqDataSourceSelectEventArgs&gt; " Usage="member this.Selecting : System.EventHandler&lt;System.Web.UI.WebControls.LinqDataSourceSelectEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::LinqDataSourceSelectEventArgs ^&gt; ^ Selecting;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1941,7 +2019,8 @@ The `LoadViewState` method is used to load the previously saved view state of th
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Data")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Data")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1976,8 +2055,8 @@ The `LoadViewState` method is used to load the previously saved view state of th
 ## Examples  
  The following example shows an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Selecting> event. The handler creates a query that retrieves values from an array of string values in the Web page.  
   
- [!code-csharp[System.Web.UI.WebControls.LinqDataSourceSelectEventArgs#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceSelectEventArgs/cs/Default3.aspx.cs#3)]
- [!code-vb[System.Web.UI.WebControls.LinqDataSourceSelectEventArgs#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceSelectEventArgs/vb/Default3.aspx.vb#3)]  
+ [!code-csharp[System.Web.UI.WebControls.LinqDataSourceSelectEventArgs#3](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceSelectEventArgs/cs/Default3.aspx.cs#3)]
+ [!code-vb[System.Web.UI.WebControls.LinqDataSourceSelectEventArgs#3](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceSelectEventArgs/vb/Default3.aspx.vb#3)]  
   
  The following example shows how to assign the <xref:System.Web.UI.WebControls.LinqDataSourceSelectEventArgs.Result%2A> property to the object that is returned from a method that represents a stored procedure.  
   
@@ -2007,8 +2086,8 @@ protected void LinqDataSource_Selecting(object sender,
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.ParameterCollection SelectParameters" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSource.SelectParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectParameters As ParameterCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ SelectParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.SelectParameters : System.Web.UI.WebControls.ParameterCollection" Usage="System.Web.UI.WebControls.LinqDataSource.SelectParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ SelectParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2017,19 +2096,24 @@ protected void LinqDataSource_Selecting(object sender,
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Data")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Data")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.MergableProperty(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.MergableProperty(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2055,8 +2139,8 @@ protected void LinqDataSource_Selecting(object sender,
 ## Examples  
  The following example shows how to use a user-supplied value to calculate a value in the returned data. The user can enter a value in the text box that represents the number of manufacturing days. That value is divided by a value from a database that represents the number of days to manufacture a product. The returned value indicates how many products can be manufactured during the specified number of days. The user's input is included in the Select command through the <xref:System.Web.UI.WebControls.LinqDataSource.SelectParameters%2A> collection.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource.SelectParameters#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.SelectParameters/cs/Default.aspx#1)]
- [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource.SelectParameters#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.SelectParameters/vb/Default.aspx#1)]  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource.SelectParameters#1](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.SelectParameters/cs/Default.aspx#1)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource.SelectParameters#1](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.SelectParameters/vb/Default.aspx#1)]  
   
  ]]></format>
         </remarks>
@@ -2067,8 +2151,8 @@ protected void LinqDataSource_Selecting(object sender,
       <MemberSignature Language="ILAsm" Value=".property instance bool StoreOriginalValuesInViewState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSource.StoreOriginalValuesInViewState" />
       <MemberSignature Language="VB.NET" Value="Public Property StoreOriginalValuesInViewState As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StoreOriginalValuesInViewState { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.StoreOriginalValuesInViewState : bool with get, set" Usage="System.Web.UI.WebControls.LinqDataSource.StoreOriginalValuesInViewState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StoreOriginalValuesInViewState { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2077,10 +2161,12 @@ protected void LinqDataSource_Selecting(object sender,
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Behavior")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Behavior")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2094,9 +2180,9 @@ protected void LinqDataSource_Selecting(object sender,
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, when update and delete operations have been enabled, the <xref:System.Web.UI.WebControls.LinqDataSource> control stores the original values for all the records in view state. The <xref:System.Web.UI.WebControls.LinqDataSource> control stores values for all primary keys and all properties not marked with `UpdateCheck.Never` in the `Column` attribute. You set the `UpdateCheck` property of the `Column` attribute in the [!INCLUDE[vs_ordesigner_short](~/includes/vs-ordesigner-short-md.md)].  
+ By default, when update and delete operations have been enabled, the <xref:System.Web.UI.WebControls.LinqDataSource> control stores the original values for all the records in view state. The <xref:System.Web.UI.WebControls.LinqDataSource> control stores values for all primary keys and all properties not marked with `UpdateCheck.Never` in the `Column` attribute. You set the `UpdateCheck` property of the `Column` attribute in the O/R Designer.  
   
- Before LINQ to SQL updates or deletes data, it checks the values in view state against the current values in the data source. If the values do not match, the data source record has changed. In that case, LINQ to SQL throws an exception and does not continue with the update or delete operation. For more information about LINQ to SQL, see [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655).  
+ Before LINQ to SQL updates or deletes data, it checks the values in view state against the current values in the data source. If the values do not match, the data source record has changed. In that case, LINQ to SQL throws an exception and does not continue with the update or delete operation. For more information about LINQ to SQL, see [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/).  
   
  Storing the original values in view state can cause the page size to become unnecessarily large and can expose sensitive data to a malicious user. You can disable storing values in view state by setting the <xref:System.Web.UI.WebControls.LinqDataSource.StoreOriginalValuesInViewState%2A> property to `false`. If you do this, you must provide your own way to make sure that the data has not changed. If you set the <xref:System.Web.UI.WebControls.LinqDataSource.StoreOriginalValuesInViewState%2A> property to `false`, the original values are not persisted in view state for the data-bound control. In that case, LINQ to SQL cannot verify the integrity of the data. LINQ to SQL will throw an exception that indicates a data conflict even if the data in the data source has not actually changed.  
   
@@ -2104,7 +2190,7 @@ protected void LinqDataSource_Selecting(object sender,
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655">LINQ to SQL</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/linq/">LINQ to SQL</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.DynamicData.IDynamicDataSource.ContextType">
@@ -2112,8 +2198,8 @@ protected void LinqDataSource_Selecting(object sender,
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type System.Web.DynamicData.IDynamicDataSource.ContextType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSource.System#Web#DynamicData#IDynamicDataSource#ContextType" />
       <MemberSignature Language="VB.NET" Value=" Property ContextType As Type Implements IDynamicDataSource.ContextType" />
+      <MemberSignature Language="F#" Value="member this.System.Web.DynamicData.IDynamicDataSource.ContextType : Type with get, set" Usage="System.Web.DynamicData.IDynamicDataSource.ContextType" />
       <MemberSignature Language="C++ CLI" Value="property Type ^ System::Web::DynamicData::IDynamicDataSource::ContextType { Type ^ get(); void set(Type ^ value); };" />
-      <MemberSignature Language="F#" Usage="System.Web.DynamicData.IDynamicDataSource.ContextType" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IDynamicDataSource.ContextType</InterfaceMember>
@@ -2144,8 +2230,8 @@ protected void LinqDataSource_Selecting(object sender,
       <MemberSignature Language="ILAsm" Value=".property instance string System.Web.DynamicData.IDynamicDataSource.EntitySetName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSource.System#Web#DynamicData#IDynamicDataSource#EntitySetName" />
       <MemberSignature Language="VB.NET" Value=" Property EntitySetName As String Implements IDynamicDataSource.EntitySetName" />
+      <MemberSignature Language="F#" Value="member this.System.Web.DynamicData.IDynamicDataSource.EntitySetName : string with get, set" Usage="System.Web.DynamicData.IDynamicDataSource.EntitySetName" />
       <MemberSignature Language="C++ CLI" Value="property System::String ^ System::Web::DynamicData::IDynamicDataSource::EntitySetName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="F#" Usage="System.Web.DynamicData.IDynamicDataSource.EntitySetName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IDynamicDataSource.EntitySetName</InterfaceMember>
@@ -2157,10 +2243,12 @@ protected void LinqDataSource_Selecting(object sender,
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2184,6 +2272,7 @@ protected void LinqDataSource_Selecting(object sender,
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.DynamicData.DynamicValidatorEventArgs&gt; System.Web.DynamicData.IDynamicDataSource.Exception" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.LinqDataSource.System#Web#DynamicData#IDynamicDataSource#Exception" />
       <MemberSignature Language="VB.NET" Value="Custom Event Exception As EventHandler(Of DynamicValidatorEventArgs) Implements System.Web.DynamicData.IDynamicDataSource" />
+      <MemberSignature Language="F#" Value="member this.System.Web.DynamicData.IDynamicDataSource.Exception : EventHandler&lt;System.Web.DynamicData.DynamicValidatorEventArgs&gt; " Usage="member this.System.Web.DynamicData.IDynamicDataSource.Exception : System.EventHandler&lt;System.Web.DynamicData.DynamicValidatorEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.Web.DynamicData.IDynamicDataSource.Exception</InterfaceMember>
@@ -2213,8 +2302,8 @@ protected void LinqDataSource_Selecting(object sender,
       <MemberSignature Language="ILAsm" Value=".property instance string TableName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSource.TableName" />
       <MemberSignature Language="VB.NET" Value="Public Property TableName As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TableName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.TableName : string with get, set" Usage="System.Web.UI.WebControls.LinqDataSource.TableName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TableName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2223,10 +2312,12 @@ protected void LinqDataSource_Selecting(object sender,
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Data")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Data")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2252,15 +2343,15 @@ protected void LinqDataSource_Selecting(object sender,
 ## Examples  
  The following example shows two <xref:System.Web.UI.WebControls.LinqDataSource> controls. In one <xref:System.Web.UI.WebControls.LinqDataSource> control, the <xref:System.Web.UI.WebControls.LinqDataSource.TableName%2A> property is set to a property in a class. That property returns an array of strings. In the other <xref:System.Web.UI.WebControls.LinqDataSource> control, the <xref:System.Web.UI.WebControls.LinqDataSource.TableName%2A> property is set to a property that represents a database table.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Overview/cs/Default.aspx#2)]
- [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Overview/vb/Default.aspx#2)]  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Overview#2](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Overview/cs/Default.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Overview#2](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Overview/vb/Default.aspx#2)]  
   
- The class named `ExampleDataContext` that represents the database table is not shown in this example. For this example to work, you must create this class by adding a LINQ to SQL class named Example.dbml and dragging a table named Movie onto the [!INCLUDE[vs_ordesigner_short](~/includes/vs-ordesigner-short-md.md)]. A class named `ExampleDataContext` with a property named `Movies` is generated.  
+ The class named `ExampleDataContext` that represents the database table is not shown in this example. For this example to work, you must create this class by adding a LINQ to SQL class named Example.dbml and dragging a table named Movie onto the O/R Designer. A class named `ExampleDataContext` with a property named `Movies` is generated.  
   
  The following example shows the class named `MovieLibrary` that is referenced in the <xref:System.Web.UI.WebControls.LinqDataSource> control.  
   
- [!code-csharp[System.Web.UI.WebControls.LinqDataSource_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Overview/cs/App_Code/MovieLibrary.cs#1)]
- [!code-vb[System.Web.UI.WebControls.LinqDataSource_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Overview/vb/App_Code/MovieLibrary.vb#1)]  
+ [!code-csharp[System.Web.UI.WebControls.LinqDataSource_Overview#1](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Overview/cs/App_Code/MovieLibrary.cs#1)]
+ [!code-vb[System.Web.UI.WebControls.LinqDataSource_Overview#1](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Overview/vb/App_Code/MovieLibrary.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -2271,8 +2362,8 @@ protected void LinqDataSource_Selecting(object sender,
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSource.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
       <MemberSignature Language="F#" Value="override this.TrackViewState : unit -&gt; unit" Usage="linqDataSource.TrackViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2285,8 +2376,8 @@ protected void LinqDataSource_Selecting(object sender,
       <Docs>
         <summary>Tracks view state changes to the <see cref="T:System.Web.UI.WebControls.LinqDataSource" /> control so that the changes can be stored in the <see cref="T:System.Web.UI.StateBag" /> object for the control.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
-        <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/ms178359(v=vs.110)">ASP.NET Data Access Overview</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100)">LinqDataSource Web Server Control Overview</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/ms178359(v=vs.110)">ASP.NET Data Access Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -2294,8 +2385,8 @@ protected void LinqDataSource_Selecting(object sender,
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Update(class System.Collections.IDictionary keys, class System.Collections.IDictionary values, class System.Collections.IDictionary oldValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSource.Update(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Function Update (keys As IDictionary, values As IDictionary, oldValues As IDictionary) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Update(System::Collections::IDictionary ^ keys, System::Collections::IDictionary ^ values, System::Collections::IDictionary ^ oldValues);" />
       <MemberSignature Language="F#" Value="member this.Update : System.Collections.IDictionary * System.Collections.IDictionary * System.Collections.IDictionary -&gt; int" Usage="linqDataSource.Update (keys, values, oldValues)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Update(System::Collections::IDictionary ^ keys, System::Collections::IDictionary ^ values, System::Collections::IDictionary ^ oldValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2327,13 +2418,13 @@ protected void LinqDataSource_Selecting(object sender,
 ## Examples  
  The following example shows how to programmatically update a record in the data source after the user clicks a button. The code passes a <xref:System.Collections.Specialized.ListDictionary> object that contains the key value, a <xref:System.Collections.Specialized.ListDictionary> object that contains the original values, and a <xref:System.Collections.Specialized.ListDictionary> object that contains the new values to the <xref:System.Web.UI.WebControls.LinqDataSource.Update%2A> method.  
   
- [!code-csharp[System.Web.UI.WebControls.LinqDataSource.Update#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Update/cs/Default2.aspx.cs#1)]
- [!code-vb[System.Web.UI.WebControls.LinqDataSource.Update#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Update/vb/Default3.aspx.vb#1)]  
+ [!code-csharp[System.Web.UI.WebControls.LinqDataSource.Update#1](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Update/cs/Default2.aspx.cs#1)]
+ [!code-vb[System.Web.UI.WebControls.LinqDataSource.Update#1](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Update/vb/Default3.aspx.vb#1)]  
   
  The following example shows the markup for the previous example.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource.Update#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Update/cs/Default2.aspx#2)]
- [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource.Update#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Update/vb/Default3.aspx#2)]  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource.Update#2](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Update/cs/Default2.aspx#2)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource.Update#2](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Update/vb/Default3.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -2344,8 +2435,8 @@ protected void LinqDataSource_Selecting(object sender,
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.UI.WebControls.LinqDataSourceStatusEventArgs&gt; Updated" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.LinqDataSource.Updated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Updated As EventHandler(Of LinqDataSourceStatusEventArgs) " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::LinqDataSourceStatusEventArgs ^&gt; ^ Updated;" />
       <MemberSignature Language="F#" Value="member this.Updated : EventHandler&lt;System.Web.UI.WebControls.LinqDataSourceStatusEventArgs&gt; " Usage="member this.Updated : System.EventHandler&lt;System.Web.UI.WebControls.LinqDataSourceStatusEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::LinqDataSourceStatusEventArgs ^&gt; ^ Updated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2354,7 +2445,8 @@ protected void LinqDataSource_Selecting(object sender,
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Data")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Data")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2377,8 +2469,8 @@ protected void LinqDataSource_Selecting(object sender,
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.ParameterCollection UpdateParameters" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSource.UpdateParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UpdateParameters As ParameterCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ UpdateParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.UpdateParameters : System.Web.UI.WebControls.ParameterCollection" Usage="System.Web.UI.WebControls.LinqDataSource.UpdateParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ UpdateParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2387,19 +2479,24 @@ protected void LinqDataSource_Selecting(object sender,
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Data")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Data")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.MergableProperty(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.MergableProperty(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2416,8 +2513,8 @@ protected void LinqDataSource_Selecting(object sender,
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs&gt; Updating" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.LinqDataSource.Updating" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Updating As EventHandler(Of LinqDataSourceUpdateEventArgs) " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::LinqDataSourceUpdateEventArgs ^&gt; ^ Updating;" />
       <MemberSignature Language="F#" Value="member this.Updating : EventHandler&lt;System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs&gt; " Usage="member this.Updating : System.EventHandler&lt;System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::LinqDataSourceUpdateEventArgs ^&gt; ^ Updating;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -2426,7 +2523,8 @@ protected void LinqDataSource_Selecting(object sender,
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Data")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Data")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2449,8 +2547,8 @@ protected void LinqDataSource_Selecting(object sender,
 ## Examples  
  The following example shows an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Updating> event. The code compares properties from the <xref:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.OriginalObject%2A> property and the <xref:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.NewObject%2A> property to see whether a value has changed. If the value has changed, a value of the <xref:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.NewObject%2A> property is set to `true`.  
   
- [!code-csharp[System.Web.UI.WebControls.LinqDataSource.Updating#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Updating/cs/Default.aspx.cs#1)]
- [!code-vb[System.Web.UI.WebControls.LinqDataSource.Updating#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Updating/vb/Default.aspx.vb#1)]  
+ [!code-csharp[System.Web.UI.WebControls.LinqDataSource.Updating#1](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Updating/cs/Default.aspx.cs#1)]
+ [!code-vb[System.Web.UI.WebControls.LinqDataSource.Updating#1](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Updating/vb/Default.aspx.vb#1)]  
   
  The following example shows an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Updating> event that retrieves validation exceptions.  
   
@@ -2514,8 +2612,8 @@ End Sub
       <MemberSignature Language="ILAsm" Value=".property instance string Where" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSource.Where" />
       <MemberSignature Language="VB.NET" Value="Public Property Where As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Where { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Where : string with get, set" Usage="System.Web.UI.WebControls.LinqDataSource.Where" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Where { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IDynamicDataSource.Where</InterfaceMember>
@@ -2527,10 +2625,12 @@ End Sub
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Data")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Data")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2583,7 +2683,7 @@ LinqDataSource1.Where = "Category = \"Sports\"";
 <asp:LinqDataSource ... Where='Category.CompareTo("Sports") >= 0' ... >  
 ```  
   
- You can also use other methods of the <xref:System.String> class, such as <xref:System.String.StartsWith%2A>, <xref:System.String.EndsWith%2A>, and <xref:System.String.Contains%2A>. For more information about how to compare strings, see [Comparing Strings](~/docs/standard/base-types/comparing.md). For more information about Where clause syntax, see [C# Operators](https://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) and [where clause](~/docs/csharp/language-reference/keywords/where-clause.md).  
+ You can also use other methods of the <xref:System.String> class, such as <xref:System.String.StartsWith%2A>, <xref:System.String.EndsWith%2A>, and <xref:System.String.Contains%2A>. For more information about how to compare strings, see [Comparing Strings](/dotnet/standard/base-types/comparing). For more information about Where clause syntax, see [C# Operators](/dotnet/csharp/language-reference/operators/) and [where clause](/dotnet/csharp/language-reference/keywords/where-clause).  
   
  In addition to filtering based on static values that you define when you create the Web page, you can filter based on dynamic values that are evaluated at run time. In that case, you include a named parameter in the <xref:System.Web.UI.WebControls.LinqDataSource.Where%2A> property that acts as a placeholder for the value. You then add a parameter that has the matching name to the <xref:System.Web.UI.WebControls.LinqDataSource.WhereParameters%2A> collection.  
   
@@ -2596,13 +2696,13 @@ LinqDataSource1.Where = "Category = \"Sports\"";
 ## Examples  
  The following example shows how to filter the data returned from a query based on a static condition.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default5.aspx#5)]
- [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default5.aspx#5)]  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#5](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default5.aspx#5)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#5](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default5.aspx#5)]  
   
  The following example shows how to filter the data based on a value that is provided by the user at run time. In this example a <xref:System.Web.UI.WebControls.DropDownList> control and a <xref:System.Web.UI.WebControls.GridView> control are displayed on the page. When the user selects one of the values in the <xref:System.Web.UI.WebControls.DropDownList> control, the <xref:System.Web.UI.WebControls.LinqDataSource> control selects from the `Products` table only rows that have `UserPrice` values equal to the selected value. The <xref:System.Web.UI.WebControls.GridView> control then displays the filtered data.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default6.aspx#6)]
- [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default6.aspx#6)]  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#6](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default6.aspx#6)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#6](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default6.aspx#6)]  
   
  ]]></format>
         </remarks>
@@ -2613,8 +2713,8 @@ LinqDataSource1.Where = "Category = \"Sports\"";
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.ParameterCollection WhereParameters" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSource.WhereParameters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WhereParameters As ParameterCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ WhereParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.WhereParameters : System.Web.UI.WebControls.ParameterCollection" Usage="System.Web.UI.WebControls.LinqDataSource.WhereParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ WhereParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.DynamicData.IDynamicDataSource.WhereParameters</InterfaceMember>
@@ -2626,19 +2726,24 @@ LinqDataSource1.Where = "Category = \"Sports\"";
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Category("Data")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Category("Data")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.MergableProperty(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.MergableProperty(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2662,8 +2767,8 @@ LinqDataSource1.Where = "Category = \"Sports\"";
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.LinqDataSource.WhereParameters%2A> collection to dynamically create the Where clause. The <xref:System.Web.UI.WebControls.LinqDataSource> control returns all the records with a value in the `Price` column that is greater than the value selected by the user in a <xref:System.Web.UI.WebControls.DropDownList> control.  
   
- [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default6.aspx#6)]
- [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default6.aspx#6)]  
+ [!code-aspx-csharp[System.Web.UI.WebControls.LinqDataSource_Simple#6](~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/cs/Default6.aspx#6)]
+ [!code-aspx-vb[System.Web.UI.WebControls.LinqDataSource_Simple#6](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource_Simple/vb/Default6.aspx#6)]  
   
  ]]></format>
         </remarks>

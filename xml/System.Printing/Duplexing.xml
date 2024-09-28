@@ -1,14 +1,19 @@
-﻿<Type Name="Duplexing" FullName="System.Printing.Duplexing">
+<Type Name="Duplexing" FullName="System.Printing.Duplexing">
   <TypeSignature Language="C#" Value="public enum Duplexing" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Duplexing extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Printing.Duplexing" />
   <TypeSignature Language="VB.NET" Value="Public Enum Duplexing" />
-  <TypeSignature Language="C++ CLI" Value="public enum class Duplexing" />
   <TypeSignature Language="F#" Value="type Duplexing = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class Duplexing" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -29,16 +34,16 @@
   
  You should never set a <xref:System.Printing.PrintTicket> property to **Unknown**. If some other <xref:System.Printing.PrintTicket> producing application has created a *PrintTicket document* that sets the duplexing feature to an unrecognized duplexing option (that is, an option that is not defined in the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397)), then a <xref:System.Printing.PrintTicket> object in your application that is constructed with that document will have **Unknown** as the value of the <xref:System.Printing.PrintTicket.Duplexing%2A> property.  
   
- Although the <xref:System.Printing.PrintTicket> and <xref:System.Printing.PrintCapabilities> classes cannot be inherited, you can extend the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397) to recognize print device features that are not accounted for in the <xref:System.Printing.PrintTicket> or <xref:System.Printing.PrintCapabilities> classes. For more information see [NOTINBUILD: How to: Extend the Print Schema and Create New Print System Classes](https://msdn.microsoft.com/library/a3600218-1ea5-478a-9853-6560464f2885).  
+ Although the <xref:System.Printing.PrintTicket> and <xref:System.Printing.PrintCapabilities> classes cannot be inherited, you can extend the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397) to recognize print device features that are not accounted for in the <xref:System.Printing.PrintTicket> or <xref:System.Printing.PrintCapabilities> classes. For more information see [How to: Extend the Print Schema and Create New Print System Classes](https://learn.microsoft.com/previous-versions/aa970573(v=vs.100)).  
   
    
   
 ## Examples  
  The following example shows how to test a printer's capabilities and configure the print job to take advantage of them. .  
   
- [!code-cpp[XpsCreate#PrinterCapabilities](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#printercapabilities)]
- [!code-csharp[XpsCreate#PrinterCapabilities](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#printercapabilities)]
- [!code-vb[XpsCreate#PrinterCapabilities](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#printercapabilities)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp" id="Snippetprintercapabilities":::
+ :::code language="csharp" source="~/snippets/csharp/System.Printing/Collation/Overview/XpsCreate.cs" id="Snippetprintercapabilities":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb" id="Snippetprintercapabilities":::  
   
  ]]></format>
     </remarks>
@@ -51,13 +56,18 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Duplexing OneSided = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.Duplexing.OneSided" />
       <MemberSignature Language="VB.NET" Value="OneSided" />
-      <MemberSignature Language="C++ CLI" Value="OneSided" />
       <MemberSignature Language="F#" Value="OneSided = 1" Usage="System.Printing.Duplexing.OneSided" />
+      <MemberSignature Language="C++ CLI" Value="OneSided" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.Duplexing</ReturnType>
@@ -72,13 +82,18 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Duplexing TwoSidedLongEdge = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.Duplexing.TwoSidedLongEdge" />
       <MemberSignature Language="VB.NET" Value="TwoSidedLongEdge" />
-      <MemberSignature Language="C++ CLI" Value="TwoSidedLongEdge" />
       <MemberSignature Language="F#" Value="TwoSidedLongEdge = 3" Usage="System.Printing.Duplexing.TwoSidedLongEdge" />
+      <MemberSignature Language="C++ CLI" Value="TwoSidedLongEdge" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.Duplexing</ReturnType>
@@ -93,13 +108,18 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Duplexing TwoSidedShortEdge = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.Duplexing.TwoSidedShortEdge" />
       <MemberSignature Language="VB.NET" Value="TwoSidedShortEdge" />
-      <MemberSignature Language="C++ CLI" Value="TwoSidedShortEdge" />
       <MemberSignature Language="F#" Value="TwoSidedShortEdge = 2" Usage="System.Printing.Duplexing.TwoSidedShortEdge" />
+      <MemberSignature Language="C++ CLI" Value="TwoSidedShortEdge" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.Duplexing</ReturnType>
@@ -114,20 +134,25 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Duplexing Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.Duplexing.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
-      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Printing.Duplexing.Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.Duplexing</ReturnType>
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The feature (whose options are represented by this enumeration) is set to an option not defined in the <see href="https://docs.microsoft.com/windows/desktop/printdocs/printschema">Print Schema</see>.</summary>
+        <summary>The feature (whose options are represented by this enumeration) is set to an option not defined in the <see href="https://learn.microsoft.com/windows/desktop/printdocs/printschema">Print Schema</see>.</summary>
       </Docs>
     </Member>
   </Members>

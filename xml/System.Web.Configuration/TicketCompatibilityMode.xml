@@ -1,10 +1,10 @@
-﻿<Type Name="TicketCompatibilityMode" FullName="System.Web.Configuration.TicketCompatibilityMode">
+<Type Name="TicketCompatibilityMode" FullName="System.Web.Configuration.TicketCompatibilityMode">
   <TypeSignature Language="C#" Value="public enum TicketCompatibilityMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TicketCompatibilityMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.TicketCompatibilityMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum TicketCompatibilityMode" />
-  <TypeSignature Language="C++ CLI" Value="public enum class TicketCompatibilityMode" />
   <TypeSignature Language="F#" Value="type TicketCompatibilityMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TicketCompatibilityMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,17 +18,15 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The ticket expiration date for ASP.NET forms authentication can be stored by using Coordinated Universal Time (UTC) or the local time. For compatibility between applications, and for compatibility between different versions of the .NET Framework, the ticket expiration time can be specified by using the `ticketCompatilityMode` attribute of the  element. The default value for the `ticketCompatibilityMode` attribute is Framework20.  
-  
-   
+ The ticket expiration date for ASP.NET forms authentication can be stored by using Coordinated Universal Time (UTC) or the local time. For compatibility between applications, and for compatibility between different versions of .NET Framework, the ticket expiration time can be specified by using the `ticketCompatibilityMode` attribute of the `forms` element. The default value for the `ticketCompatibilityMode` attribute is Framework20.
   
 ## Examples  
  The following example configures the forms authentication ticket expiration date as UTC time.  
   
-```  
+```xml
 <system.web>  
   <authentication mode="Forms">   
-    <forms ticketCompatilityMode="Framework40">  
+    <forms ticketCompatibilityMode="Framework40">  
     </forms>  
   </authentication>  
 </system.web>  
@@ -43,8 +41,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.TicketCompatibilityMode Framework20 = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.TicketCompatibilityMode.Framework20" />
       <MemberSignature Language="VB.NET" Value="Framework20" />
-      <MemberSignature Language="C++ CLI" Value="Framework20" />
       <MemberSignature Language="F#" Value="Framework20 = 0" Usage="System.Web.Configuration.TicketCompatibilityMode.Framework20" />
+      <MemberSignature Language="C++ CLI" Value="Framework20" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -63,8 +61,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.TicketCompatibilityMode Framework40 = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.TicketCompatibilityMode.Framework40" />
       <MemberSignature Language="VB.NET" Value="Framework40" />
-      <MemberSignature Language="C++ CLI" Value="Framework40" />
       <MemberSignature Language="F#" Value="Framework40 = 1" Usage="System.Web.Configuration.TicketCompatibilityMode.Framework40" />
+      <MemberSignature Language="C++ CLI" Value="Framework40" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

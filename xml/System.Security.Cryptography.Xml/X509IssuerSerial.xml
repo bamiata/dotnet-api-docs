@@ -1,16 +1,22 @@
-﻿<Type Name="X509IssuerSerial" FullName="System.Security.Cryptography.Xml.X509IssuerSerial">
+<Type Name="X509IssuerSerial" FullName="System.Security.Cryptography.Xml.X509IssuerSerial">
   <TypeSignature Language="C#" Value="public struct X509IssuerSerial" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit X509IssuerSerial extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.X509IssuerSerial" />
   <TypeSignature Language="VB.NET" Value="Public Structure X509IssuerSerial" />
-  <TypeSignature Language="C++ CLI" Value="public value class X509IssuerSerial" />
   <TypeSignature Language="F#" Value="type X509IssuerSerial = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class X509IssuerSerial" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
-    <AssemblyVersion>4.0.2.0</AssemblyVersion>
     <AssemblyVersion>4.0.3.0</AssemblyVersion>
     <AssemblyVersion>4.0.3.1</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
@@ -18,31 +24,44 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Security.Cryptography.Pkcs" FromVersion="9.0.0.0" To="System.Security" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Represents the &lt;<see langword="X509IssuerSerial" />&gt; element of an XML digital signature.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.X509IssuerSerial> structure represents the `<X509IssuerSerial`> element of an XML digital signature defined by the XML digital signature specification. The `<X509IssuerSerial`> element is the subelement of the <`X509Data`> element that contains an X.509v3 certificate issuer's distinguished name and serial number pair. The distinguished name and serial number pair help identify a specific X.509v3 certificate.  
+ The <xref:System.Security.Cryptography.Xml.X509IssuerSerial> structure represents the `<X509IssuerSerial>` element of an XML digital signature defined by the XML digital signature specification. The `<X509IssuerSerial>` element is the subelement of the `<X509Data>` element that contains an X.509v3 certificate issuer's distinguished name and serial number pair. The distinguished name and serial number pair help identify a specific X.509v3 certificate.  
   
  The issuer of an X.509 certificate is the name of the certification authority that issued the certificate. Certification authorities assign each certificate they issue a unique serial number for identification purposes.  
   
  Use the <xref:System.Security.Cryptography.Xml.X509IssuerSerial> structure to specify a certificate issuer's distinguished name and serial number pair when using the <xref:System.Security.Cryptography.Xml.KeyInfoX509Data> class.  You can add an <xref:System.Security.Cryptography.Xml.X509IssuerSerial> structure to the <xref:System.Security.Cryptography.Xml.KeyInfoX509Data> class using the <xref:System.Security.Cryptography.Xml.KeyInfoX509Data.IssuerSerials%2A> property.  Alternatively, you can add string values that represent the X.509 certificate issuer's distinguished name and serial number pair using the <xref:System.Security.Cryptography.Xml.KeyInfoX509Data.AddIssuerSerial%2A> method.  
   
- For more information about the `<X509IssuerSerial`> element, see the World Wide Web Consortium (W3C) specification at www.w3.org/TR/xmldsig-core/.  
+ For more information about the `<X509IssuerSerial>` element, see the [World Wide Web Consortium (W3C) specification](https://www.w3.org/TR/xmldsig-core/).  
   
    
   
 ## Examples  
  The following code example demonstrates how to sign and verify an XML document using an X.509 certificate from a certificate store.  This example saves key information to the signed document using the <xref:System.Security.Cryptography.Xml.X509IssuerSerial> object.  
   
- [!code-csharp[System.Security.Cryptography.Xml.X509IssuerSerial#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.Xml.X509IssuerSerial/cs/sample.cs#1)]
- [!code-vb[System.Security.Cryptography.Xml.X509IssuerSerial#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.Xml.X509IssuerSerial/vb/sample.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography.Xml/X509IssuerSerial/Overview/sample.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.Xml.X509IssuerSerial/vb/sample.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -53,15 +72,19 @@
       <MemberSignature Language="ILAsm" Value=".property instance string IssuerName" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.X509IssuerSerial.IssuerName" />
       <MemberSignature Language="VB.NET" Value="Public Property IssuerName As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IssuerName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.IssuerName : string with get, set" Usage="System.Security.Cryptography.Xml.X509IssuerSerial.IssuerName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IssuerName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -69,6 +92,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netstandard-2.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -79,17 +108,17 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.X509IssuerSerial.IssuerName%2A> property represents an X.509 certificate issuer's distinguished name specified in the `<X509IssuerSerial`> element.  
+ The <xref:System.Security.Cryptography.Xml.X509IssuerSerial.IssuerName%2A> property represents an X.509 certificate issuer's distinguished name specified in the `<X509IssuerSerial>` element.  
   
- For more information about the `<X509IssuerSerial`> element, see the World Wide Web Consortium (W3C) specification at www.w3.org/TR/xmldsig-core/.  
+ For more information about the `<X509IssuerSerial>` element, see the [World Wide Web Consortium (W3C) specification](https://www.w3.org/TR/xmldsig-core/).  
   
    
   
 ## Examples  
  The following code example demonstrates how to sign and verify an XML document using an X.509 certificate from a certificate store.  This example saves key information to the signed document using the <xref:System.Security.Cryptography.Xml.X509IssuerSerial> object.  
   
- [!code-csharp[System.Security.Cryptography.Xml.X509IssuerSerial#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.Xml.X509IssuerSerial/cs/sample.cs#1)]
- [!code-vb[System.Security.Cryptography.Xml.X509IssuerSerial#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.Xml.X509IssuerSerial/vb/sample.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography.Xml/X509IssuerSerial/Overview/sample.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.Xml.X509IssuerSerial/vb/sample.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -100,15 +129,19 @@
       <MemberSignature Language="ILAsm" Value=".property instance string SerialNumber" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.X509IssuerSerial.SerialNumber" />
       <MemberSignature Language="VB.NET" Value="Public Property SerialNumber As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SerialNumber { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.SerialNumber : string with get, set" Usage="System.Security.Cryptography.Xml.X509IssuerSerial.SerialNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SerialNumber { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -116,6 +149,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netstandard-2.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -126,17 +165,17 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.X509IssuerSerial.SerialNumber%2A> property represents an X.509 certificate issuer's serial number specified in the `<X509IssuerSerial`> element.  
+ The <xref:System.Security.Cryptography.Xml.X509IssuerSerial.SerialNumber%2A> property represents an X.509 certificate issuer's serial number specified in the `<X509IssuerSerial>` element.  
   
- For more information about the `<X509IssuerSerial`> element, see the World Wide Web Consortium (W3C) specification at www.w3.org/TR/xmldsig-core/.  
+ For more information about the `<X509IssuerSerial>` element, see the [World Wide Web Consortium (W3C) specification](https://www.w3.org/TR/xmldsig-core/).  
   
    
   
 ## Examples  
  The following code example demonstrates how to sign and verify an XML document using an X.509 certificate from a certificate store.  This example saves key information to the signed document using the <xref:System.Security.Cryptography.Xml.X509IssuerSerial> object.  
   
- [!code-csharp[System.Security.Cryptography.Xml.X509IssuerSerial#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.Xml.X509IssuerSerial/cs/sample.cs#1)]
- [!code-vb[System.Security.Cryptography.Xml.X509IssuerSerial#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.Xml.X509IssuerSerial/vb/sample.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography.Xml/X509IssuerSerial/Overview/sample.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.Xml.X509IssuerSerial/vb/sample.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>

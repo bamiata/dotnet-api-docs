@@ -1,10 +1,11 @@
-﻿<Type Name="IRelDecryptor" FullName="System.Security.Cryptography.Xml.IRelDecryptor">
+<Type Name="IRelDecryptor" FullName="System.Security.Cryptography.Xml.IRelDecryptor">
   <TypeSignature Language="C#" Value="public interface IRelDecryptor" />
-  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRelDecryptor" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IRelDecryptor" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netstandard-2.0;windowsdesktop-8.0;windowsdesktop-9.0" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.IRelDecryptor" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRelDecryptor" />
-  <TypeSignature Language="C++ CLI" Value="public interface class IRelDecryptor" />
   <TypeSignature Language="F#" Value="type IRelDecryptor = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IRelDecryptor" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRelDecryptor" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -12,10 +13,25 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+    <AssemblyVersion>4.0.3.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Security.Cryptography.Xml" FromVersion="9.0.0.0" To="System.Security" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Defines methods that decrypt an XrML <see langword="&lt;encryptedGrant&gt;" /> element.</summary>
     <remarks>
@@ -29,9 +45,9 @@
 ## Examples  
  The following code example shows how to validate an XML digital signature using the <xref:System.Security.Cryptography.Xml.IRelDecryptor> interface and the <xref:System.Security.Cryptography.Xml.XmlLicenseTransform> class.  
   
- [!code-cpp[Cryptography.XML.XmlLicenseTransform#2](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.XML.XmlLicenseTransform/cpp/sample.cpp#2)]
- [!code-csharp[Cryptography.XML.XmlLicenseTransform#2](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.XmlLicenseTransform/CS/sample.cs#2)]
- [!code-vb[Cryptography.XML.XmlLicenseTransform#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.XmlLicenseTransform/VB/sample.vb#2)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/Cryptography.XML.XmlLicenseTransform/cpp/sample.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography.Xml/IRelDecryptor/Overview/sample.cs" id="Snippet2":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.XmlLicenseTransform/VB/sample.vb" id="Snippet2":::  
   
  ]]></format>
     </remarks>
@@ -41,8 +57,9 @@
       <MemberSignature Language="C#" Value="public System.IO.Stream Decrypt (System.Security.Cryptography.Xml.EncryptionMethod encryptionMethod, System.Security.Cryptography.Xml.KeyInfo keyInfo, System.IO.Stream toDecrypt);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream Decrypt(class System.Security.Cryptography.Xml.EncryptionMethod encryptionMethod, class System.Security.Cryptography.Xml.KeyInfo keyInfo, class System.IO.Stream toDecrypt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.IRelDecryptor.Decrypt(System.Security.Cryptography.Xml.EncryptionMethod,System.Security.Cryptography.Xml.KeyInfo,System.IO.Stream)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ Decrypt(System::Security::Cryptography::Xml::EncryptionMethod ^ encryptionMethod, System::Security::Cryptography::Xml::KeyInfo ^ keyInfo, System::IO::Stream ^ toDecrypt);" />
+      <MemberSignature Language="VB.NET" Value="Public Function Decrypt (encryptionMethod As EncryptionMethod, keyInfo As KeyInfo, toDecrypt As Stream) As Stream" />
       <MemberSignature Language="F#" Value="abstract member Decrypt : System.Security.Cryptography.Xml.EncryptionMethod * System.Security.Cryptography.Xml.KeyInfo * System.IO.Stream -&gt; System.IO.Stream" Usage="iRelDecryptor.Decrypt (encryptionMethod, keyInfo, toDecrypt)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ Decrypt(System::Security::Cryptography::Xml::EncryptionMethod ^ encryptionMethod, System::Security::Cryptography::Xml::KeyInfo ^ keyInfo, System::IO::Stream ^ toDecrypt);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -51,8 +68,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>

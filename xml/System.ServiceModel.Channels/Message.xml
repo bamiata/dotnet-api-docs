@@ -1,10 +1,10 @@
-﻿<Type Name="Message" FullName="System.ServiceModel.Channels.Message">
+<Type Name="Message" FullName="System.ServiceModel.Channels.Message">
   <TypeSignature Language="C#" Value="public abstract class Message : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Message extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.Message" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Message&#xA;Implements IDisposable" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Message abstract : IDisposable" />
   <TypeSignature Language="F#" Value="type Message = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Message abstract : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -13,10 +13,26 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
-    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+    <AssemblyVersion>4.6.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.9.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.2.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Private.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.ServiceModel" FromVersion="4.0.0.0" To="System.ServiceModel.Primitives" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -28,45 +44,45 @@
   <Docs>
     <summary>Represents the unit of communication between endpoints in a distributed environment.</summary>
     <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ServiceModel.Channels.Message> class provides a means of communicating arbitrary information between a sender and a receiver on a network. It can be used to relay information, suggest or demand a course of action, or request data.  
-  
- The structure of a <xref:System.ServiceModel.Channels.Message> object represents a SOAP envelope. It consists of two distinct parts: the message's body and an optional collection of headers, represented by the <xref:System.ServiceModel.Channels.Message.Headers%2A> class. The message content is application-defined data sent from a sender to a receiver. The message headers enable system and application extensibility to meet the changing requirements, because you can define code to manipulate and respond to specific headers. You can also define your own headers. Message headers are serialized or deserialized along with the contents of the message.  
-  
- Messages are received and sent in particular formats. Support is provided for two formats: the standard text-based XML format and a binary-based XML format. The <xref:System.ServiceModel.Channels.Message> object can be used to represent both SOAP 1.1 and SOAP 1.2 envelopes. Note that an instance of <xref:System.ServiceModel.Channels.Message> is fixed upon creation and is bound to a specific SOAP version. The <xref:System.ServiceModel.Channels.Message.Version%2A> property represents the SOAP version of the message.  
-  
- A <xref:System.ServiceModel.Channels.Message> object can be serialized to an external store by using the <xref:System.ServiceModel.Channels.Message.WriteMessage%2A> method. Properties of the message can also be serialized, but they have to be individually identified and serialized separately. Deserializing a message to create an in-memory <xref:System.ServiceModel.Channels.Message> object can be done using <xref:System.ServiceModel.Channels.Message.CreateMessage%2A>. Properties must also be deserialized individually and manually added to the property collection for the specific <xref:System.ServiceModel.Channels.Message> instance.  
-  
- The size of a <xref:System.ServiceModel.Channels.Message> object is fixed to the size of data it is transmitting. Every body is modeled as an instance of <xref:System.Xml.XmlReader>, with no predefined limit on the size of the stream that the <xref:System.Xml.XmlReader> instance is wrapping. However, specific channel providers can have a limit on the size of messages that they process.  
-  
- A <xref:System.ServiceModel.Channels.Message> can be annotated with useful information generated by an entity that has examined and processed the message. This functionality is provided by the <xref:System.ServiceModel.Channels.Message.Headers%2A> and <xref:System.ServiceModel.Channels.Message.Properties%2A> properties. The <xref:System.ServiceModel.Channels.Message.Headers%2A> collection represents the set of SOAP headers on the message.  
-  
- The <xref:System.ServiceModel.Channels.Message.Properties%2A> property represents the set of processing-level annotations on the message. Because information in headers is transmitted on the wire, an entity that examines a header must support the underlying version(s) of the protocols used by the header. However, properties provide a more version-independent way of annotating a message.  
-  
- To create a <xref:System.ServiceModel.Channels.Message> instance, use one of the <xref:System.ServiceModel.Channels.Message.CreateMessage%2A> methods.  
-  
- It is recommended that a consumer of a message always call <xref:System.ServiceModel.Channels.Message.Close%2A> when the consumer is finished accessing the contents of the message. This action frees finite system resources (for example, sockets, named pipes) that are tied to the lifetime of the message.  
-  
- Special note for Managed C++ users deriving from this class:  
-  
--   Put your cleanup code in (On)(Begin)Close (and/or OnAbort), not in a destructor.  
-  
--   Avoid destructors: they cause the compiler to auto-generate <xref:System.IDisposable>.  
-  
--   Avoid non-reference members: they can cause the compiler to auto-generate <xref:System.IDisposable>.  
-  
--   Avoid finalizers; but if you include one, suppress the build warning and call <xref:System.GC.SuppressFinalize%28System.Object%29> and the finalizer itself from (On)(Begin)Close (and/or OnAbort) to emulate what would have been the auto-generated <xref:System.IDisposable> behavior.  
-  
-   
-  
-## Examples  
- The following code example shows a client that uses the channel factory to send a message and read the reply.  
-  
- [!code-csharp[Message#0](~/samples/snippets/csharp/VS_Snippets_CFX/message/cs/client.cs#0)]
- [!code-vb[Message#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/message/vb/client.vb#0)]  
-  
+      <format type="text/markdown"><![CDATA[
+
+## Remarks
+ The <xref:System.ServiceModel.Channels.Message> class provides a means of communicating arbitrary information between a sender and a receiver on a network. It can be used to relay information, suggest or demand a course of action, or request data.
+
+ The structure of a <xref:System.ServiceModel.Channels.Message> object represents a SOAP envelope. It consists of two distinct parts: the message's body and an optional collection of headers, represented by the <xref:System.ServiceModel.Channels.Message.Headers%2A> class. The message content is application-defined data sent from a sender to a receiver. The message headers enable system and application extensibility to meet the changing requirements, because you can define code to manipulate and respond to specific headers. You can also define your own headers. Message headers are serialized or deserialized along with the contents of the message.
+
+ Messages are received and sent in particular formats. Support is provided for two formats: the standard text-based XML format and a binary-based XML format. The <xref:System.ServiceModel.Channels.Message> object can be used to represent both SOAP 1.1 and SOAP 1.2 envelopes. Note that an instance of <xref:System.ServiceModel.Channels.Message> is fixed upon creation and is bound to a specific SOAP version. The <xref:System.ServiceModel.Channels.Message.Version%2A> property represents the SOAP version of the message.
+
+ A <xref:System.ServiceModel.Channels.Message> object can be serialized to an external store by using the <xref:System.ServiceModel.Channels.Message.WriteMessage%2A> method. Properties of the message can also be serialized, but they have to be individually identified and serialized separately. Deserializing a message to create an in-memory <xref:System.ServiceModel.Channels.Message> object can be done using <xref:System.ServiceModel.Channels.Message.CreateMessage%2A>. Properties must also be deserialized individually and manually added to the property collection for the specific <xref:System.ServiceModel.Channels.Message> instance.
+
+ The size of a <xref:System.ServiceModel.Channels.Message> object is fixed to the size of data it is transmitting. Every body is modeled as an instance of <xref:System.Xml.XmlReader>, with no predefined limit on the size of the stream that the <xref:System.Xml.XmlReader> instance is wrapping. However, specific channel providers can have a limit on the size of messages that they process.
+
+ A <xref:System.ServiceModel.Channels.Message> can be annotated with useful information generated by an entity that has examined and processed the message. This functionality is provided by the <xref:System.ServiceModel.Channels.Message.Headers%2A> and <xref:System.ServiceModel.Channels.Message.Properties%2A> properties. The <xref:System.ServiceModel.Channels.Message.Headers%2A> collection represents the set of SOAP headers on the message.
+
+ The <xref:System.ServiceModel.Channels.Message.Properties%2A> property represents the set of processing-level annotations on the message. Because information in headers is transmitted on the wire, an entity that examines a header must support the underlying version(s) of the protocols used by the header. However, properties provide a more version-independent way of annotating a message.
+
+ To create a <xref:System.ServiceModel.Channels.Message> instance, use one of the <xref:System.ServiceModel.Channels.Message.CreateMessage%2A> methods.
+
+ It is recommended that a consumer of a message always call <xref:System.ServiceModel.Channels.Message.Close%2A> when the consumer is finished accessing the contents of the message. This action frees finite system resources (for example, sockets, named pipes) that are tied to the lifetime of the message.
+
+ Special note for Managed C++ users deriving from this class:
+
+-   Put your cleanup code in (On)(Begin)Close (and/or OnAbort), not in a destructor.
+
+-   Avoid destructors: they cause the compiler to auto-generate <xref:System.IDisposable>.
+
+-   Avoid non-reference members: they can cause the compiler to auto-generate <xref:System.IDisposable>.
+
+-   Avoid finalizers; but if you include one, suppress the build warning and call <xref:System.GC.SuppressFinalize%28System.Object%29> and the finalizer itself from (On)(Begin)Close (and/or OnAbort) to emulate what would have been the auto-generated <xref:System.IDisposable> behavior.
+
+
+
+## Examples
+ The following code example shows a client that uses the channel factory to send a message and read the reply.
+
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/message/cs/client.cs" id="Snippet0":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/message/vb/client.vb" id="Snippet0":::
+
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
@@ -89,13 +105,19 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -109,8 +131,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginWriteBodyContents(class System.Xml.XmlDictionaryWriter writer, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.BeginWriteBodyContents(System.Xml.XmlDictionaryWriter,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginWriteBodyContents (writer As XmlDictionaryWriter, callback As AsyncCallback, state As Object) As IAsyncResult" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginWriteBodyContents(System::Xml::XmlDictionaryWriter ^ writer, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberSignature Language="F#" Value="member this.BeginWriteBodyContents : System.Xml.XmlDictionaryWriter * AsyncCallback * obj -&gt; IAsyncResult" Usage="message.BeginWriteBodyContents (writer, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginWriteBodyContents(System::Xml::XmlDictionaryWriter ^ writer, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -118,14 +140,19 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
-        <Parameter Name="callback" Type="System.AsyncCallback" />
-        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
+        <Parameter Name="callback" Type="System.AsyncCallback" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
       </Parameters>
       <Docs>
         <param name="writer">The writer used to serialize the message body.</param>
@@ -141,8 +168,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginWriteMessage(class System.Xml.XmlDictionaryWriter writer, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.BeginWriteMessage(System.Xml.XmlDictionaryWriter,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginWriteMessage (writer As XmlDictionaryWriter, callback As AsyncCallback, state As Object) As IAsyncResult" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginWriteMessage(System::Xml::XmlDictionaryWriter ^ writer, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberSignature Language="F#" Value="member this.BeginWriteMessage : System.Xml.XmlDictionaryWriter * AsyncCallback * obj -&gt; IAsyncResult" Usage="message.BeginWriteMessage (writer, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginWriteMessage(System::Xml::XmlDictionaryWriter ^ writer, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -150,14 +177,19 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
-        <Parameter Name="callback" Type="System.AsyncCallback" />
-        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
+        <Parameter Name="callback" Type="System.AsyncCallback" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
       </Parameters>
       <Docs>
         <param name="writer">The writer used to serialize the entire message.</param>
@@ -173,8 +205,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
       <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="message.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -184,9 +216,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -195,21 +232,21 @@
       <Docs>
         <summary>Closes the <see cref="T:System.ServiceModel.Channels.Message" /> and releases any resources.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ServiceModel.Channels.Message> does have a finalizer, which causes <xref:System.ServiceModel.Channels.Message.Close%2A> to be called for you when the message is garbage-collected. This is non-optimal, as the .NET Framework's Garbage Collection (GC) mechanism does not necessarily run when you run out of system resources other than memory. For this reason, you should always call this method when finished with the contents of the message. The <xref:System.ServiceModel.Channels.Message.Close%2A> method is a synonym for <xref:System.IDisposable.Dispose%2A> (which <xref:System.ServiceModel.Channels.Message> also implements). The message also disposes the object that was used to construct the body when it is disposed.  
-  
- An <xref:System.ObjectDisposedException> is thrown if you call any method or access any properties of the message once it is closed. Calling any method or accessing any properties of other objects related to the message once it is closed, (such as message header collection, message property values, or <xref:System.Xml.XmlReader> instances returned for the body or for a header) has undefined behavior.  
-  
-   
-  
-## Examples  
- The following code example shows how to create a message, send it to a service and receive a response message. The response message content is displayed and then the message is closed.  
-  
- [!code-csharp[Message#0](~/samples/snippets/csharp/VS_Snippets_CFX/message/cs/client.cs#0)]
- [!code-vb[Message#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/message/vb/client.vb#0)]  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ The <xref:System.ServiceModel.Channels.Message> does have a finalizer, which causes <xref:System.ServiceModel.Channels.Message.Close%2A> to be called for you when the message is garbage-collected. This is non-optimal, as the .NET Framework's Garbage Collection (GC) mechanism does not necessarily run when you run out of system resources other than memory. For this reason, you should always call this method when finished with the contents of the message. The <xref:System.ServiceModel.Channels.Message.Close%2A> method is a synonym for <xref:System.IDisposable.Dispose%2A> (which <xref:System.ServiceModel.Channels.Message> also implements). The message also disposes the object that was used to construct the body when it is disposed.
+
+ An <xref:System.ObjectDisposedException> is thrown if you call any method or access any properties of the message once it is closed. Calling any method or accessing any properties of other objects related to the message once it is closed, (such as message header collection, message property values, or <xref:System.Xml.XmlReader> instances returned for the body or for a header) has undefined behavior.
+
+
+
+## Examples
+ The following code example shows how to create a message, send it to a service and receive a response message. The response message content is displayed and then the message is closed.
+
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/message/cs/client.cs" id="Snippet0":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/message/vb/client.vb" id="Snippet0":::
+
  ]]></format>
         </remarks>
       </Docs>
@@ -219,8 +256,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Channels.MessageBuffer CreateBufferedCopy(int32 maxBufferSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.CreateBufferedCopy(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateBufferedCopy (maxBufferSize As Integer) As MessageBuffer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::MessageBuffer ^ CreateBufferedCopy(int maxBufferSize);" />
       <MemberSignature Language="F#" Value="member this.CreateBufferedCopy : int -&gt; System.ServiceModel.Channels.MessageBuffer" Usage="message.CreateBufferedCopy maxBufferSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::MessageBuffer ^ CreateBufferedCopy(int maxBufferSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -230,9 +267,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageBuffer</ReturnType>
@@ -245,14 +287,14 @@
         <summary>Stores an entire <see cref="T:System.ServiceModel.Channels.Message" /> into a memory buffer for future access.</summary>
         <returns>A newly created <see cref="T:System.ServiceModel.Channels.MessageBuffer" /> object.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The body of a <xref:System.ServiceModel.Channels.Message> instance can only be accessed or written once. If you want to access a <xref:System.ServiceModel.Channels.Message> instance more than once, you should use the <xref:System.ServiceModel.Channels.MessageBuffer> class to completely store an entire <xref:System.ServiceModel.Channels.Message> instance into memory. A <xref:System.ServiceModel.Channels.MessageBuffer> instance is constructed by calling <xref:System.ServiceModel.Channels.Message.CreateBufferedCopy%2A> of a <xref:System.ServiceModel.Channels.Message> instance.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ The body of a <xref:System.ServiceModel.Channels.Message> instance can only be accessed or written once. If you want to access a <xref:System.ServiceModel.Channels.Message> instance more than once, you should use the <xref:System.ServiceModel.Channels.MessageBuffer> class to completely store an entire <xref:System.ServiceModel.Channels.Message> instance into memory. A <xref:System.ServiceModel.Channels.MessageBuffer> instance is constructed by calling <xref:System.ServiceModel.Channels.Message.CreateBufferedCopy%2A> of a <xref:System.ServiceModel.Channels.Message> instance.
+
 > [!NOTE]
->  If <xref:System.ServiceModel.Channels.Message.Version%2A> is equal to <xref:System.ServiceModel.Channels.MessageVersion.None%2A>, this method only stores the body of the message, not the entire message into the memory buffer.  
-  
+>  If <xref:System.ServiceModel.Channels.Message.Version%2A> is equal to <xref:System.ServiceModel.Channels.MessageVersion.None%2A>, this method only stores the body of the message, not the entire message into the memory buffer.
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -270,21 +312,21 @@
       <Docs>
         <summary>Creates a message.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used to create a new copy of a message ready for sending.  
-  
- When working with JSON messages use the <xref:System.ServiceModel.Channels.Message.CreateMessage%28System.ServiceModel.Channels.MessageVersion%2CSystem.String%2CSystem.Object%2CSystem.Runtime.Serialization.XmlObjectSerializer%29> method, the <xref:System.ServiceModel.Channels.Message.CreateMessage%28System.ServiceModel.Channels.MessageVersion%2CSystem.String%2CSystem.Object%29> method does not work with JSON messages.  
-  
-   
-  
-## Examples  
- The following code example shows a client that uses the channel factory to send a message and read the reply.  
-  
- [!code-csharp[Message#0](~/samples/snippets/csharp/VS_Snippets_CFX/message/cs/client.cs#0)]
- [!code-vb[Message#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/message/vb/client.vb#0)]  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ This method is used to create a new copy of a message ready for sending.
+
+ When working with JSON messages use the <xref:System.ServiceModel.Channels.Message.CreateMessage%28System.ServiceModel.Channels.MessageVersion%2CSystem.String%2CSystem.Object%2CSystem.Runtime.Serialization.XmlObjectSerializer%29> method, the <xref:System.ServiceModel.Channels.Message.CreateMessage%28System.ServiceModel.Channels.MessageVersion%2CSystem.String%2CSystem.Object%29> method does not work with JSON messages.
+
+
+
+## Examples
+ The following code example shows a client that uses the channel factory to send a message and read the reply.
+
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/message/cs/client.cs" id="Snippet0":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/message/vb/client.vb" id="Snippet0":::
+
  ]]></format>
         </remarks>
       </Docs>
@@ -294,8 +336,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message CreateMessage(class System.ServiceModel.Channels.MessageVersion version, string action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.CreateMessage(System.ServiceModel.Channels.MessageVersion,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMessage (version As MessageVersion, action As String) As Message" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::ServiceModel::Channels::MessageVersion ^ version, System::String ^ action);" />
       <MemberSignature Language="F#" Value="static member CreateMessage : System.ServiceModel.Channels.MessageVersion * string -&gt; System.ServiceModel.Channels.Message" Usage="System.ServiceModel.Channels.Message.CreateMessage (version, action)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::ServiceModel::Channels::MessageVersion ^ version, System::String ^ action);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -305,9 +347,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
@@ -322,11 +369,11 @@
         <summary>Creates a message that contains a version and an action.</summary>
         <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object for the message created.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This static method is used to create a new copy of message ready for sending.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ This static method is used to create a new copy of message ready for sending.
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -338,25 +385,29 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message CreateMessage(class System.ServiceModel.Channels.MessageVersion version, class System.ServiceModel.Channels.MessageFault fault, string action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.CreateMessage(System.ServiceModel.Channels.MessageVersion,System.ServiceModel.Channels.MessageFault,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMessage (version As MessageVersion, fault As MessageFault, action As String) As Message" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::ServiceModel::Channels::MessageVersion ^ version, System::ServiceModel::Channels::MessageFault ^ fault, System::String ^ action);" />
       <MemberSignature Language="F#" Value="static member CreateMessage : System.ServiceModel.Channels.MessageVersion * System.ServiceModel.Channels.MessageFault * string -&gt; System.ServiceModel.Channels.Message" Usage="System.ServiceModel.Channels.Message.CreateMessage (version, fault, action)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::ServiceModel::Channels::MessageVersion ^ version, System::ServiceModel::Channels::MessageFault ^ fault, System::String ^ action);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="version" Type="System.ServiceModel.Channels.MessageVersion" />
-        <Parameter Name="fault" Type="System.ServiceModel.Channels.MessageFault" />
-        <Parameter Name="action" Type="System.String" />
+        <Parameter Name="version" Type="System.ServiceModel.Channels.MessageVersion" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
+        <Parameter Name="fault" Type="System.ServiceModel.Channels.MessageFault" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
+        <Parameter Name="action" Type="System.String" Index="2" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
       </Parameters>
       <Docs>
         <param name="version">A <see cref="T:System.ServiceModel.Channels.MessageVersion" /> object that specifies the SOAP version to use for the message.</param>
@@ -365,11 +416,11 @@
         <summary>Creates a message that contains a SOAP fault, a version and an action.</summary>
         <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object for the message created.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This static method is used to create a new copy of message ready for sending.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ This static method is used to create a new copy of message ready for sending.
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -381,8 +432,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message CreateMessage(class System.ServiceModel.Channels.MessageVersion version, string action, object body) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.CreateMessage(System.ServiceModel.Channels.MessageVersion,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMessage (version As MessageVersion, action As String, body As Object) As Message" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::ServiceModel::Channels::MessageVersion ^ version, System::String ^ action, System::Object ^ body);" />
       <MemberSignature Language="F#" Value="static member CreateMessage : System.ServiceModel.Channels.MessageVersion * string * obj -&gt; System.ServiceModel.Channels.Message" Usage="System.ServiceModel.Channels.Message.CreateMessage (version, action, body)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::ServiceModel::Channels::MessageVersion ^ version, System::String ^ action, System::Object ^ body);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -392,9 +443,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
@@ -411,13 +467,13 @@
         <summary>Creates a message with the specified version, action and body.</summary>
         <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object for the message created.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This static method is used to create a new copy of message ready for sending.  
-  
- When working with JSON messages use the <xref:System.ServiceModel.Channels.Message.CreateMessage%28System.ServiceModel.Channels.MessageVersion%2CSystem.String%2CSystem.Object%2CSystem.Runtime.Serialization.XmlObjectSerializer%29> method, the <xref:System.ServiceModel.Channels.Message.CreateMessage%28System.ServiceModel.Channels.MessageVersion%2CSystem.String%2CSystem.Object%29> method does not work with JSON messages.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ This static method is used to create a new copy of message ready for sending.
+
+ When working with JSON messages use the <xref:System.ServiceModel.Channels.Message.CreateMessage%28System.ServiceModel.Channels.MessageVersion%2CSystem.String%2CSystem.Object%2CSystem.Runtime.Serialization.XmlObjectSerializer%29> method, the <xref:System.ServiceModel.Channels.Message.CreateMessage%28System.ServiceModel.Channels.MessageVersion%2CSystem.String%2CSystem.Object%29> method does not work with JSON messages.
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -429,8 +485,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message CreateMessage(class System.ServiceModel.Channels.MessageVersion version, string action, class System.ServiceModel.Channels.BodyWriter body) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.CreateMessage(System.ServiceModel.Channels.MessageVersion,System.String,System.ServiceModel.Channels.BodyWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMessage (version As MessageVersion, action As String, body As BodyWriter) As Message" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::ServiceModel::Channels::MessageVersion ^ version, System::String ^ action, System::ServiceModel::Channels::BodyWriter ^ body);" />
       <MemberSignature Language="F#" Value="static member CreateMessage : System.ServiceModel.Channels.MessageVersion * string * System.ServiceModel.Channels.BodyWriter -&gt; System.ServiceModel.Channels.Message" Usage="System.ServiceModel.Channels.Message.CreateMessage (version, action, body)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::ServiceModel::Channels::MessageVersion ^ version, System::String ^ action, System::ServiceModel::Channels::BodyWriter ^ body);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -440,9 +496,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
@@ -459,11 +520,11 @@
         <summary>Creates a message with a body that consists of an array of bytes.</summary>
         <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object for the message created.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An empty message is useful for an endpoint to send an alert to another endpoint without any actual content.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ An empty message is useful for an endpoint to send an alert to another endpoint without any actual content.
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -475,8 +536,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message CreateMessage(class System.ServiceModel.Channels.MessageVersion version, string action, class System.Xml.XmlDictionaryReader body) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.CreateMessage(System.ServiceModel.Channels.MessageVersion,System.String,System.Xml.XmlDictionaryReader)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMessage (version As MessageVersion, action As String, body As XmlDictionaryReader) As Message" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::ServiceModel::Channels::MessageVersion ^ version, System::String ^ action, System::Xml::XmlDictionaryReader ^ body);" />
       <MemberSignature Language="F#" Value="static member CreateMessage : System.ServiceModel.Channels.MessageVersion * string * System.Xml.XmlDictionaryReader -&gt; System.ServiceModel.Channels.Message" Usage="System.ServiceModel.Channels.Message.CreateMessage (version, action, body)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::ServiceModel::Channels::MessageVersion ^ version, System::String ^ action, System::Xml::XmlDictionaryReader ^ body);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -486,9 +547,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
@@ -505,11 +571,11 @@
         <summary>Creates a message with the specified version, action and body.</summary>
         <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object for the message created.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This static method is used to create a new copy of message ready for sending.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ This static method is used to create a new copy of message ready for sending.
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -521,8 +587,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message CreateMessage(class System.ServiceModel.Channels.MessageVersion version, string action, class System.Xml.XmlReader body) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.CreateMessage(System.ServiceModel.Channels.MessageVersion,System.String,System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMessage (version As MessageVersion, action As String, body As XmlReader) As Message" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::ServiceModel::Channels::MessageVersion ^ version, System::String ^ action, System::Xml::XmlReader ^ body);" />
       <MemberSignature Language="F#" Value="static member CreateMessage : System.ServiceModel.Channels.MessageVersion * string * System.Xml.XmlReader -&gt; System.ServiceModel.Channels.Message" Usage="System.ServiceModel.Channels.Message.CreateMessage (version, action, body)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::ServiceModel::Channels::MessageVersion ^ version, System::String ^ action, System::Xml::XmlReader ^ body);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -532,9 +598,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
@@ -551,11 +622,11 @@
         <summary>Creates a message using the specified reader, action and version.</summary>
         <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object for the message created.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This static method is used to create a new copy of message ready for sending.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ This static method is used to create a new copy of message ready for sending.
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -567,8 +638,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message CreateMessage(class System.Xml.XmlDictionaryReader envelopeReader, int32 maxSizeOfHeaders, class System.ServiceModel.Channels.MessageVersion version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.CreateMessage(System.Xml.XmlDictionaryReader,System.Int32,System.ServiceModel.Channels.MessageVersion)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMessage (envelopeReader As XmlDictionaryReader, maxSizeOfHeaders As Integer, version As MessageVersion) As Message" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::Xml::XmlDictionaryReader ^ envelopeReader, int maxSizeOfHeaders, System::ServiceModel::Channels::MessageVersion ^ version);" />
       <MemberSignature Language="F#" Value="static member CreateMessage : System.Xml.XmlDictionaryReader * int * System.ServiceModel.Channels.MessageVersion -&gt; System.ServiceModel.Channels.Message" Usage="System.ServiceModel.Channels.Message.CreateMessage (envelopeReader, maxSizeOfHeaders, version)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::Xml::XmlDictionaryReader ^ envelopeReader, int maxSizeOfHeaders, System::ServiceModel::Channels::MessageVersion ^ version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -578,9 +649,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
@@ -597,19 +673,19 @@
         <summary>Creates a message using the specified reader, action and version.</summary>
         <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object for the message created.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.ServiceModel.Channels.Message> takes ownership of `envelopeReader.`  
-  
- This method reads the envelope, buffers all the headers into the header collection, and reads up to but not including the `Body` start tag, and returns the message. If the method call throws an exception, it closes the reader.  
-  
- The body of the returned message can then be either read or written.  
-  
- The message body can be read using the <xref:System.ServiceModel.Channels.Message.GetBody%2A> methods on the returned message. The returned object encapsulates all the child elements within the `Body` element. The message body can be written using <xref:System.ServiceModel.Channels.Message.WriteBody%2A> or <xref:System.ServiceModel.Channels.Message.WriteMessage%2A>. Once written, it cannot be read.  
-  
- Closing the message closes the underlying envelope reader.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ <xref:System.ServiceModel.Channels.Message> takes ownership of `envelopeReader`.
+
+ This method reads the envelope, buffers all the headers into the header collection, and reads up to but not including the `Body` start tag, and returns the message. If the method call throws an exception, it closes the reader.
+
+ The body of the returned message can then be either read or written.
+
+ The message body can be read using the <xref:System.ServiceModel.Channels.Message.GetBody%2A> methods on the returned message. The returned object encapsulates all the child elements within the `Body` element. The message body can be written using <xref:System.ServiceModel.Channels.Message.WriteBody%2A> or <xref:System.ServiceModel.Channels.Message.WriteMessage%2A>. Once written, it cannot be read.
+
+ Closing the message closes the underlying envelope reader.
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -621,8 +697,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message CreateMessage(class System.Xml.XmlReader envelopeReader, int32 maxSizeOfHeaders, class System.ServiceModel.Channels.MessageVersion version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.CreateMessage(System.Xml.XmlReader,System.Int32,System.ServiceModel.Channels.MessageVersion)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMessage (envelopeReader As XmlReader, maxSizeOfHeaders As Integer, version As MessageVersion) As Message" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::Xml::XmlReader ^ envelopeReader, int maxSizeOfHeaders, System::ServiceModel::Channels::MessageVersion ^ version);" />
       <MemberSignature Language="F#" Value="static member CreateMessage : System.Xml.XmlReader * int * System.ServiceModel.Channels.MessageVersion -&gt; System.ServiceModel.Channels.Message" Usage="System.ServiceModel.Channels.Message.CreateMessage (envelopeReader, maxSizeOfHeaders, version)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::Xml::XmlReader ^ envelopeReader, int maxSizeOfHeaders, System::ServiceModel::Channels::MessageVersion ^ version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -632,9 +708,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
@@ -651,19 +732,19 @@
         <summary>Creates a message using the specified reader, action and version.</summary>
         <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object for the message created.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.ServiceModel.Channels.Message> takes ownership of `envelopeReader.`  
-  
- This method reads the envelope, buffers all the headers into the header collection, and reads up to but not including the `Body` start tag, and returns the message. If the method call throws an exception, it closes the reader.  
-  
- The body of the returned message can then be either read or written.  
-  
- The message body can be read using the <xref:System.ServiceModel.Channels.Message.GetBody%2A> methods on the returned message. The returned object encapsulates all the child elements within the `Body` element. The message body can be written using <xref:System.ServiceModel.Channels.Message.WriteBody%2A> or <xref:System.ServiceModel.Channels.Message.WriteMessage%2A>. Once written, it cannot be read.  
-  
- Closing the message closes the underlying envelope reader.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ <xref:System.ServiceModel.Channels.Message> takes ownership of `envelopeReader`.
+
+ This method reads the envelope, buffers all the headers into the header collection, and reads up to but not including the `Body` start tag, and returns the message. If the method call throws an exception, it closes the reader.
+
+ The body of the returned message can then be either read or written.
+
+ The message body can be read using the <xref:System.ServiceModel.Channels.Message.GetBody%2A> methods on the returned message. The returned object encapsulates all the child elements within the `Body` element. The message body can be written using <xref:System.ServiceModel.Channels.Message.WriteBody%2A> or <xref:System.ServiceModel.Channels.Message.WriteMessage%2A>. Once written, it cannot be read.
+
+ Closing the message closes the underlying envelope reader.
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -671,12 +752,12 @@
       </Docs>
     </Member>
     <Member MemberName="CreateMessage">
-      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.Message CreateMessage (System.ServiceModel.Channels.MessageVersion version, string action, object body, System.Runtime.Serialization.XmlObjectSerializer serializer);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message CreateMessage(class System.ServiceModel.Channels.MessageVersion version, string action, object body, class System.Runtime.Serialization.XmlObjectSerializer serializer) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.CreateMessage(System.ServiceModel.Channels.MessageVersion,System.String,System.Object,System.Runtime.Serialization.XmlObjectSerializer)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMessage (version As MessageVersion, action As String, body As Object, serializer As XmlObjectSerializer) As Message" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::ServiceModel::Channels::MessageVersion ^ version, System::String ^ action, System::Object ^ body, System::Runtime::Serialization::XmlObjectSerializer ^ serializer);" />
-      <MemberSignature Language="F#" Value="static member CreateMessage : System.ServiceModel.Channels.MessageVersion * string * obj * System.Runtime.Serialization.XmlObjectSerializer -&gt; System.ServiceModel.Channels.Message" Usage="System.ServiceModel.Channels.Message.CreateMessage (version, action, body, serializer)" />
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.Message CreateMessage (System.ServiceModel.Channels.MessageVersion version, System.ServiceModel.FaultCode faultCode, string reason, string action);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message CreateMessage(class System.ServiceModel.Channels.MessageVersion version, class System.ServiceModel.FaultCode faultCode, string reason, string action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.CreateMessage(System.ServiceModel.Channels.MessageVersion,System.ServiceModel.FaultCode,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMessage (version As MessageVersion, faultCode As FaultCode, reason As String, action As String) As Message" />
+      <MemberSignature Language="F#" Value="static member CreateMessage : System.ServiceModel.Channels.MessageVersion * System.ServiceModel.FaultCode * string * string -&gt; System.ServiceModel.Channels.Message" Usage="System.ServiceModel.Channels.Message.CreateMessage (version, faultCode, reason, action)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::ServiceModel::Channels::MessageVersion ^ version, System::ServiceModel::FaultCode ^ faultCode, System::String ^ reason, System::String ^ action);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -686,9 +767,64 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="version" Type="System.ServiceModel.Channels.MessageVersion" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
+        <Parameter Name="faultCode" Type="System.ServiceModel.FaultCode" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
+        <Parameter Name="reason" Type="System.String" Index="2" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
+        <Parameter Name="action" Type="System.String" Index="3" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
+      </Parameters>
+      <Docs>
+        <param name="version">A <see cref="T:System.ServiceModel.Channels.MessageVersion" /> object that specifies the SOAP version to use for the message.</param>
+        <param name="faultCode">A <see cref="T:System.ServiceModel.Channels.MessageFault" /> object that represents a SOAP fault.</param>
+        <param name="reason">The reason of the SOAP fault.</param>
+        <param name="action">A description of how the message should be processed.</param>
+        <summary>Creates a message that contains a SOAP fault, the reason for the fault, a version and an action.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object for the message created.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ This static method is used to create a new copy of message ready for sending.
+
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="version" />, <paramref name="fault" />, <paramref name="action" /> or <paramref name="faultCode" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateMessage">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.Message CreateMessage (System.ServiceModel.Channels.MessageVersion version, string action, object body, System.Runtime.Serialization.XmlObjectSerializer serializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message CreateMessage(class System.ServiceModel.Channels.MessageVersion version, string action, object body, class System.Runtime.Serialization.XmlObjectSerializer serializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.CreateMessage(System.ServiceModel.Channels.MessageVersion,System.String,System.Object,System.Runtime.Serialization.XmlObjectSerializer)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMessage (version As MessageVersion, action As String, body As Object, serializer As XmlObjectSerializer) As Message" />
+      <MemberSignature Language="F#" Value="static member CreateMessage : System.ServiceModel.Channels.MessageVersion * string * obj * System.Runtime.Serialization.XmlObjectSerializer -&gt; System.ServiceModel.Channels.Message" Usage="System.ServiceModel.Channels.Message.CreateMessage (version, action, body, serializer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::ServiceModel::Channels::MessageVersion ^ version, System::String ^ action, System::Object ^ body, System::Runtime::Serialization::XmlObjectSerializer ^ serializer);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
@@ -707,13 +843,13 @@
         <summary>Creates a message using the specified version, action, message body and serializer.</summary>
         <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object for the message created.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This static method is used to create a new copy of message ready for sending.  
-  
- When working with JSON messages use the <xref:System.ServiceModel.Channels.Message.CreateMessage%28System.ServiceModel.Channels.MessageVersion%2CSystem.String%2CSystem.Object%2CSystem.Runtime.Serialization.XmlObjectSerializer%29> method, the <xref:System.ServiceModel.Channels.Message.CreateMessage%28System.ServiceModel.Channels.MessageVersion%2CSystem.String%2CSystem.Object%29> method does not work with JSON messages.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ This static method is used to create a new copy of message ready for sending.
+
+ When working with JSON messages use the <xref:System.ServiceModel.Channels.Message.CreateMessage%28System.ServiceModel.Channels.MessageVersion%2CSystem.String%2CSystem.Object%2CSystem.Runtime.Serialization.XmlObjectSerializer%29> method, the <xref:System.ServiceModel.Channels.Message.CreateMessage%28System.ServiceModel.Channels.MessageVersion%2CSystem.String%2CSystem.Object%29> method does not work with JSON messages.
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -721,65 +857,12 @@
       </Docs>
     </Member>
     <Member MemberName="CreateMessage">
-      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.Message CreateMessage (System.ServiceModel.Channels.MessageVersion version, System.ServiceModel.FaultCode faultCode, string reason, string action);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message CreateMessage(class System.ServiceModel.Channels.MessageVersion version, class System.ServiceModel.FaultCode faultCode, string reason, string action) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.CreateMessage(System.ServiceModel.Channels.MessageVersion,System.ServiceModel.FaultCode,System.String,System.String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::ServiceModel::Channels::MessageVersion ^ version, System::ServiceModel::FaultCode ^ faultCode, System::String ^ reason, System::String ^ action);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
-      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.Message CreateMessage (System.ServiceModel.Channels.MessageVersion version, System.ServiceModel.FaultCode code, string reason, string action);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message CreateMessage(class System.ServiceModel.Channels.MessageVersion version, class System.ServiceModel.FaultCode code, string reason, string action) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMessage (version As MessageVersion, code As FaultCode, reason As String, action As String) As Message" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::ServiceModel::Channels::MessageVersion ^ version, System::ServiceModel::FaultCode ^ code, System::String ^ reason, System::String ^ action);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="static member CreateMessage : System.ServiceModel.Channels.MessageVersion * System.ServiceModel.FaultCode * string * string -&gt; System.ServiceModel.Channels.Message" Usage="System.ServiceModel.Channels.Message.CreateMessage (version, code, reason, action)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="version" Type="System.ServiceModel.Channels.MessageVersion" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="faultCode" Type="System.ServiceModel.FaultCode" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
-        <Parameter Name="code" Type="System.ServiceModel.FaultCode" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="reason" Type="System.String" Index="2" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="action" Type="System.String" Index="3" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      </Parameters>
-      <Docs>
-        <param name="version">A <see cref="T:System.ServiceModel.Channels.MessageVersion" /> object that specifies the SOAP version to use for the message.</param>
-        <param name="faultCode">A <see cref="T:System.ServiceModel.Channels.MessageFault" /> object that represents a SOAP fault.</param>
-        <param name="code">A <see cref="T:System.ServiceModel.Channels.MessageFault" /> object that represents a SOAP fault.</param>
-        <param name="reason">The reason of the SOAP fault.</param>
-        <param name="action">A description of how the message should be processed.</param>
-        <summary>Creates a message that contains a SOAP fault, the reason for the fault, a version and an action.</summary>
-        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object for the message created.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This static method is used to create a new copy of message ready for sending.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="version" />, <paramref name="fault" />, <paramref name="action" /> or <paramref name="faultCode" /> is <see langword="null" />.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="CreateMessage">
-      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.Message CreateMessage (System.ServiceModel.Channels.MessageVersion version, System.ServiceModel.FaultCode faultCode, string reason, object detail, string action);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message CreateMessage(class System.ServiceModel.Channels.MessageVersion version, class System.ServiceModel.FaultCode faultCode, string reason, object detail, string action) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.Message CreateMessage (System.ServiceModel.Channels.MessageVersion version, System.ServiceModel.FaultCode faultCode, string reason, object detail, string action);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message CreateMessage(class System.ServiceModel.Channels.MessageVersion version, class System.ServiceModel.FaultCode faultCode, string reason, object detail, string action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.CreateMessage(System.ServiceModel.Channels.MessageVersion,System.ServiceModel.FaultCode,System.String,System.Object,System.String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::ServiceModel::Channels::MessageVersion ^ version, System::ServiceModel::FaultCode ^ faultCode, System::String ^ reason, System::Object ^ detail, System::String ^ action);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
-      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.Message CreateMessage (System.ServiceModel.Channels.MessageVersion version, System.ServiceModel.FaultCode code, string reason, object detail, string action);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message CreateMessage(class System.ServiceModel.Channels.MessageVersion version, class System.ServiceModel.FaultCode code, string reason, object detail, string action) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMessage (version As MessageVersion, code As FaultCode, reason As String, detail As Object, action As String) As Message" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::ServiceModel::Channels::MessageVersion ^ version, System::ServiceModel::FaultCode ^ code, System::String ^ reason, System::Object ^ detail, System::String ^ action);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="static member CreateMessage : System.ServiceModel.Channels.MessageVersion * System.ServiceModel.FaultCode * string * obj * string -&gt; System.ServiceModel.Channels.Message" Usage="System.ServiceModel.Channels.Message.CreateMessage (version, code, reason, detail, action)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMessage (version As MessageVersion, faultCode As FaultCode, reason As String, detail As Object, action As String) As Message" />
+      <MemberSignature Language="F#" Value="static member CreateMessage : System.ServiceModel.Channels.MessageVersion * System.ServiceModel.FaultCode * string * obj * string -&gt; System.ServiceModel.Channels.Message" Usage="System.ServiceModel.Channels.Message.CreateMessage (version, faultCode, reason, detail, action)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::Message ^ CreateMessage(System::ServiceModel::Channels::MessageVersion ^ version, System::ServiceModel::FaultCode ^ faultCode, System::String ^ reason, System::Object ^ detail, System::String ^ action);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -789,33 +872,36 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="version" Type="System.ServiceModel.Channels.MessageVersion" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="faultCode" Type="System.ServiceModel.FaultCode" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
-        <Parameter Name="code" Type="System.ServiceModel.FaultCode" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="reason" Type="System.String" Index="2" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="detail" Type="System.Object" Index="3" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="action" Type="System.String" Index="4" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="version" Type="System.ServiceModel.Channels.MessageVersion" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
+        <Parameter Name="faultCode" Type="System.ServiceModel.FaultCode" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
+        <Parameter Name="reason" Type="System.String" Index="2" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
+        <Parameter Name="detail" Type="System.Object" Index="3" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
+        <Parameter Name="action" Type="System.String" Index="4" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
       </Parameters>
       <Docs>
         <param name="version">A <see cref="T:System.ServiceModel.Channels.MessageVersion" /> object that specifies the SOAP version to use for the message.</param>
         <param name="faultCode">A <see cref="T:System.ServiceModel.Channels.MessageFault" /> object that represents a SOAP fault.</param>
-        <param name="code">A <see cref="T:System.ServiceModel.Channels.MessageFault" /> object that represents a SOAP fault.</param>
         <param name="reason">The reason of the SOAP fault.</param>
         <param name="detail">The details of the SOAP fault.</param>
         <param name="action">A description of how the message should be processed.</param>
         <summary>Creates a message that contains a SOAP fault, a reason and the detail for the fault, a version and an action.</summary>
         <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object for the message created.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This static method is used to create a new copy of message ready for sending.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ This static method is used to create a new copy of message ready for sending.
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -827,8 +913,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndWriteBodyContents(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.EndWriteBodyContents(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndWriteBodyContents (result As IAsyncResult)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndWriteBodyContents(IAsyncResult ^ result);" />
       <MemberSignature Language="F#" Value="member this.EndWriteBodyContents : IAsyncResult -&gt; unit" Usage="message.EndWriteBodyContents result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndWriteBodyContents(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -836,12 +922,17 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="result" Type="System.IAsyncResult" />
+        <Parameter Name="result" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
       </Parameters>
       <Docs>
         <param name="result">The <see cref="T:System.IAsyncResult" /> object that represents the result of the asynchronous operation.</param>
@@ -854,8 +945,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndWriteMessage(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.EndWriteMessage(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndWriteMessage (result As IAsyncResult)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndWriteMessage(IAsyncResult ^ result);" />
       <MemberSignature Language="F#" Value="member this.EndWriteMessage : IAsyncResult -&gt; unit" Usage="message.EndWriteMessage result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndWriteMessage(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -863,12 +954,17 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="result" Type="System.IAsyncResult" />
+        <Parameter Name="result" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
       </Parameters>
       <Docs>
         <param name="result">The <see cref="T:System.IAsyncResult" /> object that represents the result of the asynchronous operation.</param>
@@ -885,21 +981,21 @@
       <Docs>
         <summary>Retrieves the body of this <see cref="T:System.ServiceModel.Channels.Message" /> instance.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- After a message is created, the message body can be read using the <xref:System.ServiceModel.Channels.Message.GetBody%2A> methods on the returned message. The returned object encapsulates all the child elements within the `Body` element. Because the body of a message is a stream, it can only be written once, or read once.  
-  
- Use the <xref:System.ServiceModel.Channels.Message.GetBody%60%601%28System.Runtime.Serialization.XmlObjectSerializer%29> overload when working with JSON messages; the <xref:System.ServiceModel.Channels.Message.GetBody%60%601> overload does not work.  
-  
-   
-  
-## Examples  
- The following code example shows a client that uses the channel factory to send a message and read the reply.  
-  
- [!code-csharp[Message#0](~/samples/snippets/csharp/VS_Snippets_CFX/message/cs/client.cs#0)]
- [!code-vb[Message#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/message/vb/client.vb#0)]  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ After a message is created, the message body can be read using the <xref:System.ServiceModel.Channels.Message.GetBody%2A> methods on the returned message. The returned object encapsulates all the child elements within the `Body` element. Because the body of a message is a stream, it can only be written once, or read once.
+
+ Use the <xref:System.ServiceModel.Channels.Message.GetBody%60%601%28System.Runtime.Serialization.XmlObjectSerializer%29> overload when working with JSON messages; the <xref:System.ServiceModel.Channels.Message.GetBody%60%601> overload does not work.
+
+
+
+## Examples
+ The following code example shows a client that uses the channel factory to send a message and read the reply.
+
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/message/cs/client.cs" id="Snippet0":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/message/vb/client.vb" id="Snippet0":::
+
  ]]></format>
         </remarks>
       </Docs>
@@ -909,8 +1005,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetBody&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.GetBody``1" />
       <MemberSignature Language="VB.NET" Value="Public Function GetBody(Of T) () As T" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T GetBody();" />
       <MemberSignature Language="F#" Value="member this.GetBody : unit -&gt; 'T" Usage="message.GetBody " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T GetBody();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -920,9 +1016,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -936,13 +1037,13 @@
         <summary>Retrieves the body of this <see cref="T:System.ServiceModel.Channels.Message" /> instance.</summary>
         <returns>An object of type <paramref name="T" /> that contains the body of this message.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.ServiceModel.Channels.Message> instance has a body that corresponds to the SOAP body. It can be accessed as an <xref:System.Xml.XmlDictionaryReader> by calling <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A>. It is initially positioned directly after the `<S:Body>` element, and it returns `EOF` on reaching the `</S:Body>` element. Alternatively, if you expect the body to contain a serialized object, you can call <xref:System.ServiceModel.Channels.Message.GetBody%2A> instead. You should be aware that a message body can only be accessed once and a message can only be written once. If you want to access the `Body` multiple times, use <xref:System.ServiceModel.Channels.Message.CreateBufferedCopy%2A> to create a <xref:System.ServiceModel.Channels.MessageBuffer> instance.  
-  
- Use the <xref:System.ServiceModel.Channels.Message.GetBody%60%601%28System.Runtime.Serialization.XmlObjectSerializer%29> overload when working with JSON messages; the <xref:System.ServiceModel.Channels.Message.GetBody%60%601> overload does not work.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ A <xref:System.ServiceModel.Channels.Message> instance has a body that corresponds to the SOAP body. It can be accessed as an <xref:System.Xml.XmlDictionaryReader> by calling <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A>. It is initially positioned directly after the `<S:Body>` element, and it returns `EOF` on reaching the `</S:Body>` element. Alternatively, if you expect the body to contain a serialized object, you can call <xref:System.ServiceModel.Channels.Message.GetBody%2A> instead. You should be aware that a message body can only be accessed once and a message can only be written once. If you want to access the `Body` multiple times, use <xref:System.ServiceModel.Channels.Message.CreateBufferedCopy%2A> to create a <xref:System.ServiceModel.Channels.MessageBuffer> instance.
+
+ Use the <xref:System.ServiceModel.Channels.Message.GetBody%60%601%28System.Runtime.Serialization.XmlObjectSerializer%29> overload when working with JSON messages; the <xref:System.ServiceModel.Channels.Message.GetBody%60%601> overload does not work.
+
  ]]></format>
         </remarks>
       </Docs>
@@ -952,8 +1053,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetBody&lt;T&gt;(class System.Runtime.Serialization.XmlObjectSerializer serializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.GetBody``1(System.Runtime.Serialization.XmlObjectSerializer)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetBody(Of T) (serializer As XmlObjectSerializer) As T" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T GetBody(System::Runtime::Serialization::XmlObjectSerializer ^ serializer);" />
       <MemberSignature Language="F#" Value="member this.GetBody : System.Runtime.Serialization.XmlObjectSerializer -&gt; 'T" Usage="message.GetBody serializer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T GetBody(System::Runtime::Serialization::XmlObjectSerializer ^ serializer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -963,9 +1064,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -982,13 +1088,13 @@
         <summary>Retrieves the body of this <see cref="T:System.ServiceModel.Channels.Message" /> using the specified serializer.</summary>
         <returns>An object of type <paramref name="T" /> that contains the body of this message.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.ServiceModel.Channels.Message> instance has a body that corresponds to the SOAP body. It can be accessed as an <xref:System.Xml.XmlDictionaryReader> by calling <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A>. It is initially positioned directly after the `<S:Body>` element, and it returns `EOF` on reaching the `</S:Body>` element. Alternatively, if you expect the body to contain a serialized object, you can call <xref:System.ServiceModel.Channels.Message.GetBody%2A> instead. You should be aware that a message body can only be accessed once and a message can only be written once. If you want to access the body multiple times, use <xref:System.ServiceModel.Channels.Message.CreateBufferedCopy%2A> to create a <xref:System.ServiceModel.Channels.MessageBuffer> instance.  
-  
- Use the <xref:System.ServiceModel.Channels.Message.GetBody%60%601%28System.Runtime.Serialization.XmlObjectSerializer%29> overload when working with JSON messages; the <xref:System.ServiceModel.Channels.Message.GetBody%60%601> overload does not work.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ A <xref:System.ServiceModel.Channels.Message> instance has a body that corresponds to the SOAP body. It can be accessed as an <xref:System.Xml.XmlDictionaryReader> by calling <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A>. It is initially positioned directly after the `<S:Body>` element, and it returns `EOF` on reaching the `</S:Body>` element. Alternatively, if you expect the body to contain a serialized object, you can call <xref:System.ServiceModel.Channels.Message.GetBody%2A> instead. You should be aware that a message body can only be accessed once and a message can only be written once. If you want to access the body multiple times, use <xref:System.ServiceModel.Channels.Message.CreateBufferedCopy%2A> to create a <xref:System.ServiceModel.Channels.MessageBuffer> instance.
+
+ Use the <xref:System.ServiceModel.Channels.Message.GetBody%60%601%28System.Runtime.Serialization.XmlObjectSerializer%29> overload when working with JSON messages; the <xref:System.ServiceModel.Channels.Message.GetBody%60%601> overload does not work.
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1000,8 +1106,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetBodyAttribute(string localName, string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.GetBodyAttribute(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetBodyAttribute (localName As String, ns As String) As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetBodyAttribute(System::String ^ localName, System::String ^ ns);" />
       <MemberSignature Language="F#" Value="member this.GetBodyAttribute : string * string -&gt; string" Usage="message.GetBodyAttribute (localName, ns)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetBodyAttribute(System::String ^ localName, System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1011,9 +1117,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1023,20 +1134,20 @@
         <Parameter Name="ns" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="localName">The local name of the XML node.  
-  
+        <param name="localName">The local name of the XML node.
+
  The name of the element that corresponds to this member. This string must be a valid XML element name.</param>
-        <param name="ns">The namespace to which this XML element belongs.  
-  
+        <param name="ns">The namespace to which this XML element belongs.
+
  The namespace URI of the element that corresponds to this member. The system does not validate any URIs other than transport addresses.</param>
         <summary>Retrieves the attributes of the message body.</summary>
         <returns>The attributes of the message body.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.ServiceModel.Channels.Message> instance has a body that corresponds to the SOAP body. It can be accessed as an <xref:System.Xml.XmlDictionaryReader> by calling <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A>. It is initially positioned directly after the `<S:Body>` element, and it returns `EOF` on reaching the `</S:Body>` element. Alternatively, if you expect the body to contain a serialized object, you can call <xref:System.ServiceModel.Channels.Message.GetBody%2A> instead. You should be aware that a message body can only be accessed once and a message can only be written once. If you want to access the body multiple times, use <xref:System.ServiceModel.Channels.Message.CreateBufferedCopy%2A> to create a <xref:System.ServiceModel.Channels.MessageBuffer> instance.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ A <xref:System.ServiceModel.Channels.Message> instance has a body that corresponds to the SOAP body. It can be accessed as an <xref:System.Xml.XmlDictionaryReader> by calling <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A>. It is initially positioned directly after the `<S:Body>` element, and it returns `EOF` on reaching the `</S:Body>` element. Alternatively, if you expect the body to contain a serialized object, you can call <xref:System.ServiceModel.Channels.Message.GetBody%2A> instead. You should be aware that a message body can only be accessed once and a message can only be written once. If you want to access the body multiple times, use <xref:System.ServiceModel.Channels.Message.CreateBufferedCopy%2A> to create a <xref:System.ServiceModel.Channels.MessageBuffer> instance.
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1050,8 +1161,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDictionaryReader GetReaderAtBodyContents() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.GetReaderAtBodyContents" />
       <MemberSignature Language="VB.NET" Value="Public Function GetReaderAtBodyContents () As XmlDictionaryReader" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlDictionaryReader ^ GetReaderAtBodyContents();" />
       <MemberSignature Language="F#" Value="member this.GetReaderAtBodyContents : unit -&gt; System.Xml.XmlDictionaryReader" Usage="message.GetReaderAtBodyContents " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlDictionaryReader ^ GetReaderAtBodyContents();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1061,9 +1172,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlDictionaryReader</ReturnType>
@@ -1073,11 +1189,11 @@
         <summary>Gets the XML dictionary reader that accesses the body content of this message.</summary>
         <returns>A <see cref="T:System.Xml.XmlDictionaryReader" /> object that accesses the body content of this message.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.ServiceModel.Channels.Message> instance has a body that corresponds to the SOAP body. It can be accessed as an <xref:System.Xml.XmlDictionaryReader> by calling <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A>. It is initially positioned directly after the `<S:Body>` element. Alternatively, if you expect the body to contain a serialized object, you can call <xref:System.ServiceModel.Channels.Message.GetBody%2A> instead. You should be aware that a message body can only be accessed once and a message can only be written once. If you want to access the body multiple times, use <xref:System.ServiceModel.Channels.Message.CreateBufferedCopy%2A> to create a <xref:System.ServiceModel.Channels.MessageBuffer> instance.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ A <xref:System.ServiceModel.Channels.Message> instance has a body that corresponds to the SOAP body. It can be accessed as an <xref:System.Xml.XmlDictionaryReader> by calling <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A>. It is initially positioned directly after the `<S:Body>` element. Alternatively, if you expect the body to contain a serialized object, you can call <xref:System.ServiceModel.Channels.Message.GetBody%2A> instead. You should be aware that a message body can only be accessed once and a message can only be written once. If you want to access the body multiple times, use <xref:System.ServiceModel.Channels.Message.CreateBufferedCopy%2A> to create a <xref:System.ServiceModel.Channels.MessageBuffer> instance.
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The message is closed.</exception>
@@ -1089,8 +1205,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.MessageHeaders Headers" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.Message.Headers" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Headers As MessageHeaders" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::ServiceModel::Channels::MessageHeaders ^ Headers { System::ServiceModel::Channels::MessageHeaders ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Headers : System.ServiceModel.Channels.MessageHeaders" Usage="System.ServiceModel.Channels.Message.Headers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::ServiceModel::Channels::MessageHeaders ^ Headers { System::ServiceModel::Channels::MessageHeaders ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1100,9 +1216,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageHeaders</ReturnType>
@@ -1111,32 +1232,32 @@
         <summary>When overridden in a derived class, gets the headers of the message.</summary>
         <value>A <see cref="T:System.ServiceModel.Channels.MessageHeaders" /> object that represents the headers of the message.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.ServiceModel.Channels.Message> can have zero or more headers that are used as an extension mechanism to pass information in messages that is application-specific. You can use <xref:System.ServiceModel.Channels.Message.Headers%2A> to add message headers to a message by calling the <xref:System.ServiceModel.Channels.MessageHeaders.Add%2A> method.  
-  
- Windows Communication Foundation (WCF) provides a number of predefined message headers, as shown in the following table.  
-  
-|Header Name|Contains the header name.|  
-|-----------------|-------------------------------|  
-|To|Contains the role that the message is targeting.|  
-|Action|Provides a description of how the message should be processed.|  
-|FaultTo|Contains the address of the node to which faults should be sent.|  
-|From|Contains the address of the node that sent the message.|  
-|Request|Indicates whether the message is a request.|  
-|MessageID|Contains the unique ID of the message.|  
-|RelatesTo|Contains the IDs of messages that are related to this message.|  
-|ReplyTo|Contains the address of the node to which a reply should be sent for a request.|  
-  
-   
-  
-## Examples  
- The following code example shows a client that uses the channel factory to send a message and read the reply.  
-  
- [!code-csharp[Message#0](~/samples/snippets/csharp/VS_Snippets_CFX/message/cs/client.cs#0)]
- [!code-vb[Message#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/message/vb/client.vb#0)]  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ A <xref:System.ServiceModel.Channels.Message> can have zero or more headers that are used as an extension mechanism to pass information in messages that is application-specific. You can use <xref:System.ServiceModel.Channels.Message.Headers%2A> to add message headers to a message by calling the <xref:System.ServiceModel.Channels.MessageHeaders.Add%2A> method.
+
+ Windows Communication Foundation (WCF) provides a number of predefined message headers, as shown in the following table.
+
+|Header Name|Contains the header name.|
+|-----------------|-------------------------------|
+|To|Contains the role that the message is targeting.|
+|Action|Provides a description of how the message should be processed.|
+|FaultTo|Contains the address of the node to which faults should be sent.|
+|From|Contains the address of the node that sent the message.|
+|Request|Indicates whether the message is a request.|
+|MessageID|Contains the unique ID of the message.|
+|RelatesTo|Contains the IDs of messages that are related to this message.|
+|ReplyTo|Contains the address of the node to which a reply should be sent for a request.|
+
+
+
+## Examples
+ The following code example shows a client that uses the channel factory to send a message and read the reply.
+
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/message/cs/client.cs" id="Snippet0":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/message/vb/client.vb" id="Snippet0":::
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The message has been disposed of.</exception>
@@ -1150,8 +1271,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDisposed" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.Message.IsDisposed" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsDisposed As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsDisposed { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsDisposed : bool" Usage="System.ServiceModel.Channels.Message.IsDisposed" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsDisposed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1161,9 +1282,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1180,8 +1306,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.Message.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsEmpty As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsEmpty { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.ServiceModel.Channels.Message.IsEmpty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsEmpty { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1191,9 +1317,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1211,8 +1342,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFault" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.Message.IsFault" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsFault As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsFault { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsFault : bool" Usage="System.ServiceModel.Channels.Message.IsFault" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsFault { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1222,9 +1353,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1242,8 +1378,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IAsyncResult OnBeginWriteBodyContents(class System.Xml.XmlDictionaryWriter writer, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.OnBeginWriteBodyContents(System.Xml.XmlDictionaryWriter,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnBeginWriteBodyContents (writer As XmlDictionaryWriter, callback As AsyncCallback, state As Object) As IAsyncResult" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual IAsyncResult ^ OnBeginWriteBodyContents(System::Xml::XmlDictionaryWriter ^ writer, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberSignature Language="F#" Value="abstract member OnBeginWriteBodyContents : System.Xml.XmlDictionaryWriter * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.OnBeginWriteBodyContents : System.Xml.XmlDictionaryWriter * AsyncCallback * obj -&gt; IAsyncResult" Usage="message.OnBeginWriteBodyContents (writer, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual IAsyncResult ^ OnBeginWriteBodyContents(System::Xml::XmlDictionaryWriter ^ writer, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1251,14 +1387,19 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
-        <Parameter Name="callback" Type="System.AsyncCallback" />
-        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
+        <Parameter Name="callback" Type="System.AsyncCallback" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
       </Parameters>
       <Docs>
         <param name="writer">The writer used to serialize the contents of the message body.</param>
@@ -1274,8 +1415,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IAsyncResult OnBeginWriteMessage(class System.Xml.XmlDictionaryWriter writer, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.OnBeginWriteMessage(System.Xml.XmlDictionaryWriter,System.AsyncCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnBeginWriteMessage (writer As XmlDictionaryWriter, callback As AsyncCallback, state As Object) As IAsyncResult" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual IAsyncResult ^ OnBeginWriteMessage(System::Xml::XmlDictionaryWriter ^ writer, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberSignature Language="F#" Value="abstract member OnBeginWriteMessage : System.Xml.XmlDictionaryWriter * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.OnBeginWriteMessage : System.Xml.XmlDictionaryWriter * AsyncCallback * obj -&gt; IAsyncResult" Usage="message.OnBeginWriteMessage (writer, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual IAsyncResult ^ OnBeginWriteMessage(System::Xml::XmlDictionaryWriter ^ writer, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1283,14 +1424,19 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
-        <Parameter Name="callback" Type="System.AsyncCallback" />
-        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
+        <Parameter Name="callback" Type="System.AsyncCallback" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
       </Parameters>
       <Docs>
         <param name="writer">The writer used to serialize the entire message.</param>
@@ -1306,8 +1452,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnBodyToString(class System.Xml.XmlDictionaryWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.OnBodyToString(System.Xml.XmlDictionaryWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnBodyToString (writer As XmlDictionaryWriter)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnBodyToString(System::Xml::XmlDictionaryWriter ^ writer);" />
       <MemberSignature Language="F#" Value="abstract member OnBodyToString : System.Xml.XmlDictionaryWriter -&gt; unit&#xA;override this.OnBodyToString : System.Xml.XmlDictionaryWriter -&gt; unit" Usage="message.OnBodyToString writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnBodyToString(System::Xml::XmlDictionaryWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1317,9 +1463,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1338,8 +1489,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnClose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.OnClose" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnClose ()" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnClose();" />
       <MemberSignature Language="F#" Value="abstract member OnClose : unit -&gt; unit&#xA;override this.OnClose : unit -&gt; unit" Usage="message.OnClose " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnClose();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1349,9 +1500,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1367,8 +1523,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ServiceModel.Channels.MessageBuffer OnCreateBufferedCopy(int32 maxBufferSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.OnCreateBufferedCopy(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnCreateBufferedCopy (maxBufferSize As Integer) As MessageBuffer" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ServiceModel::Channels::MessageBuffer ^ OnCreateBufferedCopy(int maxBufferSize);" />
       <MemberSignature Language="F#" Value="abstract member OnCreateBufferedCopy : int -&gt; System.ServiceModel.Channels.MessageBuffer&#xA;override this.OnCreateBufferedCopy : int -&gt; System.ServiceModel.Channels.MessageBuffer" Usage="message.OnCreateBufferedCopy maxBufferSize" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ServiceModel::Channels::MessageBuffer ^ OnCreateBufferedCopy(int maxBufferSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1378,9 +1534,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageBuffer</ReturnType>
@@ -1400,8 +1561,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnEndWriteBodyContents(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.OnEndWriteBodyContents(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnEndWriteBodyContents (result As IAsyncResult)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnEndWriteBodyContents(IAsyncResult ^ result);" />
       <MemberSignature Language="F#" Value="abstract member OnEndWriteBodyContents : IAsyncResult -&gt; unit&#xA;override this.OnEndWriteBodyContents : IAsyncResult -&gt; unit" Usage="message.OnEndWriteBodyContents result" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnEndWriteBodyContents(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1409,12 +1570,17 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="result" Type="System.IAsyncResult" />
+        <Parameter Name="result" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
       </Parameters>
       <Docs>
         <param name="result">The <see cref="T:System.IAsyncResult" /> object that represents the result of the asynchronous operation.</param>
@@ -1427,8 +1593,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnEndWriteMessage(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.OnEndWriteMessage(System.IAsyncResult)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnEndWriteMessage (result As IAsyncResult)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnEndWriteMessage(IAsyncResult ^ result);" />
       <MemberSignature Language="F#" Value="abstract member OnEndWriteMessage : IAsyncResult -&gt; unit&#xA;override this.OnEndWriteMessage : IAsyncResult -&gt; unit" Usage="message.OnEndWriteMessage result" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnEndWriteMessage(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1436,12 +1602,17 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="result" Type="System.IAsyncResult" />
+        <Parameter Name="result" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
       </Parameters>
       <Docs>
         <param name="result">The <see cref="T:System.IAsyncResult" /> object that represents the result of the asynchronous operation.</param>
@@ -1454,8 +1625,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance !!T OnGetBody&lt;T&gt;(class System.Xml.XmlDictionaryReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.OnGetBody``1(System.Xml.XmlDictionaryReader)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnGetBody(Of T) (reader As XmlDictionaryReader) As T" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA;generic &lt;typename T&gt;&#xA; virtual T OnGetBody(System::Xml::XmlDictionaryReader ^ reader);" />
       <MemberSignature Language="F#" Value="abstract member OnGetBody : System.Xml.XmlDictionaryReader -&gt; 'T&#xA;override this.OnGetBody : System.Xml.XmlDictionaryReader -&gt; 'T" Usage="message.OnGetBody reader" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA;generic &lt;typename T&gt;&#xA; virtual T OnGetBody(System::Xml::XmlDictionaryReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1464,9 +1635,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -1475,7 +1651,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-1.0;netcore-1.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-8.0;netcore-1.0;netcore-1.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of the message body.</typeparam>
@@ -1490,8 +1666,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string OnGetBodyAttribute(string localName, string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.OnGetBodyAttribute(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnGetBodyAttribute (localName As String, ns As String) As String" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ OnGetBodyAttribute(System::String ^ localName, System::String ^ ns);" />
       <MemberSignature Language="F#" Value="abstract member OnGetBodyAttribute : string * string -&gt; string&#xA;override this.OnGetBodyAttribute : string * string -&gt; string" Usage="message.OnGetBodyAttribute (localName, ns)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ OnGetBodyAttribute(System::String ^ localName, System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1501,9 +1677,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1513,11 +1694,11 @@
         <Parameter Name="ns" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="localName">The local name of the XML node.  
-  
+        <param name="localName">The local name of the XML node.
+
  The name of the element that corresponds to this member. This string must be a valid XML element name.</param>
-        <param name="ns">The namespace to which this XML element belongs.  
-  
+        <param name="ns">The namespace to which this XML element belongs.
+
  The namespace URI of the element that corresponds to this member. The system does not validate any URIs other than transport addresses.</param>
         <summary>Called when the attributes of the message body is retrieved.</summary>
         <returns>The attributes of the message body.</returns>
@@ -1529,8 +1710,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xml.XmlDictionaryReader OnGetReaderAtBodyContents() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.OnGetReaderAtBodyContents" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnGetReaderAtBodyContents () As XmlDictionaryReader" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Xml::XmlDictionaryReader ^ OnGetReaderAtBodyContents();" />
       <MemberSignature Language="F#" Value="abstract member OnGetReaderAtBodyContents : unit -&gt; System.Xml.XmlDictionaryReader&#xA;override this.OnGetReaderAtBodyContents : unit -&gt; System.Xml.XmlDictionaryReader" Usage="message.OnGetReaderAtBodyContents " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Xml::XmlDictionaryReader ^ OnGetReaderAtBodyContents();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1540,9 +1721,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlDictionaryReader</ReturnType>
@@ -1559,8 +1745,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnWriteBodyContents(class System.Xml.XmlDictionaryWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.OnWriteBodyContents(System.Xml.XmlDictionaryWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub OnWriteBodyContents (writer As XmlDictionaryWriter)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void OnWriteBodyContents(System::Xml::XmlDictionaryWriter ^ writer);" />
       <MemberSignature Language="F#" Value="abstract member OnWriteBodyContents : System.Xml.XmlDictionaryWriter -&gt; unit" Usage="message.OnWriteBodyContents writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void OnWriteBodyContents(System::Xml::XmlDictionaryWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1570,9 +1756,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1591,8 +1782,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnWriteMessage(class System.Xml.XmlDictionaryWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.OnWriteMessage(System.Xml.XmlDictionaryWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnWriteMessage (writer As XmlDictionaryWriter)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnWriteMessage(System::Xml::XmlDictionaryWriter ^ writer);" />
       <MemberSignature Language="F#" Value="abstract member OnWriteMessage : System.Xml.XmlDictionaryWriter -&gt; unit&#xA;override this.OnWriteMessage : System.Xml.XmlDictionaryWriter -&gt; unit" Usage="message.OnWriteMessage writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnWriteMessage(System::Xml::XmlDictionaryWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1602,9 +1793,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1623,8 +1819,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnWriteStartBody(class System.Xml.XmlDictionaryWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.OnWriteStartBody(System.Xml.XmlDictionaryWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnWriteStartBody (writer As XmlDictionaryWriter)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnWriteStartBody(System::Xml::XmlDictionaryWriter ^ writer);" />
       <MemberSignature Language="F#" Value="abstract member OnWriteStartBody : System.Xml.XmlDictionaryWriter -&gt; unit&#xA;override this.OnWriteStartBody : System.Xml.XmlDictionaryWriter -&gt; unit" Usage="message.OnWriteStartBody writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnWriteStartBody(System::Xml::XmlDictionaryWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1634,9 +1830,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1655,8 +1856,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnWriteStartEnvelope(class System.Xml.XmlDictionaryWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.OnWriteStartEnvelope(System.Xml.XmlDictionaryWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnWriteStartEnvelope (writer As XmlDictionaryWriter)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnWriteStartEnvelope(System::Xml::XmlDictionaryWriter ^ writer);" />
       <MemberSignature Language="F#" Value="abstract member OnWriteStartEnvelope : System.Xml.XmlDictionaryWriter -&gt; unit&#xA;override this.OnWriteStartEnvelope : System.Xml.XmlDictionaryWriter -&gt; unit" Usage="message.OnWriteStartEnvelope writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnWriteStartEnvelope(System::Xml::XmlDictionaryWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1666,9 +1867,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1687,8 +1893,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnWriteStartHeaders(class System.Xml.XmlDictionaryWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.OnWriteStartHeaders(System.Xml.XmlDictionaryWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnWriteStartHeaders (writer As XmlDictionaryWriter)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnWriteStartHeaders(System::Xml::XmlDictionaryWriter ^ writer);" />
       <MemberSignature Language="F#" Value="abstract member OnWriteStartHeaders : System.Xml.XmlDictionaryWriter -&gt; unit&#xA;override this.OnWriteStartHeaders : System.Xml.XmlDictionaryWriter -&gt; unit" Usage="message.OnWriteStartHeaders writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnWriteStartHeaders(System::Xml::XmlDictionaryWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1698,9 +1904,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1719,8 +1930,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.MessageProperties Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.Message.Properties" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Properties As MessageProperties" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::ServiceModel::Channels::MessageProperties ^ Properties { System::ServiceModel::Channels::MessageProperties ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Properties : System.ServiceModel.Channels.MessageProperties" Usage="System.ServiceModel.Channels.Message.Properties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::ServiceModel::Channels::MessageProperties ^ Properties { System::ServiceModel::Channels::MessageProperties ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1730,9 +1941,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageProperties</ReturnType>
@@ -1741,11 +1957,11 @@
         <summary>When overridden in a derived class, gets a set of processing-level annotations to the message.</summary>
         <value>A <see cref="T:System.ServiceModel.Channels.MessageProperties" /> that contains a set of processing-level annotations to the message.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Because information in headers is transmitted on the wire, an entity that examines a header must support the underlying version(s) of the protocols used by the header. However, properties provide a more version-independent way of annotating a message.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ Because information in headers is transmitted on the wire, an entity that examines a header must support the underlying version(s) of the protocols used by the header. However, properties provide a more version-independent way of annotating a message.
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The message has been disposed of.</exception>
@@ -1756,8 +1972,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Channels.MessageState State" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.Message.State" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As MessageState" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::MessageState State { System::ServiceModel::Channels::MessageState get(); };" />
       <MemberSignature Language="F#" Value="member this.State : System.ServiceModel.Channels.MessageState" Usage="System.ServiceModel.Channels.Message.State" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::MessageState State { System::ServiceModel::Channels::MessageState get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1767,13 +1983,19 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1783,11 +2005,11 @@
         <summary>Gets the current state of this <see cref="T:System.ServiceModel.Channels.Message" />.</summary>
         <value>A <see cref="T:System.ServiceModel.Channels.MessageState" /> that contains the current state of this <see cref="T:System.ServiceModel.Channels.Message" />.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Because the body of a <xref:System.ServiceModel.Channels.Message> object is a stream, it can only be read or written once. This is enforced by maintaining the current state of the <xref:System.ServiceModel.Channels.Message> object. A <xref:System.ServiceModel.Channels.Message> object can be read, written, or copied when in the <xref:System.ServiceModel.Channels.MessageState.Created> state. Other states are <xref:System.ServiceModel.Channels.MessageState.Read>, <xref:System.ServiceModel.Channels.MessageState.Written> and <xref:System.ServiceModel.Channels.MessageState.Copied>, which means that the respective action has been performed already once.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ Because the body of a <xref:System.ServiceModel.Channels.Message> object is a stream, it can only be read or written once. This is enforced by maintaining the current state of the <xref:System.ServiceModel.Channels.Message> object. A <xref:System.ServiceModel.Channels.Message> object can be read, written, or copied when in the <xref:System.ServiceModel.Channels.MessageState.Created> state. Other states are <xref:System.ServiceModel.Channels.MessageState.Read>, <xref:System.ServiceModel.Channels.MessageState.Written> and <xref:System.ServiceModel.Channels.MessageState.Copied>, which means that the respective action has been performed already once.
+
  ]]></format>
         </remarks>
       </Docs>
@@ -1797,6 +2019,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.System#IDisposable#Dispose" />
       <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="F#" Value="abstract member System.IDisposable.Dispose : unit -&gt; unit&#xA;override this.System.IDisposable.Dispose : unit -&gt; unit" Usage="message.System.IDisposable.Dispose " />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1810,13 +2033,19 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1826,14 +2055,14 @@
       <Docs>
         <summary>Closes all the resources used by this message. This method cannot be inherited.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call this method when you are finished using the <xref:System.ServiceModel.Channels.Message>. This method leaves the <xref:System.ServiceModel.Channels.Message> in an unusable state. After calling this method, you must release all references to the <xref:System.ServiceModel.Channels.Message> so the garbage collector can reclaim the memory that the <xref:System.ServiceModel.Channels.Message> resided in.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ Call this method when you are finished using the <xref:System.ServiceModel.Channels.Message>. This method leaves the <xref:System.ServiceModel.Channels.Message> in an unusable state. After calling this method, you must release all references to the <xref:System.ServiceModel.Channels.Message> so the garbage collector can reclaim the memory that the <xref:System.ServiceModel.Channels.Message> resided in.
+
 > [!NOTE]
->  Always call this method before you release your last reference to the <xref:System.ServiceModel.Channels.Message>. Otherwise, the resources it is using are not freed until the garbage collector calls the <xref:System.ServiceModel.Channels.Message> object's `Finalize` method.  
-  
+>  Always call this method before you release your last reference to the <xref:System.ServiceModel.Channels.Message>. Otherwise, the resources it is using are not freed until the garbage collector calls the <xref:System.ServiceModel.Channels.Message> object's `Finalize` method.
+
  ]]></format>
         </remarks>
       </Docs>
@@ -1843,8 +2072,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="message.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1854,9 +2083,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1873,8 +2107,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.MessageVersion Version" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.Message.Version" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Version As MessageVersion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::ServiceModel::Channels::MessageVersion ^ Version { System::ServiceModel::Channels::MessageVersion ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Version : System.ServiceModel.Channels.MessageVersion" Usage="System.ServiceModel.Channels.Message.Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::ServiceModel::Channels::MessageVersion ^ Version { System::ServiceModel::Channels::MessageVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1884,9 +2118,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageVersion</ReturnType>
@@ -1895,16 +2134,16 @@
         <summary>When overridden in a derived class, gets the SOAP version of the message.</summary>
         <value>A <see cref="T:System.ServiceModel.Channels.MessageVersion" /> object that represents the SOAP version.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This value is immutable for the message. There are two possible values for the version: <xref:System.ServiceModel.Channels.MessageVersion.Soap11%2A> and <xref:System.ServiceModel.Channels.MessageVersion.Soap12%2A> that correspond to SOAP 1.1 and SOAP 1.2 respectively.  
-  
- Knowing the underlying SOAP version is important because the structure of <xref:System.ServiceModel.Channels.Message> is firmly correlated with that of a SOAP message.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ This value is immutable for the message. There are two possible values for the version: <xref:System.ServiceModel.Channels.MessageVersion.Soap11%2A> and <xref:System.ServiceModel.Channels.MessageVersion.Soap12%2A> that correspond to SOAP 1.1 and SOAP 1.2 respectively.
+
+ Knowing the underlying SOAP version is important because the structure of <xref:System.ServiceModel.Channels.Message> is firmly correlated with that of a SOAP message.
+
 > [!IMPORTANT]
->  Inheritors must note that when overridden in a derived class, this method returns a <xref:System.ServiceModel.Channels.MessageVersion> object for the SOAP version of the message.  
-  
+>  Inheritors must note that when overridden in a derived class, this method returns a <xref:System.ServiceModel.Channels.MessageVersion> object for the SOAP version of the message.
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The message has been disposed of.</exception>
@@ -1919,11 +2158,11 @@
       <Docs>
         <summary>Serializes the body element to XML.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method writes the body contents as well as the start and end tags of the element.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ This method writes the body contents as well as the start and end tags of the element.
+
  ]]></format>
         </remarks>
       </Docs>
@@ -1933,8 +2172,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteBody(class System.Xml.XmlDictionaryWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.WriteBody(System.Xml.XmlDictionaryWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteBody (writer As XmlDictionaryWriter)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteBody(System::Xml::XmlDictionaryWriter ^ writer);" />
       <MemberSignature Language="F#" Value="member this.WriteBody : System.Xml.XmlDictionaryWriter -&gt; unit" Usage="message.WriteBody writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteBody(System::Xml::XmlDictionaryWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1944,9 +2183,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1958,11 +2202,11 @@
         <param name="writer">An <see cref="T:System.Xml.XmlDictionaryWriter" /> object to be used to write the body element.</param>
         <summary>Writes the body element using the specified <see cref="T:System.Xml.XmlDictionaryWriter" />.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method writes the body contents as well as the start and end tags of the element.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ This method writes the body contents as well as the start and end tags of the element.
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1974,8 +2218,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteBody(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.WriteBody(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteBody (writer As XmlWriter)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteBody(System::Xml::XmlWriter ^ writer);" />
       <MemberSignature Language="F#" Value="member this.WriteBody : System.Xml.XmlWriter -&gt; unit" Usage="message.WriteBody writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteBody(System::Xml::XmlWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1985,9 +2229,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1999,11 +2248,11 @@
         <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> object to be used to write the body of the message.</param>
         <summary>Serializes the message body using the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method writes the body contents as well as the start and end tags of the element.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ This method writes the body contents as well as the start and end tags of the element.
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2016,8 +2265,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteBodyContents(class System.Xml.XmlDictionaryWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.WriteBodyContents(System.Xml.XmlDictionaryWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteBodyContents (writer As XmlDictionaryWriter)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteBodyContents(System::Xml::XmlDictionaryWriter ^ writer);" />
       <MemberSignature Language="F#" Value="member this.WriteBodyContents : System.Xml.XmlDictionaryWriter -&gt; unit" Usage="message.WriteBodyContents writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteBodyContents(System::Xml::XmlDictionaryWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -2027,9 +2276,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2056,11 +2310,11 @@
       <Docs>
         <summary>Serializes the entire message.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method serializes the entire message. Once a message is written, it cannot be rewritten unless there is a <xref:System.ServiceModel.Channels.MessageBuffer> for the message.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ This method serializes the entire message. Once a message is written, it cannot be rewritten unless there is a <xref:System.ServiceModel.Channels.MessageBuffer> for the message.
+
  ]]></format>
         </remarks>
       </Docs>
@@ -2070,8 +2324,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteMessage(class System.Xml.XmlDictionaryWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.WriteMessage(System.Xml.XmlDictionaryWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteMessage (writer As XmlDictionaryWriter)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteMessage(System::Xml::XmlDictionaryWriter ^ writer);" />
       <MemberSignature Language="F#" Value="member this.WriteMessage : System.Xml.XmlDictionaryWriter -&gt; unit" Usage="message.WriteMessage writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteMessage(System::Xml::XmlDictionaryWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -2081,9 +2335,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2095,11 +2354,11 @@
         <param name="writer">An <see cref="T:System.Xml.XmlDictionaryWriter" /> object to be used to write the message.</param>
         <summary>Serializes the entire message using the specified <see cref="T:System.Xml.XmlDictionaryWriter" />.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method serializes the entire message. Once a message is written, it cannot be rewritten unless a <xref:System.ServiceModel.Channels.MessageBuffer> instance exists for the message.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ This method serializes the entire message. Once a message is written, it cannot be rewritten unless a <xref:System.ServiceModel.Channels.MessageBuffer> instance exists for the message.
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2113,8 +2372,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteMessage(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.WriteMessage(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteMessage (writer As XmlWriter)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteMessage(System::Xml::XmlWriter ^ writer);" />
       <MemberSignature Language="F#" Value="member this.WriteMessage : System.Xml.XmlWriter -&gt; unit" Usage="message.WriteMessage writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteMessage(System::Xml::XmlWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -2124,9 +2383,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2138,11 +2402,11 @@
         <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> object to be used to write the entire message.</param>
         <summary>Serializes the entire message using the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method serializes the entire message. Once a message is written, it cannot be rewritten unless there is a <xref:System.ServiceModel.Channels.MessageBuffer> for the message.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ This method serializes the entire message. Once a message is written, it cannot be rewritten unless there is a <xref:System.ServiceModel.Channels.MessageBuffer> for the message.
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2166,8 +2430,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStartBody(class System.Xml.XmlDictionaryWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.WriteStartBody(System.Xml.XmlDictionaryWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteStartBody (writer As XmlDictionaryWriter)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartBody(System::Xml::XmlDictionaryWriter ^ writer);" />
       <MemberSignature Language="F#" Value="member this.WriteStartBody : System.Xml.XmlDictionaryWriter -&gt; unit" Usage="message.WriteStartBody writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartBody(System::Xml::XmlDictionaryWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -2177,9 +2441,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2200,8 +2469,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStartBody(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.WriteStartBody(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteStartBody (writer As XmlWriter)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartBody(System::Xml::XmlWriter ^ writer);" />
       <MemberSignature Language="F#" Value="member this.WriteStartBody : System.Xml.XmlWriter -&gt; unit" Usage="message.WriteStartBody writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartBody(System::Xml::XmlWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -2211,9 +2480,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2234,8 +2508,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStartEnvelope(class System.Xml.XmlDictionaryWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.Message.WriteStartEnvelope(System.Xml.XmlDictionaryWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteStartEnvelope (writer As XmlDictionaryWriter)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartEnvelope(System::Xml::XmlDictionaryWriter ^ writer);" />
       <MemberSignature Language="F#" Value="member this.WriteStartEnvelope : System.Xml.XmlDictionaryWriter -&gt; unit" Usage="message.WriteStartEnvelope writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteStartEnvelope(System::Xml::XmlDictionaryWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -2245,9 +2519,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

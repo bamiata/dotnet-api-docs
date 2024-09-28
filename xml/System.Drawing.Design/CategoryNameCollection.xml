@@ -1,10 +1,10 @@
-﻿<Type Name="CategoryNameCollection" FullName="System.Drawing.Design.CategoryNameCollection">
+<Type Name="CategoryNameCollection" FullName="System.Drawing.Design.CategoryNameCollection">
   <TypeSignature Language="C#" Value="public sealed class CategoryNameCollection : System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CategoryNameCollection extends System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.CategoryNameCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CategoryNameCollection&#xA;Inherits ReadOnlyCollectionBase" />
-  <TypeSignature Language="C++ CLI" Value="public ref class CategoryNameCollection sealed : System::Collections::ReadOnlyCollectionBase" />
   <TypeSignature Language="F#" Value="type CategoryNameCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CategoryNameCollection sealed : System::Collections::ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -15,11 +15,31 @@
     <AssemblyName>System.Drawing.Common</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.1</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Drawing.Common" FromVersion="9.0.0.0" To="System.Drawing" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Collections.ReadOnlyCollectionBase</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Represents a collection of category name strings.</summary>
     <remarks>
@@ -33,9 +53,9 @@
 ## Examples  
  The following code example attempts to retrieve the <xref:System.Drawing.Design.IToolboxService> when the control is sited in design mode. If the <xref:System.Drawing.Design.IToolboxService> is retrieved, the code gets the names of each toolbox category and draws each name on the surface of the control.  
   
- [!code-cpp[CategoryNameCollectionExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/CategoryNameCollectionExample/CPP/toolboxcategorynamescontrol.cpp#2)]
- [!code-csharp[CategoryNameCollectionExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/CategoryNameCollectionExample/CS/toolboxcategorynamescontrol.cs#2)]
- [!code-vb[CategoryNameCollectionExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/CategoryNameCollectionExample/VB/toolboxcategorynamescontrol.vb#2)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Winforms/CategoryNameCollectionExample/CPP/toolboxcategorynamescontrol.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/snippets/csharp/System.Drawing.Design/CategoryNameCollection/Overview/toolboxcategorynamescontrol.cs" id="Snippet2":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Winforms/CategoryNameCollectionExample/VB/toolboxcategorynamescontrol.vb" id="Snippet2":::  
   
  ]]></format>
     </remarks>
@@ -56,8 +76,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Design.CategoryNameCollection value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.CategoryNameCollection.#ctor(System.Drawing.Design.CategoryNameCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As CategoryNameCollection)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; CategoryNameCollection(System::Drawing::Design::CategoryNameCollection ^ value);" />
       <MemberSignature Language="F#" Value="new System.Drawing.Design.CategoryNameCollection : System.Drawing.Design.CategoryNameCollection -&gt; System.Drawing.Design.CategoryNameCollection" Usage="new System.Drawing.Design.CategoryNameCollection value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CategoryNameCollection(System::Drawing::Design::CategoryNameCollection ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -67,8 +87,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Common</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.1</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.Drawing.Design.CategoryNameCollection" />
@@ -84,8 +109,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.CategoryNameCollection.#ctor(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As String())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; CategoryNameCollection(cli::array &lt;System::String ^&gt; ^ value);" />
       <MemberSignature Language="F#" Value="new System.Drawing.Design.CategoryNameCollection : string[] -&gt; System.Drawing.Design.CategoryNameCollection" Usage="new System.Drawing.Design.CategoryNameCollection value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CategoryNameCollection(cli::array &lt;System::String ^&gt; ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -95,8 +120,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Common</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.1</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.String[]" />
@@ -112,8 +142,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.CategoryNameCollection.Contains(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ value);" />
       <MemberSignature Language="F#" Value="member this.Contains : string -&gt; bool" Usage="categoryNameCollection.Contains value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -123,8 +153,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Common</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.1</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -145,8 +180,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(string[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.CategoryNameCollection.CopyTo(System.String[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As String(), index As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::String ^&gt; ^ array, int index);" />
       <MemberSignature Language="F#" Value="member this.CopyTo : string[] * int -&gt; unit" Usage="categoryNameCollection.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::String ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -156,8 +191,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Common</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.1</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -178,8 +218,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.CategoryNameCollection.IndexOf(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As String) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::String ^ value);" />
       <MemberSignature Language="F#" Value="member this.IndexOf : string -&gt; int" Usage="categoryNameCollection.IndexOf value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -189,8 +229,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Common</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.1</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -210,8 +255,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Design.CategoryNameCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default[int] { System::String ^ get(int index); };" />
       <MemberSignature Language="F#" Value="member this.Item(int) : string" Usage="System.Drawing.Design.CategoryNameCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default[int] { System::String ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -221,8 +266,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Common</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.1</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

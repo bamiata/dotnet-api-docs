@@ -1,10 +1,10 @@
-﻿<Type Name="CreateInstanceBinder" FullName="System.Dynamic.CreateInstanceBinder">
+<Type Name="CreateInstanceBinder" FullName="System.Dynamic.CreateInstanceBinder">
   <TypeSignature Language="C#" Value="public abstract class CreateInstanceBinder : System.Dynamic.DynamicMetaObjectBinder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CreateInstanceBinder extends System.Dynamic.DynamicMetaObjectBinder" />
   <TypeSignature Language="DocId" Value="T:System.Dynamic.CreateInstanceBinder" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CreateInstanceBinder&#xA;Inherits DynamicMetaObjectBinder" />
-  <TypeSignature Language="C++ CLI" Value="public ref class CreateInstanceBinder abstract : System::Dynamic::DynamicMetaObjectBinder" />
   <TypeSignature Language="F#" Value="type CreateInstanceBinder = class&#xA;    inherit DynamicMetaObjectBinder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CreateInstanceBinder abstract : System::Dynamic::DynamicMetaObjectBinder" />
   <AssemblyInfo>
     <AssemblyName>System.Dynamic.Runtime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -17,16 +17,49 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Core" FromVersion="4.0.0.0" To="System.Dynamic.Runtime" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Linq.Expressions" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="System.Dynamic.Runtime" FromVersion="5.0.0.0" To="System.Linq.Expressions" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Linq.Expressions" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.Dynamic.Runtime" FromVersion="6.0.0.0" To="System.Linq.Expressions" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Linq.Expressions" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="System.Dynamic.Runtime" FromVersion="7.0.0.0" To="System.Linq.Expressions" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Linq.Expressions" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="System.Dynamic.Runtime" FromVersion="8.0.0.0" To="System.Linq.Expressions" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Linq.Expressions" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+    <TypeForwarding From="System.Dynamic.Runtime" FromVersion="9.0.0.0" To="System.Linq.Expressions" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+    <TypeForwarding From="System.Dynamic.Runtime" FromVersion="4.1.0.0" To="System.Linq.Expressions" ToVersion="4.2.0.0" FrameworkAlternate="netcore-2.0" />
+    <TypeForwarding From="System.Dynamic.Runtime" FromVersion="4.1.1.0" To="System.Linq.Expressions" ToVersion="4.2.1.0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+    <TypeForwarding From="System.Dynamic.Runtime" FromVersion="4.1.2.0" To="System.Linq.Expressions" ToVersion="4.2.2.0" FrameworkAlternate="netcore-3.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Dynamic.DynamicMetaObjectBinder</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Represents the dynamic create operation at the call site, providing the binding semantic and the details about the operation.</summary>
     <remarks>To be added.</remarks>
@@ -36,8 +69,9 @@
       <MemberSignature Language="C#" Value="protected CreateInstanceBinder (System.Dynamic.CallInfo callInfo);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Dynamic.CallInfo callInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.CreateInstanceBinder.#ctor(System.Dynamic.CallInfo)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CreateInstanceBinder(System::Dynamic::CallInfo ^ callInfo);" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (callInfo As CallInfo)" />
       <MemberSignature Language="F#" Value="new System.Dynamic.CreateInstanceBinder : System.Dynamic.CallInfo -&gt; System.Dynamic.CreateInstanceBinder" Usage="new System.Dynamic.CreateInstanceBinder callInfo" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CreateInstanceBinder(System::Dynamic::CallInfo ^ callInfo);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -51,18 +85,25 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="callInfo" Type="System.Dynamic.CallInfo" />
       </Parameters>
       <Docs>
         <param name="callInfo">The signature of the arguments at the call site.</param>
-        <summary>Initializes a new intsance of the <see cref="T:System.Dynamic.CreateInstanceBinder" />.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Dynamic.CreateInstanceBinder" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,8 +112,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Dynamic.DynamicMetaObject Bind(class System.Dynamic.DynamicMetaObject target, class System.Dynamic.DynamicMetaObject[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.CreateInstanceBinder.Bind(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function Bind (target As DynamicMetaObject, args As DynamicMetaObject()) As DynamicMetaObject" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Dynamic::DynamicMetaObject ^ Bind(System::Dynamic::DynamicMetaObject ^ target, cli::array &lt;System::Dynamic::DynamicMetaObject ^&gt; ^ args);" />
       <MemberSignature Language="F#" Value="override this.Bind : System.Dynamic.DynamicMetaObject * System.Dynamic.DynamicMetaObject[] -&gt; System.Dynamic.DynamicMetaObject" Usage="createInstanceBinder.Bind (target, args)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Dynamic::DynamicMetaObject ^ Bind(System::Dynamic::DynamicMetaObject ^ target, cli::array &lt;System::Dynamic::DynamicMetaObject ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -86,11 +127,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Dynamic.DynamicMetaObject</ReturnType>
@@ -112,8 +160,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Dynamic.CallInfo CallInfo" />
       <MemberSignature Language="DocId" Value="P:System.Dynamic.CreateInstanceBinder.CallInfo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CallInfo As CallInfo" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Dynamic::CallInfo ^ CallInfo { System::Dynamic::CallInfo ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.CallInfo : System.Dynamic.CallInfo" Usage="System.Dynamic.CreateInstanceBinder.CallInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Dynamic::CallInfo ^ CallInfo { System::Dynamic::CallInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -127,15 +175,23 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -161,8 +217,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Dynamic.DynamicMetaObject FallbackCreateInstance(class System.Dynamic.DynamicMetaObject target, class System.Dynamic.DynamicMetaObject[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.CreateInstanceBinder.FallbackCreateInstance(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])" />
       <MemberSignature Language="VB.NET" Value="Public Function FallbackCreateInstance (target As DynamicMetaObject, args As DynamicMetaObject()) As DynamicMetaObject" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Dynamic::DynamicMetaObject ^ FallbackCreateInstance(System::Dynamic::DynamicMetaObject ^ target, cli::array &lt;System::Dynamic::DynamicMetaObject ^&gt; ^ args);" />
       <MemberSignature Language="F#" Value="member this.FallbackCreateInstance : System.Dynamic.DynamicMetaObject * System.Dynamic.DynamicMetaObject[] -&gt; System.Dynamic.DynamicMetaObject" Usage="createInstanceBinder.FallbackCreateInstance (target, args)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Dynamic::DynamicMetaObject ^ FallbackCreateInstance(System::Dynamic::DynamicMetaObject ^ target, cli::array &lt;System::Dynamic::DynamicMetaObject ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -176,15 +232,23 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -203,12 +267,13 @@
       </Docs>
     </Member>
     <Member MemberName="FallbackCreateInstance">
-      <MemberSignature Language="C#" Value="public abstract System.Dynamic.DynamicMetaObject FallbackCreateInstance (System.Dynamic.DynamicMetaObject target, System.Dynamic.DynamicMetaObject[] args, System.Dynamic.DynamicMetaObject errorSuggestion);" />
+      <MemberSignature Language="C#" Value="public abstract System.Dynamic.DynamicMetaObject FallbackCreateInstance (System.Dynamic.DynamicMetaObject target, System.Dynamic.DynamicMetaObject[] args, System.Dynamic.DynamicMetaObject errorSuggestion);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Dynamic.DynamicMetaObject FallbackCreateInstance(class System.Dynamic.DynamicMetaObject target, class System.Dynamic.DynamicMetaObject[] args, class System.Dynamic.DynamicMetaObject errorSuggestion) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.CreateInstanceBinder.FallbackCreateInstance(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[],System.Dynamic.DynamicMetaObject)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function FallbackCreateInstance (target As DynamicMetaObject, args As DynamicMetaObject(), errorSuggestion As DynamicMetaObject) As DynamicMetaObject" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Dynamic::DynamicMetaObject ^ FallbackCreateInstance(System::Dynamic::DynamicMetaObject ^ target, cli::array &lt;System::Dynamic::DynamicMetaObject ^&gt; ^ args, System::Dynamic::DynamicMetaObject ^ errorSuggestion);" />
       <MemberSignature Language="F#" Value="abstract member FallbackCreateInstance : System.Dynamic.DynamicMetaObject * System.Dynamic.DynamicMetaObject[] * System.Dynamic.DynamicMetaObject -&gt; System.Dynamic.DynamicMetaObject" Usage="createInstanceBinder.FallbackCreateInstance (target, args, errorSuggestion)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Dynamic::DynamicMetaObject ^ FallbackCreateInstance(System::Dynamic::DynamicMetaObject ^ target, cli::array &lt;System::Dynamic::DynamicMetaObject ^&gt; ^ args, System::Dynamic::DynamicMetaObject ^ errorSuggestion);" />
+      <MemberSignature Language="C#" Value="public abstract System.Dynamic.DynamicMetaObject FallbackCreateInstance (System.Dynamic.DynamicMetaObject target, System.Dynamic.DynamicMetaObject[] args, System.Dynamic.DynamicMetaObject? errorSuggestion);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -222,11 +287,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Dynamic.DynamicMetaObject</ReturnType>
@@ -234,7 +306,14 @@
       <Parameters>
         <Parameter Name="target" Type="System.Dynamic.DynamicMetaObject" />
         <Parameter Name="args" Type="System.Dynamic.DynamicMetaObject[]" />
-        <Parameter Name="errorSuggestion" Type="System.Dynamic.DynamicMetaObject" />
+        <Parameter Name="errorSuggestion" Type="System.Dynamic.DynamicMetaObject">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
       </Parameters>
       <Docs>
         <param name="target">The target of the dynamic create operation.</param>
@@ -250,8 +329,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ReturnType" />
       <MemberSignature Language="DocId" Value="P:System.Dynamic.CreateInstanceBinder.ReturnType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property ReturnType As Type" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ReturnType { Type ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.ReturnType : Type" Usage="System.Dynamic.CreateInstanceBinder.ReturnType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ReturnType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -265,11 +344,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>

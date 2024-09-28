@@ -1,32 +1,47 @@
-﻿<Type Name="SocketReceiveFromResult" FullName="System.Net.Sockets.SocketReceiveFromResult">
+<Type Name="SocketReceiveFromResult" FullName="System.Net.Sockets.SocketReceiveFromResult">
   <TypeSignature Language="C#" Value="public struct SocketReceiveFromResult" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit SocketReceiveFromResult extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SocketReceiveFromResult" />
   <TypeSignature Language="VB.NET" Value="Public Structure SocketReceiveFromResult" />
-  <TypeSignature Language="C++ CLI" Value="public value class SocketReceiveFromResult" />
   <TypeSignature Language="F#" Value="type SocketReceiveFromResult = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class SocketReceiveFromResult" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Sockets" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Sockets" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Sockets" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Sockets" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Sockets" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
     <Attribute FrameworkAlternate="netstandard-2.0">
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -39,18 +54,25 @@
       <MemberSignature Language="ILAsm" Value=".field public int32 ReceivedBytes" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketReceiveFromResult.ReceivedBytes" />
       <MemberSignature Language="VB.NET" Value="Public ReceivedBytes As Integer " />
-      <MemberSignature Language="C++ CLI" Value="public: int ReceivedBytes;" />
       <MemberSignature Language="F#" Value="val mutable ReceivedBytes : int" Usage="System.Net.Sockets.SocketReceiveFromResult.ReceivedBytes" />
+      <MemberSignature Language="C++ CLI" Value="public: int ReceivedBytes;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -70,24 +92,37 @@
       <MemberSignature Language="ILAsm" Value=".field public class System.Net.EndPoint RemoteEndPoint" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketReceiveFromResult.RemoteEndPoint" />
       <MemberSignature Language="VB.NET" Value="Public RemoteEndPoint As EndPoint " />
-      <MemberSignature Language="C++ CLI" Value="public: System::Net::EndPoint ^ RemoteEndPoint;" />
       <MemberSignature Language="F#" Value="val mutable RemoteEndPoint : System.Net.EndPoint" Usage="System.Net.Sockets.SocketReceiveFromResult.RemoteEndPoint" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Net::EndPoint ^ RemoteEndPoint;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.EndPoint</ReturnType>
       </ReturnValue>

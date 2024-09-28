@@ -1,10 +1,10 @@
-﻿<Type Name="LinqDataSourceContextEventArgs" FullName="System.Web.UI.WebControls.LinqDataSourceContextEventArgs">
+<Type Name="LinqDataSourceContextEventArgs" FullName="System.Web.UI.WebControls.LinqDataSourceContextEventArgs">
   <TypeSignature Language="C#" Value="public class LinqDataSourceContextEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LinqDataSourceContextEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LinqDataSourceContextEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class LinqDataSourceContextEventArgs&#xA;Inherits EventArgs" />
-  <TypeSignature Language="C++ CLI" Value="public ref class LinqDataSourceContextEventArgs : EventArgs" />
   <TypeSignature Language="F#" Value="type LinqDataSourceContextEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LinqDataSourceContextEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -20,19 +20,19 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the <xref:System.Web.UI.WebControls.LinqDataSource> control creates an instance of the type that is specified in the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property. The <xref:System.Web.UI.WebControls.LinqDataSource> control calls the default constructor of the data context object to create an instance of the object.  
+ By default, the <xref:System.Web.UI.WebControls.LinqDataSource> control creates an instance of the type that is specified in the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property. The <xref:System.Web.UI.WebControls.LinqDataSource> control calls the parameterless constructor of the data context object to create an instance of the object.  
   
- You can manually create the data context object by handling the <xref:System.Web.UI.WebControls.LinqDataSource.ContextCreating> event. You do this if you want to use a non-default constructor.  
+ You can manually create the data context object by handling the <xref:System.Web.UI.WebControls.LinqDataSource.ContextCreating> event. You do this if you want to use a non-parameterless constructor.  
   
  You can also handle the <xref:System.Web.UI.WebControls.LinqDataSource.ContextCreating> event if you want to create a data context object that is different from the one specified in the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property. In that case, you set the <xref:System.Web.UI.WebControls.LinqDataSourceContextEventArgs.ObjectInstance%2A> property to the object you created. The <xref:System.Web.UI.WebControls.LinqDataSource> control will use the object you have created for selecting the data. When you are updating, inserting, or deleting data, you must set the <xref:System.Web.UI.WebControls.LinqDataSourceContextEventArgs.ObjectInstance%2A> property to an object that derives from the <xref:System.Data.Linq.DataContext> class.  
   
    
   
 ## Examples  
- The following example shows how to create the data context object by calling a non-default constructor in an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.ContextCreating> event. The code assigns the custom object to the <xref:System.Web.UI.WebControls.LinqDataSourceContextEventArgs.ObjectInstance%2A> property.  
+ The following example shows how to create the data context object by calling a non-parameterless constructor in an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.ContextCreating> event. The code assigns the custom object to the <xref:System.Web.UI.WebControls.LinqDataSourceContextEventArgs.ObjectInstance%2A> property.  
   
- [!code-csharp[System.Web.UI.WebControls.LinqDataSource.ContextCreating#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.ContextCreating/cs/Default.aspx.cs#1)]
- [!code-vb[System.Web.UI.WebControls.LinqDataSource.ContextCreating#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.ContextCreating/vb/Default.aspx.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.ContextCreating/cs/Default.aspx.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.ContextCreating/vb/Default.aspx.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -70,8 +70,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Web.UI.DataSourceOperation operation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceContextEventArgs.#ctor(System.Web.UI.DataSourceOperation)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (operation As DataSourceOperation)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinqDataSourceContextEventArgs(System::Web::UI::DataSourceOperation operation);" />
       <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.LinqDataSourceContextEventArgs : System.Web.UI.DataSourceOperation -&gt; System.Web.UI.WebControls.LinqDataSourceContextEventArgs" Usage="new System.Web.UI.WebControls.LinqDataSourceContextEventArgs operation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinqDataSourceContextEventArgs(System::Web::UI::DataSourceOperation operation);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -80,7 +80,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -97,8 +98,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object ObjectInstance" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceContextEventArgs.ObjectInstance" />
       <MemberSignature Language="VB.NET" Value="Public Property ObjectInstance As Object" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ObjectInstance { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberSignature Language="F#" Value="member this.ObjectInstance : obj with get, set" Usage="System.Web.UI.WebControls.LinqDataSourceContextEventArgs.ObjectInstance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ObjectInstance { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -107,10 +108,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -123,21 +126,21 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the <xref:System.Web.UI.WebControls.LinqDataSource> control creates an instance of the class specified in the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property. It does this by calling the default constructor of that class.  
+ By default, the <xref:System.Web.UI.WebControls.LinqDataSource> control creates an instance of the class specified in the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property. It does this by calling the parameterless constructor of that class.  
   
  You can manually create the object for data operations by handling the <xref:System.Web.UI.WebControls.LinqDataSource.ContextCreating> event and setting the <xref:System.Web.UI.WebControls.LinqDataSourceContextEventArgs.ObjectInstance%2A> property to an object you have created.  
   
- You create the object manually if you want to use a non-default constructor or if you want to create an object that is different from the one specified in the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property.  
+ You create the object manually if you want to use a non-parameterless constructor or if you want to create an object that is different from the one specified in the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property.  
   
  The <xref:System.Web.UI.WebControls.LinqDataSourceContextEventArgs.ObjectInstance%2A> property does not contain an instance of the type specified in the <xref:System.Web.UI.WebControls.LinqDataSource.ContextTypeName%2A> property, because that instance is created after the <xref:System.Web.UI.WebControls.LinqDataSource.ContextCreating> event. The <xref:System.Web.UI.WebControls.LinqDataSourceContextEventArgs.ObjectInstance%2A> property is used only when you manually create the data context object during the <xref:System.Web.UI.WebControls.LinqDataSource.ContextCreating> event. When you are updating, inserting, or deleting data, you must set the <xref:System.Web.UI.WebControls.LinqDataSourceContextEventArgs.ObjectInstance%2A> property to an object that derives from the <xref:System.Data.Linq.DataContext> class.  
   
    
   
 ## Examples  
- The following example shows how to create the data context object by calling a non-default constructor in an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.ContextCreating> event. The code assigns the custom object to the <xref:System.Web.UI.WebControls.LinqDataSourceContextEventArgs.ObjectInstance%2A> property.  
+ The following example shows how to create the data context object by calling a non-parameterless constructor in an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.ContextCreating> event. The code assigns the custom object to the <xref:System.Web.UI.WebControls.LinqDataSourceContextEventArgs.ObjectInstance%2A> property.  
   
- [!code-csharp[System.Web.UI.WebControls.LinqDataSource.ContextCreating#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.ContextCreating/cs/Default.aspx.cs#1)]
- [!code-vb[System.Web.UI.WebControls.LinqDataSource.ContextCreating#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.ContextCreating/vb/Default.aspx.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.ContextCreating/cs/Default.aspx.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.ContextCreating/vb/Default.aspx.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -148,8 +151,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.DataSourceOperation Operation" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceContextEventArgs.Operation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operation As DataSourceOperation" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataSourceOperation Operation { System::Web::UI::DataSourceOperation get(); };" />
       <MemberSignature Language="F#" Value="member this.Operation : System.Web.UI.DataSourceOperation" Usage="System.Web.UI.WebControls.LinqDataSourceContextEventArgs.Operation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataSourceOperation Operation { System::Web::UI::DataSourceOperation get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -158,7 +161,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

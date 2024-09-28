@@ -1,10 +1,11 @@
-﻿<Type Name="MethodAttributes" FullName="System.Reflection.MethodAttributes">
+<Type Name="MethodAttributes" FullName="System.Reflection.MethodAttributes">
   <TypeSignature Language="C#" Value="public enum MethodAttributes" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed MethodAttributes extends System.Enum" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MethodAttributes extends System.Enum" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.MethodAttributes" />
   <TypeSignature Language="VB.NET" Value="Public Enum MethodAttributes" />
-  <TypeSignature Language="C++ CLI" Value="public enum class MethodAttributes" />
   <TypeSignature Language="F#" Value="type MethodAttributes = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class MethodAttributes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed MethodAttributes extends System.Enum" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,24 +20,50 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Reflection.Primitives" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="System.Reflection.Primitives" FromVersion="5.0.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.Reflection.Primitives" FromVersion="6.0.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="System.Reflection.Primitives" FromVersion="7.0.0.0" To="System.Runtime" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="System.Reflection.Primitives" FromVersion="8.0.0.0" To="System.Runtime" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+    <TypeForwarding From="System.Reflection.Primitives" FromVersion="9.0.0.0" To="System.Runtime" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+    <TypeForwarding From="System.Reflection.Primitives" FromVersion="4.1.0.0" To="System.Runtime" ToVersion="4.2.0.0" FrameworkAlternate="netcore-2.0" />
+    <TypeForwarding From="System.Reflection.Primitives" FromVersion="4.1.1.0" To="System.Runtime" ToVersion="4.2.1.0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+    <TypeForwarding From="System.Reflection.Primitives" FromVersion="4.1.2.0" To="System.Runtime" ToVersion="4.2.2.0" FrameworkAlternate="netcore-3.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
-      <AttributeName>System.Flags</AttributeName>
+    <Attribute>
+      <AttributeName Language="C#">[System.Flags]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Flags&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-      <AttributeName>System.Serializable</AttributeName>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(true)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -47,9 +74,9 @@
 ## Examples  
  The following example displays the attributes of the specified method.  
   
- [!code-cpp[Classic MethodAttributes Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic MethodAttributes Example/CPP/source.cpp#1)]
- [!code-csharp[Classic MethodAttributes Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic MethodAttributes Example/CS/source.cs#1)]
- [!code-vb[Classic MethodAttributes Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic MethodAttributes Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_Classic/classic MethodAttributes Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Reflection/MethodAttributes/Overview/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_Classic/classic MethodAttributes Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -60,8 +87,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodAttributes Abstract = int32(1024)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodAttributes.Abstract" />
       <MemberSignature Language="VB.NET" Value="Abstract" />
-      <MemberSignature Language="C++ CLI" Value="Abstract" />
       <MemberSignature Language="F#" Value="Abstract = 1024" Usage="System.Reflection.MethodAttributes.Abstract" />
+      <MemberSignature Language="C++ CLI" Value="Abstract" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -77,11 +104,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodAttributes</ReturnType>
@@ -96,8 +130,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodAttributes Assembly = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodAttributes.Assembly" />
       <MemberSignature Language="VB.NET" Value="Assembly" />
-      <MemberSignature Language="C++ CLI" Value="Assembly" />
       <MemberSignature Language="F#" Value="Assembly = 3" Usage="System.Reflection.MethodAttributes.Assembly" />
+      <MemberSignature Language="C++ CLI" Value="Assembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -113,11 +147,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodAttributes</ReturnType>
@@ -132,8 +173,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodAttributes CheckAccessOnOverride = int32(512)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodAttributes.CheckAccessOnOverride" />
       <MemberSignature Language="VB.NET" Value="CheckAccessOnOverride" />
-      <MemberSignature Language="C++ CLI" Value="CheckAccessOnOverride" />
       <MemberSignature Language="F#" Value="CheckAccessOnOverride = 512" Usage="System.Reflection.MethodAttributes.CheckAccessOnOverride" />
+      <MemberSignature Language="C++ CLI" Value="CheckAccessOnOverride" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -149,11 +190,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodAttributes</ReturnType>
@@ -168,8 +216,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodAttributes FamANDAssem = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodAttributes.FamANDAssem" />
       <MemberSignature Language="VB.NET" Value="FamANDAssem" />
-      <MemberSignature Language="C++ CLI" Value="FamANDAssem" />
       <MemberSignature Language="F#" Value="FamANDAssem = 2" Usage="System.Reflection.MethodAttributes.FamANDAssem" />
+      <MemberSignature Language="C++ CLI" Value="FamANDAssem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -185,11 +233,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodAttributes</ReturnType>
@@ -204,8 +259,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodAttributes Family = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodAttributes.Family" />
       <MemberSignature Language="VB.NET" Value="Family" />
-      <MemberSignature Language="C++ CLI" Value="Family" />
       <MemberSignature Language="F#" Value="Family = 4" Usage="System.Reflection.MethodAttributes.Family" />
+      <MemberSignature Language="C++ CLI" Value="Family" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -221,11 +276,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodAttributes</ReturnType>
@@ -240,8 +302,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodAttributes FamORAssem = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodAttributes.FamORAssem" />
       <MemberSignature Language="VB.NET" Value="FamORAssem" />
-      <MemberSignature Language="C++ CLI" Value="FamORAssem" />
       <MemberSignature Language="F#" Value="FamORAssem = 5" Usage="System.Reflection.MethodAttributes.FamORAssem" />
+      <MemberSignature Language="C++ CLI" Value="FamORAssem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -257,11 +319,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodAttributes</ReturnType>
@@ -276,8 +345,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodAttributes Final = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodAttributes.Final" />
       <MemberSignature Language="VB.NET" Value="Final" />
-      <MemberSignature Language="C++ CLI" Value="Final" />
       <MemberSignature Language="F#" Value="Final = 32" Usage="System.Reflection.MethodAttributes.Final" />
+      <MemberSignature Language="C++ CLI" Value="Final" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -293,11 +362,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodAttributes</ReturnType>
@@ -312,8 +388,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodAttributes HasSecurity = int32(16384)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodAttributes.HasSecurity" />
       <MemberSignature Language="VB.NET" Value="HasSecurity" />
-      <MemberSignature Language="C++ CLI" Value="HasSecurity" />
       <MemberSignature Language="F#" Value="HasSecurity = 16384" Usage="System.Reflection.MethodAttributes.HasSecurity" />
+      <MemberSignature Language="C++ CLI" Value="HasSecurity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -329,11 +405,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodAttributes</ReturnType>
@@ -348,8 +431,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodAttributes HideBySig = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodAttributes.HideBySig" />
       <MemberSignature Language="VB.NET" Value="HideBySig" />
-      <MemberSignature Language="C++ CLI" Value="HideBySig" />
       <MemberSignature Language="F#" Value="HideBySig = 128" Usage="System.Reflection.MethodAttributes.HideBySig" />
+      <MemberSignature Language="C++ CLI" Value="HideBySig" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -365,11 +448,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodAttributes</ReturnType>
@@ -384,8 +474,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodAttributes MemberAccessMask = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodAttributes.MemberAccessMask" />
       <MemberSignature Language="VB.NET" Value="MemberAccessMask" />
-      <MemberSignature Language="C++ CLI" Value="MemberAccessMask" />
       <MemberSignature Language="F#" Value="MemberAccessMask = 7" Usage="System.Reflection.MethodAttributes.MemberAccessMask" />
+      <MemberSignature Language="C++ CLI" Value="MemberAccessMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -401,11 +491,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodAttributes</ReturnType>
@@ -420,8 +517,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodAttributes NewSlot = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodAttributes.NewSlot" />
       <MemberSignature Language="VB.NET" Value="NewSlot" />
-      <MemberSignature Language="C++ CLI" Value="NewSlot" />
       <MemberSignature Language="F#" Value="NewSlot = 256" Usage="System.Reflection.MethodAttributes.NewSlot" />
+      <MemberSignature Language="C++ CLI" Value="NewSlot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -437,11 +534,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodAttributes</ReturnType>
@@ -456,8 +560,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodAttributes PinvokeImpl = int32(8192)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodAttributes.PinvokeImpl" />
       <MemberSignature Language="VB.NET" Value="PinvokeImpl" />
-      <MemberSignature Language="C++ CLI" Value="PinvokeImpl" />
       <MemberSignature Language="F#" Value="PinvokeImpl = 8192" Usage="System.Reflection.MethodAttributes.PinvokeImpl" />
+      <MemberSignature Language="C++ CLI" Value="PinvokeImpl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -473,11 +577,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodAttributes</ReturnType>
@@ -492,8 +603,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodAttributes Private = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodAttributes.Private" />
       <MemberSignature Language="VB.NET" Value="Private" />
-      <MemberSignature Language="C++ CLI" Value="Private" />
       <MemberSignature Language="F#" Value="Private = 1" Usage="System.Reflection.MethodAttributes.Private" />
+      <MemberSignature Language="C++ CLI" Value="Private" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -509,11 +620,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodAttributes</ReturnType>
@@ -528,8 +646,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodAttributes PrivateScope = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodAttributes.PrivateScope" />
       <MemberSignature Language="VB.NET" Value="PrivateScope" />
-      <MemberSignature Language="C++ CLI" Value="PrivateScope" />
       <MemberSignature Language="F#" Value="PrivateScope = 0" Usage="System.Reflection.MethodAttributes.PrivateScope" />
+      <MemberSignature Language="C++ CLI" Value="PrivateScope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -545,11 +663,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodAttributes</ReturnType>
@@ -564,8 +689,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodAttributes Public = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodAttributes.Public" />
       <MemberSignature Language="VB.NET" Value="Public" />
-      <MemberSignature Language="C++ CLI" Value="Public" />
       <MemberSignature Language="F#" Value="Public = 6" Usage="System.Reflection.MethodAttributes.Public" />
+      <MemberSignature Language="C++ CLI" Value="Public" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -581,11 +706,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodAttributes</ReturnType>
@@ -600,8 +732,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodAttributes RequireSecObject = int32(32768)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodAttributes.RequireSecObject" />
       <MemberSignature Language="VB.NET" Value="RequireSecObject" />
-      <MemberSignature Language="C++ CLI" Value="RequireSecObject" />
       <MemberSignature Language="F#" Value="RequireSecObject = 32768" Usage="System.Reflection.MethodAttributes.RequireSecObject" />
+      <MemberSignature Language="C++ CLI" Value="RequireSecObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -617,11 +749,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodAttributes</ReturnType>
@@ -636,8 +775,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodAttributes ReservedMask = int32(53248)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodAttributes.ReservedMask" />
       <MemberSignature Language="VB.NET" Value="ReservedMask" />
-      <MemberSignature Language="C++ CLI" Value="ReservedMask" />
       <MemberSignature Language="F#" Value="ReservedMask = 53248" Usage="System.Reflection.MethodAttributes.ReservedMask" />
+      <MemberSignature Language="C++ CLI" Value="ReservedMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -649,11 +788,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -671,8 +817,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodAttributes ReuseSlot = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodAttributes.ReuseSlot" />
       <MemberSignature Language="VB.NET" Value="ReuseSlot" />
-      <MemberSignature Language="C++ CLI" Value="ReuseSlot" />
       <MemberSignature Language="F#" Value="ReuseSlot = 0" Usage="System.Reflection.MethodAttributes.ReuseSlot" />
+      <MemberSignature Language="C++ CLI" Value="ReuseSlot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -688,11 +834,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodAttributes</ReturnType>
@@ -707,8 +860,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodAttributes RTSpecialName = int32(4096)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodAttributes.RTSpecialName" />
       <MemberSignature Language="VB.NET" Value="RTSpecialName" />
-      <MemberSignature Language="C++ CLI" Value="RTSpecialName" />
       <MemberSignature Language="F#" Value="RTSpecialName = 4096" Usage="System.Reflection.MethodAttributes.RTSpecialName" />
+      <MemberSignature Language="C++ CLI" Value="RTSpecialName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -724,11 +877,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodAttributes</ReturnType>
@@ -743,8 +903,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodAttributes SpecialName = int32(2048)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodAttributes.SpecialName" />
       <MemberSignature Language="VB.NET" Value="SpecialName" />
-      <MemberSignature Language="C++ CLI" Value="SpecialName" />
       <MemberSignature Language="F#" Value="SpecialName = 2048" Usage="System.Reflection.MethodAttributes.SpecialName" />
+      <MemberSignature Language="C++ CLI" Value="SpecialName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -760,11 +920,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodAttributes</ReturnType>
@@ -779,8 +946,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodAttributes Static = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodAttributes.Static" />
       <MemberSignature Language="VB.NET" Value="Static" />
-      <MemberSignature Language="C++ CLI" Value="Static" />
       <MemberSignature Language="F#" Value="Static = 16" Usage="System.Reflection.MethodAttributes.Static" />
+      <MemberSignature Language="C++ CLI" Value="Static" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -796,11 +963,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodAttributes</ReturnType>
@@ -815,8 +989,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodAttributes UnmanagedExport = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodAttributes.UnmanagedExport" />
       <MemberSignature Language="VB.NET" Value="UnmanagedExport" />
-      <MemberSignature Language="C++ CLI" Value="UnmanagedExport" />
       <MemberSignature Language="F#" Value="UnmanagedExport = 8" Usage="System.Reflection.MethodAttributes.UnmanagedExport" />
+      <MemberSignature Language="C++ CLI" Value="UnmanagedExport" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -832,11 +1006,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodAttributes</ReturnType>
@@ -851,8 +1032,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodAttributes Virtual = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodAttributes.Virtual" />
       <MemberSignature Language="VB.NET" Value="Virtual" />
-      <MemberSignature Language="C++ CLI" Value="Virtual" />
       <MemberSignature Language="F#" Value="Virtual = 64" Usage="System.Reflection.MethodAttributes.Virtual" />
+      <MemberSignature Language="C++ CLI" Value="Virtual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -868,11 +1049,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodAttributes</ReturnType>
@@ -887,8 +1075,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodAttributes VtableLayoutMask = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodAttributes.VtableLayoutMask" />
       <MemberSignature Language="VB.NET" Value="VtableLayoutMask" />
-      <MemberSignature Language="C++ CLI" Value="VtableLayoutMask" />
       <MemberSignature Language="F#" Value="VtableLayoutMask = 256" Usage="System.Reflection.MethodAttributes.VtableLayoutMask" />
+      <MemberSignature Language="C++ CLI" Value="VtableLayoutMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -904,11 +1092,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.MethodAttributes</ReturnType>

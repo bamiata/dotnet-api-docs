@@ -1,10 +1,11 @@
-﻿<Type Name="Stopwatch" FullName="System.Diagnostics.Stopwatch">
+<Type Name="Stopwatch" FullName="System.Diagnostics.Stopwatch">
   <TypeSignature Language="C#" Value="public class Stopwatch" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Stopwatch extends System.Object" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Stopwatch extends System.Object" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Stopwatch" />
   <TypeSignature Language="VB.NET" Value="Public Class Stopwatch" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Stopwatch" />
   <TypeSignature Language="F#" Value="type Stopwatch = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Stopwatch" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi Stopwatch extends System.Object" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,6 +13,7 @@
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -22,11 +24,44 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System" FromVersion="4.0.0.0" To="System.Runtime.Extensions" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="System.Runtime.Extensions" FromVersion="5.0.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.Runtime.Extensions" FromVersion="6.0.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="System.Runtime.Extensions" FromVersion="7.0.0.0" To="System.Runtime" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="System.Runtime.Extensions" FromVersion="8.0.0.0" To="System.Runtime" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+    <TypeForwarding From="System.Runtime.Extensions" FromVersion="9.0.0.0" To="System.Runtime" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+    <TypeForwarding From="System.Runtime.Extensions" FromVersion="4.1.1.1" To="System" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Provides a set of methods and properties that you can use to accurately measure elapsed time.</summary>
     <remarks>
@@ -41,7 +76,7 @@
   
  The <xref:System.Diagnostics.Stopwatch> measures elapsed time by counting timer ticks in the underlying timer mechanism. If the installed hardware and operating system support a high-resolution performance counter, then the <xref:System.Diagnostics.Stopwatch> class uses that counter to measure elapsed time. Otherwise, the <xref:System.Diagnostics.Stopwatch> class uses the system timer to measure elapsed time. Use the <xref:System.Diagnostics.Stopwatch.Frequency> and <xref:System.Diagnostics.Stopwatch.IsHighResolution> fields to determine the precision and resolution of the <xref:System.Diagnostics.Stopwatch> timing implementation.  
   
- The <xref:System.Diagnostics.Stopwatch> class assists the manipulation of timing-related performance counters within managed code. Specifically, the <xref:System.Diagnostics.Stopwatch.Frequency> field and <xref:System.Diagnostics.Stopwatch.GetTimestamp%2A> method can be used in place of the unmanaged Win32 APIs `QueryPerformanceFrequency` and `QueryPerformanceCounter`.  
+ The <xref:System.Diagnostics.Stopwatch> class assists the manipulation of timing-related performance counters within managed code. Specifically, the <xref:System.Diagnostics.Stopwatch.Frequency> field and <xref:System.Diagnostics.Stopwatch.GetTimestamp%2A> method can be used in place of the unmanaged Windows APIs `QueryPerformanceFrequency` and `QueryPerformanceCounter`.  
   
 > [!NOTE]
 >  On a multiprocessor computer, it does not matter which processor the thread runs on. However, because of bugs in the BIOS or the Hardware Abstraction Layer (HAL), you can get different timing results on different processors. To specify processor affinity for a thread, use the <xref:System.Diagnostics.ProcessThread.ProcessorAffinity%2A?displayProperty=nameWithType> method.  
@@ -51,14 +86,14 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Diagnostics.Stopwatch> class to determine the execution time for an application.  
   
- [!code-csharp[System.Diagnostics.Stopwatch#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.Stopwatch/CS/source.cs#1)]
- [!code-vb[System.Diagnostics.Stopwatch#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.Stopwatch/VB/source.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/Stopwatch/Overview/source1.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.Stopwatch/VB/source.vb" id="Snippet1":::  
   
  The following example demonstrates the use of the <xref:System.Diagnostics.Stopwatch> class to calculate performance data.  
   
- [!code-cpp[StopWatchPerfSample#1](~/samples/snippets/cpp/VS_Snippets_CLR/StopWatchPerfSample/CPP/source.cpp#1)]
- [!code-csharp[StopWatchPerfSample#1](~/samples/snippets/csharp/VS_Snippets_CLR/StopWatchPerfSample/CS/source.cs#1)]
- [!code-vb[StopWatchPerfSample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/StopWatchPerfSample/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/StopWatchPerfSample/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/Stopwatch/Overview/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/StopWatchPerfSample/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -79,6 +114,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -89,6 +125,15 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -106,8 +151,8 @@
 ## Examples  
  The following example initializes a <xref:System.Diagnostics.Stopwatch> instance by using a simple class constructor.  
   
- [!code-csharp[System.Diagnostics.Stopwatch#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.Stopwatch/CS/source.cs#1)]
- [!code-vb[System.Diagnostics.Stopwatch#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.Stopwatch/VB/source.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/Stopwatch/Overview/source1.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.Stopwatch/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -119,8 +164,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Elapsed" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Stopwatch.Elapsed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Elapsed As TimeSpan" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan Elapsed { TimeSpan get(); };" />
       <MemberSignature Language="F#" Value="member this.Elapsed : TimeSpan" Usage="System.Diagnostics.Stopwatch.Elapsed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan Elapsed { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -129,6 +174,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -139,6 +185,15 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
@@ -163,8 +218,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Diagnostics.Stopwatch.Elapsed%2A> property to determine the execution time for an application.  
   
- [!code-csharp[System.Diagnostics.Stopwatch#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.Stopwatch/CS/source.cs#1)]
- [!code-vb[System.Diagnostics.Stopwatch#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.Stopwatch/VB/source.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/Stopwatch/Overview/source1.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.Stopwatch/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -178,8 +233,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int64 ElapsedMilliseconds" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Stopwatch.ElapsedMilliseconds" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElapsedMilliseconds As Long" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long ElapsedMilliseconds { long get(); };" />
       <MemberSignature Language="F#" Value="member this.ElapsedMilliseconds : int64" Usage="System.Diagnostics.Stopwatch.ElapsedMilliseconds" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long ElapsedMilliseconds { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -188,6 +243,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -198,6 +254,15 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -220,9 +285,9 @@
 ## Examples  
  The following example uses the <xref:System.Diagnostics.Stopwatch> class to measure the performance of four different implementations for parsing an integer from a string. This code example is part of a larger example provided for the <xref:System.Diagnostics.Stopwatch> class.  
   
- [!code-cpp[StopWatchPerfSample#3](~/samples/snippets/cpp/VS_Snippets_CLR/StopWatchPerfSample/CPP/source.cpp#3)]
- [!code-csharp[StopWatchPerfSample#3](~/samples/snippets/csharp/VS_Snippets_CLR/StopWatchPerfSample/CS/source.cs#3)]
- [!code-vb[StopWatchPerfSample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/StopWatchPerfSample/VB/source.vb#3)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/StopWatchPerfSample/CPP/source.cpp" id="Snippet3":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/Stopwatch/Overview/source.cs" id="Snippet3":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/StopWatchPerfSample/VB/source.vb" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -235,8 +300,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int64 ElapsedTicks" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Stopwatch.ElapsedTicks" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElapsedTicks As Long" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long ElapsedTicks { long get(); };" />
       <MemberSignature Language="F#" Value="member this.ElapsedTicks : int64" Usage="System.Diagnostics.Stopwatch.ElapsedTicks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long ElapsedTicks { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -245,6 +310,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -255,10 +321,20 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -285,9 +361,9 @@
 ## Examples  
  The following example uses the <xref:System.Diagnostics.Stopwatch> class to measure the performance of four different implementations for parsing an integer from a string. This code example is part of a larger example provided for the <xref:System.Diagnostics.Stopwatch> class.  
   
- [!code-cpp[StopWatchPerfSample#4](~/samples/snippets/cpp/VS_Snippets_CLR/StopWatchPerfSample/CPP/source.cpp#4)]
- [!code-csharp[StopWatchPerfSample#4](~/samples/snippets/csharp/VS_Snippets_CLR/StopWatchPerfSample/CS/source.cs#4)]
- [!code-vb[StopWatchPerfSample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/StopWatchPerfSample/VB/source.vb#4)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/StopWatchPerfSample/CPP/source.cpp" id="Snippet4":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/Stopwatch/Overview/source.cs" id="Snippet4":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/StopWatchPerfSample/VB/source.vb" id="Snippet4":::  
   
  ]]></format>
         </remarks>
@@ -301,8 +377,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly int64 Frequency" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Stopwatch.Frequency" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Frequency As Long " />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly long Frequency;" />
       <MemberSignature Language="F#" Value=" staticval mutable Frequency : int64" Usage="System.Diagnostics.Stopwatch.Frequency" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly long Frequency;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -311,6 +387,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -321,6 +398,15 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -342,13 +428,87 @@
 ## Examples  
  The following example displays the frequency and resolution of a <xref:System.Diagnostics.Stopwatch> timer. This code example is part of a larger example provided for the <xref:System.Diagnostics.Stopwatch> class.  
   
- [!code-cpp[StopWatchPerfSample#2](~/samples/snippets/cpp/VS_Snippets_CLR/StopWatchPerfSample/CPP/source.cpp#2)]
- [!code-csharp[StopWatchPerfSample#2](~/samples/snippets/csharp/VS_Snippets_CLR/StopWatchPerfSample/CS/source.cs#2)]
- [!code-vb[StopWatchPerfSample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/StopWatchPerfSample/VB/source.vb#2)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/StopWatchPerfSample/CPP/source.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/Stopwatch/Overview/source.cs" id="Snippet2":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/StopWatchPerfSample/VB/source.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
         <altmember cref="F:System.Diagnostics.Stopwatch.IsHighResolution" />
+      </Docs>
+    </Member>
+    <Member MemberName="GetElapsedTime">
+      <MemberSignature Language="C#" Value="public static TimeSpan GetElapsedTime (long startingTimestamp);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.TimeSpan GetElapsedTime(int64 startingTimestamp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Stopwatch.GetElapsedTime(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetElapsedTime (startingTimestamp As Long) As TimeSpan" />
+      <MemberSignature Language="F#" Value="static member GetElapsedTime : int64 -&gt; TimeSpan" Usage="System.Diagnostics.Stopwatch.GetElapsedTime startingTimestamp" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TimeSpan GetElapsedTime(long startingTimestamp);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="startingTimestamp" Type="System.Int64" Index="0" FrameworkAlternate="net-7.0;net-8.0;net-9.0" />
+      </Parameters>
+      <Docs>
+        <param name="startingTimestamp">The timestamp marking the beginning of the time period.</param>
+        <summary>Gets the elapsed time since the <paramref name="startingTimestamp" /> value retrieved using <see cref="M:System.Diagnostics.Stopwatch.GetTimestamp" />.</summary>
+        <returns>A <see cref="T:System.TimeSpan" /> for the elapsed time between the starting timestamp and the time of this call.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElapsedTime">
+      <MemberSignature Language="C#" Value="public static TimeSpan GetElapsedTime (long startingTimestamp, long endingTimestamp);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.TimeSpan GetElapsedTime(int64 startingTimestamp, int64 endingTimestamp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Stopwatch.GetElapsedTime(System.Int64,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetElapsedTime (startingTimestamp As Long, endingTimestamp As Long) As TimeSpan" />
+      <MemberSignature Language="F#" Value="static member GetElapsedTime : int64 * int64 -&gt; TimeSpan" Usage="System.Diagnostics.Stopwatch.GetElapsedTime (startingTimestamp, endingTimestamp)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TimeSpan GetElapsedTime(long startingTimestamp, long endingTimestamp);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="startingTimestamp" Type="System.Int64" Index="0" FrameworkAlternate="net-7.0;net-8.0;net-9.0" />
+        <Parameter Name="endingTimestamp" Type="System.Int64" Index="1" FrameworkAlternate="net-7.0;net-8.0;net-9.0" />
+      </Parameters>
+      <Docs>
+        <param name="startingTimestamp">The timestamp marking the beginning of the time period.</param>
+        <param name="endingTimestamp">The timestamp marking the end of the time period.</param>
+        <summary>Gets the elapsed time between two timestamps retrieved using <see cref="M:System.Diagnostics.Stopwatch.GetTimestamp" />.</summary>
+        <returns>A <see cref="T:System.TimeSpan" /> for the elapsed time between the starting and ending timestamps.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTimestamp">
@@ -356,8 +516,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 GetTimestamp() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Stopwatch.GetTimestamp" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetTimestamp () As Long" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long GetTimestamp();" />
       <MemberSignature Language="F#" Value="static member GetTimestamp : unit -&gt; int64" Usage="System.Diagnostics.Stopwatch.GetTimestamp " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long GetTimestamp();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -366,6 +526,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -376,6 +537,15 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -388,16 +558,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Diagnostics.Stopwatch> class uses a high-resolution performance counter, <xref:System.Diagnostics.Stopwatch.GetTimestamp%2A> returns the current value of that counter. If the <xref:System.Diagnostics.Stopwatch> class uses the system timer, <xref:System.Diagnostics.Stopwatch.GetTimestamp%2A> returns the current <xref:System.DateTime.Ticks%2A?displayProperty=nameWithType> property of the <xref:System.DateTime.Now%2A?displayProperty=nameWithType> instance.  
+ If the <xref:System.Diagnostics.Stopwatch> class uses a high-resolution performance counter, <xref:System.Diagnostics.Stopwatch.GetTimestamp%2A> returns the current value of that counter. If the <xref:System.Diagnostics.Stopwatch> class uses the system timer, <xref:System.Diagnostics.Stopwatch.GetTimestamp%2A> returns the current <xref:System.DateTime.Ticks%2A?displayProperty=nameWithType> property of the <xref:System.DateTime.UtcNow%2A?displayProperty=nameWithType> instance.  
   
    
   
 ## Examples  
  The following example illustrates the use of the <xref:System.Diagnostics.Stopwatch.GetTimestamp%2A> method to update a performance counter.  
   
- [!code-cpp[PerformanceCounterType.ElapsedTime#2](~/samples/snippets/cpp/VS_Snippets_CLR/PerformanceCounterType.ElapsedTime/CPP/elapsedtime.cpp#2)]
- [!code-csharp[PerformanceCounterType.ElapsedTime#2](~/samples/snippets/csharp/VS_Snippets_CLR/PerformanceCounterType.ElapsedTime/CS/elapsedtime.cs#2)]
- [!code-vb[PerformanceCounterType.ElapsedTime#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/PerformanceCounterType.ElapsedTime/VB/elapsedtime.vb#2)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/PerformanceCounterType.ElapsedTime/CPP/elapsedtime.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/PerformanceCounter/NextValue/elapsedtime.cs" id="Snippet2":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/PerformanceCounterType.ElapsedTime/VB/elapsedtime.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -409,8 +579,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly bool IsHighResolution" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Stopwatch.IsHighResolution" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsHighResolution As Boolean " />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly bool IsHighResolution;" />
       <MemberSignature Language="F#" Value=" staticval mutable IsHighResolution : bool" Usage="System.Diagnostics.Stopwatch.IsHighResolution" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly bool IsHighResolution;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -419,6 +589,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -429,6 +600,15 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -446,9 +626,9 @@
 ## Examples  
  The following example displays the frequency and resolution of a <xref:System.Diagnostics.Stopwatch> timer. This code example is part of a larger example provided for the <xref:System.Diagnostics.Stopwatch> class.  
   
- [!code-cpp[StopWatchPerfSample#2](~/samples/snippets/cpp/VS_Snippets_CLR/StopWatchPerfSample/CPP/source.cpp#2)]
- [!code-csharp[StopWatchPerfSample#2](~/samples/snippets/csharp/VS_Snippets_CLR/StopWatchPerfSample/CS/source.cs#2)]
- [!code-vb[StopWatchPerfSample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/StopWatchPerfSample/VB/source.vb#2)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/StopWatchPerfSample/CPP/source.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/Stopwatch/Overview/source.cs" id="Snippet2":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/StopWatchPerfSample/VB/source.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -460,8 +640,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsRunning" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Stopwatch.IsRunning" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRunning As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRunning { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsRunning : bool" Usage="System.Diagnostics.Stopwatch.IsRunning" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRunning { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -470,6 +650,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -480,10 +661,20 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -512,8 +703,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Stopwatch.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
       <MemberSignature Language="F#" Value="member this.Reset : unit -&gt; unit" Usage="stopwatch.Reset " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -522,6 +713,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -532,6 +724,15 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -558,8 +759,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Restart() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Stopwatch.Restart" />
       <MemberSignature Language="VB.NET" Value="Public Sub Restart ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Restart();" />
       <MemberSignature Language="F#" Value="member this.Restart : unit -&gt; unit" Usage="stopwatch.Restart " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Restart();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -568,6 +769,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -577,6 +779,15 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -599,8 +810,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Start() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Stopwatch.Start" />
       <MemberSignature Language="VB.NET" Value="Public Sub Start ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Start();" />
       <MemberSignature Language="F#" Value="member this.Start : unit -&gt; unit" Usage="stopwatch.Start " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Start();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -609,6 +820,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -619,6 +831,15 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -641,8 +862,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Diagnostics.Stopwatch.Start%2A> method to start a timer that measures the execution time of an application.  
   
- [!code-csharp[System.Diagnostics.Stopwatch#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.Stopwatch/CS/source.cs#1)]
- [!code-vb[System.Diagnostics.Stopwatch#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.Stopwatch/VB/source.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/Stopwatch/Overview/source1.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.Stopwatch/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -657,8 +878,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.Stopwatch StartNew() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Stopwatch.StartNew" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function StartNew () As Stopwatch" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Diagnostics::Stopwatch ^ StartNew();" />
       <MemberSignature Language="F#" Value="static member StartNew : unit -&gt; System.Diagnostics.Stopwatch" Usage="System.Diagnostics.Stopwatch.StartNew " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Diagnostics::Stopwatch ^ StartNew();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -667,6 +888,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -677,6 +899,15 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.Stopwatch</ReturnType>
@@ -696,9 +927,9 @@
 ## Examples  
  The following example uses the <xref:System.Diagnostics.Stopwatch> class to measure the performance of four different implementations for parsing an integer from a string. This code example is part of a larger example provided for the <xref:System.Diagnostics.Stopwatch> class.  
   
- [!code-cpp[StopWatchPerfSample#4](~/samples/snippets/cpp/VS_Snippets_CLR/StopWatchPerfSample/CPP/source.cpp#4)]
- [!code-csharp[StopWatchPerfSample#4](~/samples/snippets/csharp/VS_Snippets_CLR/StopWatchPerfSample/CS/source.cs#4)]
- [!code-vb[StopWatchPerfSample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/StopWatchPerfSample/VB/source.vb#4)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/StopWatchPerfSample/CPP/source.cpp" id="Snippet4":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/Stopwatch/Overview/source.cs" id="Snippet4":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/StopWatchPerfSample/VB/source.vb" id="Snippet4":::  
   
  ]]></format>
         </remarks>
@@ -713,8 +944,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Stop() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Stopwatch.Stop" />
       <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
       <MemberSignature Language="F#" Value="member this.Stop : unit -&gt; unit" Usage="stopwatch.Stop " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -723,6 +954,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -733,6 +965,15 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -755,8 +996,8 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Diagnostics.Stopwatch.Stop%2A> method to stop a timer that measures the execution time of an application.  
   
- [!code-csharp[System.Diagnostics.Stopwatch#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.Stopwatch/CS/source.cs#1)]
- [!code-vb[System.Diagnostics.Stopwatch#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.Stopwatch/VB/source.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/Stopwatch/Overview/source1.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.Stopwatch/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -764,6 +1005,38 @@
         <altmember cref="P:System.Diagnostics.Stopwatch.IsRunning" />
         <altmember cref="M:System.Diagnostics.Stopwatch.Start" />
         <altmember cref="M:System.Diagnostics.Stopwatch.Reset" />
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Stopwatch.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="stopwatch.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the <see cref="P:System.Diagnostics.Stopwatch.Elapsed" /> time as a string.</summary>
+        <returns>The elapsed time string in the same format used by <see cref="M:System.TimeSpan.ToString" />.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

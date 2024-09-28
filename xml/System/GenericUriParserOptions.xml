@@ -1,10 +1,10 @@
-﻿<Type Name="GenericUriParserOptions" FullName="System.GenericUriParserOptions">
+<Type Name="GenericUriParserOptions" FullName="System.GenericUriParserOptions">
   <TypeSignature Language="C#" Value="public enum GenericUriParserOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GenericUriParserOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.GenericUriParserOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum GenericUriParserOptions" />
-  <TypeSignature Language="C++ CLI" Value="public enum class GenericUriParserOptions" />
   <TypeSignature Language="F#" Value="type GenericUriParserOptions = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class GenericUriParserOptions" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -14,18 +14,33 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
-      <AttributeName>System.Flags</AttributeName>
+    <Attribute>
+      <AttributeName Language="C#">[System.Flags]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Flags&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -56,8 +71,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GenericUriParserOptions AllowEmptyAuthority = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.AllowEmptyAuthority" />
       <MemberSignature Language="VB.NET" Value="AllowEmptyAuthority" />
-      <MemberSignature Language="C++ CLI" Value="AllowEmptyAuthority" />
       <MemberSignature Language="F#" Value="AllowEmptyAuthority = 2" Usage="System.GenericUriParserOptions.AllowEmptyAuthority" />
+      <MemberSignature Language="C++ CLI" Value="AllowEmptyAuthority" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -68,11 +83,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.GenericUriParserOptions</ReturnType>
@@ -87,8 +109,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GenericUriParserOptions Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
-      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberSignature Language="F#" Value="Default = 0" Usage="System.GenericUriParserOptions.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -99,30 +121,25 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.GenericUriParserOptions</ReturnType>
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>
-          <format type="text/markdown"><![CDATA[  
-  
-The parser:
-  
-- Requires an authority.
-- Converts back slashes into forward slashes.
-- Unescapes path dots, forward slashes, and back slashes.
-- Removes trailing dots, empty segments, and dots-only segments.
-  
- ]]></format>
-        </summary>
-        <remarks></remarks>
+        <summary>The parser: requires an authority; converts backslashes into forward slashes; unescapes path dots, forward slashes, and back slashes; and removes trailing dots, empty segments, and dots-only segments.</summary>
       </Docs>
     </Member>
     <Member MemberName="DontCompressPath">
@@ -130,8 +147,8 @@ The parser:
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GenericUriParserOptions DontCompressPath = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.DontCompressPath" />
       <MemberSignature Language="VB.NET" Value="DontCompressPath" />
-      <MemberSignature Language="C++ CLI" Value="DontCompressPath" />
       <MemberSignature Language="F#" Value="DontCompressPath = 128" Usage="System.GenericUriParserOptions.DontCompressPath" />
+      <MemberSignature Language="C++ CLI" Value="DontCompressPath" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -142,11 +159,18 @@ The parser:
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.GenericUriParserOptions</ReturnType>
@@ -161,8 +185,8 @@ The parser:
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GenericUriParserOptions DontConvertPathBackslashes = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.DontConvertPathBackslashes" />
       <MemberSignature Language="VB.NET" Value="DontConvertPathBackslashes" />
-      <MemberSignature Language="C++ CLI" Value="DontConvertPathBackslashes" />
       <MemberSignature Language="F#" Value="DontConvertPathBackslashes = 64" Usage="System.GenericUriParserOptions.DontConvertPathBackslashes" />
+      <MemberSignature Language="C++ CLI" Value="DontConvertPathBackslashes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -173,11 +197,18 @@ The parser:
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.GenericUriParserOptions</ReturnType>
@@ -192,8 +223,8 @@ The parser:
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GenericUriParserOptions DontUnescapePathDotsAndSlashes = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.DontUnescapePathDotsAndSlashes" />
       <MemberSignature Language="VB.NET" Value="DontUnescapePathDotsAndSlashes" />
-      <MemberSignature Language="C++ CLI" Value="DontUnescapePathDotsAndSlashes" />
       <MemberSignature Language="F#" Value="DontUnescapePathDotsAndSlashes = 256" Usage="System.GenericUriParserOptions.DontUnescapePathDotsAndSlashes" />
+      <MemberSignature Language="C++ CLI" Value="DontUnescapePathDotsAndSlashes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -204,11 +235,18 @@ The parser:
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.GenericUriParserOptions</ReturnType>
@@ -223,8 +261,8 @@ The parser:
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GenericUriParserOptions GenericAuthority = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.GenericAuthority" />
       <MemberSignature Language="VB.NET" Value="GenericAuthority" />
-      <MemberSignature Language="C++ CLI" Value="GenericAuthority" />
       <MemberSignature Language="F#" Value="GenericAuthority = 1" Usage="System.GenericUriParserOptions.GenericAuthority" />
+      <MemberSignature Language="C++ CLI" Value="GenericAuthority" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -235,11 +273,18 @@ The parser:
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.GenericUriParserOptions</ReturnType>
@@ -254,8 +299,8 @@ The parser:
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GenericUriParserOptions Idn = int32(512)" />
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.Idn" />
       <MemberSignature Language="VB.NET" Value="Idn" />
-      <MemberSignature Language="C++ CLI" Value="Idn" />
       <MemberSignature Language="F#" Value="Idn = 512" Usage="System.GenericUriParserOptions.Idn" />
+      <MemberSignature Language="C++ CLI" Value="Idn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -266,11 +311,18 @@ The parser:
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.GenericUriParserOptions</ReturnType>
@@ -285,8 +337,8 @@ The parser:
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GenericUriParserOptions IriParsing = int32(1024)" />
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.IriParsing" />
       <MemberSignature Language="VB.NET" Value="IriParsing" />
-      <MemberSignature Language="C++ CLI" Value="IriParsing" />
       <MemberSignature Language="F#" Value="IriParsing = 1024" Usage="System.GenericUriParserOptions.IriParsing" />
+      <MemberSignature Language="C++ CLI" Value="IriParsing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -297,11 +349,18 @@ The parser:
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.GenericUriParserOptions</ReturnType>
@@ -316,8 +375,8 @@ The parser:
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GenericUriParserOptions NoFragment = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.NoFragment" />
       <MemberSignature Language="VB.NET" Value="NoFragment" />
-      <MemberSignature Language="C++ CLI" Value="NoFragment" />
       <MemberSignature Language="F#" Value="NoFragment = 32" Usage="System.GenericUriParserOptions.NoFragment" />
+      <MemberSignature Language="C++ CLI" Value="NoFragment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -328,11 +387,18 @@ The parser:
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.GenericUriParserOptions</ReturnType>
@@ -347,8 +413,8 @@ The parser:
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GenericUriParserOptions NoPort = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.NoPort" />
       <MemberSignature Language="VB.NET" Value="NoPort" />
-      <MemberSignature Language="C++ CLI" Value="NoPort" />
       <MemberSignature Language="F#" Value="NoPort = 8" Usage="System.GenericUriParserOptions.NoPort" />
+      <MemberSignature Language="C++ CLI" Value="NoPort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -359,11 +425,18 @@ The parser:
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.GenericUriParserOptions</ReturnType>
@@ -378,8 +451,8 @@ The parser:
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GenericUriParserOptions NoQuery = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.NoQuery" />
       <MemberSignature Language="VB.NET" Value="NoQuery" />
-      <MemberSignature Language="C++ CLI" Value="NoQuery" />
       <MemberSignature Language="F#" Value="NoQuery = 16" Usage="System.GenericUriParserOptions.NoQuery" />
+      <MemberSignature Language="C++ CLI" Value="NoQuery" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -390,11 +463,18 @@ The parser:
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.GenericUriParserOptions</ReturnType>
@@ -409,8 +489,8 @@ The parser:
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.GenericUriParserOptions NoUserInfo = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.GenericUriParserOptions.NoUserInfo" />
       <MemberSignature Language="VB.NET" Value="NoUserInfo" />
-      <MemberSignature Language="C++ CLI" Value="NoUserInfo" />
       <MemberSignature Language="F#" Value="NoUserInfo = 4" Usage="System.GenericUriParserOptions.NoUserInfo" />
+      <MemberSignature Language="C++ CLI" Value="NoUserInfo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -421,11 +501,18 @@ The parser:
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.GenericUriParserOptions</ReturnType>

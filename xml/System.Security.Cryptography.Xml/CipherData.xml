@@ -1,10 +1,10 @@
-﻿<Type Name="CipherData" FullName="System.Security.Cryptography.Xml.CipherData">
+<Type Name="CipherData" FullName="System.Security.Cryptography.Xml.CipherData">
   <TypeSignature Language="C#" Value="public sealed class CipherData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CipherData extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.CipherData" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CipherData" />
-  <TypeSignature Language="C++ CLI" Value="public ref class CipherData sealed" />
   <TypeSignature Language="F#" Value="type CipherData = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CipherData sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -12,13 +12,32 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+    <AssemblyVersion>4.0.3.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Security.Cryptography.Xml" FromVersion="9.0.0.0" To="System.Security" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Represents the <see langword="&lt;CipherData&gt;" /> element in XML encryption. This class cannot be inherited.</summary>
     <remarks>
@@ -35,11 +54,11 @@
    
   
 ## Examples  
- The following code example uses the <xref:System.Security.Cryptography.Xml.EncryptedData> class to create an <`EncryptedData`> element that contains a <`CipherData`> element, and then writes the XML to an XML file.  
+ The following code example uses the <xref:System.Security.Cryptography.Xml.EncryptedData> class to create an `<EncryptedData>` element that contains a `<CipherData>` element, and then writes the XML to an XML file.  
   
- [!code-cpp[cryptgraphy.Xml.EncryptedData#1](~/samples/snippets/cpp/VS_Snippets_CLR/cryptgraphy.Xml.EncryptedData/cpp/encrypteddata.cpp#1)]
- [!code-csharp[cryptgraphy.Xml.EncryptedData#1](~/samples/snippets/csharp/VS_Snippets_CLR/cryptgraphy.Xml.EncryptedData/CS/encrypteddata.cs#1)]
- [!code-vb[cryptgraphy.Xml.EncryptedData#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/cryptgraphy.Xml.EncryptedData/VB/encrypteddata.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/cryptgraphy.Xml.EncryptedData/cpp/encrypteddata.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography.Xml/CipherData/Overview/encrypteddata.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/cryptgraphy.Xml.EncryptedData/VB/encrypteddata.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -68,8 +87,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -85,9 +109,9 @@
 ## Examples  
  The following code example shows how to create a new instance of the <xref:System.Security.Cryptography.Xml.CipherData> class. The entire sample can be found in the <xref:System.Security.Cryptography.Xml.CipherData> class topic.  
   
- [!code-cpp[cryptgraphy.Xml.EncryptedData#2](~/samples/snippets/cpp/VS_Snippets_CLR/cryptgraphy.Xml.EncryptedData/cpp/encrypteddata.cpp#2)]
- [!code-csharp[cryptgraphy.Xml.EncryptedData#2](~/samples/snippets/csharp/VS_Snippets_CLR/cryptgraphy.Xml.EncryptedData/CS/encrypteddata.cs#2)]
- [!code-vb[cryptgraphy.Xml.EncryptedData#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/cryptgraphy.Xml.EncryptedData/VB/encrypteddata.vb#2)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/cryptgraphy.Xml.EncryptedData/cpp/encrypteddata.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography.Xml/CipherData/Overview/encrypteddata.cs" id="Snippet2":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/cryptgraphy.Xml.EncryptedData/VB/encrypteddata.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -98,8 +122,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] cipherValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.CipherData.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (cipherValue As Byte())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; CipherData(cli::array &lt;System::Byte&gt; ^ cipherValue);" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.CipherData : byte[] -&gt; System.Security.Cryptography.Xml.CipherData" Usage="new System.Security.Cryptography.Xml.CipherData cipherValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CipherData(cli::array &lt;System::Byte&gt; ^ cipherValue);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -108,9 +132,20 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="cipherValue" Type="System.Byte[]" />
       </Parameters>
@@ -131,9 +166,9 @@
 ## Examples  
  The following code example shows how to create a new instance of the <xref:System.Security.Cryptography.Xml.CipherData> class.  
   
- [!code-cpp[cryptography.Xml.EncryptedData2#1](~/samples/snippets/cpp/VS_Snippets_CLR/cryptography.Xml.EncryptedData2/CPP/encrypteddata.cpp#1)]
- [!code-csharp[cryptography.Xml.EncryptedData2#1](~/samples/snippets/csharp/VS_Snippets_CLR/cryptography.Xml.EncryptedData2/CS/encrypteddata.cs#1)]
- [!code-vb[cryptography.Xml.EncryptedData2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/cryptography.Xml.EncryptedData2/VB/encrypteddata.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/cryptography.Xml.EncryptedData2/CPP/encrypteddata.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography.Xml/CipherData/.ctor/encrypteddata.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/cryptography.Xml.EncryptedData2/VB/encrypteddata.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -145,8 +180,9 @@
       <MemberSignature Language="C#" Value="public CipherData (System.Security.Cryptography.Xml.CipherReference cipherReference);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.Xml.CipherReference cipherReference) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.CipherData.#ctor(System.Security.Cryptography.Xml.CipherReference)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; CipherData(System::Security::Cryptography::Xml::CipherReference ^ cipherReference);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cipherReference As CipherReference)" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.CipherData : System.Security.Cryptography.Xml.CipherReference -&gt; System.Security.Cryptography.Xml.CipherData" Usage="new System.Security.Cryptography.Xml.CipherData cipherReference" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CipherData(System::Security::Cryptography::Xml::CipherReference ^ cipherReference);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -155,9 +191,20 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="cipherReference" Type="System.Security.Cryptography.Xml.CipherReference" />
       </Parameters>
@@ -178,9 +225,9 @@
 ## Examples  
  The following code example shows how to create a new instance of the <xref:System.Security.Cryptography.Xml.CipherData> class using <xref:System.Security.Cryptography.Xml.CipherReference> information.  
   
- [!code-cpp[cryptography.Xml.CipherReference#1](~/samples/snippets/cpp/VS_Snippets_CLR/cryptography.Xml.CipherReference/CPP/example.cpp#1)]
- [!code-csharp[cryptography.Xml.CipherReference#1](~/samples/snippets/csharp/VS_Snippets_CLR/cryptography.Xml.CipherReference/CS/example.cs#1)]
- [!code-vb[cryptography.Xml.CipherReference#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/cryptography.Xml.CipherReference/VB/example.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/cryptography.Xml.CipherReference/CPP/example.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography.Xml/CipherData/.ctor/example.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/cryptography.Xml.CipherReference/VB/example.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -189,12 +236,13 @@
       </Docs>
     </Member>
     <Member MemberName="CipherReference">
-      <MemberSignature Language="C#" Value="public System.Security.Cryptography.Xml.CipherReference CipherReference { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.Xml.CipherReference? CipherReference { get; set; }" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netstandard-2.0;windowsdesktop-8.0;windowsdesktop-9.0" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Xml.CipherReference CipherReference" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.CipherData.CipherReference" />
       <MemberSignature Language="VB.NET" Value="Public Property CipherReference As CipherReference" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Xml::CipherReference ^ CipherReference { System::Security::Cryptography::Xml::CipherReference ^ get(); void set(System::Security::Cryptography::Xml::CipherReference ^ value); };" />
       <MemberSignature Language="F#" Value="member this.CipherReference : System.Security.Cryptography.Xml.CipherReference with get, set" Usage="System.Security.Cryptography.Xml.CipherData.CipherReference" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Xml::CipherReference ^ CipherReference { System::Security::Cryptography::Xml::CipherReference ^ get(); void set(System::Security::Cryptography::Xml::CipherReference ^ value); };" />
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.Xml.CipherReference CipherReference { get; set; }" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -203,8 +251,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Xml.CipherReference</ReturnType>
@@ -226,9 +279,9 @@
 ## Examples  
  The following code example shows how to create a new instance of the <xref:System.Security.Cryptography.Xml.CipherData> class using <xref:System.Security.Cryptography.Xml.CipherReference> information.  
   
- [!code-cpp[cryptography.Xml.CipherReference#1](~/samples/snippets/cpp/VS_Snippets_CLR/cryptography.Xml.CipherReference/CPP/example.cpp#1)]
- [!code-csharp[cryptography.Xml.CipherReference#1](~/samples/snippets/csharp/VS_Snippets_CLR/cryptography.Xml.CipherReference/CS/example.cs#1)]
- [!code-vb[cryptography.Xml.CipherReference#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/cryptography.Xml.CipherReference/VB/example.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/cryptography.Xml.CipherReference/CPP/example.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography.Xml/CipherData/.ctor/example.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/cryptography.Xml.CipherReference/VB/example.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -237,12 +290,13 @@
       </Docs>
     </Member>
     <Member MemberName="CipherValue">
-      <MemberSignature Language="C#" Value="public byte[] CipherValue { get; set; }" />
+      <MemberSignature Language="C#" Value="public byte[]? CipherValue { get; set; }" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netstandard-2.0;windowsdesktop-8.0;windowsdesktop-9.0" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] CipherValue" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.CipherData.CipherValue" />
       <MemberSignature Language="VB.NET" Value="Public Property CipherValue As Byte()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ CipherValue { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
       <MemberSignature Language="F#" Value="member this.CipherValue : byte[] with get, set" Usage="System.Security.Cryptography.Xml.CipherData.CipherValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ CipherValue { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
+      <MemberSignature Language="C#" Value="public byte[] CipherValue { get; set; }" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -251,8 +305,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -274,9 +333,9 @@
 ## Examples  
  The following code example shows how to create a new instance of the <xref:System.Security.Cryptography.Xml.CipherData> class.  
   
- [!code-cpp[cryptography.Xml.EncryptedData2#1](~/samples/snippets/cpp/VS_Snippets_CLR/cryptography.Xml.EncryptedData2/CPP/encrypteddata.cpp#1)]
- [!code-csharp[cryptography.Xml.EncryptedData2#1](~/samples/snippets/csharp/VS_Snippets_CLR/cryptography.Xml.EncryptedData2/CS/encrypteddata.cs#1)]
- [!code-vb[cryptography.Xml.EncryptedData2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/cryptography.Xml.EncryptedData2/VB/encrypteddata.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/cryptography.Xml.EncryptedData2/CPP/encrypteddata.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography.Xml/CipherData/.ctor/encrypteddata.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/cryptography.Xml.EncryptedData2/VB/encrypteddata.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -289,8 +348,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlElement GetXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.CipherData.GetXml" />
       <MemberSignature Language="VB.NET" Value="Public Function GetXml () As XmlElement" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlElement ^ GetXml();" />
       <MemberSignature Language="F#" Value="member this.GetXml : unit -&gt; System.Xml.XmlElement" Usage="cipherData.GetXml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlElement ^ GetXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -299,9 +358,20 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Xml.XmlElement</ReturnType>
       </ReturnValue>
@@ -320,9 +390,9 @@
 ## Examples  
  The following code example demonstrates how to create a new instance of the <xref:System.Security.Cryptography.Xml.CipherData> object.  
   
- [!code-cpp[cryptgraphy.Xml.EncryptedData#2](~/samples/snippets/cpp/VS_Snippets_CLR/cryptgraphy.Xml.EncryptedData/cpp/encrypteddata.cpp#2)]
- [!code-csharp[cryptgraphy.Xml.EncryptedData#2](~/samples/snippets/csharp/VS_Snippets_CLR/cryptgraphy.Xml.EncryptedData/CS/encrypteddata.cs#2)]
- [!code-vb[cryptgraphy.Xml.EncryptedData#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/cryptgraphy.Xml.EncryptedData/VB/encrypteddata.vb#2)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/cryptgraphy.Xml.EncryptedData/cpp/encrypteddata.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography.Xml/CipherData/Overview/encrypteddata.cs" id="Snippet2":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/cryptgraphy.Xml.EncryptedData/VB/encrypteddata.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -334,8 +404,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadXml(class System.Xml.XmlElement value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.CipherData.LoadXml(System.Xml.XmlElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadXml (value As XmlElement)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadXml(System::Xml::XmlElement ^ value);" />
       <MemberSignature Language="F#" Value="member this.LoadXml : System.Xml.XmlElement -&gt; unit" Usage="cipherData.LoadXml value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadXml(System::Xml::XmlElement ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -344,9 +414,28 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("The algorithm implementations referenced in the XML payload might be removed. Ensure the required algorithm implementations are preserved in your application.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("The algorithm implementations referenced in the XML payload might be removed. Ensure the required algorithm implementations are preserved in your application.")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-7.0;net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.RequiresDynamicCode("XmlDsigXsltTransform uses XslCompiledTransform which requires dynamic code.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.RequiresDynamicCode("XmlDsigXsltTransform uses XslCompiledTransform which requires dynamic code.")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>

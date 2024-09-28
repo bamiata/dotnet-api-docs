@@ -1,10 +1,10 @@
-﻿<Type Name="EditorBrowsableState" FullName="System.ComponentModel.EditorBrowsableState">
+<Type Name="EditorBrowsableState" FullName="System.ComponentModel.EditorBrowsableState">
   <TypeSignature Language="C#" Value="public enum EditorBrowsableState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EditorBrowsableState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.EditorBrowsableState" />
   <TypeSignature Language="VB.NET" Value="Public Enum EditorBrowsableState" />
-  <TypeSignature Language="C++ CLI" Value="public enum class EditorBrowsableState" />
   <TypeSignature Language="F#" Value="type EditorBrowsableState = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class EditorBrowsableState" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,6 +13,12 @@
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -24,7 +30,17 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System" FromVersion="4.0.0.0" To="System.Runtime" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+    <TypeForwarding From="System.Runtime" FromVersion="4.1.1.1" To="System" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
@@ -33,13 +49,13 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- This class is used by a visual designer to determine what is visible to the user. For example, the IntelliSense engine in Visual Studio never shows methods or properties that are marked as Never. Use <xref:System.ComponentModel.EditorBrowsableAttribute> to specify the <xref:System.ComponentModel.EditorBrowsableState> for a member.  
+## Remarks
+
+This class is used by a visual designer to determine what's visible to the user. For example, the IntelliSense engine in Visual Studio never shows methods or properties that are marked as <xref:System.ComponentModel.EditorBrowsableState.Never?displayProperty=nameWithType>. Use <xref:System.ComponentModel.EditorBrowsableAttribute> to specify the <xref:System.ComponentModel.EditorBrowsableState> for a member.
   
-   
-  
-## Examples  
- For an example of using the <xref:System.ComponentModel.EditorBrowsableState> enumerator, see the sample code in <xref:System.ComponentModel.EditorBrowsableAttribute> class.  
+## Examples
+
+For an example of using the <xref:System.ComponentModel.EditorBrowsableState> enumerator, see the sample code in <xref:System.ComponentModel.EditorBrowsableAttribute> class.  
   
  ]]></format>
     </remarks>
@@ -51,8 +67,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.EditorBrowsableState Advanced = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.EditorBrowsableState.Advanced" />
       <MemberSignature Language="VB.NET" Value="Advanced" />
-      <MemberSignature Language="C++ CLI" Value="Advanced" />
       <MemberSignature Language="F#" Value="Advanced = 2" Usage="System.ComponentModel.EditorBrowsableState.Advanced" />
+      <MemberSignature Language="C++ CLI" Value="Advanced" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -62,6 +78,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -73,6 +95,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.EditorBrowsableState</ReturnType>
@@ -87,8 +110,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.EditorBrowsableState Always = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.EditorBrowsableState.Always" />
       <MemberSignature Language="VB.NET" Value="Always" />
-      <MemberSignature Language="C++ CLI" Value="Always" />
       <MemberSignature Language="F#" Value="Always = 0" Usage="System.ComponentModel.EditorBrowsableState.Always" />
+      <MemberSignature Language="C++ CLI" Value="Always" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -98,6 +121,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -109,6 +138,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.EditorBrowsableState</ReturnType>
@@ -123,8 +153,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.EditorBrowsableState Never = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.EditorBrowsableState.Never" />
       <MemberSignature Language="VB.NET" Value="Never" />
-      <MemberSignature Language="C++ CLI" Value="Never" />
       <MemberSignature Language="F#" Value="Never = 1" Usage="System.ComponentModel.EditorBrowsableState.Never" />
+      <MemberSignature Language="C++ CLI" Value="Never" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -134,6 +164,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -145,6 +181,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.EditorBrowsableState</ReturnType>

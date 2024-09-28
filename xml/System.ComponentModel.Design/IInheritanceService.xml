@@ -1,10 +1,11 @@
-﻿<Type Name="IInheritanceService" FullName="System.ComponentModel.Design.IInheritanceService">
+<Type Name="IInheritanceService" FullName="System.ComponentModel.Design.IInheritanceService">
   <TypeSignature Language="C#" Value="public interface IInheritanceService" />
-  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInheritanceService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInheritanceService" FrameworkAlternate="net-5.0;net-6.0;net-7.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IInheritanceService" />
   <TypeSignature Language="VB.NET" Value="Public Interface IInheritanceService" />
-  <TypeSignature Language="C++ CLI" Value="public interface class IInheritanceService" />
   <TypeSignature Language="F#" Value="type IInheritanceService = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IInheritanceService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IInheritanceService" FrameworkAlternate="net-8.0;net-9.0" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -15,13 +16,33 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.ComponentModel.TypeConverter" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.ComponentModel.TypeConverter" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.ComponentModel.TypeConverter" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.ComponentModel.TypeConverter" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.ComponentModel.TypeConverter" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Provides methods for identifying the components of a component.</summary>
     <remarks>
@@ -42,8 +63,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddInheritedComponents(class System.ComponentModel.IComponent component, class System.ComponentModel.IContainer container) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IInheritanceService.AddInheritedComponents(System.ComponentModel.IComponent,System.ComponentModel.IContainer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddInheritedComponents (component As IComponent, container As IContainer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddInheritedComponents(System::ComponentModel::IComponent ^ component, System::ComponentModel::IContainer ^ container);" />
       <MemberSignature Language="F#" Value="abstract member AddInheritedComponents : System.ComponentModel.IComponent * System.ComponentModel.IContainer -&gt; unit" Usage="iInheritanceService.AddInheritedComponents (component, container)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddInheritedComponents(System::ComponentModel::IComponent ^ component, System::ComponentModel::IContainer ^ container);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -55,11 +76,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -87,8 +115,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.InheritanceAttribute GetInheritanceAttribute(class System.ComponentModel.IComponent component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IInheritanceService.GetInheritanceAttribute(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInheritanceAttribute (component As IComponent) As InheritanceAttribute" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::InheritanceAttribute ^ GetInheritanceAttribute(System::ComponentModel::IComponent ^ component);" />
       <MemberSignature Language="F#" Value="abstract member GetInheritanceAttribute : System.ComponentModel.IComponent -&gt; System.ComponentModel.InheritanceAttribute" Usage="iInheritanceService.GetInheritanceAttribute component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::InheritanceAttribute ^ GetInheritanceAttribute(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -100,11 +128,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.InheritanceAttribute</ReturnType>

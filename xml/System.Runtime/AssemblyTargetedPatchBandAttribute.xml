@@ -1,10 +1,10 @@
-﻿<Type Name="AssemblyTargetedPatchBandAttribute" FullName="System.Runtime.AssemblyTargetedPatchBandAttribute">
+<Type Name="AssemblyTargetedPatchBandAttribute" FullName="System.Runtime.AssemblyTargetedPatchBandAttribute">
   <TypeSignature Language="C#" Value="public sealed class AssemblyTargetedPatchBandAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AssemblyTargetedPatchBandAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.AssemblyTargetedPatchBandAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyTargetedPatchBandAttribute&#xA;Inherits Attribute" />
-  <TypeSignature Language="C++ CLI" Value="public ref class AssemblyTargetedPatchBandAttribute sealed : Attribute" />
   <TypeSignature Language="F#" Value="type AssemblyTargetedPatchBandAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AssemblyTargetedPatchBandAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -13,23 +13,46 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly, Inherited=false)</AttributeName>
+    <Attribute>
+      <AttributeName Language="C#">[System.AttributeUsage(System.AttributeTargets.Assembly, Inherited=false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.AttributeUsage(System.AttributeTargets.Assembly, Inherited=false)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies patch band information for targeted patching of the .NET Framework.</summary>
+    <summary>Specifies patch band information for targeted patching of .NET.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
   </Docs>
@@ -39,8 +62,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string targetedPatchBand) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.AssemblyTargetedPatchBandAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (targetedPatchBand As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyTargetedPatchBandAttribute(System::String ^ targetedPatchBand);" />
       <MemberSignature Language="F#" Value="new System.Runtime.AssemblyTargetedPatchBandAttribute : string -&gt; System.Runtime.AssemblyTargetedPatchBandAttribute" Usage="new System.Runtime.AssemblyTargetedPatchBandAttribute targetedPatchBand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyTargetedPatchBandAttribute(System::String ^ targetedPatchBand);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -50,11 +73,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="targetedPatchBand" Type="System.String" />
@@ -71,8 +101,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string TargetedPatchBand" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.AssemblyTargetedPatchBandAttribute.TargetedPatchBand" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetedPatchBand As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetedPatchBand { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.TargetedPatchBand : string" Usage="System.Runtime.AssemblyTargetedPatchBandAttribute.TargetedPatchBand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetedPatchBand { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -82,11 +112,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

@@ -1,14 +1,24 @@
-﻿<Type Name="X509AsymmetricSecurityKey" FullName="System.IdentityModel.Tokens.X509AsymmetricSecurityKey">
+<Type Name="X509AsymmetricSecurityKey" FullName="System.IdentityModel.Tokens.X509AsymmetricSecurityKey">
   <TypeSignature Language="C#" Value="public class X509AsymmetricSecurityKey : System.IdentityModel.Tokens.AsymmetricSecurityKey" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit X509AsymmetricSecurityKey extends System.IdentityModel.Tokens.AsymmetricSecurityKey" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.X509AsymmetricSecurityKey" />
   <TypeSignature Language="VB.NET" Value="Public Class X509AsymmetricSecurityKey&#xA;Inherits AsymmetricSecurityKey" />
-  <TypeSignature Language="C++ CLI" Value="public ref class X509AsymmetricSecurityKey : System::IdentityModel::Tokens::AsymmetricSecurityKey" />
   <TypeSignature Language="F#" Value="type X509AsymmetricSecurityKey = class&#xA;    inherit AsymmetricSecurityKey" />
+  <TypeSignature Language="C++ CLI" Value="public ref class X509AsymmetricSecurityKey : System::IdentityModel::Tokens::AsymmetricSecurityKey" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.2.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Private.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.IdentityModel.Tokens.AsymmetricSecurityKey</BaseTypeName>
@@ -24,13 +34,21 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509AsymmetricSecurityKey.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (certificate As X509Certificate2)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509AsymmetricSecurityKey(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
       <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.X509AsymmetricSecurityKey : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; System.IdentityModel.Tokens.X509AsymmetricSecurityKey" Usage="new System.IdentityModel.Tokens.X509AsymmetricSecurityKey certificate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509AsymmetricSecurityKey(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" />
@@ -48,13 +66,21 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] DecryptKey(string algorithm, unsigned int8[] keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509AsymmetricSecurityKey.DecryptKey(System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function DecryptKey (algorithm As String, keyData As Byte()) As Byte()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ DecryptKey(System::String ^ algorithm, cli::array &lt;System::Byte&gt; ^ keyData);" />
       <MemberSignature Language="F#" Value="override this.DecryptKey : string * byte[] -&gt; byte[]" Usage="x509AsymmetricSecurityKey.DecryptKey (algorithm, keyData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ DecryptKey(System::String ^ algorithm, cli::array &lt;System::Byte&gt; ^ keyData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -96,13 +122,21 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] EncryptKey(string algorithm, unsigned int8[] keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509AsymmetricSecurityKey.EncryptKey(System.String,System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function EncryptKey (algorithm As String, keyData As Byte()) As Byte()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ EncryptKey(System::String ^ algorithm, cli::array &lt;System::Byte&gt; ^ keyData);" />
       <MemberSignature Language="F#" Value="override this.EncryptKey : string * byte[] -&gt; byte[]" Usage="x509AsymmetricSecurityKey.EncryptKey (algorithm, keyData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ EncryptKey(System::String ^ algorithm, cli::array &lt;System::Byte&gt; ^ keyData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -136,13 +170,21 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Cryptography.AsymmetricAlgorithm GetAsymmetricAlgorithm(string algorithm, bool privateKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509AsymmetricSecurityKey.GetAsymmetricAlgorithm(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAsymmetricAlgorithm (algorithm As String, privateKey As Boolean) As AsymmetricAlgorithm" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::AsymmetricAlgorithm ^ GetAsymmetricAlgorithm(System::String ^ algorithm, bool privateKey);" />
       <MemberSignature Language="F#" Value="override this.GetAsymmetricAlgorithm : string * bool -&gt; System.Security.Cryptography.AsymmetricAlgorithm" Usage="x509AsymmetricSecurityKey.GetAsymmetricAlgorithm (algorithm, privateKey)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::AsymmetricAlgorithm ^ GetAsymmetricAlgorithm(System::String ^ algorithm, bool privateKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.AsymmetricAlgorithm</ReturnType>
@@ -162,7 +204,9 @@
   
 ## Remarks  
  Use the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl>, <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSA15Url>, <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSAOAEPUrl>, <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url> or <xref:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature> fields to specify the `algorithm` parameter.  
-  
+
+ Due to collision problems with SHA1, Microsoft recommends a security model based on SHA256 or better.
+
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">
@@ -186,13 +230,21 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Cryptography.HashAlgorithm GetHashAlgorithmForSignature(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509AsymmetricSecurityKey.GetHashAlgorithmForSignature(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashAlgorithmForSignature (algorithm As String) As HashAlgorithm" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::HashAlgorithm ^ GetHashAlgorithmForSignature(System::String ^ algorithm);" />
       <MemberSignature Language="F#" Value="override this.GetHashAlgorithmForSignature : string -&gt; System.Security.Cryptography.HashAlgorithm" Usage="x509AsymmetricSecurityKey.GetHashAlgorithmForSignature algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::HashAlgorithm ^ GetHashAlgorithmForSignature(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.HashAlgorithm</ReturnType>
@@ -209,7 +261,9 @@
   
 ## Remarks  
  Use the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl>, <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url> or <xref:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature> fields to specify the `algorithm` parameter.  
-  
+
+ Due to collision problems with SHA1, Microsoft recommends a security model based on SHA256 or better.
+
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">
@@ -221,13 +275,21 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Cryptography.AsymmetricSignatureDeformatter GetSignatureDeformatter(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509AsymmetricSecurityKey.GetSignatureDeformatter(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSignatureDeformatter (algorithm As String) As AsymmetricSignatureDeformatter" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::AsymmetricSignatureDeformatter ^ GetSignatureDeformatter(System::String ^ algorithm);" />
       <MemberSignature Language="F#" Value="override this.GetSignatureDeformatter : string -&gt; System.Security.Cryptography.AsymmetricSignatureDeformatter" Usage="x509AsymmetricSecurityKey.GetSignatureDeformatter algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::AsymmetricSignatureDeformatter ^ GetSignatureDeformatter(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.AsymmetricSignatureDeformatter</ReturnType>
@@ -266,13 +328,21 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Cryptography.AsymmetricSignatureFormatter GetSignatureFormatter(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509AsymmetricSecurityKey.GetSignatureFormatter(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSignatureFormatter (algorithm As String) As AsymmetricSignatureFormatter" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::AsymmetricSignatureFormatter ^ GetSignatureFormatter(System::String ^ algorithm);" />
       <MemberSignature Language="F#" Value="override this.GetSignatureFormatter : string -&gt; System.Security.Cryptography.AsymmetricSignatureFormatter" Usage="x509AsymmetricSecurityKey.GetSignatureFormatter algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::AsymmetricSignatureFormatter ^ GetSignatureFormatter(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.AsymmetricSignatureFormatter</ReturnType>
@@ -289,7 +359,9 @@
   
 ## Remarks  
  Use the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl>, <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url> or <xref:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature> fields to specify the `algorithm` parameter.  
-  
+
+ Due to collision problems with SHA1, Microsoft recommends a security model based on SHA256 or better.
+
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The X.509 certificate specified in the constructor does not have a private key.  
@@ -314,13 +386,21 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool HasPrivateKey() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509AsymmetricSecurityKey.HasPrivateKey" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function HasPrivateKey () As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool HasPrivateKey();" />
       <MemberSignature Language="F#" Value="override this.HasPrivateKey : unit -&gt; bool" Usage="x509AsymmetricSecurityKey.HasPrivateKey " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool HasPrivateKey();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -338,13 +418,21 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsAsymmetricAlgorithm(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509AsymmetricSecurityKey.IsAsymmetricAlgorithm(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsAsymmetricAlgorithm (algorithm As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsAsymmetricAlgorithm(System::String ^ algorithm);" />
       <MemberSignature Language="F#" Value="override this.IsAsymmetricAlgorithm : string -&gt; bool" Usage="x509AsymmetricSecurityKey.IsAsymmetricAlgorithm algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsAsymmetricAlgorithm(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -357,7 +445,7 @@
         <summary>Gets a value that indicates whether the specified algorithm uses asymmetric keys.</summary>
         <returns>
           <see langword="true" /> when the specified algorithm is <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.DsaSha1Signature" />, <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha1Signature" />, <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature" />, <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaOaepKeyWrap" />, or <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaV15KeyWrap" />; otherwise, <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>Due to collision problems with SHA1, Microsoft recommends a security model based on SHA256 or better.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSupportedAlgorithm">
@@ -365,13 +453,21 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsSupportedAlgorithm(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509AsymmetricSecurityKey.IsSupportedAlgorithm(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSupportedAlgorithm (algorithm As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSupportedAlgorithm(System::String ^ algorithm);" />
       <MemberSignature Language="F#" Value="override this.IsSupportedAlgorithm : string -&gt; bool" Usage="x509AsymmetricSecurityKey.IsSupportedAlgorithm algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSupportedAlgorithm(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -393,7 +489,9 @@
 -   The `algorithm` parameter is <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl> and the public key for the X.509 certificate specified in the constructor is of type <xref:System.Security.Cryptography.DSA>.  
   
 -   The `algorithm` parameter is <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSA15Url>, <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSAOAEPUrl>, <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url> or <xref:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha256Signature> and the public key for the X.509 certificate specified in the constructor is of type <xref:System.Security.Cryptography.RSA>.  
-  
+
+Due to collision problems with SHA1, Microsoft recommends a security model based on SHA256 or better.
+
  ]]></format>
         </remarks>
       </Docs>
@@ -403,13 +501,21 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsSymmetricAlgorithm(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509AsymmetricSecurityKey.IsSymmetricAlgorithm(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSymmetricAlgorithm (algorithm As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSymmetricAlgorithm(System::String ^ algorithm);" />
       <MemberSignature Language="F#" Value="override this.IsSymmetricAlgorithm : string -&gt; bool" Usage="x509AsymmetricSecurityKey.IsSymmetricAlgorithm algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSymmetricAlgorithm(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -430,13 +536,21 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 KeySize" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.X509AsymmetricSecurityKey.KeySize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property KeySize As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int KeySize { int get(); };" />
       <MemberSignature Language="F#" Value="member this.KeySize : int" Usage="System.IdentityModel.Tokens.X509AsymmetricSecurityKey.KeySize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int KeySize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

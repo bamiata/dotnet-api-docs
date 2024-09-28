@@ -1,13 +1,20 @@
-﻿<Type Name="ChannelWriter&lt;T&gt;" FullName="System.Threading.Channels.ChannelWriter&lt;T&gt;">
+<Type Name="ChannelWriter&lt;T&gt;" FullName="System.Threading.Channels.ChannelWriter&lt;T&gt;">
   <TypeSignature Language="C#" Value="public abstract class ChannelWriter&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ChannelWriter`1&lt;T&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Channels.ChannelWriter`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ChannelWriter(Of T)" />
-  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ChannelWriter abstract" />
   <TypeSignature Language="F#" Value="type ChannelWriter&lt;'T&gt; = class" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ChannelWriter abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Channels</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -16,6 +23,16 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <typeparam name="T">Specifies the type of data that may be written to the channel.</typeparam>
     <summary>Provides a base class for writing to a channel.</summary>
@@ -31,24 +48,33 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Channels</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes an instance of the <see cref="T:System.Threading.Channels.ChannelWriter`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Complete">
-      <MemberSignature Language="C#" Value="public void Complete (Exception error = null);" />
+      <MemberSignature Language="C#" Value="public void Complete (Exception? error = default);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Complete(class System.Exception error) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Channels.ChannelWriter`1.Complete(System.Exception)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub Complete (Optional error As Exception = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Complete (Optional error As Exception = Nothing)" />
       <MemberSignature Language="F#" Value="member this.Complete : Exception -&gt; unit" Usage="channelWriter.Complete error" />
+      <MemberSignature Language="C#" Value="public void Complete (Exception error = default);" FrameworkAlternate="netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Channels</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -64,15 +90,20 @@
       </Docs>
     </Member>
     <Member MemberName="TryComplete">
-      <MemberSignature Language="C#" Value="public virtual bool TryComplete (Exception error = null);" />
+      <MemberSignature Language="C#" Value="public virtual bool TryComplete (Exception? error = default);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryComplete(class System.Exception error) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Channels.ChannelWriter`1.TryComplete(System.Exception)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function TryComplete (Optional error As Exception = null) As Boolean" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TryComplete (Optional error As Exception = Nothing) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member TryComplete : Exception -&gt; bool&#xA;override this.TryComplete : Exception -&gt; bool" Usage="channelWriter.TryComplete error" />
+      <MemberSignature Language="C#" Value="public virtual bool TryComplete (Exception error = default);" FrameworkAlternate="netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Channels</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -86,7 +117,7 @@
         <returns>
           <see langword="true" /> if this operation successfully completes the channel; otherwise, <see langword="false" /> if the channel could not be marked for completion,
             for example due to having already been marked as such, or due to not supporting completion.
-            </returns>
+          .</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,13 +126,23 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryWrite(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Channels.ChannelWriter`1.TryWrite(`0)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function TryWrite (item As T) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool TryWrite(T item);" />
       <MemberSignature Language="F#" Value="abstract member TryWrite : 'T -&gt; bool" Usage="channelWriter.TryWrite item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool TryWrite(T item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Channels</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -117,15 +158,26 @@
       </Docs>
     </Member>
     <Member MemberName="WaitToWriteAsync">
-      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.ValueTask&lt;bool&gt; WaitToWriteAsync (System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.ValueTask&lt;bool&gt; WaitToWriteAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;bool&gt; WaitToWriteAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Channels.ChannelWriter`1.WaitToWriteAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function WaitToWriteAsync (Optional cancellationToken As CancellationToken = Nothing) As ValueTask(Of Boolean)" />
       <MemberSignature Language="F#" Value="abstract member WaitToWriteAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;bool&gt;" Usage="channelWriter.WaitToWriteAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Channels</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(0)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ValueTask&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
@@ -134,22 +186,34 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> used to cancel the wait operation.</param>
-        <summary>Returns a <see cref="T:System.Threading.Tasks.Task`1" /> that will complete when space is available to write an item.</summary>
-        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> that will complete with a <see langword="true" /> result when space is available to write an item
+        <summary>Returns a <see cref="T:System.Threading.Tasks.ValueTask`1" /> that will complete when space is available to write an item.</summary>
+        <returns>A <see cref="T:System.Threading.Tasks.ValueTask`1" /> that will complete with a <see langword="true" /> result when space is available to write an item
             or with a <see langword="false" /> result when no further writing will be permitted.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.OperationCanceledException">The cancellation token was canceled. This exception is stored into the returned task.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.ValueTask WriteAsync (T item, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.ValueTask WriteAsync (T item, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.ValueTask WriteAsync(!T item, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Channels.ChannelWriter`1.WriteAsync(`0,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function WriteAsync (item As T, Optional cancellationToken As CancellationToken = Nothing) As ValueTask" />
       <MemberSignature Language="F#" Value="abstract member WriteAsync : 'T * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&#xA;override this.WriteAsync : 'T * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask" Usage="channelWriter.WriteAsync (item, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Channels</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ValueTask</ReturnType>
       </ReturnValue>
@@ -161,8 +225,9 @@
         <param name="item">The value to write to the channel.</param>
         <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> used to cancel the write operation.</param>
         <summary>Asynchronously writes an item to the channel.</summary>
-        <returns>A <see cref="T:System.Threading.Tasks.Task" /> that represents the asynchronous write operation.</returns>
+        <returns>A <see cref="T:System.Threading.Tasks.ValueTask" /> that represents the asynchronous write operation.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.OperationCanceledException">The cancellation token was canceled. This exception is stored into the returned task.</exception>
       </Docs>
     </Member>
   </Members>

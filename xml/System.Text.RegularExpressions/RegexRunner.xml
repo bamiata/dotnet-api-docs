@@ -1,16 +1,22 @@
-﻿<Type Name="RegexRunner" FullName="System.Text.RegularExpressions.RegexRunner">
+<Type Name="RegexRunner" FullName="System.Text.RegularExpressions.RegexRunner">
   <TypeSignature Language="C#" Value="public abstract class RegexRunner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit RegexRunner extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Text.RegularExpressions.RegexRunner" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class RegexRunner" />
-  <TypeSignature Language="C++ CLI" Value="public ref class RegexRunner abstract" />
   <TypeSignature Language="F#" Value="type RegexRunner = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RegexRunner abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Text.RegularExpressions</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -22,17 +28,31 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Text.RegularExpressions" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Text.RegularExpressions" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Text.RegularExpressions" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Text.RegularExpressions" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Text.RegularExpressions" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0;netcore-1.0;netcore-1.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1">
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netstandard-1.6">
-      <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -54,6 +74,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -65,10 +91,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -83,8 +111,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Capture(int32 capnum, int32 start, int32 end) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.Capture(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub Capture (capnum As Integer, start As Integer, end As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Capture(int capnum, int start, int end);" />
       <MemberSignature Language="F#" Value="member this.Capture : int * int * int -&gt; unit" Usage="regexRunner.Capture (capnum, start, end)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Capture(int capnum, int start, int end);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -92,6 +120,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -103,6 +137,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -122,12 +157,16 @@
       </Docs>
     </Member>
     <Member MemberName="CharInClass">
-      <MemberSignature Language="C#" Value="protected static bool CharInClass (char ch, string charClass);" />
-      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig bool CharInClass(char ch, string charClass) cil managed" />
+      <MemberSignature Language="C#" Value="protected static bool CharInClass (char ch, string charClass);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig bool CharInClass(char ch, string charClass) cil managed" FrameworkAlternate="net-5.0;net-6.0;net-7.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.CharInClass(System.Char,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Protected Shared Function CharInClass (ch As Char, charClass As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static bool CharInClass(char ch, System::String ^ charClass);" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function CharInClass (ch As Char, charClass As String) As Boolean" FrameworkAlternate="net-5.0;net-6.0;net-7.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="F#" Value="static member CharInClass : char * string -&gt; bool" Usage="System.Text.RegularExpressions.RegexRunner.CharInClass (ch, charClass)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static bool CharInClass(char ch, System::String ^ charClass);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+      <MemberSignature Language="C#" Value="public static bool CharInClass (char ch, string charClass);" FrameworkAlternate="net-8.0;net-9.0" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CharInClass(char ch, string charClass) cil managed" FrameworkAlternate="net-8.0;net-9.0" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CharInClass (ch As Char, charClass As String) As Boolean" FrameworkAlternate="net-8.0;net-9.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CharInClass(char ch, System::String ^ charClass);" FrameworkAlternate="net-8.0;net-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -135,6 +174,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -145,13 +190,20 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ch" Type="System.Char" />
-        <Parameter Name="charClass" Type="System.String" />
+        <Parameter Name="ch" Type="System.Char" Index="0" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="charClass" Type="System.String" Index="1" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="ch">A character to test.</param>
@@ -168,8 +220,8 @@
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig bool CharInSet(char ch, string set, string category) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.CharInSet(System.Char,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Shared Function CharInSet (ch As Char, set As String, category As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static bool CharInSet(char ch, System::String ^ set, System::String ^ category);" />
       <MemberSignature Language="F#" Value="static member CharInSet : char * string * string -&gt; bool" Usage="System.Text.RegularExpressions.RegexRunner.CharInSet (ch, set, category)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static bool CharInSet(char ch, System::String ^ set, System::String ^ category);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -177,6 +229,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -188,7 +246,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Obsolete("This API supports obsolete mechanisms for Regex extensibility. It is not supported.", DiagnosticId="SYSLIB0052", UrlFormat="https://aka.ms/dotnet-warnings/{0}")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This API supports obsolete mechanisms for Regex extensibility. It is not supported.", DiagnosticId="SYSLIB0052", UrlFormat="https://aka.ms/dotnet-warnings/{0}")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -212,8 +281,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void CheckTimeout() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.CheckTimeout" />
       <MemberSignature Language="VB.NET" Value="Protected Sub CheckTimeout ()" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void CheckTimeout();" />
       <MemberSignature Language="F#" Value="member this.CheckTimeout : unit -&gt; unit" Usage="regexRunner.CheckTimeout " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void CheckTimeout();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -221,6 +290,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -230,6 +305,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -246,8 +322,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Crawl(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.Crawl(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub Crawl (i As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Crawl(int i);" />
       <MemberSignature Language="F#" Value="member this.Crawl : int -&gt; unit" Usage="regexRunner.Crawl i" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Crawl(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -255,6 +331,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -266,6 +348,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -285,8 +368,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance int32 Crawlpos() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.Crawlpos" />
       <MemberSignature Language="VB.NET" Value="Protected Function Crawlpos () As Integer" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; int Crawlpos();" />
       <MemberSignature Language="F#" Value="member this.Crawlpos : unit -&gt; int" Usage="regexRunner.Crawlpos " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; int Crawlpos();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -294,6 +377,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -305,6 +394,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -322,8 +412,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void DoubleCrawl() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.DoubleCrawl" />
       <MemberSignature Language="VB.NET" Value="Protected Sub DoubleCrawl ()" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void DoubleCrawl();" />
       <MemberSignature Language="F#" Value="member this.DoubleCrawl : unit -&gt; unit" Usage="regexRunner.DoubleCrawl " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void DoubleCrawl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -331,6 +421,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -342,6 +438,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -358,8 +455,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void DoubleStack() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.DoubleStack" />
       <MemberSignature Language="VB.NET" Value="Protected Sub DoubleStack ()" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void DoubleStack();" />
       <MemberSignature Language="F#" Value="member this.DoubleStack : unit -&gt; unit" Usage="regexRunner.DoubleStack " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void DoubleStack();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -367,6 +464,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -378,6 +481,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -394,8 +498,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void DoubleTrack() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.DoubleTrack" />
       <MemberSignature Language="VB.NET" Value="Protected Sub DoubleTrack ()" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void DoubleTrack();" />
       <MemberSignature Language="F#" Value="member this.DoubleTrack : unit -&gt; unit" Usage="regexRunner.DoubleTrack " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void DoubleTrack();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -403,6 +507,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -414,6 +524,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -430,8 +541,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void EnsureStorage() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.EnsureStorage" />
       <MemberSignature Language="VB.NET" Value="Protected Sub EnsureStorage ()" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void EnsureStorage();" />
       <MemberSignature Language="F#" Value="member this.EnsureStorage : unit -&gt; unit" Usage="regexRunner.EnsureStorage " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void EnsureStorage();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -439,6 +550,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -450,6 +567,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -462,12 +580,16 @@
       </Docs>
     </Member>
     <Member MemberName="FindFirstChar">
-      <MemberSignature Language="C#" Value="protected abstract bool FindFirstChar ();" />
+      <MemberSignature Language="C#" Value="protected abstract bool FindFirstChar ();" FrameworkAlternate="net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool FindFirstChar() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.FindFirstChar" />
-      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function FindFirstChar () As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool FindFirstChar();" />
-      <MemberSignature Language="F#" Value="abstract member FindFirstChar : unit -&gt; bool" Usage="regexRunner.FindFirstChar " />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function FindFirstChar () As Boolean" FrameworkAlternate="net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+      <MemberSignature Language="F#" Value="abstract member FindFirstChar : unit -&gt; bool" Usage="regexRunner.FindFirstChar " FrameworkAlternate="net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool FindFirstChar();" FrameworkAlternate="net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+      <MemberSignature Language="C#" Value="protected virtual bool FindFirstChar ();" FrameworkAlternate="net-7.0;net-8.0;net-9.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function FindFirstChar () As Boolean" FrameworkAlternate="net-7.0;net-8.0;net-9.0" />
+      <MemberSignature Language="F#" Value="abstract member FindFirstChar : unit -&gt; bool&#xA;override this.FindFirstChar : unit -&gt; bool" Usage="regexRunner.FindFirstChar " FrameworkAlternate="net-7.0;net-8.0;net-9.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool FindFirstChar();" FrameworkAlternate="net-7.0;net-8.0;net-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -475,6 +597,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -486,6 +614,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -499,12 +628,16 @@
       </Docs>
     </Member>
     <Member MemberName="Go">
-      <MemberSignature Language="C#" Value="protected abstract void Go ();" />
+      <MemberSignature Language="C#" Value="protected abstract void Go ();" FrameworkAlternate="net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Go() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.Go" />
-      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub Go ()" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void Go();" />
-      <MemberSignature Language="F#" Value="abstract member Go : unit -&gt; unit" Usage="regexRunner.Go " />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub Go ()" FrameworkAlternate="net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+      <MemberSignature Language="F#" Value="abstract member Go : unit -&gt; unit" Usage="regexRunner.Go " FrameworkAlternate="net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void Go();" FrameworkAlternate="net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+      <MemberSignature Language="C#" Value="protected virtual void Go ();" FrameworkAlternate="net-7.0;net-8.0;net-9.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Go ()" FrameworkAlternate="net-7.0;net-8.0;net-9.0" />
+      <MemberSignature Language="F#" Value="abstract member Go : unit -&gt; unit&#xA;override this.Go : unit -&gt; unit" Usage="regexRunner.Go " FrameworkAlternate="net-7.0;net-8.0;net-9.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Go();" FrameworkAlternate="net-7.0;net-8.0;net-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -512,6 +645,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -523,6 +662,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -535,12 +675,16 @@
       </Docs>
     </Member>
     <Member MemberName="InitTrackCount">
-      <MemberSignature Language="C#" Value="protected abstract void InitTrackCount ();" />
+      <MemberSignature Language="C#" Value="protected abstract void InitTrackCount ();" FrameworkAlternate="net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void InitTrackCount() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.InitTrackCount" />
-      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub InitTrackCount ()" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void InitTrackCount();" />
-      <MemberSignature Language="F#" Value="abstract member InitTrackCount : unit -&gt; unit" Usage="regexRunner.InitTrackCount " />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub InitTrackCount ()" FrameworkAlternate="net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+      <MemberSignature Language="F#" Value="abstract member InitTrackCount : unit -&gt; unit" Usage="regexRunner.InitTrackCount " FrameworkAlternate="net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void InitTrackCount();" FrameworkAlternate="net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+      <MemberSignature Language="C#" Value="protected virtual void InitTrackCount ();" FrameworkAlternate="net-7.0;net-8.0;net-9.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub InitTrackCount ()" FrameworkAlternate="net-7.0;net-8.0;net-9.0" />
+      <MemberSignature Language="F#" Value="abstract member InitTrackCount : unit -&gt; unit&#xA;override this.InitTrackCount : unit -&gt; unit" Usage="regexRunner.InitTrackCount " FrameworkAlternate="net-7.0;net-8.0;net-9.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void InitTrackCount();" FrameworkAlternate="net-7.0;net-8.0;net-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -548,6 +692,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -559,6 +709,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -575,8 +726,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsBoundary(int32 index, int32 startpos, int32 endpos) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.IsBoundary(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Function IsBoundary (index As Integer, startpos As Integer, endpos As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool IsBoundary(int index, int startpos, int endpos);" />
       <MemberSignature Language="F#" Value="member this.IsBoundary : int * int * int -&gt; bool" Usage="regexRunner.IsBoundary (index, startpos, endpos)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool IsBoundary(int index, int startpos, int endpos);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -584,6 +735,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -595,6 +752,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -619,8 +777,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsECMABoundary(int32 index, int32 startpos, int32 endpos) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.IsECMABoundary(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Function IsECMABoundary (index As Integer, startpos As Integer, endpos As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool IsECMABoundary(int index, int startpos, int endpos);" />
       <MemberSignature Language="F#" Value="member this.IsECMABoundary : int * int * int -&gt; bool" Usage="regexRunner.IsECMABoundary (index, startpos, endpos)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool IsECMABoundary(int index, int startpos, int endpos);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -628,6 +786,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -639,6 +803,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -663,8 +828,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsMatched(int32 cap) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.IsMatched(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Function IsMatched (cap As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool IsMatched(int cap);" />
       <MemberSignature Language="F#" Value="member this.IsMatched : int -&gt; bool" Usage="regexRunner.IsMatched cap" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool IsMatched(int cap);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -672,6 +837,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -683,6 +854,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -703,8 +875,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance int32 MatchIndex(int32 cap) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.MatchIndex(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Function MatchIndex (cap As Integer) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; int MatchIndex(int cap);" />
       <MemberSignature Language="F#" Value="member this.MatchIndex : int -&gt; int" Usage="regexRunner.MatchIndex cap" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; int MatchIndex(int cap);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -712,6 +884,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -723,6 +901,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -743,8 +922,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance int32 MatchLength(int32 cap) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.MatchLength(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Function MatchLength (cap As Integer) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; int MatchLength(int cap);" />
       <MemberSignature Language="F#" Value="member this.MatchLength : int -&gt; int" Usage="regexRunner.MatchLength cap" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; int MatchLength(int cap);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -752,6 +931,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -763,6 +948,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -783,8 +969,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance int32 Popcrawl() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.Popcrawl" />
       <MemberSignature Language="VB.NET" Value="Protected Function Popcrawl () As Integer" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; int Popcrawl();" />
       <MemberSignature Language="F#" Value="member this.Popcrawl : unit -&gt; int" Usage="regexRunner.Popcrawl " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; int Popcrawl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -792,6 +978,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -803,6 +995,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -816,12 +1009,13 @@
       </Docs>
     </Member>
     <Member MemberName="runcrawl">
-      <MemberSignature Language="C#" Value="protected internal int[] runcrawl;" />
+      <MemberSignature Language="C#" Value="protected internal int[]? runcrawl;" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".field familyorassembly int32[] runcrawl" />
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexRunner.runcrawl" />
       <MemberSignature Language="VB.NET" Value="Protected Friend runcrawl As Integer() " />
-      <MemberSignature Language="C++ CLI" Value="protected public: cli::array &lt;int&gt; ^ runcrawl;" />
       <MemberSignature Language="F#" Value="val mutable runcrawl : int[]" Usage="System.Text.RegularExpressions.RegexRunner.runcrawl" />
+      <MemberSignature Language="C++ CLI" Value="protected public: cli::array &lt;int&gt; ^ runcrawl;" />
+      <MemberSignature Language="C#" Value="protected internal int[] runcrawl;" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -829,6 +1023,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -840,6 +1040,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32[]</ReturnType>
@@ -855,8 +1056,8 @@
       <MemberSignature Language="ILAsm" Value=".field familyorassembly int32 runcrawlpos" />
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexRunner.runcrawlpos" />
       <MemberSignature Language="VB.NET" Value="Protected Friend runcrawlpos As Integer " />
-      <MemberSignature Language="C++ CLI" Value="protected public: int runcrawlpos;" />
       <MemberSignature Language="F#" Value="val mutable runcrawlpos : int" Usage="System.Text.RegularExpressions.RegexRunner.runcrawlpos" />
+      <MemberSignature Language="C++ CLI" Value="protected public: int runcrawlpos;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -864,6 +1065,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -875,6 +1082,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -886,12 +1094,13 @@
       </Docs>
     </Member>
     <Member MemberName="runmatch">
-      <MemberSignature Language="C#" Value="protected internal System.Text.RegularExpressions.Match runmatch;" />
+      <MemberSignature Language="C#" Value="protected internal System.Text.RegularExpressions.Match? runmatch;" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".field familyorassembly class System.Text.RegularExpressions.Match runmatch" />
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexRunner.runmatch" />
       <MemberSignature Language="VB.NET" Value="Protected Friend runmatch As Match " />
-      <MemberSignature Language="C++ CLI" Value="protected public: System::Text::RegularExpressions::Match ^ runmatch;" />
       <MemberSignature Language="F#" Value="val mutable runmatch : System.Text.RegularExpressions.Match" Usage="System.Text.RegularExpressions.RegexRunner.runmatch" />
+      <MemberSignature Language="C++ CLI" Value="protected public: System::Text::RegularExpressions::Match ^ runmatch;" />
+      <MemberSignature Language="C#" Value="protected internal System.Text.RegularExpressions.Match runmatch;" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -899,6 +1108,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -910,6 +1125,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.RegularExpressions.Match</ReturnType>
@@ -921,12 +1137,13 @@
       </Docs>
     </Member>
     <Member MemberName="runregex">
-      <MemberSignature Language="C#" Value="protected internal System.Text.RegularExpressions.Regex runregex;" />
+      <MemberSignature Language="C#" Value="protected internal System.Text.RegularExpressions.Regex? runregex;" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".field familyorassembly class System.Text.RegularExpressions.Regex runregex" />
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexRunner.runregex" />
       <MemberSignature Language="VB.NET" Value="Protected Friend runregex As Regex " />
-      <MemberSignature Language="C++ CLI" Value="protected public: System::Text::RegularExpressions::Regex ^ runregex;" />
       <MemberSignature Language="F#" Value="val mutable runregex : System.Text.RegularExpressions.Regex" Usage="System.Text.RegularExpressions.RegexRunner.runregex" />
+      <MemberSignature Language="C++ CLI" Value="protected public: System::Text::RegularExpressions::Regex ^ runregex;" />
+      <MemberSignature Language="C#" Value="protected internal System.Text.RegularExpressions.Regex runregex;" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -934,6 +1151,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -945,6 +1168,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.RegularExpressions.Regex</ReturnType>
@@ -956,12 +1180,13 @@
       </Docs>
     </Member>
     <Member MemberName="runstack">
-      <MemberSignature Language="C#" Value="protected internal int[] runstack;" />
+      <MemberSignature Language="C#" Value="protected internal int[]? runstack;" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".field familyorassembly int32[] runstack" />
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexRunner.runstack" />
       <MemberSignature Language="VB.NET" Value="Protected Friend runstack As Integer() " />
-      <MemberSignature Language="C++ CLI" Value="protected public: cli::array &lt;int&gt; ^ runstack;" />
       <MemberSignature Language="F#" Value="val mutable runstack : int[]" Usage="System.Text.RegularExpressions.RegexRunner.runstack" />
+      <MemberSignature Language="C++ CLI" Value="protected public: cli::array &lt;int&gt; ^ runstack;" />
+      <MemberSignature Language="C#" Value="protected internal int[] runstack;" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -969,6 +1194,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -980,6 +1211,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32[]</ReturnType>
@@ -995,8 +1227,8 @@
       <MemberSignature Language="ILAsm" Value=".field familyorassembly int32 runstackpos" />
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexRunner.runstackpos" />
       <MemberSignature Language="VB.NET" Value="Protected Friend runstackpos As Integer " />
-      <MemberSignature Language="C++ CLI" Value="protected public: int runstackpos;" />
       <MemberSignature Language="F#" Value="val mutable runstackpos : int" Usage="System.Text.RegularExpressions.RegexRunner.runstackpos" />
+      <MemberSignature Language="C++ CLI" Value="protected public: int runstackpos;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -1004,6 +1236,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1015,6 +1253,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1026,12 +1265,13 @@
       </Docs>
     </Member>
     <Member MemberName="runtext">
-      <MemberSignature Language="C#" Value="protected internal string runtext;" />
+      <MemberSignature Language="C#" Value="protected internal string? runtext;" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".field familyorassembly string runtext" />
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexRunner.runtext" />
       <MemberSignature Language="VB.NET" Value="Protected Friend runtext As String " />
-      <MemberSignature Language="C++ CLI" Value="protected public: System::String ^ runtext;" />
       <MemberSignature Language="F#" Value="val mutable runtext : string" Usage="System.Text.RegularExpressions.RegexRunner.runtext" />
+      <MemberSignature Language="C++ CLI" Value="protected public: System::String ^ runtext;" />
+      <MemberSignature Language="C#" Value="protected internal string runtext;" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -1039,6 +1279,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1050,6 +1296,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1065,8 +1312,8 @@
       <MemberSignature Language="ILAsm" Value=".field familyorassembly int32 runtextbeg" />
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexRunner.runtextbeg" />
       <MemberSignature Language="VB.NET" Value="Protected Friend runtextbeg As Integer " />
-      <MemberSignature Language="C++ CLI" Value="protected public: int runtextbeg;" />
       <MemberSignature Language="F#" Value="val mutable runtextbeg : int" Usage="System.Text.RegularExpressions.RegexRunner.runtextbeg" />
+      <MemberSignature Language="C++ CLI" Value="protected public: int runtextbeg;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -1074,6 +1321,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1085,6 +1338,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1100,8 +1354,8 @@
       <MemberSignature Language="ILAsm" Value=".field familyorassembly int32 runtextend" />
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexRunner.runtextend" />
       <MemberSignature Language="VB.NET" Value="Protected Friend runtextend As Integer " />
-      <MemberSignature Language="C++ CLI" Value="protected public: int runtextend;" />
       <MemberSignature Language="F#" Value="val mutable runtextend : int" Usage="System.Text.RegularExpressions.RegexRunner.runtextend" />
+      <MemberSignature Language="C++ CLI" Value="protected public: int runtextend;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -1109,6 +1363,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1120,6 +1380,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1135,8 +1396,8 @@
       <MemberSignature Language="ILAsm" Value=".field familyorassembly int32 runtextpos" />
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexRunner.runtextpos" />
       <MemberSignature Language="VB.NET" Value="Protected Friend runtextpos As Integer " />
-      <MemberSignature Language="C++ CLI" Value="protected public: int runtextpos;" />
       <MemberSignature Language="F#" Value="val mutable runtextpos : int" Usage="System.Text.RegularExpressions.RegexRunner.runtextpos" />
+      <MemberSignature Language="C++ CLI" Value="protected public: int runtextpos;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -1144,6 +1405,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1155,6 +1422,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1170,8 +1438,8 @@
       <MemberSignature Language="ILAsm" Value=".field familyorassembly int32 runtextstart" />
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexRunner.runtextstart" />
       <MemberSignature Language="VB.NET" Value="Protected Friend runtextstart As Integer " />
-      <MemberSignature Language="C++ CLI" Value="protected public: int runtextstart;" />
       <MemberSignature Language="F#" Value="val mutable runtextstart : int" Usage="System.Text.RegularExpressions.RegexRunner.runtextstart" />
+      <MemberSignature Language="C++ CLI" Value="protected public: int runtextstart;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -1179,6 +1447,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1190,6 +1464,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1201,12 +1476,13 @@
       </Docs>
     </Member>
     <Member MemberName="runtrack">
-      <MemberSignature Language="C#" Value="protected internal int[] runtrack;" />
+      <MemberSignature Language="C#" Value="protected internal int[]? runtrack;" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".field familyorassembly int32[] runtrack" />
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexRunner.runtrack" />
       <MemberSignature Language="VB.NET" Value="Protected Friend runtrack As Integer() " />
-      <MemberSignature Language="C++ CLI" Value="protected public: cli::array &lt;int&gt; ^ runtrack;" />
       <MemberSignature Language="F#" Value="val mutable runtrack : int[]" Usage="System.Text.RegularExpressions.RegexRunner.runtrack" />
+      <MemberSignature Language="C++ CLI" Value="protected public: cli::array &lt;int&gt; ^ runtrack;" />
+      <MemberSignature Language="C#" Value="protected internal int[] runtrack;" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -1214,6 +1490,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1225,6 +1507,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32[]</ReturnType>
@@ -1240,8 +1523,8 @@
       <MemberSignature Language="ILAsm" Value=".field familyorassembly int32 runtrackcount" />
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexRunner.runtrackcount" />
       <MemberSignature Language="VB.NET" Value="Protected Friend runtrackcount As Integer " />
-      <MemberSignature Language="C++ CLI" Value="protected public: int runtrackcount;" />
       <MemberSignature Language="F#" Value="val mutable runtrackcount : int" Usage="System.Text.RegularExpressions.RegexRunner.runtrackcount" />
+      <MemberSignature Language="C++ CLI" Value="protected public: int runtrackcount;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -1249,6 +1532,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1260,6 +1549,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1275,8 +1565,8 @@
       <MemberSignature Language="ILAsm" Value=".field familyorassembly int32 runtrackpos" />
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexRunner.runtrackpos" />
       <MemberSignature Language="VB.NET" Value="Protected Friend runtrackpos As Integer " />
-      <MemberSignature Language="C++ CLI" Value="protected public: int runtrackpos;" />
       <MemberSignature Language="F#" Value="val mutable runtrackpos : int" Usage="System.Text.RegularExpressions.RegexRunner.runtrackpos" />
+      <MemberSignature Language="C++ CLI" Value="protected public: int runtrackpos;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -1284,6 +1574,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1295,6 +1591,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1317,11 +1614,50 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="Scan">
-      <MemberSignature Language="C#" Value="protected internal System.Text.RegularExpressions.Match Scan (System.Text.RegularExpressions.Regex regex, string text, int textbeg, int textend, int textstart, int prevlen, bool quick);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void Scan (ReadOnlySpan&lt;char&gt; text);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Scan(valuetype System.ReadOnlySpan`1&lt;char&gt; text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.Scan(System.ReadOnlySpan{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub Scan (text As ReadOnlySpan(Of Char))" />
+      <MemberSignature Language="F#" Value="abstract member Scan : ReadOnlySpan&lt;char&gt; -&gt; unit&#xA;override this.Scan : ReadOnlySpan&lt;char&gt; -&gt; unit" Usage="regexRunner.Scan text" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void Scan(ReadOnlySpan&lt;char&gt; text);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(0)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="0" FrameworkAlternate="net-7.0;net-8.0;net-9.0" />
+      </Parameters>
+      <Docs>
+        <param name="text">The text to scan for a pattern match.</param>
+        <summary>Used by a <see cref="T:System.Text.RegularExpressions.Regex" /> object to scan the input <paramref name="text" /> looking for the next match.</summary>
+        <remarks>This API supports the product infrastructure and is not intended to be used directly from your code.</remarks>
+        <exception cref="T:System.NotSupportedException">
+          <see cref="T:System.ReadOnlySpan`1" />-based <see cref="T:System.Text.RegularExpressions.Regex" /> methods are not supported from <see cref="T:System.Text.RegularExpressions.Regex" />-derived types generated by <see cref="Overload:System.Text.RegularExpressions.Regex.CompileToAssembly" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Scan">
+      <MemberSignature Language="C#" Value="protected internal System.Text.RegularExpressions.Match? Scan (System.Text.RegularExpressions.Regex regex, string text, int textbeg, int textend, int textstart, int prevlen, bool quick);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance class System.Text.RegularExpressions.Match Scan(class System.Text.RegularExpressions.Regex regex, string text, int32 textbeg, int32 textend, int32 textstart, int32 prevlen, bool quick) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.Scan(System.Text.RegularExpressions.Regex,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; System::Text::RegularExpressions::Match ^ Scan(System::Text::RegularExpressions::Regex ^ regex, System::String ^ text, int textbeg, int textend, int textstart, int prevlen, bool quick);" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function Scan (regex As Regex, text As String, textbeg As Integer, textend As Integer, textstart As Integer, prevlen As Integer, quick As Boolean) As Match" />
       <MemberSignature Language="F#" Value="member this.Scan : System.Text.RegularExpressions.Regex * string * int * int * int * int * bool -&gt; System.Text.RegularExpressions.Match" Usage="regexRunner.Scan (regex, text, textbeg, textend, textstart, prevlen, quick)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; System::Text::RegularExpressions::Match ^ Scan(System::Text::RegularExpressions::Regex ^ regex, System::String ^ text, int textbeg, int textend, int textstart, int prevlen, bool quick);" />
+      <MemberSignature Language="C#" Value="protected internal System.Text.RegularExpressions.Match Scan (System.Text.RegularExpressions.Regex regex, string text, int textbeg, int textend, int textstart, int prevlen, bool quick);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -1329,6 +1665,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1340,7 +1682,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Obsolete("This API supports obsolete mechanisms for Regex extensibility. It is not supported.", DiagnosticId="SYSLIB0052", UrlFormat="https://aka.ms/dotnet-warnings/{0}")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This API supports obsolete mechanisms for Regex extensibility. It is not supported.", DiagnosticId="SYSLIB0052", UrlFormat="https://aka.ms/dotnet-warnings/{0}")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Text.RegularExpressions.Match</ReturnType>
       </ReturnValue>
@@ -1369,11 +1722,13 @@
       </Docs>
     </Member>
     <Member MemberName="Scan">
-      <MemberSignature Language="C#" Value="protected internal System.Text.RegularExpressions.Match Scan (System.Text.RegularExpressions.Regex regex, string text, int textbeg, int textend, int textstart, int prevlen, bool quick, TimeSpan timeout);" />
+      <MemberSignature Language="C#" Value="protected internal System.Text.RegularExpressions.Match? Scan (System.Text.RegularExpressions.Regex regex, string text, int textbeg, int textend, int textstart, int prevlen, bool quick, TimeSpan timeout);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance class System.Text.RegularExpressions.Match Scan(class System.Text.RegularExpressions.Regex regex, string text, int32 textbeg, int32 textend, int32 textstart, int32 prevlen, bool quick, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.Scan(System.Text.RegularExpressions.Regex,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.TimeSpan)" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; System::Text::RegularExpressions::Match ^ Scan(System::Text::RegularExpressions::Regex ^ regex, System::String ^ text, int textbeg, int textend, int textstart, int prevlen, bool quick, TimeSpan timeout);" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function Scan (regex As Regex, text As String, textbeg As Integer, textend As Integer, textstart As Integer, prevlen As Integer, quick As Boolean, timeout As TimeSpan) As Match" />
       <MemberSignature Language="F#" Value="member this.Scan : System.Text.RegularExpressions.Regex * string * int * int * int * int * bool * TimeSpan -&gt; System.Text.RegularExpressions.Match" Usage="regexRunner.Scan (regex, text, textbeg, textend, textstart, prevlen, quick, timeout)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; System::Text::RegularExpressions::Match ^ Scan(System::Text::RegularExpressions::Regex ^ regex, System::String ^ text, int textbeg, int textend, int textstart, int prevlen, bool quick, TimeSpan timeout);" />
+      <MemberSignature Language="C#" Value="protected internal System.Text.RegularExpressions.Match Scan (System.Text.RegularExpressions.Regex regex, string text, int textbeg, int textend, int textstart, int prevlen, bool quick, TimeSpan timeout);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -1381,6 +1736,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1390,19 +1751,30 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Obsolete("This API supports obsolete mechanisms for Regex extensibility. It is not supported.", DiagnosticId="SYSLIB0052", UrlFormat="https://aka.ms/dotnet-warnings/{0}")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This API supports obsolete mechanisms for Regex extensibility. It is not supported.", DiagnosticId="SYSLIB0052", UrlFormat="https://aka.ms/dotnet-warnings/{0}")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Text.RegularExpressions.Match</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="regex" Type="System.Text.RegularExpressions.Regex" />
-        <Parameter Name="text" Type="System.String" />
-        <Parameter Name="textbeg" Type="System.Int32" />
-        <Parameter Name="textend" Type="System.Int32" />
-        <Parameter Name="textstart" Type="System.Int32" />
-        <Parameter Name="prevlen" Type="System.Int32" />
-        <Parameter Name="quick" Type="System.Boolean" />
-        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="regex" Type="System.Text.RegularExpressions.Regex" Index="0" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="text" Type="System.String" Index="1" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="textbeg" Type="System.Int32" Index="2" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="textend" Type="System.Int32" Index="3" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="textstart" Type="System.Int32" Index="4" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="prevlen" Type="System.Int32" Index="5" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="quick" Type="System.Boolean" Index="6" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="timeout" Type="System.TimeSpan" Index="7" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="regex">An instance of the regular expression engine.</param>
@@ -1425,8 +1797,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void TransferCapture(int32 capnum, int32 uncapnum, int32 start, int32 end) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.TransferCapture(System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub TransferCapture (capnum As Integer, uncapnum As Integer, start As Integer, end As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void TransferCapture(int capnum, int uncapnum, int start, int end);" />
       <MemberSignature Language="F#" Value="member this.TransferCapture : int * int * int * int -&gt; unit" Usage="regexRunner.TransferCapture (capnum, uncapnum, start, end)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void TransferCapture(int capnum, int uncapnum, int start, int end);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -1434,6 +1806,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1445,6 +1823,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1470,8 +1849,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Uncapture() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.RegexRunner.Uncapture" />
       <MemberSignature Language="VB.NET" Value="Protected Sub Uncapture ()" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Uncapture();" />
       <MemberSignature Language="F#" Value="member this.Uncapture : unit -&gt; unit" Usage="regexRunner.Uncapture " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Uncapture();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -1479,6 +1858,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1490,6 +1875,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

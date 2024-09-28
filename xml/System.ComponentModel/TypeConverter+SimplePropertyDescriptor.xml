@@ -1,4 +1,4 @@
-﻿<Type Name="TypeConverter+SimplePropertyDescriptor" FullName="System.ComponentModel.TypeConverter+SimplePropertyDescriptor">
+<Type Name="TypeConverter+SimplePropertyDescriptor" FullName="System.ComponentModel.TypeConverter+SimplePropertyDescriptor">
   <TypeSignature Language="C#" Value="protected abstract class TypeConverter.SimplePropertyDescriptor : System.ComponentModel.PropertyDescriptor" />
   <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi abstract beforefieldinit TypeConverter/SimplePropertyDescriptor extends System.ComponentModel.PropertyDescriptor" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.TypeConverter.SimplePropertyDescriptor" />
@@ -9,6 +9,12 @@
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -20,11 +26,30 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.ComponentModel.TypeConverter" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.ComponentModel.TypeConverter" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.ComponentModel.TypeConverter" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.ComponentModel.TypeConverter" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.ComponentModel.TypeConverter" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+    <TypeForwarding From="System.ComponentModel.TypeConverter" FromVersion="4.1.1.0" To="System" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.ComponentModel.PropertyDescriptor</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Represents an <see langword="abstract" /> class that provides properties for objects that do not have properties.</summary>
     <remarks>
@@ -53,18 +78,28 @@
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected SimplePropertyDescriptor (Type componentType, string name, Type propertyType);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Type componentType, string name, class System.Type propertyType) cil managed" />
+      <MemberSignature Language="C#" Value="protected SimplePropertyDescriptor (Type componentType, string name, Type propertyType);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Type componentType, string name, class System.Type propertyType) cil managed" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.#ctor(System.Type,System.String,System.Type)" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub New (componentType As Type, name As String, propertyType As Type)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SimplePropertyDescriptor(Type ^ componentType, System::String ^ name, Type ^ propertyType);" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (componentType As Type, name As String, propertyType As Type)" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.TypeConverter.SimplePropertyDescriptor : Type * string * Type -&gt; System.ComponentModel.TypeConverter.SimplePropertyDescriptor" Usage="new System.ComponentModel.TypeConverter.SimplePropertyDescriptor (componentType, name, propertyType)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SimplePropertyDescriptor(Type ^ componentType, System::String ^ name, Type ^ propertyType);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
+      <MemberSignature Language="C#" Value="public SimplePropertyDescriptor (Type componentType, string name, Type propertyType);" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type componentType, string name, class System.Type propertyType) cil managed" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (componentType As Type, name As String, propertyType As Type)" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SimplePropertyDescriptor(Type ^ componentType, System::String ^ name, Type ^ propertyType);" FrameworkAlternate="netframework-1.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -76,6 +111,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="componentType" Type="System.Type" />
@@ -94,18 +130,29 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected SimplePropertyDescriptor (Type componentType, string name, Type propertyType, Attribute[] attributes);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Type componentType, string name, class System.Type propertyType, class System.Attribute[] attributes) cil managed" />
+      <MemberSignature Language="C#" Value="protected SimplePropertyDescriptor (Type componentType, string name, Type propertyType, Attribute[] attributes);" FrameworkAlternate="net-5.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Type componentType, string name, class System.Type propertyType, class System.Attribute[] attributes) cil managed" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.#ctor(System.Type,System.String,System.Type,System.Attribute[])" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub New (componentType As Type, name As String, propertyType As Type, attributes As Attribute())" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SimplePropertyDescriptor(Type ^ componentType, System::String ^ name, Type ^ propertyType, cli::array &lt;Attribute ^&gt; ^ attributes);" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (componentType As Type, name As String, propertyType As Type, attributes As Attribute())" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.TypeConverter.SimplePropertyDescriptor : Type * string * Type * Attribute[] -&gt; System.ComponentModel.TypeConverter.SimplePropertyDescriptor" Usage="new System.ComponentModel.TypeConverter.SimplePropertyDescriptor (componentType, name, propertyType, attributes)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SimplePropertyDescriptor(Type ^ componentType, System::String ^ name, Type ^ propertyType, cli::array &lt;Attribute ^&gt; ^ attributes);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
+      <MemberSignature Language="C#" Value="protected SimplePropertyDescriptor (Type componentType, string name, Type propertyType, Attribute[]? attributes);" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0" />
+      <MemberSignature Language="C#" Value="public SimplePropertyDescriptor (Type componentType, string name, Type propertyType, Attribute[] attributes);" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type componentType, string name, class System.Type propertyType, class System.Attribute[] attributes) cil managed" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (componentType As Type, name As String, propertyType As Type, attributes As Attribute())" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SimplePropertyDescriptor(Type ^ componentType, System::String ^ name, Type ^ propertyType, cli::array &lt;Attribute ^&gt; ^ attributes);" FrameworkAlternate="netframework-1.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -117,17 +164,26 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
         <Parameter Name="componentType" Type="System.Type" />
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="propertyType" Type="System.Type" />
-        <Parameter Name="attributes" Type="System.Attribute[]" />
+        <Parameter Name="attributes" Type="System.Attribute[]">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
       </Parameters>
       <Docs>
         <param name="componentType">A <see cref="T:System.Type" /> that represents the type of component to which this property descriptor binds.</param>
@@ -147,14 +203,20 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanResetValue(object component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.CanResetValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanResetValue (component As Object) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanResetValue(System::Object ^ component);" />
       <MemberSignature Language="F#" Value="override this.CanResetValue : obj -&gt; bool" Usage="simplePropertyDescriptor.CanResetValue component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanResetValue(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -166,6 +228,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -196,14 +259,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ComponentType" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.ComponentType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ComponentType As Type" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ComponentType { Type ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.ComponentType : Type" Usage="System.ComponentModel.TypeConverter.SimplePropertyDescriptor.ComponentType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ComponentType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -215,10 +284,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -238,14 +309,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsReadOnly As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReadOnly { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.ComponentModel.TypeConverter.SimplePropertyDescriptor.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -257,6 +334,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -277,14 +355,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type PropertyType" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.PropertyType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property PropertyType As Type" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ PropertyType { Type ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.PropertyType : Type" Usage="System.ComponentModel.TypeConverter.SimplePropertyDescriptor.PropertyType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ PropertyType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -296,10 +380,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -319,14 +405,20 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ResetValue(object component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.ResetValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ResetValue (component As Object)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ResetValue(System::Object ^ component);" />
       <MemberSignature Language="F#" Value="override this.ResetValue : obj -&gt; unit" Usage="simplePropertyDescriptor.ResetValue component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ResetValue(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -338,6 +430,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -366,14 +459,20 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ShouldSerializeValue(object component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeConverter.SimplePropertyDescriptor.ShouldSerializeValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ShouldSerializeValue (component As Object) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ShouldSerializeValue(System::Object ^ component);" />
       <MemberSignature Language="F#" Value="override this.ShouldSerializeValue : obj -&gt; bool" Usage="simplePropertyDescriptor.ShouldSerializeValue component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ShouldSerializeValue(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -385,6 +484,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

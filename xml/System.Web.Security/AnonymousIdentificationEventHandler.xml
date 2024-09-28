@@ -1,10 +1,10 @@
-﻿<Type Name="AnonymousIdentificationEventHandler" FullName="System.Web.Security.AnonymousIdentificationEventHandler">
+<Type Name="AnonymousIdentificationEventHandler" FullName="System.Web.Security.AnonymousIdentificationEventHandler">
   <TypeSignature Language="C#" Value="public delegate void AnonymousIdentificationEventHandler(object sender, AnonymousIdentificationEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AnonymousIdentificationEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.AnonymousIdentificationEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub AnonymousIdentificationEventHandler(sender As Object, e As AnonymousIdentificationEventArgs)" />
-  <TypeSignature Language="C++ CLI" Value="public delegate void AnonymousIdentificationEventHandler(System::Object ^ sender, AnonymousIdentificationEventArgs ^ e);" />
   <TypeSignature Language="F#" Value="type AnonymousIdentificationEventHandler = delegate of obj * AnonymousIdentificationEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void AnonymousIdentificationEventHandler(System::Object ^ sender, AnonymousIdentificationEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -34,15 +34,13 @@
   
  You can use the <xref:System.Web.Security.AnonymousIdentificationEventArgs.AnonymousID%2A> property of the <xref:System.Web.Security.AnonymousIdentificationEventArgs> object supplied to the **AnonymousIdentification_Creating** event to set the anonymous identifier to a custom value. If you do not specify a value for the <xref:System.Web.Security.AnonymousIdentificationEventArgs.AnonymousID%2A> property during the **AnonymousIdentification_Creating** event, a <xref:System.Guid> is used.  
   
- The **AnonymousIdentification_Creating** event is only raised when anonymous identification is <xref:System.Web.Security.AnonymousIdentificationModule.Enabled%2A> by setting the  configuration element to `true`.  
-  
-   
+ The **AnonymousIdentification_Creating** event is only raised when anonymous identification is <xref:System.Web.Security.AnonymousIdentificationModule.Enabled%2A> by setting the \<anonymousIdentification> configuration element to `true`.
   
 ## Examples  
  The following code example uses the **AnonymousIdentification_Creating** event to set the anonymous identifier to a custom value.  
   
- [!code-csharp[System.Web.Security.AnonymousIdentificationModule#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.AnonymousIdentificationModule/CS/global.asax#1)]
- [!code-vb[System.Web.Security.AnonymousIdentificationModule#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.AnonymousIdentificationModule/VB/global.asax#1)]  
+ [!code-csharp[System.Web.Security.AnonymousIdentificationModule#1](~/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.AnonymousIdentificationModule/CS/global.asax#1)]
+ [!code-vb[System.Web.Security.AnonymousIdentificationModule#1](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.AnonymousIdentificationModule/VB/global.asax#1)]  
   
  ]]></format>
     </remarks>

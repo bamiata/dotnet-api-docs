@@ -1,10 +1,11 @@
-﻿<Type Name="ServiceControllerPermission" FullName="System.ServiceProcess.ServiceControllerPermission">
+<Type Name="ServiceControllerPermission" FullName="System.ServiceProcess.ServiceControllerPermission">
   <TypeSignature Language="C#" Value="public sealed class ServiceControllerPermission : System.Security.Permissions.ResourcePermissionBase" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ServiceControllerPermission extends System.Security.Permissions.ResourcePermissionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ServiceControllerPermission extends System.Security.Permissions.ResourcePermissionBase" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netstandard-2.0;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
   <TypeSignature Language="DocId" Value="T:System.ServiceProcess.ServiceControllerPermission" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceControllerPermission&#xA;Inherits ResourcePermissionBase" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ServiceControllerPermission sealed : System::Security::Permissions::ResourcePermissionBase" />
   <TypeSignature Language="F#" Value="type ServiceControllerPermission = class&#xA;    inherit ResourcePermissionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceControllerPermission sealed : System::Security::Permissions::ResourcePermissionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ServiceControllerPermission extends System.Security.Permissions.ResourcePermissionBase" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceProcess</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -14,19 +15,42 @@
   <AssemblyInfo>
     <AssemblyName>System.Security.Permissions</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+    <AssemblyVersion>4.0.3.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Security.Permissions" FromVersion="9.0.0.0" To="System.ServiceProcess" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Security.Permissions.ResourcePermissionBase</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.Serializable</AttributeName>
+    <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0">
+      <AttributeName Language="C#">[System.Obsolete("Code Access Security is not supported or honored by the runtime.", DiagnosticId="SYSLIB0003", UrlFormat="https://aka.ms/dotnet-warnings/{0}")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("Code Access Security is not supported or honored by the runtime.", DiagnosticId="SYSLIB0003", UrlFormat="https://aka.ms/dotnet-warnings/{0}")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
     <summary>Allows control of code access security permissions for service controllers.</summary>
-    <remarks>To be added.</remarks>
+    <remarks>
+      <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+[!INCLUDE[cas-deprecated](~/includes/cas-deprecated.md)]
+
+]]></format>
+    </remarks>
     <altmember cref="T:System.ServiceProcess.ServiceController" />
     <altmember cref="T:System.ServiceProcess.ServiceControllerPermissionAccess" />
     <altmember cref="T:System.ServiceProcess.ServiceControllerPermissionAttribute" />
@@ -58,7 +82,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -71,8 +101,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermission.#ctor(System.Security.Permissions.PermissionState)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceControllerPermission(System::Security::Permissions::PermissionState state);" />
       <MemberSignature Language="F#" Value="new System.ServiceProcess.ServiceControllerPermission : System.Security.Permissions.PermissionState -&gt; System.ServiceProcess.ServiceControllerPermission" Usage="new System.ServiceProcess.ServiceControllerPermission state" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceControllerPermission(System::Security::Permissions::PermissionState state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -82,7 +112,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="state" Type="System.Security.Permissions.PermissionState" />
@@ -100,8 +136,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceProcess.ServiceControllerPermissionEntry[] permissionAccessEntries) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermission.#ctor(System.ServiceProcess.ServiceControllerPermissionEntry[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (permissionAccessEntries As ServiceControllerPermissionEntry())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceControllerPermission(cli::array &lt;System::ServiceProcess::ServiceControllerPermissionEntry ^&gt; ^ permissionAccessEntries);" />
       <MemberSignature Language="F#" Value="new System.ServiceProcess.ServiceControllerPermission : System.ServiceProcess.ServiceControllerPermissionEntry[] -&gt; System.ServiceProcess.ServiceControllerPermission" Usage="new System.ServiceProcess.ServiceControllerPermission permissionAccessEntries" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceControllerPermission(cli::array &lt;System::ServiceProcess::ServiceControllerPermissionEntry ^&gt; ^ permissionAccessEntries);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -111,7 +147,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="permissionAccessEntries" Type="System.ServiceProcess.ServiceControllerPermissionEntry[]" />
@@ -129,8 +171,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ServiceProcess.ServiceControllerPermissionAccess permissionAccess, string machineName, string serviceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermission.#ctor(System.ServiceProcess.ServiceControllerPermissionAccess,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (permissionAccess As ServiceControllerPermissionAccess, machineName As String, serviceName As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceControllerPermission(System::ServiceProcess::ServiceControllerPermissionAccess permissionAccess, System::String ^ machineName, System::String ^ serviceName);" />
       <MemberSignature Language="F#" Value="new System.ServiceProcess.ServiceControllerPermission : System.ServiceProcess.ServiceControllerPermissionAccess * string * string -&gt; System.ServiceProcess.ServiceControllerPermission" Usage="new System.ServiceProcess.ServiceControllerPermission (permissionAccess, machineName, serviceName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceControllerPermission(System::ServiceProcess::ServiceControllerPermissionAccess permissionAccess, System::String ^ machineName, System::String ^ serviceName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -140,7 +182,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="permissionAccess" Type="System.ServiceProcess.ServiceControllerPermissionAccess" />
@@ -160,8 +208,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceProcess.ServiceControllerPermissionEntryCollection PermissionEntries" />
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceControllerPermission.PermissionEntries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PermissionEntries As ServiceControllerPermissionEntryCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceProcess::ServiceControllerPermissionEntryCollection ^ PermissionEntries { System::ServiceProcess::ServiceControllerPermissionEntryCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.PermissionEntries : System.ServiceProcess.ServiceControllerPermissionEntryCollection" Usage="System.ServiceProcess.ServiceControllerPermission.PermissionEntries" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceProcess::ServiceControllerPermissionEntryCollection ^ PermissionEntries { System::ServiceProcess::ServiceControllerPermissionEntryCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -171,7 +219,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceProcess.ServiceControllerPermissionEntryCollection</ReturnType>

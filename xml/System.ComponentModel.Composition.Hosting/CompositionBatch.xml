@@ -1,19 +1,31 @@
-﻿<Type Name="CompositionBatch" FullName="System.ComponentModel.Composition.Hosting.CompositionBatch">
+<Type Name="CompositionBatch" FullName="System.ComponentModel.Composition.Hosting.CompositionBatch">
   <TypeSignature Language="C#" Value="public class CompositionBatch" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CompositionBatch extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Hosting.CompositionBatch" />
   <TypeSignature Language="VB.NET" Value="Public Class CompositionBatch" />
-  <TypeSignature Language="C++ CLI" Value="public ref class CompositionBatch" />
   <TypeSignature Language="F#" Value="type CompositionBatch = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CompositionBatch" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Represents a set of <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePart" /> objects which will be added or removed from the container in a single transactional composition.</summary>
     <remarks>To be added.</remarks>
@@ -38,12 +50,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -53,21 +67,37 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CompositionBatch (System.Collections.Generic.IEnumerable&lt;System.ComponentModel.Composition.Primitives.ComposablePart&gt; partsToAdd, System.Collections.Generic.IEnumerable&lt;System.ComponentModel.Composition.Primitives.ComposablePart&gt; partsToRemove);" />
+      <MemberSignature Language="C#" Value="public CompositionBatch (System.Collections.Generic.IEnumerable&lt;System.ComponentModel.Composition.Primitives.ComposablePart&gt;? partsToAdd, System.Collections.Generic.IEnumerable&lt;System.ComponentModel.Composition.Primitives.ComposablePart&gt;? partsToRemove);" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netstandard-2.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.ComponentModel.Composition.Primitives.ComposablePart&gt; partsToAdd, class System.Collections.Generic.IEnumerable`1&lt;class System.ComponentModel.Composition.Primitives.ComposablePart&gt; partsToRemove) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.CompositionBatch.#ctor(System.Collections.Generic.IEnumerable{System.ComponentModel.Composition.Primitives.ComposablePart},System.Collections.Generic.IEnumerable{System.ComponentModel.Composition.Primitives.ComposablePart})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (partsToAdd As IEnumerable(Of ComposablePart), partsToRemove As IEnumerable(Of ComposablePart))" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; CompositionBatch(System::Collections::Generic::IEnumerable&lt;System::ComponentModel::Composition::Primitives::ComposablePart ^&gt; ^ partsToAdd, System::Collections::Generic::IEnumerable&lt;System::ComponentModel::Composition::Primitives::ComposablePart ^&gt; ^ partsToRemove);" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.Hosting.CompositionBatch : seq&lt;System.ComponentModel.Composition.Primitives.ComposablePart&gt; * seq&lt;System.ComponentModel.Composition.Primitives.ComposablePart&gt; -&gt; System.ComponentModel.Composition.Hosting.CompositionBatch" Usage="new System.ComponentModel.Composition.Hosting.CompositionBatch (partsToAdd, partsToRemove)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CompositionBatch(System::Collections::Generic::IEnumerable&lt;System::ComponentModel::Composition::Primitives::ComposablePart ^&gt; ^ partsToAdd, System::Collections::Generic::IEnumerable&lt;System::ComponentModel::Composition::Primitives::ComposablePart ^&gt; ^ partsToRemove);" />
+      <MemberSignature Language="C#" Value="public CompositionBatch (System.Collections.Generic.IEnumerable&lt;System.ComponentModel.Composition.Primitives.ComposablePart&gt; partsToAdd, System.Collections.Generic.IEnumerable&lt;System.ComponentModel.Composition.Primitives.ComposablePart&gt; partsToRemove);" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="partsToAdd" Type="System.Collections.Generic.IEnumerable&lt;System.ComponentModel.Composition.Primitives.ComposablePart&gt;" />
-        <Parameter Name="partsToRemove" Type="System.Collections.Generic.IEnumerable&lt;System.ComponentModel.Composition.Primitives.ComposablePart&gt;" />
+        <Parameter Name="partsToAdd" Type="System.Collections.Generic.IEnumerable&lt;System.ComponentModel.Composition.Primitives.ComposablePart&gt;">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="partsToRemove" Type="System.Collections.Generic.IEnumerable&lt;System.ComponentModel.Composition.Primitives.ComposablePart&gt;">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
       </Parameters>
       <Docs>
         <param name="partsToAdd">A collection of <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePart" /> objects to add.</param>
@@ -86,13 +116,15 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Primitives.ComposablePart AddExport (System.ComponentModel.Composition.Primitives.Export export);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Primitives.ComposablePart AddExport(class System.ComponentModel.Composition.Primitives.Export export) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.CompositionBatch.AddExport(System.ComponentModel.Composition.Primitives.Export)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Primitives::ComposablePart ^ AddExport(System::ComponentModel::Composition::Primitives::Export ^ export);" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddExport (export As Export) As ComposablePart" />
       <MemberSignature Language="F#" Value="member this.AddExport : System.ComponentModel.Composition.Primitives.Export -&gt; System.ComponentModel.Composition.Primitives.ComposablePart" Usage="compositionBatch.AddExport export" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Primitives::ComposablePart ^ AddExport(System::ComponentModel::Composition::Primitives::Export ^ export);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Composition.Primitives.ComposablePart</ReturnType>
@@ -114,13 +146,14 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddPart(class System.ComponentModel.Composition.Primitives.ComposablePart part) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.CompositionBatch.AddPart(System.ComponentModel.Composition.Primitives.ComposablePart)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddPart (part As ComposablePart)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPart(System::ComponentModel::Composition::Primitives::ComposablePart ^ part);" />
       <MemberSignature Language="F#" Value="member this.AddPart : System.ComponentModel.Composition.Primitives.ComposablePart -&gt; unit" Usage="compositionBatch.AddPart part" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPart(System::ComponentModel::Composition::Primitives::ComposablePart ^ part);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -141,13 +174,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.ComponentModel.Composition.Primitives.ComposablePart&gt; PartsToAdd" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Hosting.CompositionBatch.PartsToAdd" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PartsToAdd As ReadOnlyCollection(Of ComposablePart)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ComponentModel::Composition::Primitives::ComposablePart ^&gt; ^ PartsToAdd { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ComponentModel::Composition::Primitives::ComposablePart ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.PartsToAdd : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.ComponentModel.Composition.Primitives.ComposablePart&gt;" Usage="System.ComponentModel.Composition.Hosting.CompositionBatch.PartsToAdd" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ComponentModel::Composition::Primitives::ComposablePart ^&gt; ^ PartsToAdd { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ComponentModel::Composition::Primitives::ComposablePart ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.ComponentModel.Composition.Primitives.ComposablePart&gt;</ReturnType>
@@ -163,13 +197,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.ComponentModel.Composition.Primitives.ComposablePart&gt; PartsToRemove" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Hosting.CompositionBatch.PartsToRemove" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PartsToRemove As ReadOnlyCollection(Of ComposablePart)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ComponentModel::Composition::Primitives::ComposablePart ^&gt; ^ PartsToRemove { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ComponentModel::Composition::Primitives::ComposablePart ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.PartsToRemove : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.ComponentModel.Composition.Primitives.ComposablePart&gt;" Usage="System.ComponentModel.Composition.Hosting.CompositionBatch.PartsToRemove" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ComponentModel::Composition::Primitives::ComposablePart ^&gt; ^ PartsToRemove { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ComponentModel::Composition::Primitives::ComposablePart ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.ComponentModel.Composition.Primitives.ComposablePart&gt;</ReturnType>
@@ -185,13 +220,14 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemovePart(class System.ComponentModel.Composition.Primitives.ComposablePart part) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.CompositionBatch.RemovePart(System.ComponentModel.Composition.Primitives.ComposablePart)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemovePart (part As ComposablePart)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemovePart(System::ComponentModel::Composition::Primitives::ComposablePart ^ part);" />
       <MemberSignature Language="F#" Value="member this.RemovePart : System.ComponentModel.Composition.Primitives.ComposablePart -&gt; unit" Usage="compositionBatch.RemovePart part" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemovePart(System::ComponentModel::Composition::Primitives::ComposablePart ^ part);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

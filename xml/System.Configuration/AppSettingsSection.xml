@@ -1,10 +1,10 @@
-﻿<Type Name="AppSettingsSection" FullName="System.Configuration.AppSettingsSection">
+<Type Name="AppSettingsSection" FullName="System.Configuration.AppSettingsSection">
   <TypeSignature Language="C#" Value="public sealed class AppSettingsSection : System.Configuration.ConfigurationSection" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AppSettingsSection extends System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AppSettingsSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.AppSettingsSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AppSettingsSection&#xA;Inherits ConfigurationSection" />
-  <TypeSignature Language="C++ CLI" Value="public ref class AppSettingsSection sealed : System::Configuration::ConfigurationSection" />
   <TypeSignature Language="F#" Value="type AppSettingsSection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AppSettingsSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -12,9 +12,18 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+    <AssemblyVersion>4.0.3.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Configuration.ConfigurationManager" FromVersion="9.0.0.0" To="System.Configuration" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Configuration.ConfigurationSection</BaseTypeName>
   </Base>
@@ -35,9 +44,9 @@
 > [!NOTE]
 >  Before you compile this code, add a reference in your project to System.Configuration.dll.  
   
- [!code-csharp[System.Configuration.AppSettingsSection#21](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.AppSettingsSection/CS/UsingAppSettingsSection.cs#21)]
- [!code-vb[System.Configuration.AppSettingsSection#21](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.AppSettingsSection/VB/AppSettingsSection.vb#21)]
- [!code-vb[System.Configuration.AppSettingsSection#21](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.AppSettingsSection/VB/UsingAppSettingsSection.vb#21)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_WebNet/System.Configuration.AppSettingsSection/CS/UsingAppSettingsSection.cs" id="Snippet21":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.AppSettingsSection/VB/AppSettingsSection.vb" id="Snippet21":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.AppSettingsSection/VB/UsingAppSettingsSection.vb" id="Snippet21":::  
   
  ]]></format>
     </remarks>
@@ -59,8 +68,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -69,12 +83,16 @@
       </Docs>
     </Member>
     <Member MemberName="DeserializeElement">
-      <MemberSignature Language="C#" Value="protected internal override void DeserializeElement (System.Xml.XmlReader reader, bool serializeCollectionKey);" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void DeserializeElement(class System.Xml.XmlReader reader, bool serializeCollectionKey) cil managed" />
+      <MemberSignature Language="C#" Value="protected internal override void DeserializeElement (System.Xml.XmlReader reader, bool serializeCollectionKey);" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void DeserializeElement(class System.Xml.XmlReader reader, bool serializeCollectionKey) cil managed" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.AppSettingsSection.DeserializeElement(System.Xml.XmlReader,System.Boolean)" />
-      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub DeserializeElement (reader As XmlReader, serializeCollectionKey As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void DeserializeElement(System::Xml::XmlReader ^ reader, bool serializeCollectionKey);" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub DeserializeElement (reader As XmlReader, serializeCollectionKey As Boolean)" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0" />
       <MemberSignature Language="F#" Value="override this.DeserializeElement : System.Xml.XmlReader * bool -&gt; unit" Usage="appSettingsSection.DeserializeElement (reader, serializeCollectionKey)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void DeserializeElement(System::Xml::XmlReader ^ reader, bool serializeCollectionKey);" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0" />
+      <MemberSignature Language="C#" Value="protected override void DeserializeElement (System.Xml.XmlReader reader, bool serializeCollectionKey);" FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DeserializeElement(class System.Xml.XmlReader reader, bool serializeCollectionKey) cil managed" FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DeserializeElement (reader As XmlReader, serializeCollectionKey As Boolean)" FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DeserializeElement(System::Xml::XmlReader ^ reader, bool serializeCollectionKey);" FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -83,8 +101,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -105,8 +128,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string File" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.AppSettingsSection.File" />
       <MemberSignature Language="VB.NET" Value="Public Property File As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ File { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.File : string with get, set" Usage="System.Configuration.AppSettingsSection.File" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ File { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -115,12 +138,18 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2">
-          <AttributeName>System.Configuration.ConfigurationProperty("file", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0">
+          <AttributeName Language="C#">[System.Configuration.ConfigurationProperty("file", DefaultValue="")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Configuration.ConfigurationProperty("file", DefaultValue="")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -135,9 +164,9 @@
 ## Examples  
  The following example stores additional `appSettings` values in an external configuration file and saves the name of this file in the <xref:System.Configuration.AppSettingsSection.File%2A> property.  
   
- [!code-csharp[System.Configuration.AppSettingsSection#22](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.AppSettingsSection/CS/UsingAppSettingsSection.cs#22)]
- [!code-vb[System.Configuration.AppSettingsSection#22](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.AppSettingsSection/VB/AppSettingsSection.vb#22)]
- [!code-vb[System.Configuration.AppSettingsSection#22](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.AppSettingsSection/VB/UsingAppSettingsSection.vb#22)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_WebNet/System.Configuration.AppSettingsSection/CS/UsingAppSettingsSection.cs" id="Snippet22":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.AppSettingsSection/VB/AppSettingsSection.vb" id="Snippet22":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.AppSettingsSection/VB/UsingAppSettingsSection.vb" id="Snippet22":::  
   
  ]]></format>
         </remarks>
@@ -145,12 +174,16 @@
       </Docs>
     </Member>
     <Member MemberName="GetRuntimeObject">
-      <MemberSignature Language="C#" Value="protected internal override object GetRuntimeObject ();" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object GetRuntimeObject() cil managed" />
+      <MemberSignature Language="C#" Value="protected internal override object GetRuntimeObject ();" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object GetRuntimeObject() cil managed" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.AppSettingsSection.GetRuntimeObject" />
-      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetRuntimeObject () As Object" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ GetRuntimeObject();" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetRuntimeObject () As Object" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0" />
       <MemberSignature Language="F#" Value="override this.GetRuntimeObject : unit -&gt; obj" Usage="appSettingsSection.GetRuntimeObject " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ GetRuntimeObject();" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0" />
+      <MemberSignature Language="C#" Value="protected override object GetRuntimeObject ();" FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetRuntimeObject() cil managed" FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetRuntimeObject () As Object" FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetRuntimeObject();" FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -159,8 +192,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -173,12 +211,16 @@
       </Docs>
     </Member>
     <Member MemberName="IsModified">
-      <MemberSignature Language="C#" Value="protected internal override bool IsModified ();" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool IsModified() cil managed" />
+      <MemberSignature Language="C#" Value="protected internal override bool IsModified ();" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool IsModified() cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.AppSettingsSection.IsModified" />
-      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function IsModified () As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool IsModified();" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function IsModified () As Boolean" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
       <MemberSignature Language="F#" Value="override this.IsModified : unit -&gt; bool" Usage="appSettingsSection.IsModified " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool IsModified();" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+      <MemberSignature Language="C#" Value="protected override bool IsModified ();" FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsModified() cil managed" FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsModified () As Boolean" FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsModified();" FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -187,8 +229,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -201,12 +249,15 @@
       </Docs>
     </Member>
     <Member MemberName="Properties">
-      <MemberSignature Language="C#" Value="protected internal override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override System.Configuration.ConfigurationPropertyCollection Properties { get; }" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.AppSettingsSection.Properties" />
-      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Configuration.AppSettingsSection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0" />
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -215,8 +266,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
@@ -228,12 +284,16 @@
       </Docs>
     </Member>
     <Member MemberName="Reset">
-      <MemberSignature Language="C#" Value="protected internal override void Reset (System.Configuration.ConfigurationElement parentSection);" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Reset(class System.Configuration.ConfigurationElement parentSection) cil managed" />
+      <MemberSignature Language="C#" Value="protected internal override void Reset (System.Configuration.ConfigurationElement parentSection);" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Reset(class System.Configuration.ConfigurationElement parentSection) cil managed" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.AppSettingsSection.Reset(System.Configuration.ConfigurationElement)" />
-      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Reset (parentSection As ConfigurationElement)" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Reset(System::Configuration::ConfigurationElement ^ parentSection);" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Reset (parentSection As ConfigurationElement)" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0" />
       <MemberSignature Language="F#" Value="override this.Reset : System.Configuration.ConfigurationElement -&gt; unit" Usage="appSettingsSection.Reset parentSection" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Reset(System::Configuration::ConfigurationElement ^ parentSection);" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0" />
+      <MemberSignature Language="C#" Value="protected override void Reset (System.Configuration.ConfigurationElement parentSection);" FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Reset(class System.Configuration.ConfigurationElement parentSection) cil managed" FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Reset (parentSection As ConfigurationElement)" FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Reset(System::Configuration::ConfigurationElement ^ parentSection);" FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -242,8 +302,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -258,22 +323,27 @@
       </Docs>
     </Member>
     <Member MemberName="SerializeSection">
-      <MemberSignature Language="C#" Value="protected internal override string SerializeSection (System.Configuration.ConfigurationElement parentElement, string name, System.Configuration.ConfigurationSaveMode saveMode);" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance string SerializeSection(class System.Configuration.ConfigurationElement parentElement, string name, valuetype System.Configuration.ConfigurationSaveMode saveMode) cil managed" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.AppSettingsSection.SerializeSection(System.Configuration.ConfigurationElement,System.String,System.Configuration.ConfigurationSaveMode)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function SerializeSection (parentElement As ConfigurationElement, name As String, saveMode As ConfigurationSaveMode) As String" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::String ^ SerializeSection(System::Configuration::ConfigurationElement ^ parentElement, System::String ^ name, System::Configuration::ConfigurationSaveMode saveMode);" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="override this.SerializeSection : System.Configuration.ConfigurationElement * string * System.Configuration.ConfigurationSaveMode -&gt; string" Usage="appSettingsSection.SerializeSection (parentElement, name, saveMode)" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="C#" Value="protected internal override string SerializeSection (System.Configuration.ConfigurationElement parent, string name, System.Configuration.ConfigurationSaveMode mode);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance string SerializeSection(class System.Configuration.ConfigurationElement parent, string name, valuetype System.Configuration.ConfigurationSaveMode mode) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function SerializeSection (parent As ConfigurationElement, name As String, mode As ConfigurationSaveMode) As String" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::String ^ SerializeSection(System::Configuration::ConfigurationElement ^ parent, System::String ^ name, System::Configuration::ConfigurationSaveMode mode);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="override this.SerializeSection : System.Configuration.ConfigurationElement * string * System.Configuration.ConfigurationSaveMode -&gt; string" Usage="appSettingsSection.SerializeSection (parent, name, mode)" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.AppSettingsSection.SerializeSection(System.Configuration.ConfigurationElement,System.String,System.Configuration.ConfigurationSaveMode)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C#" Value="protected internal override string SerializeSection (System.Configuration.ConfigurationElement parentElement, string name, System.Configuration.ConfigurationSaveMode saveMode);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance string SerializeSection(class System.Configuration.ConfigurationElement parentElement, string name, valuetype System.Configuration.ConfigurationSaveMode saveMode) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.AppSettingsSection.SerializeSection(System.Configuration.ConfigurationElement,System.String,System.Configuration.ConfigurationSaveMode)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function SerializeSection (parentElement As ConfigurationElement, name As String, saveMode As ConfigurationSaveMode) As String" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+      <MemberSignature Language="F#" Value="override this.SerializeSection : System.Configuration.ConfigurationElement * string * System.Configuration.ConfigurationSaveMode -&gt; string" Usage="appSettingsSection.SerializeSection (parentElement, name, saveMode)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::String ^ SerializeSection(System::Configuration::ConfigurationElement ^ parentElement, System::String ^ name, System::Configuration::ConfigurationSaveMode saveMode);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+      <MemberSignature Language="C#" Value="protected override string SerializeSection (System.Configuration.ConfigurationElement parentElement, string name, System.Configuration.ConfigurationSaveMode saveMode);" FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string SerializeSection(class System.Configuration.ConfigurationElement parentElement, string name, valuetype System.Configuration.ConfigurationSaveMode saveMode) cil managed" FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function SerializeSection (parentElement As ConfigurationElement, name As String, saveMode As ConfigurationSaveMode) As String" FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ SerializeSection(System::Configuration::ConfigurationElement ^ parentElement, System::String ^ name, System::Configuration::ConfigurationSaveMode saveMode);" FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -284,18 +354,14 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parentElement" Type="System.Configuration.ConfigurationElement" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="parent" Type="System.Configuration.ConfigurationElement" Index="0" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
-        <Parameter Name="saveMode" Type="System.Configuration.ConfigurationSaveMode" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="mode" Type="System.Configuration.ConfigurationSaveMode" Index="2" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="parentElement" Type="System.Configuration.ConfigurationElement" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
+        <Parameter Name="saveMode" Type="System.Configuration.ConfigurationSaveMode" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
       </Parameters>
       <Docs>
         <param name="parentElement">To be added.</param>
-        <param name="parent">To be added.</param>
         <param name="name">To be added.</param>
         <param name="saveMode">To be added.</param>
-        <param name="mode">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -306,8 +372,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.KeyValueConfigurationCollection Settings" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.AppSettingsSection.Settings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Settings As KeyValueConfigurationCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::KeyValueConfigurationCollection ^ Settings { System::Configuration::KeyValueConfigurationCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Settings : System.Configuration.KeyValueConfigurationCollection" Usage="System.Configuration.AppSettingsSection.Settings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::KeyValueConfigurationCollection ^ Settings { System::Configuration::KeyValueConfigurationCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -316,15 +382,18 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="xamarinmac-3.0">
-          <AttributeName>System.Configuration.ConfigurationProperty("", Options=System.Configuration.ConfigurationPropertyOptions.IsDefaultCollection)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netcore-2.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2">
-          <AttributeName>System.Configuration.ConfigurationProperty("", IsDefaultCollection=true)</AttributeName>
+        <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0">
+          <AttributeName Language="C#">[System.Configuration.ConfigurationProperty("", IsDefaultCollection=true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Configuration.ConfigurationProperty("", IsDefaultCollection=true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -339,9 +408,9 @@
 ## Examples  
  The following example uses the <xref:System.Configuration.AppSettingsSection.Settings%2A> property to read the `appSettings` values.  
   
- [!code-csharp[System.Configuration.AppSettingsSection#24](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.AppSettingsSection/CS/UsingAppSettingsSection.cs#24)]
- [!code-vb[System.Configuration.AppSettingsSection#24](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.AppSettingsSection/VB/AppSettingsSection.vb#24)]
- [!code-vb[System.Configuration.AppSettingsSection#24](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.AppSettingsSection/VB/UsingAppSettingsSection.vb#24)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_WebNet/System.Configuration.AppSettingsSection/CS/UsingAppSettingsSection.cs" id="Snippet24":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.AppSettingsSection/VB/AppSettingsSection.vb" id="Snippet24":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.AppSettingsSection/VB/UsingAppSettingsSection.vb" id="Snippet24":::  
   
  ]]></format>
         </remarks>

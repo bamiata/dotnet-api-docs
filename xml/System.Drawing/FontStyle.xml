@@ -1,10 +1,10 @@
-﻿<Type Name="FontStyle" FullName="System.Drawing.FontStyle">
+<Type Name="FontStyle" FullName="System.Drawing.FontStyle">
   <TypeSignature Language="C#" Value="public enum FontStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FontStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.FontStyle" />
   <TypeSignature Language="VB.NET" Value="Public Enum FontStyle" />
-  <TypeSignature Language="C++ CLI" Value="public enum class FontStyle" />
   <TypeSignature Language="F#" Value="type FontStyle = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class FontStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -15,13 +15,28 @@
     <AssemblyName>System.Drawing.Common</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.1</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Drawing.Common" FromVersion="9.0.0.0" To="System.Drawing" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2">
-      <AttributeName>System.Flags</AttributeName>
+    <Attribute>
+      <AttributeName Language="C#">[System.Flags]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Flags&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.TypeForwardedFrom("System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.TypeForwardedFrom("System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -32,9 +47,9 @@
 ## Examples  
  The following code example demonstrates how to set the <xref:System.Drawing.Font> property of a button to a new bold-style font using the <xref:System.Drawing.FontStyle> enumeration. This example is designed to be used with Windows Forms. Create a form containing a button named Button1 and paste the following code into it. Associate the `Button1_Click` method with the button's <xref:System.Windows.Forms.Control.Click> event.  
   
- [!code-cpp[System.Drawing.MiscExamples#11](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp#11)]
- [!code-csharp[System.Drawing.MiscExamples#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CS/form1.cs#11)]
- [!code-vb[System.Drawing.MiscExamples#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb#11)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Winforms/System.Drawing.MiscExamples/CPP/form1.cpp" id="Snippet11":::
+ :::code language="csharp" source="~/snippets/csharp/System.Drawing/Bitmap/.ctor/form12.cs" id="Snippet11":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscExamples/VB/form1.vb" id="Snippet11":::  
   
  ]]></format>
     </remarks>
@@ -45,8 +60,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.FontStyle Bold = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.FontStyle.Bold" />
       <MemberSignature Language="VB.NET" Value="Bold" />
-      <MemberSignature Language="C++ CLI" Value="Bold" />
       <MemberSignature Language="F#" Value="Bold = 1" Usage="System.Drawing.FontStyle.Bold" />
+      <MemberSignature Language="C++ CLI" Value="Bold" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -56,8 +71,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Common</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.1</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.FontStyle</ReturnType>
@@ -72,8 +92,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.FontStyle Italic = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.FontStyle.Italic" />
       <MemberSignature Language="VB.NET" Value="Italic" />
-      <MemberSignature Language="C++ CLI" Value="Italic" />
       <MemberSignature Language="F#" Value="Italic = 2" Usage="System.Drawing.FontStyle.Italic" />
+      <MemberSignature Language="C++ CLI" Value="Italic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -83,8 +103,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Common</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.1</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.FontStyle</ReturnType>
@@ -99,8 +124,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.FontStyle Regular = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.FontStyle.Regular" />
       <MemberSignature Language="VB.NET" Value="Regular" />
-      <MemberSignature Language="C++ CLI" Value="Regular" />
       <MemberSignature Language="F#" Value="Regular = 0" Usage="System.Drawing.FontStyle.Regular" />
+      <MemberSignature Language="C++ CLI" Value="Regular" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -110,8 +135,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Common</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.1</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.FontStyle</ReturnType>
@@ -126,8 +156,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.FontStyle Strikeout = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.FontStyle.Strikeout" />
       <MemberSignature Language="VB.NET" Value="Strikeout" />
-      <MemberSignature Language="C++ CLI" Value="Strikeout" />
       <MemberSignature Language="F#" Value="Strikeout = 8" Usage="System.Drawing.FontStyle.Strikeout" />
+      <MemberSignature Language="C++ CLI" Value="Strikeout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -137,8 +167,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Common</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.1</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.FontStyle</ReturnType>
@@ -153,8 +188,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.FontStyle Underline = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.FontStyle.Underline" />
       <MemberSignature Language="VB.NET" Value="Underline" />
-      <MemberSignature Language="C++ CLI" Value="Underline" />
       <MemberSignature Language="F#" Value="Underline = 4" Usage="System.Drawing.FontStyle.Underline" />
+      <MemberSignature Language="C++ CLI" Value="Underline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -164,8 +199,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Common</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.1</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.FontStyle</ReturnType>

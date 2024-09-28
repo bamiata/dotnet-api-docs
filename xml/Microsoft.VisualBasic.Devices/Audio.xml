@@ -1,14 +1,26 @@
-﻿<Type Name="Audio" FullName="Microsoft.VisualBasic.Devices.Audio">
+<Type Name="Audio" FullName="Microsoft.VisualBasic.Devices.Audio">
   <TypeSignature Language="C#" Value="public class Audio" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Audio extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Devices.Audio" />
   <TypeSignature Language="VB.NET" Value="Public Class Audio" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Audio" />
   <TypeSignature Language="F#" Value="type Audio = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Audio" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+    <AssemblyVersion>10.0.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Forms</AssemblyName>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -22,7 +34,7 @@
 ## Remarks  
  You can use the `My.Computer.Audio.Play` and `My.Computer.Audio.PlaySystemSound` methods to play .wav sound files and system sounds.  
   
- For more information, see [Playing Sounds](~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md).  
+ For more information, see [Playing Sounds](/dotnet/visual-basic/developing-apps/programming/computer-resources/playing-sounds).  
   
 ## Availability by Project Type  
   
@@ -41,7 +53,7 @@
 ## Examples  
  The `My.Computer.Audio.Play` method plays the specified sound in the background when `AudioPlayMode.Background` is specified.  
   
- [!code-vb[VbVbalrMyComputer#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb#15)]  
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb" id="Snippet15":::  
   
  This code can run only within a Windows Forms application.  
   
@@ -52,7 +64,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
-    <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+    <related type="Article" href="/dotnet/visual-basic/language-reference/objects/">Objects (Visual Basic)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -67,9 +79,22 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Forms</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -79,7 +104,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- [Objects](~/docs/visual-basic/language-reference/objects/index.md)  
+ [Objects](/dotnet/visual-basic/language-reference/objects/)  
   
  ]]></format>
         </remarks>
@@ -99,17 +124,26 @@
       <MemberSignature Language="ILAsm" Value=".method public instance void Play(string location) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Audio.Play(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Play (location As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Play(System::String ^ location);" />
       <MemberSignature Language="F#" Value="member this.Play : string -&gt; unit" Usage="audio.Play location" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Play(System::String ^ location);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Forms</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -119,7 +153,7 @@
         <Parameter Name="location" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="location">A <see langword="String" /> containing the name of the sound file</param>
+        <param name="location">A <see langword="String" /> containing the name of the sound file.</param>
         <summary>Plays a .wav sound file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -137,7 +171,7 @@
   
  Background playing lets the application execute other code while the sound plays.  
   
- For more information, see [Playing Sounds](~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md).  
+ For more information, see [Playing Sounds](/dotnet/visual-basic/developing-apps/programming/computer-resources/playing-sounds).  
   
 ## Availability by Project Type  
   
@@ -156,7 +190,7 @@
 ## Examples  
  The `My.Computer.Audio.Play` method plays the specified sound in the background when `PlayMode.Background` is specified.  
   
- [!code-vb[VbVbalrMyComputer#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb#15)]  
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb" id="Snippet15":::  
   
  This code example can only run within a Windows Forms application.  
   
@@ -172,12 +206,10 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The file path is malformed in <paramref name="location" />.</exception>
         <exception cref="T:System.IO.PathTooLongException">The path name in <paramref name="location" /> is too long.</exception>
         <exception cref="T:System.Security.SecurityException">A partial-trust situation exists in which the user lacks necessary permissions.</exception>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" />.</permission>
         <altmember cref="M:Microsoft.VisualBasic.Devices.Audio.Stop" />
         <altmember cref="T:Microsoft.VisualBasic.AudioPlayMode" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
-        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md">Playing Sounds (Visual Basic)</related>
+        <related type="Article" href="/dotnet/visual-basic/language-reference/objects/">Objects (Visual Basic)</related>
+        <related type="Article" href="/dotnet/visual-basic/developing-apps/programming/computer-resources/playing-sounds">Playing Sounds (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Play">
@@ -185,13 +217,21 @@
       <MemberSignature Language="ILAsm" Value=".method public instance void Play(unsigned int8[] data, valuetype Microsoft.VisualBasic.AudioPlayMode playMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Audio.Play(System.Byte[],Microsoft.VisualBasic.AudioPlayMode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Play (data As Byte(), playMode As AudioPlayMode)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Play(cli::array &lt;System::Byte&gt; ^ data, Microsoft::VisualBasic::AudioPlayMode playMode);" />
       <MemberSignature Language="F#" Value="member this.Play : byte[] * Microsoft.VisualBasic.AudioPlayMode -&gt; unit" Usage="audio.Play (data, playMode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Play(cli::array &lt;System::Byte&gt; ^ data, Microsoft::VisualBasic::AudioPlayMode playMode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Forms</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -222,7 +262,7 @@
   
  Background playing lets the application execute other code while the sound plays.  
   
- For more information, see [Playing Sounds](~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md).  
+ For more information, see [Playing Sounds](/dotnet/visual-basic/developing-apps/programming/computer-resources/playing-sounds).  
   
 ## Availability by Project Type  
   
@@ -241,7 +281,7 @@
 ## Examples  
  The `My.Computer.Audio.Play` method plays the specified sound in the background when `PlayMode.Background` is specified.  
   
- [!code-vb[VbVbalrMyComputer#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb#15)]  
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb" id="Snippet15":::  
   
  This code example can only run within a Windows Forms application.  
   
@@ -256,24 +296,32 @@
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
           <paramref name="playMode" /> is not one of the <see cref="T:Microsoft.VisualBasic.AudioPlayMode" /> enumeration values.</exception>
         <exception cref="T:System.Security.SecurityException">A partial-trust situation exists in which the user lacks necessary permissions.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" />.</permission>
         <altmember cref="M:Microsoft.VisualBasic.Devices.Audio.Stop" />
         <altmember cref="T:Microsoft.VisualBasic.AudioPlayMode" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
-        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md">Playing Sounds (Visual Basic)</related>
+        <related type="Article" href="/dotnet/visual-basic/language-reference/objects/">Objects (Visual Basic)</related>
+        <related type="Article" href="/dotnet/visual-basic/developing-apps/programming/computer-resources/playing-sounds">Playing Sounds (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Play">
       <MemberSignature Language="C#" Value="public void Play (System.IO.Stream stream, Microsoft.VisualBasic.AudioPlayMode playMode);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void Play(class System.IO.Stream stream, valuetype Microsoft.VisualBasic.AudioPlayMode playMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Audio.Play(System.IO.Stream,Microsoft.VisualBasic.AudioPlayMode)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Play(System::IO::Stream ^ stream, Microsoft::VisualBasic::AudioPlayMode playMode);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Play (stream As Stream, playMode As AudioPlayMode)" />
       <MemberSignature Language="F#" Value="member this.Play : System.IO.Stream * Microsoft.VisualBasic.AudioPlayMode -&gt; unit" Usage="audio.Play (stream, playMode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Play(System::IO::Stream ^ stream, Microsoft::VisualBasic::AudioPlayMode playMode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Forms</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -304,7 +352,7 @@
   
  Background playing lets the application execute other code while the sound plays.  
   
- For more information, see [Playing Sounds](~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md).  
+ For more information, see [Playing Sounds](/dotnet/visual-basic/developing-apps/programming/computer-resources/playing-sounds).  
   
 ## Availability by Project Type  
   
@@ -323,7 +371,7 @@
 ## Examples  
  The `My.Computer.Audio.Play` method plays the specified sound in the background when `PlayMode.Background` is specified.  
   
- [!code-vb[VbVbalrMyComputer#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb#15)]  
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb" id="Snippet15":::  
   
  This code example can only run within a Windows Forms application.  
   
@@ -338,12 +386,11 @@
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
           <paramref name="playMode" /> is not one of the <see cref="T:Microsoft.VisualBasic.AudioPlayMode" /> enumeration values.</exception>
         <exception cref="T:System.Security.SecurityException">A partial-trust situation exists in which the user lacks necessary permissions.</exception>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" />.</permission>
         <altmember cref="M:Microsoft.VisualBasic.Devices.Audio.Stop" />
         <altmember cref="T:Microsoft.VisualBasic.AudioPlayMode" />
         <altmember cref="T:System.IO.Stream" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
-        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md">Playing Sounds (Visual Basic)</related>
+        <related type="Article" href="/dotnet/visual-basic/language-reference/objects/">Objects (Visual Basic)</related>
+        <related type="Article" href="/dotnet/visual-basic/developing-apps/programming/computer-resources/playing-sounds">Playing Sounds (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Play">
@@ -351,13 +398,21 @@
       <MemberSignature Language="ILAsm" Value=".method public instance void Play(string location, valuetype Microsoft.VisualBasic.AudioPlayMode playMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Audio.Play(System.String,Microsoft.VisualBasic.AudioPlayMode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Play (location As String, playMode As AudioPlayMode)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Play(System::String ^ location, Microsoft::VisualBasic::AudioPlayMode playMode);" />
       <MemberSignature Language="F#" Value="member this.Play : string * Microsoft.VisualBasic.AudioPlayMode -&gt; unit" Usage="audio.Play (location, playMode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Play(System::String ^ location, Microsoft::VisualBasic::AudioPlayMode playMode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Forms</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -367,7 +422,7 @@
         <Parameter Name="playMode" Type="Microsoft.VisualBasic.AudioPlayMode" />
       </Parameters>
       <Docs>
-        <param name="location">A <see langword="String" /> containing the name of the sound file</param>
+        <param name="location">A <see langword="String" /> containing the name of the sound file.</param>
         <param name="playMode">
           <see cref="T:Microsoft.VisualBasic.AudioPlayMode" /> mode for playing the sound. By default, <see langword="AudioPlayMode.Background" />.</param>
         <summary>Plays a .wav sound file.</summary>
@@ -387,7 +442,7 @@
   
  Background playing lets the application execute other code while the sound plays.  
   
- For more information, see [Playing Sounds](~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md).  
+ For more information, see [Playing Sounds](/dotnet/visual-basic/developing-apps/programming/computer-resources/playing-sounds).  
   
 ## Availability by Project Type  
   
@@ -406,7 +461,7 @@
 ## Examples  
  The `My.Computer.Audio.Play` method plays the specified sound in the background when `PlayMode.Background` is specified.  
   
- [!code-vb[VbVbalrMyComputer#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb#15)]  
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb" id="Snippet15":::  
   
  This code example can only run within a Windows Forms application.  
   
@@ -424,25 +479,32 @@
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
           <paramref name="playMode" /> is not one of the <see cref="T:Microsoft.VisualBasic.AudioPlayMode" /> enumeration values.</exception>
         <exception cref="T:System.Security.SecurityException">A partial-trust situation exists in which the user lacks necessary permissions.</exception>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" />.</permission>
         <altmember cref="M:Microsoft.VisualBasic.Devices.Audio.Stop" />
         <altmember cref="T:Microsoft.VisualBasic.AudioPlayMode" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
-        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md">Playing Sounds (Visual Basic)</related>
+        <related type="Article" href="/dotnet/visual-basic/language-reference/objects/">Objects (Visual Basic)</related>
+        <related type="Article" href="/dotnet/visual-basic/developing-apps/programming/computer-resources/playing-sounds">Playing Sounds (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="PlaySystemSound">
       <MemberSignature Language="C#" Value="public void PlaySystemSound (System.Media.SystemSound systemSound);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void PlaySystemSound(class System.Media.SystemSound systemSound) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Audio.PlaySystemSound(System.Media.SystemSound)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PlaySystemSound(System::Media::SystemSound ^ systemSound);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PlaySystemSound (systemSound As SystemSound)" />
       <MemberSignature Language="F#" Value="member this.PlaySystemSound : System.Media.SystemSound -&gt; unit" Usage="audio.PlaySystemSound systemSound" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PlaySystemSound(System::Media::SystemSound ^ systemSound);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Forms</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -472,7 +534,7 @@
   
 -   <xref:System.Media.SystemSounds.Question%2A>  
   
- For more information, see [Playing Sounds](~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md).  
+ For more information, see [Playing Sounds](/dotnet/visual-basic/developing-apps/programming/computer-resources/playing-sounds).  
   
 ## Availability by Project Type  
   
@@ -491,7 +553,7 @@
 ## Examples  
  This example uses the `My.Computer.Audio.PlaySystemSound` method to play a system sound.  
   
- [!code-vb[VbVbalrMyComputer#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb#17)]  
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb" id="Snippet17":::  
   
  This code example can run only within a Windows Forms application.  
   
@@ -501,8 +563,8 @@
           <paramref name="systemSound" /> is <see langword="Nothing" />.</exception>
         <altmember cref="T:System.Media.SystemSound" />
         <altmember cref="T:System.Media.SystemSounds" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
-        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md">Playing Sounds (Visual Basic)</related>
+        <related type="Article" href="/dotnet/visual-basic/language-reference/objects/">Objects (Visual Basic)</related>
+        <related type="Article" href="/dotnet/visual-basic/developing-apps/programming/computer-resources/playing-sounds">Playing Sounds (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -510,13 +572,21 @@
       <MemberSignature Language="ILAsm" Value=".method public instance void Stop() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Audio.Stop" />
       <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
       <MemberSignature Language="F#" Value="member this.Stop : unit -&gt; unit" Usage="audio.Stop " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Forms</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -532,7 +602,7 @@
   
  In general, when an application plays a looping sound, it should stop the sound at some point.  
   
- For more information, see [Playing Sounds](~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md).  
+ For more information, see [Playing Sounds](/dotnet/visual-basic/developing-apps/programming/computer-resources/playing-sounds).  
   
 ## Availability by Project Type  
   
@@ -551,7 +621,7 @@
 ## Examples  
  This example uses the `My.Computer.Audio.Stop` method to stop the application currently playing background or looping sound and uses the `My.Computer.Audio.Play` method to play a looping sound in the background.  
   
- [!code-vb[VbVbalrMyComputer#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb#19)]  
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class1.vb" id="Snippet19":::  
   
  This code example can run only within a Windows Forms application.  
   
@@ -561,8 +631,8 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
-        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md">Playing Sounds (Visual Basic)</related>
+        <related type="Article" href="/dotnet/visual-basic/language-reference/objects/">Objects (Visual Basic)</related>
+        <related type="Article" href="/dotnet/visual-basic/developing-apps/programming/computer-resources/playing-sounds">Playing Sounds (Visual Basic)</related>
       </Docs>
     </Member>
   </Members>

@@ -1,12 +1,14 @@
-﻿<Type Name="FileAttributes" FullName="System.IO.FileAttributes">
+<Type Name="FileAttributes" FullName="System.IO.FileAttributes">
   <TypeSignature Language="C#" Value="public enum FileAttributes" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed FileAttributes extends System.Enum" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FileAttributes extends System.Enum" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
   <TypeSignature Language="DocId" Value="T:System.IO.FileAttributes" />
   <TypeSignature Language="VB.NET" Value="Public Enum FileAttributes" />
-  <TypeSignature Language="C++ CLI" Value="public enum class FileAttributes" />
   <TypeSignature Language="F#" Value="type FileAttributes = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class FileAttributes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed FileAttributes extends System.Enum" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -19,24 +21,49 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="System.IO.FileSystem.Primitives" FromVersion="5.0.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.IO.FileSystem.Primitives" FromVersion="6.0.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="System.IO.FileSystem.Primitives" FromVersion="7.0.0.0" To="System.Runtime" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="System.IO.FileSystem.Primitives" FromVersion="8.0.0.0" To="System.Runtime" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+    <TypeForwarding From="System.IO.FileSystem.Primitives" FromVersion="9.0.0.0" To="System.Runtime" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+    <TypeForwarding From="System.IO.FileSystem.Primitives" FromVersion="4.1.0.0" To="System.Runtime" ToVersion="4.2.0.0" FrameworkAlternate="netcore-2.0" />
+    <TypeForwarding From="System.IO.FileSystem.Primitives" FromVersion="4.1.1.0" To="System.Runtime" ToVersion="4.2.1.0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+    <TypeForwarding From="System.IO.FileSystem.Primitives" FromVersion="4.1.2.0" To="System.Runtime" ToVersion="4.2.2.0" FrameworkAlternate="netcore-3.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
-      <AttributeName>System.Flags</AttributeName>
+    <Attribute>
+      <AttributeName Language="C#">[System.Flags]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Flags&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-      <AttributeName>System.Serializable</AttributeName>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(true)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -45,18 +72,33 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can get attributes for files and directories by calling the <xref:System.IO.File.GetAttributes%2A> method, and you can set them by calling the <xref:System.IO.File.SetAttributes%2A> method.  
+ You can get attributes for files and directories by calling the <xref:System.IO.File.GetAttributes%2A?displayProperty=nameWithType> method, and you can set them by calling the <xref:System.IO.File.SetAttributes%2A?displayProperty=nameWithType> method.  
   
- It is not possible to change the compression status of a <xref:System.IO.File> object by using the <xref:System.IO.File.SetAttributes%2A> method. Instead, you must actually compress the file using either a compression tool or one of the classes in the <xref:System.IO.Compression?displayProperty=nameWithType> namespace.  
+ It is not possible to change the compression status of a <xref:System.IO.File> object by using the <xref:System.IO.File.SetAttributes%2A?displayProperty=nameWithType> method. Instead, you must actually compress the file using either a compression tool or one of the classes in the <xref:System.IO.Compression?displayProperty=nameWithType> namespace.  
   
-   
-  
+The following attributes are not supported by .NET Core on Linux and macOS:
+
+- <xref:System.IO.FileAttributes.Archive?displayProperty=nameWithType>
+- <xref:System.IO.FileAttributes.Compressed?displayProperty=nameWithType>
+- <xref:System.IO.FileAttributes.Device?displayProperty=nameWithType>
+- <xref:System.IO.FileAttributes.Encrypted?displayProperty=nameWithType>
+- <xref:System.IO.FileAttributes.IntegrityStream?displayProperty=nameWithType>
+- <xref:System.IO.FileAttributes.NoScrubData?displayProperty=nameWithType>
+- <xref:System.IO.FileAttributes.NotContentIndexed?displayProperty=nameWithType>
+- <xref:System.IO.FileAttributes.Offline?displayProperty=nameWithType>
+- <xref:System.IO.FileAttributes.SparseFile?displayProperty=nameWithType>
+- <xref:System.IO.FileAttributes.System?displayProperty=nameWithType>
+- <xref:System.IO.FileAttributes.Temporary?displayProperty=nameWithType>
+
+On Unix systems, the value returned by <xref:System.IO.File.GetAttributes%2A?displayProperty=nameWithType> includes `Hidden` for a file whose name begins with a period ("."). On macOS, you can get or set the hidden flag.
+
 ## Examples  
  The following example shows how to retrieve the attributes for a file and check if the file is read-only.  
   
- [!code-csharp[System.IO.FileAttributes#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.fileattributes/cs/example.cs#1)]
- [!code-vb[System.IO.FileAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.fileattributes/vb/example.vb#1)]  
-  
+ :::code language="csharp" source="~/snippets/csharp/System.IO/FileAttributes/Overview/example.cs" id="Snippet1":::
+ :::code language="fsharp" source="~/snippets/fsharp/System.IO/FileAttributes/Overview/example.fs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.io.fileattributes/vb/example.vb" id="Snippet1"::: 
+
  ]]></format>
     </remarks>
     <altmember cref="M:System.IO.File.GetAttributes(System.String)" />
@@ -68,11 +110,12 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes Archive = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.Archive" />
       <MemberSignature Language="VB.NET" Value="Archive" />
-      <MemberSignature Language="C++ CLI" Value="Archive" />
       <MemberSignature Language="F#" Value="Archive = 32" Usage="System.IO.FileAttributes.Archive" />
+      <MemberSignature Language="C++ CLI" Value="Archive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -85,18 +128,25 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.FileAttributes</ReturnType>
       </ReturnValue>
       <MemberValue>32</MemberValue>
       <Docs>
-        <summary>The file is a candidate for backup or removal.</summary>
+        <summary>This file is marked to be included in incremental backup operation. Windows sets this attribute whenever the file is modified, and backup software should clear it when processing the file during incremental backup.</summary>
       </Docs>
     </Member>
     <Member MemberName="Compressed">
@@ -104,11 +154,12 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes Compressed = int32(2048)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.Compressed" />
       <MemberSignature Language="VB.NET" Value="Compressed" />
-      <MemberSignature Language="C++ CLI" Value="Compressed" />
       <MemberSignature Language="F#" Value="Compressed = 2048" Usage="System.IO.FileAttributes.Compressed" />
+      <MemberSignature Language="C++ CLI" Value="Compressed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -121,11 +172,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.FileAttributes</ReturnType>
@@ -140,11 +198,12 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes Device = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.Device" />
       <MemberSignature Language="VB.NET" Value="Device" />
-      <MemberSignature Language="C++ CLI" Value="Device" />
       <MemberSignature Language="F#" Value="Device = 64" Usage="System.IO.FileAttributes.Device" />
+      <MemberSignature Language="C++ CLI" Value="Device" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -157,11 +216,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.FileAttributes</ReturnType>
@@ -176,11 +242,12 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes Directory = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.Directory" />
       <MemberSignature Language="VB.NET" Value="Directory" />
-      <MemberSignature Language="C++ CLI" Value="Directory" />
       <MemberSignature Language="F#" Value="Directory = 16" Usage="System.IO.FileAttributes.Directory" />
+      <MemberSignature Language="C++ CLI" Value="Directory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -193,18 +260,25 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.FileAttributes</ReturnType>
       </ReturnValue>
       <MemberValue>16</MemberValue>
       <Docs>
-        <summary>The file is a directory.</summary>
+        <summary>The file is a directory. <see langword="Directory" /> is supported on Windows, Linux, and macOS.</summary>
       </Docs>
     </Member>
     <Member MemberName="Encrypted">
@@ -212,11 +286,12 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes Encrypted = int32(16384)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.Encrypted" />
       <MemberSignature Language="VB.NET" Value="Encrypted" />
-      <MemberSignature Language="C++ CLI" Value="Encrypted" />
       <MemberSignature Language="F#" Value="Encrypted = 16384" Usage="System.IO.FileAttributes.Encrypted" />
+      <MemberSignature Language="C++ CLI" Value="Encrypted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -229,11 +304,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.FileAttributes</ReturnType>
@@ -248,11 +330,12 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes Hidden = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.Hidden" />
       <MemberSignature Language="VB.NET" Value="Hidden" />
-      <MemberSignature Language="C++ CLI" Value="Hidden" />
       <MemberSignature Language="F#" Value="Hidden = 2" Usage="System.IO.FileAttributes.Hidden" />
+      <MemberSignature Language="C++ CLI" Value="Hidden" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -265,18 +348,25 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.FileAttributes</ReturnType>
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The file is hidden, and thus is not included in an ordinary directory listing.</summary>
+        <summary>The file is hidden, and thus is not included in an ordinary directory listing. <see langword="Hidden" /> is supported on Windows, Linux, and macOS.</summary>
       </Docs>
     </Member>
     <Member MemberName="IntegrityStream">
@@ -284,11 +374,12 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes IntegrityStream = int32(32768)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.IntegrityStream" />
       <MemberSignature Language="VB.NET" Value="IntegrityStream" />
-      <MemberSignature Language="C++ CLI" Value="IntegrityStream" />
       <MemberSignature Language="F#" Value="IntegrityStream = 32768" Usage="System.IO.FileAttributes.IntegrityStream" />
+      <MemberSignature Language="C++ CLI" Value="IntegrityStream" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -299,15 +390,23 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -318,16 +417,47 @@
         <summary>The file or directory includes data integrity support. When this value is applied to a file, all data streams in the file have integrity support. When this value is applied to a directory, all new files and subdirectories within that directory, by default, include integrity support.</summary>
       </Docs>
     </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.IO.FileAttributes.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.FileAttributes</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
     <Member MemberName="Normal">
       <MemberSignature Language="C#" Value="Normal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes Normal = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
-      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberSignature Language="F#" Value="Normal = 128" Usage="System.IO.FileAttributes.Normal" />
+      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -340,18 +470,25 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.FileAttributes</ReturnType>
       </ReturnValue>
       <MemberValue>128</MemberValue>
       <Docs>
-        <summary>The file is a standard file that has no special attributes. This attribute is valid only if it is used alone.</summary>
+        <summary>The file is a standard file that has no special attributes. This attribute is valid only if it is used alone. <see langword="Normal" /> is supported on Windows, Linux, and macOS.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoScrubData">
@@ -359,11 +496,12 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes NoScrubData = int32(131072)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.NoScrubData" />
       <MemberSignature Language="VB.NET" Value="NoScrubData" />
-      <MemberSignature Language="C++ CLI" Value="NoScrubData" />
       <MemberSignature Language="F#" Value="NoScrubData = 131072" Usage="System.IO.FileAttributes.NoScrubData" />
+      <MemberSignature Language="C++ CLI" Value="NoScrubData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -374,15 +512,23 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -398,11 +544,12 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes NotContentIndexed = int32(8192)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.NotContentIndexed" />
       <MemberSignature Language="VB.NET" Value="NotContentIndexed" />
-      <MemberSignature Language="C++ CLI" Value="NotContentIndexed" />
       <MemberSignature Language="F#" Value="NotContentIndexed = 8192" Usage="System.IO.FileAttributes.NotContentIndexed" />
+      <MemberSignature Language="C++ CLI" Value="NotContentIndexed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -415,11 +562,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.FileAttributes</ReturnType>
@@ -434,11 +588,12 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes Offline = int32(4096)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.Offline" />
       <MemberSignature Language="VB.NET" Value="Offline" />
-      <MemberSignature Language="C++ CLI" Value="Offline" />
       <MemberSignature Language="F#" Value="Offline = 4096" Usage="System.IO.FileAttributes.Offline" />
+      <MemberSignature Language="C++ CLI" Value="Offline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -451,11 +606,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.FileAttributes</ReturnType>
@@ -470,11 +632,12 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes ReadOnly = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.ReadOnly" />
       <MemberSignature Language="VB.NET" Value="ReadOnly" />
-      <MemberSignature Language="C++ CLI" Value="ReadOnly" />
       <MemberSignature Language="F#" Value="ReadOnly = 1" Usage="System.IO.FileAttributes.ReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="ReadOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -487,18 +650,25 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.FileAttributes</ReturnType>
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The file is read-only.</summary>
+        <summary>The file is read-only. <see langword="ReadOnly" /> is supported on Windows, Linux, and macOS. On Linux and macOS, changing the <see langword="ReadOnly" /> flag is a permissions operation.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReparsePoint">
@@ -506,11 +676,12 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes ReparsePoint = int32(1024)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.ReparsePoint" />
       <MemberSignature Language="VB.NET" Value="ReparsePoint" />
-      <MemberSignature Language="C++ CLI" Value="ReparsePoint" />
       <MemberSignature Language="F#" Value="ReparsePoint = 1024" Usage="System.IO.FileAttributes.ReparsePoint" />
+      <MemberSignature Language="C++ CLI" Value="ReparsePoint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -523,18 +694,25 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.FileAttributes</ReturnType>
       </ReturnValue>
       <MemberValue>1024</MemberValue>
       <Docs>
-        <summary>The file contains a reparse point, which is a block of user-defined data associated with a file or a directory.</summary>
+        <summary>The file contains a reparse point, which is a block of user-defined data associated with a file or a directory. <see langword="ReparsePoint" /> is supported on Windows, Linux, and macOS. </summary>
       </Docs>
     </Member>
     <Member MemberName="SparseFile">
@@ -542,11 +720,12 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes SparseFile = int32(512)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.SparseFile" />
       <MemberSignature Language="VB.NET" Value="SparseFile" />
-      <MemberSignature Language="C++ CLI" Value="SparseFile" />
       <MemberSignature Language="F#" Value="SparseFile = 512" Usage="System.IO.FileAttributes.SparseFile" />
+      <MemberSignature Language="C++ CLI" Value="SparseFile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -559,11 +738,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.FileAttributes</ReturnType>
@@ -578,11 +764,12 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes System = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.System" />
       <MemberSignature Language="VB.NET" Value="System" />
-      <MemberSignature Language="C++ CLI" Value="System" />
       <MemberSignature Language="F#" Value="System = 4" Usage="System.IO.FileAttributes.System" />
+      <MemberSignature Language="C++ CLI" Value="System" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -595,11 +782,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.FileAttributes</ReturnType>
@@ -614,11 +808,12 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes Temporary = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.Temporary" />
       <MemberSignature Language="VB.NET" Value="Temporary" />
-      <MemberSignature Language="C++ CLI" Value="Temporary" />
       <MemberSignature Language="F#" Value="Temporary = 256" Usage="System.IO.FileAttributes.Temporary" />
+      <MemberSignature Language="C++ CLI" Value="Temporary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -631,11 +826,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.FileAttributes</ReturnType>

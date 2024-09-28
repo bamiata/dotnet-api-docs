@@ -1,14 +1,19 @@
-﻿<Type Name="PagesPerSheetDirection" FullName="System.Printing.PagesPerSheetDirection">
+<Type Name="PagesPerSheetDirection" FullName="System.Printing.PagesPerSheetDirection">
   <TypeSignature Language="C#" Value="public enum PagesPerSheetDirection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PagesPerSheetDirection extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Printing.PagesPerSheetDirection" />
   <TypeSignature Language="VB.NET" Value="Public Enum PagesPerSheetDirection" />
-  <TypeSignature Language="C++ CLI" Value="public enum class PagesPerSheetDirection" />
   <TypeSignature Language="F#" Value="type PagesPerSheetDirection = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class PagesPerSheetDirection" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -29,16 +34,16 @@
   
  You should never set a <xref:System.Printing.PrintTicket> property to **Unknown**. If some other <xref:System.Printing.PrintTicket> producing application has created a *PrintTicket document* that sets the pages-per-sheet-direction feature to an unrecognized option (that is, an option that is not defined in the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397)), then a <xref:System.Printing.PrintTicket> object in your application that is constructed with that document will have **Unknown** as the value of the <xref:System.Printing.PrintTicket.PagesPerSheetDirection%2A> property.  
   
- Although the <xref:System.Printing.PrintTicket> and <xref:System.Printing.PrintCapabilities> classes cannot be inherited, you can extend the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397) to recognize print device features that are not accounted for in the <xref:System.Printing.PrintTicket> or <xref:System.Printing.PrintCapabilities> classes. For more information see [NOTINBUILD: How to: Extend the Print Schema and Create New Print System Classes](https://msdn.microsoft.com/library/a3600218-1ea5-478a-9853-6560464f2885).  
+ Although the <xref:System.Printing.PrintTicket> and <xref:System.Printing.PrintCapabilities> classes cannot be inherited, you can extend the [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397) to recognize print device features that are not accounted for in the <xref:System.Printing.PrintTicket> or <xref:System.Printing.PrintCapabilities> classes. For more information see [How to: Extend the Print Schema and Create New Print System Classes](https://learn.microsoft.com/previous-versions/aa970573(v=vs.100)).  
   
    
   
 ## Examples  
  The following example shows how to test a printer's capabilities and configure the print job to take advantage of them.  
   
- [!code-cpp[XpsCreate#PrinterCapabilities](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#printercapabilities)]
- [!code-csharp[XpsCreate#PrinterCapabilities](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#printercapabilities)]
- [!code-vb[XpsCreate#PrinterCapabilities](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#printercapabilities)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp" id="Snippetprintercapabilities":::
+ :::code language="csharp" source="~/snippets/csharp/System.Printing/Collation/Overview/XpsCreate.cs" id="Snippetprintercapabilities":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb" id="Snippetprintercapabilities":::  
   
  ]]></format>
     </remarks>
@@ -51,13 +56,18 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PagesPerSheetDirection BottomLeft = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PagesPerSheetDirection.BottomLeft" />
       <MemberSignature Language="VB.NET" Value="BottomLeft" />
-      <MemberSignature Language="C++ CLI" Value="BottomLeft" />
       <MemberSignature Language="F#" Value="BottomLeft = 4" Usage="System.Printing.PagesPerSheetDirection.BottomLeft" />
+      <MemberSignature Language="C++ CLI" Value="BottomLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PagesPerSheetDirection</ReturnType>
@@ -72,13 +82,18 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PagesPerSheetDirection BottomRight = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PagesPerSheetDirection.BottomRight" />
       <MemberSignature Language="VB.NET" Value="BottomRight" />
-      <MemberSignature Language="C++ CLI" Value="BottomRight" />
       <MemberSignature Language="F#" Value="BottomRight = 2" Usage="System.Printing.PagesPerSheetDirection.BottomRight" />
+      <MemberSignature Language="C++ CLI" Value="BottomRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PagesPerSheetDirection</ReturnType>
@@ -93,13 +108,18 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PagesPerSheetDirection LeftBottom = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PagesPerSheetDirection.LeftBottom" />
       <MemberSignature Language="VB.NET" Value="LeftBottom" />
-      <MemberSignature Language="C++ CLI" Value="LeftBottom" />
       <MemberSignature Language="F#" Value="LeftBottom = 3" Usage="System.Printing.PagesPerSheetDirection.LeftBottom" />
+      <MemberSignature Language="C++ CLI" Value="LeftBottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PagesPerSheetDirection</ReturnType>
@@ -114,13 +134,18 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PagesPerSheetDirection LeftTop = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PagesPerSheetDirection.LeftTop" />
       <MemberSignature Language="VB.NET" Value="LeftTop" />
-      <MemberSignature Language="C++ CLI" Value="LeftTop" />
       <MemberSignature Language="F#" Value="LeftTop = 7" Usage="System.Printing.PagesPerSheetDirection.LeftTop" />
+      <MemberSignature Language="C++ CLI" Value="LeftTop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PagesPerSheetDirection</ReturnType>
@@ -135,13 +160,18 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PagesPerSheetDirection RightBottom = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PagesPerSheetDirection.RightBottom" />
       <MemberSignature Language="VB.NET" Value="RightBottom" />
-      <MemberSignature Language="C++ CLI" Value="RightBottom" />
       <MemberSignature Language="F#" Value="RightBottom = 1" Usage="System.Printing.PagesPerSheetDirection.RightBottom" />
+      <MemberSignature Language="C++ CLI" Value="RightBottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PagesPerSheetDirection</ReturnType>
@@ -156,13 +186,18 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PagesPerSheetDirection RightTop = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PagesPerSheetDirection.RightTop" />
       <MemberSignature Language="VB.NET" Value="RightTop" />
-      <MemberSignature Language="C++ CLI" Value="RightTop" />
       <MemberSignature Language="F#" Value="RightTop = 5" Usage="System.Printing.PagesPerSheetDirection.RightTop" />
+      <MemberSignature Language="C++ CLI" Value="RightTop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PagesPerSheetDirection</ReturnType>
@@ -177,13 +212,18 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PagesPerSheetDirection TopLeft = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PagesPerSheetDirection.TopLeft" />
       <MemberSignature Language="VB.NET" Value="TopLeft" />
-      <MemberSignature Language="C++ CLI" Value="TopLeft" />
       <MemberSignature Language="F#" Value="TopLeft = 8" Usage="System.Printing.PagesPerSheetDirection.TopLeft" />
+      <MemberSignature Language="C++ CLI" Value="TopLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PagesPerSheetDirection</ReturnType>
@@ -198,13 +238,18 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PagesPerSheetDirection TopRight = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PagesPerSheetDirection.TopRight" />
       <MemberSignature Language="VB.NET" Value="TopRight" />
-      <MemberSignature Language="C++ CLI" Value="TopRight" />
       <MemberSignature Language="F#" Value="TopRight = 6" Usage="System.Printing.PagesPerSheetDirection.TopRight" />
+      <MemberSignature Language="C++ CLI" Value="TopRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PagesPerSheetDirection</ReturnType>
@@ -219,20 +264,25 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PagesPerSheetDirection Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PagesPerSheetDirection.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
-      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Printing.PagesPerSheetDirection.Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Printing.PagesPerSheetDirection</ReturnType>
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The feature (whose options are represented by this enumeration) is set to an option not defined in the <see href="https://docs.microsoft.com/windows/desktop/printdocs/printschema">Print Schema</see>.</summary>
+        <summary>The feature (whose options are represented by this enumeration) is set to an option not defined in the <see href="https://learn.microsoft.com/windows/desktop/printdocs/printschema">Print Schema</see>.</summary>
       </Docs>
     </Member>
   </Members>

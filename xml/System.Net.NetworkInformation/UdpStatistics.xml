@@ -1,15 +1,21 @@
-﻿<Type Name="UdpStatistics" FullName="System.Net.NetworkInformation.UdpStatistics">
+<Type Name="UdpStatistics" FullName="System.Net.NetworkInformation.UdpStatistics">
   <TypeSignature Language="C#" Value="public abstract class UdpStatistics" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit UdpStatistics extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.UdpStatistics" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class UdpStatistics" />
-  <TypeSignature Language="C++ CLI" Value="public ref class UdpStatistics abstract" />
   <TypeSignature Language="F#" Value="type UdpStatistics = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UdpStatistics abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Net.NetworkInformation</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -20,7 +26,15 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.NetworkInformation" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.NetworkInformation" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.NetworkInformation" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.NetworkInformation" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.NetworkInformation" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -40,8 +54,8 @@
 ## Examples  
  The following code example displays the UDP statistics for the specified address family.  
   
- [!code-cpp[NCLNetInfoReport#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp#3)]
- [!code-csharp[NCLNetInfoReport#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfoReport/CS/netinfo.cs#3)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp" id="Snippet3":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net.NetworkInformation/IcmpV4Statistics/Overview/netinfo.cs" id="Snippet3":::  
   
  ]]></format>
     </remarks>
@@ -59,6 +73,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -69,10 +89,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -93,14 +115,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance int64 DatagramsReceived" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.UdpStatistics.DatagramsReceived" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DatagramsReceived As Long" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long DatagramsReceived { long get(); };" />
       <MemberSignature Language="F#" Value="member this.DatagramsReceived : int64" Usage="System.Net.NetworkInformation.UdpStatistics.DatagramsReceived" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long DatagramsReceived { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -111,6 +139,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -129,8 +158,8 @@
 ## Examples  
  The following code example displays the UDP statistics for the specified address family.  
   
- [!code-cpp[NCLNetInfoReport#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp#3)]
- [!code-csharp[NCLNetInfoReport#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfoReport/CS/netinfo.cs#3)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp" id="Snippet3":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net.NetworkInformation/IcmpV4Statistics/Overview/netinfo.cs" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -141,14 +170,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance int64 DatagramsSent" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.UdpStatistics.DatagramsSent" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DatagramsSent As Long" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long DatagramsSent { long get(); };" />
       <MemberSignature Language="F#" Value="member this.DatagramsSent : int64" Usage="System.Net.NetworkInformation.UdpStatistics.DatagramsSent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long DatagramsSent { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -159,6 +194,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -172,8 +208,8 @@
 ## Examples  
  The following code example displays the UDP statistics for the specified Internet Protocol version.  
   
- [!code-cpp[NCLNetInfoReport#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp#3)]
- [!code-csharp[NCLNetInfoReport#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfoReport/CS/netinfo.cs#3)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp" id="Snippet3":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net.NetworkInformation/IcmpV4Statistics/Overview/netinfo.cs" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -184,14 +220,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance int64 IncomingDatagramsDiscarded" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.UdpStatistics.IncomingDatagramsDiscarded" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IncomingDatagramsDiscarded As Long" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long IncomingDatagramsDiscarded { long get(); };" />
       <MemberSignature Language="F#" Value="member this.IncomingDatagramsDiscarded : int64" Usage="System.Net.NetworkInformation.UdpStatistics.IncomingDatagramsDiscarded" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long IncomingDatagramsDiscarded { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -202,6 +244,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -220,8 +263,8 @@
 ## Examples  
  The following code example displays the UDP statistics for the specified Internet Protocol version.  
   
- [!code-cpp[NCLNetInfoReport#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp#3)]
- [!code-csharp[NCLNetInfoReport#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfoReport/CS/netinfo.cs#3)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp" id="Snippet3":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net.NetworkInformation/IcmpV4Statistics/Overview/netinfo.cs" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -232,14 +275,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance int64 IncomingDatagramsWithErrors" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.UdpStatistics.IncomingDatagramsWithErrors" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IncomingDatagramsWithErrors As Long" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long IncomingDatagramsWithErrors { long get(); };" />
       <MemberSignature Language="F#" Value="member this.IncomingDatagramsWithErrors : int64" Usage="System.Net.NetworkInformation.UdpStatistics.IncomingDatagramsWithErrors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long IncomingDatagramsWithErrors { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -250,6 +299,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -268,8 +318,8 @@
 ## Examples  
  The following code example displays the UDP statistics for the specified Internet Protocol version.  
   
- [!code-cpp[NCLNetInfoReport#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp#3)]
- [!code-csharp[NCLNetInfoReport#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfoReport/CS/netinfo.cs#3)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp" id="Snippet3":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net.NetworkInformation/IcmpV4Statistics/Overview/netinfo.cs" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -280,14 +330,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 UdpListeners" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.UdpStatistics.UdpListeners" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property UdpListeners As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int UdpListeners { int get(); };" />
       <MemberSignature Language="F#" Value="member this.UdpListeners : int" Usage="System.Net.NetworkInformation.UdpStatistics.UdpListeners" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int UdpListeners { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -298,6 +354,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -316,8 +373,8 @@
 ## Examples  
  The following code example displays the UDP statistics for the specified Internet Protocol version.  
   
- [!code-cpp[NCLNetInfoReport#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp#3)]
- [!code-csharp[NCLNetInfoReport#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfoReport/CS/netinfo.cs#3)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLNetInfoReport/CPP/netinfo.cpp" id="Snippet3":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net.NetworkInformation/IcmpV4Statistics/Overview/netinfo.cs" id="Snippet3":::  
   
  ]]></format>
         </remarks>

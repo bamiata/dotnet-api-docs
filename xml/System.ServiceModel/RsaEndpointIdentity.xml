@@ -1,14 +1,20 @@
-﻿<Type Name="RsaEndpointIdentity" FullName="System.ServiceModel.RsaEndpointIdentity">
+<Type Name="RsaEndpointIdentity" FullName="System.ServiceModel.RsaEndpointIdentity">
   <TypeSignature Language="C#" Value="public class RsaEndpointIdentity : System.ServiceModel.EndpointIdentity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RsaEndpointIdentity extends System.ServiceModel.EndpointIdentity" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.RsaEndpointIdentity" />
   <TypeSignature Language="VB.NET" Value="Public Class RsaEndpointIdentity&#xA;Inherits EndpointIdentity" />
-  <TypeSignature Language="C++ CLI" Value="public ref class RsaEndpointIdentity : System::ServiceModel::EndpointIdentity" />
   <TypeSignature Language="F#" Value="type RsaEndpointIdentity = class&#xA;    inherit EndpointIdentity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RsaEndpointIdentity : System::ServiceModel::EndpointIdentity" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.2.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ServiceModel.EndpointIdentity</BaseTypeName>
@@ -40,13 +46,17 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Claims.Claim identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.RsaEndpointIdentity.#ctor(System.IdentityModel.Claims.Claim)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (identity As Claim)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; RsaEndpointIdentity(System::IdentityModel::Claims::Claim ^ identity);" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.RsaEndpointIdentity : System.IdentityModel.Claims.Claim -&gt; System.ServiceModel.RsaEndpointIdentity" Usage="new System.ServiceModel.RsaEndpointIdentity identity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RsaEndpointIdentity(System::IdentityModel::Claims::Claim ^ identity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="identity" Type="System.IdentityModel.Claims.Claim" />
@@ -61,17 +71,58 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public RsaEndpointIdentity (string publicKey);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string publicKey) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.RsaEndpointIdentity.#ctor(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (publicKey As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; RsaEndpointIdentity(System::String ^ publicKey);" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.RsaEndpointIdentity : string -&gt; System.ServiceModel.RsaEndpointIdentity" Usage="new System.ServiceModel.RsaEndpointIdentity publicKey" />
+      <MemberSignature Language="C#" Value="public RsaEndpointIdentity (System.Security.Cryptography.X509Certificates.X509Certificate2 certificate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.RsaEndpointIdentity.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (certificate As X509Certificate2)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.RsaEndpointIdentity : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; System.ServiceModel.RsaEndpointIdentity" Usage="new System.ServiceModel.RsaEndpointIdentity certificate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RsaEndpointIdentity(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" />
+      </Parameters>
+      <Docs>
+        <param name="certificate">The <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.RsaEndpointIdentity" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `certificate` is converted to an RSA claim and an endpoint identity is created by the method <xref:System.ServiceModel.EndpointIdentity.Initialize%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="certificate" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">The <paramref name="certificate" /> public key is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The certificate's public key cannot be accessed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RsaEndpointIdentity (string publicKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string publicKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.RsaEndpointIdentity.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (publicKey As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.RsaEndpointIdentity : string -&gt; System.ServiceModel.RsaEndpointIdentity" Usage="new System.ServiceModel.RsaEndpointIdentity publicKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RsaEndpointIdentity(System::String ^ publicKey);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="publicKey" Type="System.String" />
@@ -89,45 +140,6 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="publicKey" /> is <see langword="null" />.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public RsaEndpointIdentity (System.Security.Cryptography.X509Certificates.X509Certificate2 certificate);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (certificate As X509Certificate2)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; RsaEndpointIdentity(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
-      <MemberSignature Language="C#" Value="public RsaEndpointIdentity (System.Security.Cryptography.X509Certificates.X509Certificate2 cert);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.X509Certificates.X509Certificate2 cert) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.RsaEndpointIdentity.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (cert As X509Certificate2)" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; RsaEndpointIdentity(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ cert);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.RsaEndpointIdentity : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; System.ServiceModel.RsaEndpointIdentity" Usage="new System.ServiceModel.RsaEndpointIdentity cert" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
-        <Parameter Name="cert" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" Index="0" FrameworkAlternate="xamarinmac-3.0" />
-      </Parameters>
-      <Docs>
-        <param name="certificate">The <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" />.</param>
-        <param name="cert">The <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.RsaEndpointIdentity" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `certificate` is converted to an RSA claim and an endpoint identity is created by the method <xref:System.ServiceModel.EndpointIdentity.Initialize%2A>.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="certificate" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.NotSupportedException">The <paramref name="certificate" /> public key is <see langword="null" />.</exception>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">The certificate's public key cannot be accessed.</exception>
       </Docs>
     </Member>
   </Members>

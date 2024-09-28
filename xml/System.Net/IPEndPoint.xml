@@ -1,15 +1,22 @@
-﻿<Type Name="IPEndPoint" FullName="System.Net.IPEndPoint">
+<Type Name="IPEndPoint" FullName="System.Net.IPEndPoint">
   <TypeSignature Language="C#" Value="public class IPEndPoint : System.Net.EndPoint" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit IPEndPoint extends System.Net.EndPoint" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IPEndPoint extends System.Net.EndPoint" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
   <TypeSignature Language="DocId" Value="T:System.Net.IPEndPoint" />
   <TypeSignature Language="VB.NET" Value="Public Class IPEndPoint&#xA;Inherits EndPoint" />
-  <TypeSignature Language="C++ CLI" Value="public ref class IPEndPoint : System::Net::EndPoint" />
   <TypeSignature Language="F#" Value="type IPEndPoint = class&#xA;    inherit EndPoint" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IPEndPoint : System::Net::EndPoint" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit IPEndPoint extends System.Net.EndPoint" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -21,17 +28,35 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Primitives" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Primitives" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Primitives" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Primitives" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Primitives" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+    <TypeForwarding From="System.Net" FromVersion="4.0.0.0" To="System" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Net.EndPoint</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-      <AttributeName>System.Serializable</AttributeName>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -45,9 +70,9 @@
    
   
 ## Examples  
- [!code-cpp[System.Net.IPEndPoint#1](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.IPEndPoint/CPP/ipendpoint.cpp#1)]
- [!code-csharp[System.Net.IPEndPoint#1](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.IPEndPoint/CS/ipendpoint.cs#1)]
- [!code-vb[System.Net.IPEndPoint#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPEndPoint/VB/ipendpoint.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/System.Net.IPEndPoint/CPP/ipendpoint.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/IPEndPoint/Overview/ipendpoint.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPEndPoint/VB/ipendpoint.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -68,14 +93,20 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int64 address, int32 port) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.IPEndPoint.#ctor(System.Int64,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (address As Long, port As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; IPEndPoint(long address, int port);" />
       <MemberSignature Language="F#" Value="new System.Net.IPEndPoint : int64 * int -&gt; System.Net.IPEndPoint" Usage="new System.Net.IPEndPoint (address, port)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IPEndPoint(long address, int port);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -87,6 +118,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -96,7 +128,7 @@
         <Parameter Name="port" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="address">The IP address of the Internet host.</param>
+        <param name="address">The IP address of the Internet host. For example, the value 0x2414188f in big-endian format would be the IP address "143.24.20.36".</param>
         <param name="port">The port number associated with the <paramref name="address" />, or 0 to specify any available port. <paramref name="port" /> is in host order.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.IPEndPoint" /> class with the specified address and port number.</summary>
         <remarks>
@@ -105,9 +137,9 @@
 ## Examples  
  The following example uses the specified IP address and port number to create an <xref:System.Net.IPEndPoint>.  
   
- [!code-cpp[IPEndPoint_Properties#4](~/samples/snippets/cpp/VS_Snippets_Remoting/IPEndPoint_Properties/CPP/ipendpoint_properties.cpp#4)]
- [!code-csharp[IPEndPoint_Properties#4](~/samples/snippets/csharp/VS_Snippets_Remoting/IPEndPoint_Properties/CS/ipendpoint_properties.cs#4)]
- [!code-vb[IPEndPoint_Properties#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IPEndPoint_Properties/VB/ipendpoint_properties.vb#4)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/IPEndPoint_Properties/CPP/ipendpoint_properties.cpp" id="Snippet4":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/IPEndPoint/.ctor/ipendpoint_properties.cs" id="Snippet4":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Remoting/IPEndPoint_Properties/VB/ipendpoint_properties.vb" id="Snippet4":::  
   
  ]]></format>
         </remarks>
@@ -128,14 +160,20 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Net.IPAddress address, int32 port) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.IPEndPoint.#ctor(System.Net.IPAddress,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (address As IPAddress, port As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; IPEndPoint(System::Net::IPAddress ^ address, int port);" />
       <MemberSignature Language="F#" Value="new System.Net.IPEndPoint : System.Net.IPAddress * int -&gt; System.Net.IPEndPoint" Usage="new System.Net.IPEndPoint (address, port)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IPEndPoint(System::Net::IPAddress ^ address, int port);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -147,6 +185,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -163,9 +202,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- [!code-cpp[System.Net.IPEndPoint#2](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.IPEndPoint/CPP/ipendpoint.cpp#2)]
- [!code-csharp[System.Net.IPEndPoint#2](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.IPEndPoint/CS/ipendpoint.cs#2)]
- [!code-vb[System.Net.IPEndPoint#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPEndPoint/VB/ipendpoint.vb#2)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/System.Net.IPEndPoint/CPP/ipendpoint.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/IPEndPoint/Overview/ipendpoint.cs" id="Snippet2":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPEndPoint/VB/ipendpoint.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -176,11 +215,7 @@
   
  -or-  
   
- <paramref name="port" /> is greater than <see cref="F:System.Net.IPEndPoint.MaxPort" />.  
-  
- -or-  
-  
- <paramref name="address" /> is less than 0 or greater than 0x00000000FFFFFFFF.</exception>
+ <paramref name="port" /> is greater than <see cref="F:System.Net.IPEndPoint.MaxPort" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Address">
@@ -188,14 +223,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.IPAddress Address" />
       <MemberSignature Language="DocId" Value="P:System.Net.IPEndPoint.Address" />
       <MemberSignature Language="VB.NET" Value="Public Property Address As IPAddress" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::IPAddress ^ Address { System::Net::IPAddress ^ get(); void set(System::Net::IPAddress ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Address : System.Net.IPAddress with get, set" Usage="System.Net.IPEndPoint.Address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::IPAddress ^ Address { System::Net::IPAddress ^ get(); void set(System::Net::IPAddress ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -207,16 +248,19 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -231,9 +275,9 @@
 ## Examples  
  The following example sets the <xref:System.Net.IPEndPoint.Address%2A> property using the <xref:System.Net.IPAddress> specified.  
   
- [!code-cpp[System.Net.IPEndPoint#3](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.IPEndPoint/CPP/ipendpoint.cpp#3)]
- [!code-csharp[System.Net.IPEndPoint#3](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.IPEndPoint/CS/ipendpoint.cs#3)]
- [!code-vb[System.Net.IPEndPoint#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPEndPoint/VB/ipendpoint.vb#3)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/System.Net.IPEndPoint/CPP/ipendpoint.cpp" id="Snippet3":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/IPEndPoint/Overview/ipendpoint.cs" id="Snippet3":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPEndPoint/VB/ipendpoint.vb" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -244,14 +288,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Sockets.AddressFamily AddressFamily" />
       <MemberSignature Language="DocId" Value="P:System.Net.IPEndPoint.AddressFamily" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AddressFamily As AddressFamily" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::Sockets::AddressFamily AddressFamily { System::Net::Sockets::AddressFamily get(); };" />
       <MemberSignature Language="F#" Value="member this.AddressFamily : System.Net.Sockets.AddressFamily" Usage="System.Net.IPEndPoint.AddressFamily" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::Sockets::AddressFamily AddressFamily { System::Net::Sockets::AddressFamily get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -263,6 +313,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -279,9 +330,9 @@
 ## Examples  
  The following example uses the <xref:System.Net.IPEndPoint.AddressFamily%2A> property to return the <xref:System.Net.Sockets.AddressFamily> to which the <xref:System.Net.IPEndPoint> belongs. In this case it is the <xref:System.Net.Sockets.AddressFamily.InterNetwork><xref:System.Net.Sockets.AddressFamily>.  
   
- [!code-cpp[System.Net.IPEndPoint#3](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.IPEndPoint/CPP/ipendpoint.cpp#3)]
- [!code-csharp[System.Net.IPEndPoint#3](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.IPEndPoint/CS/ipendpoint.cs#3)]
- [!code-vb[System.Net.IPEndPoint#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPEndPoint/VB/ipendpoint.vb#3)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/System.Net.IPEndPoint/CPP/ipendpoint.cpp" id="Snippet3":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/IPEndPoint/Overview/ipendpoint.cs" id="Snippet3":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPEndPoint/VB/ipendpoint.vb" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -292,14 +343,21 @@
       <MemberSignature Language="C#" Value="public override System.Net.EndPoint Create (System.Net.SocketAddress socketAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Net.EndPoint Create(class System.Net.SocketAddress socketAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.IPEndPoint.Create(System.Net.SocketAddress)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Net::EndPoint ^ Create(System::Net::SocketAddress ^ socketAddress);" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Create (socketAddress As SocketAddress) As EndPoint" />
       <MemberSignature Language="F#" Value="override this.Create : System.Net.SocketAddress -&gt; System.Net.EndPoint" Usage="iPEndPoint.Create socketAddress" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Net::EndPoint ^ Create(System::Net::SocketAddress ^ socketAddress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -311,6 +369,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -331,9 +390,9 @@
 ## Examples  
  The following example uses the specified <xref:System.Net.SocketAddress> to create an <xref:System.Net.IPEndPoint>.  
   
- [!code-cpp[System.Net.IPEndPoint#5](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.IPEndPoint/CPP/ipendpoint.cpp#5)]
- [!code-csharp[System.Net.IPEndPoint#5](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.IPEndPoint/CS/ipendpoint.cs#5)]
- [!code-vb[System.Net.IPEndPoint#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPEndPoint/VB/ipendpoint.vb#5)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/System.Net.IPEndPoint/CPP/ipendpoint.cpp" id="Snippet5":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/IPEndPoint/Overview/ipendpoint.cs" id="Snippet5":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPEndPoint/VB/ipendpoint.vb" id="Snippet5":::  
   
  ]]></format>
         </remarks>
@@ -347,18 +406,25 @@
       </Docs>
     </Member>
     <Member MemberName="Equals">
-      <MemberSignature Language="C#" Value="public override bool Equals (object comparand);" />
+      <MemberSignature Language="C#" Value="public override bool Equals (object comparand);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object comparand) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.IPEndPoint.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (comparand As Object) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ comparand);" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="iPEndPoint.Equals comparand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ comparand);" />
+      <MemberSignature Language="C#" Value="public override bool Equals (object? comparand);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -370,15 +436,29 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="comparand" Type="System.Object" />
+        <Parameter Name="comparand" Type="System.Object">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.NotNullWhen(true)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.NotNullWhen(true)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
       </Parameters>
       <Docs>
         <param name="comparand">The <see cref="T:System.Object" /> to compare with the current <see cref="T:System.Object" />.</param>
@@ -394,14 +474,20 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.IPEndPoint.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="iPEndPoint.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -413,6 +499,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -439,14 +526,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 MaxPort = (65535)" />
       <MemberSignature Language="DocId" Value="F:System.Net.IPEndPoint.MaxPort" />
       <MemberSignature Language="VB.NET" Value="Public Const MaxPort As Integer  = 65535" />
-      <MemberSignature Language="C++ CLI" Value="public: int MaxPort = 65535;" />
       <MemberSignature Language="F#" Value="val mutable MaxPort : int" Usage="System.Net.IPEndPoint.MaxPort" />
+      <MemberSignature Language="C++ CLI" Value="public: int MaxPort = 65535;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -458,6 +551,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -474,9 +568,9 @@
 ## Examples  
  The following example uses the <xref:System.Net.IPEndPoint.MaxPort> property to print the maximum value that can be assigned to the <xref:System.Net.IPEndPoint.Port%2A> property.  
   
- [!code-cpp[IPEndPoint_Properties#4](~/samples/snippets/cpp/VS_Snippets_Remoting/IPEndPoint_Properties/CPP/ipendpoint_properties.cpp#4)]
- [!code-csharp[IPEndPoint_Properties#4](~/samples/snippets/csharp/VS_Snippets_Remoting/IPEndPoint_Properties/CS/ipendpoint_properties.cs#4)]
- [!code-vb[IPEndPoint_Properties#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IPEndPoint_Properties/VB/ipendpoint_properties.vb#4)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/IPEndPoint_Properties/CPP/ipendpoint_properties.cpp" id="Snippet4":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/IPEndPoint/.ctor/ipendpoint_properties.cs" id="Snippet4":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Remoting/IPEndPoint_Properties/VB/ipendpoint_properties.vb" id="Snippet4":::  
   
  ]]></format>
         </remarks>
@@ -487,14 +581,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 MinPort = (0)" />
       <MemberSignature Language="DocId" Value="F:System.Net.IPEndPoint.MinPort" />
       <MemberSignature Language="VB.NET" Value="Public Const MinPort As Integer  = 0" />
-      <MemberSignature Language="C++ CLI" Value="public: int MinPort = 0;" />
       <MemberSignature Language="F#" Value="val mutable MinPort : int" Usage="System.Net.IPEndPoint.MinPort" />
+      <MemberSignature Language="C++ CLI" Value="public: int MinPort = 0;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -506,6 +606,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -522,12 +623,132 @@
 ## Examples  
  The following example uses the <xref:System.Net.IPEndPoint.MinPort> property to print the minimum value that can be assigned to the <xref:System.Net.IPEndPoint.Port%2A> property.  
   
- [!code-cpp[IPEndPoint_Properties#4](~/samples/snippets/cpp/VS_Snippets_Remoting/IPEndPoint_Properties/CPP/ipendpoint_properties.cpp#4)]
- [!code-csharp[IPEndPoint_Properties#4](~/samples/snippets/csharp/VS_Snippets_Remoting/IPEndPoint_Properties/CS/ipendpoint_properties.cs#4)]
- [!code-vb[IPEndPoint_Properties#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IPEndPoint_Properties/VB/ipendpoint_properties.vb#4)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/IPEndPoint_Properties/CPP/ipendpoint_properties.cpp" id="Snippet4":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/IPEndPoint/.ctor/ipendpoint_properties.cs" id="Snippet4":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Remoting/IPEndPoint_Properties/VB/ipendpoint_properties.vb" id="Snippet4":::  
   
  ]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="Parse">
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+The number of parts (each part is separated by a period) in `s` determines how the endpoint's IP address is constructed. A one-part address is stored directly in the network address. A two-part address, convenient for specifying a class A address, puts the leading part in the first byte and the trailing part in the right-most three bytes of the network address. A three-part address, convenient for specifying a class B address, puts the first part in the first byte, the second part in the second byte, and the final part in the right-most two bytes of the network address. For example:
+
+|Number of parts and example `s`|IPv4 address for IPEndPoint.Address|Port|
+|-------------------------|--------------------------------|-------------------------|  
+|1 -- "1"|0.0.0.1|0|  
+|2 -- "20.2:80"|20.0.0.2|80|  
+|2 -- "20.65535:23"|20.0.255.255|23|  
+|3 -- "128.1.2:443"|128.1.0.2|443|  
+
+> [!IMPORTANT]
+> Note that this method accepts as valid a value that can be parsed as an <xref:System.Int64>, and then treats that <xref:System.Int64> as the long value of an IP address in network byte order, similar to the way that the IPAddress constructor does. This means that this method returns true if the Int64 is parsed successfully, even if it represents an address that's not a valid IP address. For example, if s is "1", this method returns true even though "1" (or 0.0.0.1) is not a valid IP address and you might expect this method to return false. Fixing this bug would break existing apps, so the current behavior will not be changed. Your code can avoid this behavior by ensuring that it only uses this method to parse IP addresses in dotted-decimal format.
+ 
+Literal IPv6 addresses require to be enclosed in square brackets [] when passing an endpoint that specifies a port number; otherwise, square braces are not mandatory.
+
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static System.Net.IPEndPoint Parse (ReadOnlySpan&lt;char&gt; s);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.IPEndPoint Parse(valuetype System.ReadOnlySpan`1&lt;char&gt; s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.IPEndPoint.Parse(System.ReadOnlySpan{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As ReadOnlySpan(Of Char)) As IPEndPoint" />
+      <MemberSignature Language="F#" Value="static member Parse : ReadOnlySpan&lt;char&gt; -&gt; System.Net.IPEndPoint" Usage="System.Net.IPEndPoint.Parse s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::IPEndPoint ^ Parse(ReadOnlySpan&lt;char&gt; s);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(0)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Net.IPEndPoint</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
+      </Parameters>
+      <Docs>
+        <param name="s">A read-only span that contains an IP endpoint in dotted-quad notation or network byte order for IPv4 and in colon-hexadecimal notation for IPv6.</param>
+        <summary>Converts an IP network endpoint (address and port) represented as a read-only span to an <see cref="T:System.Net.IPEndPoint" /> instance.</summary>
+        <returns>The object representation of an IP network endpoint.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="s" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="s" /> is not a valid IP endpoint.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static System.Net.IPEndPoint Parse (string s);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.IPEndPoint Parse(string s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.IPEndPoint.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String) As IPEndPoint" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Net.IPEndPoint" Usage="System.Net.IPEndPoint.Parse s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::IPEndPoint ^ Parse(System::String ^ s);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.IPEndPoint</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
+      </Parameters>
+      <Docs>
+        <param name="s">A string that contains an IP endpoint in dotted-quad notation or network byte order for IPv4 and in colon-hexadecimal notation for IPv6.</param>
+        <summary>Converts an IP network endpoint (address and port) represented as a string to an <see cref="T:System.Net.IPEndPoint" /> instance.</summary>
+        <returns>The object representation of an IP network endpoint.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="s" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="s" /> is not a valid IP endpoint.</exception>
       </Docs>
     </Member>
     <Member MemberName="Port">
@@ -535,14 +756,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Port" />
       <MemberSignature Language="DocId" Value="P:System.Net.IPEndPoint.Port" />
       <MemberSignature Language="VB.NET" Value="Public Property Port As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Port { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.Port : int with get, set" Usage="System.Net.IPEndPoint.Port" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Port { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -554,13 +781,15 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -575,9 +804,9 @@
 ## Examples  
  The following example uses the <xref:System.Net.IPEndPoint.Port%2A> property to set TCP port number of the <xref:System.Net.EndPoint>.  
   
- [!code-cpp[System.Net.IPEndPoint#3](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.IPEndPoint/CPP/ipendpoint.cpp#3)]
- [!code-csharp[System.Net.IPEndPoint#3](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.IPEndPoint/CS/ipendpoint.cs#3)]
- [!code-vb[System.Net.IPEndPoint#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPEndPoint/VB/ipendpoint.vb#3)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/System.Net.IPEndPoint/CPP/ipendpoint.cpp" id="Snippet3":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/IPEndPoint/Overview/ipendpoint.cs" id="Snippet3":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPEndPoint/VB/ipendpoint.vb" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -589,14 +818,20 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Net.SocketAddress Serialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.IPEndPoint.Serialize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Serialize () As SocketAddress" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Net::SocketAddress ^ Serialize();" />
       <MemberSignature Language="F#" Value="override this.Serialize : unit -&gt; System.Net.SocketAddress" Usage="iPEndPoint.Serialize " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Net::SocketAddress ^ Serialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -608,6 +843,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -625,9 +861,9 @@
 ## Examples  
  The following example uses the <xref:System.Net.IPEndPoint.Serialize%2A> method to serialize endpoint information into a <xref:System.Net.SocketAddress> instance.  
   
- [!code-cpp[System.Net.IPEndPoint#4](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.IPEndPoint/CPP/ipendpoint.cpp#4)]
- [!code-csharp[System.Net.IPEndPoint#4](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.IPEndPoint/CS/ipendpoint.cs#4)]
- [!code-vb[System.Net.IPEndPoint#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPEndPoint/VB/ipendpoint.vb#4)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/System.Net.IPEndPoint/CPP/ipendpoint.cpp" id="Snippet4":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/IPEndPoint/Overview/ipendpoint.cs" id="Snippet4":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPEndPoint/VB/ipendpoint.vb" id="Snippet4":::  
   
  ]]></format>
         </remarks>
@@ -639,14 +875,20 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.IPEndPoint.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="iPEndPoint.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -658,6 +900,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -675,12 +918,153 @@
 ## Examples  
  The following example returns a string representation of the IP address and port number of the specified <xref:System.Net.IPEndPoint>.  
   
- [!code-cpp[System.Net.IPEndPoint#3](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.IPEndPoint/CPP/ipendpoint.cpp#3)]
- [!code-csharp[System.Net.IPEndPoint#3](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.IPEndPoint/CS/ipendpoint.cs#3)]
- [!code-vb[System.Net.IPEndPoint#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPEndPoint/VB/ipendpoint.vb#3)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/System.Net.IPEndPoint/CPP/ipendpoint.cpp" id="Snippet3":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/IPEndPoint/Overview/ipendpoint.cs" id="Snippet3":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Remoting/System.Net.IPEndPoint/VB/ipendpoint.vb" id="Snippet3":::  
   
  ]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="TryParse">
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+The number of parts (each part is separated by a period) in `s` determines how the endpoint's IP address is constructed. A one-part address is stored directly in the network address. A two-part address, convenient for specifying a class A address, puts the leading part in the first byte and the trailing part in the right-most three bytes of the network address. A three-part address, convenient for specifying a class B address, puts the first part in the first byte, the second part in the second byte, and the final part in the right-most two bytes of the network address. For example:
+
+|Number of parts and example `s`|IPv4 address for IPEndPoint.Address|Port|
+|-------------------------|--------------------------------|-------------------------|  
+|1 -- "1"|0.0.0.1|0|  
+|2 -- "20.2:80"|20.0.0.2|80|  
+|2 -- "20.65535:23"|20.0.255.255|23|  
+|3 -- "128.1.2:443"|128.1.0.2|443|  
+
+> [!IMPORTANT]
+> Note that this method accepts as valid a value that can be parsed as an <xref:System.Int64>, and then treats that <xref:System.Int64> as the long value of an IP address in network byte order, similar to the way that the IPAddress constructor does. This means that this method returns true if the Int64 is parsed successfully, even if it represents an address that's not a valid IP address. For example, if s is "1", this method returns true even though "1" (or 0.0.0.1) is not a valid IP address and you might expect this method to return false. Fixing this bug would break existing apps, so the current behavior will not be changed. Your code can avoid this behavior by ensuring that it only uses this method to parse IP addresses in dotted-decimal format.
+ 
+Literal IPv6 addresses require to be enclosed in square brackets [] when passing an endpoint that specifies a port number; otherwise, square braces are not mandatory.
+
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <Member MemberName="TryParse">
+      <MemberSignature Language="C#" Value="public static bool TryParse (ReadOnlySpan&lt;char&gt; s, out System.Net.IPEndPoint? result);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(valuetype System.ReadOnlySpan`1&lt;char&gt; s, [out] class System.Net.IPEndPoint&amp; result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.IPEndPoint.TryParse(System.ReadOnlySpan{System.Char},System.Net.IPEndPoint@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (s As ReadOnlySpan(Of Char), ByRef result As IPEndPoint) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryParse : ReadOnlySpan&lt;char&gt; * IPEndPoint -&gt; bool" Usage="System.Net.IPEndPoint.TryParse (s, result)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(ReadOnlySpan&lt;char&gt; s, [Runtime::InteropServices::Out] System::Net::IPEndPoint ^ % result);" />
+      <MemberSignature Language="C#" Value="public static bool TryParse (ReadOnlySpan&lt;char&gt; s, out System.Net.IPEndPoint result);" FrameworkAlternate="netcore-3.0;netcore-3.1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(0)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
+        <Parameter Name="result" Type="System.Net.IPEndPoint" RefType="out" Index="1" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.NotNullWhen(true)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.NotNullWhen(true)&gt;]</AttributeName>
+            </Attribute>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="s">The IP endpoint to validate.</param>
+        <param name="result">When this method returns, the <see cref="T:System.Net.IPEndPoint" /> version of <paramref name="s" />.</param>
+        <summary>Tries to convert an IP network endpoint (address and port) represented as a read-only span to its <see cref="T:System.Net.IPEndPoint" /> equivalent, and returns a value that indicates whether the conversion succeeded.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="s" /> can be parsed as an IP endpoint; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryParse">
+      <MemberSignature Language="C#" Value="public static bool TryParse (string s, out System.Net.IPEndPoint? result);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, [out] class System.Net.IPEndPoint&amp; result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.IPEndPoint.TryParse(System.String,System.Net.IPEndPoint@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (s As String, ByRef result As IPEndPoint) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryParse : string * IPEndPoint -&gt; bool" Usage="System.Net.IPEndPoint.TryParse (s, result)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ s, [Runtime::InteropServices::Out] System::Net::IPEndPoint ^ % result);" />
+      <MemberSignature Language="C#" Value="public static bool TryParse (string s, out System.Net.IPEndPoint result);" FrameworkAlternate="netcore-3.0;netcore-3.1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
+        <Parameter Name="result" Type="System.Net.IPEndPoint" RefType="out" Index="1" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.NotNullWhen(true)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.NotNullWhen(true)&gt;]</AttributeName>
+            </Attribute>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="s">The IP endpoint to validate.</param>
+        <param name="result">When this method returns, the <see cref="T:System.Net.IPEndPoint" /> version of <paramref name="s" />.</param>
+        <summary>Tries to convert an IP network endpoint (address and port) represented as a string to its <see cref="T:System.Net.IPEndPoint" /> equivalent, and returns a value that indicates whether the conversion succeeded.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="s" /> can be parsed as an IP endpoint; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

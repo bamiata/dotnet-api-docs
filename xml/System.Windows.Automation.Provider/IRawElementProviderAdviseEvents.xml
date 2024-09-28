@@ -1,14 +1,20 @@
-﻿<Type Name="IRawElementProviderAdviseEvents" FullName="System.Windows.Automation.Provider.IRawElementProviderAdviseEvents">
+<Type Name="IRawElementProviderAdviseEvents" FullName="System.Windows.Automation.Provider.IRawElementProviderAdviseEvents">
   <TypeSignature Language="C#" Value="public interface IRawElementProviderAdviseEvents : System.Windows.Automation.Provider.IRawElementProviderSimple" />
-  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRawElementProviderAdviseEvents implements class System.Windows.Automation.Provider.IRawElementProviderSimple" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRawElementProviderAdviseEvents implements class System.Windows.Automation.Provider.IRawElementProviderSimple" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IRawElementProviderAdviseEvents" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRawElementProviderAdviseEvents&#xA;Implements IRawElementProviderSimple" />
-  <TypeSignature Language="C++ CLI" Value="public interface class IRawElementProviderAdviseEvents : System::Windows::Automation::Provider::IRawElementProviderSimple" />
   <TypeSignature Language="F#" Value="type IRawElementProviderAdviseEvents = interface&#xA;    interface IRawElementProviderSimple" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IRawElementProviderAdviseEvents : System::Windows::Automation::Provider::IRawElementProviderSimple" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IRawElementProviderAdviseEvents implements class System.Windows.Automation.Provider.IRawElementProviderSimple" FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -16,20 +22,23 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(true)&gt;]</AttributeName>
     </Attribute>
-    <Attribute>
-      <AttributeName>System.Runtime.InteropServices.Guid("a407b27b-0f6d-4427-9292-473c7bf93258")</AttributeName>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.Guid("a407b27b-0f6d-4427-9292-473c7bf93258")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.Guid("a407b27b-0f6d-4427-9292-473c7bf93258")&gt;]</AttributeName>
     </Attribute>
-    <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
     <summary>Exposes methods that are called to notify the root element of a fragment when a UI Automation client application begins or ends listening for events.</summary>
     <remarks>To be added.</remarks>
-    <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+    <related type="Article" href="/dotnet/framework/ui-automation/server-side-ui-automation-provider-implementation">Server-side UI Automation Provider Implementation</related>
   </Docs>
   <Members>
     <Member MemberName="AdviseEventAdded">
@@ -37,13 +46,18 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AdviseEventAdded(int32 eventId, int32[] properties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IRawElementProviderAdviseEvents.AdviseEventAdded(System.Int32,System.Int32[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AdviseEventAdded (eventId As Integer, properties As Integer())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AdviseEventAdded(int eventId, cli::array &lt;int&gt; ^ properties);" />
       <MemberSignature Language="F#" Value="abstract member AdviseEventAdded : int * int[] -&gt; unit" Usage="iRawElementProviderAdviseEvents.AdviseEventAdded (eventId, properties)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AdviseEventAdded(int eventId, cli::array &lt;int&gt; ^ properties);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -69,8 +83,8 @@
 ## Examples  
  The following example adds to a list of property changes that have been subscribed to.  
   
- [!code-csharp[UIAFragmentProvider_snip#124](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListFragment.cs#124)]
- [!code-vb[UIAFragmentProvider_snip#124](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#124)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Windows.Automation/AutomationEventArgs/.ctor/ListFragment.cs" id="Snippet124":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb" id="Snippet124":::  
   
  ]]></format>
         </remarks>
@@ -81,13 +95,18 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AdviseEventRemoved(int32 eventId, int32[] properties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IRawElementProviderAdviseEvents.AdviseEventRemoved(System.Int32,System.Int32[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AdviseEventRemoved (eventId As Integer, properties As Integer())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AdviseEventRemoved(int eventId, cli::array &lt;int&gt; ^ properties);" />
       <MemberSignature Language="F#" Value="abstract member AdviseEventRemoved : int * int[] -&gt; unit" Usage="iRawElementProviderAdviseEvents.AdviseEventRemoved (eventId, properties)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AdviseEventRemoved(int eventId, cli::array &lt;int&gt; ^ properties);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -97,7 +116,7 @@
         <Parameter Name="properties" Type="System.Int32[]" />
       </Parameters>
       <Docs>
-        <param name="eventId">The identifier of the event being removed</param>
+        <param name="eventId">The identifier of the event being removed.</param>
         <param name="properties">The identifiers of the properties being removed, or <see langword="null" /> if the event listener being removed is not listening for property events.</param>
         <summary>Notifies the UI Automation provider when a UI Automation client stops listening for a specific event, including a property-changed event.</summary>
         <remarks>
@@ -113,8 +132,8 @@
 ## Examples  
  The following example removes property changes from a list of those that have been subscribed to.  
   
- [!code-csharp[UIAFragmentProvider_snip#125](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListFragment.cs#125)]
- [!code-vb[UIAFragmentProvider_snip#125](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#125)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Windows.Automation/AutomationEventArgs/.ctor/ListFragment.cs" id="Snippet125":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb" id="Snippet125":::  
   
  ]]></format>
         </remarks>

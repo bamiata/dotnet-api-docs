@@ -1,16 +1,22 @@
-﻿<Type Name="XNode" FullName="System.Xml.Linq.XNode">
+<Type Name="XNode" FullName="System.Xml.Linq.XNode">
   <TypeSignature Language="C#" Value="public abstract class XNode : System.Xml.Linq.XObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XNode extends System.Xml.Linq.XObject" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.XNode" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class XNode&#xA;Inherits XObject" />
-  <TypeSignature Language="C++ CLI" Value="public ref class XNode abstract : System::Xml::Linq::XObject" />
   <TypeSignature Language="F#" Value="type XNode = class&#xA;    inherit XObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XNode abstract : System::Xml::Linq::XObject" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XDocument</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -21,18 +27,38 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Xml.Linq" FromVersion="4.0.0.0" To="System.Xml.XDocument" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Xml.XDocument" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Xml.XDocument" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Xml.XDocument" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Xml.XDocument" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Xml.XDocument" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Xml.Linq.XObject</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Represents the abstract concept of a node (element, comment, document type, processing instruction, or text node) in the XML tree.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Xml.Linq.XNode> is an abstract common base class for the following types:  
+
+<xref:System.Xml.Linq.XNode> is an abstract common base class for the following types:  
   
 -   <xref:System.Xml.Linq.XComment>  
   
@@ -44,13 +70,13 @@
   
 -   <xref:System.Xml.Linq.XText>  
   
- <xref:System.Xml.Linq.XContainer> is an abstract common base class for the following types:  
+<xref:System.Xml.Linq.XContainer> is an abstract common base class for the following types:  
   
 -   <xref:System.Xml.Linq.XDocument>  
   
 -   <xref:System.Xml.Linq.XElement>  
   
- Objects of classes that derive from <xref:System.Xml.Linq.XContainer> can contain child nodes.  
+Objects of classes that derive from <xref:System.Xml.Linq.XContainer> can contain child nodes.  
   
 > [!NOTE]
 >  An <xref:System.Xml.Linq.XAttribute> is not an <xref:System.Xml.Linq.XNode>. Attributes are maintained as a list of name/value pairs on an element.  
@@ -59,7 +85,7 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+    <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="AddAfterSelf">
@@ -74,11 +100,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](/dotnet/standard/linq/valid-content-xelement-xdocument-objects).  
   
- This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
-  
-   
+ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.
   
 ## Examples  
  The following example uses a LINQ query to create an <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, which it then passes to this method. This adds the results of a query to the tree in the desired location.  
@@ -151,16 +175,17 @@ Console.WriteLine(xmlTree)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="AddAfterSelf">
-      <MemberSignature Language="C#" Value="public void AddAfterSelf (object content);" />
+      <MemberSignature Language="C#" Value="public void AddAfterSelf (object content);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAfterSelf(object content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.AddAfterSelf(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddAfterSelf (content As Object)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAfterSelf(System::Object ^ content);" />
       <MemberSignature Language="F#" Value="member this.AddAfterSelf : obj -&gt; unit" Usage="xNode.AddAfterSelf content" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAfterSelf(System::Object ^ content);" />
+      <MemberSignature Language="C#" Value="public void AddAfterSelf (object? content);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -168,6 +193,12 @@ Console.WriteLine(xmlTree)
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -178,7 +209,14 @@ Console.WriteLine(xmlTree)
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -192,11 +230,9 @@ Console.WriteLine(xmlTree)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](/dotnet/standard/linq/valid-content-xelement-xdocument-objects).  
   
- <xref:System.Xml.Linq.XObject.Changing> events.  
-  
-   
+ <xref:System.Xml.Linq.XObject.Changing> events.
   
 ## Examples  
  The following example uses this method to add an element into the tree.  
@@ -247,16 +283,17 @@ Console.WriteLine(xmlTree)
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The parent is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </Member>
     <Member MemberName="AddAfterSelf">
-      <MemberSignature Language="C#" Value="public void AddAfterSelf (params object[] content);" />
+      <MemberSignature Language="C#" Value="public void AddAfterSelf (params object[] content);" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAfterSelf(object[] content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.AddAfterSelf(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddAfterSelf (ParamArray content As Object())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAfterSelf(... cli::array &lt;System::Object ^&gt; ^ content);" />
       <MemberSignature Language="F#" Value="member this.AddAfterSelf : obj[] -&gt; unit" Usage="xNode.AddAfterSelf content" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAfterSelf(... cli::array &lt;System::Object ^&gt; ^ content);" />
+      <MemberSignature Language="C#" Value="public void AddAfterSelf (params object?[] content);" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -264,6 +301,12 @@ Console.WriteLine(xmlTree)
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -274,10 +317,12 @@ Console.WriteLine(xmlTree)
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -287,7 +332,12 @@ Console.WriteLine(xmlTree)
         <Parameter Name="content" Type="System.Object[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
+            </Attribute>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 2 })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 2 })&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -299,11 +349,9 @@ Console.WriteLine(xmlTree)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](/dotnet/standard/linq/valid-content-xelement-xdocument-objects).  
   
- This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
-  
-   
+ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.
   
 ## Examples  
  The following example uses a LINQ query to create an <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, which it then passes to this method. This adds the results of a query to the tree in the desired location.  
@@ -376,7 +424,7 @@ Console.WriteLine(xmlTree)
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The parent is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="AddBeforeSelf">
@@ -391,13 +439,11 @@ Console.WriteLine(xmlTree)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](/dotnet/standard/linq/valid-content-xelement-xdocument-objects).  
   
  This method will raise the <xref:System.Xml.Linq.XObject.Changed> and <xref:System.Xml.Linq.XObject.Changing> events.  
   
- The <xref:System.Xml.Linq.XContainer> stores its child notes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.AddBeforeSelf%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this method might  affect your performance.  
-  
-   
+ The <xref:System.Xml.Linq.XContainer> stores its child notes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.AddBeforeSelf%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this method might  affect your performance.
   
 ## Examples  
  The following example uses a LINQ query to create an <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, which it then passes to this method. This adds the results of a query to the tree in the desired location.  
@@ -470,16 +516,17 @@ Console.WriteLine(xmlTree)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="AddBeforeSelf">
-      <MemberSignature Language="C#" Value="public void AddBeforeSelf (object content);" />
+      <MemberSignature Language="C#" Value="public void AddBeforeSelf (object content);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddBeforeSelf(object content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.AddBeforeSelf(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddBeforeSelf (content As Object)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddBeforeSelf(System::Object ^ content);" />
       <MemberSignature Language="F#" Value="member this.AddBeforeSelf : obj -&gt; unit" Usage="xNode.AddBeforeSelf content" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddBeforeSelf(System::Object ^ content);" />
+      <MemberSignature Language="C#" Value="public void AddBeforeSelf (object? content);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -487,6 +534,12 @@ Console.WriteLine(xmlTree)
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -497,7 +550,14 @@ Console.WriteLine(xmlTree)
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -511,13 +571,11 @@ Console.WriteLine(xmlTree)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](/dotnet/standard/linq/valid-content-xelement-xdocument-objects).  
   
  This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
   
- The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.AddBeforeSelf%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this method might  affect your performance.  
-  
-   
+ The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.AddBeforeSelf%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this method might  affect your performance.
   
 ## Examples  
  The following example uses this method to add an element into the tree.  
@@ -568,16 +626,17 @@ Console.WriteLine(xmlTree)
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The parent is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </Member>
     <Member MemberName="AddBeforeSelf">
-      <MemberSignature Language="C#" Value="public void AddBeforeSelf (params object[] content);" />
+      <MemberSignature Language="C#" Value="public void AddBeforeSelf (params object[] content);" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddBeforeSelf(object[] content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.AddBeforeSelf(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddBeforeSelf (ParamArray content As Object())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddBeforeSelf(... cli::array &lt;System::Object ^&gt; ^ content);" />
       <MemberSignature Language="F#" Value="member this.AddBeforeSelf : obj[] -&gt; unit" Usage="xNode.AddBeforeSelf content" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddBeforeSelf(... cli::array &lt;System::Object ^&gt; ^ content);" />
+      <MemberSignature Language="C#" Value="public void AddBeforeSelf (params object?[] content);" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -585,6 +644,12 @@ Console.WriteLine(xmlTree)
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -595,10 +660,12 @@ Console.WriteLine(xmlTree)
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -608,7 +675,12 @@ Console.WriteLine(xmlTree)
         <Parameter Name="content" Type="System.Object[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
+            </Attribute>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 2 })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 2 })&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -620,13 +692,11 @@ Console.WriteLine(xmlTree)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](/dotnet/standard/linq/valid-content-xelement-xdocument-objects).  
   
  This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
   
- The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.AddBeforeSelf%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this function might affect your performance.  
-  
-   
+ The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.AddBeforeSelf%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this function might affect your performance.
   
 ## Examples  
  The following example uses a LINQ query to create an <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, which it then passes to this method. This adds the results of a query to the tree in the desired location.  
@@ -700,7 +770,7 @@ Console.WriteLine(xmlTree)
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The parent is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Ancestors">
@@ -723,7 +793,7 @@ Console.WriteLine(xmlTree)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Ancestors">
@@ -731,8 +801,8 @@ Console.WriteLine(xmlTree)
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; Ancestors() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.Ancestors" />
       <MemberSignature Language="VB.NET" Value="Public Function Ancestors () As IEnumerable(Of XElement)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ Ancestors();" />
       <MemberSignature Language="F#" Value="member this.Ancestors : unit -&gt; seq&lt;System.Xml.Linq.XElement&gt;" Usage="xNode.Ancestors " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ Ancestors();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -740,6 +810,12 @@ Console.WriteLine(xmlTree)
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -750,10 +826,12 @@ Console.WriteLine(xmlTree)
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -771,9 +849,7 @@ Console.WriteLine(xmlTree)
   
  The nodes in the returned collection are in reverse document order.  
   
- This method uses deferred execution.  
-  
-   
+ This method uses deferred execution.
   
 ## Examples  
  The following example uses this method to enumerate the ancestors of a node.  
@@ -812,16 +888,17 @@ Root
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </Member>
     <Member MemberName="Ancestors">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; Ancestors (System.Xml.Linq.XName name);" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; Ancestors (System.Xml.Linq.XName name);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; Ancestors(class System.Xml.Linq.XName name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.Ancestors(System.Xml.Linq.XName)" />
       <MemberSignature Language="VB.NET" Value="Public Function Ancestors (name As XName) As IEnumerable(Of XElement)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ Ancestors(System::Xml::Linq::XName ^ name);" />
       <MemberSignature Language="F#" Value="member this.Ancestors : System.Xml.Linq.XName -&gt; seq&lt;System.Xml.Linq.XElement&gt;" Usage="xNode.Ancestors name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ Ancestors(System::Xml::Linq::XName ^ name);" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; Ancestors (System.Xml.Linq.XName? name);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -829,6 +906,12 @@ Root
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -839,12 +922,20 @@ Root
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.Xml.Linq.XName" />
+        <Parameter Name="name" Type="System.Xml.Linq.XName">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
       </Parameters>
       <Docs>
         <param name="name">The <see cref="T:System.Xml.Linq.XName" /> to match.</param>
@@ -858,9 +949,7 @@ Root
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method will not return itself in the results.  
-  
-   
+ This method will not return itself in the results.
   
 ## Examples  
  The following example uses this method.  
@@ -898,16 +987,17 @@ Child
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </Member>
     <Member MemberName="CompareDocumentOrder">
-      <MemberSignature Language="C#" Value="public static int CompareDocumentOrder (System.Xml.Linq.XNode n1, System.Xml.Linq.XNode n2);" />
+      <MemberSignature Language="C#" Value="public static int CompareDocumentOrder (System.Xml.Linq.XNode n1, System.Xml.Linq.XNode n2);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 CompareDocumentOrder(class System.Xml.Linq.XNode n1, class System.Xml.Linq.XNode n2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.CompareDocumentOrder(System.Xml.Linq.XNode,System.Xml.Linq.XNode)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CompareDocumentOrder (n1 As XNode, n2 As XNode) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int CompareDocumentOrder(System::Xml::Linq::XNode ^ n1, System::Xml::Linq::XNode ^ n2);" />
       <MemberSignature Language="F#" Value="static member CompareDocumentOrder : System.Xml.Linq.XNode * System.Xml.Linq.XNode -&gt; int" Usage="System.Xml.Linq.XNode.CompareDocumentOrder (n1, n2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int CompareDocumentOrder(System::Xml::Linq::XNode ^ n1, System::Xml::Linq::XNode ^ n2);" />
+      <MemberSignature Language="C#" Value="public static int CompareDocumentOrder (System.Xml.Linq.XNode? n1, System.Xml.Linq.XNode? n2);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -915,6 +1005,12 @@ Child
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -925,7 +1021,14 @@ Child
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -942,9 +1045,7 @@ Child
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.CompareDocumentOrder%2A> method must traverse the ancestors of the two nodes being compared until it finds the common parent. Then it must traverse the list of the common parent's child nodes to determine the order of the two nodes being compared. Therefore, using this method might affect your performance.  
-  
-   
+ The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.CompareDocumentOrder%2A> method must traverse the ancestors of the two nodes being compared until it finds the common parent. Then it must traverse the list of the common parent's child nodes to determine the order of the two nodes being compared. Therefore, using this method might affect your performance.
   
 ## Examples  
  The following example uses this method.  
@@ -1008,7 +1109,7 @@ el1 is before el2
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The two nodes do not share a common ancestor.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CreateReader">
@@ -1027,8 +1128,8 @@ el1 is before el2
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlReader CreateReader() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.CreateReader" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateReader () As XmlReader" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlReader ^ CreateReader();" />
       <MemberSignature Language="F#" Value="member this.CreateReader : unit -&gt; System.Xml.XmlReader" Usage="xNode.CreateReader " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlReader ^ CreateReader();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1036,6 +1137,12 @@ el1 is before el2
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1046,6 +1153,7 @@ el1 is before el2
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlReader</ReturnType>
@@ -1058,19 +1166,17 @@ el1 is before el2
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically use this method when you have to supply another component with an <xref:System.Xml.XmlReader>. For example, you can create an <xref:System.Xml.XmlReader> from a [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] tree, and then pass that reader to <xref:System.Xml.XmlDocument.Load%2A>.  
+ You typically use this method when you have to supply another component with an <xref:System.Xml.XmlReader>. For example, you can create an <xref:System.Xml.XmlReader> from a LINQ to XML tree, and then pass that reader to <xref:System.Xml.XmlDocument.Load%2A>.  
   
  All of the readers returned by <xref:System.Xml.XmlReader.Create%2A> are normalizing readers. They always perform line break normalization and full normalization of attributes. In contrast, the <xref:System.Xml.XmlReader> returned by <xref:System.Xml.Linq.XNode.CreateReader%2A> is not a normalizing reader. It does not transform any white space. It also returns attributes in the order that they were added, not in attribute name order.  
   
- [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] does not keep information about whether attributes are default attributes. <xref:System.Xml.XmlReader.IsDefault%2A> will always return false regardless of whether the attribute was populated from a default value or not.  
+ LINQ to XML does not keep information about whether attributes are default attributes. <xref:System.Xml.XmlReader.IsDefault%2A> will always return false regardless of whether the attribute was populated from a default value or not.  
   
  The `PUBLIC` and `SYSTEM` pseudo attributes on <xref:System.Xml.Linq.XDocumentType> are not available through the <xref:System.Xml.XmlReader.MoveToAttribute%2A?displayProperty=nameWithType> method. They are only available through the <xref:System.Xml.XmlReader.GetAttribute%2A?displayProperty=nameWithType> method that takes the qualified name of the attribute as a parameter. If you have to retrieve the `PUBLIC` or `SYSTEM` attributes, you should use the <xref:System.Xml.XmlReader.GetAttribute%2A?displayProperty=nameWithType> method.  
   
  Base64 and BinHex data are not supported. If you attempt to retrieve these types of data (for example, by calling <xref:System.Xml.XmlReader.ReadElementContentAsBase64%2A>), the reader will throw <xref:System.NotSupportedException>.  
   
- The `xml` declaration is not surfaced by the reader. While reading, you will not encounter a node of type <xref:System.Xml.XmlNodeType.XmlDeclaration>.  
-  
-   
+ The `xml` declaration is not surfaced by the reader. While reading, you will not encounter a node of type <xref:System.Xml.XmlNodeType.XmlDeclaration>.
   
 ## Examples  
  The following example creates an XML tree, creates an <xref:System.Xml.XmlReader> by using the <xref:System.Xml.Linq.XNode.CreateReader%2A> method, and creates an <xref:System.Xml.XmlDocument> by using the reader.  
@@ -1197,15 +1303,16 @@ Console.WriteLine(newTree)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateReader">
       <MemberSignature Language="C#" Value="public System.Xml.XmlReader CreateReader (System.Xml.Linq.ReaderOptions readerOptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlReader CreateReader(valuetype System.Xml.Linq.ReaderOptions readerOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.CreateReader(System.Xml.Linq.ReaderOptions)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlReader ^ CreateReader(System::Xml::Linq::ReaderOptions readerOptions);" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateReader (readerOptions As ReaderOptions) As XmlReader" />
       <MemberSignature Language="F#" Value="member this.CreateReader : System.Xml.Linq.ReaderOptions -&gt; System.Xml.XmlReader" Usage="xNode.CreateReader readerOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlReader ^ CreateReader(System::Xml::Linq::ReaderOptions readerOptions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1213,6 +1320,12 @@ Console.WriteLine(newTree)
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1222,12 +1335,13 @@ Console.WriteLine(newTree)
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlReader</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="readerOptions" Type="System.Xml.Linq.ReaderOptions" />
+        <Parameter Name="readerOptions" Type="System.Xml.Linq.ReaderOptions" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="readerOptions">A <see cref="T:System.Xml.Linq.ReaderOptions" /> object that specifies whether to omit duplicate namespaces.</param>
@@ -1237,12 +1351,13 @@ Console.WriteLine(newTree)
       </Docs>
     </Member>
     <Member MemberName="DeepEquals">
-      <MemberSignature Language="C#" Value="public static bool DeepEquals (System.Xml.Linq.XNode n1, System.Xml.Linq.XNode n2);" />
+      <MemberSignature Language="C#" Value="public static bool DeepEquals (System.Xml.Linq.XNode n1, System.Xml.Linq.XNode n2);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool DeepEquals(class System.Xml.Linq.XNode n1, class System.Xml.Linq.XNode n2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.DeepEquals(System.Xml.Linq.XNode,System.Xml.Linq.XNode)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DeepEquals (n1 As XNode, n2 As XNode) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool DeepEquals(System::Xml::Linq::XNode ^ n1, System::Xml::Linq::XNode ^ n2);" />
       <MemberSignature Language="F#" Value="static member DeepEquals : System.Xml.Linq.XNode * System.Xml.Linq.XNode -&gt; bool" Usage="System.Xml.Linq.XNode.DeepEquals (n1, n2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool DeepEquals(System::Xml::Linq::XNode ^ n1, System::Xml::Linq::XNode ^ n2);" />
+      <MemberSignature Language="C#" Value="public static bool DeepEquals (System.Xml.Linq.XNode? n1, System.Xml.Linq.XNode? n2);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1250,6 +1365,12 @@ Console.WriteLine(newTree)
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1260,7 +1381,14 @@ Console.WriteLine(newTree)
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1294,9 +1422,7 @@ Console.WriteLine(newTree)
   
 -   Two <xref:System.Xml.Linq.XProcessingInstruction> nodes are equal if they have the same target and data.  
   
--   Two <xref:System.Xml.Linq.XDocumentType> nodes are equal if the have the same name, public ID, system ID, and internal subset.  
-  
-   
+-   Two <xref:System.Xml.Linq.XDocumentType> nodes are equal if the have the same name, public ID, system ID, and internal subset.
   
 ## Examples  
  The following example uses this method to compare two XML trees.  
@@ -1341,7 +1467,7 @@ True
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </Member>
     <Member MemberName="DocumentOrderComparer">
@@ -1349,8 +1475,8 @@ True
       <MemberSignature Language="ILAsm" Value=".property class System.Xml.Linq.XNodeDocumentOrderComparer DocumentOrderComparer" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XNode.DocumentOrderComparer" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DocumentOrderComparer As XNodeDocumentOrderComparer" />
+      <MemberSignature Language="F#" Value="static member DocumentOrderComparer : System.Xml.Linq.XNodeDocumentOrderComparer" Usage="System.Xml.Linq.XNode.DocumentOrderComparer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xml::Linq::XNodeDocumentOrderComparer ^ DocumentOrderComparer { System::Xml::Linq::XNodeDocumentOrderComparer ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.DocumentOrderComparer : System.Xml.Linq.XNodeDocumentOrderComparer" Usage="System.Xml.Linq.XNode.DocumentOrderComparer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1358,6 +1484,12 @@ True
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1368,6 +1500,7 @@ True
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Linq.XNodeDocumentOrderComparer</ReturnType>
@@ -1379,9 +1512,7 @@ True
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is primarily used internally for implementing the <xref:System.Xml.Linq.Extensions.InDocumentOrder%2A> extension method. The recommended approach is to use that extension method instead of using this property directly.  
-  
-   
+ This property is primarily used internally for implementing the <xref:System.Xml.Linq.Extensions.InDocumentOrder%2A> extension method. The recommended approach is to use that extension method instead of using this property directly.
   
 ## Examples  
  The following example creates an XML tree with some elements. It then creates a <xref:System.Collections.Generic.List%601> of <xref:System.Xml.Linq.XNode> that contains some elements from the XML tree at random. It sorts the list, using this property to retrieve a <xref:System.Xml.Linq.XNodeDocumentOrderComparer>, which implements the <xref:System.Collections.IComparer?displayProperty=nameWithType> and <xref:System.Collections.Generic.IComparer%601?displayProperty=nameWithType> interfaces.  
@@ -1440,7 +1571,7 @@ Next
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ElementsAfterSelf">
@@ -1459,7 +1590,7 @@ Next
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ElementsAfterSelf">
@@ -1467,8 +1598,8 @@ Next
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; ElementsAfterSelf() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ElementsAfterSelf" />
       <MemberSignature Language="VB.NET" Value="Public Function ElementsAfterSelf () As IEnumerable(Of XElement)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ ElementsAfterSelf();" />
       <MemberSignature Language="F#" Value="member this.ElementsAfterSelf : unit -&gt; seq&lt;System.Xml.Linq.XElement&gt;" Usage="xNode.ElementsAfterSelf " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ ElementsAfterSelf();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1476,6 +1607,12 @@ Next
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1486,10 +1623,12 @@ Next
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1505,9 +1644,7 @@ Next
 ## Remarks  
  This method only includes siblings in the returned collection. It does not include descendants.  
   
- This method uses deferred execution.  
-  
-   
+ This method uses deferred execution.
   
 ## Examples  
  The following example creates an element with some complex content. It then uses this method to retrieve the nodes in document order.  
@@ -1554,16 +1691,17 @@ Child5
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </Member>
     <Member MemberName="ElementsAfterSelf">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; ElementsAfterSelf (System.Xml.Linq.XName name);" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; ElementsAfterSelf (System.Xml.Linq.XName name);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; ElementsAfterSelf(class System.Xml.Linq.XName name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ElementsAfterSelf(System.Xml.Linq.XName)" />
       <MemberSignature Language="VB.NET" Value="Public Function ElementsAfterSelf (name As XName) As IEnumerable(Of XElement)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ ElementsAfterSelf(System::Xml::Linq::XName ^ name);" />
       <MemberSignature Language="F#" Value="member this.ElementsAfterSelf : System.Xml.Linq.XName -&gt; seq&lt;System.Xml.Linq.XElement&gt;" Usage="xNode.ElementsAfterSelf name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ ElementsAfterSelf(System::Xml::Linq::XName ^ name);" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; ElementsAfterSelf (System.Xml.Linq.XName? name);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1571,6 +1709,12 @@ Child5
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1581,12 +1725,20 @@ Child5
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.Xml.Linq.XName" />
+        <Parameter Name="name" Type="System.Xml.Linq.XName">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
       </Parameters>
       <Docs>
         <param name="name">The <see cref="T:System.Xml.Linq.XName" /> to match.</param>
@@ -1598,9 +1750,7 @@ Child5
 ## Remarks  
  This method only includes siblings in the returned collection. It does not include descendants.  
   
- This method uses deferred execution.  
-  
-   
+ This method uses deferred execution.
   
 ## Examples  
  The following example creates an element with some complex content. It then uses this method to retrieve the sibling elements, in document order.  
@@ -1647,7 +1797,7 @@ Child4
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ElementsBeforeSelf">
@@ -1666,7 +1816,7 @@ Child4
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ElementsBeforeSelf">
@@ -1674,8 +1824,8 @@ Child4
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; ElementsBeforeSelf() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ElementsBeforeSelf" />
       <MemberSignature Language="VB.NET" Value="Public Function ElementsBeforeSelf () As IEnumerable(Of XElement)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ ElementsBeforeSelf();" />
       <MemberSignature Language="F#" Value="member this.ElementsBeforeSelf : unit -&gt; seq&lt;System.Xml.Linq.XElement&gt;" Usage="xNode.ElementsBeforeSelf " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ ElementsBeforeSelf();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1683,6 +1833,12 @@ Child4
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1693,10 +1849,12 @@ Child4
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1712,9 +1870,7 @@ Child4
 ## Remarks  
  This method only includes siblings in the returned collection. It does not include descendants.  
   
- This method uses deferred execution.  
-  
-   
+ This method uses deferred execution.
   
 ## Examples  
  The following example uses this axis method.  
@@ -1762,16 +1918,17 @@ Child2
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </Member>
     <Member MemberName="ElementsBeforeSelf">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; ElementsBeforeSelf (System.Xml.Linq.XName name);" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; ElementsBeforeSelf (System.Xml.Linq.XName name);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; ElementsBeforeSelf(class System.Xml.Linq.XName name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ElementsBeforeSelf(System.Xml.Linq.XName)" />
       <MemberSignature Language="VB.NET" Value="Public Function ElementsBeforeSelf (name As XName) As IEnumerable(Of XElement)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ ElementsBeforeSelf(System::Xml::Linq::XName ^ name);" />
       <MemberSignature Language="F#" Value="member this.ElementsBeforeSelf : System.Xml.Linq.XName -&gt; seq&lt;System.Xml.Linq.XElement&gt;" Usage="xNode.ElementsBeforeSelf name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ ElementsBeforeSelf(System::Xml::Linq::XName ^ name);" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; ElementsBeforeSelf (System.Xml.Linq.XName? name);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1779,6 +1936,12 @@ Child2
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1789,12 +1952,20 @@ Child2
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.Xml.Linq.XName" />
+        <Parameter Name="name" Type="System.Xml.Linq.XName">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
       </Parameters>
       <Docs>
         <param name="name">The <see cref="T:System.Xml.Linq.XName" /> to match.</param>
@@ -1806,9 +1977,7 @@ Child2
 ## Remarks  
  This method only includes siblings in the returned collection. It does not include descendants.  
   
- This method uses deferred execution.  
-  
-   
+ This method uses deferred execution.
   
 ## Examples  
  The following example uses this method.  
@@ -1855,7 +2024,7 @@ Child2
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </Member>
     <Member MemberName="EqualityComparer">
@@ -1863,8 +2032,8 @@ Child2
       <MemberSignature Language="ILAsm" Value=".property class System.Xml.Linq.XNodeEqualityComparer EqualityComparer" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XNode.EqualityComparer" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property EqualityComparer As XNodeEqualityComparer" />
+      <MemberSignature Language="F#" Value="static member EqualityComparer : System.Xml.Linq.XNodeEqualityComparer" Usage="System.Xml.Linq.XNode.EqualityComparer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xml::Linq::XNodeEqualityComparer ^ EqualityComparer { System::Xml::Linq::XNodeEqualityComparer ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.EqualityComparer : System.Xml.Linq.XNodeEqualityComparer" Usage="System.Xml.Linq.XNode.EqualityComparer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1872,6 +2041,12 @@ Child2
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1882,6 +2057,7 @@ Child2
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Linq.XNodeEqualityComparer</ReturnType>
@@ -1940,16 +2116,17 @@ Child 3 Information
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsAfter">
-      <MemberSignature Language="C#" Value="public bool IsAfter (System.Xml.Linq.XNode node);" />
+      <MemberSignature Language="C#" Value="public bool IsAfter (System.Xml.Linq.XNode node);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsAfter(class System.Xml.Linq.XNode node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.IsAfter(System.Xml.Linq.XNode)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsAfter (node As XNode) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsAfter(System::Xml::Linq::XNode ^ node);" />
       <MemberSignature Language="F#" Value="member this.IsAfter : System.Xml.Linq.XNode -&gt; bool" Usage="xNode.IsAfter node" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsAfter(System::Xml::Linq::XNode ^ node);" />
+      <MemberSignature Language="C#" Value="public bool IsAfter (System.Xml.Linq.XNode? node);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1957,6 +2134,12 @@ Child 3 Information
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1967,7 +2150,14 @@ Child 3 Information
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1983,9 +2173,7 @@ Child 3 Information
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.CompareDocumentOrder%2A> method must traverse the ancestors of the two nodes being compared until it finds the common parent. Then it must traverse the list of the common parent's child nodes to determine the order of the two nodes being compared. Therefore, using this method might affect your performance.  
-  
-   
+ The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.CompareDocumentOrder%2A> method must traverse the ancestors of the two nodes being compared until it finds the common parent. Then it must traverse the list of the common parent's child nodes to determine the order of the two nodes being compared. Therefore, using this method might affect your performance.
   
 ## Examples  
  The following example uses this method.  
@@ -2035,16 +2223,17 @@ Child5 is after Child3
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsBefore">
-      <MemberSignature Language="C#" Value="public bool IsBefore (System.Xml.Linq.XNode node);" />
+      <MemberSignature Language="C#" Value="public bool IsBefore (System.Xml.Linq.XNode node);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsBefore(class System.Xml.Linq.XNode node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.IsBefore(System.Xml.Linq.XNode)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsBefore (node As XNode) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsBefore(System::Xml::Linq::XNode ^ node);" />
       <MemberSignature Language="F#" Value="member this.IsBefore : System.Xml.Linq.XNode -&gt; bool" Usage="xNode.IsBefore node" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsBefore(System::Xml::Linq::XNode ^ node);" />
+      <MemberSignature Language="C#" Value="public bool IsBefore (System.Xml.Linq.XNode? node);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2052,6 +2241,12 @@ Child5 is after Child3
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -2062,7 +2257,14 @@ Child5 is after Child3
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -2078,9 +2280,7 @@ Child5 is after Child3
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.IsBefore%2A> method must traverse the ancestors of the two nodes being compared until it finds the common parent. Then it must traverse the list of the common parent's child nodes to determine the order of the two nodes being compared. Therefore, using this method might affect your performance.  
-  
-   
+ The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.IsBefore%2A> method must traverse the ancestors of the two nodes being compared until it finds the common parent. Then it must traverse the list of the common parent's child nodes to determine the order of the two nodes being compared. Therefore, using this method might affect your performance.
   
 ## Examples  
  The following example uses this method.  
@@ -2130,16 +2330,17 @@ Child5 is not before Child3
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </Member>
     <Member MemberName="NextNode">
-      <MemberSignature Language="C#" Value="public System.Xml.Linq.XNode NextNode { get; }" />
+      <MemberSignature Language="C#" Value="public System.Xml.Linq.XNode NextNode { get; }" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Linq.XNode NextNode" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XNode.NextNode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NextNode As XNode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XNode ^ NextNode { System::Xml::Linq::XNode ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.NextNode : System.Xml.Linq.XNode" Usage="System.Xml.Linq.XNode.NextNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XNode ^ NextNode { System::Xml::Linq::XNode ^ get(); };" />
+      <MemberSignature Language="C#" Value="public System.Xml.Linq.XNode? NextNode { get; }" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2147,6 +2348,12 @@ Child5 is not before Child3
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -2157,7 +2364,18 @@ Child5 is not before Child3
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Xml.Linq.XNode</ReturnType>
       </ReturnValue>
@@ -2168,9 +2386,7 @@ Child5 is not before Child3
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If this <xref:System.Xml.Linq.XNode> does not have a parent, or if there is no next node, this property returns `null`.  
-  
-   
+ If this <xref:System.Xml.Linq.XNode> does not have a parent, or if there is no next node, this property returns `null`.
   
 ## Examples  
  The following example uses this property to loop through nodes.  
@@ -2246,16 +2462,17 @@ NodeType: Element   Child3
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </Member>
     <Member MemberName="NodesAfterSelf">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XNode&gt; NodesAfterSelf ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XNode&gt; NodesAfterSelf() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.NodesAfterSelf" />
-      <MemberSignature Language="VB.NET" Value="Public Function NodesAfterSelf () As IEnumerable(Of XNode)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XNode ^&gt; ^ NodesAfterSelf();" />
+      <MemberSignature Language="VB.NET" Value="Public Function NodesAfterSelf () As IEnumerable(Of XNode)" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="F#" Value="member this.NodesAfterSelf : unit -&gt; seq&lt;System.Xml.Linq.XNode&gt;" Usage="xNode.NodesAfterSelf " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XNode ^&gt; ^ NodesAfterSelf();" />
+      <MemberSignature Language="VB.NET" Value="Public Iterator Function NodesAfterSelf () As IEnumerable(Of XNode)" FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2263,6 +2480,12 @@ NodeType: Element   Child3
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -2273,13 +2496,16 @@ NodeType: Element   Child3
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.6">
-          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Xml.Linq.XNode/&lt;NodesAfterSelf&gt;d__1))</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Xml.Linq.XNode+&lt;NodesAfterSelf&gt;d__1))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Xml.Linq.XNode+&lt;NodesAfterSelf&gt;d__1))&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Xml.Linq.XNode/&lt;NodesAfterSelf&gt;d__21))</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Xml.Linq.XNode+&lt;NodesAfterSelf&gt;d__21))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Xml.Linq.XNode+&lt;NodesAfterSelf&gt;d__21))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2295,9 +2521,7 @@ NodeType: Element   Child3
 ## Remarks  
  This method only includes siblings in the returned collection. It does not include descendants.  
   
- This method uses deferred execution.  
-  
-   
+ This method uses deferred execution.
   
 ## Examples  
  The following example creates an XML tree, and then queries the tree using this axis method.  
@@ -2352,16 +2576,17 @@ Node type: Element
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </Member>
     <Member MemberName="NodesBeforeSelf">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XNode&gt; NodesBeforeSelf ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XNode&gt; NodesBeforeSelf() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.NodesBeforeSelf" />
-      <MemberSignature Language="VB.NET" Value="Public Function NodesBeforeSelf () As IEnumerable(Of XNode)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XNode ^&gt; ^ NodesBeforeSelf();" />
+      <MemberSignature Language="VB.NET" Value="Public Function NodesBeforeSelf () As IEnumerable(Of XNode)" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="F#" Value="member this.NodesBeforeSelf : unit -&gt; seq&lt;System.Xml.Linq.XNode&gt;" Usage="xNode.NodesBeforeSelf " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XNode ^&gt; ^ NodesBeforeSelf();" />
+      <MemberSignature Language="VB.NET" Value="Public Iterator Function NodesBeforeSelf () As IEnumerable(Of XNode)" FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2369,6 +2594,12 @@ Node type: Element
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -2379,13 +2610,16 @@ Node type: Element
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.6">
-          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Xml.Linq.XNode/&lt;NodesBeforeSelf&gt;d__1))</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Xml.Linq.XNode+&lt;NodesBeforeSelf&gt;d__1))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Xml.Linq.XNode+&lt;NodesBeforeSelf&gt;d__1))&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Xml.Linq.XNode/&lt;NodesBeforeSelf&gt;d__22))</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Xml.Linq.XNode+&lt;NodesBeforeSelf&gt;d__22))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Xml.Linq.XNode+&lt;NodesBeforeSelf&gt;d__22))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2401,9 +2635,7 @@ Node type: Element
 ## Remarks  
  This method only includes siblings in the returned collection. It does not include descendants.  
   
- This method uses deferred execution.  
-  
-   
+ This method uses deferred execution.
   
 ## Examples  
  The following example creates an XML tree, and then queries the tree using this axis method.  
@@ -2457,16 +2689,17 @@ Node type: Element
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </Member>
     <Member MemberName="PreviousNode">
-      <MemberSignature Language="C#" Value="public System.Xml.Linq.XNode PreviousNode { get; }" />
+      <MemberSignature Language="C#" Value="public System.Xml.Linq.XNode PreviousNode { get; }" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Linq.XNode PreviousNode" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XNode.PreviousNode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreviousNode As XNode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XNode ^ PreviousNode { System::Xml::Linq::XNode ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.PreviousNode : System.Xml.Linq.XNode" Usage="System.Xml.Linq.XNode.PreviousNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XNode ^ PreviousNode { System::Xml::Linq::XNode ^ get(); };" />
+      <MemberSignature Language="C#" Value="public System.Xml.Linq.XNode? PreviousNode { get; }" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2474,6 +2707,12 @@ Node type: Element
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -2484,7 +2723,18 @@ Node type: Element
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Xml.Linq.XNode</ReturnType>
       </ReturnValue>
@@ -2497,9 +2747,7 @@ Node type: Element
 ## Remarks  
  If this <xref:System.Xml.Linq.XNode> does not have a parent, or if there is no previous node, this property returns `null`.  
   
- The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.PreviousNode%2A> property must traverse the list of direct child nodes under the parent container. Therefore, using this property might affect your performance.  
-  
-   
+ The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.PreviousNode%2A> property must traverse the list of direct child nodes under the parent container. Therefore, using this property might affect your performance.
   
 ## Examples  
  The following example uses this property to loop through nodes.  
@@ -2574,7 +2822,7 @@ NodeType: Element   Child1
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </Member>
     <Member MemberName="ReadFrom">
@@ -2582,8 +2830,8 @@ NodeType: Element   Child1
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Linq.XNode ReadFrom(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ReadFrom(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadFrom (reader As XmlReader) As XNode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XNode ^ ReadFrom(System::Xml::XmlReader ^ reader);" />
       <MemberSignature Language="F#" Value="static member ReadFrom : System.Xml.XmlReader -&gt; System.Xml.Linq.XNode" Usage="System.Xml.Linq.XNode.ReadFrom reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XNode ^ ReadFrom(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2591,6 +2839,12 @@ NodeType: Element   Child1
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -2601,6 +2855,7 @@ NodeType: Element   Child1
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Linq.XNode</ReturnType>
@@ -2620,22 +2875,22 @@ NodeType: Element   Child1
   
  The reader that you pass to this method might throw exceptions. <xref:System.Xml.Linq.XNode.ReadFrom%2A> does not catch all exceptions thrown by the reader; the unhandled exceptions bubble up to the code that called <xref:System.Xml.Linq.XNode.ReadFrom%2A>. In particular, your code should be prepared to handle <xref:System.Xml.XmlException>.  
   
- For an example of how to stream a more complex document, see [How to: Stream XML Fragments with Access to Header Information](https://msdn.microsoft.com/library/01311522-9d03-4977-8641-2932c6f56092).  
+ For an example of how to stream a more complex document, see [How to stream XML fragments with access to header information](/dotnet/standard/linq/stream-xml-fragments-access-header-information).  
   
  Certain standard query operators, such as <xref:System.Linq.Enumerable.OrderBy%2A>, iterate their source, collect all of the data, sort it, and then finally yield the first item in the sequence. If you use a query operator that materializes its source before yielding the first item, you will not retain a small memory footprint.  
   
- For an example of using [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] to transform extremely large XML documents while maintaining a small memory footprint, see [How to: Perform Streaming Transform of Large XML Documents](https://msdn.microsoft.com/library/0759e428-6e59-4d80-a506-365d3a6a2b73).  
+ For an example of using LINQ to XML to transform extremely large XML documents while maintaining a small memory footprint, see [How to perform streaming transform of large XML documents](/dotnet/standard/linq/perform-streaming-transform-large-xml-documents).  
   
 ## Examples
 
 This example uses the following XML file, named *Source.xml*:
 
-[!code-xml[Source.xml](~/samples/snippets/csharp/api/system.xml.linq/xnode/readfrom/Source.xml)]
+:::code language="xml" source="~/snippets/csharp/System.Xml.Linq/XNode/ReadFrom/Source.xml":::
 
 The following example creates a custom axis method that uses <xref:System.Xml.Linq.XNode.ReadFrom%2A> and then queries the custom axis by using a LINQ query:
 
-[!code-csharp[XNode.ReadFromCS](~/samples/snippets/csharp/api/system.xml.linq/xnode/readfrom/Program.cs)]
-[!code-vb[XNode.ReadFromVB](~/samples/snippets/visualbasic/api/system.xml.linq/xnode/readfrom/Program.vb)]
+:::code language="csharp" source="~/snippets/csharp/System.Xml.Linq/XNode/ReadFrom/Program.cs":::
+:::code language="vb" source="~/snippets/visualbasic/api/system.xml.linq/xnode/readfrom/Program.vb":::
 
 This example produces the following output:
 
@@ -2648,23 +2903,31 @@ ccc
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Xml.XmlReader" /> is not positioned on a recognized node type.</exception>
         <exception cref="T:System.Xml.XmlException">The underlying <see cref="T:System.Xml.XmlReader" /> throws an exception.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </Member>
     <Member MemberName="ReadFromAsync">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Xml.Linq.XNode&gt; ReadFromAsync (System.Xml.XmlReader reader, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Xml.Linq.XNode&gt; ReadFromAsync(class System.Xml.XmlReader reader, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ReadFromAsync(System.Xml.XmlReader,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;System::Xml::Linq::XNode ^&gt; ^ ReadFromAsync(System::Xml::XmlReader ^ reader, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadFromAsync (reader As XmlReader, cancellationToken As CancellationToken) As Task(Of XNode)" />
       <MemberSignature Language="F#" Value="static member ReadFromAsync : System.Xml.XmlReader * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Xml.Linq.XNode&gt;" Usage="System.Xml.Linq.XNode.ReadFromAsync (reader, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;System::Xml::Linq::XNode ^&gt; ^ ReadFromAsync(System::Xml::XmlReader ^ reader, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -2673,15 +2936,17 @@ ccc
         <ReturnType>System.Threading.Tasks.Task&lt;System.Xml.Linq.XNode&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="reader" Type="System.Xml.XmlReader" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="reader" Type="System.Xml.XmlReader" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="reader">A reader positioned at the node to read into this <see cref="T:System.Xml.Linq.XNode" />.</param>
+        <param name="cancellationToken">A token that can be used to request cancellation of the asynchronous operation.</param>
+        <summary>Creates an <see cref="T:System.Xml.Linq.XNode" /> from an <see cref="T:System.Xml.XmlReader" />. The runtime type of the node is determined by the <see cref="P:System.Xml.Linq.XObject.NodeType" /> of the first node encountered in the reader.</summary>
+        <returns>An XNode that contains the nodes read from the reader.</returns>
+        <remarks>This method stores in the task it returns all non-usage exceptions that the method's synchronous counterpart can throw. If an exception is stored into the returned task, that exception will be thrown when the task is awaited. Usage exceptions, such as <see cref="T:System.ArgumentException" />, are still thrown synchronously. For the stored exceptions, see the exceptions thrown by <see cref="M:System.Xml.Linq.XNode.ReadFrom(System.Xml.XmlReader)" />.</remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Xml.XmlReader" /> is not positioned on a recognized node type.</exception>
+        <exception cref="T:System.OperationCanceledException">The cancellation token was canceled. This exception is stored into the returned task.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -2689,8 +2954,8 @@ ccc
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.Remove" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove();" />
       <MemberSignature Language="F#" Value="member this.Remove : unit -&gt; unit" Usage="xNode.Remove " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2698,6 +2963,12 @@ ccc
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -2708,6 +2979,7 @@ ccc
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2719,15 +2991,13 @@ ccc
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] programming, you should not manipulate or modify a set of nodes while you are querying for nodes in that set. In practical terms, this means that you should not iterate over a set of nodes and remove them. Instead, you should materialize them into a <xref:System.Collections.Generic.List%601> by using the <xref:System.Linq.Enumerable.ToList%2A> extension method. Then, you can iterate over the list to remove the nodes. For more information, see [Mixed Declarative Code/Imperative Code Bugs (LINQ to XML)](https://msdn.microsoft.com/library/d9a5c404-2b0e-46cd-a358-0e78773b3094).  
+ In LINQ to XML programming, you should not manipulate or modify a set of nodes while you are querying for nodes in that set. In practical terms, this means that you should not iterate over a set of nodes and remove them. Instead, you should materialize them into a <xref:System.Collections.Generic.List%601> by using the <xref:System.Linq.Enumerable.ToList%2A> extension method. Then, you can iterate over the list to remove the nodes. For more information, see [Mixed Declarative Code/Imperative Code Bugs (LINQ to XML)](/dotnet/standard/linq/mixed-declarative-imperative-code-bugs).  
   
  Alternatively, if you want to remove a set of nodes, it is recommended that you use the <xref:System.Xml.Linq.Extensions.Remove%2A?displayProperty=nameWithType> method. This method copies the nodes to a list, and then iterates over the list to remove the nodes.  
   
  This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
   
- The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.Remove%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this method might affect your performance.  
-  
-   
+ The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.Remove%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this method might affect your performance.
   
 ## Examples  
  The following example removes a node from its parent.  
@@ -2774,7 +3044,7 @@ Console.WriteLine(xmlTree)
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The parent is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ReplaceWith">
@@ -2789,13 +3059,11 @@ Console.WriteLine(xmlTree)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](/dotnet/standard/linq/valid-content-xelement-xdocument-objects).  
   
  This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
   
- The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.ReplaceWith%2A> method must  traverse the list of direct child nodes under the parent container. Therefore, using this method might affect your performance.  
-  
-   
+ The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.ReplaceWith%2A> method must  traverse the list of direct child nodes under the parent container. Therefore, using this method might affect your performance.
   
 ## Examples  
  The following example uses this method to replace the contents of a node with different content.  
@@ -2844,16 +3112,17 @@ Console.WriteLine(xmlTree)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ReplaceWith">
-      <MemberSignature Language="C#" Value="public void ReplaceWith (object content);" />
+      <MemberSignature Language="C#" Value="public void ReplaceWith (object content);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReplaceWith(object content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ReplaceWith(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReplaceWith (content As Object)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReplaceWith(System::Object ^ content);" />
       <MemberSignature Language="F#" Value="member this.ReplaceWith : obj -&gt; unit" Usage="xNode.ReplaceWith content" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReplaceWith(System::Object ^ content);" />
+      <MemberSignature Language="C#" Value="public void ReplaceWith (object? content);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2861,6 +3130,12 @@ Console.WriteLine(xmlTree)
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -2871,7 +3146,14 @@ Console.WriteLine(xmlTree)
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2889,11 +3171,9 @@ Console.WriteLine(xmlTree)
   
  The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.ReplaceWith%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this method might affect your performance.  
   
- For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](/dotnet/standard/linq/valid-content-xelement-xdocument-objects).  
   
- This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
-  
-   
+ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.
   
 ## Examples  
  The following example uses this method to replace the contents of a node with different content.  
@@ -2942,16 +3222,17 @@ Console.WriteLine(xmlTree)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </Member>
     <Member MemberName="ReplaceWith">
-      <MemberSignature Language="C#" Value="public void ReplaceWith (params object[] content);" />
+      <MemberSignature Language="C#" Value="public void ReplaceWith (params object[] content);" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReplaceWith(object[] content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ReplaceWith(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReplaceWith (ParamArray content As Object())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReplaceWith(... cli::array &lt;System::Object ^&gt; ^ content);" />
       <MemberSignature Language="F#" Value="member this.ReplaceWith : obj[] -&gt; unit" Usage="xNode.ReplaceWith content" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReplaceWith(... cli::array &lt;System::Object ^&gt; ^ content);" />
+      <MemberSignature Language="C#" Value="public void ReplaceWith (params object?[] content);" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2959,6 +3240,12 @@ Console.WriteLine(xmlTree)
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -2969,10 +3256,12 @@ Console.WriteLine(xmlTree)
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2982,7 +3271,12 @@ Console.WriteLine(xmlTree)
         <Parameter Name="content" Type="System.Object[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
+            </Attribute>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 2 })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 2 })&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -2998,14 +3292,12 @@ Console.WriteLine(xmlTree)
   
  The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.ReplaceWith%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this method might affect your performance.  
   
- For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](/dotnet/standard/linq/valid-content-xelement-xdocument-objects).  
   
- This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
-  
-   
+ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.
   
 ## Examples  
- The following example shows using the results of a [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] query as the input to this method.  
+ The following example shows using the results of a LINQ to XML query as the input to this method.  
   
 ```csharp  
 XElement srcTree = new XElement("Root",  
@@ -3074,7 +3366,7 @@ Console.WriteLine(xmlTree)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ToString">
@@ -3086,7 +3378,7 @@ Console.WriteLine(xmlTree)
       </AssemblyInfo>
       <Docs>
         <summary>Returns the XML for this node, optionally disabling formatting.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ToString">
@@ -3094,8 +3386,8 @@ Console.WriteLine(xmlTree)
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="xNode.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -3103,6 +3395,12 @@ Console.WriteLine(xmlTree)
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -3113,6 +3411,7 @@ Console.WriteLine(xmlTree)
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -3153,7 +3452,7 @@ Console.WriteLine(xmlTree)
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -3161,8 +3460,8 @@ Console.WriteLine(xmlTree)
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(valuetype System.Xml.Linq.SaveOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ToString(System.Xml.Linq.SaveOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (options As SaveOptions) As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(System::Xml::Linq::SaveOptions options);" />
       <MemberSignature Language="F#" Value="override this.ToString : System.Xml.Linq.SaveOptions -&gt; string" Usage="xNode.ToString options" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(System::Xml::Linq::SaveOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -3170,6 +3469,12 @@ Console.WriteLine(xmlTree)
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -3180,10 +3485,12 @@ Console.WriteLine(xmlTree)
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3230,7 +3537,7 @@ Console.WriteLine(root.ToString(SaveOptions.None))
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </Member>
     <Member MemberName="WriteTo">
@@ -3238,8 +3545,8 @@ Console.WriteLine(root.ToString(SaveOptions.None))
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteTo(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.WriteTo(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteTo (writer As XmlWriter)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteTo(System::Xml::XmlWriter ^ writer);" />
       <MemberSignature Language="F#" Value="abstract member WriteTo : System.Xml.XmlWriter -&gt; unit" Usage="xNode.WriteTo writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteTo(System::Xml::XmlWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -3247,6 +3554,12 @@ Console.WriteLine(root.ToString(SaveOptions.None))
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -3257,6 +3570,7 @@ Console.WriteLine(root.ToString(SaveOptions.None))
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -3271,9 +3585,7 @@ Console.WriteLine(root.ToString(SaveOptions.None))
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use this method to write code that does a streaming transform of a very large document. For more information, see [How to: Perform Streaming Transform of Large XML Documents](https://msdn.microsoft.com/library/0759e428-6e59-4d80-a506-365d3a6a2b73).  
-  
-   
+ You can use this method to write code that does a streaming transform of a very large document. For more information, see [How to perform streaming transform of large XML documents](/dotnet/standard/linq/perform-streaming-transform-large-xml-documents).
   
 ## Examples  
  The following example creates an <xref:System.Xml.XmlWriter> that writes to a <xref:System.Text.StringBuilder>. It then uses this method to write two XML trees to the writer.  
@@ -3336,23 +3648,31 @@ Console.WriteLine(sb.ToString())
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="/dotnet/standard/linq/linq-xml-overview">LINQ to XML overview</related>
       </Docs>
     </Member>
     <Member MemberName="WriteToAsync">
       <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task WriteToAsync (System.Xml.XmlWriter writer, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteToAsync(class System.Xml.XmlWriter writer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.WriteToAsync(System.Xml.XmlWriter,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Threading::Tasks::Task ^ WriteToAsync(System::Xml::XmlWriter ^ writer, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function WriteToAsync (writer As XmlWriter, cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="abstract member WriteToAsync : System.Xml.XmlWriter * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="xNode.WriteToAsync (writer, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Threading::Tasks::Task ^ WriteToAsync(System::Xml::XmlWriter ^ writer, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -3361,15 +3681,16 @@ Console.WriteLine(sb.ToString())
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="writer">The writer to write the current node into.</param>
+        <param name="cancellationToken">A token that can be used to request cancellation of the asynchronous operation.</param>
+        <summary>Writes the current node to an <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <returns>A task representing the asynchronous write operation.</returns>
+        <remarks>This method stores in the task it returns all non-usage exceptions that the method's synchronous counterpart can throw. If an exception is stored into the returned task, that exception will be thrown when the task is awaited. Usage exceptions, such as <see cref="T:System.ArgumentException" />, are still thrown synchronously. For the stored exceptions, see the exceptions thrown by <see cref="M:System.Xml.Linq.XNode.WriteTo(System.Xml.XmlWriter)" />.</remarks>
+        <exception cref="T:System.OperationCanceledException">The cancellation token was canceled. This exception is stored into the returned task.</exception>
       </Docs>
     </Member>
   </Members>

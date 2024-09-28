@@ -1,10 +1,10 @@
-﻿<Type Name="KeyInfoX509Data" FullName="System.Security.Cryptography.Xml.KeyInfoX509Data">
+<Type Name="KeyInfoX509Data" FullName="System.Security.Cryptography.Xml.KeyInfoX509Data">
   <TypeSignature Language="C#" Value="public class KeyInfoX509Data : System.Security.Cryptography.Xml.KeyInfoClause" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit KeyInfoX509Data extends System.Security.Cryptography.Xml.KeyInfoClause" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.KeyInfoX509Data" />
   <TypeSignature Language="VB.NET" Value="Public Class KeyInfoX509Data&#xA;Inherits KeyInfoClause" />
-  <TypeSignature Language="C++ CLI" Value="public ref class KeyInfoX509Data : System::Security::Cryptography::Xml::KeyInfoClause" />
   <TypeSignature Language="F#" Value="type KeyInfoX509Data = class&#xA;    inherit KeyInfoClause" />
+  <TypeSignature Language="C++ CLI" Value="public ref class KeyInfoX509Data : System::Security::Cryptography::Xml::KeyInfoClause" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -13,13 +13,32 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+    <AssemblyVersion>4.0.3.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Security.Cryptography.Xml" FromVersion="9.0.0.0" To="System.Security" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Security.Cryptography.Xml.KeyInfoClause</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Represents an <see langword="&lt;X509Data&gt;" /> subelement of an XMLDSIG or XML Encryption <see langword="&lt;KeyInfo&gt;" /> element.</summary>
     <remarks>
@@ -30,7 +49,7 @@
   
  Use the <xref:System.Security.Cryptography.Xml.KeyInfoX509Data> class whenever you need to include X.509 certificate data in an encrypted or signed XML document.  
   
- For more information about the `<X509Data>` element, see Section 4.4.4 of the XMLDSIG specification, which is available from the World Wide Web Consortium (W3C) at www.w3.org/TR/xmldsig-core/, or see the XML Encryption specification, which is available from the W3C at www.w3.org/TR/xmlenc-core/.  
+ For more information about the `<X509Data>` element, see Section 4.4.4 of the [XMLDSIG specification](https://www.w3.org/TR/xmldsig-core/) or the [XML Encryption specification](https://www.w3.org/TR/xmlenc-core/), which are available on the W3C website.  
   
    
   
@@ -39,15 +58,15 @@
   
  **Example #1**  
   
- [!code-cpp[System.Security.Cryptography.XML.KeyInfoX509Data_Detached#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Detached/CPP/examplecreatedetached.cpp#1)]
- [!code-csharp[System.Security.Cryptography.XML.KeyInfoX509Data_Detached#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Detached/CS/examplecreatedetached.cs#1)]
- [!code-vb[System.Security.Cryptography.XML.KeyInfoX509Data_Detached#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Detached/VB/examplecreatedetached.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Detached/CPP/examplecreatedetached.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography.Xml/KeyInfoX509Data/Overview/examplecreatedetached.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Detached/VB/examplecreatedetached.vb" id="Snippet1":::  
   
  **Example #2**  
   
- [!code-cpp[System.Security.Cryptography.XML.KeyInfoX509Data_Envelope#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Envelope/CPP/examplecreateenvelope.cpp#1)]
- [!code-csharp[System.Security.Cryptography.XML.KeyInfoX509Data_Envelope#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Envelope/CS/examplecreateenvelope.cs#1)]
- [!code-vb[System.Security.Cryptography.XML.KeyInfoX509Data_Envelope#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Envelope/VB/examplecreateenvelope.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Envelope/CPP/examplecreateenvelope.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography.Xml/KeyInfoX509Data/Overview/examplecreateenvelope.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Envelope/VB/examplecreateenvelope.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -77,8 +96,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -91,8 +115,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] rgbCert) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (rgbCert As Byte())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyInfoX509Data(cli::array &lt;System::Byte&gt; ^ rgbCert);" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.KeyInfoX509Data : byte[] -&gt; System.Security.Cryptography.Xml.KeyInfoX509Data" Usage="new System.Security.Cryptography.Xml.KeyInfoX509Data rgbCert" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyInfoX509Data(cli::array &lt;System::Byte&gt; ^ rgbCert);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -102,9 +126,20 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="rgbCert" Type="System.Byte[]" />
       </Parameters>
@@ -119,8 +154,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.X509Certificates.X509Certificate cert) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (cert As X509Certificate)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyInfoX509Data(System::Security::Cryptography::X509Certificates::X509Certificate ^ cert);" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.KeyInfoX509Data : System.Security.Cryptography.X509Certificates.X509Certificate -&gt; System.Security.Cryptography.Xml.KeyInfoX509Data" Usage="new System.Security.Cryptography.Xml.KeyInfoX509Data cert" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyInfoX509Data(System::Security::Cryptography::X509Certificates::X509Certificate ^ cert);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -130,9 +165,20 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="cert" Type="System.Security.Cryptography.X509Certificates.X509Certificate" />
       </Parameters>
@@ -147,15 +193,15 @@
   
  **Example #1**  
   
- [!code-cpp[System.Security.Cryptography.XML.KeyInfoX509Data_Detached#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Detached/CPP/examplecreatedetached.cpp#2)]
- [!code-csharp[System.Security.Cryptography.XML.KeyInfoX509Data_Detached#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Detached/CS/examplecreatedetached.cs#2)]
- [!code-vb[System.Security.Cryptography.XML.KeyInfoX509Data_Detached#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Detached/VB/examplecreatedetached.vb#2)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Detached/CPP/examplecreatedetached.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography.Xml/KeyInfoX509Data/Overview/examplecreatedetached.cs" id="Snippet2":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Detached/VB/examplecreatedetached.vb" id="Snippet2":::  
   
  **Example #2**  
   
- [!code-cpp[System.Security.Cryptography.XML.KeyInfoX509Data_Envelope#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Envelope/CPP/examplecreateenvelope.cpp#2)]
- [!code-csharp[System.Security.Cryptography.XML.KeyInfoX509Data_Envelope#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Envelope/CS/examplecreateenvelope.cs#2)]
- [!code-vb[System.Security.Cryptography.XML.KeyInfoX509Data_Envelope#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Envelope/VB/examplecreateenvelope.vb#2)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Envelope/CPP/examplecreateenvelope.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography.Xml/KeyInfoX509Data/Overview/examplecreateenvelope.cs" id="Snippet2":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.XML.KeyInfoX509Data_Envelope/VB/examplecreateenvelope.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -167,8 +213,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.X509Certificates.X509Certificate cert, valuetype System.Security.Cryptography.X509Certificates.X509IncludeOption includeOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate,System.Security.Cryptography.X509Certificates.X509IncludeOption)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (cert As X509Certificate, includeOption As X509IncludeOption)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyInfoX509Data(System::Security::Cryptography::X509Certificates::X509Certificate ^ cert, System::Security::Cryptography::X509Certificates::X509IncludeOption includeOption);" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.KeyInfoX509Data : System.Security.Cryptography.X509Certificates.X509Certificate * System.Security.Cryptography.X509Certificates.X509IncludeOption -&gt; System.Security.Cryptography.Xml.KeyInfoX509Data" Usage="new System.Security.Cryptography.Xml.KeyInfoX509Data (cert, includeOption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyInfoX509Data(System::Security::Cryptography::X509Certificates::X509Certificate ^ cert, System::Security::Cryptography::X509Certificates::X509IncludeOption includeOption);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -177,17 +223,27 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="cert" Type="System.Security.Cryptography.X509Certificates.X509Certificate" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
-        <Parameter Name="includeOption" Type="System.Security.Cryptography.X509Certificates.X509IncludeOption" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="cert" Type="System.Security.Cryptography.X509Certificates.X509Certificate" Index="0" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
+        <Parameter Name="includeOption" Type="System.Security.Cryptography.X509Certificates.X509IncludeOption" Index="1" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
       </Parameters>
       <Docs>
         <param name="cert">The <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate" /> object to initialize the new instance of <see cref="T:System.Security.Cryptography.Xml.KeyInfoX509Data" /> from.</param>
@@ -199,8 +255,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Security.Cryptography.Xml.KeyInfoX509Data> object while signing and verifying an XML document.  
   
- [!code-csharp[System.Security.Cryptography.Xml.KeyInfoX509Data#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.Xml.KeyInfoX509Data/cs/sample.cs#1)]
- [!code-vb[System.Security.Cryptography.Xml.KeyInfoX509Data#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.Xml.KeyInfoX509Data/vb/sample.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography.Xml/KeyInfoX509Data/.ctor/sample.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.Xml.KeyInfoX509Data/vb/sample.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -213,8 +269,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCertificate(class System.Security.Cryptography.X509Certificates.X509Certificate certificate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.AddCertificate(System.Security.Cryptography.X509Certificates.X509Certificate)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddCertificate (certificate As X509Certificate)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCertificate(System::Security::Cryptography::X509Certificates::X509Certificate ^ certificate);" />
       <MemberSignature Language="F#" Value="member this.AddCertificate : System.Security.Cryptography.X509Certificates.X509Certificate -&gt; unit" Usage="keyInfoX509Data.AddCertificate certificate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCertificate(System::Security::Cryptography::X509Certificates::X509Certificate ^ certificate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -224,9 +280,20 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -245,8 +312,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddIssuerSerial(string issuerName, string serialNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.AddIssuerSerial(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddIssuerSerial (issuerName As String, serialNumber As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddIssuerSerial(System::String ^ issuerName, System::String ^ serialNumber);" />
       <MemberSignature Language="F#" Value="member this.AddIssuerSerial : string * string -&gt; unit" Usage="keyInfoX509Data.AddIssuerSerial (issuerName, serialNumber)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddIssuerSerial(System::String ^ issuerName, System::String ^ serialNumber);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -256,9 +323,20 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -305,8 +383,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddSubjectKeyId(unsigned int8[] subjectKeyId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.AddSubjectKeyId(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddSubjectKeyId (subjectKeyId As Byte())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddSubjectKeyId(cli::array &lt;System::Byte&gt; ^ subjectKeyId);" />
       <MemberSignature Language="F#" Value="member this.AddSubjectKeyId : byte[] -&gt; unit" Usage="keyInfoX509Data.AddSubjectKeyId subjectKeyId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddSubjectKeyId(cli::array &lt;System::Byte&gt; ^ subjectKeyId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -316,9 +394,20 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -343,8 +432,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddSubjectKeyId(string subjectKeyId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.AddSubjectKeyId(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddSubjectKeyId (subjectKeyId As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddSubjectKeyId(System::String ^ subjectKeyId);" />
       <MemberSignature Language="F#" Value="member this.AddSubjectKeyId : string -&gt; unit" Usage="keyInfoX509Data.AddSubjectKeyId subjectKeyId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddSubjectKeyId(System::String ^ subjectKeyId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -353,19 +442,29 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="subjectKeyId" Type="System.String" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="subjectKeyId" Type="System.String" Index="0" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
       </Parameters>
       <Docs>
         <param name="subjectKeyId">A string that represents the subject key identifier (SKI) to add to the <see cref="T:System.Security.Cryptography.Xml.KeyInfoX509Data" /> object.</param>
@@ -385,8 +484,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddSubjectName(string subjectName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.AddSubjectName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddSubjectName (subjectName As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddSubjectName(System::String ^ subjectName);" />
       <MemberSignature Language="F#" Value="member this.AddSubjectName : string -&gt; unit" Usage="keyInfoX509Data.AddSubjectName subjectName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddSubjectName(System::String ^ subjectName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -396,9 +495,20 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -412,12 +522,13 @@
       </Docs>
     </Member>
     <Member MemberName="Certificates">
-      <MemberSignature Language="C#" Value="public System.Collections.ArrayList Certificates { get; }" />
+      <MemberSignature Language="C#" Value="public System.Collections.ArrayList? Certificates { get; }" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netstandard-2.0;windowsdesktop-8.0;windowsdesktop-9.0" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ArrayList Certificates" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.KeyInfoX509Data.Certificates" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Certificates As ArrayList" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ArrayList ^ Certificates { System::Collections::ArrayList ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Certificates : System.Collections.ArrayList" Usage="System.Security.Cryptography.Xml.KeyInfoX509Data.Certificates" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ArrayList ^ Certificates { System::Collections::ArrayList ^ get(); };" />
+      <MemberSignature Language="C#" Value="public System.Collections.ArrayList Certificates { get; }" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -427,8 +538,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ArrayList</ReturnType>
@@ -440,12 +556,13 @@
       </Docs>
     </Member>
     <Member MemberName="CRL">
-      <MemberSignature Language="C#" Value="public byte[] CRL { get; set; }" />
+      <MemberSignature Language="C#" Value="public byte[]? CRL { get; set; }" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netstandard-2.0;windowsdesktop-8.0;windowsdesktop-9.0" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] CRL" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.KeyInfoX509Data.CRL" />
       <MemberSignature Language="VB.NET" Value="Public Property CRL As Byte()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ CRL { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
       <MemberSignature Language="F#" Value="member this.CRL : byte[] with get, set" Usage="System.Security.Cryptography.Xml.KeyInfoX509Data.CRL" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ CRL { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
+      <MemberSignature Language="C#" Value="public byte[] CRL { get; set; }" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -455,8 +572,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -472,8 +594,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlElement GetXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.GetXml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetXml () As XmlElement" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlElement ^ GetXml();" />
       <MemberSignature Language="F#" Value="override this.GetXml : unit -&gt; System.Xml.XmlElement" Usage="keyInfoX509Data.GetXml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlElement ^ GetXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -483,9 +605,20 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Xml.XmlElement</ReturnType>
       </ReturnValue>
@@ -504,12 +637,13 @@
       </Docs>
     </Member>
     <Member MemberName="IssuerSerials">
-      <MemberSignature Language="C#" Value="public System.Collections.ArrayList IssuerSerials { get; }" />
+      <MemberSignature Language="C#" Value="public System.Collections.ArrayList? IssuerSerials { get; }" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netstandard-2.0;windowsdesktop-8.0;windowsdesktop-9.0" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ArrayList IssuerSerials" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.KeyInfoX509Data.IssuerSerials" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IssuerSerials As ArrayList" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ArrayList ^ IssuerSerials { System::Collections::ArrayList ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.IssuerSerials : System.Collections.ArrayList" Usage="System.Security.Cryptography.Xml.KeyInfoX509Data.IssuerSerials" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ArrayList ^ IssuerSerials { System::Collections::ArrayList ^ get(); };" />
+      <MemberSignature Language="C#" Value="public System.Collections.ArrayList IssuerSerials { get; }" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -519,8 +653,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ArrayList</ReturnType>
@@ -532,7 +671,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.KeyInfoX509Data.IssuerSerials%2A> property represents the `<X509IssuerSerial`> element of an XML digital signature using a list of <xref:System.Security.Cryptography.Xml.X509IssuerSerial> structures contained within.  The `<X509IssuerSerial`> element represents an issuer name and serial number pair, which identify a specific X.509v3 certificate.  
+ The <xref:System.Security.Cryptography.Xml.KeyInfoX509Data.IssuerSerials%2A> property represents the `<X509IssuerSerial>` element of an XML digital signature using a list of <xref:System.Security.Cryptography.Xml.X509IssuerSerial> structures contained within.  The `<X509IssuerSerial>` element represents an issuer name and serial number pair, which identify a specific X.509v3 certificate.  
   
  The issuer of an X.509 certificate is the name of the certification authority that issued the certificate. Certification authorities assign each certificate they issue a unique serial number.  
   
@@ -547,8 +686,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void LoadXml(class System.Xml.XmlElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyInfoX509Data.LoadXml(System.Xml.XmlElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub LoadXml (element As XmlElement)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void LoadXml(System::Xml::XmlElement ^ element);" />
       <MemberSignature Language="F#" Value="override this.LoadXml : System.Xml.XmlElement -&gt; unit" Usage="keyInfoX509Data.LoadXml element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void LoadXml(System::Xml::XmlElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -558,9 +697,20 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -587,12 +737,13 @@
       </Docs>
     </Member>
     <Member MemberName="SubjectKeyIds">
-      <MemberSignature Language="C#" Value="public System.Collections.ArrayList SubjectKeyIds { get; }" />
+      <MemberSignature Language="C#" Value="public System.Collections.ArrayList? SubjectKeyIds { get; }" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netstandard-2.0;windowsdesktop-8.0;windowsdesktop-9.0" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ArrayList SubjectKeyIds" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.KeyInfoX509Data.SubjectKeyIds" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubjectKeyIds As ArrayList" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ArrayList ^ SubjectKeyIds { System::Collections::ArrayList ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.SubjectKeyIds : System.Collections.ArrayList" Usage="System.Security.Cryptography.Xml.KeyInfoX509Data.SubjectKeyIds" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ArrayList ^ SubjectKeyIds { System::Collections::ArrayList ^ get(); };" />
+      <MemberSignature Language="C#" Value="public System.Collections.ArrayList SubjectKeyIds { get; }" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -602,8 +753,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ArrayList</ReturnType>
@@ -622,12 +778,13 @@
       </Docs>
     </Member>
     <Member MemberName="SubjectNames">
-      <MemberSignature Language="C#" Value="public System.Collections.ArrayList SubjectNames { get; }" />
+      <MemberSignature Language="C#" Value="public System.Collections.ArrayList? SubjectNames { get; }" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netstandard-2.0;windowsdesktop-8.0;windowsdesktop-9.0" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ArrayList SubjectNames" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.KeyInfoX509Data.SubjectNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubjectNames As ArrayList" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ArrayList ^ SubjectNames { System::Collections::ArrayList ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.SubjectNames : System.Collections.ArrayList" Usage="System.Security.Cryptography.Xml.KeyInfoX509Data.SubjectNames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ArrayList ^ SubjectNames { System::Collections::ArrayList ^ get(); };" />
+      <MemberSignature Language="C#" Value="public System.Collections.ArrayList SubjectNames { get; }" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -637,8 +794,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ArrayList</ReturnType>

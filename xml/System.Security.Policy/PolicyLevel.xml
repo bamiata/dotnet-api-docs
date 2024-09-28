@@ -1,10 +1,12 @@
-﻿<Type Name="PolicyLevel" FullName="System.Security.Policy.PolicyLevel">
+<Type Name="PolicyLevel" FullName="System.Security.Policy.PolicyLevel">
   <TypeSignature Language="C#" Value="public sealed class PolicyLevel" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit PolicyLevel extends System.Object" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PolicyLevel extends System.Object" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netstandard-2.0;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.PolicyLevel" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PolicyLevel" />
-  <TypeSignature Language="C++ CLI" Value="public ref class PolicyLevel sealed" />
   <TypeSignature Language="F#" Value="type PolicyLevel = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PolicyLevel sealed" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit PolicyLevel extends System.Object" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PolicyLevel extends System.Object" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -14,19 +16,30 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Security.Permissions</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+    <AssemblyVersion>4.0.3.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Security.Permissions" FromVersion="9.0.0.0" To="mscorlib" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-      <AttributeName>System.Serializable</AttributeName>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(true)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -37,7 +50,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the common language runtime (CLR) is moving away from providing security policy for computers. We recommend that you use [Windows Software Restriction Policies (SRP)](https://go.microsoft.com/fwlink/?LinkId=178101) or [AppLocker](https://go.microsoft.com/fwlink/?LinkId=178102) as a replacement for CLR security policy. The information in this topic applies to the .NET Framework version 3.5 and earlier; it does not apply to the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and later. For more information about this and other changes, see [Security Changes](~/docs/framework/security/security-changes.md).  
+>  Starting with the .NET Framework 4, the common language runtime (CLR) is moving away from providing security policy for computers. We recommend that you use [Windows Software Restriction Policies (SRP)](https://go.microsoft.com/fwlink/?LinkId=178101) or [AppLocker](https://go.microsoft.com/fwlink/?LinkId=178102) as a replacement for CLR security policy. The information in this topic applies to the .NET Framework version 3.5 and earlier; it does not apply to the .NET Framework 4 and later. For more information about this and other changes, see [Security Changes](/dotnet/framework/security/security-changes).  
   
  The highest level of security policy is enterprise-wide. Successive lower levels of hierarchy represent further policy restrictions, but can never grant more permissions than allowed by higher levels. The following policy levels are implemented:  
   
@@ -72,8 +85,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddFullTrustAssembly(class System.Security.Policy.StrongName sn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.AddFullTrustAssembly(System.Security.Policy.StrongName)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddFullTrustAssembly (sn As StrongName)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddFullTrustAssembly(System::Security::Policy::StrongName ^ sn);" />
       <MemberSignature Language="F#" Value="member this.AddFullTrustAssembly : System.Security.Policy.StrongName -&gt; unit" Usage="policyLevel.AddFullTrustAssembly sn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddFullTrustAssembly(System::Security::Policy::StrongName ^ sn);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -84,21 +97,26 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-          <AttributeName>System.Obsolete("All GACed assemblies are now fully trusted and all permissions now succeed on fully trusted code.")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2">
-          <AttributeName>System.Obsolete</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-2.0;netcore-2.1;netcore-2.2">
-          <AttributeName>System.Obsolete("Because all GAC assemblies always get full trust, the full trust list is no longer meaningful. You should install any assemblies that are used in security policy in the GAC to ensure they are trusted.")</AttributeName>
+        <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Obsolete("Because all GAC assemblies always get full trust, the full trust list is no longer meaningful. You should install any assemblies that are used in security policy in the GAC to ensure they are trusted.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Because all GAC assemblies always get full trust, the full trust list is no longer meaningful. You should install any assemblies that are used in security policy in the GAC to ensure they are trusted.")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0">
+          <AttributeName Language="C#">[System.Obsolete]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -128,8 +146,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddFullTrustAssembly(class System.Security.Policy.StrongNameMembershipCondition snMC) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.AddFullTrustAssembly(System.Security.Policy.StrongNameMembershipCondition)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddFullTrustAssembly (snMC As StrongNameMembershipCondition)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddFullTrustAssembly(System::Security::Policy::StrongNameMembershipCondition ^ snMC);" />
       <MemberSignature Language="F#" Value="member this.AddFullTrustAssembly : System.Security.Policy.StrongNameMembershipCondition -&gt; unit" Usage="policyLevel.AddFullTrustAssembly snMC" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddFullTrustAssembly(System::Security::Policy::StrongNameMembershipCondition ^ snMC);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -140,21 +158,26 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-          <AttributeName>System.Obsolete("All GACed assemblies are now fully trusted and all permissions now succeed on fully trusted code.")</AttributeName>
+        <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Obsolete("Because all GAC assemblies always get full trust, the full trust list is no longer meaningful. You should install any assemblies that are used in security policy in the GAC to ensure they are trusted.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Because all GAC assemblies always get full trust, the full trust list is no longer meaningful. You should install any assemblies that are used in security policy in the GAC to ensure they are trusted.")&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2">
-          <AttributeName>System.Obsolete</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-2.0;netcore-2.1;netcore-2.2">
-          <AttributeName>System.Obsolete("Because all GAC assemblies always get full trust, the full trust list is no longer meaningful. You should install any assemblies that are used in security policy in the GAC to ensure they are trusted.")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0">
+          <AttributeName Language="C#">[System.Obsolete]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -184,8 +207,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddNamedPermissionSet(class System.Security.NamedPermissionSet permSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.AddNamedPermissionSet(System.Security.NamedPermissionSet)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddNamedPermissionSet (permSet As NamedPermissionSet)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddNamedPermissionSet(System::Security::NamedPermissionSet ^ permSet);" />
       <MemberSignature Language="F#" Value="member this.AddNamedPermissionSet : System.Security.NamedPermissionSet -&gt; unit" Usage="policyLevel.AddNamedPermissionSet permSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddNamedPermissionSet(System::Security::NamedPermissionSet ^ permSet);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -196,12 +219,22 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Obsolete("Code Access Security is not supported or honored by the runtime.", DiagnosticId="SYSLIB0003", UrlFormat="https://aka.ms/dotnet-warnings/{0}")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Code Access Security is not supported or honored by the runtime.", DiagnosticId="SYSLIB0003", UrlFormat="https://aka.ms/dotnet-warnings/{0}")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -216,7 +249,10 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
+## Remarks
+
+[!INCLUDE[cas-deprecated](~/includes/cas-deprecated.md)]
+
  Named permission sets are scoped by policy level.  
   
  ]]></format>
@@ -230,8 +266,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.NamedPermissionSet ChangeNamedPermissionSet(string name, class System.Security.PermissionSet pSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.ChangeNamedPermissionSet(System.String,System.Security.PermissionSet)" />
       <MemberSignature Language="VB.NET" Value="Public Function ChangeNamedPermissionSet (name As String, pSet As PermissionSet) As NamedPermissionSet" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::NamedPermissionSet ^ ChangeNamedPermissionSet(System::String ^ name, System::Security::PermissionSet ^ pSet);" />
       <MemberSignature Language="F#" Value="member this.ChangeNamedPermissionSet : string * System.Security.PermissionSet -&gt; System.Security.NamedPermissionSet" Usage="policyLevel.ChangeNamedPermissionSet (name, pSet)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::NamedPermissionSet ^ ChangeNamedPermissionSet(System::String ^ name, System::Security::PermissionSet ^ pSet);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -242,12 +278,22 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Obsolete("Code Access Security is not supported or honored by the runtime.", DiagnosticId="SYSLIB0003", UrlFormat="https://aka.ms/dotnet-warnings/{0}")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Code Access Security is not supported or honored by the runtime.", DiagnosticId="SYSLIB0003", UrlFormat="https://aka.ms/dotnet-warnings/{0}")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -262,7 +308,15 @@
         <param name="pSet">The <see cref="T:System.Security.PermissionSet" /> that replaces the <see cref="T:System.Security.NamedPermissionSet" /> specified by the <paramref name="name" /> parameter.</param>
         <summary>Replaces a <see cref="T:System.Security.NamedPermissionSet" /> in the current policy level with the specified <see cref="T:System.Security.PermissionSet" />.</summary>
         <returns>A copy of the <see cref="T:System.Security.NamedPermissionSet" /> that was replaced.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+[!INCLUDE[cas-deprecated](~/includes/cas-deprecated.md)]
+
+]]></format>
+        </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.  
   
  -or-  
@@ -280,8 +334,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Policy.PolicyLevel CreateAppDomainLevel() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.CreateAppDomainLevel" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateAppDomainLevel () As PolicyLevel" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Policy::PolicyLevel ^ CreateAppDomainLevel();" />
       <MemberSignature Language="F#" Value="static member CreateAppDomainLevel : unit -&gt; System.Security.Policy.PolicyLevel" Usage="System.Security.Policy.PolicyLevel.CreateAppDomainLevel " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Policy::PolicyLevel ^ CreateAppDomainLevel();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -292,18 +346,26 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Obsolete("AppDomain policy levels are obsolete and will be removed in a future release of the .NET Framework. See http://go.microsoft.com/fwlink/?LinkID=155570 for more information.")</AttributeName>
+        <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Obsolete("AppDomain policy levels are obsolete. See https://go.microsoft.com/fwlink/?LinkID=155570 for more information.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("AppDomain policy levels are obsolete. See https://go.microsoft.com/fwlink/?LinkID=155570 for more information.")&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Obsolete("AppDomain policy levels are obsolete and will be removed in a future release of the .NET Framework. See http://go.microsoft.com/fwlink/?LinkID=155570 for more information.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("AppDomain policy levels are obsolete and will be removed in a future release of the .NET Framework. See http://go.microsoft.com/fwlink/?LinkID=155570 for more information.")&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="dotnet-plat-ext-2.1;netcore-2.1;netcore-2.2;netcore-2.0;dotnet-plat-ext-2.2">
-          <AttributeName>System.Obsolete("AppDomain policy levels are obsolete. See http://go.microsoft.com/fwlink/?LinkID=155570 for more information.")</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -316,7 +378,10 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
+## Remarks
+
+[!INCLUDE[cas-deprecated](~/includes/cas-deprecated.md)]
+
  This method creates a new <xref:System.Security.Policy.PolicyLevel> with the <xref:System.Security.Policy.PolicyLevel.Label%2A> "AppDomain". The new <xref:System.Security.Policy.PolicyLevel> will initially contain the same <xref:System.Security.NamedPermissionSet> objects as in the default computer policy, and will have a single root code group that grants `FullTrust` to all code.  
   
  ]]></format>
@@ -329,8 +394,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FromXml(class System.Security.SecurityElement e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.FromXml(System.Security.SecurityElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FromXml (e As SecurityElement)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void FromXml(System::Security::SecurityElement ^ e);" />
       <MemberSignature Language="F#" Value="member this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="policyLevel.FromXml e" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void FromXml(System::Security::SecurityElement ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -341,12 +406,18 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -368,8 +439,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList FullTrustAssemblies" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.PolicyLevel.FullTrustAssemblies" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FullTrustAssemblies As IList" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ FullTrustAssemblies { System::Collections::IList ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.FullTrustAssemblies : System.Collections.IList" Usage="System.Security.Policy.PolicyLevel.FullTrustAssemblies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ FullTrustAssemblies { System::Collections::IList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -380,21 +451,26 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-          <AttributeName>System.Obsolete("All GACed assemblies are now fully trusted and all permissions now succeed on fully trusted code.")</AttributeName>
+        <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Obsolete("Because all GAC assemblies always get full trust, the full trust list is no longer meaningful. You should install any assemblies that are used in security policy in the GAC to ensure they are trusted.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Because all GAC assemblies always get full trust, the full trust list is no longer meaningful. You should install any assemblies that are used in security policy in the GAC to ensure they are trusted.")&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2">
-          <AttributeName>System.Obsolete</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[get: System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-2.0;netcore-2.1;netcore-2.2">
-          <AttributeName>System.Obsolete("Because all GAC assemblies always get full trust, the full trust list is no longer meaningful. You should install any assemblies that are used in security policy in the GAC to ensure they are trusted.")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0">
+          <AttributeName Language="C#">[System.Obsolete]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -420,8 +496,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.NamedPermissionSet GetNamedPermissionSet(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.GetNamedPermissionSet(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNamedPermissionSet (name As String) As NamedPermissionSet" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::NamedPermissionSet ^ GetNamedPermissionSet(System::String ^ name);" />
       <MemberSignature Language="F#" Value="member this.GetNamedPermissionSet : string -&gt; System.Security.NamedPermissionSet" Usage="policyLevel.GetNamedPermissionSet name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::NamedPermissionSet ^ GetNamedPermissionSet(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -432,12 +508,22 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Obsolete("Code Access Security is not supported or honored by the runtime.", DiagnosticId="SYSLIB0003", UrlFormat="https://aka.ms/dotnet-warnings/{0}")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Code Access Security is not supported or honored by the runtime.", DiagnosticId="SYSLIB0003", UrlFormat="https://aka.ms/dotnet-warnings/{0}")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -450,7 +536,15 @@
         <param name="name">The name of the <see cref="T:System.Security.NamedPermissionSet" /> to find.</param>
         <summary>Returns the <see cref="T:System.Security.NamedPermissionSet" /> in the current policy level with the specified name.</summary>
         <returns>The <see cref="T:System.Security.NamedPermissionSet" /> in the current policy level with the specified name, if found; otherwise, <see langword="null" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+[!INCLUDE[cas-deprecated](~/includes/cas-deprecated.md)]
+
+]]></format>
+        </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
         <altmember cref="T:System.Security.NamedPermissionSet" />
       </Docs>
@@ -460,8 +554,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Label" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.PolicyLevel.Label" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Label As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Label { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Label : string" Usage="System.Security.Policy.PolicyLevel.Label" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Label { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -472,8 +566,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -496,8 +595,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList NamedPermissionSets" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.PolicyLevel.NamedPermissionSets" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NamedPermissionSets As IList" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ NamedPermissionSets { System::Collections::IList ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.NamedPermissionSets : System.Collections.IList" Usage="System.Security.Policy.PolicyLevel.NamedPermissionSets" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ NamedPermissionSets { System::Collections::IList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -508,12 +607,18 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[get: System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -530,8 +635,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Recover() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.Recover" />
       <MemberSignature Language="VB.NET" Value="Public Sub Recover ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Recover();" />
       <MemberSignature Language="F#" Value="member this.Recover : unit -&gt; unit" Usage="policyLevel.Recover " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Recover();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -542,12 +647,18 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -562,7 +673,7 @@
 ## Remarks  
  This method does not make modifications to the current <xref:System.Security.Policy.PolicyLevel>. Instead, it updates the <xref:System.Security.Policy.PolicyLevel> object's file and the <xref:System.Security.Policy.PolicyLevel> that the security system uses to evaluate policy.  
   
- This method is used by the caspol -recover option (see [Caspol.exe (Code Access Security Policy Tool)](~/docs/framework/tools/caspol-exe-code-access-security-policy-tool.md)).  
+ This method is used by the caspol -recover option (see [Caspol.exe (Code Access Security Policy Tool)](/dotnet/framework/tools/caspol-exe-code-access-security-policy-tool)).  
   
  ]]></format>
         </remarks>
@@ -584,8 +695,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveFullTrustAssembly(class System.Security.Policy.StrongName sn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.RemoveFullTrustAssembly(System.Security.Policy.StrongName)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveFullTrustAssembly (sn As StrongName)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveFullTrustAssembly(System::Security::Policy::StrongName ^ sn);" />
       <MemberSignature Language="F#" Value="member this.RemoveFullTrustAssembly : System.Security.Policy.StrongName -&gt; unit" Usage="policyLevel.RemoveFullTrustAssembly sn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveFullTrustAssembly(System::Security::Policy::StrongName ^ sn);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -596,21 +707,26 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-          <AttributeName>System.Obsolete("All GACed assemblies are now fully trusted and all permissions now succeed on fully trusted code.")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2">
-          <AttributeName>System.Obsolete</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-2.0;netcore-2.1;netcore-2.2">
-          <AttributeName>System.Obsolete("Because all GAC assemblies always get full trust, the full trust list is no longer meaningful. You should install any assemblies that are used in security policy in the GAC to ensure they are trusted.")</AttributeName>
+        <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Obsolete("Because all GAC assemblies always get full trust, the full trust list is no longer meaningful. You should install any assemblies that are used in security policy in the GAC to ensure they are trusted.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Because all GAC assemblies always get full trust, the full trust list is no longer meaningful. You should install any assemblies that are used in security policy in the GAC to ensure they are trusted.")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0">
+          <AttributeName Language="C#">[System.Obsolete]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -639,8 +755,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveFullTrustAssembly(class System.Security.Policy.StrongNameMembershipCondition snMC) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.RemoveFullTrustAssembly(System.Security.Policy.StrongNameMembershipCondition)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveFullTrustAssembly (snMC As StrongNameMembershipCondition)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveFullTrustAssembly(System::Security::Policy::StrongNameMembershipCondition ^ snMC);" />
       <MemberSignature Language="F#" Value="member this.RemoveFullTrustAssembly : System.Security.Policy.StrongNameMembershipCondition -&gt; unit" Usage="policyLevel.RemoveFullTrustAssembly snMC" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveFullTrustAssembly(System::Security::Policy::StrongNameMembershipCondition ^ snMC);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -651,21 +767,26 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-          <AttributeName>System.Obsolete("All GACed assemblies are now fully trusted and all permissions now succeed on fully trusted code.")</AttributeName>
+        <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Obsolete("Because all GAC assemblies always get full trust, the full trust list is no longer meaningful. You should install any assemblies that are used in security policy in the GAC to ensure they are trusted.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Because all GAC assemblies always get full trust, the full trust list is no longer meaningful. You should install any assemblies that are used in security policy in the GAC to ensure they are trusted.")&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2">
-          <AttributeName>System.Obsolete</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-2.0;netcore-2.1;netcore-2.2">
-          <AttributeName>System.Obsolete("Because all GAC assemblies always get full trust, the full trust list is no longer meaningful. You should install any assemblies that are used in security policy in the GAC to ensure they are trusted.")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0">
+          <AttributeName Language="C#">[System.Obsolete]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -704,8 +825,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.NamedPermissionSet RemoveNamedPermissionSet(class System.Security.NamedPermissionSet permSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.RemoveNamedPermissionSet(System.Security.NamedPermissionSet)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveNamedPermissionSet (permSet As NamedPermissionSet) As NamedPermissionSet" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::NamedPermissionSet ^ RemoveNamedPermissionSet(System::Security::NamedPermissionSet ^ permSet);" />
       <MemberSignature Language="F#" Value="member this.RemoveNamedPermissionSet : System.Security.NamedPermissionSet -&gt; System.Security.NamedPermissionSet" Usage="policyLevel.RemoveNamedPermissionSet permSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::NamedPermissionSet ^ RemoveNamedPermissionSet(System::Security::NamedPermissionSet ^ permSet);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -716,12 +837,22 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
+        <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Obsolete("Code Access Security is not supported or honored by the runtime.", DiagnosticId="SYSLIB0003", UrlFormat="https://aka.ms/dotnet-warnings/{0}")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Code Access Security is not supported or honored by the runtime.", DiagnosticId="SYSLIB0003", UrlFormat="https://aka.ms/dotnet-warnings/{0}")&gt;]</AttributeName>
+        </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -734,7 +865,15 @@
         <param name="permSet">The <see cref="T:System.Security.NamedPermissionSet" /> to remove from the current policy level.</param>
         <summary>Removes the specified <see cref="T:System.Security.NamedPermissionSet" /> from the current policy level.</summary>
         <returns>The <see cref="T:System.Security.NamedPermissionSet" /> that was removed.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+[!INCLUDE[cas-deprecated](~/includes/cas-deprecated.md)]
+
+]]></format>
+        </remarks>
         <exception cref="T:System.ArgumentException">The <see cref="T:System.Security.NamedPermissionSet" /> specified by the <paramref name="permSet" /> parameter was not found.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="permSet" /> parameter is <see langword="null" />.</exception>
       </Docs>
@@ -744,8 +883,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.NamedPermissionSet RemoveNamedPermissionSet(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.RemoveNamedPermissionSet(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveNamedPermissionSet (name As String) As NamedPermissionSet" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::NamedPermissionSet ^ RemoveNamedPermissionSet(System::String ^ name);" />
       <MemberSignature Language="F#" Value="member this.RemoveNamedPermissionSet : string -&gt; System.Security.NamedPermissionSet" Usage="policyLevel.RemoveNamedPermissionSet name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::NamedPermissionSet ^ RemoveNamedPermissionSet(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -756,12 +895,22 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Obsolete("Code Access Security is not supported or honored by the runtime.", DiagnosticId="SYSLIB0003", UrlFormat="https://aka.ms/dotnet-warnings/{0}")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Code Access Security is not supported or honored by the runtime.", DiagnosticId="SYSLIB0003", UrlFormat="https://aka.ms/dotnet-warnings/{0}")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -774,7 +923,15 @@
         <param name="name">The name of the <see cref="T:System.Security.NamedPermissionSet" /> to remove.</param>
         <summary>Removes the <see cref="T:System.Security.NamedPermissionSet" /> with the specified name from the current policy level.</summary>
         <returns>The <see cref="T:System.Security.NamedPermissionSet" /> that was removed.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+[!INCLUDE[cas-deprecated](~/includes/cas-deprecated.md)]
+
+]]></format>
+        </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="name" /> parameter is equal to the name of a reserved permission set.  
   
  -or-  
@@ -789,8 +946,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
       <MemberSignature Language="F#" Value="member this.Reset : unit -&gt; unit" Usage="policyLevel.Reset " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -801,12 +958,18 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -829,8 +992,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Policy.PolicyStatement Resolve (System.Security.Policy.Evidence evidence);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Policy.PolicyStatement Resolve(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.Resolve(System.Security.Policy.Evidence)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Policy::PolicyStatement ^ Resolve(System::Security::Policy::Evidence ^ evidence);" />
+      <MemberSignature Language="VB.NET" Value="Public Function Resolve (evidence As Evidence) As PolicyStatement" />
       <MemberSignature Language="F#" Value="member this.Resolve : System.Security.Policy.Evidence -&gt; System.Security.Policy.PolicyStatement" Usage="policyLevel.Resolve evidence" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Policy::PolicyStatement ^ Resolve(System::Security::Policy::Evidence ^ evidence);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -841,12 +1005,18 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -872,9 +1042,9 @@
 ## Examples  
  The following code shows the use of the <xref:System.Security.Policy.PolicyLevel.Resolve%2A> method. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyLevel> class.  
   
- [!code-cpp[system.Security.policy.policylevel#13](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.policy.policylevel/CPP/policylevel.cpp#13)]
- [!code-csharp[system.Security.policy.policylevel#13](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.policy.policylevel/CS/policylevel.cs#13)]
- [!code-vb[system.Security.policy.policylevel#13](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.policy.policylevel/VB/policylevel.vb#13)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Security.policy.policylevel/CPP/policylevel.cpp" id="Snippet13":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Policy/PolicyLevel/Resolve/policylevel.cs" id="Snippet13":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.policy.policylevel/VB/policylevel.vb" id="Snippet13":::  
   
  ]]></format>
         </remarks>
@@ -886,8 +1056,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Policy.CodeGroup ResolveMatchingCodeGroups (System.Security.Policy.Evidence evidence);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Policy.CodeGroup ResolveMatchingCodeGroups(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.ResolveMatchingCodeGroups(System.Security.Policy.Evidence)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Policy::CodeGroup ^ ResolveMatchingCodeGroups(System::Security::Policy::Evidence ^ evidence);" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResolveMatchingCodeGroups (evidence As Evidence) As CodeGroup" />
       <MemberSignature Language="F#" Value="member this.ResolveMatchingCodeGroups : System.Security.Policy.Evidence -&gt; System.Security.Policy.CodeGroup" Usage="policyLevel.ResolveMatchingCodeGroups evidence" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Policy::CodeGroup ^ ResolveMatchingCodeGroups(System::Security::Policy::Evidence ^ evidence);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -898,12 +1069,18 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -935,8 +1112,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Policy.CodeGroup RootCodeGroup" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.PolicyLevel.RootCodeGroup" />
       <MemberSignature Language="VB.NET" Value="Public Property RootCodeGroup As CodeGroup" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Policy::CodeGroup ^ RootCodeGroup { System::Security::Policy::CodeGroup ^ get(); void set(System::Security::Policy::CodeGroup ^ value); };" />
       <MemberSignature Language="F#" Value="member this.RootCodeGroup : System.Security.Policy.CodeGroup with get, set" Usage="System.Security.Policy.PolicyLevel.RootCodeGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Policy::CodeGroup ^ RootCodeGroup { System::Security::Policy::CodeGroup ^ get(); void set(System::Security::Policy::CodeGroup ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -947,15 +1124,22 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[get: System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>set: System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[set: System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -980,8 +1164,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string StoreLocation" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.PolicyLevel.StoreLocation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StoreLocation As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StoreLocation { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.StoreLocation : string" Usage="System.Security.Policy.PolicyLevel.StoreLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StoreLocation { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -992,12 +1176,18 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[get: System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1012,13 +1202,12 @@
 ## Examples  
  The following code shows how to display the store location for a policy level. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyLevel> class.  
   
- [!code-cpp[system.Security.policy.policylevel#15](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.policy.policylevel/CPP/policylevel.cpp#15)]
- [!code-csharp[system.Security.policy.policylevel#15](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.policy.policylevel/CS/policylevel.cs#15)]
- [!code-vb[system.Security.policy.policylevel#15](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.policy.policylevel/VB/policylevel.vb#15)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Security.policy.policylevel/CPP/policylevel.cpp" id="Snippet15":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Policy/PolicyLevel/Resolve/policylevel.cs" id="Snippet15":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.policy.policylevel/VB/policylevel.vb" id="Snippet15":::  
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.SecurityPermission">for ability to manipulate the principal object. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPolicy" />.</permission>
       </Docs>
     </Member>
     <Member MemberName="ToXml">
@@ -1026,8 +1215,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.SecurityElement ToXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public Function ToXml () As SecurityElement" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::SecurityElement ^ ToXml();" />
       <MemberSignature Language="F#" Value="member this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="policyLevel.ToXml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::SecurityElement ^ ToXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1038,12 +1227,18 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1061,8 +1256,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.PolicyLevelType Type" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.PolicyLevel.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As PolicyLevelType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::PolicyLevelType Type { System::Security::PolicyLevelType get(); };" />
       <MemberSignature Language="F#" Value="member this.Type : System.Security.PolicyLevelType" Usage="System.Security.Policy.PolicyLevel.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::PolicyLevelType Type { System::Security::PolicyLevelType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1072,12 +1267,18 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

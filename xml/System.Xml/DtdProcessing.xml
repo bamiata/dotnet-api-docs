@@ -1,10 +1,10 @@
-﻿<Type Name="DtdProcessing" FullName="System.Xml.DtdProcessing">
+<Type Name="DtdProcessing" FullName="System.Xml.DtdProcessing">
   <TypeSignature Language="C#" Value="public enum DtdProcessing" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DtdProcessing extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Xml.DtdProcessing" />
   <TypeSignature Language="VB.NET" Value="Public Enum DtdProcessing" />
-  <TypeSignature Language="C++ CLI" Value="public enum class DtdProcessing" />
   <TypeSignature Language="F#" Value="type DtdProcessing = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DtdProcessing" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,6 +12,12 @@
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
@@ -21,7 +27,16 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Xml" FromVersion="4.0.0.0" To="System.Xml.ReaderWriter" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Xml.ReaderWriter" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Xml.ReaderWriter" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Xml.ReaderWriter" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Xml.ReaderWriter" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Xml.ReaderWriter" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
@@ -31,7 +46,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration is set on the <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> property or the <xref:System.Xml.XmlTextReader.DtdProcessing%2A> property.  
+ This enumeration is set on the <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType> property or the <xref:System.Xml.XmlTextReader.DtdProcessing%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
     </remarks>
@@ -42,8 +57,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.DtdProcessing Ignore = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.DtdProcessing.Ignore" />
       <MemberSignature Language="VB.NET" Value="Ignore" />
-      <MemberSignature Language="C++ CLI" Value="Ignore" />
       <MemberSignature Language="F#" Value="Ignore = 1" Usage="System.Xml.DtdProcessing.Ignore" />
+      <MemberSignature Language="C++ CLI" Value="Ignore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -52,6 +67,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -61,23 +82,14 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.DtdProcessing</ReturnType>
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Causes the DOCTYPE element to be ignored. No DTD processing occurs.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  The DTD/DOCTYPE will be lost on output.  
-  
- ]]></format>
-        </remarks>
+        <summary>Causes the DOCTYPE element to be ignored. No DTD processing occurs, and the DTD/DOCTYPE is lost on output.</summary>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -85,8 +97,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.DtdProcessing Parse = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.DtdProcessing.Parse" />
       <MemberSignature Language="VB.NET" Value="Parse" />
-      <MemberSignature Language="C++ CLI" Value="Parse" />
       <MemberSignature Language="F#" Value="Parse = 2" Usage="System.Xml.DtdProcessing.Parse" />
+      <MemberSignature Language="C++ CLI" Value="Parse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -96,11 +108,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.DtdProcessing</ReturnType>
@@ -115,8 +134,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.DtdProcessing Prohibit = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.DtdProcessing.Prohibit" />
       <MemberSignature Language="VB.NET" Value="Prohibit" />
-      <MemberSignature Language="C++ CLI" Value="Prohibit" />
       <MemberSignature Language="F#" Value="Prohibit = 0" Usage="System.Xml.DtdProcessing.Prohibit" />
+      <MemberSignature Language="C++ CLI" Value="Prohibit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -125,6 +144,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -134,6 +159,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.DtdProcessing</ReturnType>

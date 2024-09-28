@@ -1,10 +1,11 @@
-﻿<Type Name="ThreadPriority" FullName="System.Threading.ThreadPriority">
+<Type Name="ThreadPriority" FullName="System.Threading.ThreadPriority">
   <TypeSignature Language="C#" Value="public enum ThreadPriority" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ThreadPriority extends System.Enum" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ThreadPriority extends System.Enum" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-2.0;netstandard-2.1" />
   <TypeSignature Language="DocId" Value="T:System.Threading.ThreadPriority" />
   <TypeSignature Language="VB.NET" Value="Public Enum ThreadPriority" />
-  <TypeSignature Language="C++ CLI" Value="public enum class ThreadPriority" />
   <TypeSignature Language="F#" Value="type ThreadPriority = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ThreadPriority" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ThreadPriority extends System.Enum" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -15,21 +16,37 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Threading.Thread</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Threading.Thread" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Threading.Thread" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Threading.Thread" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Threading.Thread" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Threading.Thread" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-      <AttributeName>System.Serializable</AttributeName>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(true)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -51,13 +68,13 @@
 ## Examples  
  The following code example shows the result of changing the priority of a thread. Three threads are created, the priority of one thread is set to BelowNormal, and the priority of a second is set to AboveNormal. Each thread increments a variable in a `while` loop and runs for a set time.  
   
- [!code-csharp[System.Threading.ThreadPriority#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Threading.ThreadPriority/cs/Example1.cs#1)]
- [!code-vb[System.Threading.ThreadPriority#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Threading.ThreadPriority/vb/Example1.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Threading/Thread/Priority/Example1.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/System.Threading.ThreadPriority/vb/Example1.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
     <altmember cref="T:System.Threading.Thread" />
-    <related type="Article" href="~/docs/standard/threading/scheduling-threads.md">Scheduling threads</related>
+    <related type="Article" href="/dotnet/standard/threading/scheduling-threads">Scheduling threads</related>
   </Docs>
   <Members>
     <Member MemberName="AboveNormal">
@@ -65,8 +82,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.ThreadPriority AboveNormal = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Threading.ThreadPriority.AboveNormal" />
       <MemberSignature Language="VB.NET" Value="AboveNormal" />
-      <MemberSignature Language="C++ CLI" Value="AboveNormal" />
       <MemberSignature Language="F#" Value="AboveNormal = 3" Usage="System.Threading.ThreadPriority.AboveNormal" />
+      <MemberSignature Language="C++ CLI" Value="AboveNormal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -78,11 +95,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.ThreadPriority</ReturnType>
@@ -97,8 +121,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.ThreadPriority BelowNormal = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Threading.ThreadPriority.BelowNormal" />
       <MemberSignature Language="VB.NET" Value="BelowNormal" />
-      <MemberSignature Language="C++ CLI" Value="BelowNormal" />
       <MemberSignature Language="F#" Value="BelowNormal = 1" Usage="System.Threading.ThreadPriority.BelowNormal" />
+      <MemberSignature Language="C++ CLI" Value="BelowNormal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -110,11 +134,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.ThreadPriority</ReturnType>
@@ -129,8 +160,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.ThreadPriority Highest = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Threading.ThreadPriority.Highest" />
       <MemberSignature Language="VB.NET" Value="Highest" />
-      <MemberSignature Language="C++ CLI" Value="Highest" />
       <MemberSignature Language="F#" Value="Highest = 4" Usage="System.Threading.ThreadPriority.Highest" />
+      <MemberSignature Language="C++ CLI" Value="Highest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -142,11 +173,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.ThreadPriority</ReturnType>
@@ -161,8 +199,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.ThreadPriority Lowest = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Threading.ThreadPriority.Lowest" />
       <MemberSignature Language="VB.NET" Value="Lowest" />
-      <MemberSignature Language="C++ CLI" Value="Lowest" />
       <MemberSignature Language="F#" Value="Lowest = 0" Usage="System.Threading.ThreadPriority.Lowest" />
+      <MemberSignature Language="C++ CLI" Value="Lowest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -174,11 +212,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.ThreadPriority</ReturnType>
@@ -193,8 +238,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.ThreadPriority Normal = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Threading.ThreadPriority.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
-      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberSignature Language="F#" Value="Normal = 2" Usage="System.Threading.ThreadPriority.Normal" />
+      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -206,11 +251,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.ThreadPriority</ReturnType>

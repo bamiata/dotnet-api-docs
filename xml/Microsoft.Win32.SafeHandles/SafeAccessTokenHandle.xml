@@ -1,15 +1,19 @@
-﻿<Type Name="SafeAccessTokenHandle" FullName="Microsoft.Win32.SafeHandles.SafeAccessTokenHandle">
+<Type Name="SafeAccessTokenHandle" FullName="Microsoft.Win32.SafeHandles.SafeAccessTokenHandle">
   <TypeSignature Language="C#" Value="public sealed class SafeAccessTokenHandle : System.Runtime.InteropServices.SafeHandle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SafeAccessTokenHandle extends System.Runtime.InteropServices.SafeHandle" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.SafeHandles.SafeAccessTokenHandle" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SafeAccessTokenHandle&#xA;Inherits SafeHandle" />
-  <TypeSignature Language="C++ CLI" Value="public ref class SafeAccessTokenHandle sealed : System::Runtime::InteropServices::SafeHandle" />
   <TypeSignature Language="F#" Value="type SafeAccessTokenHandle = class&#xA;    inherit SafeHandle" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SafeAccessTokenHandle sealed : System::Runtime::InteropServices::SafeHandle" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Principal.Windows</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
-    <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -21,28 +25,61 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Security.SecurityCritical</AttributeName>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a safe handle to a Windows thread or process access token. For more information, see <see href="https://docs.microsoft.com/windows/desktop/SecAuthZ/access-tokens">Access Tokens</see>.</summary>
+    <summary>Provides a safe handle to a Windows thread or process access token. For more information, see <see href="https://learn.microsoft.com/windows/desktop/SecAuthZ/access-tokens">Access Tokens</see>.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SafeAccessTokenHandle ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SafeHandles.SafeAccessTokenHandle.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SafeAccessTokenHandle();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a <see cref="T:Microsoft.Win32.SafeHandles.SafeAccessTokenHandle" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SafeAccessTokenHandle (IntPtr handle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(native int handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SafeHandles.SafeAccessTokenHandle.#ctor(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (handle As IntPtr)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SafeAccessTokenHandle(IntPtr handle);" />
       <MemberSignature Language="F#" Value="new Microsoft.Win32.SafeHandles.SafeAccessTokenHandle : nativeint -&gt; Microsoft.Win32.SafeHandles.SafeAccessTokenHandle" Usage="new Microsoft.Win32.SafeHandles.SafeAccessTokenHandle handle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SafeAccessTokenHandle(IntPtr handle);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -63,14 +100,18 @@
       <MemberSignature Language="ILAsm" Value=".property class Microsoft.Win32.SafeHandles.SafeAccessTokenHandle InvalidHandle" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.SafeHandles.SafeAccessTokenHandle.InvalidHandle" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property InvalidHandle As SafeAccessTokenHandle" />
+      <MemberSignature Language="F#" Value="static member InvalidHandle : Microsoft.Win32.SafeHandles.SafeAccessTokenHandle" Usage="Microsoft.Win32.SafeHandles.SafeAccessTokenHandle.InvalidHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::Win32::SafeHandles::SafeAccessTokenHandle ^ InvalidHandle { Microsoft::Win32::SafeHandles::SafeAccessTokenHandle ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.InvalidHandle : Microsoft.Win32.SafeHandles.SafeAccessTokenHandle" Usage="Microsoft.Win32.SafeHandles.SafeAccessTokenHandle.InvalidHandle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -78,8 +119,9 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[get: System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -96,14 +138,18 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInvalid" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.SafeHandles.SafeAccessTokenHandle.IsInvalid" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsInvalid As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsInvalid { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsInvalid : bool" Usage="Microsoft.Win32.SafeHandles.SafeAccessTokenHandle.IsInvalid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsInvalid { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -111,8 +157,9 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[get: System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -130,14 +177,18 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ReleaseHandle() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SafeHandles.SafeAccessTokenHandle.ReleaseHandle" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ReleaseHandle () As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ReleaseHandle();" />
       <MemberSignature Language="F#" Value="override this.ReleaseHandle : unit -&gt; bool" Usage="safeAccessTokenHandle.ReleaseHandle " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ReleaseHandle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -145,8 +196,9 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

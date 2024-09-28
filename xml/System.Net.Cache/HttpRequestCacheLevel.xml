@@ -1,10 +1,10 @@
-﻿<Type Name="HttpRequestCacheLevel" FullName="System.Net.Cache.HttpRequestCacheLevel">
+<Type Name="HttpRequestCacheLevel" FullName="System.Net.Cache.HttpRequestCacheLevel">
   <TypeSignature Language="C#" Value="public enum HttpRequestCacheLevel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpRequestCacheLevel extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.Cache.HttpRequestCacheLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum HttpRequestCacheLevel" />
-  <TypeSignature Language="C++ CLI" Value="public enum class HttpRequestCacheLevel" />
   <TypeSignature Language="F#" Value="type HttpRequestCacheLevel = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class HttpRequestCacheLevel" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -14,12 +14,26 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Net.Requests</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Requests" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Requests" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Requests" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Requests" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Requests" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
@@ -31,9 +45,9 @@
 ## Remarks  
  This enumeration is used to set the cache level specified by <xref:System.Net.Cache.HttpRequestCachePolicy> objects.  
   
- This BypassCache value is the default cache behavior specified in the machine configuration file that ships with the .NET Framework. No entries are taken from caches, added to caches, or removed from caches between the client and server.  
+ This `BypassCache` value is the default cache behavior specified in the machine configuration file that ships with the .NET Framework. No entries are taken from caches, added to caches, or removed from caches between the client and server.  
   
- The <xref:System.Net.HttpWebRequest.DefaultCachePolicy%2A?displayProperty=nameWithType> property is used to get or set the default cache policy for <xref:System.Net.HttpWebRequest.DefaultCachePolicy%2A?displayProperty=nameWithType> instances. The <xref:System.Net.WebRequest.CachePolicy%2A?displayProperty=nameWithType> property is used to get or set the default cache policy for a <xref:System.Net.WebRequest.CachePolicy%2A?displayProperty=nameWithType> instances. The <xref:System.Net.WebRequest.CachePolicy%2A?displayProperty=nameWithType> property is used to get or set the cache policy for a specific request.  
+ The <xref:System.Net.HttpWebRequest.DefaultCachePolicy%2A?displayProperty=nameWithType> property is used to get or set the default cache policy for <xref:System.Net.HttpWebRequest> instances. The <xref:System.Net.WebRequest.DefaultCachePolicy%2A?displayProperty=nameWithType> property is used to get or set the default cache policy for a <xref:System.Net.WebRequest> instance. The <xref:System.Net.WebRequest.CachePolicy%2A> property is used to get or set the cache policy for a specific request.  
   
  A copy of a resource is only added to the cache if the response stream for the resource is retrieved and read to the end of the stream. So another request for the same resource could use a cached copy, depending on the default cache policy level for this request.  
   
@@ -42,15 +56,15 @@
 ## Examples  
  The following code example sets the application domain's caching policy to Default.  
   
- [!code-cpp[NCLSimpleCache#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp#2)]
- [!code-csharp[NCLSimpleCache#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSimpleCache/CS/example.cs#2)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/WebRequest/CachePolicy/example.cs" id="Snippet2":::  
   
  ]]></format>
     </remarks>
     <altmember cref="P:System.Net.HttpWebRequest.DefaultCachePolicy" />
     <altmember cref="P:System.Net.WebRequest.CachePolicy" />
-    <related type="Article" href="~/docs/framework/network-programming/cache-management-for-network-applications.md">Cache Management for Network Applications</related>
-    <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md">RequestCaching Element (Network Settings)</related>
+    <related type="Article" href="/dotnet/framework/network-programming/cache-management-for-network-applications">Cache Management for Network Applications</related>
+    <related type="Article" href="/dotnet/framework/configure-apps/file-schema/network/requestcaching-element-network-settings">RequestCaching Element (Network Settings)</related>
   </Docs>
   <Members>
     <Member MemberName="BypassCache">
@@ -58,8 +72,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Cache.HttpRequestCacheLevel BypassCache = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Cache.HttpRequestCacheLevel.BypassCache" />
       <MemberSignature Language="VB.NET" Value="BypassCache" />
-      <MemberSignature Language="C++ CLI" Value="BypassCache" />
       <MemberSignature Language="F#" Value="BypassCache = 1" Usage="System.Net.Cache.HttpRequestCacheLevel.BypassCache" />
+      <MemberSignature Language="C++ CLI" Value="BypassCache" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -70,11 +84,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Cache.HttpRequestCacheLevel</ReturnType>
@@ -89,8 +110,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Cache.HttpRequestCacheLevel CacheIfAvailable = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Cache.HttpRequestCacheLevel.CacheIfAvailable" />
       <MemberSignature Language="VB.NET" Value="CacheIfAvailable" />
-      <MemberSignature Language="C++ CLI" Value="CacheIfAvailable" />
       <MemberSignature Language="F#" Value="CacheIfAvailable = 3" Usage="System.Net.Cache.HttpRequestCacheLevel.CacheIfAvailable" />
+      <MemberSignature Language="C++ CLI" Value="CacheIfAvailable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -101,11 +122,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Cache.HttpRequestCacheLevel</ReturnType>
@@ -120,8 +148,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Cache.HttpRequestCacheLevel CacheOnly = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Cache.HttpRequestCacheLevel.CacheOnly" />
       <MemberSignature Language="VB.NET" Value="CacheOnly" />
-      <MemberSignature Language="C++ CLI" Value="CacheOnly" />
       <MemberSignature Language="F#" Value="CacheOnly = 2" Usage="System.Net.Cache.HttpRequestCacheLevel.CacheOnly" />
+      <MemberSignature Language="C++ CLI" Value="CacheOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -132,11 +160,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Cache.HttpRequestCacheLevel</ReturnType>
@@ -151,8 +186,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Cache.HttpRequestCacheLevel CacheOrNextCacheOnly = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Cache.HttpRequestCacheLevel.CacheOrNextCacheOnly" />
       <MemberSignature Language="VB.NET" Value="CacheOrNextCacheOnly" />
-      <MemberSignature Language="C++ CLI" Value="CacheOrNextCacheOnly" />
       <MemberSignature Language="F#" Value="CacheOrNextCacheOnly = 7" Usage="System.Net.Cache.HttpRequestCacheLevel.CacheOrNextCacheOnly" />
+      <MemberSignature Language="C++ CLI" Value="CacheOrNextCacheOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -163,11 +198,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Cache.HttpRequestCacheLevel</ReturnType>
@@ -182,8 +224,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Cache.HttpRequestCacheLevel Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Cache.HttpRequestCacheLevel.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
-      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberSignature Language="F#" Value="Default = 0" Usage="System.Net.Cache.HttpRequestCacheLevel.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -194,11 +236,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Cache.HttpRequestCacheLevel</ReturnType>
@@ -213,8 +262,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Cache.HttpRequestCacheLevel NoCacheNoStore = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Cache.HttpRequestCacheLevel.NoCacheNoStore" />
       <MemberSignature Language="VB.NET" Value="NoCacheNoStore" />
-      <MemberSignature Language="C++ CLI" Value="NoCacheNoStore" />
       <MemberSignature Language="F#" Value="NoCacheNoStore = 6" Usage="System.Net.Cache.HttpRequestCacheLevel.NoCacheNoStore" />
+      <MemberSignature Language="C++ CLI" Value="NoCacheNoStore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -225,11 +274,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Cache.HttpRequestCacheLevel</ReturnType>
@@ -244,8 +300,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Cache.HttpRequestCacheLevel Refresh = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Cache.HttpRequestCacheLevel.Refresh" />
       <MemberSignature Language="VB.NET" Value="Refresh" />
-      <MemberSignature Language="C++ CLI" Value="Refresh" />
       <MemberSignature Language="F#" Value="Refresh = 8" Usage="System.Net.Cache.HttpRequestCacheLevel.Refresh" />
+      <MemberSignature Language="C++ CLI" Value="Refresh" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -256,11 +312,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Cache.HttpRequestCacheLevel</ReturnType>
@@ -275,8 +338,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Cache.HttpRequestCacheLevel Reload = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Cache.HttpRequestCacheLevel.Reload" />
       <MemberSignature Language="VB.NET" Value="Reload" />
-      <MemberSignature Language="C++ CLI" Value="Reload" />
       <MemberSignature Language="F#" Value="Reload = 5" Usage="System.Net.Cache.HttpRequestCacheLevel.Reload" />
+      <MemberSignature Language="C++ CLI" Value="Reload" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -287,11 +350,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Cache.HttpRequestCacheLevel</ReturnType>
@@ -306,8 +376,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Cache.HttpRequestCacheLevel Revalidate = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Cache.HttpRequestCacheLevel.Revalidate" />
       <MemberSignature Language="VB.NET" Value="Revalidate" />
-      <MemberSignature Language="C++ CLI" Value="Revalidate" />
       <MemberSignature Language="F#" Value="Revalidate = 4" Usage="System.Net.Cache.HttpRequestCacheLevel.Revalidate" />
+      <MemberSignature Language="C++ CLI" Value="Revalidate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -318,11 +388,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Cache.HttpRequestCacheLevel</ReturnType>

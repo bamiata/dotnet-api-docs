@@ -1,22 +1,29 @@
-﻿<Type Name="ResourceSectionBuilder" FullName="System.Reflection.PortableExecutable.ResourceSectionBuilder">
+<Type Name="ResourceSectionBuilder" FullName="System.Reflection.PortableExecutable.ResourceSectionBuilder">
   <TypeSignature Language="C#" Value="public abstract class ResourceSectionBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ResourceSectionBuilder extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.ResourceSectionBuilder" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ResourceSectionBuilder" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ResourceSectionBuilder abstract" />
   <TypeSignature Language="F#" Value="type ResourceSectionBuilder = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ResourceSectionBuilder abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
     <AssemblyVersion>1.4.2.0</AssemblyVersion>
     <AssemblyVersion>1.4.3.0</AssemblyVersion>
+    <AssemblyVersion>1.4.4.0</AssemblyVersion>
+    <AssemblyVersion>1.4.5.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines the base class for a PE resource section builder. Derive from <see cref="T:System.Reflection.PortableExecutable.ResourceSectionBuilder" /> to provide serialization logic for native resources.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,10 +39,15 @@
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.PortableExecutable.ResourceSectionBuilder" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -44,15 +56,26 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Serialize(class System.Reflection.Metadata.BlobBuilder builder, valuetype System.Reflection.PortableExecutable.SectionLocation location) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.ResourceSectionBuilder.Serialize(System.Reflection.Metadata.BlobBuilder,System.Reflection.PortableExecutable.SectionLocation)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Sub Serialize (builder As BlobBuilder, location As SectionLocation)" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract void Serialize(System::Reflection::Metadata::BlobBuilder ^ builder, System::Reflection::PortableExecutable::SectionLocation location);" />
       <MemberSignature Language="F#" Value="abstract member Serialize : System.Reflection.Metadata.BlobBuilder * System.Reflection.PortableExecutable.SectionLocation -&gt; unit" Usage="resourceSectionBuilder.Serialize (builder, location)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract void Serialize(System::Reflection::Metadata::BlobBuilder ^ builder, System::Reflection::PortableExecutable::SectionLocation location);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -61,9 +84,9 @@
         <Parameter Name="location" Type="System.Reflection.PortableExecutable.SectionLocation" />
       </Parameters>
       <Docs>
-        <param name="builder">To be added.</param>
-        <param name="location">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="builder">A blob that contains the data to serialize.</param>
+        <param name="location">The location to which to serialize <paramref name="builder" />.</param>
+        <summary>Serializes the specified resource.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

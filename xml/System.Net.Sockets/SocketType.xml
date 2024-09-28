@@ -1,15 +1,22 @@
-﻿<Type Name="SocketType" FullName="System.Net.Sockets.SocketType">
+<Type Name="SocketType" FullName="System.Net.Sockets.SocketType">
   <TypeSignature Language="C#" Value="public enum SocketType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SocketType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SocketType" />
   <TypeSignature Language="VB.NET" Value="Public Enum SocketType" />
-  <TypeSignature Language="C++ CLI" Value="public enum class SocketType" />
   <TypeSignature Language="F#" Value="type SocketType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SocketType" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -21,10 +28,19 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Sockets" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Sockets" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Sockets" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Sockets" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Sockets" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+    <TypeForwarding From="System.Net" FromVersion="4.0.0.0" To="System" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
@@ -44,9 +60,9 @@
 ## Examples  
  The following example uses <xref:System.Net.Sockets.SocketType.Stream?displayProperty=nameWithType> as a parameter to the <xref:System.Net.Sockets.Socket> constructor.  
   
- [!code-cpp[SelectModeExample#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SelectModeExample/CPP/source.cpp#1)]
- [!code-csharp[SelectModeExample#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SelectModeExample/CS/source.cs#1)]
- [!code-vb[SelectModeExample#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SelectModeExample/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/SelectModeExample/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net.Sockets/SelectMode/Overview/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Remoting/SelectModeExample/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -60,14 +76,21 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketType Dgram = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketType.Dgram" />
       <MemberSignature Language="VB.NET" Value="Dgram" />
-      <MemberSignature Language="C++ CLI" Value="Dgram" />
       <MemberSignature Language="F#" Value="Dgram = 2" Usage="System.Net.Sockets.SocketType.Dgram" />
+      <MemberSignature Language="C++ CLI" Value="Dgram" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -79,6 +102,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -96,14 +120,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketType Raw = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketType.Raw" />
       <MemberSignature Language="VB.NET" Value="Raw" />
-      <MemberSignature Language="C++ CLI" Value="Raw" />
       <MemberSignature Language="F#" Value="Raw = 3" Usage="System.Net.Sockets.SocketType.Raw" />
+      <MemberSignature Language="C++ CLI" Value="Raw" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -115,6 +145,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -132,14 +163,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketType Rdm = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketType.Rdm" />
       <MemberSignature Language="VB.NET" Value="Rdm" />
-      <MemberSignature Language="C++ CLI" Value="Rdm" />
       <MemberSignature Language="F#" Value="Rdm = 4" Usage="System.Net.Sockets.SocketType.Rdm" />
+      <MemberSignature Language="C++ CLI" Value="Rdm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -151,6 +188,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -168,14 +206,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketType Seqpacket = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketType.Seqpacket" />
       <MemberSignature Language="VB.NET" Value="Seqpacket" />
-      <MemberSignature Language="C++ CLI" Value="Seqpacket" />
       <MemberSignature Language="F#" Value="Seqpacket = 5" Usage="System.Net.Sockets.SocketType.Seqpacket" />
+      <MemberSignature Language="C++ CLI" Value="Seqpacket" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -187,6 +231,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -204,14 +249,21 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketType Stream = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketType.Stream" />
       <MemberSignature Language="VB.NET" Value="Stream" />
-      <MemberSignature Language="C++ CLI" Value="Stream" />
       <MemberSignature Language="F#" Value="Stream = 1" Usage="System.Net.Sockets.SocketType.Stream" />
+      <MemberSignature Language="C++ CLI" Value="Stream" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -223,6 +275,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -240,14 +293,21 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketType Unknown = int32(-1)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketType.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
-      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberSignature Language="F#" Value="Unknown = -1" Usage="System.Net.Sockets.SocketType.Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -259,6 +319,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

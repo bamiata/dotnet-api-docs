@@ -1,10 +1,10 @@
-﻿<Type Name="CivicAddressResolver" FullName="System.Device.Location.CivicAddressResolver">
+<Type Name="CivicAddressResolver" FullName="System.Device.Location.CivicAddressResolver">
   <TypeSignature Language="C#" Value="public sealed class CivicAddressResolver : System.Device.Location.ICivicAddressResolver" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CivicAddressResolver extends System.Object implements class System.Device.Location.ICivicAddressResolver" />
   <TypeSignature Language="DocId" Value="T:System.Device.Location.CivicAddressResolver" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CivicAddressResolver&#xA;Implements ICivicAddressResolver" />
-  <TypeSignature Language="C++ CLI" Value="public ref class CivicAddressResolver sealed : System::Device::Location::ICivicAddressResolver" />
   <TypeSignature Language="F#" Value="type CivicAddressResolver = class&#xA;    interface ICivicAddressResolver" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CivicAddressResolver sealed : System::Device::Location::ICivicAddressResolver" />
   <AssemblyInfo>
     <AssemblyName>System.Device</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,13 +30,13 @@
 ## Examples  
  The following program shows how to call <xref:System.Device.Location.CivicAddressResolver.ResolveAddress%2A> to resolve a civic address synchronously.  
   
- [!code-csharp[System.Device.Location.ResolveCivicAddressSync#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/cs/resolvecivicaddresssync.cs#1)]
- [!code-vb[System.Device.Location.ResolveCivicAddressSync#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/vb/resolvecivicaddresssync.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Device.Location/CivicAddress/Overview/resolvecivicaddresssync.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/vb/resolvecivicaddresssync.vb" id="Snippet1":::  
   
  The following program shows how to call <xref:System.Device.Location.CivicAddressResolver.ResolveAddressAsync%2A> to resolve a civic address asynchronously.  
   
- [!code-csharp[System.Device.Location.ResolveCivicAddressSync#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/cs/resolvecivicaddresssync.cs#1)]
- [!code-vb[System.Device.Location.ResolveCivicAddressSync#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/vb/resolvecivicaddresssync.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Device.Location/CivicAddress/Overview/resolvecivicaddresssync.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/vb/resolvecivicaddresssync.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -76,8 +76,8 @@ CivicAddressResolver resolver = new CivicAddressResolver();
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Device.Location.CivicAddress ResolveAddress(class System.Device.Location.GeoCoordinate coordinate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Device.Location.CivicAddressResolver.ResolveAddress(System.Device.Location.GeoCoordinate)" />
       <MemberSignature Language="VB.NET" Value="Public Function ResolveAddress (coordinate As GeoCoordinate) As CivicAddress" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Device::Location::CivicAddress ^ ResolveAddress(System::Device::Location::GeoCoordinate ^ coordinate);" />
       <MemberSignature Language="F#" Value="abstract member ResolveAddress : System.Device.Location.GeoCoordinate -&gt; System.Device.Location.CivicAddress&#xA;override this.ResolveAddress : System.Device.Location.GeoCoordinate -&gt; System.Device.Location.CivicAddress" Usage="civicAddressResolver.ResolveAddress coordinate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Device::Location::CivicAddress ^ ResolveAddress(System::Device::Location::GeoCoordinate ^ coordinate);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Device.Location.ICivicAddressResolver.ResolveAddress(System.Device.Location.GeoCoordinate)</InterfaceMember>
@@ -107,8 +107,8 @@ CivicAddressResolver resolver = new CivicAddressResolver();
 ## Examples  
  The following program demonstrates how to call <xref:System.Device.Location.CivicAddressResolver.ResolveAddress%2A> to resolve a civic address synchronously.  
   
- [!code-csharp[System.Device.Location.ResolveCivicAddressSync#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/cs/resolvecivicaddresssync.cs#1)]
- [!code-vb[System.Device.Location.ResolveCivicAddressSync#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/vb/resolvecivicaddresssync.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Device.Location/CivicAddress/Overview/resolvecivicaddresssync.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/vb/resolvecivicaddresssync.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -123,8 +123,8 @@ CivicAddressResolver resolver = new CivicAddressResolver();
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResolveAddressAsync(class System.Device.Location.GeoCoordinate coordinate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Device.Location.CivicAddressResolver.ResolveAddressAsync(System.Device.Location.GeoCoordinate)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResolveAddressAsync (coordinate As GeoCoordinate)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ResolveAddressAsync(System::Device::Location::GeoCoordinate ^ coordinate);" />
       <MemberSignature Language="F#" Value="abstract member ResolveAddressAsync : System.Device.Location.GeoCoordinate -&gt; unit&#xA;override this.ResolveAddressAsync : System.Device.Location.GeoCoordinate -&gt; unit" Usage="civicAddressResolver.ResolveAddressAsync coordinate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ResolveAddressAsync(System::Device::Location::GeoCoordinate ^ coordinate);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Device.Location.ICivicAddressResolver.ResolveAddressAsync(System.Device.Location.GeoCoordinate)</InterfaceMember>
@@ -143,15 +143,19 @@ CivicAddressResolver resolver = new CivicAddressResolver();
         <param name="coordinate">The <see cref="T:System.Device.Location.GeoCoordinate" /> containing the location to resolve to a civic address.</param>
         <summary>Resolves an address asynchronously from a location that is based on latitude and longitude. The call does not block execution of the calling thread while the address is being resolved.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This method stores in the task it returns all non-usage exceptions that the method's synchronous counterpart can throw. If an exception is stored into the returned task, that exception will be thrown when the task is awaited. Usage exceptions, such as <xref:System.ArgumentException>, are still thrown synchronously. For the stored exceptions, see the exceptions thrown by <xref:System.Device.Location.CivicAddressResolver.ResolveAddress(System.Device.Location.GeoCoordinate)>.
   
 ## Examples  
  The following program shows how to call <xref:System.Device.Location.CivicAddressResolver.ResolveAddressAsync%2A> to resolve a civic address asynchronously.  
   
- [!code-csharp[System.Device.Location.ResolveCivicAddressAsync#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddressasync/cs/resolvecivicaddressasync.cs#1)]
- [!code-vb[System.Device.Location.ResolveCivicAddressAsync#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddressasync/vb/resolvecivicaddressasync.vb#1)]  
-  
- ]]></format>
+ :::code language="csharp" source="~/snippets/csharp/System.Device.Location/CivicAddress/Overview/resolvecivicaddressasync.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddressasync/vb/resolvecivicaddressasync.vb" id="Snippet1":::
+
+]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="coordinate" /> is <see langword="null" />.</exception>
@@ -163,9 +167,10 @@ CivicAddressResolver resolver = new CivicAddressResolver();
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Device.Location.ResolveAddressCompletedEventArgs&gt; ResolveAddressCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Device.Location.ResolveAddressCompletedEventArgs&gt; ResolveAddressCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Device.Location.CivicAddressResolver.ResolveAddressCompleted" />
-      <MemberSignature Language="VB.NET" Value="Public Event ResolveAddressCompleted As EventHandler(Of ResolveAddressCompletedEventArgs) " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;System::Device::Location::ResolveAddressCompletedEventArgs ^&gt; ^ ResolveAddressCompleted;" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ResolveAddressCompleted As EventHandler(Of ResolveAddressCompletedEventArgs) " FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2" />
       <MemberSignature Language="F#" Value="member this.ResolveAddressCompleted : EventHandler&lt;System.Device.Location.ResolveAddressCompletedEventArgs&gt; " Usage="member this.ResolveAddressCompleted : System.EventHandler&lt;System.Device.Location.ResolveAddressCompletedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;System::Device::Location::ResolveAddressCompletedEventArgs ^&gt; ^ ResolveAddressCompleted;" />
+      <MemberSignature Language="VB.NET" Value="Public Event ResolveAddressCompleted As EventHandler(Of ResolveAddressCompletedEventArgs) " FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:System.Device.Location.ICivicAddressResolver.ResolveAddressCompleted</InterfaceMember>
@@ -185,8 +190,8 @@ CivicAddressResolver resolver = new CivicAddressResolver();
 ## Examples  
  The following program shows how to call <xref:System.Device.Location.CivicAddressResolver.ResolveAddressAsync%2A> to resolve a civic address asynchronously.  
   
- [!code-csharp[System.Device.Location.ResolveCivicAddressAsync#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddressasync/cs/resolvecivicaddressasync.cs#1)]
- [!code-vb[System.Device.Location.ResolveCivicAddressAsync#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddressasync/vb/resolvecivicaddressasync.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Device.Location/CivicAddress/Overview/resolvecivicaddressasync.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddressasync/vb/resolvecivicaddressasync.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>

@@ -1,15 +1,36 @@
-﻿<Type Name="SecurityKeyEntropyMode" FullName="System.ServiceModel.Security.SecurityKeyEntropyMode">
+<Type Name="SecurityKeyEntropyMode" FullName="System.ServiceModel.Security.SecurityKeyEntropyMode">
   <TypeSignature Language="C#" Value="public enum SecurityKeyEntropyMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SecurityKeyEntropyMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.SecurityKeyEntropyMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum SecurityKeyEntropyMode" />
-  <TypeSignature Language="C++ CLI" Value="public enum class SecurityKeyEntropyMode" />
   <TypeSignature Language="F#" Value="type SecurityKeyEntropyMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SecurityKeyEntropyMode" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Security</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.9.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.2.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Private.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.ServiceModel.Security" FromVersion="6.0.0.0" To="System.ServiceModel.Primitives" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
@@ -30,13 +51,27 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Security.SecurityKeyEntropyMode ClientEntropy = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.SecurityKeyEntropyMode.ClientEntropy" />
       <MemberSignature Language="VB.NET" Value="ClientEntropy" />
-      <MemberSignature Language="C++ CLI" Value="ClientEntropy" />
       <MemberSignature Language="F#" Value="ClientEntropy = 0" Usage="System.ServiceModel.Security.SecurityKeyEntropyMode.ClientEntropy" />
+      <MemberSignature Language="C++ CLI" Value="ClientEntropy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityKeyEntropyMode</ReturnType>
@@ -51,20 +86,34 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Security.SecurityKeyEntropyMode CombinedEntropy = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.SecurityKeyEntropyMode.CombinedEntropy" />
       <MemberSignature Language="VB.NET" Value="CombinedEntropy" />
-      <MemberSignature Language="C++ CLI" Value="CombinedEntropy" />
       <MemberSignature Language="F#" Value="CombinedEntropy = 2" Usage="System.ServiceModel.Security.SecurityKeyEntropyMode.CombinedEntropy" />
+      <MemberSignature Language="C++ CLI" Value="CombinedEntropy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityKeyEntropyMode</ReturnType>
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The client and server both provide entropy that is combined using the P-SHA1 function to derive the key of the issued token.</summary>
+        <summary>The client and server both provide entropy that is combined using the P-SHA1 function to derive the key of the issued token. Due to collision problems with SHA1, Microsoft recommends a security model based on SHA256 or better.</summary>
       </Docs>
     </Member>
     <Member MemberName="ServerEntropy">
@@ -72,13 +121,27 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Security.SecurityKeyEntropyMode ServerEntropy = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.SecurityKeyEntropyMode.ServerEntropy" />
       <MemberSignature Language="VB.NET" Value="ServerEntropy" />
-      <MemberSignature Language="C++ CLI" Value="ServerEntropy" />
       <MemberSignature Language="F#" Value="ServerEntropy = 1" Usage="System.ServiceModel.Security.SecurityKeyEntropyMode.ServerEntropy" />
+      <MemberSignature Language="C++ CLI" Value="ServerEntropy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityKeyEntropyMode</ReturnType>

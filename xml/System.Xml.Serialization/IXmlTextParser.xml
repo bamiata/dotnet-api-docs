@@ -1,10 +1,11 @@
-﻿<Type Name="IXmlTextParser" FullName="System.Xml.Serialization.IXmlTextParser">
+<Type Name="IXmlTextParser" FullName="System.Xml.Serialization.IXmlTextParser">
   <TypeSignature Language="C#" Value="public interface IXmlTextParser" />
-  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXmlTextParser" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXmlTextParser" FrameworkAlternate="net-5.0;net-6.0;net-7.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.IXmlTextParser" />
   <TypeSignature Language="VB.NET" Value="Public Interface IXmlTextParser" />
-  <TypeSignature Language="C++ CLI" Value="public interface class IXmlTextParser" />
   <TypeSignature Language="F#" Value="type IXmlTextParser = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IXmlTextParser" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IXmlTextParser" FrameworkAlternate="net-8.0;net-9.0" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -14,15 +15,29 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Xml.XmlSerializer" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Xml.XmlSerializer" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Xml.XmlSerializer" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Xml.XmlSerializer" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Xml.XmlSerializer" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Interfaces />
   <Docs>
-    <summary>Establishes a <see cref="P:System.Xml.Serialization.IXmlTextParser.Normalized" /> property for use by the .NET Framework infrastructure.</summary>
+    <summary>Establishes a <see cref="P:System.Xml.Serialization.IXmlTextParser.Normalized" /> property for use by the .NET infrastructure.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -39,8 +54,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool Normalized" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.IXmlTextParser.Normalized" />
       <MemberSignature Language="VB.NET" Value="Public Property Normalized As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Normalized { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.Normalized : bool with get, set" Usage="System.Xml.Serialization.IXmlTextParser.Normalized" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Normalized { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -51,11 +66,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -80,8 +102,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.WhitespaceHandling WhitespaceHandling" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.IXmlTextParser.WhitespaceHandling" />
       <MemberSignature Language="VB.NET" Value="Public Property WhitespaceHandling As WhitespaceHandling" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::WhitespaceHandling WhitespaceHandling { System::Xml::WhitespaceHandling get(); void set(System::Xml::WhitespaceHandling value); };" />
       <MemberSignature Language="F#" Value="member this.WhitespaceHandling : System.Xml.WhitespaceHandling with get, set" Usage="System.Xml.Serialization.IXmlTextParser.WhitespaceHandling" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::WhitespaceHandling WhitespaceHandling { System::Xml::WhitespaceHandling get(); void set(System::Xml::WhitespaceHandling value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -92,11 +114,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.WhitespaceHandling</ReturnType>

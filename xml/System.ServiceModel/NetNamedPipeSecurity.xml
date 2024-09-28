@@ -1,19 +1,31 @@
-﻿<Type Name="NetNamedPipeSecurity" FullName="System.ServiceModel.NetNamedPipeSecurity">
+<Type Name="NetNamedPipeSecurity" FullName="System.ServiceModel.NetNamedPipeSecurity">
   <TypeSignature Language="C#" Value="public sealed class NetNamedPipeSecurity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NetNamedPipeSecurity extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.NetNamedPipeSecurity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NetNamedPipeSecurity" />
-  <TypeSignature Language="C++ CLI" Value="public ref class NetNamedPipeSecurity sealed" />
   <TypeSignature Language="F#" Value="type NetNamedPipeSecurity = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NetNamedPipeSecurity sealed" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.NetNamedPipe</AssemblyName>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.2.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="net-8.0">
+      <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Provides access to the security settings for endpoints configured with the named pipe binding.</summary>
     <remarks>
@@ -22,22 +34,26 @@
 ## Examples  
  The following code shows how to add a <xref:System.ServiceModel.NetNamedPipeSecurity> object to a <xref:System.ServiceModel.NetNamedPipeBinding> instance.  
   
- [!code-csharp[S_UENetNamedPipeSecurity#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_uenetnamedpipesecurity/cs/service.cs#1)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/s_uenetnamedpipesecurity/cs/service.cs" id="Snippet1":::  
   
  ]]></format>
     </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public NetNamedPipeSecurity ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetNamedPipeSecurity.#ctor" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; NetNamedPipeSecurity();" />
+      <MemberSignature Language="C#" Value="public NetNamedPipeSecurity ();" FrameworkAlternate="net-8.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" FrameworkAlternate="net-8.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetNamedPipeSecurity.#ctor" FrameworkAlternate="net-8.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" FrameworkAlternate="net-8.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NetNamedPipeSecurity();" FrameworkAlternate="net-8.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.NetNamedPipe</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -50,20 +66,26 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.NetNamedPipeSecurityMode Mode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetNamedPipeSecurity.Mode" />
       <MemberSignature Language="VB.NET" Value="Public Property Mode As NetNamedPipeSecurityMode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::NetNamedPipeSecurityMode Mode { System::ServiceModel::NetNamedPipeSecurityMode get(); void set(System::ServiceModel::NetNamedPipeSecurityMode value); };" />
       <MemberSignature Language="F#" Value="member this.Mode : System.ServiceModel.NetNamedPipeSecurityMode with get, set" Usage="System.ServiceModel.NetNamedPipeSecurity.Mode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::NetNamedPipeSecurityMode Mode { System::ServiceModel::NetNamedPipeSecurityMode get(); void set(System::ServiceModel::NetNamedPipeSecurityMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.NetNamedPipe</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        <Attribute FrameworkAlternate="net-8.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(System.ServiceModel.NetNamedPipeSecurityMode.Transport)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(System.ServiceModel.NetNamedPipeSecurityMode.Transport)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -87,7 +109,7 @@
 ## Examples  
  The following code shows how to set the <xref:System.ServiceModel.NetNamedPipeSecurity.Mode%2A> property:  
   
- [!code-csharp[S_UENetNamedPipeSecurity#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_uenetnamedpipesecurity/cs/service.cs#2)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/s_uenetnamedpipesecurity/cs/service.cs" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -98,16 +120,17 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeTransport() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetNamedPipeSecurity.ShouldSerializeTransport" />
       <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeTransport () As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeTransport();" />
       <MemberSignature Language="F#" Value="member this.ShouldSerializeTransport : unit -&gt; bool" Usage="netNamedPipeSecurity.ShouldSerializeTransport " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeTransport();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -122,21 +145,30 @@
       </Docs>
     </Member>
     <Member MemberName="Transport">
-      <MemberSignature Language="C#" Value="public System.ServiceModel.NamedPipeTransportSecurity Transport { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.ServiceModel.NamedPipeTransportSecurity Transport { get; set; }" FrameworkAlternate="net-8.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.NamedPipeTransportSecurity Transport" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetNamedPipeSecurity.Transport" />
-      <MemberSignature Language="VB.NET" Value="Public Property Transport As NamedPipeTransportSecurity" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::NamedPipeTransportSecurity ^ Transport { System::ServiceModel::NamedPipeTransportSecurity ^ get(); void set(System::ServiceModel::NamedPipeTransportSecurity ^ value); };" />
-      <MemberSignature Language="F#" Value="member this.Transport : System.ServiceModel.NamedPipeTransportSecurity with get, set" Usage="System.ServiceModel.NetNamedPipeSecurity.Transport" />
+      <MemberSignature Language="VB.NET" Value="Public Property Transport As NamedPipeTransportSecurity" FrameworkAlternate="net-8.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+      <MemberSignature Language="F#" Value="member this.Transport : System.ServiceModel.NamedPipeTransportSecurity with get, set" Usage="System.ServiceModel.NetNamedPipeSecurity.Transport" FrameworkAlternate="net-8.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::NamedPipeTransportSecurity ^ Transport { System::ServiceModel::NamedPipeTransportSecurity ^ get(); void set(System::ServiceModel::NamedPipeTransportSecurity ^ value); };" FrameworkAlternate="net-8.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+      <MemberSignature Language="C#" Value="public System.ServiceModel.NamedPipeTransportSecurity Transport { get; }" FrameworkAlternate="netframework-3.0;netframework-3.5" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Transport As NamedPipeTransportSecurity" FrameworkAlternate="netframework-3.0;netframework-3.5" />
+      <MemberSignature Language="F#" Value="member this.Transport : System.ServiceModel.NamedPipeTransportSecurity" Usage="System.ServiceModel.NetNamedPipeSecurity.Transport" FrameworkAlternate="netframework-3.0;netframework-3.5" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::NamedPipeTransportSecurity ^ Transport { System::ServiceModel::NamedPipeTransportSecurity ^ get(); };" FrameworkAlternate="netframework-3.0;netframework-3.5" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.NetNamedPipe</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -156,7 +188,7 @@
 ## Examples  
  The following code shows how to access the <xref:System.ServiceModel.NetNamedPipeSecurity.Transport%2A> property:  
   
- [!code-csharp[S_UENetNamedPipeSecurity#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_uenetnamedpipesecurity/cs/service.cs#3)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/s_uenetnamedpipesecurity/cs/service.cs" id="Snippet3":::  
   
  ]]></format>
         </remarks>

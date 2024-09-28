@@ -1,16 +1,39 @@
-﻿<Type Name="ISecurityCapabilities" FullName="System.ServiceModel.Channels.ISecurityCapabilities">
+<Type Name="ISecurityCapabilities" FullName="System.ServiceModel.Channels.ISecurityCapabilities">
   <TypeSignature Language="C#" Value="public interface ISecurityCapabilities" />
-  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISecurityCapabilities" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISecurityCapabilities" FrameworkAlternate="net-6.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ISecurityCapabilities" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISecurityCapabilities" />
-  <TypeSignature Language="C++ CLI" Value="public interface class ISecurityCapabilities" />
   <TypeSignature Language="F#" Value="type ISecurityCapabilities = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ISecurityCapabilities" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit ISecurityCapabilities" FrameworkAlternate="net-8.0" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Security</AssemblyName>
+    <AssemblyVersion>4.6.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.9.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.2.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Private.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.ServiceModel.Security" FromVersion="6.0.0.0" To="System.ServiceModel.Primitives" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+  </TypeForwardingChain>
   <Interfaces />
   <Docs>
     <summary>Defines the contract for specifying the security capabilities for bindings.</summary>
@@ -18,7 +41,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- For a full implementation see the [NetHttpBinding](https://msdn.microsoft.com/library/1f2bb9b2-e0c5-4e8e-a9d3-703575bb159c) sample  
+ For a full implementation, see the [NetHttpBinding](/previous-versions/dotnet/netframework-4.0/aa395198(v=vs.100)) sample.
   
  ]]></format>
     </remarks>
@@ -29,14 +52,29 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Security.ProtectionLevel SupportedRequestProtectionLevel" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ISecurityCapabilities.SupportedRequestProtectionLevel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportedRequestProtectionLevel As ProtectionLevel" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::ProtectionLevel SupportedRequestProtectionLevel { System::Net::Security::ProtectionLevel get(); };" />
       <MemberSignature Language="F#" Value="member this.SupportedRequestProtectionLevel : System.Net.Security.ProtectionLevel" Usage="System.ServiceModel.Channels.ISecurityCapabilities.SupportedRequestProtectionLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::ProtectionLevel SupportedRequestProtectionLevel { System::Net::Security::ProtectionLevel get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Security.ProtectionLevel</ReturnType>
@@ -44,15 +82,7 @@
       <Docs>
         <summary>Gets the protection level requests supported by the binding.</summary>
         <value>The <see cref="T:System.Net.Security.ProtectionLevel" /> that specifies the protection level requests supported by the binding.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code snippet illustrates how to implement this property:  
-  
-  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportedResponseProtectionLevel">
@@ -60,8 +90,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Security.ProtectionLevel SupportedResponseProtectionLevel" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ISecurityCapabilities.SupportedResponseProtectionLevel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportedResponseProtectionLevel As ProtectionLevel" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::ProtectionLevel SupportedResponseProtectionLevel { System::Net::Security::ProtectionLevel get(); };" />
       <MemberSignature Language="F#" Value="member this.SupportedResponseProtectionLevel : System.Net.Security.ProtectionLevel" Usage="System.ServiceModel.Channels.ISecurityCapabilities.SupportedResponseProtectionLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::ProtectionLevel SupportedResponseProtectionLevel { System::Net::Security::ProtectionLevel get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -69,21 +99,28 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Security.ProtectionLevel</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Gets the protection level responses supported by the binding.</summary>
         <value>The <see cref="T:System.Net.Security.ProtectionLevel" /> that specifies the protection level responses supported by the binding.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code snippet illustrates how to implement this property:  
-  
-  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsClientAuthentication">
@@ -91,14 +128,29 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsClientAuthentication" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ISecurityCapabilities.SupportsClientAuthentication" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportsClientAuthentication As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportsClientAuthentication { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.SupportsClientAuthentication : bool" Usage="System.ServiceModel.Channels.ISecurityCapabilities.SupportsClientAuthentication" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportsClientAuthentication { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -107,15 +159,7 @@
         <summary>Gets a value that indicates whether the binding supports client authentication.</summary>
         <value>
           <see langword="true" /> if the binding can support client authentication; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code snippet illustrates how to implement this property:  
-  
-  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsClientWindowsIdentity">
@@ -123,14 +167,29 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsClientWindowsIdentity" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ISecurityCapabilities.SupportsClientWindowsIdentity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportsClientWindowsIdentity As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportsClientWindowsIdentity { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.SupportsClientWindowsIdentity : bool" Usage="System.ServiceModel.Channels.ISecurityCapabilities.SupportsClientWindowsIdentity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportsClientWindowsIdentity { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -139,15 +198,7 @@
         <summary>Gets a value that indicates whether the binding supports client Windows identity.</summary>
         <value>
           <see langword="true" /> if the binding can support client Windows identity; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code snippet illustrates how to implement this property:  
-  
-  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportsServerAuthentication">
@@ -155,14 +206,29 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsServerAuthentication" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ISecurityCapabilities.SupportsServerAuthentication" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportsServerAuthentication As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportsServerAuthentication { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.SupportsServerAuthentication : bool" Usage="System.ServiceModel.Channels.ISecurityCapabilities.SupportsServerAuthentication" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportsServerAuthentication { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -171,15 +237,7 @@
         <summary>Gets a value that indicates whether the binding supports server authentication.</summary>
         <value>
           <see langword="true" /> if the binding can support server authentication; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code snippet illustrates how to implement this property:  
-  
-  
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

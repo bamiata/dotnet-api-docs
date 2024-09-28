@@ -1,15 +1,21 @@
-﻿<Type Name="IPv6InterfaceProperties" FullName="System.Net.NetworkInformation.IPv6InterfaceProperties">
+<Type Name="IPv6InterfaceProperties" FullName="System.Net.NetworkInformation.IPv6InterfaceProperties">
   <TypeSignature Language="C#" Value="public abstract class IPv6InterfaceProperties" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit IPv6InterfaceProperties extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.IPv6InterfaceProperties" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class IPv6InterfaceProperties" />
-  <TypeSignature Language="C++ CLI" Value="public ref class IPv6InterfaceProperties abstract" />
   <TypeSignature Language="F#" Value="type IPv6InterfaceProperties = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IPv6InterfaceProperties abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Net.NetworkInformation</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -20,7 +26,15 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.NetworkInformation" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.NetworkInformation" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.NetworkInformation" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.NetworkInformation" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.NetworkInformation" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -40,9 +54,9 @@
 ## Examples  
  The following code example gets an <xref:System.Net.NetworkInformation.IPInterfaceProperties> object and displays its data.  
   
- [!code-cpp[NclNetInfo2#49](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#49)]
- [!code-csharp[NclNetInfo2#49](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#49)]
- [!code-vb[NclNetInfo2#49](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#49)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp" id="Snippet49":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net.NetworkInformation/DuplicateAddressDetectionState/Overview/networkexamples.cs" id="Snippet49":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb" id="Snippet49":::  
   
  ]]></format>
     </remarks>
@@ -60,6 +74,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -70,10 +90,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -93,14 +115,21 @@
       <MemberSignature Language="C#" Value="public virtual long GetScopeId (System.Net.NetworkInformation.ScopeLevel scopeLevel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int64 GetScopeId(valuetype System.Net.NetworkInformation.ScopeLevel scopeLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.IPv6InterfaceProperties.GetScopeId(System.Net.NetworkInformation.ScopeLevel)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual long GetScopeId(System::Net::NetworkInformation::ScopeLevel scopeLevel);" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetScopeId (scopeLevel As ScopeLevel) As Long" />
       <MemberSignature Language="F#" Value="abstract member GetScopeId : System.Net.NetworkInformation.ScopeLevel -&gt; int64&#xA;override this.GetScopeId : System.Net.NetworkInformation.ScopeLevel -&gt; int64" Usage="iPv6InterfaceProperties.GetScopeId scopeLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual long GetScopeId(System::Net::NetworkInformation::ScopeLevel scopeLevel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -110,12 +139,31 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-7.0;net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.UnsupportedOSPlatform("freebsd")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.UnsupportedOSPlatform("freebsd")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-7.0;net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.UnsupportedOSPlatform("ios")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.UnsupportedOSPlatform("ios")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-7.0;net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.UnsupportedOSPlatform("osx")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.UnsupportedOSPlatform("osx")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-7.0;net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.UnsupportedOSPlatform("tvos")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.UnsupportedOSPlatform("tvos")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="scopeLevel" Type="System.Net.NetworkInformation.ScopeLevel" />
+        <Parameter Name="scopeLevel" Type="System.Net.NetworkInformation.ScopeLevel" Index="0" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="scopeLevel">The scope level.</param>
@@ -129,14 +177,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPv6InterfaceProperties.Index" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Index As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int Index { int get(); };" />
       <MemberSignature Language="F#" Value="member this.Index : int" Usage="System.Net.NetworkInformation.IPv6InterfaceProperties.Index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int Index { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -147,6 +201,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -165,9 +220,9 @@
 ## Examples  
  The following code example gets an <xref:System.Net.NetworkInformation.IPv6InterfaceProperties> object and displays its data.  
   
- [!code-cpp[NclNetInfo2#49](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#49)]
- [!code-csharp[NclNetInfo2#49](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#49)]
- [!code-vb[NclNetInfo2#49](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#49)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp" id="Snippet49":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net.NetworkInformation/DuplicateAddressDetectionState/Overview/networkexamples.cs" id="Snippet49":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb" id="Snippet49":::  
   
  ]]></format>
         </remarks>
@@ -178,14 +233,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Mtu" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPv6InterfaceProperties.Mtu" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Mtu As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int Mtu { int get(); };" />
       <MemberSignature Language="F#" Value="member this.Mtu : int" Usage="System.Net.NetworkInformation.IPv6InterfaceProperties.Mtu" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int Mtu { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -196,6 +257,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -214,9 +276,9 @@
 ## Examples  
  The following code example gets an <xref:System.Net.NetworkInformation.IPv6InterfaceProperties> object and displays its data.  
   
- [!code-cpp[NclNetInfo2#49](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp#49)]
- [!code-csharp[NclNetInfo2#49](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLNetInfo2/CS/networkexamples.cs#49)]
- [!code-vb[NclNetInfo2#49](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb#49)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLNetInfo2/CPP/networkexamples.cpp" id="Snippet49":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net.NetworkInformation/DuplicateAddressDetectionState/Overview/networkexamples.cs" id="Snippet49":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Remoting/NCLNetInfo2/VB/networkexamples.vb" id="Snippet49":::  
   
  ]]></format>
         </remarks>

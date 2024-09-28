@@ -1,10 +1,10 @@
-﻿<Type Name="DesignerAction" FullName="System.Workflow.ComponentModel.Design.DesignerAction">
+<Type Name="DesignerAction" FullName="System.Workflow.ComponentModel.Design.DesignerAction">
   <TypeSignature Language="C#" Value="public sealed class DesignerAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DesignerAction extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.DesignerAction" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DesignerAction" />
-  <TypeSignature Language="C++ CLI" Value="public ref class DesignerAction sealed" />
   <TypeSignature Language="F#" Value="type DesignerAction = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DesignerAction sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -15,27 +15,28 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
     <summary>Associates an action taken on an activity designer on the workflow design surface with the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" />. This class cannot be inherited.</summary>
     <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
+      <format type="text/markdown"><![CDATA[
+
+## Remarks
+
 > [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
-  
- A designer action is a user action that is performed when you activate a designer glyph on the workflow design surface. The <xref:System.Workflow.ComponentModel.Design.DesignerAction> class is used to indicate your actions. The <xref:System.Workflow.ComponentModel.Design.DesignerAction> class is also used to add the task items by the adornment service.  
-  
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]
+
+ A designer action is a user action that is performed when you activate a designer glyph on the workflow design surface. The <xref:System.Workflow.ComponentModel.Design.DesignerAction> class is used to indicate your actions. The <xref:System.Workflow.ComponentModel.Design.DesignerAction> class is also used to add the task items by the adornment service.
+
  ]]></format>
     </remarks>
     <altmember cref="M:System.Workflow.ComponentModel.Design.ActivityDesigner.OnExecuteDesignerAction(System.Workflow.ComponentModel.Design.DesignerAction)" />
     <altmember cref="P:System.Workflow.ComponentModel.Design.ActivityDesigner.SmartTagVerbs" />
-    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741708(v=vs.90)">Basic Designer Hosting Sample</related>
+    <related type="Article" href="https://learn.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741708(v=vs.90)">Basic Designer Hosting Sample</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -51,8 +52,9 @@
       <MemberSignature Language="C#" Value="public DesignerAction (System.Workflow.ComponentModel.Design.ActivityDesigner activityDesigner, int actionId, string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.ComponentModel.Design.ActivityDesigner activityDesigner, int32 actionId, string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.DesignerAction.#ctor(System.Workflow.ComponentModel.Design.ActivityDesigner,System.Int32,System.String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerAction(System::Workflow::ComponentModel::Design::ActivityDesigner ^ activityDesigner, int actionId, System::String ^ text);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (activityDesigner As ActivityDesigner, actionId As Integer, text As String)" />
       <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Design.DesignerAction : System.Workflow.ComponentModel.Design.ActivityDesigner * int * string -&gt; System.Workflow.ComponentModel.Design.DesignerAction" Usage="new System.Workflow.ComponentModel.Design.DesignerAction (activityDesigner, actionId, text)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerAction(System::Workflow::ComponentModel::Design::ActivityDesigner ^ activityDesigner, int actionId, System::String ^ text);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -80,8 +82,9 @@
       <MemberSignature Language="C#" Value="public DesignerAction (System.Workflow.ComponentModel.Design.ActivityDesigner activityDesigner, int actionId, string text, System.Drawing.Image image);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.ComponentModel.Design.ActivityDesigner activityDesigner, int32 actionId, string text, class System.Drawing.Image image) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.DesignerAction.#ctor(System.Workflow.ComponentModel.Design.ActivityDesigner,System.Int32,System.String,System.Drawing.Image)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerAction(System::Workflow::ComponentModel::Design::ActivityDesigner ^ activityDesigner, int actionId, System::String ^ text, System::Drawing::Image ^ image);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (activityDesigner As ActivityDesigner, actionId As Integer, text As String, image As Image)" />
       <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Design.DesignerAction : System.Workflow.ComponentModel.Design.ActivityDesigner * int * string * System.Drawing.Image -&gt; System.Workflow.ComponentModel.Design.DesignerAction" Usage="new System.Workflow.ComponentModel.Design.DesignerAction (activityDesigner, actionId, text, image)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerAction(System::Workflow::ComponentModel::Design::ActivityDesigner ^ activityDesigner, int actionId, System::String ^ text, System::Drawing::Image ^ image);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -112,8 +115,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 ActionId" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.DesignerAction.ActionId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActionId As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ActionId { int get(); };" />
       <MemberSignature Language="F#" Value="member this.ActionId : int" Usage="System.Workflow.ComponentModel.Design.DesignerAction.ActionId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ActionId { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -134,8 +137,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Image Image" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.DesignerAction.Image" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Image As Image" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Image ^ Image { System::Drawing::Image ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Image : System.Drawing.Image" Usage="System.Workflow.ComponentModel.Design.DesignerAction.Image" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Image ^ Image { System::Drawing::Image ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -156,8 +159,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Invoke() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.DesignerAction.Invoke" />
       <MemberSignature Language="VB.NET" Value="Public Sub Invoke ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invoke();" />
       <MemberSignature Language="F#" Value="member this.Invoke : unit -&gt; unit" Usage="designerAction.Invoke " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invoke();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -171,11 +174,11 @@
       <Docs>
         <summary>Invokes the <see cref="M:System.Workflow.ComponentModel.Design.ActivityDesigner.OnExecuteDesignerAction(System.Workflow.ComponentModel.Design.DesignerAction)" /> method of the activity designer associated with the current designer action.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnExecuteDesignerAction%2A> method is called when you click a validation error displayed by the activity designer on the workflow design surface.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ The <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnExecuteDesignerAction%2A> method is called when you click a validation error displayed by the activity designer on the workflow design surface.
+
  ]]></format>
         </remarks>
       </Docs>
@@ -185,8 +188,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string PropertyName" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.DesignerAction.PropertyName" />
       <MemberSignature Language="VB.NET" Value="Public Property PropertyName As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.PropertyName : string with get, set" Usage="System.Workflow.ComponentModel.Design.DesignerAction.PropertyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -200,11 +203,11 @@
         <summary>Represents the name of the property that the <see cref="T:System.Workflow.ComponentModel.Design.DesignerAction" /> is associated with.</summary>
         <value>A <see cref="T:System.String" /> that contains the name of the property.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In the property editor, the property that corresponds to the <xref:System.Workflow.ComponentModel.Design.DesignerAction.PropertyName%2A> of the <xref:System.Workflow.ComponentModel.Design.DesignerAction> provides a visual cue that signals the presence of an associated <xref:System.Workflow.ComponentModel.Design.DesignerAction>.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ In the property editor, the property that corresponds to the <xref:System.Workflow.ComponentModel.Design.DesignerAction.PropertyName%2A> of the <xref:System.Workflow.ComponentModel.Design.DesignerAction> provides a visual cue that signals the presence of an associated <xref:System.Workflow.ComponentModel.Design.DesignerAction>.
+
  ]]></format>
         </remarks>
       </Docs>
@@ -214,8 +217,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.DesignerAction.Text" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Text As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Text : string" Usage="System.Workflow.ComponentModel.Design.DesignerAction.Text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -236,8 +239,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IDictionary UserData" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.DesignerAction.UserData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserData As IDictionary" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IDictionary ^ UserData { System::Collections::IDictionary ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.UserData : System.Collections.IDictionary" Usage="System.Workflow.ComponentModel.Design.DesignerAction.UserData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IDictionary ^ UserData { System::Collections::IDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

@@ -1,16 +1,20 @@
-﻿<Type Name="X509Extension" FullName="System.Security.Cryptography.X509Certificates.X509Extension">
+<Type Name="X509Extension" FullName="System.Security.Cryptography.X509Certificates.X509Extension">
   <TypeSignature Language="C#" Value="public class X509Extension : System.Security.Cryptography.AsnEncodedData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit X509Extension extends System.Security.Cryptography.AsnEncodedData" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X509Extension" />
   <TypeSignature Language="VB.NET" Value="Public Class X509Extension&#xA;Inherits AsnEncodedData" />
-  <TypeSignature Language="C++ CLI" Value="public ref class X509Extension : System::Security::Cryptography::AsnEncodedData" />
   <TypeSignature Language="F#" Value="type X509Extension = class&#xA;    inherit AsnEncodedData" />
+  <TypeSignature Language="C++ CLI" Value="public ref class X509Extension : System::Security::Cryptography::AsnEncodedData" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -21,11 +25,38 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Security.Cryptography.X509Certificates" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Security.Cryptography.X509Certificates" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Security.Cryptography" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="System.Security.Cryptography.X509Certificates" FromVersion="7.0.0.0" To="System.Security.Cryptography" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Security.Cryptography" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="System.Security.Cryptography.X509Certificates" FromVersion="8.0.0.0" To="System.Security.Cryptography" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Security.Cryptography" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+    <TypeForwarding From="System.Security.Cryptography.X509Certificates" FromVersion="9.0.0.0" To="System.Security.Cryptography" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Security.Cryptography.AsnEncodedData</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Represents an X509 extension.</summary>
     <remarks>
@@ -51,9 +82,9 @@
 ## Examples  
  The following code example demonstrates using the <xref:System.Security.Cryptography.X509Certificates.X509Extension> class.  
   
- [!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
- [!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
- [!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography.X509Certificates/X509BasicConstraintsExtension/Overview/sample.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -83,6 +114,9 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -93,10 +127,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -113,9 +155,9 @@
 ## Examples  
  The following code example demonstrates using the <xref:System.Security.Cryptography.X509Certificates.X509Extension> class.  
   
- [!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
- [!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
- [!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography.X509Certificates/X509BasicConstraintsExtension/Overview/sample.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -126,8 +168,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.AsnEncodedData encodedExtension, bool critical) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Extension.#ctor(System.Security.Cryptography.AsnEncodedData,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (encodedExtension As AsnEncodedData, critical As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Extension(System::Security::Cryptography::AsnEncodedData ^ encodedExtension, bool critical);" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509Extension : System.Security.Cryptography.AsnEncodedData * bool -&gt; System.Security.Cryptography.X509Certificates.X509Extension" Usage="new System.Security.Cryptography.X509Certificates.X509Extension (encodedExtension, critical)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Extension(System::Security::Cryptography::AsnEncodedData ^ encodedExtension, bool critical);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -135,6 +177,9 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -145,6 +190,13 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="encodedExtension" Type="System.Security.Cryptography.AsnEncodedData" />
@@ -166,9 +218,9 @@
 ## Examples  
  The following code example demonstrates using the <xref:System.Security.Cryptography.X509Certificates.X509Extension> class.  
   
- [!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
- [!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
- [!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography.X509Certificates/X509BasicConstraintsExtension/Overview/sample.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -178,8 +230,9 @@
       <MemberSignature Language="C#" Value="public X509Extension (System.Security.Cryptography.Oid oid, byte[] rawData, bool critical);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.Oid oid, unsigned int8[] rawData, bool critical) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Extension.#ctor(System.Security.Cryptography.Oid,System.Byte[],System.Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Extension(System::Security::Cryptography::Oid ^ oid, cli::array &lt;System::Byte&gt; ^ rawData, bool critical);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (oid As Oid, rawData As Byte(), critical As Boolean)" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509Extension : System.Security.Cryptography.Oid * byte[] * bool -&gt; System.Security.Cryptography.X509Certificates.X509Extension" Usage="new System.Security.Cryptography.X509Certificates.X509Extension (oid, rawData, critical)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Extension(System::Security::Cryptography::Oid ^ oid, cli::array &lt;System::Byte&gt; ^ rawData, bool critical);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -187,6 +240,9 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -197,6 +253,13 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="oid" Type="System.Security.Cryptography.Oid" />
@@ -220,9 +283,9 @@
 ## Examples  
  The following code example demonstrates using the <xref:System.Security.Cryptography.X509Certificates.X509Extension> class.  
   
- [!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
- [!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
- [!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography.X509Certificates/X509BasicConstraintsExtension/Overview/sample.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -233,12 +296,61 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public X509Extension (System.Security.Cryptography.Oid oid, ReadOnlySpan&lt;byte&gt; rawData, bool critical);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.Oid oid, valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; rawData, bool critical) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Extension.#ctor(System.Security.Cryptography.Oid,System.ReadOnlySpan{System.Byte},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (oid As Oid, rawData As ReadOnlySpan(Of Byte), critical As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509Extension : System.Security.Cryptography.Oid * ReadOnlySpan&lt;byte&gt; * bool -&gt; System.Security.Cryptography.X509Certificates.X509Extension" Usage="new System.Security.Cryptography.X509Certificates.X509Extension (oid, rawData, critical)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Extension(System::Security::Cryptography::Oid ^ oid, ReadOnlySpan&lt;System::Byte&gt; rawData, bool critical);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(0)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="oid" Type="System.Security.Cryptography.Oid" Index="0" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="rawData" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="1" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
+        <Parameter Name="critical" Type="System.Boolean" Index="2" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
+      </Parameters>
+      <Docs>
+        <param name="oid">The object identifier used to identify the extension.</param>
+        <param name="rawData">The encoded data used to create the extension.</param>
+        <param name="critical">
+          <see langword="true" /> if the extension is critical; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509Extension" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public X509Extension (string oid, byte[] rawData, bool critical);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string oid, unsigned int8[] rawData, bool critical) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Extension.#ctor(System.String,System.Byte[],System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (oid As String, rawData As Byte(), critical As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Extension(System::String ^ oid, cli::array &lt;System::Byte&gt; ^ rawData, bool critical);" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509Extension : string * byte[] * bool -&gt; System.Security.Cryptography.X509Certificates.X509Extension" Usage="new System.Security.Cryptography.X509Certificates.X509Extension (oid, rawData, critical)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Extension(System::String ^ oid, cli::array &lt;System::Byte&gt; ^ rawData, bool critical);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -246,6 +358,9 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -256,6 +371,13 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="oid" Type="System.String" />
@@ -279,20 +401,70 @@
 ## Examples  
  The following code example demonstrates using the <xref:System.Security.Cryptography.X509Certificates.X509Extension> class.  
   
- [!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
- [!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
- [!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography.X509Certificates/X509BasicConstraintsExtension/Overview/sample.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public X509Extension (string oid, ReadOnlySpan&lt;byte&gt; rawData, bool critical);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string oid, valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; rawData, bool critical) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Extension.#ctor(System.String,System.ReadOnlySpan{System.Byte},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (oid As String, rawData As ReadOnlySpan(Of Byte), critical As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.X509Certificates.X509Extension : string * ReadOnlySpan&lt;byte&gt; * bool -&gt; System.Security.Cryptography.X509Certificates.X509Extension" Usage="new System.Security.Cryptography.X509Certificates.X509Extension (oid, rawData, critical)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509Extension(System::String ^ oid, ReadOnlySpan&lt;System::Byte&gt; rawData, bool critical);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(0)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="oid" Type="System.String" Index="0" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="rawData" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="1" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
+        <Parameter Name="critical" Type="System.Boolean" Index="2" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
+      </Parameters>
+      <Docs>
+        <param name="oid">The object identifier used to identify the extension.</param>
+        <param name="rawData">The encoded data used to create the extension.</param>
+        <param name="critical">
+          <see langword="true" /> if the extension is critical; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509Extension" /> class.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CopyFrom">
       <MemberSignature Language="C#" Value="public override void CopyFrom (System.Security.Cryptography.AsnEncodedData asnEncodedData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CopyFrom(class System.Security.Cryptography.AsnEncodedData asnEncodedData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Extension.CopyFrom(System.Security.Cryptography.AsnEncodedData)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFrom(System::Security::Cryptography::AsnEncodedData ^ asnEncodedData);" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub CopyFrom (asnEncodedData As AsnEncodedData)" />
       <MemberSignature Language="F#" Value="override this.CopyFrom : System.Security.Cryptography.AsnEncodedData -&gt; unit" Usage="x509Extension.CopyFrom asnEncodedData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFrom(System::Security::Cryptography::AsnEncodedData ^ asnEncodedData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -300,6 +472,9 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -310,6 +485,13 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -331,9 +513,9 @@
 ## Examples  
  The following code example demonstrates using the <xref:System.Security.Cryptography.X509Certificates.X509Extension> class.  
   
- [!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
- [!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
- [!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography.X509Certificates/X509BasicConstraintsExtension/Overview/sample.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -348,8 +530,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool Critical" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Extension.Critical" />
       <MemberSignature Language="VB.NET" Value="Public Property Critical As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Critical { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.Critical : bool with get, set" Usage="System.Security.Cryptography.X509Certificates.X509Extension.Critical" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Critical { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -357,6 +539,9 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -367,13 +552,22 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -394,9 +588,9 @@
 ## Examples  
  The following code example demonstrates using the <xref:System.Security.Cryptography.X509Certificates.X509Extension> class.  
   
- [!code-cpp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp#1)]
- [!code-csharp[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CS/sample.cs#1)]
- [!code-vb[Cryptography.X509Certificates.X509Extensions#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/CPP/sample.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography.X509Certificates/X509BasicConstraintsExtension/Overview/sample.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/Cryptography.X509Certificates.X509Extensions/VB/sample.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>

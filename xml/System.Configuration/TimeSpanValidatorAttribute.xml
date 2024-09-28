@@ -1,10 +1,10 @@
-﻿<Type Name="TimeSpanValidatorAttribute" FullName="System.Configuration.TimeSpanValidatorAttribute">
+<Type Name="TimeSpanValidatorAttribute" FullName="System.Configuration.TimeSpanValidatorAttribute">
   <TypeSignature Language="C#" Value="public sealed class TimeSpanValidatorAttribute : System.Configuration.ConfigurationValidatorAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TimeSpanValidatorAttribute extends System.Configuration.ConfigurationValidatorAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.TimeSpanValidatorAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TimeSpanValidatorAttribute&#xA;Inherits ConfigurationValidatorAttribute" />
-  <TypeSignature Language="C++ CLI" Value="public ref class TimeSpanValidatorAttribute sealed : System::Configuration::ConfigurationValidatorAttribute" />
   <TypeSignature Language="F#" Value="type TimeSpanValidatorAttribute = class&#xA;    inherit ConfigurationValidatorAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TimeSpanValidatorAttribute sealed : System::Configuration::ConfigurationValidatorAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -12,25 +12,35 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+    <AssemblyVersion>4.0.3.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Configuration.ConfigurationManager" FromVersion="9.0.0.0" To="System.Configuration" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Configuration.ConfigurationValidatorAttribute</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-2.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2">
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property)</AttributeName>
+    <Attribute>
+      <AttributeName Language="C#">[System.AttributeUsage(System.AttributeTargets.Property)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.AttributeUsage(System.AttributeTargets.Property)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Declaratively instructs the .NET Framework to perform time validation on a configuration property. This class cannot be inherited.</summary>
+    <summary>Declaratively instructs .NET to perform time validation on a configuration property. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You use the <xref:System.Configuration.TimeSpanValidatorAttribute> attribute to decorate a configuration property. This is to instruct the .NET Framework to validate the property using the <xref:System.Configuration.TimeSpanValidator> class and pass to it the value of the decorating parameters.  
+ You use the <xref:System.Configuration.TimeSpanValidatorAttribute> attribute to decorate a configuration property. This is to instruct .NET to validate the property using the <xref:System.Configuration.TimeSpanValidator> class and pass to it the value of the decorating parameters.  
   
  You can apply <xref:System.Configuration.TimeSpanValidatorAttribute> objects to property types only.  
   
@@ -39,8 +49,8 @@
 ## Examples  
  The following example shows how to decorate the properties of a custom <xref:System.Configuration.ConfigurationSection> object using the <xref:System.Configuration.TimeSpanValidatorAttribute> attribute.  
   
- [!code-csharp[System.Configuration.ConfigurationValidatorAttributes#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/CS/ConfigurationValidatorAttributes.cs#8)]
- [!code-vb[System.Configuration.ConfigurationValidatorAttributes#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/VB/ConfigurationValidatorAttributes.vb#8)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/CS/ConfigurationValidatorAttributes.cs" id="Snippet8":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/VB/ConfigurationValidatorAttributes.vb" id="Snippet8":::  
   
  The following example is an excerpt of the configuration file that contains the custom section used by the previous sample.  
   
@@ -75,8 +85,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -92,8 +107,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Configuration.StringValidatorAttribute.%23ctor%2A> constructor.  
   
- [!code-csharp[System.Configuration.ConfigurationValidatorAttributes#12](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/CS/ConfigurationValidatorAttributes.cs#12)]
- [!code-vb[System.Configuration.ConfigurationValidatorAttributes#12](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/VB/ConfigurationValidatorAttributes.vb#12)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/CS/ConfigurationValidatorAttributes.cs" id="Snippet12":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/VB/ConfigurationValidatorAttributes.vb" id="Snippet12":::  
   
  ]]></format>
         </remarks>
@@ -104,8 +119,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool ExcludeRange" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.TimeSpanValidatorAttribute.ExcludeRange" />
       <MemberSignature Language="VB.NET" Value="Public Property ExcludeRange As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExcludeRange { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.ExcludeRange : bool with get, set" Usage="System.Configuration.TimeSpanValidatorAttribute.ExcludeRange" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExcludeRange { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -114,8 +129,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -135,8 +155,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Configuration.TimeSpanValidatorAttribute.ExcludeRange%2A> property.  
   
- [!code-csharp[System.Configuration.ConfigurationValidatorAttributes#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/CS/ConfigurationValidatorAttributes.cs#8)]
- [!code-vb[System.Configuration.ConfigurationValidatorAttributes#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/VB/ConfigurationValidatorAttributes.vb#8)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/CS/ConfigurationValidatorAttributes.cs" id="Snippet8":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/VB/ConfigurationValidatorAttributes.vb" id="Snippet8":::  
   
  ]]></format>
         </remarks>
@@ -147,8 +167,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan MaxValue" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.TimeSpanValidatorAttribute.MaxValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxValue As TimeSpan" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MaxValue { TimeSpan get(); };" />
       <MemberSignature Language="F#" Value="member this.MaxValue : TimeSpan" Usage="System.Configuration.TimeSpanValidatorAttribute.MaxValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MaxValue { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -157,8 +177,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
@@ -170,7 +195,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is the absolute maximum value allowed by the .NET Framework. Its value is defined by the <xref:System.TimeSpan.MaxValue> field.  
+ This is the absolute maximum value allowed by .NET. Its value is defined by the <xref:System.TimeSpan.MaxValue> field.  
   
  ]]></format>
         </remarks>
@@ -181,8 +206,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string MaxValueString" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.TimeSpanValidatorAttribute.MaxValueString" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxValueString As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MaxValueString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.MaxValueString : string with get, set" Usage="System.Configuration.TimeSpanValidatorAttribute.MaxValueString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MaxValueString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -191,8 +216,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -211,8 +241,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Configuration.TimeSpanValidatorAttribute.MaxValueString%2A> property.  
   
- [!code-csharp[System.Configuration.ConfigurationValidatorAttributes#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/CS/ConfigurationValidatorAttributes.cs#8)]
- [!code-vb[System.Configuration.ConfigurationValidatorAttributes#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/VB/ConfigurationValidatorAttributes.vb#8)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/CS/ConfigurationValidatorAttributes.cs" id="Snippet8":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/VB/ConfigurationValidatorAttributes.vb" id="Snippet8":::  
   
  ]]></format>
         </remarks>
@@ -224,8 +254,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan MinValue" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.TimeSpanValidatorAttribute.MinValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinValue As TimeSpan" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MinValue { TimeSpan get(); };" />
       <MemberSignature Language="F#" Value="member this.MinValue : TimeSpan" Usage="System.Configuration.TimeSpanValidatorAttribute.MinValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MinValue { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -234,8 +264,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
@@ -247,7 +282,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is the absolute minimum value allowed by the .NET Framework. Its value is defined by the <xref:System.TimeSpan.MinValue> field.  
+ This is the absolute minimum value allowed by .NET. Its value is defined by the <xref:System.TimeSpan.MinValue> field.  
   
  ]]></format>
         </remarks>
@@ -258,8 +293,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string MinValueString" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.TimeSpanValidatorAttribute.MinValueString" />
       <MemberSignature Language="VB.NET" Value="Public Property MinValueString As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MinValueString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.MinValueString : string with get, set" Usage="System.Configuration.TimeSpanValidatorAttribute.MinValueString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MinValueString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -268,8 +303,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -288,8 +328,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Configuration.TimeSpanValidatorAttribute.MinValueString%2A> property.  
   
- [!code-csharp[System.Configuration.ConfigurationValidatorAttributes#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/CS/ConfigurationValidatorAttributes.cs#8)]
- [!code-vb[System.Configuration.ConfigurationValidatorAttributes#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/VB/ConfigurationValidatorAttributes.vb#8)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/CS/ConfigurationValidatorAttributes.cs" id="Snippet8":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/VB/ConfigurationValidatorAttributes.vb" id="Snippet8":::  
   
  ]]></format>
         </remarks>
@@ -301,8 +341,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string TimeSpanMaxValue" />
       <MemberSignature Language="DocId" Value="F:System.Configuration.TimeSpanValidatorAttribute.TimeSpanMaxValue" />
       <MemberSignature Language="VB.NET" Value="Public Const TimeSpanMaxValue As String " />
-      <MemberSignature Language="C++ CLI" Value="public: System::String ^ TimeSpanMaxValue;" />
       <MemberSignature Language="F#" Value="val mutable TimeSpanMaxValue : string" Usage="System.Configuration.TimeSpanValidatorAttribute.TimeSpanMaxValue" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ TimeSpanMaxValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -311,8 +351,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -330,8 +375,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Configuration.TimeSpanValidatorAttribute.TimeSpanMaxValue> field.  
   
- [!code-csharp[System.Configuration.ConfigurationValidatorAttributes#10](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/CS/ConfigurationValidatorAttributes.cs#10)]
- [!code-vb[System.Configuration.ConfigurationValidatorAttributes#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/VB/ConfigurationValidatorAttributes.vb#10)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/CS/ConfigurationValidatorAttributes.cs" id="Snippet10":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/VB/ConfigurationValidatorAttributes.vb" id="Snippet10":::  
   
  ]]></format>
         </remarks>
@@ -342,8 +387,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal string TimeSpanMinValue" />
       <MemberSignature Language="DocId" Value="F:System.Configuration.TimeSpanValidatorAttribute.TimeSpanMinValue" />
       <MemberSignature Language="VB.NET" Value="Public Const TimeSpanMinValue As String " />
-      <MemberSignature Language="C++ CLI" Value="public: System::String ^ TimeSpanMinValue;" />
       <MemberSignature Language="F#" Value="val mutable TimeSpanMinValue : string" Usage="System.Configuration.TimeSpanValidatorAttribute.TimeSpanMinValue" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ TimeSpanMinValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -352,8 +397,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -371,8 +421,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Configuration.TimeSpanValidatorAttribute.TimeSpanMinValue> field.  
   
- [!code-csharp[System.Configuration.ConfigurationValidatorAttributes#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/CS/ConfigurationValidatorAttributes.cs#11)]
- [!code-vb[System.Configuration.ConfigurationValidatorAttributes#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/VB/ConfigurationValidatorAttributes.vb#11)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/CS/ConfigurationValidatorAttributes.cs" id="Snippet11":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/VB/ConfigurationValidatorAttributes.vb" id="Snippet11":::  
   
  ]]></format>
         </remarks>
@@ -383,8 +433,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationValidatorBase ValidatorInstance" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.TimeSpanValidatorAttribute.ValidatorInstance" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ValidatorInstance As ConfigurationValidatorBase" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::ConfigurationValidatorBase ^ ValidatorInstance { System::Configuration::ConfigurationValidatorBase ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.ValidatorInstance : System.Configuration.ConfigurationValidatorBase" Usage="System.Configuration.TimeSpanValidatorAttribute.ValidatorInstance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::ConfigurationValidatorBase ^ ValidatorInstance { System::Configuration::ConfigurationValidatorBase ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -393,8 +443,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationValidatorBase</ReturnType>

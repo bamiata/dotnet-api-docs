@@ -1,15 +1,21 @@
-﻿<Type Name="FileSystemAccessRule" FullName="System.Security.AccessControl.FileSystemAccessRule">
+<Type Name="FileSystemAccessRule" FullName="System.Security.AccessControl.FileSystemAccessRule">
   <TypeSignature Language="C#" Value="public sealed class FileSystemAccessRule : System.Security.AccessControl.AccessRule" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FileSystemAccessRule extends System.Security.AccessControl.AccessRule" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.FileSystemAccessRule" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FileSystemAccessRule&#xA;Inherits AccessRule" />
-  <TypeSignature Language="C++ CLI" Value="public ref class FileSystemAccessRule sealed : System::Security::AccessControl::AccessRule" />
   <TypeSignature Language="F#" Value="type FileSystemAccessRule = class&#xA;    inherit AccessRule" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FileSystemAccessRule sealed : System::Security::AccessControl::AccessRule" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
-    <AssemblyVersion>4.0.2.0</AssemblyVersion>
     <AssemblyVersion>4.0.3.0</AssemblyVersion>
+    <AssemblyVersion>4.0.4.0</AssemblyVersion>
+    <AssemblyVersion>4.0.5.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -22,29 +28,35 @@
   </Base>
   <Interfaces />
   <Attributes>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
     <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
-      <AttributeName>System.Security.SecurityCritical</AttributeName>
+      <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
     <summary>Represents an abstraction of an access control entry (ACE) that defines an access rule for a file or directory. This class cannot be inherited.</summary>
     <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Security.AccessControl.FileSystemAccessRule> class represents an abstraction of an underlying access control entry (ACE) that specifies a user account, the type of access to provide (read, write, and so on), and whether to allow or deny that right.  This class can also specify how access rules are propagated to child objects.  
-  
- Use the <xref:System.Security.AccessControl.FileSystemAccessRule> class to create a new access rule.  You can persist the rule using the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> class.  
-  
-   
-  
-## Examples  
- The following code example uses the <xref:System.Security.AccessControl.FileSecurity> class to add and then remove an access control entry (ACE) from a file.  You must supply a valid user or group account to run this example.  
-  
- [!code-cpp[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/cpp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/cpp/sample.cpp#1)]
- [!code-csharp[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/CS/sample.cs#1)]
- [!code-vb[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/VB/sample.vb#1)]  
-  
+      <format type="text/markdown"><![CDATA[
+
+## Remarks
+ The <xref:System.Security.AccessControl.FileSystemAccessRule> class represents an abstraction of an underlying access control entry (ACE) that specifies a user account, the type of access to provide (read, write, and so on), and whether to allow or deny that right. This class can also specify how access rules are propagated to child objects.
+
+ Use the <xref:System.Security.AccessControl.FileSystemAccessRule> class to create a new access rule. You can persist the rule using the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> class.
+
+## Examples
+ The following code example uses the <xref:System.Security.AccessControl.FileSecurity> class to add and then remove an access control entry (ACE) from a file. You must supply a valid user or group account to run this example.
+
+ :::code language="csharp" source="~/snippets/csharp/System.IO/FileSystemAclExtensions/GetAccessControl/sample.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/System.IO/FileSystemAclExtensions/GetAccessControl/sample.vb" id="Snippet1":::
+
  ]]></format>
     </remarks>
   </Docs>
@@ -53,7 +65,6 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.FileSystemAccessRule" /> class.</summary>
@@ -63,14 +74,20 @@
       <MemberSignature Language="C#" Value="public FileSystemAccessRule (System.Security.Principal.IdentityReference identity, System.Security.AccessControl.FileSystemRights fileSystemRights, System.Security.AccessControl.AccessControlType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.Security.AccessControl.FileSystemRights fileSystemRights, valuetype System.Security.AccessControl.AccessControlType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemAccessRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.FileSystemRights,System.Security.AccessControl.AccessControlType)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileSystemAccessRule(System::Security::Principal::IdentityReference ^ identity, System::Security::AccessControl::FileSystemRights fileSystemRights, System::Security::AccessControl::AccessControlType type);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IdentityReference, fileSystemRights As FileSystemRights, type As AccessControlType)" />
       <MemberSignature Language="F#" Value="new System.Security.AccessControl.FileSystemAccessRule : System.Security.Principal.IdentityReference * System.Security.AccessControl.FileSystemRights * System.Security.AccessControl.AccessControlType -&gt; System.Security.AccessControl.FileSystemAccessRule" Usage="new System.Security.AccessControl.FileSystemAccessRule (identity, fileSystemRights, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileSystemAccessRule(System::Security::Principal::IdentityReference ^ identity, System::Security::AccessControl::FileSystemRights fileSystemRights, System::Security::AccessControl::AccessControlType type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -89,11 +106,11 @@
         <param name="type">One of the <see cref="T:System.Security.AccessControl.AccessControlType" /> values that specifies whether to allow or deny the operation.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.FileSystemAccessRule" /> class using a reference to a user account, a value that specifies the type of operation associated with the access rule, and a value that specifies whether to allow or deny the operation.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to create an access control rule that you can persist using the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> class.  Access control rules define user account rights that determine which actions are allowed or disallowed on computers running Microsoft Windows.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ Use this constructor to create an access control rule that you can persist using the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> class. Access control rules define user account rights that determine which actions are allowed or disallowed on computers running Microsoft Windows.
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="identity" /> parameter is not an <see cref="T:System.Security.Principal.IdentityReference" /> object.</exception>
@@ -105,14 +122,20 @@
       <MemberSignature Language="C#" Value="public FileSystemAccessRule (string identity, System.Security.AccessControl.FileSystemRights fileSystemRights, System.Security.AccessControl.AccessControlType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string identity, valuetype System.Security.AccessControl.FileSystemRights fileSystemRights, valuetype System.Security.AccessControl.AccessControlType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemAccessRule.#ctor(System.String,System.Security.AccessControl.FileSystemRights,System.Security.AccessControl.AccessControlType)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileSystemAccessRule(System::String ^ identity, System::Security::AccessControl::FileSystemRights fileSystemRights, System::Security::AccessControl::AccessControlType type);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As String, fileSystemRights As FileSystemRights, type As AccessControlType)" />
       <MemberSignature Language="F#" Value="new System.Security.AccessControl.FileSystemAccessRule : string * System.Security.AccessControl.FileSystemRights * System.Security.AccessControl.AccessControlType -&gt; System.Security.AccessControl.FileSystemAccessRule" Usage="new System.Security.AccessControl.FileSystemAccessRule (identity, fileSystemRights, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileSystemAccessRule(System::String ^ identity, System::Security::AccessControl::FileSystemRights fileSystemRights, System::Security::AccessControl::AccessControlType type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -131,22 +154,19 @@
         <param name="type">One of the <see cref="T:System.Security.AccessControl.AccessControlType" /> values that specifies whether to allow or deny the operation.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.FileSystemAccessRule" /> class using the name of a user account, a value that specifies the type of operation associated with the access rule, and a value that describes whether to allow or deny the operation.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to create an access control rule that you can persist using the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> class.  Access control rules define user account rights that determine which actions are allowed or disallowed on computers running Microsoft Windows.  
-  
- The `identity` parameter must identify a valid account on the current computer or domain.  The string takes the following form, where `DOMAIN` is the name of a valid domain or computer name and `account` is the name of a valid user account on a domain or computer: `DOMAIN\account`.  
-  
-   
-  
-## Examples  
- The following code example uses the <xref:System.Security.AccessControl.FileSecurity> class to add and then remove an access control entry (ACE) from a file.  You must supply a valid user or group account to run this example.  
-  
- [!code-cpp[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/cpp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/cpp/sample.cpp#1)]
- [!code-csharp[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/CS/sample.cs#1)]
- [!code-vb[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/VB/sample.vb#1)]  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ Use this constructor to create an access control rule that you can persist using the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> class. Access control rules define user account rights that determine which actions are allowed or disallowed on computers running Microsoft Windows.
+
+ The `identity` parameter must identify a valid account on the current computer or domain. The string takes the following form, where `DOMAIN` is the name of a valid domain or computer name and `account` is the name of a valid user account on a domain or computer: `DOMAIN\account`.
+
+## Examples
+ The following code example uses the <xref:System.Security.AccessControl.FileSecurity> class to add and then remove an access control entry (ACE) from a file. You must supply a valid user or group account to run this example.
+
+ :::code language="csharp" source="~/snippets/csharp/System.IO/FileSystemAclExtensions/GetAccessControl/sample.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/System.IO/FileSystemAclExtensions/GetAccessControl/sample.vb" id="Snippet1":::
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="identity" /> parameter is <see langword="null" />.</exception>
@@ -157,14 +177,20 @@
       <MemberSignature Language="C#" Value="public FileSystemAccessRule (System.Security.Principal.IdentityReference identity, System.Security.AccessControl.FileSystemRights fileSystemRights, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags, System.Security.AccessControl.AccessControlType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.Security.AccessControl.FileSystemRights fileSystemRights, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AccessControlType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemAccessRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.FileSystemRights,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileSystemAccessRule(System::Security::Principal::IdentityReference ^ identity, System::Security::AccessControl::FileSystemRights fileSystemRights, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AccessControlType type);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IdentityReference, fileSystemRights As FileSystemRights, inheritanceFlags As InheritanceFlags, propagationFlags As PropagationFlags, type As AccessControlType)" />
       <MemberSignature Language="F#" Value="new System.Security.AccessControl.FileSystemAccessRule : System.Security.Principal.IdentityReference * System.Security.AccessControl.FileSystemRights * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.AccessControlType -&gt; System.Security.AccessControl.FileSystemAccessRule" Usage="new System.Security.AccessControl.FileSystemAccessRule (identity, fileSystemRights, inheritanceFlags, propagationFlags, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileSystemAccessRule(System::Security::Principal::IdentityReference ^ identity, System::Security::AccessControl::FileSystemRights fileSystemRights, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AccessControlType type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -187,23 +213,23 @@
         <param name="type">One of the <see cref="T:System.Security.AccessControl.AccessControlType" /> values that specifies whether to allow or deny the operation.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.FileSystemAccessRule" /> class using a reference to a user account, a value that specifies the type of operation associated with the access rule, a value that determines how rights are inherited, a value that determines how rights are propagated, and a value that specifies whether to allow or deny the operation.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to create an access control rule that you can persist using the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> class.  Access control rules define user account rights that determine which actions are allowed or disallowed on computers running Microsoft Windows.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ Use this constructor to create an access control rule that you can persist using the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> class. Access control rules define user account rights that determine which actions are allowed or disallowed on computers running Microsoft Windows.
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="identity" /> parameter is not an <see cref="T:System.Security.Principal.IdentityReference" /> object.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="identity" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">An incorrect enumeration was passed to the <paramref name="type" /> parameter.  
-  
- -or-  
-  
- An incorrect enumeration was passed to the <paramref name="inheritanceFlags" /> parameter.  
-  
- -or-  
-  
+        <exception cref="T:System.ArgumentOutOfRangeException">An incorrect enumeration was passed to the <paramref name="type" /> parameter.
+
+ -or-
+
+ An incorrect enumeration was passed to the <paramref name="inheritanceFlags" /> parameter.
+
+ -or-
+
  An incorrect enumeration was passed to the <paramref name="propagationFlags" /> parameter.</exception>
       </Docs>
     </Member>
@@ -211,14 +237,20 @@
       <MemberSignature Language="C#" Value="public FileSystemAccessRule (string identity, System.Security.AccessControl.FileSystemRights fileSystemRights, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags, System.Security.AccessControl.AccessControlType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string identity, valuetype System.Security.AccessControl.FileSystemRights fileSystemRights, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AccessControlType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemAccessRule.#ctor(System.String,System.Security.AccessControl.FileSystemRights,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileSystemAccessRule(System::String ^ identity, System::Security::AccessControl::FileSystemRights fileSystemRights, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AccessControlType type);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As String, fileSystemRights As FileSystemRights, inheritanceFlags As InheritanceFlags, propagationFlags As PropagationFlags, type As AccessControlType)" />
       <MemberSignature Language="F#" Value="new System.Security.AccessControl.FileSystemAccessRule : string * System.Security.AccessControl.FileSystemRights * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.AccessControlType -&gt; System.Security.AccessControl.FileSystemAccessRule" Usage="new System.Security.AccessControl.FileSystemAccessRule (identity, fileSystemRights, inheritanceFlags, propagationFlags, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileSystemAccessRule(System::String ^ identity, System::Security::AccessControl::FileSystemRights fileSystemRights, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AccessControlType type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -241,24 +273,24 @@
         <param name="type">One of the <see cref="T:System.Security.AccessControl.AccessControlType" /> values that specifies whether to allow or deny the operation.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.FileSystemAccessRule" /> class using the name of a user account, a value that specifies the type of operation associated with the access rule, a value that determines how rights are inherited, a value that determines how rights are propagated, and a value that specifies whether to allow or deny the operation.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this constructor to create an access control rule that you can persist using the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> class.  Access control rules define user account rights that determine which actions are allowed or disallowed on computers running Microsoft Windows.  
-  
- The `identity` parameter must identify a valid account on the current computer or domain.  The string takes the following form, where `DOMAIN` is the name of a valid domain or computer name and `account` is the name of a valid user account on a domain or computer: `DOMAIN\account`.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ Use this constructor to create an access control rule that you can persist using the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> class. Access control rules define user account rights that determine which actions are allowed or disallowed on computers running Microsoft Windows.
+
+ The `identity` parameter must identify a valid account on the current computer or domain. The string takes the following form, where `DOMAIN` is the name of a valid domain or computer name and `account` is the name of a valid user account on a domain or computer: `DOMAIN\account`.
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="identity" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">An incorrect enumeration was passed to the <paramref name="type" /> parameter.  
-  
- -or-  
-  
- An incorrect enumeration was passed to the <paramref name="inheritanceFlags" /> parameter.  
-  
- -or-  
-  
+        <exception cref="T:System.ArgumentOutOfRangeException">An incorrect enumeration was passed to the <paramref name="type" /> parameter.
+
+ -or-
+
+ An incorrect enumeration was passed to the <paramref name="inheritanceFlags" /> parameter.
+
+ -or-
+
  An incorrect enumeration was passed to the <paramref name="propagationFlags" /> parameter.</exception>
       </Docs>
     </Member>
@@ -267,14 +299,19 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.AccessControl.FileSystemRights FileSystemRights" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.FileSystemAccessRule.FileSystemRights" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileSystemRights As FileSystemRights" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::FileSystemRights FileSystemRights { System::Security::AccessControl::FileSystemRights get(); };" />
       <MemberSignature Language="F#" Value="member this.FileSystemRights : System.Security.AccessControl.FileSystemRights" Usage="System.Security.AccessControl.FileSystemAccessRule.FileSystemRights" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::FileSystemRights FileSystemRights { System::Security::AccessControl::FileSystemRights get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

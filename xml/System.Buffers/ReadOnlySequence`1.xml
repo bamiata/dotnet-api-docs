@@ -1,30 +1,72 @@
-﻿<Type Name="ReadOnlySequence&lt;T&gt;" FullName="System.Buffers.ReadOnlySequence&lt;T&gt;">
-  <TypeSignature Language="C#" Value="public struct ReadOnlySequence&lt;T&gt;" />
+<Type Name="ReadOnlySequence&lt;T&gt;" FullName="System.Buffers.ReadOnlySequence&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public readonly struct ReadOnlySequence&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ReadOnlySequence`1&lt;T&gt; extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Buffers.ReadOnlySequence`1" />
   <TypeSignature Language="VB.NET" Value="Public Structure ReadOnlySequence(Of T)" />
-  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public value class ReadOnlySequence" />
   <TypeSignature Language="F#" Value="type ReadOnlySequence&lt;'T&gt; = struct" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public value class ReadOnlySequence" />
   <AssemblyInfo>
     <AssemblyName>System.Memory</AssemblyName>
-    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.1.2</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Memory" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Memory" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Memory" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Memory" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Memory" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <TypeParameters>
-    <TypeParameter Name="T" />
+    <TypeParameter Name="T">
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+    </TypeParameter>
   </TypeParameters>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
-      <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+    <Attribute FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-2.1">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netstandard-2.0">
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerDisplay("{ToString(),raw}")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("{ToString(),raw}")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netstandard-2.0">
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerTypeProxy(typeof(System.Buffers.ReadOnlySequenceDebugView&lt;&gt;))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerTypeProxy(typeof(System.Buffers.ReadOnlySequenceDebugView&lt;&gt;))&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>Represents a sequence that can read a sequential series of <typeparam name="T" />.</summary>
+    <typeparam name="T">The type of the elements in the read-only sequence.</typeparam>
+    <summary>Represents a sequence that can read a sequential series of <typeparamref name="T" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,26 +75,39 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ReadOnlyMemory`1&lt;!T&gt; memory) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.#ctor(System.ReadOnlyMemory{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (memory As ReadOnlyMemory(Of T))" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlySequence(ReadOnlyMemory&lt;T&gt; memory);" />
       <MemberSignature Language="F#" Value="new System.Buffers.ReadOnlySequence&lt;'T&gt; : ReadOnlyMemory&lt;'T&gt; -&gt; System.Buffers.ReadOnlySequence&lt;'T&gt;" Usage="new System.Buffers.ReadOnlySequence&lt;'T&gt; memory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlySequence(ReadOnlyMemory&lt;T&gt; memory);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.2</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" />
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 0, 1 })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 0, 1 })&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
       </Parameters>
       <Docs>
-        <param name="memory">To be added.</param>
+        <param name="memory">A read-only block of memory of elements of type <typeparamref name="T" />.</param>
         <summary>Creates an instance of <see cref="T:System.Buffers.ReadOnlySequence`1" /> from a <see cref="T:System.ReadOnlyMemory`1" />. </summary>
-        <remarks>  
-          <format type="text/markdown"><![CDATA[  
-The consumer is expected to manage the lifetime of memory until <see cref="T:System.Buffers.ReadOnlySequence`1" /> is not used anymore.
-
-]]></format>
-         </remarks>
+        <remarks>The consumer is expected to manage the lifetime of memory until <see cref="T:System.Buffers.ReadOnlySequence`1" /> is not used anymore.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -60,13 +115,24 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.#ctor(`0[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (array As T())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlySequence(cli::array &lt;T&gt; ^ array);" />
       <MemberSignature Language="F#" Value="new System.Buffers.ReadOnlySequence&lt;'T&gt; : 'T[] -&gt; System.Buffers.ReadOnlySequence&lt;'T&gt;" Usage="new System.Buffers.ReadOnlySequence&lt;'T&gt; array" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlySequence(cli::array &lt;T&gt; ^ array);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.2</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="array" Type="T[]" />
@@ -82,13 +148,24 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T[] array, int32 start, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.#ctor(`0[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (array As T(), start As Integer, length As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlySequence(cli::array &lt;T&gt; ^ array, int start, int length);" />
       <MemberSignature Language="F#" Value="new System.Buffers.ReadOnlySequence&lt;'T&gt; : 'T[] * int * int -&gt; System.Buffers.ReadOnlySequence&lt;'T&gt;" Usage="new System.Buffers.ReadOnlySequence&lt;'T&gt; (array, start, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlySequence(cli::array &lt;T&gt; ^ array, int start, int length);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.2</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="array" Type="T[]" />
@@ -108,13 +185,24 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Buffers.ReadOnlySequenceSegment`1&lt;!T&gt; startSegment, int32 startIndex, class System.Buffers.ReadOnlySequenceSegment`1&lt;!T&gt; endSegment, int32 endIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.#ctor(System.Buffers.ReadOnlySequenceSegment{`0},System.Int32,System.Buffers.ReadOnlySequenceSegment{`0},System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (startSegment As ReadOnlySequenceSegment(Of T), startIndex As Integer, endSegment As ReadOnlySequenceSegment(Of T), endIndex As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlySequence(System::Buffers::ReadOnlySequenceSegment&lt;T&gt; ^ startSegment, int startIndex, System::Buffers::ReadOnlySequenceSegment&lt;T&gt; ^ endSegment, int endIndex);" />
       <MemberSignature Language="F#" Value="new System.Buffers.ReadOnlySequence&lt;'T&gt; : System.Buffers.ReadOnlySequenceSegment&lt;'T&gt; * int * System.Buffers.ReadOnlySequenceSegment&lt;'T&gt; * int -&gt; System.Buffers.ReadOnlySequence&lt;'T&gt;" Usage="new System.Buffers.ReadOnlySequence&lt;'T&gt; (startSegment, startIndex, endSegment, endIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlySequence(System::Buffers::ReadOnlySequenceSegment&lt;T&gt; ^ startSegment, int startIndex, System::Buffers::ReadOnlySequenceSegment&lt;T&gt; ^ endSegment, int endIndex);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.2</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="startSegment" Type="System.Buffers.ReadOnlySequenceSegment&lt;T&gt;" />
@@ -123,12 +211,23 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <Parameter Name="endIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="startSegment">To be added.</param>
-        <param name="startIndex">To be added.</param>
-        <param name="endSegment">To be added.</param>
-        <param name="endIndex">To be added.</param>
+        <param name="startSegment">The initial node of the linked memory list.</param>
+        <param name="startIndex">The position to the start of the sequence inside <paramref name="startSegment" />.</param>
+        <param name="endSegment">The final node of the linked memory list.</param>
+        <param name="endIndex">The position to the end of the sequence inside <paramref name="endSegment" />.</param>
         <summary>Creates an instance of a <see cref="T:System.Buffers.ReadOnlySequence`1" /> from a linked memory list represented by start and end segments and the corresponding indexes in them.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="startSegment" /> or <paramref name="endSegment" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The running index of <paramref name="startSegment" /> is greater than the running index of <paramref name="endSegment" />, even though <paramref name="startSegment" /> is different to <paramref name="endSegment" />.
+
+-or-
+
+<paramref name="startSegment" /> is equal to <paramref name="endSegment" /> but <paramref name="endIndex" /> is smaller than <paramref name="startIndex" />.
+
+-or-
+
+<paramref name="startIndex" /> is greater than the length of the underlying memory block of <paramref name="startSegment" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -136,19 +235,36 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Buffers.ReadOnlySequence`1&lt;!T&gt; Empty" />
       <MemberSignature Language="DocId" Value="F:System.Buffers.ReadOnlySequence`1.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As ReadOnlySequence(Of T) " />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Buffers::ReadOnlySequence&lt;T&gt; Empty;" />
       <MemberSignature Language="F#" Value=" staticval mutable Empty : System.Buffers.ReadOnlySequence&lt;'T&gt;" Usage="System.Buffers.ReadOnlySequence&lt;'T&gt;.Empty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Buffers::ReadOnlySequence&lt;T&gt; Empty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.2</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 0, 1 })]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 0, 1 })&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns an empty <see cref="T:System.Buffers.ReadOnlySequence`1" /></summary>
+        <summary>Returns an empty <see cref="T:System.Buffers.ReadOnlySequence`1" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,13 +273,24 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.SequencePosition End" />
       <MemberSignature Language="DocId" Value="P:System.Buffers.ReadOnlySequence`1.End" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property End As SequencePosition" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property SequencePosition End { SequencePosition get(); };" />
       <MemberSignature Language="F#" Value="member this.End : SequencePosition" Usage="System.Buffers.ReadOnlySequence&lt;'T&gt;.End" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property SequencePosition End { SequencePosition get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.2</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.SequencePosition</ReturnType>
@@ -179,14 +306,31 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ReadOnlyMemory`1&lt;!T&gt; First" />
       <MemberSignature Language="DocId" Value="P:System.Buffers.ReadOnlySequence`1.First" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property First As ReadOnlyMemory(Of T)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ReadOnlyMemory&lt;T&gt; First { ReadOnlyMemory&lt;T&gt; get(); };" />
       <MemberSignature Language="F#" Value="member this.First : ReadOnlyMemory&lt;'T&gt;" Usage="System.Buffers.ReadOnlySequence&lt;'T&gt;.First" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ReadOnlyMemory&lt;T&gt; First { ReadOnlyMemory&lt;T&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.2</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 0, 1 })]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 0, 1 })&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ReadOnlyMemory&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -196,18 +340,66 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="FirstSpan">
+      <MemberSignature Language="C#" Value="public ReadOnlySpan&lt;T&gt; FirstSpan { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ReadOnlySpan`1&lt;!T&gt; FirstSpan" />
+      <MemberSignature Language="DocId" Value="P:System.Buffers.ReadOnlySequence`1.FirstSpan" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirstSpan As ReadOnlySpan(Of T)" />
+      <MemberSignature Language="F#" Value="member this.FirstSpan : ReadOnlySpan&lt;'T&gt;" Usage="System.Buffers.ReadOnlySequence&lt;'T&gt;.FirstSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ReadOnlySpan&lt;T&gt; FirstSpan { ReadOnlySpan&lt;T&gt; get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 0, 1 })]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 0, 1 })&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.ReadOnlySpan`1" /> from the first segment.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetEnumerator">
       <MemberSignature Language="C#" Value="public System.Buffers.ReadOnlySequence&lt;T&gt;.Enumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Buffers.ReadOnlySequence`1/Enumerator&lt;!T&gt; GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As ReadOnlySequence(Of T).Enumerator" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt;::Enumerator GetEnumerator();" />
       <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Buffers.ReadOnlySequence&lt;'T&gt;.Enumerator" Usage="readOnlySequence.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt;::Enumerator GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.2</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;+Enumerator</ReturnType>
@@ -219,18 +411,62 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetOffset">
+      <MemberSignature Language="C#" Value="public long GetOffset (SequencePosition position);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int64 GetOffset(valuetype System.SequencePosition position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.GetOffset(System.SequencePosition)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOffset (position As SequencePosition) As Long" />
+      <MemberSignature Language="F#" Value="member this.GetOffset : SequencePosition -&gt; int64" Usage="readOnlySequence.GetOffset position" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; long GetOffset(SequencePosition position);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.SequencePosition" Index="0" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
+      </Parameters>
+      <Docs>
+        <param name="position">The <see cref="T:System.SequencePosition" /> of which to get the offset.</param>
+        <summary>Returns the offset of a <paramref name="position" /> within this sequence from the start.</summary>
+        <returns>The offset from the start of the sequence.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The position is out of range.</exception>
+      </Docs>
+    </Member>
     <Member MemberName="GetPosition">
       <MemberSignature Language="C#" Value="public SequencePosition GetPosition (long offset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.SequencePosition GetPosition(int64 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.GetPosition(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPosition (offset As Long) As SequencePosition" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SequencePosition GetPosition(long offset);" />
       <MemberSignature Language="F#" Value="member this.GetPosition : int64 -&gt; SequencePosition" Usage="readOnlySequence.GetPosition offset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SequencePosition GetPosition(long offset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.2</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.SequencePosition</ReturnType>
@@ -239,9 +475,9 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <Parameter Name="offset" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="offset">To be added.</param>
+        <param name="offset">The offset from the start of the sequence.</param>
         <summary>Returns a new <see cref="T:System.SequencePosition" /> at an <paramref name="offset" /> from the start of the sequence.</summary>
-        <returns>To be added.</returns>
+        <returns>An object representing the sequence position that starts at the specified <paramref name="offset" /> from the start of the sequence.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -250,13 +486,24 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.SequencePosition GetPosition(int64 offset, valuetype System.SequencePosition origin) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.GetPosition(System.Int64,System.SequencePosition)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPosition (offset As Long, origin As SequencePosition) As SequencePosition" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SequencePosition GetPosition(long offset, SequencePosition origin);" />
       <MemberSignature Language="F#" Value="member this.GetPosition : int64 * SequencePosition -&gt; SequencePosition" Usage="readOnlySequence.GetPosition (offset, origin)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SequencePosition GetPosition(long offset, SequencePosition origin);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.2</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.SequencePosition</ReturnType>
@@ -266,10 +513,10 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <Parameter Name="origin" Type="System.SequencePosition" />
       </Parameters>
       <Docs>
-        <param name="offset">To be added.</param>
-        <param name="origin">To be added.</param>
-        <summary>Returns a new <see cref="T:System.SequencePosition" /> at an <paramref name="offset" /> from the <paramref name="origin" />.</summary>
-        <returns>A new object that starts at the <paramref name="offset" /> position of the original object.</returns>
+        <param name="offset">The offset from the specified <paramref name="origin" /> sequence position.</param>
+        <param name="origin">A sequence position representing the point from which to initiate the offset.</param>
+        <summary>Returns a new <see cref="T:System.SequencePosition" /> starting at the specified offset from the <paramref name="origin" /> position.</summary>
+        <returns>An object representing the sequence position that starts at the <paramref name="offset" /> position of the specified <paramref name="origin" /> position object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,13 +525,24 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
       <MemberSignature Language="DocId" Value="P:System.Buffers.ReadOnlySequence`1.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Buffers.ReadOnlySequence&lt;'T&gt;.IsEmpty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.2</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -300,20 +558,32 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSingleSegment" />
       <MemberSignature Language="DocId" Value="P:System.Buffers.ReadOnlySequence`1.IsSingleSegment" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSingleSegment As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSingleSegment { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsSingleSegment : bool" Usage="System.Buffers.ReadOnlySequence&lt;'T&gt;.IsSingleSegment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSingleSegment { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.2</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the <see cref="T:System.Buffers.ReadOnlySequence`1" /> contains a single <see cref="T:System.ReadOnlyMemory`1" /> segment.</summary>
-        <value><see langword="true" /> if the read-only sequence is empty; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the read-only sequence is empty; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -322,13 +592,24 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       <MemberSignature Language="ILAsm" Value=".property instance int64 Length" />
       <MemberSignature Language="DocId" Value="P:System.Buffers.ReadOnlySequence`1.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Long" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Length { long get(); };" />
       <MemberSignature Language="F#" Value="member this.Length : int64" Usage="System.Buffers.ReadOnlySequence&lt;'T&gt;.Length" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Length { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.2</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -344,13 +625,24 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Buffers.ReadOnlySequence`1&lt;!T&gt; Slice(int64 start) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.Slice(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function Slice (start As Long) As ReadOnlySequence(Of T)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(long start);" />
       <MemberSignature Language="F#" Value="member this.Slice : int64 -&gt; System.Buffers.ReadOnlySequence&lt;'T&gt;" Usage="readOnlySequence.Slice start" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(long start);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.2</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
@@ -360,8 +652,8 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </Parameters>
       <Docs>
         <param name="start">The start index at which to begin this slice.</param>
-        <summary>Forms a slice out of the current <see cref="T:System.Buffers.ReadOnlySequence`1" /> , beginning at a specified index and continuing to the end of the read-only sequence.</summary>
-        <returns>To be added.</returns>
+        <summary>Forms a slice out of the current <see cref="T:System.Buffers.ReadOnlySequence`1" />, beginning at a specified index and continuing to the end of the read-only sequence.</summary>
+        <returns>A slice starting at index <paramref name="start" /> and continuing to the end of the current read-only sequence.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -370,13 +662,24 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Buffers.ReadOnlySequence`1&lt;!T&gt; Slice(valuetype System.SequencePosition start) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.Slice(System.SequencePosition)" />
       <MemberSignature Language="VB.NET" Value="Public Function Slice (start As SequencePosition) As ReadOnlySequence(Of T)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(SequencePosition start);" />
       <MemberSignature Language="F#" Value="member this.Slice : SequencePosition -&gt; System.Buffers.ReadOnlySequence&lt;'T&gt;" Usage="readOnlySequence.Slice start" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(SequencePosition start);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.2</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
@@ -386,8 +689,8 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </Parameters>
       <Docs>
         <param name="start">The starting (inclusive) <see cref="T:System.SequencePosition" /> at which to begin this slice.</param>
-        <summary>Forms a slice out of the current <see cref="T:System.Buffers.ReadOnlySequence`1" /> that begins at a specified starting sequence position and continues to its end.</summary>
-        <returns>To be added.</returns>
+        <summary>Forms a slice out of the current <see cref="T:System.Buffers.ReadOnlySequence`1" />, beginning at a specified sequence position and continuing to the end of the read-only sequence.</summary>
+        <returns>A slice starting at sequence position <paramref name="start" /> and continuing to the end of the current read-only sequence.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -396,13 +699,24 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Buffers.ReadOnlySequence`1&lt;!T&gt; Slice(int32 start, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.Slice(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Slice (start As Integer, length As Integer) As ReadOnlySequence(Of T)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(int start, int length);" />
       <MemberSignature Language="F#" Value="member this.Slice : int * int -&gt; System.Buffers.ReadOnlySequence&lt;'T&gt;" Usage="readOnlySequence.Slice (start, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(int start, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.2</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
@@ -413,8 +727,8 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </Parameters>
       <Docs>
         <param name="start">The index at which to begin this slice.</param>
-        <param name="length">The length of the slice</param>
-        <summary>Forms a slice out of the given <see cref="T:System.Buffers.ReadOnlySequence`1" />, beginning at <paramref name="start" />, with <paramref name="length" /> items.</summary>
+        <param name="length">The length of the slice.</param>
+        <summary>Forms a slice out of the current <see cref="T:System.Buffers.ReadOnlySequence`1" />, beginning at <paramref name="start" />, with <paramref name="length" /> items.</summary>
         <returns>A slice that consists of <paramref name="length" /> elements from the current instance starting at index <paramref name="start" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -424,13 +738,24 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Buffers.ReadOnlySequence`1&lt;!T&gt; Slice(int32 start, valuetype System.SequencePosition end) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.Slice(System.Int32,System.SequencePosition)" />
       <MemberSignature Language="VB.NET" Value="Public Function Slice (start As Integer, end As SequencePosition) As ReadOnlySequence(Of T)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(int start, SequencePosition end);" />
       <MemberSignature Language="F#" Value="member this.Slice : int * SequencePosition -&gt; System.Buffers.ReadOnlySequence&lt;'T&gt;" Usage="readOnlySequence.Slice (start, end)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(int start, SequencePosition end);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.2</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
@@ -441,9 +766,9 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </Parameters>
       <Docs>
         <param name="start">The index at which to begin this slice.</param>
-        <param name="end">The end (inclusive) of the slice.</param>
-        <summary>Forms a slice out of the given <see cref="T:System.Buffers.ReadOnlySequence`1" />, beginning at <paramref name="start" />, ending at <paramref name="end" /> (inclusive).</summary>
-        <returns>A slice that consists of items from the <paramref name="start" /> sequence position to the <paramref name="end" /> sequence position in the current read-only sequence.</returns>
+        <param name="end">The end (exclusive) <see cref="T:System.SequencePosition" /> of the slice.</param>
+        <summary>Forms a slice out of the current <see cref="T:System.Buffers.ReadOnlySequence`1" />, beginning at <paramref name="start" /> and ending at <paramref name="end" /> (exclusive).</summary>
+        <returns>A slice that consists of items from the <paramref name="start" /> index to, but not including, the <paramref name="end" /> sequence position in the current read-only sequence.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -452,13 +777,24 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Buffers.ReadOnlySequence`1&lt;!T&gt; Slice(int64 start, int64 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.Slice(System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function Slice (start As Long, length As Long) As ReadOnlySequence(Of T)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(long start, long length);" />
       <MemberSignature Language="F#" Value="member this.Slice : int64 * int64 -&gt; System.Buffers.ReadOnlySequence&lt;'T&gt;" Usage="readOnlySequence.Slice (start, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(long start, long length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.2</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
@@ -471,7 +807,7 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
         <param name="start">The index at which to begin this slice.</param>
         <param name="length">The length of the slice.</param>
         <summary>Forms a slice out of the given <see cref="T:System.Buffers.ReadOnlySequence`1" />, beginning at <paramref name="start" />, with <paramref name="length" /> items.</summary>
-        <returns>To be added.</returns>
+        <returns>A slice that consists of <paramref name="length" /> elements from the current instance starting at index <paramref name="start" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -480,13 +816,24 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Buffers.ReadOnlySequence`1&lt;!T&gt; Slice(int64 start, valuetype System.SequencePosition end) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.Slice(System.Int64,System.SequencePosition)" />
       <MemberSignature Language="VB.NET" Value="Public Function Slice (start As Long, end As SequencePosition) As ReadOnlySequence(Of T)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(long start, SequencePosition end);" />
       <MemberSignature Language="F#" Value="member this.Slice : int64 * SequencePosition -&gt; System.Buffers.ReadOnlySequence&lt;'T&gt;" Usage="readOnlySequence.Slice (start, end)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(long start, SequencePosition end);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.2</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
@@ -497,9 +844,9 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </Parameters>
       <Docs>
         <param name="start">The index at which to begin this slice.</param>
-        <param name="end">The end (inclusive) of the slice.</param>
-        <summary>Forms a slice out of the given <see cref="T:System.Buffers.ReadOnlySequence`1" />, beginning at <paramref name="start" />, ending at <paramref name="end" /> (inclusive).</summary>
-        <returns>To be added.</returns>
+        <param name="end">The end (exclusive) of the slice.</param>
+        <summary>Forms a slice out of the current <see cref="T:System.Buffers.ReadOnlySequence`1" />, beginning at <paramref name="start" /> and ending at <paramref name="end" /> (exclusive).</summary>
+        <returns>A slice that consists of items from the <paramref name="start" /> index to, but not including, the <paramref name="end" /> sequence position in the current read-only sequence.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -508,13 +855,24 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Buffers.ReadOnlySequence`1&lt;!T&gt; Slice(valuetype System.SequencePosition start, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.Slice(System.SequencePosition,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Slice (start As SequencePosition, length As Integer) As ReadOnlySequence(Of T)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(SequencePosition start, int length);" />
       <MemberSignature Language="F#" Value="member this.Slice : SequencePosition * int -&gt; System.Buffers.ReadOnlySequence&lt;'T&gt;" Usage="readOnlySequence.Slice (start, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(SequencePosition start, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.2</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
@@ -526,8 +884,8 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       <Docs>
         <param name="start">The starting (inclusive) <see cref="T:System.SequencePosition" /> at which to begin this slice.</param>
         <param name="length">The length of the slice.</param>
-        <summary>Forms a slice out of the given <see cref="T:System.Buffers.ReadOnlySequence`1" />, beginning at '<paramref name="start" />, with <paramref name="length" /> items.</summary>
-        <returns>To be added.</returns>
+        <summary>Forms a slice out of the current <see cref="T:System.Buffers.ReadOnlySequence`1" />, beginning at <paramref name="start" />, with <paramref name="length" /> items.</summary>
+        <returns>A slice that consists of <paramref name="length" /> elements from the current instance starting at sequence position <paramref name="start" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -536,13 +894,24 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Buffers.ReadOnlySequence`1&lt;!T&gt; Slice(valuetype System.SequencePosition start, int64 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.Slice(System.SequencePosition,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function Slice (start As SequencePosition, length As Long) As ReadOnlySequence(Of T)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(SequencePosition start, long length);" />
       <MemberSignature Language="F#" Value="member this.Slice : SequencePosition * int64 -&gt; System.Buffers.ReadOnlySequence&lt;'T&gt;" Usage="readOnlySequence.Slice (start, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(SequencePosition start, long length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.2</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
@@ -554,8 +923,8 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       <Docs>
         <param name="start">The starting (inclusive) <see cref="T:System.SequencePosition" /> at which to begin this slice.</param>
         <param name="length">The length of the slice.</param>
-        <summary>Forms a slice out of the given <see cref="T:System.Buffers.ReadOnlySequence`1" />, beginning at <paramref name="start" />, with <paramref name="length" /> items.</summary>
-        <returns>To be added.</returns>
+        <summary>Forms a slice out of the current <see cref="T:System.Buffers.ReadOnlySequence`1" />, beginning at <paramref name="start" />, with <paramref name="length" /> items.</summary>
+        <returns>A slice that consists of <paramref name="length" /> elements from the current instance starting at sequence position <paramref name="start" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -564,13 +933,24 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Buffers.ReadOnlySequence`1&lt;!T&gt; Slice(valuetype System.SequencePosition start, valuetype System.SequencePosition end) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.Slice(System.SequencePosition,System.SequencePosition)" />
       <MemberSignature Language="VB.NET" Value="Public Function Slice (start As SequencePosition, end As SequencePosition) As ReadOnlySequence(Of T)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(SequencePosition start, SequencePosition end);" />
       <MemberSignature Language="F#" Value="member this.Slice : SequencePosition * SequencePosition -&gt; System.Buffers.ReadOnlySequence&lt;'T&gt;" Usage="readOnlySequence.Slice (start, end)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Buffers::ReadOnlySequence&lt;T&gt; Slice(SequencePosition start, SequencePosition end);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.2</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ReadOnlySequence&lt;T&gt;</ReturnType>
@@ -581,9 +961,9 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       </Parameters>
       <Docs>
         <param name="start">The starting (inclusive) <see cref="T:System.SequencePosition" /> at which to begin this slice.</param>
-        <param name="end">The ending (inclusive) <see cref="T:System.SequencePosition" /> of the slice.</param>
-        <summary>Forms a slice out of the given <see cref="T:System.Buffers.ReadOnlySequence`1" />, beginning at <paramref name="start" />, ending at <paramref name="end" /> (inclusive).</summary>
-        <returns>To be added.</returns>
+        <param name="end">The ending (exclusive) <see cref="T:System.SequencePosition" /> of the slice.</param>
+        <summary>Forms a slice out of the current <see cref="T:System.Buffers.ReadOnlySequence`1" />, beginning at <paramref name="start" /> and ending at <paramref name="end" /> (exclusive).</summary>
+        <returns>A slice that consists of items from the <paramref name="start" /> sequence position to, but not including, the <paramref name="end" /> sequence position in the current read-only sequence.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -592,13 +972,24 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.SequencePosition Start" />
       <MemberSignature Language="DocId" Value="P:System.Buffers.ReadOnlySequence`1.Start" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Start As SequencePosition" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property SequencePosition Start { SequencePosition get(); };" />
       <MemberSignature Language="F#" Value="member this.Start : SequencePosition" Usage="System.Buffers.ReadOnlySequence&lt;'T&gt;.Start" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property SequencePosition Start { SequencePosition get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.2</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.SequencePosition</ReturnType>
@@ -614,21 +1005,32 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="readOnlySequence.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.2</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a string that represents the current sequence.</summary>
+        <returns>A string that represents the current sequence.</returns>
         <remarks>To be added.</remarks>
         <inheritdoc />
       </Docs>
@@ -638,27 +1040,46 @@ The consumer is expected to manage the lifetime of memory until <see cref="T:Sys
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGet(valuetype System.SequencePosition&amp; position, [out] valuetype System.ReadOnlyMemory`1&lt;!T&gt;&amp; memory, bool advance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.ReadOnlySequence`1.TryGet(System.SequencePosition@,System.ReadOnlyMemory{`0}@,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGet (ByRef position As SequencePosition, ByRef memory As ReadOnlyMemory(Of T), Optional advance As Boolean = true) As Boolean" />
-      <MemberSignature Language="F#" Value="member this.TryGet :  *  * bool -&gt; bool" Usage="readOnlySequence.TryGet (position, memory, advance)" />
+      <MemberSignature Language="F#" Value="member this.TryGet : SequencePosition * ReadOnlyMemory * bool -&gt; bool" Usage="readOnlySequence.TryGet (position, memory, advance)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.2</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="position" Type="System.SequencePosition" RefType="ref" />
-        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" RefType="out" />
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" RefType="out">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 0, 1 })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 0, 1 })&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="advance" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="position">The current sequence position.</param>
-        <param name="memory">A read-only memory span that contains the next segment after <paramref  name="position" />.</param>
-        <param name="advance"><see langword="true" /> if <paramref name="position" /> should to the beginning of next segment; otherwise, <see langword="false" />.</param>
+        <param name="memory">A read-only memory span that contains the next segment after <paramref name="position" />.</param>
+        <param name="advance">
+          <see langword="true" /> if <paramref name="position" /> should to the beginning of next segment; otherwise, <see langword="false" />.</param>
         <summary>Tries to retrieve the next segment after <paramref name="position" /> and returns a value that indicates whether the operation succeeded.</summary>
-        <returns>Returns <see langword="true" /> if the method returned the next segment, or <see langword="false" /> if the end of the read-only sequence was reached. </returns>
+        <returns>Returns <see langword="true" /> if the method returned the next segment, or <see langword="false" /> if the end of the read-only sequence was reached.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

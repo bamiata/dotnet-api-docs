@@ -1,10 +1,11 @@
-﻿<Type Name="IMoniker" FullName="System.Runtime.InteropServices.ComTypes.IMoniker">
+<Type Name="IMoniker" FullName="System.Runtime.InteropServices.ComTypes.IMoniker">
   <TypeSignature Language="C#" Value="public interface IMoniker" />
-  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMoniker" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMoniker" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.IMoniker" />
   <TypeSignature Language="VB.NET" Value="Public Interface IMoniker" />
-  <TypeSignature Language="C++ CLI" Value="public interface class IMoniker" />
   <TypeSignature Language="F#" Value="type IMoniker = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IMoniker" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IMoniker" FrameworkAlternate="net-8.0;net-9.0" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -14,6 +15,12 @@
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -24,20 +31,34 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Runtime.InteropServices" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.InteropServices" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.InteropServices" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.InteropServices" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.InteropServices" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.InteropServices" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+    <TypeForwarding From="System.Runtime.InteropServices" FromVersion="4.1.0.0" To="mscorlib" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Runtime.InteropServices.Guid("0000000f-0000-0000-C000-000000000046")</AttributeName>
+    <Attribute FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.1">
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    <Attribute FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.1">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netstandard-1.5;netstandard-1.6;netcore-2.2">
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netstandard-1.2;netstandard-1.3;netstandard-1.4">
-      <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.Guid("0000000f-0000-0000-C000-000000000046")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.Guid("0000000f-0000-0000-C000-000000000046")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -48,19 +69,21 @@
 ## Remarks  
  For more information about the `IMoniker`, `IPersist`, and `IPersistStream` interfaces, see the MSDN Library.  
   
- The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
+ The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](/dotnet/framework/interop/how-to-map-hresults-and-exceptions).  
   
  ]]></format>
     </remarks>
   </Docs>
   <Members>
     <Member MemberName="BindToObject">
-      <MemberSignature Language="C#" Value="public void BindToObject (System.Runtime.InteropServices.ComTypes.IBindCtx pbc, System.Runtime.InteropServices.ComTypes.IMoniker pmkToLeft, ref Guid riidResult, out object ppvResult);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BindToObject(class System.Runtime.InteropServices.ComTypes.IBindCtx pbc, class System.Runtime.InteropServices.ComTypes.IMoniker pmkToLeft, [in]valuetype System.Guid&amp; riidResult, [out] object&amp; ppvResult) cil managed" />
+      <MemberSignature Language="C#" Value="public void BindToObject (System.Runtime.InteropServices.ComTypes.IBindCtx pbc, System.Runtime.InteropServices.ComTypes.IMoniker pmkToLeft, ref Guid riidResult, out object ppvResult);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BindToObject(class System.Runtime.InteropServices.ComTypes.IBindCtx pbc, class System.Runtime.InteropServices.ComTypes.IMoniker pmkToLeft, valuetype System.Guid&amp; riidResult, [out] object&amp; ppvResult) cil managed" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.BindToObject(System.Runtime.InteropServices.ComTypes.IBindCtx,System.Runtime.InteropServices.ComTypes.IMoniker,System.Guid@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub BindToObject (pbc As IBindCtx, pmkToLeft As IMoniker, ByRef riidResult As Guid, ByRef ppvResult As Object)" />
+      <MemberSignature Language="F#" Value="abstract member BindToObject : System.Runtime.InteropServices.ComTypes.IBindCtx * System.Runtime.InteropServices.ComTypes.IMoniker * Guid * obj -&gt; unit" Usage="iMoniker.BindToObject (pbc, pmkToLeft, riidResult, ppvResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BindToObject(System::Runtime::InteropServices::ComTypes::IBindCtx ^ pbc, System::Runtime::InteropServices::ComTypes::IMoniker ^ pmkToLeft, Guid % riidResult, [Runtime::InteropServices::Out] System::Object ^ % ppvResult);" />
-      <MemberSignature Language="F#" Value="abstract member BindToObject : System.Runtime.InteropServices.ComTypes.IBindCtx * System.Runtime.InteropServices.ComTypes.IMoniker *  *  -&gt; unit" Usage="iMoniker.BindToObject (pbc, pmkToLeft, riidResult, ppvResult)" />
+      <MemberSignature Language="C#" Value="public void BindToObject (System.Runtime.InteropServices.ComTypes.IBindCtx pbc, System.Runtime.InteropServices.ComTypes.IMoniker? pmkToLeft, ref Guid riidResult, out object ppvResult);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BindToObject(class System.Runtime.InteropServices.ComTypes.IBindCtx pbc, class System.Runtime.InteropServices.ComTypes.IMoniker pmkToLeft, [in]valuetype System.Guid&amp; riidResult, [out] object&amp; ppvResult) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -71,6 +94,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -81,13 +110,21 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="pbc" Type="System.Runtime.InteropServices.ComTypes.IBindCtx" />
-        <Parameter Name="pmkToLeft" Type="System.Runtime.InteropServices.ComTypes.IMoniker" />
+        <Parameter Name="pmkToLeft" Type="System.Runtime.InteropServices.ComTypes.IMoniker">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="riidResult" Type="System.Guid" RefType="ref" />
         <Parameter Name="ppvResult" Type="System.Object" RefType="out" />
       </Parameters>
@@ -101,19 +138,21 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about `IMoniker::BindToObject`, see the MSDN Library.  
+ For more information, see [IMoniker::BindToObject method](/windows/win32/api/objidl/nf-objidl-imoniker-bindtoobject).
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="BindToStorage">
-      <MemberSignature Language="C#" Value="public void BindToStorage (System.Runtime.InteropServices.ComTypes.IBindCtx pbc, System.Runtime.InteropServices.ComTypes.IMoniker pmkToLeft, ref Guid riid, out object ppvObj);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BindToStorage(class System.Runtime.InteropServices.ComTypes.IBindCtx pbc, class System.Runtime.InteropServices.ComTypes.IMoniker pmkToLeft, [in]valuetype System.Guid&amp; riid, [out] object&amp; ppvObj) cil managed" />
+      <MemberSignature Language="C#" Value="public void BindToStorage (System.Runtime.InteropServices.ComTypes.IBindCtx pbc, System.Runtime.InteropServices.ComTypes.IMoniker pmkToLeft, ref Guid riid, out object ppvObj);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BindToStorage(class System.Runtime.InteropServices.ComTypes.IBindCtx pbc, class System.Runtime.InteropServices.ComTypes.IMoniker pmkToLeft, valuetype System.Guid&amp; riid, [out] object&amp; ppvObj) cil managed" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.BindToStorage(System.Runtime.InteropServices.ComTypes.IBindCtx,System.Runtime.InteropServices.ComTypes.IMoniker,System.Guid@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub BindToStorage (pbc As IBindCtx, pmkToLeft As IMoniker, ByRef riid As Guid, ByRef ppvObj As Object)" />
+      <MemberSignature Language="F#" Value="abstract member BindToStorage : System.Runtime.InteropServices.ComTypes.IBindCtx * System.Runtime.InteropServices.ComTypes.IMoniker * Guid * obj -&gt; unit" Usage="iMoniker.BindToStorage (pbc, pmkToLeft, riid, ppvObj)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BindToStorage(System::Runtime::InteropServices::ComTypes::IBindCtx ^ pbc, System::Runtime::InteropServices::ComTypes::IMoniker ^ pmkToLeft, Guid % riid, [Runtime::InteropServices::Out] System::Object ^ % ppvObj);" />
-      <MemberSignature Language="F#" Value="abstract member BindToStorage : System.Runtime.InteropServices.ComTypes.IBindCtx * System.Runtime.InteropServices.ComTypes.IMoniker *  *  -&gt; unit" Usage="iMoniker.BindToStorage (pbc, pmkToLeft, riid, ppvObj)" />
+      <MemberSignature Language="C#" Value="public void BindToStorage (System.Runtime.InteropServices.ComTypes.IBindCtx pbc, System.Runtime.InteropServices.ComTypes.IMoniker? pmkToLeft, ref Guid riid, out object ppvObj);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BindToStorage(class System.Runtime.InteropServices.ComTypes.IBindCtx pbc, class System.Runtime.InteropServices.ComTypes.IMoniker pmkToLeft, [in]valuetype System.Guid&amp; riid, [out] object&amp; ppvObj) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -124,6 +163,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -134,13 +179,21 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="pbc" Type="System.Runtime.InteropServices.ComTypes.IBindCtx" />
-        <Parameter Name="pmkToLeft" Type="System.Runtime.InteropServices.ComTypes.IMoniker" />
+        <Parameter Name="pmkToLeft" Type="System.Runtime.InteropServices.ComTypes.IMoniker">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="riid" Type="System.Guid" RefType="ref" />
         <Parameter Name="ppvObj" Type="System.Object" RefType="out" />
       </Parameters>
@@ -154,19 +207,20 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about `IMoniker::BindToStorage`, see the MSDN Library.  
+ For more information, see [IMoniker::BindToStorage method](/windows/win32/api/objidl/nf-objidl-imoniker-bindtostorage).
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="CommonPrefixWith">
-      <MemberSignature Language="C#" Value="public void CommonPrefixWith (System.Runtime.InteropServices.ComTypes.IMoniker pmkOther, out System.Runtime.InteropServices.ComTypes.IMoniker ppmkPrefix);" />
+      <MemberSignature Language="C#" Value="public void CommonPrefixWith (System.Runtime.InteropServices.ComTypes.IMoniker pmkOther, out System.Runtime.InteropServices.ComTypes.IMoniker ppmkPrefix);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CommonPrefixWith(class System.Runtime.InteropServices.ComTypes.IMoniker pmkOther, [out] class System.Runtime.InteropServices.ComTypes.IMoniker&amp; ppmkPrefix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.CommonPrefixWith(System.Runtime.InteropServices.ComTypes.IMoniker,System.Runtime.InteropServices.ComTypes.IMoniker@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CommonPrefixWith (pmkOther As IMoniker, ByRef ppmkPrefix As IMoniker)" />
+      <MemberSignature Language="F#" Value="abstract member CommonPrefixWith : System.Runtime.InteropServices.ComTypes.IMoniker * IMoniker -&gt; unit" Usage="iMoniker.CommonPrefixWith (pmkOther, ppmkPrefix)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CommonPrefixWith(System::Runtime::InteropServices::ComTypes::IMoniker ^ pmkOther, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IMoniker ^ % ppmkPrefix);" />
-      <MemberSignature Language="F#" Value="abstract member CommonPrefixWith : System.Runtime.InteropServices.ComTypes.IMoniker *  -&gt; unit" Usage="iMoniker.CommonPrefixWith (pmkOther, ppmkPrefix)" />
+      <MemberSignature Language="C#" Value="public void CommonPrefixWith (System.Runtime.InteropServices.ComTypes.IMoniker pmkOther, out System.Runtime.InteropServices.ComTypes.IMoniker? ppmkPrefix);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -177,6 +231,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -187,13 +247,21 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="pmkOther" Type="System.Runtime.InteropServices.ComTypes.IMoniker" />
-        <Parameter Name="ppmkPrefix" Type="System.Runtime.InteropServices.ComTypes.IMoniker" RefType="out" />
+        <Parameter Name="ppmkPrefix" Type="System.Runtime.InteropServices.ComTypes.IMoniker" RefType="out">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
       </Parameters>
       <Docs>
         <param name="pmkOther">A reference to the <see langword="IMoniker" /> interface on another moniker to compare with the current moniker for a common prefix.</param>
@@ -203,19 +271,20 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about `IMoniker::CommonPrefixWith`, see the MSDN Library.  
+ For more information, see [IMoniker::CommonPrefixWith method](/windows/win32/api/objidl/nf-objidl-imoniker-commonprefixwith).
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="ComposeWith">
-      <MemberSignature Language="C#" Value="public void ComposeWith (System.Runtime.InteropServices.ComTypes.IMoniker pmkRight, bool fOnlyIfNotGeneric, out System.Runtime.InteropServices.ComTypes.IMoniker ppmkComposite);" />
+      <MemberSignature Language="C#" Value="public void ComposeWith (System.Runtime.InteropServices.ComTypes.IMoniker pmkRight, bool fOnlyIfNotGeneric, out System.Runtime.InteropServices.ComTypes.IMoniker ppmkComposite);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ComposeWith(class System.Runtime.InteropServices.ComTypes.IMoniker pmkRight, bool fOnlyIfNotGeneric, [out] class System.Runtime.InteropServices.ComTypes.IMoniker&amp; ppmkComposite) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.ComposeWith(System.Runtime.InteropServices.ComTypes.IMoniker,System.Boolean,System.Runtime.InteropServices.ComTypes.IMoniker@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ComposeWith (pmkRight As IMoniker, fOnlyIfNotGeneric As Boolean, ByRef ppmkComposite As IMoniker)" />
+      <MemberSignature Language="F#" Value="abstract member ComposeWith : System.Runtime.InteropServices.ComTypes.IMoniker * bool * IMoniker -&gt; unit" Usage="iMoniker.ComposeWith (pmkRight, fOnlyIfNotGeneric, ppmkComposite)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ComposeWith(System::Runtime::InteropServices::ComTypes::IMoniker ^ pmkRight, bool fOnlyIfNotGeneric, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IMoniker ^ % ppmkComposite);" />
-      <MemberSignature Language="F#" Value="abstract member ComposeWith : System.Runtime.InteropServices.ComTypes.IMoniker * bool *  -&gt; unit" Usage="iMoniker.ComposeWith (pmkRight, fOnlyIfNotGeneric, ppmkComposite)" />
+      <MemberSignature Language="C#" Value="public void ComposeWith (System.Runtime.InteropServices.ComTypes.IMoniker pmkRight, bool fOnlyIfNotGeneric, out System.Runtime.InteropServices.ComTypes.IMoniker? ppmkComposite);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -226,6 +295,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -236,6 +311,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -243,7 +319,14 @@
       <Parameters>
         <Parameter Name="pmkRight" Type="System.Runtime.InteropServices.ComTypes.IMoniker" />
         <Parameter Name="fOnlyIfNotGeneric" Type="System.Boolean" />
-        <Parameter Name="ppmkComposite" Type="System.Runtime.InteropServices.ComTypes.IMoniker" RefType="out" />
+        <Parameter Name="ppmkComposite" Type="System.Runtime.InteropServices.ComTypes.IMoniker" RefType="out">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
       </Parameters>
       <Docs>
         <param name="pmkRight">A reference to the <see langword="IMoniker" /> interface on a moniker to append to the end of the current moniker.</param>
@@ -255,19 +338,20 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about `IMoniker::ComposeWith`, see the MSDN Library.  
+ For more information, see [IMoniker::ComposeWith method](/windows/win32/api/objidl/nf-objidl-imoniker-composewith).
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="Enum">
-      <MemberSignature Language="C#" Value="public void Enum (bool fForward, out System.Runtime.InteropServices.ComTypes.IEnumMoniker ppenumMoniker);" />
+      <MemberSignature Language="C#" Value="public void Enum (bool fForward, out System.Runtime.InteropServices.ComTypes.IEnumMoniker ppenumMoniker);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Enum(bool fForward, [out] class System.Runtime.InteropServices.ComTypes.IEnumMoniker&amp; ppenumMoniker) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.Enum(System.Boolean,System.Runtime.InteropServices.ComTypes.IEnumMoniker@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Enum (fForward As Boolean, ByRef ppenumMoniker As IEnumMoniker)" />
+      <MemberSignature Language="F#" Value="abstract member Enum : bool * IEnumMoniker -&gt; unit" Usage="iMoniker.Enum (fForward, ppenumMoniker)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Enum(bool fForward, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IEnumMoniker ^ % ppenumMoniker);" />
-      <MemberSignature Language="F#" Value="abstract member Enum : bool *  -&gt; unit" Usage="iMoniker.Enum (fForward, ppenumMoniker)" />
+      <MemberSignature Language="C#" Value="public void Enum (bool fForward, out System.Runtime.InteropServices.ComTypes.IEnumMoniker? ppenumMoniker);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -278,6 +362,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -288,7 +378,14 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -305,7 +402,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about `IMoniker::Enum`, see the MSDN Library.  
+ For more information, see [IMoniker::Enum method](/windows/win32/api/objidl/nf-objidl-imoniker-enum).
   
  ]]></format>
         </remarks>
@@ -316,8 +413,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetClassID([out] valuetype System.Guid&amp; pClassID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.GetClassID(System.Guid@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetClassID (ByRef pClassID As Guid)" />
+      <MemberSignature Language="F#" Value="abstract member GetClassID : Guid -&gt; unit" Usage="iMoniker.GetClassID pClassID" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetClassID([Runtime::InteropServices::Out] Guid % pClassID);" />
-      <MemberSignature Language="F#" Value="abstract member GetClassID :  -&gt; unit" Usage="iMoniker.GetClassID pClassID" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -328,6 +425,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -338,6 +441,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -352,19 +456,20 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about `IPersist::GetClassID`, see the MSDN Library.  
+ For more information, see [IPersist::GetClassID method](/windows/win32/api/objidl/nf-objidl-ipersist-getclassid).
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDisplayName">
-      <MemberSignature Language="C#" Value="public void GetDisplayName (System.Runtime.InteropServices.ComTypes.IBindCtx pbc, System.Runtime.InteropServices.ComTypes.IMoniker pmkToLeft, out string ppszDisplayName);" />
+      <MemberSignature Language="C#" Value="public void GetDisplayName (System.Runtime.InteropServices.ComTypes.IBindCtx pbc, System.Runtime.InteropServices.ComTypes.IMoniker pmkToLeft, out string ppszDisplayName);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetDisplayName(class System.Runtime.InteropServices.ComTypes.IBindCtx pbc, class System.Runtime.InteropServices.ComTypes.IMoniker pmkToLeft, [out] string&amp; ppszDisplayName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.GetDisplayName(System.Runtime.InteropServices.ComTypes.IBindCtx,System.Runtime.InteropServices.ComTypes.IMoniker,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetDisplayName (pbc As IBindCtx, pmkToLeft As IMoniker, ByRef ppszDisplayName As String)" />
+      <MemberSignature Language="F#" Value="abstract member GetDisplayName : System.Runtime.InteropServices.ComTypes.IBindCtx * System.Runtime.InteropServices.ComTypes.IMoniker * string -&gt; unit" Usage="iMoniker.GetDisplayName (pbc, pmkToLeft, ppszDisplayName)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetDisplayName(System::Runtime::InteropServices::ComTypes::IBindCtx ^ pbc, System::Runtime::InteropServices::ComTypes::IMoniker ^ pmkToLeft, [Runtime::InteropServices::Out] System::String ^ % ppszDisplayName);" />
-      <MemberSignature Language="F#" Value="abstract member GetDisplayName : System.Runtime.InteropServices.ComTypes.IBindCtx * System.Runtime.InteropServices.ComTypes.IMoniker *  -&gt; unit" Usage="iMoniker.GetDisplayName (pbc, pmkToLeft, ppszDisplayName)" />
+      <MemberSignature Language="C#" Value="public void GetDisplayName (System.Runtime.InteropServices.ComTypes.IBindCtx pbc, System.Runtime.InteropServices.ComTypes.IMoniker? pmkToLeft, out string ppszDisplayName);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -375,6 +480,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -385,13 +496,21 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="pbc" Type="System.Runtime.InteropServices.ComTypes.IBindCtx" />
-        <Parameter Name="pmkToLeft" Type="System.Runtime.InteropServices.ComTypes.IMoniker" />
+        <Parameter Name="pmkToLeft" Type="System.Runtime.InteropServices.ComTypes.IMoniker">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="ppszDisplayName" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
@@ -403,7 +522,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about `IMoniker::GetDisplayName`, see the MSDN Library.  
+ For more information, see [IMoniker::GetDisplayName method](/windows/win32/api/objidl/nf-objidl-imoniker-getdisplayname).
   
  ]]></format>
         </remarks>
@@ -414,8 +533,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetSizeMax([out] int64&amp; pcbSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.GetSizeMax(System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetSizeMax (ByRef pcbSize As Long)" />
+      <MemberSignature Language="F#" Value="abstract member GetSizeMax : int64 -&gt; unit" Usage="iMoniker.GetSizeMax pcbSize" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetSizeMax([Runtime::InteropServices::Out] long % pcbSize);" />
-      <MemberSignature Language="F#" Value="abstract member GetSizeMax :  -&gt; unit" Usage="iMoniker.GetSizeMax pcbSize" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -426,6 +545,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -436,6 +561,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -450,19 +576,20 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about `IPersistStream::GetSizeMax`, see the MSDN Library.  
+ For more information, see [IPersistStream::GetSizeMax method](/windows/win32/api/objidl/nf-objidl-ipersiststream-getsizemax).
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTimeOfLastChange">
-      <MemberSignature Language="C#" Value="public void GetTimeOfLastChange (System.Runtime.InteropServices.ComTypes.IBindCtx pbc, System.Runtime.InteropServices.ComTypes.IMoniker pmkToLeft, out System.Runtime.InteropServices.ComTypes.FILETIME pFileTime);" />
+      <MemberSignature Language="C#" Value="public void GetTimeOfLastChange (System.Runtime.InteropServices.ComTypes.IBindCtx pbc, System.Runtime.InteropServices.ComTypes.IMoniker pmkToLeft, out System.Runtime.InteropServices.ComTypes.FILETIME pFileTime);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetTimeOfLastChange(class System.Runtime.InteropServices.ComTypes.IBindCtx pbc, class System.Runtime.InteropServices.ComTypes.IMoniker pmkToLeft, [out] valuetype System.Runtime.InteropServices.ComTypes.FILETIME&amp; pFileTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.GetTimeOfLastChange(System.Runtime.InteropServices.ComTypes.IBindCtx,System.Runtime.InteropServices.ComTypes.IMoniker,System.Runtime.InteropServices.ComTypes.FILETIME@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetTimeOfLastChange (pbc As IBindCtx, pmkToLeft As IMoniker, ByRef pFileTime As FILETIME)" />
+      <MemberSignature Language="F#" Value="abstract member GetTimeOfLastChange : System.Runtime.InteropServices.ComTypes.IBindCtx * System.Runtime.InteropServices.ComTypes.IMoniker * FILETIME -&gt; unit" Usage="iMoniker.GetTimeOfLastChange (pbc, pmkToLeft, pFileTime)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTimeOfLastChange(System::Runtime::InteropServices::ComTypes::IBindCtx ^ pbc, System::Runtime::InteropServices::ComTypes::IMoniker ^ pmkToLeft, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::FILETIME % pFileTime);" />
-      <MemberSignature Language="F#" Value="abstract member GetTimeOfLastChange : System.Runtime.InteropServices.ComTypes.IBindCtx * System.Runtime.InteropServices.ComTypes.IMoniker *  -&gt; unit" Usage="iMoniker.GetTimeOfLastChange (pbc, pmkToLeft, pFileTime)" />
+      <MemberSignature Language="C#" Value="public void GetTimeOfLastChange (System.Runtime.InteropServices.ComTypes.IBindCtx pbc, System.Runtime.InteropServices.ComTypes.IMoniker? pmkToLeft, out System.Runtime.InteropServices.ComTypes.FILETIME pFileTime);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -473,6 +600,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -483,13 +616,21 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="pbc" Type="System.Runtime.InteropServices.ComTypes.IBindCtx" />
-        <Parameter Name="pmkToLeft" Type="System.Runtime.InteropServices.ComTypes.IMoniker" />
+        <Parameter Name="pmkToLeft" Type="System.Runtime.InteropServices.ComTypes.IMoniker">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="pFileTime" Type="System.Runtime.InteropServices.ComTypes.FILETIME" RefType="out" />
       </Parameters>
       <Docs>
@@ -501,7 +642,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about `IMoniker::GetTimeOfLastChange`, see the MSDN Library.  
+ For more information, see [IMoniker::GetTimeOfLastChange method](/windows/win32/api/objidl/nf-objidl-imoniker-gettimeoflastchange).
   
  ]]></format>
         </remarks>
@@ -512,8 +653,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Hash([out] int32&amp; pdwHash) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.Hash(System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Hash (ByRef pdwHash As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member Hash : int -&gt; unit" Usage="iMoniker.Hash pdwHash" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Hash([Runtime::InteropServices::Out] int % pdwHash);" />
-      <MemberSignature Language="F#" Value="abstract member Hash :  -&gt; unit" Usage="iMoniker.Hash pdwHash" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -524,6 +665,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -534,6 +681,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -548,7 +696,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about `IMoniker::Hash`, see the MSDN Library.  
+ For more information, see [IMoniker::Hash method](/windows/win32/api/objidl/nf-objidl-imoniker-hash).
   
  ]]></format>
         </remarks>
@@ -559,8 +707,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Inverse([out] class System.Runtime.InteropServices.ComTypes.IMoniker&amp; ppmk) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.Inverse(System.Runtime.InteropServices.ComTypes.IMoniker@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Inverse (ByRef ppmk As IMoniker)" />
+      <MemberSignature Language="F#" Value="abstract member Inverse : IMoniker -&gt; unit" Usage="iMoniker.Inverse ppmk" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Inverse([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IMoniker ^ % ppmk);" />
-      <MemberSignature Language="F#" Value="abstract member Inverse :  -&gt; unit" Usage="iMoniker.Inverse ppmk" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -571,6 +719,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -581,6 +735,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -595,7 +750,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about `IMoniker::Inverse`, see the MSDN Library.  
+ For more information, see [IMoniker::Inverse method](/windows/win32/api/objidl/nf-objidl-imoniker-inverse).
   
  ]]></format>
         </remarks>
@@ -606,8 +761,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IsDirty() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.IsDirty" />
       <MemberSignature Language="VB.NET" Value="Public Function IsDirty () As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IsDirty();" />
       <MemberSignature Language="F#" Value="abstract member IsDirty : unit -&gt; int" Usage="iMoniker.IsDirty " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IsDirty();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -618,6 +773,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -628,6 +789,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -640,7 +802,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about `IPersistStream::IsDirty`, see the MSDN Library.  
+ For more information, see [IPersistStream::IsDirty method](/windows/win32/api/objidl/nf-objidl-ipersiststream-isdirty).
   
  ]]></format>
         </remarks>
@@ -651,8 +813,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IsEqual(class System.Runtime.InteropServices.ComTypes.IMoniker pmkOtherMoniker) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.IsEqual(System.Runtime.InteropServices.ComTypes.IMoniker)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsEqual (pmkOtherMoniker As IMoniker) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IsEqual(System::Runtime::InteropServices::ComTypes::IMoniker ^ pmkOtherMoniker);" />
       <MemberSignature Language="F#" Value="abstract member IsEqual : System.Runtime.InteropServices.ComTypes.IMoniker -&gt; int" Usage="iMoniker.IsEqual pmkOtherMoniker" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IsEqual(System::Runtime::InteropServices::ComTypes::IMoniker ^ pmkOtherMoniker);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -663,6 +825,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -673,6 +841,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -688,19 +857,20 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about `IMoniker::IsEqual`, see the MSDN Library.  
+ For more information, see [IMoniker::IsEqual method](/windows/win32/api/objidl/nf-objidl-imoniker-isequal).
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsRunning">
-      <MemberSignature Language="C#" Value="public int IsRunning (System.Runtime.InteropServices.ComTypes.IBindCtx pbc, System.Runtime.InteropServices.ComTypes.IMoniker pmkToLeft, System.Runtime.InteropServices.ComTypes.IMoniker pmkNewlyRunning);" />
+      <MemberSignature Language="C#" Value="public int IsRunning (System.Runtime.InteropServices.ComTypes.IBindCtx pbc, System.Runtime.InteropServices.ComTypes.IMoniker pmkToLeft, System.Runtime.InteropServices.ComTypes.IMoniker pmkNewlyRunning);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IsRunning(class System.Runtime.InteropServices.ComTypes.IBindCtx pbc, class System.Runtime.InteropServices.ComTypes.IMoniker pmkToLeft, class System.Runtime.InteropServices.ComTypes.IMoniker pmkNewlyRunning) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.IsRunning(System.Runtime.InteropServices.ComTypes.IBindCtx,System.Runtime.InteropServices.ComTypes.IMoniker,System.Runtime.InteropServices.ComTypes.IMoniker)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsRunning (pbc As IBindCtx, pmkToLeft As IMoniker, pmkNewlyRunning As IMoniker) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IsRunning(System::Runtime::InteropServices::ComTypes::IBindCtx ^ pbc, System::Runtime::InteropServices::ComTypes::IMoniker ^ pmkToLeft, System::Runtime::InteropServices::ComTypes::IMoniker ^ pmkNewlyRunning);" />
       <MemberSignature Language="F#" Value="abstract member IsRunning : System.Runtime.InteropServices.ComTypes.IBindCtx * System.Runtime.InteropServices.ComTypes.IMoniker * System.Runtime.InteropServices.ComTypes.IMoniker -&gt; int" Usage="iMoniker.IsRunning (pbc, pmkToLeft, pmkNewlyRunning)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IsRunning(System::Runtime::InteropServices::ComTypes::IBindCtx ^ pbc, System::Runtime::InteropServices::ComTypes::IMoniker ^ pmkToLeft, System::Runtime::InteropServices::ComTypes::IMoniker ^ pmkNewlyRunning);" />
+      <MemberSignature Language="C#" Value="public int IsRunning (System.Runtime.InteropServices.ComTypes.IBindCtx pbc, System.Runtime.InteropServices.ComTypes.IMoniker? pmkToLeft, System.Runtime.InteropServices.ComTypes.IMoniker? pmkNewlyRunning);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -711,6 +881,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -721,12 +897,26 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pbc" Type="System.Runtime.InteropServices.ComTypes.IBindCtx" />
+        <Parameter Name="pbc" Type="System.Runtime.InteropServices.ComTypes.IBindCtx">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="pmkToLeft" Type="System.Runtime.InteropServices.ComTypes.IMoniker" />
         <Parameter Name="pmkNewlyRunning" Type="System.Runtime.InteropServices.ComTypes.IMoniker" />
       </Parameters>
@@ -740,7 +930,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about `IMoniker::IsRunning`, see the MSDN Library.  
+ For more information, see [IMoniker::IsRunning method](/windows/win32/api/objidl/nf-objidl-imoniker-isrunning).
   
  ]]></format>
         </remarks>
@@ -751,8 +941,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IsSystemMoniker([out] int32&amp; pdwMksys) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.IsSystemMoniker(System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsSystemMoniker (ByRef pdwMksys As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member IsSystemMoniker : int -&gt; int" Usage="iMoniker.IsSystemMoniker pdwMksys" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IsSystemMoniker([Runtime::InteropServices::Out] int % pdwMksys);" />
-      <MemberSignature Language="F#" Value="abstract member IsSystemMoniker :  -&gt; int" Usage="iMoniker.IsSystemMoniker pdwMksys" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -763,6 +953,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -773,6 +969,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -799,8 +996,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Load(class System.Runtime.InteropServices.ComTypes.IStream pStm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.Load(System.Runtime.InteropServices.ComTypes.IStream)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Load (pStm As IStream)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::Runtime::InteropServices::ComTypes::IStream ^ pStm);" />
       <MemberSignature Language="F#" Value="abstract member Load : System.Runtime.InteropServices.ComTypes.IStream -&gt; unit" Usage="iMoniker.Load pStm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::Runtime::InteropServices::ComTypes::IStream ^ pStm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -811,6 +1008,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -821,6 +1024,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -835,7 +1039,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about `IPersistStream::Load`, see the MSDN Library.  
+ For more information, see [IPersistStream::Load method](/windows/win32/api/objidl/nf-objidl-ipersiststream-load).
   
  ]]></format>
         </remarks>
@@ -846,8 +1050,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ParseDisplayName(class System.Runtime.InteropServices.ComTypes.IBindCtx pbc, class System.Runtime.InteropServices.ComTypes.IMoniker pmkToLeft, string pszDisplayName, [out] int32&amp; pchEaten, [out] class System.Runtime.InteropServices.ComTypes.IMoniker&amp; ppmkOut) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.ParseDisplayName(System.Runtime.InteropServices.ComTypes.IBindCtx,System.Runtime.InteropServices.ComTypes.IMoniker,System.String,System.Int32@,System.Runtime.InteropServices.ComTypes.IMoniker@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ParseDisplayName (pbc As IBindCtx, pmkToLeft As IMoniker, pszDisplayName As String, ByRef pchEaten As Integer, ByRef ppmkOut As IMoniker)" />
+      <MemberSignature Language="F#" Value="abstract member ParseDisplayName : System.Runtime.InteropServices.ComTypes.IBindCtx * System.Runtime.InteropServices.ComTypes.IMoniker * string * int * IMoniker -&gt; unit" Usage="iMoniker.ParseDisplayName (pbc, pmkToLeft, pszDisplayName, pchEaten, ppmkOut)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ParseDisplayName(System::Runtime::InteropServices::ComTypes::IBindCtx ^ pbc, System::Runtime::InteropServices::ComTypes::IMoniker ^ pmkToLeft, System::String ^ pszDisplayName, [Runtime::InteropServices::Out] int % pchEaten, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IMoniker ^ % ppmkOut);" />
-      <MemberSignature Language="F#" Value="abstract member ParseDisplayName : System.Runtime.InteropServices.ComTypes.IBindCtx * System.Runtime.InteropServices.ComTypes.IMoniker * string *  *  -&gt; unit" Usage="iMoniker.ParseDisplayName (pbc, pmkToLeft, pszDisplayName, pchEaten, ppmkOut)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -858,6 +1062,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -868,6 +1078,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -890,19 +1101,20 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about `IMoniker::ParseDisplayName`, see the MSDN Library.  
+ For more information, see [IMoniker::ParseDisplayName method](/windows/win32/api/objidl/nf-objidl-imoniker-parsedisplayname).
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="Reduce">
-      <MemberSignature Language="C#" Value="public void Reduce (System.Runtime.InteropServices.ComTypes.IBindCtx pbc, int dwReduceHowFar, ref System.Runtime.InteropServices.ComTypes.IMoniker ppmkToLeft, out System.Runtime.InteropServices.ComTypes.IMoniker ppmkReduced);" />
+      <MemberSignature Language="C#" Value="public void Reduce (System.Runtime.InteropServices.ComTypes.IBindCtx pbc, int dwReduceHowFar, ref System.Runtime.InteropServices.ComTypes.IMoniker ppmkToLeft, out System.Runtime.InteropServices.ComTypes.IMoniker ppmkReduced);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reduce(class System.Runtime.InteropServices.ComTypes.IBindCtx pbc, int32 dwReduceHowFar, class System.Runtime.InteropServices.ComTypes.IMoniker&amp; ppmkToLeft, [out] class System.Runtime.InteropServices.ComTypes.IMoniker&amp; ppmkReduced) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.Reduce(System.Runtime.InteropServices.ComTypes.IBindCtx,System.Int32,System.Runtime.InteropServices.ComTypes.IMoniker@,System.Runtime.InteropServices.ComTypes.IMoniker@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reduce (pbc As IBindCtx, dwReduceHowFar As Integer, ByRef ppmkToLeft As IMoniker, ByRef ppmkReduced As IMoniker)" />
+      <MemberSignature Language="F#" Value="abstract member Reduce : System.Runtime.InteropServices.ComTypes.IBindCtx * int * IMoniker * IMoniker -&gt; unit" Usage="iMoniker.Reduce (pbc, dwReduceHowFar, ppmkToLeft, ppmkReduced)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reduce(System::Runtime::InteropServices::ComTypes::IBindCtx ^ pbc, int dwReduceHowFar, System::Runtime::InteropServices::ComTypes::IMoniker ^ % ppmkToLeft, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IMoniker ^ % ppmkReduced);" />
-      <MemberSignature Language="F#" Value="abstract member Reduce : System.Runtime.InteropServices.ComTypes.IBindCtx * int *  *  -&gt; unit" Usage="iMoniker.Reduce (pbc, dwReduceHowFar, ppmkToLeft, ppmkReduced)" />
+      <MemberSignature Language="C#" Value="public void Reduce (System.Runtime.InteropServices.ComTypes.IBindCtx pbc, int dwReduceHowFar, ref System.Runtime.InteropServices.ComTypes.IMoniker? ppmkToLeft, out System.Runtime.InteropServices.ComTypes.IMoniker? ppmkReduced);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -913,6 +1125,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -923,12 +1141,26 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pbc" Type="System.Runtime.InteropServices.ComTypes.IBindCtx" />
+        <Parameter Name="pbc" Type="System.Runtime.InteropServices.ComTypes.IBindCtx">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="dwReduceHowFar" Type="System.Int32" />
         <Parameter Name="ppmkToLeft" Type="System.Runtime.InteropServices.ComTypes.IMoniker" RefType="ref" />
         <Parameter Name="ppmkReduced" Type="System.Runtime.InteropServices.ComTypes.IMoniker" RefType="out" />
@@ -943,19 +1175,20 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about `IMoniker::Reduce`, see the MSDN Library.  
+ For more information, see [IMoniker::Reduce method](/windows/win32/api/objidl/nf-objidl-imoniker-reduce).
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="RelativePathTo">
-      <MemberSignature Language="C#" Value="public void RelativePathTo (System.Runtime.InteropServices.ComTypes.IMoniker pmkOther, out System.Runtime.InteropServices.ComTypes.IMoniker ppmkRelPath);" />
+      <MemberSignature Language="C#" Value="public void RelativePathTo (System.Runtime.InteropServices.ComTypes.IMoniker pmkOther, out System.Runtime.InteropServices.ComTypes.IMoniker ppmkRelPath);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RelativePathTo(class System.Runtime.InteropServices.ComTypes.IMoniker pmkOther, [out] class System.Runtime.InteropServices.ComTypes.IMoniker&amp; ppmkRelPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.RelativePathTo(System.Runtime.InteropServices.ComTypes.IMoniker,System.Runtime.InteropServices.ComTypes.IMoniker@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RelativePathTo (pmkOther As IMoniker, ByRef ppmkRelPath As IMoniker)" />
+      <MemberSignature Language="F#" Value="abstract member RelativePathTo : System.Runtime.InteropServices.ComTypes.IMoniker * IMoniker -&gt; unit" Usage="iMoniker.RelativePathTo (pmkOther, ppmkRelPath)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RelativePathTo(System::Runtime::InteropServices::ComTypes::IMoniker ^ pmkOther, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IMoniker ^ % ppmkRelPath);" />
-      <MemberSignature Language="F#" Value="abstract member RelativePathTo : System.Runtime.InteropServices.ComTypes.IMoniker *  -&gt; unit" Usage="iMoniker.RelativePathTo (pmkOther, ppmkRelPath)" />
+      <MemberSignature Language="C#" Value="public void RelativePathTo (System.Runtime.InteropServices.ComTypes.IMoniker pmkOther, out System.Runtime.InteropServices.ComTypes.IMoniker? ppmkRelPath);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -966,6 +1199,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -976,13 +1215,21 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="pmkOther" Type="System.Runtime.InteropServices.ComTypes.IMoniker" />
-        <Parameter Name="ppmkRelPath" Type="System.Runtime.InteropServices.ComTypes.IMoniker" RefType="out" />
+        <Parameter Name="ppmkRelPath" Type="System.Runtime.InteropServices.ComTypes.IMoniker" RefType="out">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
       </Parameters>
       <Docs>
         <param name="pmkOther">A reference to the moniker to which a relative path should be taken.</param>
@@ -992,7 +1239,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about `IMoniker::RelativePath`, see the MSDN Library.  
+ For more information, see [IMoniker::RelativePathTo method](/windows/win32/api/objidl/nf-objidl-imoniker-relativepathto).
   
  ]]></format>
         </remarks>
@@ -1003,8 +1250,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Save(class System.Runtime.InteropServices.ComTypes.IStream pStm, bool fClearDirty) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IMoniker.Save(System.Runtime.InteropServices.ComTypes.IStream,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save (pStm As IStream, fClearDirty As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::Runtime::InteropServices::ComTypes::IStream ^ pStm, bool fClearDirty);" />
       <MemberSignature Language="F#" Value="abstract member Save : System.Runtime.InteropServices.ComTypes.IStream * bool -&gt; unit" Usage="iMoniker.Save (pStm, fClearDirty)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::Runtime::InteropServices::ComTypes::IStream ^ pStm, bool fClearDirty);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1015,6 +1262,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1025,6 +1278,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1036,13 +1290,13 @@
       <Docs>
         <param name="pStm">The stream to which the object is saved.</param>
         <param name="fClearDirty">
-          <see langword="true" /> to clear the modified flag after the save is complete; otherwise <see langword="false" /></param>
+          <see langword="true" /> to clear the modified flag after the save is complete; otherwise <see langword="false" />.</param>
         <summary>Saves an object to the specified stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about `IPersistStream::Save`, see the MSDN Library.  
+ For more information, see [IPersistStream::Save method](/windows/win32/api/objidl/nf-objidl-ipersiststream-save).
   
  ]]></format>
         </remarks>

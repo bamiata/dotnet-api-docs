@@ -1,10 +1,11 @@
-﻿<Type Name="FaultException" FullName="System.ServiceModel.FaultException">
+<Type Name="FaultException" FullName="System.ServiceModel.FaultException">
   <TypeSignature Language="C#" Value="public class FaultException : System.ServiceModel.CommunicationException" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit FaultException extends System.ServiceModel.CommunicationException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FaultException extends System.ServiceModel.CommunicationException" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.FaultException" />
   <TypeSignature Language="VB.NET" Value="Public Class FaultException&#xA;Inherits CommunicationException" />
-  <TypeSignature Language="C++ CLI" Value="public ref class FaultException : System::ServiceModel::CommunicationException" />
   <TypeSignature Language="F#" Value="type FaultException = class&#xA;    inherit CommunicationException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FaultException : System::ServiceModel::CommunicationException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit FaultException extends System.ServiceModel.CommunicationException" FrameworkAlternate="net-8.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -13,62 +14,83 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
-    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+    <AssemblyVersion>4.6.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.9.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.2.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Private.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.ServiceModel" FromVersion="4.0.0.0" To="System.ServiceModel.Primitives" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.ServiceModel.CommunicationException</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.Runtime.Serialization.KnownType(typeof(System.ServiceModel.FaultException/FaultCodeData[]))</AttributeName>
+    <Attribute FrameworkAlternate="net-8.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.Runtime.Serialization.KnownType(typeof(System.ServiceModel.FaultException/FaultReasonData[]))</AttributeName>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Runtime.Serialization.KnownType(typeof(System.ServiceModel.FaultException+FaultCodeData[]))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.KnownType(typeof(System.ServiceModel.FaultException+FaultCodeData[]))&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.Runtime.Serialization.KnownType(typeof(System.ServiceModel.FaultException/FaultCodeData))</AttributeName>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Runtime.Serialization.KnownType(typeof(System.ServiceModel.FaultException+FaultReasonData[]))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.KnownType(typeof(System.ServiceModel.FaultException+FaultReasonData[]))&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.Runtime.Serialization.KnownType(typeof(System.ServiceModel.FaultException/FaultReasonData))</AttributeName>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Runtime.Serialization.KnownType(typeof(System.ServiceModel.FaultException+FaultCodeData))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.KnownType(typeof(System.ServiceModel.FaultException+FaultCodeData))&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-      <AttributeName>System.Serializable</AttributeName>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Runtime.Serialization.KnownType(typeof(System.ServiceModel.FaultException+FaultReasonData))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.KnownType(typeof(System.ServiceModel.FaultException+FaultReasonData))&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
     <summary>Represents a SOAP fault.</summary>
     <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In a service, use the <xref:System.ServiceModel.FaultException> class to create an untyped fault to return to the client for debugging purposes.  
-  
- In a client, catch <xref:System.ServiceModel.FaultException> objects to handle unknown or generic faults, such as those returned by a service with the <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A> property set to `true`. Because <xref:System.ServiceModel.FaultException> extends <xref:System.ServiceModel.CommunicationException>, remember to catch any <xref:System.ServiceModel.FaultException> objects prior to catching <xref:System.ServiceModel.CommunicationException> objects if you want to catch them separately.  
-  
+      <format type="text/markdown"><![CDATA[
+
+## Remarks
+ In a service, use the <xref:System.ServiceModel.FaultException> class to create an untyped fault to return to the client for debugging purposes.
+
+ In a client, catch <xref:System.ServiceModel.FaultException> objects to handle unknown or generic faults, such as those returned by a service with the <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A> property set to `true`. Because <xref:System.ServiceModel.FaultException> extends <xref:System.ServiceModel.CommunicationException>, remember to catch any <xref:System.ServiceModel.FaultException> objects prior to catching <xref:System.ServiceModel.CommunicationException> objects if you want to catch them separately.
+
 > [!NOTE]
->  Duplex services can also catch <xref:System.ServiceModel.FaultException> objects returned from their interaction with a duplex client.  
-  
- In general, it is strongly recommended that you use the <xref:System.ServiceModel.FaultContractAttribute> to design your services to return strongly-typed SOAP faults (and not managed exception objects) for all fault cases in which you decide the client requires fault information. However, use the <xref:System.ServiceModel.FaultException> in the following situations:  
-  
--   To send SOAP faults from a service for debugging purposes.  
-  
--   To catch SOAP faults on a client when the faults are not part of the service contract.  
-  
- Throw <xref:System.ServiceModel.FaultException> objects when you want the string to be passed to the constructor and retrieved by the client by calling the <xref:System.ServiceModel.FaultException%601.ToString%2A?displayProperty=nameWithType> method. If you specify a fault contract of type <xref:System.ServiceModel.FaultException%601?displayProperty=nameWithType> where the type parameter is <xref:System.String?displayProperty=nameWithType>, the string value is available as the <xref:System.ServiceModel.FaultException%601.Detail%2A?displayProperty=nameWithType> property and not by calling <xref:System.ServiceModel.FaultException%601.ToString%2A?displayProperty=nameWithType>.  
-  
- For details, see [Specifying and Handling Faults in Contracts and Services](~/docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md).  
-  
-   
-  
-## Examples  
- The following code example shows the use of a try/catch block to catch and handle <xref:System.ServiceModel.FaultException> objects thrown from a service. This often occurs when debugging is turned on in the service application.  
-  
- [!code-csharp[IErrorHandler#3](~/samples/snippets/csharp/VS_Snippets_CFX/ierrorhandler/cs/client.cs#3)]
- [!code-vb[IErrorHandler#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/ierrorhandler/vb/client.vb#3)]  
-  
+>  Duplex services can also catch <xref:System.ServiceModel.FaultException> objects returned from their interaction with a duplex client.
+
+ In general, it is strongly recommended that you use the <xref:System.ServiceModel.FaultContractAttribute> to design your services to return strongly-typed SOAP faults (and not managed exception objects) for all fault cases in which you decide the client requires fault information. However, use the <xref:System.ServiceModel.FaultException> in the following situations:
+
+-   To send SOAP faults from a service for debugging purposes.
+
+-   To catch SOAP faults on a client when the faults are not part of the service contract.
+
+ Throw <xref:System.ServiceModel.FaultException> objects when you want the string to be passed to the constructor and retrieved by the client by calling the <xref:System.ServiceModel.FaultException%601.ToString%2A?displayProperty=nameWithType> method. If you specify a fault contract of type <xref:System.ServiceModel.FaultException%601?displayProperty=nameWithType> where the type parameter is <xref:System.String?displayProperty=nameWithType>, the string value is available as the <xref:System.ServiceModel.FaultException%601.Detail%2A?displayProperty=nameWithType> property and not by calling <xref:System.ServiceModel.FaultException%601.ToString%2A?displayProperty=nameWithType>.
+
+ For details, see [Specifying and Handling Faults in Contracts and Services](/dotnet/framework/wcf/specifying-and-handling-faults-in-contracts-and-services).
+
+
+
+## Examples
+ The following code example shows the use of a try/catch block to catch and handle <xref:System.ServiceModel.FaultException> objects thrown from a service. This often occurs when debugging is turned on in the service application.
+
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/ierrorhandler/cs/client.cs" id="Snippet3":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/ierrorhandler/vb/client.vb" id="Snippet3":::
+
  ]]></format>
     </remarks>
   </Docs>
@@ -98,9 +120,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -113,20 +140,24 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.MessageFault fault) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.#ctor(System.ServiceModel.Channels.MessageFault)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fault As MessageFault)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::ServiceModel::Channels::MessageFault ^ fault);" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException : System.ServiceModel.Channels.MessageFault -&gt; System.ServiceModel.FaultException" Usage="new System.ServiceModel.FaultException fault" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::ServiceModel::Channels::MessageFault ^ fault);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="fault" Type="System.ServiceModel.Channels.MessageFault" />
+        <Parameter Name="fault" Type="System.ServiceModel.Channels.MessageFault" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
       </Parameters>
       <Docs>
         <param name="fault">The message fault that contains the default SOAP fault values.</param>
@@ -139,20 +170,24 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.FaultReason reason) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.#ctor(System.ServiceModel.FaultReason)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (reason As FaultReason)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::ServiceModel::FaultReason ^ reason);" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException : System.ServiceModel.FaultReason -&gt; System.ServiceModel.FaultException" Usage="new System.ServiceModel.FaultException reason" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::ServiceModel::FaultReason ^ reason);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="reason" Type="System.ServiceModel.FaultReason" />
+        <Parameter Name="reason" Type="System.ServiceModel.FaultReason" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
       </Parameters>
       <Docs>
         <param name="reason">The reason for the SOAP fault.</param>
@@ -161,12 +196,12 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected FaultException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; FaultException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.ServiceModel.FaultException" Usage="new System.ServiceModel.FaultException (info, context)" />
+      <MemberSignature Language="C#" Value="public FaultException (string reason);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string reason) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (reason As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException : string -&gt; System.ServiceModel.FaultException" Usage="new System.ServiceModel.FaultException reason" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::String ^ reason);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -176,11 +211,46 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="reason" Type="System.String" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;netframework-4.8.1;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
+      </Parameters>
+      <Docs>
+        <param name="reason">The reason for the fault.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.FaultException" /> class with the specified fault reason.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected FaultException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.ServiceModel.FaultException" Usage="new System.ServiceModel.FaultException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; FaultException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;net-8.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;net-8.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0" />
       </Parameters>
       <Docs>
         <param name="info">The serialization information necessary to reconstruct the <see cref="T:System.ServiceModel.FaultException" /> object from a stream.</param>
@@ -194,8 +264,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.MessageFault fault, string action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.#ctor(System.ServiceModel.Channels.MessageFault,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (fault As MessageFault, action As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::ServiceModel::Channels::MessageFault ^ fault, System::String ^ action);" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException : System.ServiceModel.Channels.MessageFault * string -&gt; System.ServiceModel.FaultException" Usage="new System.ServiceModel.FaultException (fault, action)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::ServiceModel::Channels::MessageFault ^ fault, System::String ^ action);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -205,9 +275,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="fault" Type="System.ServiceModel.Channels.MessageFault" />
@@ -225,21 +300,25 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.FaultReason reason, class System.ServiceModel.FaultCode code) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.#ctor(System.ServiceModel.FaultReason,System.ServiceModel.FaultCode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (reason As FaultReason, code As FaultCode)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::ServiceModel::FaultReason ^ reason, System::ServiceModel::FaultCode ^ code);" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException : System.ServiceModel.FaultReason * System.ServiceModel.FaultCode -&gt; System.ServiceModel.FaultException" Usage="new System.ServiceModel.FaultException (reason, code)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::ServiceModel::FaultReason ^ reason, System::ServiceModel::FaultCode ^ code);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="reason" Type="System.ServiceModel.FaultReason" />
-        <Parameter Name="code" Type="System.ServiceModel.FaultCode" />
+        <Parameter Name="reason" Type="System.ServiceModel.FaultReason" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
+        <Parameter Name="code" Type="System.ServiceModel.FaultCode" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
       </Parameters>
       <Docs>
         <param name="reason">The reason for the SOAP fault.</param>
@@ -249,34 +328,34 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public FaultException (string reason);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string reason) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.#ctor(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (reason As String)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::String ^ reason);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
-      <MemberSignature Language="C#" Value="public FaultException (string msg);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string msg) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (msg As String)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::String ^ msg);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException : string -&gt; System.ServiceModel.FaultException" Usage="new System.ServiceModel.FaultException msg" />
+      <MemberSignature Language="C#" Value="public FaultException (string reason, System.ServiceModel.FaultCode code);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string reason, class System.ServiceModel.FaultCode code) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.#ctor(System.String,System.ServiceModel.FaultCode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (reason As String, code As FaultCode)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException : string * System.ServiceModel.FaultCode -&gt; System.ServiceModel.FaultException" Usage="new System.ServiceModel.FaultException (reason, code)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::String ^ reason, System::ServiceModel::FaultCode ^ code);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="reason" Type="System.String" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
-        <Parameter Name="msg" Type="System.String" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="reason" Type="System.String" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
+        <Parameter Name="code" Type="System.ServiceModel.FaultCode" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
       </Parameters>
       <Docs>
-        <param name="reason">The reason for the fault.</param>
-        <param name="msg">The reason for the fault.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.FaultException" /> class with the specified fault reason.</summary>
+        <param name="reason">The reason for the SOAP fault.</param>
+        <param name="code">The SOAP fault code for the fault.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.FaultException" /> class using the specified reason and SOAP fault code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -285,8 +364,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.FaultReason reason, class System.ServiceModel.FaultCode code, string action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.#ctor(System.ServiceModel.FaultReason,System.ServiceModel.FaultCode,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (reason As FaultReason, code As FaultCode, action As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::ServiceModel::FaultReason ^ reason, System::ServiceModel::FaultCode ^ code, System::String ^ action);" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException : System.ServiceModel.FaultReason * System.ServiceModel.FaultCode * string -&gt; System.ServiceModel.FaultException" Usage="new System.ServiceModel.FaultException (reason, code, action)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::ServiceModel::FaultReason ^ reason, System::ServiceModel::FaultCode ^ code, System::String ^ action);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -296,9 +375,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="reason" Type="System.ServiceModel.FaultReason" />
@@ -318,22 +402,26 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string reason, class System.ServiceModel.FaultCode code, string action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.#ctor(System.String,System.ServiceModel.FaultCode,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (reason As String, code As FaultCode, action As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::String ^ reason, System::ServiceModel::FaultCode ^ code, System::String ^ action);" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException : string * System.ServiceModel.FaultCode * string -&gt; System.ServiceModel.FaultException" Usage="new System.ServiceModel.FaultException (reason, code, action)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::String ^ reason, System::ServiceModel::FaultCode ^ code, System::String ^ action);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="reason" Type="System.String" />
-        <Parameter Name="code" Type="System.ServiceModel.FaultCode" />
-        <Parameter Name="action" Type="System.String" />
+        <Parameter Name="reason" Type="System.String" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
+        <Parameter Name="code" Type="System.ServiceModel.FaultCode" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
+        <Parameter Name="action" Type="System.String" Index="2" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
       </Parameters>
       <Docs>
         <param name="reason">The reason for the SOAP fault.</param>
@@ -343,47 +431,13 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public FaultException (string reason, System.ServiceModel.FaultCode code);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string reason, class System.ServiceModel.FaultCode code) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.#ctor(System.String,System.ServiceModel.FaultCode)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (reason As String, code As FaultCode)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::String ^ reason, System::ServiceModel::FaultCode ^ code);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
-      <MemberSignature Language="C#" Value="public FaultException (string msg, System.ServiceModel.FaultCode code);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string msg, class System.ServiceModel.FaultCode code) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (msg As String, code As FaultCode)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultException(System::String ^ msg, System::ServiceModel::FaultCode ^ code);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultException : string * System.ServiceModel.FaultCode -&gt; System.ServiceModel.FaultException" Usage="new System.ServiceModel.FaultException (msg, code)" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="reason" Type="System.String" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
-        <Parameter Name="msg" Type="System.String" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="code" Type="System.ServiceModel.FaultCode" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      </Parameters>
-      <Docs>
-        <param name="reason">The reason for the SOAP fault.</param>
-        <param name="msg">The reason for the SOAP fault.</param>
-        <param name="code">The SOAP fault code for the fault.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.FaultException" /> class using the specified reason and SOAP fault code.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Action">
       <MemberSignature Language="C#" Value="public string Action { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Action" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FaultException.Action" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Action As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Action { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Action : string" Usage="System.ServiceModel.FaultException.Action" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Action { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -393,13 +447,19 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -416,8 +476,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.FaultCode Code" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FaultException.Code" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Code As FaultCode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::FaultCode ^ Code { System::ServiceModel::FaultCode ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Code : System.ServiceModel.FaultCode" Usage="System.ServiceModel.FaultException.Code" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::FaultCode ^ Code { System::ServiceModel::FaultCode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -427,13 +487,19 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -459,8 +525,9 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.FaultException CreateFault (System.ServiceModel.Channels.MessageFault messageFault, params Type[] faultDetailTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.FaultException CreateFault(class System.ServiceModel.Channels.MessageFault messageFault, class System.Type[] faultDetailTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.CreateFault(System.ServiceModel.Channels.MessageFault,System.Type[])" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::FaultException ^ CreateFault(System::ServiceModel::Channels::MessageFault ^ messageFault, ... cli::array &lt;Type ^&gt; ^ faultDetailTypes);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFault (messageFault As MessageFault, ParamArray faultDetailTypes As Type()) As FaultException" />
       <MemberSignature Language="F#" Value="static member CreateFault : System.ServiceModel.Channels.MessageFault * Type[] -&gt; System.ServiceModel.FaultException" Usage="System.ServiceModel.FaultException.CreateFault (messageFault, faultDetailTypes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::FaultException ^ CreateFault(System::ServiceModel::Channels::MessageFault ^ messageFault, ... cli::array &lt;Type ^&gt; ^ faultDetailTypes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -470,13 +537,19 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -486,8 +559,9 @@
         <Parameter Name="messageFault" Type="System.ServiceModel.Channels.MessageFault" />
         <Parameter Name="faultDetailTypes" Type="System.Type[]">
           <Attributes>
-            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -498,11 +572,11 @@
         <summary>Returns a <see cref="T:System.ServiceModel.FaultException" /> object from the specified message fault and an array of detail types.</summary>
         <returns>A <see cref="T:System.ServiceModel.FaultException" /> object that you can throw to indicate that a SOAP fault message was received.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `faultDetailTypes` parameter contains candidate detail types. If any of the `faultDetailTypes` has a schema that matches the `messageFault` parameter, a <xref:System.ServiceModel.FaultException%601?displayProperty=nameWithType> is returned where the type parameter is the matching candidate type.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ The `faultDetailTypes` parameter contains candidate detail types. If any of the `faultDetailTypes` has a schema that matches the `messageFault` parameter, a <xref:System.ServiceModel.FaultException%601?displayProperty=nameWithType> is returned where the type parameter is the matching candidate type.
+
  ]]></format>
         </remarks>
       </Docs>
@@ -511,8 +585,9 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.FaultException CreateFault (System.ServiceModel.Channels.MessageFault messageFault, string action, params Type[] faultDetailTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.FaultException CreateFault(class System.ServiceModel.Channels.MessageFault messageFault, string action, class System.Type[] faultDetailTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.CreateFault(System.ServiceModel.Channels.MessageFault,System.String,System.Type[])" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::FaultException ^ CreateFault(System::ServiceModel::Channels::MessageFault ^ messageFault, System::String ^ action, ... cli::array &lt;Type ^&gt; ^ faultDetailTypes);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFault (messageFault As MessageFault, action As String, ParamArray faultDetailTypes As Type()) As FaultException" />
       <MemberSignature Language="F#" Value="static member CreateFault : System.ServiceModel.Channels.MessageFault * string * Type[] -&gt; System.ServiceModel.FaultException" Usage="System.ServiceModel.FaultException.CreateFault (messageFault, action, faultDetailTypes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::FaultException ^ CreateFault(System::ServiceModel::Channels::MessageFault ^ messageFault, System::String ^ action, ... cli::array &lt;Type ^&gt; ^ faultDetailTypes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -522,9 +597,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.FaultException</ReturnType>
@@ -534,8 +614,9 @@
         <Parameter Name="action" Type="System.String" />
         <Parameter Name="faultDetailTypes" Type="System.Type[]">
           <Attributes>
-            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -547,11 +628,11 @@
         <summary>Returns a <see cref="T:System.ServiceModel.FaultException" /> object from the specified message fault, action and an array of detail types.</summary>
         <returns>A <see cref="T:System.ServiceModel.FaultException" /> object that you can throw to indicate that a SOAP fault message was received.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `faultDetailTypes` parameter contains candidate detail types. If any of the `faultDetailTypes` has a schema that matches the `messageFault` parameter, a <xref:System.ServiceModel.FaultException%601?displayProperty=nameWithType> is returned where the type parameter is the matching candidate type.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ The `faultDetailTypes` parameter contains candidate detail types. If any of the `faultDetailTypes` has a schema that matches the `messageFault` parameter, a <xref:System.ServiceModel.FaultException%601?displayProperty=nameWithType> is returned where the type parameter is the matching candidate type.
+
  ]]></format>
         </remarks>
       </Docs>
@@ -561,8 +642,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.MessageFault CreateMessageFault() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.CreateMessageFault" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateMessageFault () As MessageFault" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::MessageFault ^ CreateMessageFault();" />
       <MemberSignature Language="F#" Value="abstract member CreateMessageFault : unit -&gt; System.ServiceModel.Channels.MessageFault&#xA;override this.CreateMessageFault : unit -&gt; System.ServiceModel.Channels.MessageFault" Usage="faultException.CreateMessageFault " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::MessageFault ^ CreateMessageFault();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -572,9 +653,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageFault</ReturnType>
@@ -591,29 +677,34 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="faultException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
-        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;dotnet-plat-ext-6.0;dotnet-plat-ext-7.0;dotnet-plat-ext-8.0;dotnet-plat-ext-9.0;net-8.0;netstandard-2.0" />
       </Parameters>
       <Docs>
         <param name="info">The serialization information to which the object data is added when serialized.</param>
@@ -627,8 +718,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Message" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FaultException.Message" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.ServiceModel.FaultException.Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -638,9 +729,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -656,8 +752,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.FaultReason Reason" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FaultException.Reason" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Reason As FaultReason" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::FaultReason ^ Reason { System::ServiceModel::FaultReason ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Reason : System.ServiceModel.FaultReason" Usage="System.ServiceModel.FaultException.Reason" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::FaultReason ^ Reason { System::ServiceModel::FaultReason ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -667,13 +763,19 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

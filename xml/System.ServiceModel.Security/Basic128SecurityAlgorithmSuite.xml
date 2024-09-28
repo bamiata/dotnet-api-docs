@@ -1,10 +1,10 @@
-﻿<Type Name="Basic128SecurityAlgorithmSuite" FullName="System.ServiceModel.Security.Basic128SecurityAlgorithmSuite">
+<Type Name="Basic128SecurityAlgorithmSuite" FullName="System.ServiceModel.Security.Basic128SecurityAlgorithmSuite">
   <TypeSignature Language="C#" Value="public class Basic128SecurityAlgorithmSuite : System.ServiceModel.Security.SecurityAlgorithmSuite" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Basic128SecurityAlgorithmSuite extends System.ServiceModel.Security.SecurityAlgorithmSuite" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Basic128SecurityAlgorithmSuite" />
   <TypeSignature Language="VB.NET" Value="Public Class Basic128SecurityAlgorithmSuite&#xA;Inherits SecurityAlgorithmSuite" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Basic128SecurityAlgorithmSuite : System::ServiceModel::Security::SecurityAlgorithmSuite" />
   <TypeSignature Language="F#" Value="type Basic128SecurityAlgorithmSuite = class&#xA;    inherit SecurityAlgorithmSuite" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Basic128SecurityAlgorithmSuite : System::ServiceModel::Security::SecurityAlgorithmSuite" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,7 +31,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -45,8 +46,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultAsymmetricKeyWrapAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Basic128SecurityAlgorithmSuite.DefaultAsymmetricKeyWrapAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DefaultAsymmetricKeyWrapAlgorithm As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultAsymmetricKeyWrapAlgorithm { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.DefaultAsymmetricKeyWrapAlgorithm : string" Usage="System.ServiceModel.Security.Basic128SecurityAlgorithmSuite.DefaultAsymmetricKeyWrapAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultAsymmetricKeyWrapAlgorithm { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -66,8 +67,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultAsymmetricSignatureAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Basic128SecurityAlgorithmSuite.DefaultAsymmetricSignatureAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DefaultAsymmetricSignatureAlgorithm As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultAsymmetricSignatureAlgorithm { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.DefaultAsymmetricSignatureAlgorithm : string" Usage="System.ServiceModel.Security.Basic128SecurityAlgorithmSuite.DefaultAsymmetricSignatureAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultAsymmetricSignatureAlgorithm { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -79,7 +80,7 @@
       <Docs>
         <summary>Gets the default asymmetric signature algorithm, RsaSha1Signature.</summary>
         <value>The default asymmetric signature algorithm, RsaSha1Signature.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Due to collision problems with SHA1, Microsoft recommends a security model based on SHA256 or better.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultCanonicalizationAlgorithm">
@@ -87,8 +88,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultCanonicalizationAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Basic128SecurityAlgorithmSuite.DefaultCanonicalizationAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DefaultCanonicalizationAlgorithm As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultCanonicalizationAlgorithm { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.DefaultCanonicalizationAlgorithm : string" Usage="System.ServiceModel.Security.Basic128SecurityAlgorithmSuite.DefaultCanonicalizationAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultCanonicalizationAlgorithm { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -108,8 +109,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultDigestAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Basic128SecurityAlgorithmSuite.DefaultDigestAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DefaultDigestAlgorithm As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultDigestAlgorithm { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.DefaultDigestAlgorithm : string" Usage="System.ServiceModel.Security.Basic128SecurityAlgorithmSuite.DefaultDigestAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultDigestAlgorithm { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -121,7 +122,7 @@
       <Docs>
         <summary>Gets the default digest algorithm, Sha1Digest.</summary>
         <value>The default digest algorithm, Sha1Digest.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Due to collision problems with SHA1, Microsoft recommends a security model based on SHA256 or better.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultEncryptionAlgorithm">
@@ -129,8 +130,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultEncryptionAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Basic128SecurityAlgorithmSuite.DefaultEncryptionAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DefaultEncryptionAlgorithm As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultEncryptionAlgorithm { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.DefaultEncryptionAlgorithm : string" Usage="System.ServiceModel.Security.Basic128SecurityAlgorithmSuite.DefaultEncryptionAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultEncryptionAlgorithm { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -150,8 +151,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 DefaultEncryptionKeyDerivationLength" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Basic128SecurityAlgorithmSuite.DefaultEncryptionKeyDerivationLength" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DefaultEncryptionKeyDerivationLength As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int DefaultEncryptionKeyDerivationLength { int get(); };" />
       <MemberSignature Language="F#" Value="member this.DefaultEncryptionKeyDerivationLength : int" Usage="System.ServiceModel.Security.Basic128SecurityAlgorithmSuite.DefaultEncryptionKeyDerivationLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int DefaultEncryptionKeyDerivationLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -171,8 +172,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 DefaultSignatureKeyDerivationLength" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Basic128SecurityAlgorithmSuite.DefaultSignatureKeyDerivationLength" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DefaultSignatureKeyDerivationLength As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int DefaultSignatureKeyDerivationLength { int get(); };" />
       <MemberSignature Language="F#" Value="member this.DefaultSignatureKeyDerivationLength : int" Usage="System.ServiceModel.Security.Basic128SecurityAlgorithmSuite.DefaultSignatureKeyDerivationLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int DefaultSignatureKeyDerivationLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -192,8 +193,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 DefaultSymmetricKeyLength" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Basic128SecurityAlgorithmSuite.DefaultSymmetricKeyLength" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DefaultSymmetricKeyLength As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int DefaultSymmetricKeyLength { int get(); };" />
       <MemberSignature Language="F#" Value="member this.DefaultSymmetricKeyLength : int" Usage="System.ServiceModel.Security.Basic128SecurityAlgorithmSuite.DefaultSymmetricKeyLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int DefaultSymmetricKeyLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -213,8 +214,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultSymmetricKeyWrapAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Basic128SecurityAlgorithmSuite.DefaultSymmetricKeyWrapAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DefaultSymmetricKeyWrapAlgorithm As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultSymmetricKeyWrapAlgorithm { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.DefaultSymmetricKeyWrapAlgorithm : string" Usage="System.ServiceModel.Security.Basic128SecurityAlgorithmSuite.DefaultSymmetricKeyWrapAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultSymmetricKeyWrapAlgorithm { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -234,8 +235,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultSymmetricSignatureAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Basic128SecurityAlgorithmSuite.DefaultSymmetricSignatureAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DefaultSymmetricSignatureAlgorithm As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultSymmetricSignatureAlgorithm { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.DefaultSymmetricSignatureAlgorithm : string" Usage="System.ServiceModel.Security.Basic128SecurityAlgorithmSuite.DefaultSymmetricSignatureAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultSymmetricSignatureAlgorithm { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -247,7 +248,7 @@
       <Docs>
         <summary>Gets the default symmetric signature algorithm, HmacSha1Signature.</summary>
         <value>The default symmetric signature algorithm, HmacSha1Signature.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Due to collision problems with SHA1, Microsoft recommends a security model based on SHA256 or better.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsAsymmetricKeyLengthSupported">
@@ -255,8 +256,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsAsymmetricKeyLengthSupported(int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Basic128SecurityAlgorithmSuite.IsAsymmetricKeyLengthSupported(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsAsymmetricKeyLengthSupported (length As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsAsymmetricKeyLengthSupported(int length);" />
       <MemberSignature Language="F#" Value="override this.IsAsymmetricKeyLengthSupported : int -&gt; bool" Usage="basic128SecurityAlgorithmSuite.IsAsymmetricKeyLengthSupported length" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsAsymmetricKeyLengthSupported(int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -281,8 +282,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsSymmetricKeyLengthSupported(int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Basic128SecurityAlgorithmSuite.IsSymmetricKeyLengthSupported(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSymmetricKeyLengthSupported (length As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSymmetricKeyLengthSupported(int length);" />
       <MemberSignature Language="F#" Value="override this.IsSymmetricKeyLengthSupported : int -&gt; bool" Usage="basic128SecurityAlgorithmSuite.IsSymmetricKeyLengthSupported length" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSymmetricKeyLengthSupported(int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -307,8 +308,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Basic128SecurityAlgorithmSuite.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="basic128SecurityAlgorithmSuite.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -1,16 +1,23 @@
-﻿<Type Name="TypeCode" FullName="System.TypeCode">
+<Type Name="TypeCode" FullName="System.TypeCode">
   <TypeSignature Language="C#" Value="public enum TypeCode" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TypeCode extends System.Enum" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TypeCode extends System.Enum" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
   <TypeSignature Language="DocId" Value="T:System.TypeCode" />
   <TypeSignature Language="VB.NET" Value="Public Enum TypeCode" />
-  <TypeSignature Language="C++ CLI" Value="public enum class TypeCode" />
   <TypeSignature Language="F#" Value="type TypeCode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TypeCode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TypeCode extends System.Enum" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -22,16 +29,28 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Runtime" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+    <TypeForwarding From="System.Runtime" FromVersion="4.1.1.1" To="mscorlib" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-      <AttributeName>System.Serializable</AttributeName>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(true)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -49,9 +68,9 @@
 ## Examples  
  The following code example demonstrates how the <xref:System.TypeCode> enumeration can be used. In a decision block inside the WriteObjectInfo method, the <xref:System.TypeCode> of an <xref:System.Object> parameter is examined, and an appropriate message is written to the console.  
   
- [!code-cpp[System.TypeCode#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.TypeCode/CPP/iconvertible.cpp#2)]
- [!code-csharp[System.TypeCode#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TypeCode/CS/iconvertible.cs#2)]
- [!code-vb[System.TypeCode#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TypeCode/VB/iconvertible.vb#2)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.TypeCode/CPP/iconvertible.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/snippets/csharp/System/Type/GetTypeCode/iconvertible.cs" id="Snippet2":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.TypeCode/VB/iconvertible.vb" id="Snippet2":::  
   
  ]]></format>
     </remarks>
@@ -62,8 +81,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.TypeCode Boolean = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.TypeCode.Boolean" />
       <MemberSignature Language="VB.NET" Value="Boolean" />
-      <MemberSignature Language="C++ CLI" Value="Boolean" />
       <MemberSignature Language="F#" Value="Boolean = 3" Usage="System.TypeCode.Boolean" />
+      <MemberSignature Language="C++ CLI" Value="Boolean" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -71,6 +90,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -82,6 +107,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TypeCode</ReturnType>
@@ -96,8 +122,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.TypeCode Byte = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.TypeCode.Byte" />
       <MemberSignature Language="VB.NET" Value="Byte" />
-      <MemberSignature Language="C++ CLI" Value="Byte" />
       <MemberSignature Language="F#" Value="Byte = 6" Usage="System.TypeCode.Byte" />
+      <MemberSignature Language="C++ CLI" Value="Byte" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -105,6 +131,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -116,6 +148,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TypeCode</ReturnType>
@@ -130,8 +163,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.TypeCode Char = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.TypeCode.Char" />
       <MemberSignature Language="VB.NET" Value="Char" />
-      <MemberSignature Language="C++ CLI" Value="Char" />
       <MemberSignature Language="F#" Value="Char = 4" Usage="System.TypeCode.Char" />
+      <MemberSignature Language="C++ CLI" Value="Char" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -139,6 +172,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -150,6 +189,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TypeCode</ReturnType>
@@ -164,8 +204,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.TypeCode DateTime = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.TypeCode.DateTime" />
       <MemberSignature Language="VB.NET" Value="DateTime" />
-      <MemberSignature Language="C++ CLI" Value="DateTime" />
       <MemberSignature Language="F#" Value="DateTime = 16" Usage="System.TypeCode.DateTime" />
+      <MemberSignature Language="C++ CLI" Value="DateTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -173,6 +213,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -184,6 +230,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TypeCode</ReturnType>
@@ -198,8 +245,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.TypeCode DBNull = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.TypeCode.DBNull" />
       <MemberSignature Language="VB.NET" Value="DBNull" />
-      <MemberSignature Language="C++ CLI" Value="DBNull" />
       <MemberSignature Language="F#" Value="DBNull = 2" Usage="System.TypeCode.DBNull" />
+      <MemberSignature Language="C++ CLI" Value="DBNull" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -211,11 +258,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TypeCode</ReturnType>
@@ -230,8 +284,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.TypeCode Decimal = int32(15)" />
       <MemberSignature Language="DocId" Value="F:System.TypeCode.Decimal" />
       <MemberSignature Language="VB.NET" Value="Decimal" />
-      <MemberSignature Language="C++ CLI" Value="Decimal" />
       <MemberSignature Language="F#" Value="Decimal = 15" Usage="System.TypeCode.Decimal" />
+      <MemberSignature Language="C++ CLI" Value="Decimal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -239,6 +293,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -250,6 +310,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TypeCode</ReturnType>
@@ -264,8 +325,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.TypeCode Double = int32(14)" />
       <MemberSignature Language="DocId" Value="F:System.TypeCode.Double" />
       <MemberSignature Language="VB.NET" Value="Double" />
-      <MemberSignature Language="C++ CLI" Value="Double" />
       <MemberSignature Language="F#" Value="Double = 14" Usage="System.TypeCode.Double" />
+      <MemberSignature Language="C++ CLI" Value="Double" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -273,6 +334,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -284,6 +351,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TypeCode</ReturnType>
@@ -298,8 +366,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.TypeCode Empty = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.TypeCode.Empty" />
       <MemberSignature Language="VB.NET" Value="Empty" />
-      <MemberSignature Language="C++ CLI" Value="Empty" />
       <MemberSignature Language="F#" Value="Empty = 0" Usage="System.TypeCode.Empty" />
+      <MemberSignature Language="C++ CLI" Value="Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -307,6 +375,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -318,6 +392,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TypeCode</ReturnType>
@@ -332,8 +407,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.TypeCode Int16 = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.TypeCode.Int16" />
       <MemberSignature Language="VB.NET" Value="Int16" />
-      <MemberSignature Language="C++ CLI" Value="Int16" />
       <MemberSignature Language="F#" Value="Int16 = 7" Usage="System.TypeCode.Int16" />
+      <MemberSignature Language="C++ CLI" Value="Int16" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -341,6 +416,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -352,6 +433,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TypeCode</ReturnType>
@@ -366,8 +448,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.TypeCode Int32 = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.TypeCode.Int32" />
       <MemberSignature Language="VB.NET" Value="Int32" />
-      <MemberSignature Language="C++ CLI" Value="Int32" />
       <MemberSignature Language="F#" Value="Int32 = 9" Usage="System.TypeCode.Int32" />
+      <MemberSignature Language="C++ CLI" Value="Int32" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -375,6 +457,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -386,6 +474,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TypeCode</ReturnType>
@@ -400,8 +489,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.TypeCode Int64 = int32(11)" />
       <MemberSignature Language="DocId" Value="F:System.TypeCode.Int64" />
       <MemberSignature Language="VB.NET" Value="Int64" />
-      <MemberSignature Language="C++ CLI" Value="Int64" />
       <MemberSignature Language="F#" Value="Int64 = 11" Usage="System.TypeCode.Int64" />
+      <MemberSignature Language="C++ CLI" Value="Int64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -409,6 +498,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -420,6 +515,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TypeCode</ReturnType>
@@ -434,8 +530,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.TypeCode Object = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.TypeCode.Object" />
       <MemberSignature Language="VB.NET" Value="Object" />
-      <MemberSignature Language="C++ CLI" Value="Object" />
       <MemberSignature Language="F#" Value="Object = 1" Usage="System.TypeCode.Object" />
+      <MemberSignature Language="C++ CLI" Value="Object" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -443,6 +539,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -454,6 +556,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TypeCode</ReturnType>
@@ -468,8 +571,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.TypeCode SByte = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.TypeCode.SByte" />
       <MemberSignature Language="VB.NET" Value="SByte" />
-      <MemberSignature Language="C++ CLI" Value="SByte" />
       <MemberSignature Language="F#" Value="SByte = 5" Usage="System.TypeCode.SByte" />
+      <MemberSignature Language="C++ CLI" Value="SByte" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -477,6 +580,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -488,6 +597,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TypeCode</ReturnType>
@@ -502,8 +612,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.TypeCode Single = int32(13)" />
       <MemberSignature Language="DocId" Value="F:System.TypeCode.Single" />
       <MemberSignature Language="VB.NET" Value="Single" />
-      <MemberSignature Language="C++ CLI" Value="Single" />
       <MemberSignature Language="F#" Value="Single = 13" Usage="System.TypeCode.Single" />
+      <MemberSignature Language="C++ CLI" Value="Single" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -511,6 +621,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -522,6 +638,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TypeCode</ReturnType>
@@ -536,8 +653,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.TypeCode String = int32(18)" />
       <MemberSignature Language="DocId" Value="F:System.TypeCode.String" />
       <MemberSignature Language="VB.NET" Value="String" />
-      <MemberSignature Language="C++ CLI" Value="String" />
       <MemberSignature Language="F#" Value="String = 18" Usage="System.TypeCode.String" />
+      <MemberSignature Language="C++ CLI" Value="String" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -545,6 +662,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -556,6 +679,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TypeCode</ReturnType>
@@ -570,8 +694,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.TypeCode UInt16 = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.TypeCode.UInt16" />
       <MemberSignature Language="VB.NET" Value="UInt16" />
-      <MemberSignature Language="C++ CLI" Value="UInt16" />
       <MemberSignature Language="F#" Value="UInt16 = 8" Usage="System.TypeCode.UInt16" />
+      <MemberSignature Language="C++ CLI" Value="UInt16" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -579,6 +703,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -590,6 +720,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TypeCode</ReturnType>
@@ -604,8 +735,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.TypeCode UInt32 = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.TypeCode.UInt32" />
       <MemberSignature Language="VB.NET" Value="UInt32" />
-      <MemberSignature Language="C++ CLI" Value="UInt32" />
       <MemberSignature Language="F#" Value="UInt32 = 10" Usage="System.TypeCode.UInt32" />
+      <MemberSignature Language="C++ CLI" Value="UInt32" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -613,6 +744,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -624,6 +761,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TypeCode</ReturnType>
@@ -638,8 +776,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.TypeCode UInt64 = int32(12)" />
       <MemberSignature Language="DocId" Value="F:System.TypeCode.UInt64" />
       <MemberSignature Language="VB.NET" Value="UInt64" />
-      <MemberSignature Language="C++ CLI" Value="UInt64" />
       <MemberSignature Language="F#" Value="UInt64 = 12" Usage="System.TypeCode.UInt64" />
+      <MemberSignature Language="C++ CLI" Value="UInt64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -647,6 +785,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -658,6 +802,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TypeCode</ReturnType>

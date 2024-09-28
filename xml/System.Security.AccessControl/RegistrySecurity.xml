@@ -1,10 +1,10 @@
-﻿<Type Name="RegistrySecurity" FullName="System.Security.AccessControl.RegistrySecurity">
+<Type Name="RegistrySecurity" FullName="System.Security.AccessControl.RegistrySecurity">
   <TypeSignature Language="C#" Value="public sealed class RegistrySecurity : System.Security.AccessControl.NativeObjectSecurity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RegistrySecurity extends System.Security.AccessControl.NativeObjectSecurity" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.RegistrySecurity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RegistrySecurity&#xA;Inherits NativeObjectSecurity" />
-  <TypeSignature Language="C++ CLI" Value="public ref class RegistrySecurity sealed : System::Security::AccessControl::NativeObjectSecurity" />
   <TypeSignature Language="F#" Value="type RegistrySecurity = class&#xA;    inherit NativeObjectSecurity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RegistrySecurity sealed : System::Security::AccessControl::NativeObjectSecurity" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -17,16 +17,45 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
-    <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.2.0</AssemblyVersion>
+    <AssemblyVersion>4.1.3.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="Microsoft.Win32.Registry.AccessControl" FromVersion="8.0.0.0" To="Microsoft.Win32.Registry" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="Microsoft.Win32.Registry.AccessControl" FromVersion="8.0.0.0" To="Microsoft.Win32.Registry" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="Microsoft.Win32.Registry.AccessControl" FromVersion="9.0.0.0" To="Microsoft.Win32.Registry" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="Microsoft.Win32.Registry.AccessControl" FromVersion="9.0.0.0" To="Microsoft.Win32.Registry" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0;windowsdesktop-9.0" />
+    <TypeForwarding From="Microsoft.Win32.Registry.AccessControl" FromVersion="9.0.0.0" To="mscorlib" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+    <TypeForwarding From="Microsoft.Win32.Registry.AccessControl" FromVersion="9.0.0.0" To="Microsoft.Win32.Registry" ToVersion="5.0.0.0" FrameworkAlternate="netstandard-2.0" />
+    <TypeForwarding From="Microsoft.Win32.Registry.AccessControl" FromVersion="4.0.4.0" To="Microsoft.Win32.Registry" ToVersion="4.1.2.0" FrameworkAlternate="windowsdesktop-3.0" />
+    <TypeForwarding From="Microsoft.Win32.Registry.AccessControl" FromVersion="4.0.5.0" To="Microsoft.Win32.Registry" ToVersion="4.1.3.0" FrameworkAlternate="windowsdesktop-3.1" />
+    <TypeForwarding From="Microsoft.Win32.Registry.AccessControl" FromVersion="5.0.0.0" To="Microsoft.Win32.Registry" ToVersion="5.0.0.0" FrameworkAlternate="windowsdesktop-5.0" />
+    <TypeForwarding From="Microsoft.Win32.Registry.AccessControl" FromVersion="6.0.0.0" To="Microsoft.Win32.Registry" ToVersion="6.0.0.0" FrameworkAlternate="windowsdesktop-6.0" />
+    <TypeForwarding From="Microsoft.Win32.Registry.AccessControl" FromVersion="7.0.0.0" To="Microsoft.Win32.Registry" ToVersion="7.0.0.0" FrameworkAlternate="windowsdesktop-7.0" />
+    <TypeForwarding From="Microsoft.Win32.Registry.AccessControl" FromVersion="8.0.0.0" To="Microsoft.Win32.Registry" ToVersion="8.0.0.0" FrameworkAlternate="windowsdesktop-8.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Security.AccessControl.NativeObjectSecurity</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
     <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
-      <AttributeName>System.Security.SecurityCritical</AttributeName>
+      <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -87,8 +116,8 @@
 > [!NOTE]
 >  This example does not attach the security object to a <xref:Microsoft.Win32.RegistryKey> object. The second example in this section attaches a security object, and so do the examples in <xref:Microsoft.Win32.RegistryKey.GetAccessControl%2A?displayProperty=nameWithType> and <xref:Microsoft.Win32.RegistryKey.SetAccessControl%2A?displayProperty=nameWithType>.  
   
- [!code-csharp[System.Security.AccessControl.RegistrySecurity.RemoveAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.RemoveAccessRule/CS/source.cs#1)]
- [!code-vb[System.Security.AccessControl.RegistrySecurity.RemoveAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.RemoveAccessRule/VB/source.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Security.AccessControl/RegistrySecurity/Overview/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.RemoveAccessRule/VB/source.vb" id="Snippet1":::  
   
  Example 2  
   
@@ -96,8 +125,8 @@
   
  The program displays the rules in the <xref:System.Security.AccessControl.RegistrySecurity> object, and then uses the <xref:System.Security.AccessControl.RegistrySecurity> object to create a subkey. The program creates a child subkey and a grandchild subkey, then displays the security for each subkey. Finally, the program deletes the test keys.  
   
- [!code-csharp[System.Security.AccessControl.RegistryAccessRule.ctor2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.RegistryAccessRule.ctor2/CS/source.cs#1)]
- [!code-vb[System.Security.AccessControl.RegistryAccessRule.ctor2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.RegistryAccessRule.ctor2/VB/source.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Security.AccessControl/RegistryAccessRule/Overview/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.RegistryAccessRule.ctor2/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -122,8 +151,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -143,8 +177,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type AccessRightType" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.RegistrySecurity.AccessRightType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AccessRightType As Type" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ AccessRightType { Type ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.AccessRightType : Type" Usage="System.Security.AccessControl.RegistrySecurity.AccessRightType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ AccessRightType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -158,8 +192,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
@@ -181,8 +220,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.AccessControl.AccessRule AccessRuleFactory (System.Security.Principal.IdentityReference identityReference, int accessMask, bool isInherited, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags, System.Security.AccessControl.AccessControlType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.AccessControl.AccessRule AccessRuleFactory(class System.Security.Principal.IdentityReference identityReference, int32 accessMask, bool isInherited, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AccessControlType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistrySecurity.AccessRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::AccessControl::AccessRule ^ AccessRuleFactory(System::Security::Principal::IdentityReference ^ identityReference, int accessMask, bool isInherited, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AccessControlType type);" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function AccessRuleFactory (identityReference As IdentityReference, accessMask As Integer, isInherited As Boolean, inheritanceFlags As InheritanceFlags, propagationFlags As PropagationFlags, type As AccessControlType) As AccessRule" />
       <MemberSignature Language="F#" Value="override this.AccessRuleFactory : System.Security.Principal.IdentityReference * int * bool * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.AccessControlType -&gt; System.Security.AccessControl.AccessRule" Usage="registrySecurity.AccessRuleFactory (identityReference, accessMask, isInherited, inheritanceFlags, propagationFlags, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::AccessControl::AccessRule ^ AccessRuleFactory(System::Security::Principal::IdentityReference ^ identityReference, int accessMask, bool isInherited, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AccessControlType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -196,8 +236,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AccessRule</ReturnType>
@@ -247,8 +292,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type AccessRuleType" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.RegistrySecurity.AccessRuleType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AccessRuleType As Type" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ AccessRuleType { Type ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.AccessRuleType : Type" Usage="System.Security.AccessControl.RegistrySecurity.AccessRuleType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ AccessRuleType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -262,8 +307,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
@@ -286,8 +336,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAccessRule(class System.Security.AccessControl.RegistryAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistrySecurity.AddAccessRule(System.Security.AccessControl.RegistryAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddAccessRule (rule As RegistryAccessRule)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAccessRule(System::Security::AccessControl::RegistryAccessRule ^ rule);" />
       <MemberSignature Language="F#" Value="override this.AddAccessRule : System.Security.AccessControl.RegistryAccessRule -&gt; unit" Usage="registrySecurity.AddAccessRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAccessRule(System::Security::AccessControl::RegistryAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -301,8 +351,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -335,8 +390,8 @@
   
  A code example that demonstrates inheritance and propagation flags can be found in the <xref:System.Security.AccessControl.RegistryAccessRule> class.  
   
- [!code-csharp[System.Security.AccessControl.RegistrySecurity.AddAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.AddAccessRule/CS/source.cs#1)]
- [!code-vb[System.Security.AccessControl.RegistrySecurity.AddAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.AddAccessRule/VB/source.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Security.AccessControl/RegistryAccessRule/.ctor/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.AddAccessRule/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -349,8 +404,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAuditRule(class System.Security.AccessControl.RegistryAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistrySecurity.AddAuditRule(System.Security.AccessControl.RegistryAuditRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddAuditRule (rule As RegistryAuditRule)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAuditRule(System::Security::AccessControl::RegistryAuditRule ^ rule);" />
       <MemberSignature Language="F#" Value="override this.AddAuditRule : System.Security.AccessControl.RegistryAuditRule -&gt; unit" Usage="registrySecurity.AddAuditRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAuditRule(System::Security::AccessControl::RegistryAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -364,8 +419,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -392,8 +452,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.AccessControl.AuditRule AuditRuleFactory (System.Security.Principal.IdentityReference identityReference, int accessMask, bool isInherited, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags, System.Security.AccessControl.AuditFlags flags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.AccessControl.AuditRule AuditRuleFactory(class System.Security.Principal.IdentityReference identityReference, int32 accessMask, bool isInherited, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AuditFlags flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistrySecurity.AuditRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::AccessControl::AuditRule ^ AuditRuleFactory(System::Security::Principal::IdentityReference ^ identityReference, int accessMask, bool isInherited, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AuditFlags flags);" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function AuditRuleFactory (identityReference As IdentityReference, accessMask As Integer, isInherited As Boolean, inheritanceFlags As InheritanceFlags, propagationFlags As PropagationFlags, flags As AuditFlags) As AuditRule" />
       <MemberSignature Language="F#" Value="override this.AuditRuleFactory : System.Security.Principal.IdentityReference * int * bool * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.AuditFlags -&gt; System.Security.AccessControl.AuditRule" Usage="registrySecurity.AuditRuleFactory (identityReference, accessMask, isInherited, inheritanceFlags, propagationFlags, flags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::AccessControl::AuditRule ^ AuditRuleFactory(System::Security::Principal::IdentityReference ^ identityReference, int accessMask, bool isInherited, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AuditFlags flags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -407,8 +468,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AuditRule</ReturnType>
@@ -458,8 +524,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type AuditRuleType" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.RegistrySecurity.AuditRuleType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AuditRuleType As Type" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ AuditRuleType { Type ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.AuditRuleType : Type" Usage="System.Security.AccessControl.RegistrySecurity.AuditRuleType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ AuditRuleType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -473,8 +539,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
@@ -497,8 +568,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveAccessRule(class System.Security.AccessControl.RegistryAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistrySecurity.RemoveAccessRule(System.Security.AccessControl.RegistryAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveAccessRule (rule As RegistryAccessRule) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAccessRule(System::Security::AccessControl::RegistryAccessRule ^ rule);" />
       <MemberSignature Language="F#" Value="override this.RemoveAccessRule : System.Security.AccessControl.RegistryAccessRule -&gt; bool" Usage="registrySecurity.RemoveAccessRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAccessRule(System::Security::AccessControl::RegistryAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -512,8 +583,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -544,8 +620,8 @@
 > [!NOTE]
 >  This example does not attach the security object to a <xref:Microsoft.Win32.RegistryKey> object. The second example in this section attaches a security object, and so do the examples in <xref:Microsoft.Win32.RegistryKey.GetAccessControl%2A?displayProperty=nameWithType><xref:Microsoft.Win32.RegistryKey.SetAccessControl%2A?displayProperty=nameWithType>.  
   
- [!code-csharp[System.Security.AccessControl.RegistrySecurity.RemoveAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.RemoveAccessRule/CS/source.cs#1)]
- [!code-vb[System.Security.AccessControl.RegistrySecurity.RemoveAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.RemoveAccessRule/VB/source.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Security.AccessControl/RegistrySecurity/Overview/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.RemoveAccessRule/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -558,8 +634,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAccessRuleAll(class System.Security.AccessControl.RegistryAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistrySecurity.RemoveAccessRuleAll(System.Security.AccessControl.RegistryAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAccessRuleAll (rule As RegistryAccessRule)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAccessRuleAll(System::Security::AccessControl::RegistryAccessRule ^ rule);" />
       <MemberSignature Language="F#" Value="override this.RemoveAccessRuleAll : System.Security.AccessControl.RegistryAccessRule -&gt; unit" Usage="registrySecurity.RemoveAccessRuleAll rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAccessRuleAll(System::Security::AccessControl::RegistryAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -573,8 +649,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -603,8 +684,8 @@
 > [!NOTE]
 >  This example does not attach the security object to a <xref:Microsoft.Win32.RegistryKey> object. See the <xref:Microsoft.Win32.RegistryKey.GetAccessControl%2A?displayProperty=nameWithType> method and the <xref:Microsoft.Win32.RegistryKey.SetAccessControl%2A?displayProperty=nameWithType> method.  
   
- [!code-csharp[System.Security.AccessControl.RegistrySecurity.RemoveAccessRuleAll#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.RemoveAccessRuleAll/CS/source.cs#1)]
- [!code-vb[System.Security.AccessControl.RegistrySecurity.RemoveAccessRuleAll#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.RemoveAccessRuleAll/VB/source.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Security.AccessControl/RegistrySecurity/RemoveAccessRuleAll/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.RemoveAccessRuleAll/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -617,8 +698,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAccessRuleSpecific(class System.Security.AccessControl.RegistryAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistrySecurity.RemoveAccessRuleSpecific(System.Security.AccessControl.RegistryAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAccessRuleSpecific (rule As RegistryAccessRule)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAccessRuleSpecific(System::Security::AccessControl::RegistryAccessRule ^ rule);" />
       <MemberSignature Language="F#" Value="override this.RemoveAccessRuleSpecific : System.Security.AccessControl.RegistryAccessRule -&gt; unit" Usage="registrySecurity.RemoveAccessRuleSpecific rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAccessRuleSpecific(System::Security::AccessControl::RegistryAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -632,8 +713,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -663,8 +749,8 @@
 > [!NOTE]
 >  This example does not attach the security object to a <xref:Microsoft.Win32.RegistryKey> object. See the <xref:Microsoft.Win32.RegistryKey.GetAccessControl%2A?displayProperty=nameWithType> method and the <xref:Microsoft.Win32.RegistryKey.SetAccessControl%2A?displayProperty=nameWithType> method.  
   
- [!code-csharp[System.Security.AccessControl.RegistrySecurity.RemoveAccessRuleSpecific#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.RemoveAccessRuleSpecific/CS/source.cs#1)]
- [!code-vb[System.Security.AccessControl.RegistrySecurity.RemoveAccessRuleSpecific#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.RemoveAccessRuleSpecific/VB/source.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Security.AccessControl/RegistrySecurity/RemoveAccessRuleSpecific/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.RemoveAccessRuleSpecific/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -677,8 +763,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveAuditRule(class System.Security.AccessControl.RegistryAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistrySecurity.RemoveAuditRule(System.Security.AccessControl.RegistryAuditRule)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveAuditRule (rule As RegistryAuditRule) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAuditRule(System::Security::AccessControl::RegistryAuditRule ^ rule);" />
       <MemberSignature Language="F#" Value="override this.RemoveAuditRule : System.Security.AccessControl.RegistryAuditRule -&gt; bool" Usage="registrySecurity.RemoveAuditRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAuditRule(System::Security::AccessControl::RegistryAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -692,8 +778,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -723,8 +814,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAuditRuleAll(class System.Security.AccessControl.RegistryAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistrySecurity.RemoveAuditRuleAll(System.Security.AccessControl.RegistryAuditRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAuditRuleAll (rule As RegistryAuditRule)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAuditRuleAll(System::Security::AccessControl::RegistryAuditRule ^ rule);" />
       <MemberSignature Language="F#" Value="override this.RemoveAuditRuleAll : System.Security.AccessControl.RegistryAuditRule -&gt; unit" Usage="registrySecurity.RemoveAuditRuleAll rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAuditRuleAll(System::Security::AccessControl::RegistryAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -738,8 +829,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -767,8 +863,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAuditRuleSpecific(class System.Security.AccessControl.RegistryAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistrySecurity.RemoveAuditRuleSpecific(System.Security.AccessControl.RegistryAuditRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAuditRuleSpecific (rule As RegistryAuditRule)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAuditRuleSpecific(System::Security::AccessControl::RegistryAuditRule ^ rule);" />
       <MemberSignature Language="F#" Value="override this.RemoveAuditRuleSpecific : System.Security.AccessControl.RegistryAuditRule -&gt; unit" Usage="registrySecurity.RemoveAuditRuleSpecific rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAuditRuleSpecific(System::Security::AccessControl::RegistryAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -782,8 +878,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -814,8 +915,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetAccessRule(class System.Security.AccessControl.RegistryAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistrySecurity.ResetAccessRule(System.Security.AccessControl.RegistryAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetAccessRule (rule As RegistryAccessRule)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetAccessRule(System::Security::AccessControl::RegistryAccessRule ^ rule);" />
       <MemberSignature Language="F#" Value="override this.ResetAccessRule : System.Security.AccessControl.RegistryAccessRule -&gt; unit" Usage="registrySecurity.ResetAccessRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetAccessRule(System::Security::AccessControl::RegistryAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -829,8 +930,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -857,8 +963,8 @@
 > [!NOTE]
 >  This example does not attach the security object to a <xref:Microsoft.Win32.RegistryKey> object. See the <xref:Microsoft.Win32.RegistryKey.GetAccessControl%2A?displayProperty=nameWithType> method and the <xref:Microsoft.Win32.RegistryKey.SetAccessControl%2A?displayProperty=nameWithType> method.  
   
- [!code-csharp[System.Security.AccessControl.RegistrySecurity.ResetAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.ResetAccessRule/CS/source.cs#1)]
- [!code-vb[System.Security.AccessControl.RegistrySecurity.ResetAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.ResetAccessRule/VB/source.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Security.AccessControl/RegistrySecurity/ResetAccessRule/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.ResetAccessRule/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -869,8 +975,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAccessRule(class System.Security.AccessControl.RegistryAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistrySecurity.SetAccessRule(System.Security.AccessControl.RegistryAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAccessRule (rule As RegistryAccessRule)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAccessRule(System::Security::AccessControl::RegistryAccessRule ^ rule);" />
       <MemberSignature Language="F#" Value="override this.SetAccessRule : System.Security.AccessControl.RegistryAccessRule -&gt; unit" Usage="registrySecurity.SetAccessRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAccessRule(System::Security::AccessControl::RegistryAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -884,8 +990,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -914,8 +1025,8 @@
 > [!NOTE]
 >  This example does not attach the security object to a <xref:Microsoft.Win32.RegistryKey> object. See the <xref:Microsoft.Win32.RegistryKey.GetAccessControl%2A?displayProperty=nameWithType> method and the <xref:Microsoft.Win32.RegistryKey.SetAccessControl%2A?displayProperty=nameWithType> method.  
   
- [!code-csharp[System.Security.AccessControl.RegistrySecurity.SetAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.SetAccessRule/CS/source.cs#1)]
- [!code-vb[System.Security.AccessControl.RegistrySecurity.SetAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.SetAccessRule/VB/source.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Security.AccessControl/RegistrySecurity/SetAccessRule/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.RegistrySecurity.SetAccessRule/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -928,8 +1039,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAuditRule(class System.Security.AccessControl.RegistryAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RegistrySecurity.SetAuditRule(System.Security.AccessControl.RegistryAuditRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAuditRule (rule As RegistryAuditRule)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAuditRule(System::Security::AccessControl::RegistryAuditRule ^ rule);" />
       <MemberSignature Language="F#" Value="override this.SetAuditRule : System.Security.AccessControl.RegistryAuditRule -&gt; unit" Usage="registrySecurity.SetAuditRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAuditRule(System::Security::AccessControl::RegistryAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
@@ -943,8 +1054,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

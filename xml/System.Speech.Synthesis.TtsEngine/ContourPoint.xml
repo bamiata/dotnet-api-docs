@@ -1,14 +1,16 @@
-﻿<Type Name="ContourPoint" FullName="System.Speech.Synthesis.TtsEngine.ContourPoint">
+<Type Name="ContourPoint" FullName="System.Speech.Synthesis.TtsEngine.ContourPoint">
   <TypeSignature Language="C#" Value="public struct ContourPoint : IEquatable&lt;System.Speech.Synthesis.TtsEngine.ContourPoint&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ContourPoint extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Speech.Synthesis.TtsEngine.ContourPoint&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.TtsEngine.ContourPoint" />
   <TypeSignature Language="VB.NET" Value="Public Structure ContourPoint&#xA;Implements IEquatable(Of ContourPoint)" />
-  <TypeSignature Language="C++ CLI" Value="public value class ContourPoint : IEquatable&lt;System::Speech::Synthesis::TtsEngine::ContourPoint&gt;" />
   <TypeSignature Language="F#" Value="type ContourPoint = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class ContourPoint : IEquatable&lt;System::Speech::Synthesis::TtsEngine::ContourPoint&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
@@ -20,7 +22,8 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.ImmutableObject(true)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.ImmutableObject(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.ImmutableObject(true)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -42,17 +45,20 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float32 start, float32 change, valuetype System.Speech.Synthesis.TtsEngine.ContourPointChangeType changeType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.ContourPoint.#ctor(System.Single,System.Single,System.Speech.Synthesis.TtsEngine.ContourPointChangeType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (start As Single, change As Single, changeType As ContourPointChangeType)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContourPoint(float start, float change, System::Speech::Synthesis::TtsEngine::ContourPointChangeType changeType);" />
       <MemberSignature Language="F#" Value="new System.Speech.Synthesis.TtsEngine.ContourPoint : single * single * System.Speech.Synthesis.TtsEngine.ContourPointChangeType -&gt; System.Speech.Synthesis.TtsEngine.ContourPoint" Usage="new System.Speech.Synthesis.TtsEngine.ContourPoint (start, change, changeType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContourPoint(float start, float change, System::Speech::Synthesis::TtsEngine::ContourPointChangeType changeType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -73,17 +79,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance float32 Change" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.ContourPoint.Change" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Change As Single" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Change { float get(); };" />
       <MemberSignature Language="F#" Value="member this.Change : single" Usage="System.Speech.Synthesis.TtsEngine.ContourPoint.Change" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Change { float get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -109,17 +118,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Speech.Synthesis.TtsEngine.ContourPointChangeType ChangeType" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.ContourPoint.ChangeType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChangeType As ContourPointChangeType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Synthesis::TtsEngine::ContourPointChangeType ChangeType { System::Speech::Synthesis::TtsEngine::ContourPointChangeType get(); };" />
       <MemberSignature Language="F#" Value="member this.ChangeType : System.Speech.Synthesis.TtsEngine.ContourPointChangeType" Usage="System.Speech.Synthesis.TtsEngine.ContourPoint.ChangeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Synthesis::TtsEngine::ContourPointChangeType ChangeType { System::Speech::Synthesis::TtsEngine::ContourPointChangeType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -152,13 +164,15 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.ContourPoint.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="contourPoint.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -185,8 +199,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Speech.Synthesis.TtsEngine.ContourPoint other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.ContourPoint.Equals(System.Speech.Synthesis.TtsEngine.ContourPoint)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As ContourPoint) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Speech::Synthesis::TtsEngine::ContourPoint other);" />
       <MemberSignature Language="F#" Value="override this.Equals : System.Speech.Synthesis.TtsEngine.ContourPoint -&gt; bool" Usage="contourPoint.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Speech::Synthesis::TtsEngine::ContourPoint other);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -195,6 +209,8 @@
         <AssemblyName>System.Speech</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -214,13 +230,15 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.ContourPoint.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="contourPoint.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -244,13 +262,15 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Speech.Synthesis.TtsEngine.ContourPoint point1, valuetype System.Speech.Synthesis.TtsEngine.ContourPoint point2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.ContourPoint.op_Equality(System.Speech.Synthesis.TtsEngine.ContourPoint,System.Speech.Synthesis.TtsEngine.ContourPoint)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (point1 As ContourPoint, point2 As ContourPoint) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Speech::Synthesis::TtsEngine::ContourPoint point1, System::Speech::Synthesis::TtsEngine::ContourPoint point2);" />
       <MemberSignature Language="F#" Value="static member ( = ) : System.Speech.Synthesis.TtsEngine.ContourPoint * System.Speech.Synthesis.TtsEngine.ContourPoint -&gt; bool" Usage="point1 = point2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Speech::Synthesis::TtsEngine::ContourPoint point1, System::Speech::Synthesis::TtsEngine::ContourPoint point2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -274,13 +294,15 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Speech.Synthesis.TtsEngine.ContourPoint point1, valuetype System.Speech.Synthesis.TtsEngine.ContourPoint point2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.ContourPoint.op_Inequality(System.Speech.Synthesis.TtsEngine.ContourPoint,System.Speech.Synthesis.TtsEngine.ContourPoint)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (point1 As ContourPoint, point2 As ContourPoint) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Speech::Synthesis::TtsEngine::ContourPoint point1, System::Speech::Synthesis::TtsEngine::ContourPoint point2);" />
       <MemberSignature Language="F#" Value="static member op_Inequality : System.Speech.Synthesis.TtsEngine.ContourPoint * System.Speech.Synthesis.TtsEngine.ContourPoint -&gt; bool" Usage="System.Speech.Synthesis.TtsEngine.ContourPoint.op_Inequality (point1, point2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Speech::Synthesis::TtsEngine::ContourPoint point1, System::Speech::Synthesis::TtsEngine::ContourPoint point2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -304,17 +326,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance float32 Start" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.ContourPoint.Start" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Start As Single" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Start { float get(); };" />
       <MemberSignature Language="F#" Value="member this.Start : single" Usage="System.Speech.Synthesis.TtsEngine.ContourPoint.Start" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Start { float get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

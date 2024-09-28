@@ -1,10 +1,10 @@
-﻿<Type Name="ParserErrorCollection" FullName="System.Web.ParserErrorCollection">
+<Type Name="ParserErrorCollection" FullName="System.Web.ParserErrorCollection">
   <TypeSignature Language="C#" Value="public sealed class ParserErrorCollection : System.Collections.CollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ParserErrorCollection extends System.Collections.CollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.ParserErrorCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ParserErrorCollection&#xA;Inherits CollectionBase" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ParserErrorCollection sealed : System::Collections::CollectionBase" />
   <TypeSignature Language="F#" Value="type ParserErrorCollection = class&#xA;    inherit CollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ParserErrorCollection sealed : System::Collections::CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -16,7 +16,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -48,8 +49,8 @@
 ## Examples  
  The following code example demonstrates how to use the <xref:System.Web.ParserErrorCollection> methods.  
   
- [!code-csharp[System.Web.ParserErrorCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.ParserErrorCollection/CS/ParserErrorCollection_CS.aspx#1)]
- [!code-vb[System.Web.ParserErrorCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.ParserErrorCollection/VB/ParserErrorCollection_VB.aspx#1)]  
+ [!code-csharp[System.Web.ParserErrorCollection#1](~/snippets/csharp/VS_Snippets_WebNet/System.Web.ParserErrorCollection/CS/ParserErrorCollection_CS.aspx#1)]
+ [!code-vb[System.Web.ParserErrorCollection#1](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.ParserErrorCollection/VB/ParserErrorCollection_VB.aspx#1)]  
   
  ]]></format>
     </remarks>
@@ -80,7 +81,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -92,8 +94,8 @@
 ## Examples  
  The following code example demonstrates how to initialize an instance of the <xref:System.Web.ParserErrorCollection> class.  
   
- [!code-csharp[System.Web.ParserErrorCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.ParserErrorCollection/CS/ParserErrorCollection_CS.aspx#2)]
- [!code-vb[System.Web.ParserErrorCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.ParserErrorCollection/VB/ParserErrorCollection_VB.aspx#2)]  
+ [!code-csharp[System.Web.ParserErrorCollection#2](~/snippets/csharp/VS_Snippets_WebNet/System.Web.ParserErrorCollection/CS/ParserErrorCollection_CS.aspx#2)]
+ [!code-vb[System.Web.ParserErrorCollection#2](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.ParserErrorCollection/VB/ParserErrorCollection_VB.aspx#2)]  
   
  ]]></format>
         </remarks>
@@ -104,8 +106,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.ParserError[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ParserErrorCollection.#ctor(System.Web.ParserError[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As ParserError())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ParserErrorCollection(cli::array &lt;System::Web::ParserError ^&gt; ^ value);" />
       <MemberSignature Language="F#" Value="new System.Web.ParserErrorCollection : System.Web.ParserError[] -&gt; System.Web.ParserErrorCollection" Usage="new System.Web.ParserErrorCollection value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ParserErrorCollection(cli::array &lt;System::Web::ParserError ^&gt; ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -133,8 +135,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Web.ParserError value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ParserErrorCollection.Add(System.Web.ParserError)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As ParserError) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Web::ParserError ^ value);" />
       <MemberSignature Language="F#" Value="member this.Add : System.Web.ParserError -&gt; int" Usage="parserErrorCollection.Add value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Web::ParserError ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -164,8 +166,8 @@
 ## Examples  
  The following code example demonstrates how to add a <xref:System.Web.ParserError> object to a <xref:System.Web.ParserErrorCollection> object.  
   
- [!code-csharp[System.Web.ParserErrorCollection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.ParserErrorCollection/CS/ParserErrorCollection_CS.aspx#3)]
- [!code-vb[System.Web.ParserErrorCollection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.ParserErrorCollection/VB/ParserErrorCollection_VB.aspx#3)]  
+ [!code-csharp[System.Web.ParserErrorCollection#3](~/snippets/csharp/VS_Snippets_WebNet/System.Web.ParserErrorCollection/CS/ParserErrorCollection_CS.aspx#3)]
+ [!code-vb[System.Web.ParserErrorCollection#3](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.ParserErrorCollection/VB/ParserErrorCollection_VB.aspx#3)]  
   
  ]]></format>
         </remarks>
@@ -185,8 +187,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.Web.ParserError[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ParserErrorCollection.AddRange(System.Web.ParserError[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As ParserError())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::Web::ParserError ^&gt; ^ value);" />
       <MemberSignature Language="F#" Value="member this.AddRange : System.Web.ParserError[] -&gt; unit" Usage="parserErrorCollection.AddRange value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::Web::ParserError ^&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -213,8 +215,8 @@
 ## Examples  
  The following code example demonstrates how to add a range of <xref:System.Web.ParserError> objects to a <xref:System.Web.ParserErrorCollection> object.  
   
- [!code-csharp[System.Web.ParserErrorCollection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.ParserErrorCollection/CS/ParserErrorCollection_CS.aspx#4)]
- [!code-vb[System.Web.ParserErrorCollection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.ParserErrorCollection/VB/ParserErrorCollection_VB.aspx#4)]  
+ [!code-csharp[System.Web.ParserErrorCollection#4](~/snippets/csharp/VS_Snippets_WebNet/System.Web.ParserErrorCollection/CS/ParserErrorCollection_CS.aspx#4)]
+ [!code-vb[System.Web.ParserErrorCollection#4](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.ParserErrorCollection/VB/ParserErrorCollection_VB.aspx#4)]  
   
  ]]></format>
         </remarks>
@@ -227,8 +229,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.Web.ParserErrorCollection value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ParserErrorCollection.AddRange(System.Web.ParserErrorCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As ParserErrorCollection)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::Web::ParserErrorCollection ^ value);" />
       <MemberSignature Language="F#" Value="member this.AddRange : System.Web.ParserErrorCollection -&gt; unit" Usage="parserErrorCollection.AddRange value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::Web::ParserErrorCollection ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -255,8 +257,8 @@
 ## Examples  
  The following code example demonstrates how to add a range of <xref:System.Web.ParserError> objects to a <xref:System.Web.ParserErrorCollection> object.  
   
- [!code-csharp[System.Web.ParserErrorCollection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.ParserErrorCollection/CS/ParserErrorCollection_CS.aspx#4)]
- [!code-vb[System.Web.ParserErrorCollection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.ParserErrorCollection/VB/ParserErrorCollection_VB.aspx#4)]  
+ [!code-csharp[System.Web.ParserErrorCollection#4](~/snippets/csharp/VS_Snippets_WebNet/System.Web.ParserErrorCollection/CS/ParserErrorCollection_CS.aspx#4)]
+ [!code-vb[System.Web.ParserErrorCollection#4](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.ParserErrorCollection/VB/ParserErrorCollection_VB.aspx#4)]  
   
  ]]></format>
         </remarks>
@@ -268,8 +270,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.ParserError value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ParserErrorCollection.Contains(System.Web.ParserError)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As ParserError) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::ParserError ^ value);" />
       <MemberSignature Language="F#" Value="member this.Contains : System.Web.ParserError -&gt; bool" Usage="parserErrorCollection.Contains value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::ParserError ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -298,8 +300,8 @@
 ## Examples  
  The following code example demonstrates how to search for an instance of a specified <xref:System.Web.ParserError> object in a <xref:System.Web.ParserErrorCollection> object.  
   
- [!code-csharp[System.Web.ParserErrorCollection#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.ParserErrorCollection/CS/ParserErrorCollection_CS.aspx#5)]
- [!code-vb[System.Web.ParserErrorCollection#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.ParserErrorCollection/VB/ParserErrorCollection_VB.aspx#5)]  
+ [!code-csharp[System.Web.ParserErrorCollection#5](~/snippets/csharp/VS_Snippets_WebNet/System.Web.ParserErrorCollection/CS/ParserErrorCollection_CS.aspx#5)]
+ [!code-vb[System.Web.ParserErrorCollection#5](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.ParserErrorCollection/VB/ParserErrorCollection_VB.aspx#5)]  
   
  ]]></format>
         </remarks>
@@ -310,8 +312,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.ParserError[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ParserErrorCollection.CopyTo(System.Web.ParserError[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As ParserError(), index As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::ParserError ^&gt; ^ array, int index);" />
       <MemberSignature Language="F#" Value="member this.CopyTo : System.Web.ParserError[] * int -&gt; unit" Usage="parserErrorCollection.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::ParserError ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -348,8 +350,8 @@
 ## Examples  
  The following code example demonstrates how to copy the contents of a <xref:System.Web.ParserErrorCollection> object to the specified <xref:System.Web.ParserError> array.  
   
- [!code-csharp[System.Web.ParserErrorCollection#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.ParserErrorCollection/CS/ParserErrorCollection_CS.aspx#6)]
- [!code-vb[System.Web.ParserErrorCollection#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.ParserErrorCollection/VB/ParserErrorCollection_VB.aspx#6)]  
+ [!code-csharp[System.Web.ParserErrorCollection#6](~/snippets/csharp/VS_Snippets_WebNet/System.Web.ParserErrorCollection/CS/ParserErrorCollection_CS.aspx#6)]
+ [!code-vb[System.Web.ParserErrorCollection#6](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.ParserErrorCollection/VB/ParserErrorCollection_VB.aspx#6)]  
   
  ]]></format>
         </remarks>
@@ -360,8 +362,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.ParserError value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ParserErrorCollection.IndexOf(System.Web.ParserError)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As ParserError) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::ParserError ^ value);" />
       <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.ParserError -&gt; int" Usage="parserErrorCollection.IndexOf value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::ParserError ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -389,8 +391,8 @@
 ## Examples  
  The following code example demonstrates how to locate the index of a <xref:System.Web.ParserError> object at the specified index in a <xref:System.Web.ParserErrorCollection> collection.  
   
- [!code-csharp[System.Web.ParserErrorCollection#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.ParserErrorCollection/CS/ParserErrorCollection_CS.aspx#5)]
- [!code-vb[System.Web.ParserErrorCollection#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.ParserErrorCollection/VB/ParserErrorCollection_VB.aspx#5)]  
+ [!code-csharp[System.Web.ParserErrorCollection#5](~/snippets/csharp/VS_Snippets_WebNet/System.Web.ParserErrorCollection/CS/ParserErrorCollection_CS.aspx#5)]
+ [!code-vb[System.Web.ParserErrorCollection#5](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.ParserErrorCollection/VB/ParserErrorCollection_VB.aspx#5)]  
   
  ]]></format>
         </remarks>
@@ -401,8 +403,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Web.ParserError value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ParserErrorCollection.Insert(System.Int32,System.Web.ParserError)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As ParserError)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::ParserError ^ value);" />
       <MemberSignature Language="F#" Value="member this.Insert : int * System.Web.ParserError -&gt; unit" Usage="parserErrorCollection.Insert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::ParserError ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -433,8 +435,8 @@
 ## Examples  
  The following code example demonstrates how to insert a <xref:System.Web.ParserError> object at the specified index in a <xref:System.Web.ParserErrorCollection> collection.  
   
- [!code-csharp[System.Web.ParserErrorCollection#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.ParserErrorCollection/CS/ParserErrorCollection_CS.aspx#8)]
- [!code-vb[System.Web.ParserErrorCollection#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.ParserErrorCollection/VB/ParserErrorCollection_VB.aspx#8)]  
+ [!code-csharp[System.Web.ParserErrorCollection#8](~/snippets/csharp/VS_Snippets_WebNet/System.Web.ParserErrorCollection/CS/ParserErrorCollection_CS.aspx#8)]
+ [!code-vb[System.Web.ParserErrorCollection#8](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.ParserErrorCollection/VB/ParserErrorCollection_VB.aspx#8)]  
   
  ]]></format>
         </remarks>
@@ -445,8 +447,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.ParserError Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.ParserErrorCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As ParserError" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::ParserError ^ default[int] { System::Web::ParserError ^ get(int index); void set(int index, System::Web::ParserError ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.ParserError with get, set" Usage="System.Web.ParserErrorCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::ParserError ^ default[int] { System::Web::ParserError ^ get(int index); void set(int index, System::Web::ParserError ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -478,8 +480,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.ParserError value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ParserErrorCollection.Remove(System.Web.ParserError)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As ParserError)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::ParserError ^ value);" />
       <MemberSignature Language="F#" Value="member this.Remove : System.Web.ParserError -&gt; unit" Usage="parserErrorCollection.Remove value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::ParserError ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -506,8 +508,8 @@
 ## Examples  
  The following code example demonstrates how to remove a <xref:System.Web.ParserError> from the specified index in a <xref:System.Web.ParserErrorCollection> object.  
   
- [!code-csharp[System.Web.ParserErrorCollection#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.ParserErrorCollection/CS/ParserErrorCollection_CS.aspx#8)]
- [!code-vb[System.Web.ParserErrorCollection#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.ParserErrorCollection/VB/ParserErrorCollection_VB.aspx#8)]  
+ [!code-csharp[System.Web.ParserErrorCollection#8](~/snippets/csharp/VS_Snippets_WebNet/System.Web.ParserErrorCollection/CS/ParserErrorCollection_CS.aspx#8)]
+ [!code-vb[System.Web.ParserErrorCollection#8](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.ParserErrorCollection/VB/ParserErrorCollection_VB.aspx#8)]  
   
  ]]></format>
         </remarks>

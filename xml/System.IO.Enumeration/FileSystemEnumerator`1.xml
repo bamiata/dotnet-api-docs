@@ -1,16 +1,48 @@
-﻿<Type Name="FileSystemEnumerator&lt;TResult&gt;" FullName="System.IO.Enumeration.FileSystemEnumerator&lt;TResult&gt;">
+<Type Name="FileSystemEnumerator&lt;TResult&gt;" FullName="System.IO.Enumeration.FileSystemEnumerator&lt;TResult&gt;">
   <TypeSignature Language="C#" Value="public abstract class FileSystemEnumerator&lt;TResult&gt; : System.Runtime.ConstrainedExecution.CriticalFinalizerObject, System.Collections.Generic.IEnumerator&lt;TResult&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit FileSystemEnumerator`1&lt;TResult&gt; extends System.Runtime.ConstrainedExecution.CriticalFinalizerObject implements class System.Collections.Generic.IEnumerator`1&lt;!TResult&gt;, class System.Collections.IEnumerator, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.IO.Enumeration.FileSystemEnumerator`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class FileSystemEnumerator(Of TResult)&#xA;Inherits CriticalFinalizerObject&#xA;Implements IEnumerator(Of TResult)" />
-  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TResult&gt;&#xA;public ref class FileSystemEnumerator abstract : System::Runtime::ConstrainedExecution::CriticalFinalizerObject, System::Collections::Generic::IEnumerator&lt;TResult&gt;" />
   <TypeSignature Language="F#" Value="type FileSystemEnumerator&lt;'Result&gt; = class&#xA;    inherit CriticalFinalizerObject&#xA;    interface IEnumerator&lt;'Result&gt;&#xA;    interface IEnumerator&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TResult&gt;&#xA;public ref class FileSystemEnumerator abstract : System::Runtime::ConstrainedExecution::CriticalFinalizerObject, System::Collections::Generic::IEnumerator&lt;TResult&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.IO.FileSystem" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.IO.FileSystem" FromVersion="6.0.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="System.IO.FileSystem" FromVersion="7.0.0.0" To="System.Runtime" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="System.IO.FileSystem" FromVersion="8.0.0.0" To="System.Runtime" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+    <TypeForwarding From="System.IO.FileSystem" FromVersion="9.0.0.0" To="System.Runtime" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <TypeParameters>
-    <TypeParameter Name="TResult" />
+    <TypeParameter Name="TResult">
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+    </TypeParameter>
   </TypeParameters>
   <Base>
     <BaseTypeName>System.Runtime.ConstrainedExecution.CriticalFinalizerObject</BaseTypeName>
@@ -27,30 +59,57 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="TResult">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="TResult">The type of the result produced by this file system enumerator.</typeparam>
+    <summary>Enumerates the file system elements of the provided type that are being searched and filtered by a <see cref="T:System.IO.Enumeration.FileSystemEnumerable`1" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public FileSystemEnumerator (string directory, System.IO.EnumerationOptions options = null);" />
+      <MemberSignature Language="C#" Value="public FileSystemEnumerator (string directory, System.IO.EnumerationOptions? options = default);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string directory, class System.IO.EnumerationOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Enumeration.FileSystemEnumerator`1.#ctor(System.String,System.IO.EnumerationOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (directory As String, Optional options As EnumerationOptions = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (directory As String, Optional options As EnumerationOptions = Nothing)" />
       <MemberSignature Language="F#" Value="new System.IO.Enumeration.FileSystemEnumerator&lt;'Result&gt; : string * System.IO.EnumerationOptions -&gt; System.IO.Enumeration.FileSystemEnumerator&lt;'Result&gt;" Usage="new System.IO.Enumeration.FileSystemEnumerator&lt;'Result&gt; (directory, options)" />
+      <MemberSignature Language="C#" Value="public FileSystemEnumerator (string directory, System.IO.EnumerationOptions options = default);" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-2.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="directory" Type="System.String" />
-        <Parameter Name="options" Type="System.IO.EnumerationOptions" />
+        <Parameter Name="options" Type="System.IO.EnumerationOptions">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
       </Parameters>
       <Docs>
-        <param name="directory">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="directory">The directory to search in.</param>
+        <param name="options">Enumeration options to use.</param>
+        <summary>Encapsulates a find operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,12 +118,25 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ContinueOnError(int32 error) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Enumeration.FileSystemEnumerator`1.ContinueOnError(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ContinueOnError (error As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ContinueOnError(int error);" />
       <MemberSignature Language="F#" Value="abstract member ContinueOnError : int -&gt; bool&#xA;override this.ContinueOnError : int -&gt; bool" Usage="fileSystemEnumerator.ContinueOnError error" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ContinueOnError(int error);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -73,9 +145,10 @@
         <Parameter Name="error" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="error">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="error">The native error code.</param>
+        <summary>When overriden in a derived class, returns a value that indicates whether to continue execution or throw the default exception.</summary>
+        <returns>
+          <see langword="true" /> to continue; <see langword="false" /> to throw the default exception for the given error.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,8 +157,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance !TResult Current" />
       <MemberSignature Language="DocId" Value="P:System.IO.Enumeration.FileSystemEnumerator`1.Current" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As TResult" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TResult Current { TResult get(); };" />
       <MemberSignature Language="F#" Value="member this.Current : 'Result" Usage="System.IO.Enumeration.FileSystemEnumerator&lt;'Result&gt;.Current" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TResult Current { TResult get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IEnumerator`1.Current</InterfaceMember>
@@ -93,13 +166,36 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>TResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the currently visited element.</summary>
+        <value>The currently visited element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,8 +204,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Enumeration.FileSystemEnumerator`1.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="fileSystemEnumerator.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -117,13 +213,26 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases the resources used by the current instance of the <see cref="T:System.IO.Enumeration.FileSystemEnumerator`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,12 +241,25 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Enumeration.FileSystemEnumerator`1.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="fileSystemEnumerator.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -146,8 +268,9 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>When overridden in a derived class, releases the unmanaged resources used by the <see cref="T:System.IO.Enumeration.FileSystemEnumerator`1" /> class and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,8 +279,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MoveNext() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Enumeration.FileSystemEnumerator`1.MoveNext" />
       <MemberSignature Language="VB.NET" Value="Public Function MoveNext () As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveNext();" />
       <MemberSignature Language="F#" Value="abstract member MoveNext : unit -&gt; bool&#xA;override this.MoveNext : unit -&gt; bool" Usage="fileSystemEnumerator.MoveNext " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveNext();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerator.MoveNext</InterfaceMember>
@@ -165,14 +288,28 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Advances the enumerator to the next item of the <see cref="T:System.IO.Enumeration.FileSystemEnumerator`1" />.</summary>
+        <returns>
+          <see langword="true" /> if the enumerator successfully advanced to the next item; <see langword="false" /> if the end of the enumerator has been passed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,12 +318,25 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDirectoryFinished(valuetype System.ReadOnlySpan`1&lt;char&gt; directory) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Enumeration.FileSystemEnumerator`1.OnDirectoryFinished(System.ReadOnlySpan{System.Char})" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDirectoryFinished (directory As ReadOnlySpan(Of Char))" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDirectoryFinished(ReadOnlySpan&lt;char&gt; directory);" />
       <MemberSignature Language="F#" Value="abstract member OnDirectoryFinished : ReadOnlySpan&lt;char&gt; -&gt; unit&#xA;override this.OnDirectoryFinished : ReadOnlySpan&lt;char&gt; -&gt; unit" Usage="fileSystemEnumerator.OnDirectoryFinished directory" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDirectoryFinished(ReadOnlySpan&lt;char&gt; directory);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -195,8 +345,8 @@
         <Parameter Name="directory" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
       </Parameters>
       <Docs>
-        <param name="directory">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="directory">The directory path as a read-only span.</param>
+        <summary>When overriden in a derived class, this method is called whenever the end of a directory is reached.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,8 +355,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Enumeration.FileSystemEnumerator`1.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset();" />
       <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit&#xA;override this.Reset : unit -&gt; unit" Usage="fileSystemEnumerator.Reset " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerator.Reset</InterfaceMember>
@@ -214,14 +364,35 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Always throws <see cref="T:System.NotSupportedException" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+As described in the remarks for <xref:System.Collections.IEnumerator>, the `Reset` method is provided for COM interoperability and does not need to be fully implemented; instead, the implementer can throw a <xref:System.NotSupportedException>.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShouldIncludeEntry">
@@ -229,12 +400,25 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ShouldIncludeEntry(valuetype System.IO.Enumeration.FileSystemEntry&amp; entry) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Enumeration.FileSystemEnumerator`1.ShouldIncludeEntry(System.IO.Enumeration.FileSystemEntry@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ShouldIncludeEntry (ByRef entry As FileSystemEntry) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member ShouldIncludeEntry : FileSystemEntry -&gt; bool&#xA;override this.ShouldIncludeEntry : FileSystemEntry -&gt; bool" Usage="fileSystemEnumerator.ShouldIncludeEntry entry" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ShouldIncludeEntry(System::IO::Enumeration::FileSystemEntry % entry);" />
-      <MemberSignature Language="F#" Value="abstract member ShouldIncludeEntry :  -&gt; bool&#xA;override this.ShouldIncludeEntry :  -&gt; bool" Usage="fileSystemEnumerator.ShouldIncludeEntry entry" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -243,9 +427,10 @@
         <Parameter Name="entry" Type="System.IO.Enumeration.FileSystemEntry" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="entry">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="entry">A file system entry reference.</param>
+        <summary>When overridden in a derived class, determines whether the specified file system entry should be included in the results.</summary>
+        <returns>
+          <see langword="true" /> if the specified file system entry should be included in the results; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -254,12 +439,25 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ShouldRecurseIntoEntry(valuetype System.IO.Enumeration.FileSystemEntry&amp; entry) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Enumeration.FileSystemEnumerator`1.ShouldRecurseIntoEntry(System.IO.Enumeration.FileSystemEntry@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ShouldRecurseIntoEntry (ByRef entry As FileSystemEntry) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member ShouldRecurseIntoEntry : FileSystemEntry -&gt; bool&#xA;override this.ShouldRecurseIntoEntry : FileSystemEntry -&gt; bool" Usage="fileSystemEnumerator.ShouldRecurseIntoEntry entry" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ShouldRecurseIntoEntry(System::IO::Enumeration::FileSystemEntry % entry);" />
-      <MemberSignature Language="F#" Value="abstract member ShouldRecurseIntoEntry :  -&gt; bool&#xA;override this.ShouldRecurseIntoEntry :  -&gt; bool" Usage="fileSystemEnumerator.ShouldRecurseIntoEntry entry" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -268,19 +466,21 @@
         <Parameter Name="entry" Type="System.IO.Enumeration.FileSystemEntry" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="entry">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="entry">A file system entry reference.</param>
+        <summary>When overridden in a derived class, determines whether the specified file system entry should be recursed.</summary>
+        <returns>
+          <see langword="true" /> if the specified directory entry should be recursed into; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerator.Current">
-      <MemberSignature Language="C#" Value="object System.Collections.IEnumerator.Current { get; }" />
+      <MemberSignature Language="C#" Value="object? System.Collections.IEnumerator.Current { get; }" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IEnumerator.Current" />
       <MemberSignature Language="DocId" Value="P:System.IO.Enumeration.FileSystemEnumerator`1.System#Collections#IEnumerator#Current" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Current As Object Implements IEnumerator.Current" />
+      <MemberSignature Language="F#" Value="member this.System.Collections.IEnumerator.Current : obj" Usage="System.Collections.IEnumerator.Current" />
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::IEnumerator::Current { System::Object ^ get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.IEnumerator.Current" />
+      <MemberSignature Language="C#" Value="object System.Collections.IEnumerator.Current { get; }" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-2.1" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IEnumerator.Current</InterfaceMember>
@@ -288,14 +488,41 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the currently visited object.</summary>
+        <value>The currently visited object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.IO.Enumeration.FileSystemEnumerator`1> instance is cast to an <xref:System.Collections.IEnumerator> interface.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TransformEntry">
@@ -303,13 +530,32 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance !TResult TransformEntry(valuetype System.IO.Enumeration.FileSystemEntry&amp; entry) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Enumeration.FileSystemEnumerator`1.TransformEntry(System.IO.Enumeration.FileSystemEntry@)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function TransformEntry (ByRef entry As FileSystemEntry) As TResult" />
+      <MemberSignature Language="F#" Value="abstract member TransformEntry : FileSystemEntry -&gt; 'Result" Usage="fileSystemEnumerator.TransformEntry entry" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract TResult TransformEntry(System::IO::Enumeration::FileSystemEntry % entry);" />
-      <MemberSignature Language="F#" Value="abstract member TransformEntry :  -&gt; 'Result" Usage="fileSystemEnumerator.TransformEntry entry" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>TResult</ReturnType>
       </ReturnValue>
@@ -317,9 +563,9 @@
         <Parameter Name="entry" Type="System.IO.Enumeration.FileSystemEntry" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="entry">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="entry">A file system entry reference.</param>
+        <summary>When overridden in a derived class, generates the result type from the current entry.</summary>
+        <returns>The result type from the current entry.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

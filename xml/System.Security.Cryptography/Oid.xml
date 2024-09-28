@@ -1,15 +1,18 @@
-﻿<Type Name="Oid" FullName="System.Security.Cryptography.Oid">
+<Type Name="Oid" FullName="System.Security.Cryptography.Oid">
   <TypeSignature Language="C#" Value="public sealed class Oid" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Oid extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Oid" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Oid" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Oid sealed" />
   <TypeSignature Language="F#" Value="type Oid = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Oid sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -20,27 +23,52 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Security.Cryptography.Encoding" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Security.Cryptography.Encoding" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Security.Cryptography" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="System.Security.Cryptography.Encoding" FromVersion="7.0.0.0" To="System.Security.Cryptography" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Security.Cryptography" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="System.Security.Cryptography.Encoding" FromVersion="8.0.0.0" To="System.Security.Cryptography" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Security.Cryptography" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+    <TypeForwarding From="System.Security.Cryptography.Encoding" FromVersion="9.0.0.0" To="System.Security.Cryptography" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Represents a cryptographic object identifier. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Cryptographic object identifiers consist of a value/name pair. If one property in a pair is set to a known value, the other property is updated automatically to a corresponding value. For example, if the <xref:System.Security.Cryptography.Oid.Value%2A> property is set to "1.3.6.1.5.5.7.3.4", the <xref:System.Security.Cryptography.Oid.FriendlyName%2A> property, which is localized, is set automatically to "Secure Email".  
-  
-   
+ Cryptographic object identifiers consist of a value/name pair. If one property in a pair is set to a known value, the other property is updated automatically to a corresponding value. For example, if the <xref:System.Security.Cryptography.Oid.Value%2A> property is set to "1.3.6.1.5.5.7.3.4", the <xref:System.Security.Cryptography.Oid.FriendlyName%2A> property, which is localized, is set automatically to "Secure Email".
   
 ## Examples  
  The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
   
- [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
- [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
- [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography/Oid/Overview/cryptography.oid.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb" id="Snippet1":::
   
  ]]></format>
     </remarks>
@@ -72,15 +100,26 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -90,16 +129,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is the default constructor.  
-  
-   
+ This is the parameterless constructor.
   
 ## Examples  
  The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
   
- [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
- [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
- [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography/Oid/Overview/cryptography.oid.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -109,14 +146,18 @@
       <MemberSignature Language="C#" Value="public Oid (System.Security.Cryptography.Oid oid);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.Oid oid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Oid.#ctor(System.Security.Cryptography.Oid)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Oid(System::Security::Cryptography::Oid ^ oid);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (oid As Oid)" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.Oid : System.Security.Cryptography.Oid -&gt; System.Security.Cryptography.Oid" Usage="new System.Security.Cryptography.Oid oid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Oid(System::Security::Cryptography::Oid ^ oid);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -127,7 +168,20 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="oid" Type="System.Security.Cryptography.Oid" />
       </Parameters>
@@ -138,16 +192,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor copies the values of an existing <xref:System.Security.Cryptography.Oid> object to a new object.  
-  
-   
+ This constructor copies the values of an existing <xref:System.Security.Cryptography.Oid> object to a new object.
   
 ## Examples  
  The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
   
- [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
- [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
- [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography/Oid/Overview/cryptography.oid.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -160,14 +212,17 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string oid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Oid.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (oid As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Oid(System::String ^ oid);" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.Oid : string -&gt; System.Security.Cryptography.Oid" Usage="new System.Security.Cryptography.Oid oid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Oid(System::String ^ oid);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -178,10 +233,22 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -194,34 +261,36 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor copies the values of an existing <xref:System.Security.Cryptography.Oid> object to a new object.  
-  
-   
+ This constructor copies the values of an existing <xref:System.Security.Cryptography.Oid> object to a new object.
   
 ## Examples  
  The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
   
- [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
- [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
- [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography/Oid/Overview/cryptography.oid.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Oid (string value, string friendlyName);" />
+      <MemberSignature Language="C#" Value="public Oid (string? value, string? friendlyName);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value, string friendlyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Oid.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As String, friendlyName As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Oid(System::String ^ value, System::String ^ friendlyName);" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.Oid : string * string -&gt; System.Security.Cryptography.Oid" Usage="new System.Security.Cryptography.Oid (value, friendlyName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Oid(System::String ^ value, System::String ^ friendlyName);" />
+      <MemberSignature Language="C#" Value="public Oid (string value, string friendlyName);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -232,10 +301,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -250,34 +327,36 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor can be used to copy the values of an existing <xref:System.Security.Cryptography.Oid> object. Note that if the Oid value is not recognized, the `value` and `friendlyName` parameters are not verified to determine if they correspond to each other. This is because there are object identifiers that the .NET Framework does not recognize, although an application may be able to interpret them.  
-  
-   
+ This constructor can be used to copy the values of an existing <xref:System.Security.Cryptography.Oid> object. Note that if the Oid value is not recognized, the `value` and `friendlyName` parameters are not verified to determine if they correspond to each other. This is because there are object identifiers that .NET does not recognize, although an application may be able to interpret them.
   
 ## Examples  
  The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
   
- [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
- [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
- [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography/Oid/Overview/cryptography.oid.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="FriendlyName">
-      <MemberSignature Language="C#" Value="public string FriendlyName { get; set; }" />
+      <MemberSignature Language="C#" Value="public string? FriendlyName { get; set; }" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".property instance string FriendlyName" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Oid.FriendlyName" />
       <MemberSignature Language="VB.NET" Value="Public Property FriendlyName As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FriendlyName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.FriendlyName : string with get, set" Usage="System.Security.Cryptography.Oid.FriendlyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FriendlyName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="C#" Value="public string FriendlyName { get; set; }" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -288,6 +367,13 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -298,20 +384,22 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- If one value of an <xref:System.Security.Cryptography.Oid> property is set to a known value, the other value of an <xref:System.Security.Cryptography.Oid> property is updated automatically to a corresponding value. For example, if the <xref:System.Security.Cryptography.Oid.FriendlyName%2A> property is set to "Secure Email", the <xref:System.Security.Cryptography.Oid.Value%2A> property is set automatically to "1.3.6.1.5.5.7.3.4".  
-  
-   
-  
+## Remarks
+
+If one <xref:System.Security.Cryptography.Oid> property is set to a known value, the value of the other <xref:System.Security.Cryptography.Oid> property is updated automatically to a corresponding value. For example, if the <xref:System.Security.Cryptography.Oid.FriendlyName%2A> property is set to "Secure Email", the <xref:System.Security.Cryptography.Oid.Value%2A> property is set automatically to "1.3.6.1.5.5.7.3.4".
+
+In .NET 5 and later versions, this property is *init only*, meaning that its value can't be changed once it's been set.
+
 ## Examples  
  The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
   
- [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
- [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
- [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography/Oid/Overview/cryptography.oid.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">.NET 5 and later: An attempt is made to set the value and the value has previously been set.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromFriendlyName">
@@ -319,14 +407,17 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.Oid FromFriendlyName(string friendlyName, valuetype System.Security.Cryptography.OidGroup group) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Oid.FromFriendlyName(System.String,System.Security.Cryptography.OidGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromFriendlyName (friendlyName As String, group As OidGroup) As Oid" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::Oid ^ FromFriendlyName(System::String ^ friendlyName, System::Security::Cryptography::OidGroup group);" />
       <MemberSignature Language="F#" Value="static member FromFriendlyName : string * System.Security.Cryptography.OidGroup -&gt; System.Security.Cryptography.Oid" Usage="System.Security.Cryptography.Oid.FromFriendlyName (friendlyName, group)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::Oid ^ FromFriendlyName(System::String ^ friendlyName, System::Security::Cryptography::OidGroup group);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -336,13 +427,26 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Oid</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="friendlyName" Type="System.String" />
-        <Parameter Name="group" Type="System.Security.Cryptography.OidGroup" />
+        <Parameter Name="friendlyName" Type="System.String" Index="0" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="group" Type="System.Security.Cryptography.OidGroup" Index="1" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="friendlyName">The friendly name of the identifier.</param>
@@ -360,14 +464,17 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.Oid FromOidValue(string oidValue, valuetype System.Security.Cryptography.OidGroup group) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Oid.FromOidValue(System.String,System.Security.Cryptography.OidGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FromOidValue (oidValue As String, group As OidGroup) As Oid" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::Oid ^ FromOidValue(System::String ^ oidValue, System::Security::Cryptography::OidGroup group);" />
       <MemberSignature Language="F#" Value="static member FromOidValue : string * System.Security.Cryptography.OidGroup -&gt; System.Security.Cryptography.Oid" Usage="System.Security.Cryptography.Oid.FromOidValue (oidValue, group)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::Oid ^ FromOidValue(System::String ^ oidValue, System::Security::Cryptography::OidGroup group);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -377,13 +484,26 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Oid</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="oidValue" Type="System.String" />
-        <Parameter Name="group" Type="System.Security.Cryptography.OidGroup" />
+        <Parameter Name="oidValue" Type="System.String" Index="0" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="group" Type="System.Security.Cryptography.OidGroup" Index="1" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="oidValue">The OID value.</param>
@@ -397,18 +517,22 @@
       </Docs>
     </Member>
     <Member MemberName="Value">
-      <MemberSignature Language="C#" Value="public string Value { get; set; }" />
+      <MemberSignature Language="C#" Value="public string? Value { get; set; }" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Oid.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.Security.Cryptography.Oid.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="C#" Value="public string Value { get; set; }" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -419,13 +543,22 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -437,20 +570,22 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- If one value of an <xref:System.Security.Cryptography.Oid> property is set to a known value, the other value of an <xref:System.Security.Cryptography.Oid> property is updated automatically to a corresponding value. For example, if the <xref:System.Security.Cryptography.Oid.Value%2A> property is set to "1.3.6.1.5.5.7.3.4", the <xref:System.Security.Cryptography.Oid.FriendlyName%2A> property is set automatically to "Secure Email".  
-  
-   
+## Remarks
+
+If one <xref:System.Security.Cryptography.Oid> property is set to a known value, the value of the other <xref:System.Security.Cryptography.Oid> property is updated automatically to a corresponding value. For example, if the <xref:System.Security.Cryptography.Oid.Value%2A> property is set to "1.3.6.1.5.5.7.3.4", the <xref:System.Security.Cryptography.Oid.FriendlyName%2A> property is set automatically to "Secure Email".
+
+In .NET 5 and later versions, this property is *init only*, meaning that its value can't be changed once it's been set.
   
 ## Examples  
  The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
   
- [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
- [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
- [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography/Oid/Overview/cryptography.oid.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">.NET 5 and later: An attempt is made to set the value and the value has previously been set.</exception>
       </Docs>
     </Member>
   </Members>

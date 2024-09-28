@@ -1,19 +1,42 @@
-﻿<Type Name="OleDbEnumerator" FullName="System.Data.OleDb.OleDbEnumerator">
+<Type Name="OleDbEnumerator" FullName="System.Data.OleDb.OleDbEnumerator">
   <TypeSignature Language="C#" Value="public sealed class OleDbEnumerator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OleDbEnumerator extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbEnumerator" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OleDbEnumerator" />
-  <TypeSignature Language="C++ CLI" Value="public ref class OleDbEnumerator sealed" />
   <TypeSignature Language="F#" Value="type OleDbEnumerator = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OleDbEnumerator sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Data.OleDb</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Data.OleDb" FromVersion="9.0.0.0" To="System.Data" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Provides a mechanism for enumerating all available OLE DB providers within the local network.</summary>
     <remarks>To be added.</remarks>
@@ -31,6 +54,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OleDb</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Creates an instance of the <see cref="T:System.Data.OleDb.OleDbEnumerator" /> class.</summary>
@@ -42,13 +70,18 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataTable GetElements() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbEnumerator.GetElements" />
       <MemberSignature Language="VB.NET" Value="Public Function GetElements () As DataTable" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataTable ^ GetElements();" />
       <MemberSignature Language="F#" Value="member this.GetElements : unit -&gt; System.Data.DataTable" Usage="oleDbEnumerator.GetElements " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataTable ^ GetElements();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OleDb</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataTable</ReturnType>
@@ -146,13 +179,19 @@ class Program
       <MemberSignature Language="C#" Value="public static System.Data.OleDb.OleDbDataReader GetEnumerator (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.OleDb.OleDbDataReader GetEnumerator(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbEnumerator.GetEnumerator(System.Type)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OleDb::OleDbDataReader ^ GetEnumerator(Type ^ type);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetEnumerator (type As Type) As OleDbDataReader" />
       <MemberSignature Language="F#" Value="static member GetEnumerator : Type -&gt; System.Data.OleDb.OleDbDataReader" Usage="System.Data.OleDb.OleDbEnumerator.GetEnumerator type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OleDb::OleDbDataReader ^ GetEnumerator(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OleDb</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbDataReader</ReturnType>
@@ -178,9 +217,7 @@ class Program
 |3|SOURCES_TYPE|One of the following enumeration members: Binder (0), DataSource_MDP (1), DataSource_TDP (2), Enumerator (3). These correspond to the values returned in the SOURCES_TYPE column of the native OLE DB sources rowset.|  
 |4|SOURCES_ISPARENT|Applicable to enumerators only. If `true`, indicates that the entry applies to the same enumerator on which **GetSourcesRowset** was called, implying that it is also included in the sub-enumeration. Corresponds to the SOURCES_ISPARENT column of the native OLE DB sources rowset|  
   
- OLE DB provides several enumerator components, including MSDAENUM, MSDASQL Enumerator, SQLNCLI Enumerator, SQLOLEDB Enumerator, and others. For more information about the enumerator components and how to use them, see the [OLE DB Programmer's Reference](https://go.microsoft.com/fwlink/?LinkId=45232).  
-  
-   
+ OLE DB provides several enumerator components, including MSDAENUM, MSDASQL Enumerator, SQLNCLI Enumerator, SQLOLEDB Enumerator, and others. For more information about the enumerator components and how to use them, see the [OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms713643(v=vs.85)).
   
 ## Examples  
  The following console application uses the MSDAENUM component to retrieve information about all the OLE DB providers and displays the information in the console window.  
@@ -259,13 +296,18 @@ class Program
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.OleDb.OleDbDataReader GetRootEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbEnumerator.GetRootEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetRootEnumerator () As OleDbDataReader" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OleDb::OleDbDataReader ^ GetRootEnumerator();" />
       <MemberSignature Language="F#" Value="static member GetRootEnumerator : unit -&gt; System.Data.OleDb.OleDbDataReader" Usage="System.Data.OleDb.OleDbEnumerator.GetRootEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OleDb::OleDbDataReader ^ GetRootEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OleDb</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbDataReader</ReturnType>

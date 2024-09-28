@@ -1,15 +1,17 @@
-﻿<Type Name="PutOptions" FullName="System.Management.PutOptions">
+<Type Name="PutOptions" FullName="System.Management.PutOptions">
   <TypeSignature Language="C#" Value="public class PutOptions : System.Management.ManagementOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PutOptions extends System.Management.ManagementOptions" />
   <TypeSignature Language="DocId" Value="T:System.Management.PutOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class PutOptions&#xA;Inherits ManagementOptions" />
-  <TypeSignature Language="C++ CLI" Value="public ref class PutOptions : System::Management::ManagementOptions" />
   <TypeSignature Language="F#" Value="type PutOptions = class&#xA;    inherit ManagementOptions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PutOptions : System::Management::ManagementOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Management.ManagementOptions</BaseTypeName>
@@ -41,17 +43,19 @@
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.PutOptions" /> class for put operations, using default values. This is the default constructor.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.PutOptions" /> class for put operations, using default values. This is the parameterless constructor.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
  ]]></format>
         </remarks>
@@ -62,14 +66,16 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Management.ManagementNamedValueCollection context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.PutOptions.#ctor(System.Management.ManagementNamedValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (context As ManagementNamedValueCollection)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; PutOptions(System::Management::ManagementNamedValueCollection ^ context);" />
       <MemberSignature Language="F#" Value="new System.Management.PutOptions : System.Management.ManagementNamedValueCollection -&gt; System.Management.PutOptions" Usage="new System.Management.PutOptions context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PutOptions(System::Management::ManagementNamedValueCollection ^ context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="context" Type="System.Management.ManagementNamedValueCollection" />
@@ -83,7 +89,7 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
  ]]></format>
         </remarks>
@@ -93,14 +99,17 @@
       <MemberSignature Language="C#" Value="public PutOptions (System.Management.ManagementNamedValueCollection context, TimeSpan timeout, bool useAmendedQualifiers, System.Management.PutType putType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Management.ManagementNamedValueCollection context, valuetype System.TimeSpan timeout, bool useAmendedQualifiers, valuetype System.Management.PutType putType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.PutOptions.#ctor(System.Management.ManagementNamedValueCollection,System.TimeSpan,System.Boolean,System.Management.PutType)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; PutOptions(System::Management::ManagementNamedValueCollection ^ context, TimeSpan timeout, bool useAmendedQualifiers, System::Management::PutType putType);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (context As ManagementNamedValueCollection, timeout As TimeSpan, useAmendedQualifiers As Boolean, putType As PutType)" />
       <MemberSignature Language="F#" Value="new System.Management.PutOptions : System.Management.ManagementNamedValueCollection * TimeSpan * bool * System.Management.PutType -&gt; System.Management.PutOptions" Usage="new System.Management.PutOptions (context, timeout, useAmendedQualifiers, putType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PutOptions(System::Management::ManagementNamedValueCollection ^ context, TimeSpan timeout, bool useAmendedQualifiers, System::Management::PutType putType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="context" Type="System.Management.ManagementNamedValueCollection" />
@@ -110,7 +119,7 @@
       </Parameters>
       <Docs>
         <param name="context">A provider-specific, named-value pairs object to be passed through to the provider.</param>
-        <param name="timeout">The length of time to let the operation perform before it times out. The default is <see cref="F:System.TimeSpan.MaxValue" />.</param>
+        <param name="timeout">The length of time to let the operation perform before it times out. The default is <see cref="F:System.TimeSpan.MaxValue">TimeSpan.MaxValue</see>.</param>
         <param name="useAmendedQualifiers">
           <see langword="true" /> if the returned objects should contain amended (locale-aware) qualifiers; otherwise, <see langword="false" />.</param>
         <param name="putType">The type of commit to be performed (update or create).</param>
@@ -121,7 +130,7 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
  ]]></format>
         </remarks>
@@ -132,14 +141,16 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.PutOptions.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
       <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="putOptions.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -154,7 +165,7 @@
 ## Remarks  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
  ]]></format>
         </remarks>
@@ -166,14 +177,16 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Management.PutType Type" />
       <MemberSignature Language="DocId" Value="P:System.Management.PutOptions.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As PutType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::PutType Type { System::Management::PutType get(); void set(System::Management::PutType value); };" />
       <MemberSignature Language="F#" Value="member this.Type : System.Management.PutType with get, set" Usage="System.Management.PutOptions.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::PutType Type { System::Management::PutType get(); void set(System::Management::PutType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Management.PutType</ReturnType>
@@ -190,7 +203,7 @@
  The default value is <xref:System.Management.PutType>.  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
  ]]></format>
         </remarks>
@@ -201,14 +214,16 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool UseAmendedQualifiers" />
       <MemberSignature Language="DocId" Value="P:System.Management.PutOptions.UseAmendedQualifiers" />
       <MemberSignature Language="VB.NET" Value="Public Property UseAmendedQualifiers As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseAmendedQualifiers { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.UseAmendedQualifiers : bool with get, set" Usage="System.Management.PutOptions.UseAmendedQualifiers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseAmendedQualifiers { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -226,7 +241,7 @@
  `true` if the objects returned from WMI should contain amended information; otherwise, `false`. The default value is `false`.  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code).  
   
  ]]></format>
         </remarks>

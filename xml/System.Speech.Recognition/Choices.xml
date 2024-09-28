@@ -1,22 +1,25 @@
-﻿<Type Name="Choices" FullName="System.Speech.Recognition.Choices">
+<Type Name="Choices" FullName="System.Speech.Recognition.Choices">
   <TypeSignature Language="C#" Value="public class Choices" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Choices extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.Choices" />
   <TypeSignature Language="VB.NET" Value="Public Class Choices" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Choices" />
   <TypeSignature Language="F#" Value="type Choices = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Choices" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerDisplay("{_oneOf.DebugSummary}")</AttributeName>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerDisplay("{_oneOf.DebugSummary}")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("{_oneOf.DebugSummary}")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -34,7 +37,7 @@
   
  The <xref:System.Speech.Recognition.Choices> class serves the same function as the `one-of` XML element defined by the [Speech Recognition Grammar Specification (SRGS) Version 1.0](https://www.w3.org/TR/speech-grammar/) and is similar to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> class in the <xref:System.Speech.Recognition.SrgsGrammar> namespace.  
   
- For more information about defining a speech recognition grammar, see [Speech Recognition](https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh361633(v=office.14)) and [Creating GrammarBuilder Grammars](https://msdn.microsoft.com/library/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
+ For more information about defining a speech recognition grammar, see [Speech Recognition](https://learn.microsoft.com/previous-versions/office/developer/speech-technologies/hh361633(v=office.14)).  
   
    
   
@@ -80,7 +83,7 @@ private Grammar CreateColorGrammar()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can construct a <xref:System.Speech.Recognition.Choices> object using a default constructor (which returns an empty object), from a group of <xref:System.String> objects, or a from set of <xref:System.Speech.Recognition.GrammarBuilder> objects.  
+ You can construct a <xref:System.Speech.Recognition.Choices> object using a parameterless constructor (which returns an empty object), from a group of <xref:System.String> objects, or a from set of <xref:System.Speech.Recognition.GrammarBuilder> objects.  
   
  Because the <xref:System.Speech.Recognition.GrammarBuilder> object supports implicit conversion from <xref:System.Speech.Recognition.SemanticResultValue> and <xref:System.Speech.Recognition.SemanticResultKey>, a <xref:System.Speech.Recognition.Choices> can be constructed from an array of these objects using a cast.  
   
@@ -93,8 +96,8 @@ private Grammar CreateColorGrammar()
   
  The example uses a <xref:System.Speech.Recognition.GrammarBuilder> object to assemble a phrase, using the <xref:System.Speech.Recognition.Choices> objects and two additional strings, that can be used to recognize speech input in the form of "Call [contactlList] on [phoneType] phone" , for example "Call Jane on cell phone".  
   
-```  
-public GrammarBuilder ChoicesContructor2 ()  
+```csharp
+public GrammarBuilder ChoicesConstructor2 ()  
 {  
     GrammarBuilder gb = new GrammarBuilder ();  
     Choices phoneType = new Choices (new string[] {"cell", "home", "work"});  
@@ -123,6 +126,8 @@ public GrammarBuilder ChoicesContructor2 ()
         <AssemblyName>System.Speech</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -181,19 +186,22 @@ public Grammar CreatePhonePhrase()
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Speech.Recognition.GrammarBuilder[] alternateChoices) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Choices.#ctor(System.Speech.Recognition.GrammarBuilder[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray alternateChoices As GrammarBuilder())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Choices(... cli::array &lt;System::Speech::Recognition::GrammarBuilder ^&gt; ^ alternateChoices);" />
       <MemberSignature Language="F#" Value="new System.Speech.Recognition.Choices : System.Speech.Recognition.GrammarBuilder[] -&gt; System.Speech.Recognition.Choices" Usage="new System.Speech.Recognition.Choices alternateChoices" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Choices(... cli::array &lt;System::Speech::Recognition::GrammarBuilder ^&gt; ^ alternateChoices);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="alternateChoices" Type="System.Speech.Recognition.GrammarBuilder[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -259,19 +267,22 @@ public Grammar CreatePhonePhrase()
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] phrases) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Choices.#ctor(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray phrases As String())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Choices(... cli::array &lt;System::String ^&gt; ^ phrases);" />
       <MemberSignature Language="F#" Value="new System.Speech.Recognition.Choices : string[] -&gt; System.Speech.Recognition.Choices" Usage="new System.Speech.Recognition.Choices phrases" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Choices(... cli::array &lt;System::String ^&gt; ^ phrases);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="phrases" Type="System.String[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -344,13 +355,15 @@ public Grammar CreatePhonePhrase()
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Speech.Recognition.GrammarBuilder[] alternateChoices) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Choices.Add(System.Speech.Recognition.GrammarBuilder[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (ParamArray alternateChoices As GrammarBuilder())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(... cli::array &lt;System::Speech::Recognition::GrammarBuilder ^&gt; ^ alternateChoices);" />
       <MemberSignature Language="F#" Value="member this.Add : System.Speech.Recognition.GrammarBuilder[] -&gt; unit" Usage="choices.Add alternateChoices" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(... cli::array &lt;System::Speech::Recognition::GrammarBuilder ^&gt; ^ alternateChoices);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -359,7 +372,8 @@ public Grammar CreatePhonePhrase()
         <Parameter Name="alternateChoices" Type="System.Speech.Recognition.GrammarBuilder[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -427,13 +441,15 @@ public Grammar CreatePhonePhrase()
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string[] phrases) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Choices.Add(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (ParamArray phrases As String())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(... cli::array &lt;System::String ^&gt; ^ phrases);" />
       <MemberSignature Language="F#" Value="member this.Add : string[] -&gt; unit" Usage="choices.Add phrases" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(... cli::array &lt;System::String ^&gt; ^ phrases);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -442,7 +458,8 @@ public Grammar CreatePhonePhrase()
         <Parameter Name="phrases" Type="System.String[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -508,13 +525,15 @@ public Grammar CreatePhonePhrase()
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Speech.Recognition.GrammarBuilder ToGrammarBuilder() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.Choices.ToGrammarBuilder" />
       <MemberSignature Language="VB.NET" Value="Public Function ToGrammarBuilder () As GrammarBuilder" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Speech::Recognition::GrammarBuilder ^ ToGrammarBuilder();" />
       <MemberSignature Language="F#" Value="member this.ToGrammarBuilder : unit -&gt; System.Speech.Recognition.GrammarBuilder" Usage="choices.ToGrammarBuilder " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Speech::Recognition::GrammarBuilder ^ ToGrammarBuilder();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Speech.Recognition.GrammarBuilder</ReturnType>

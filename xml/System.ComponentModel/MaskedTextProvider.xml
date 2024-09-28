@@ -1,10 +1,10 @@
-﻿<Type Name="MaskedTextProvider" FullName="System.ComponentModel.MaskedTextProvider">
+<Type Name="MaskedTextProvider" FullName="System.ComponentModel.MaskedTextProvider">
   <TypeSignature Language="C#" Value="public class MaskedTextProvider : ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MaskedTextProvider extends System.Object implements class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.MaskedTextProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class MaskedTextProvider&#xA;Implements ICloneable" />
-  <TypeSignature Language="C++ CLI" Value="public ref class MaskedTextProvider : ICloneable" />
   <TypeSignature Language="F#" Value="type MaskedTextProvider = class&#xA;    interface ICloneable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MaskedTextProvider : ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -14,12 +14,26 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.ComponentModel.TypeConverter" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.ComponentModel.TypeConverter" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.ComponentModel.TypeConverter" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.ComponentModel.TypeConverter" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.ComponentModel.TypeConverter" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -28,6 +42,20 @@
       <InterfaceName>System.ICloneable</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembers(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.PublicConstructors)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembers(System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.PublicConstructors)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Represents a mask-parsing service that can be used by any number of controls that support masking, such as the <see cref="T:System.Windows.Forms.MaskedTextBox" /> control.</summary>
     <remarks>
@@ -73,8 +101,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string mask) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (mask As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; MaskedTextProvider(System::String ^ mask);" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.MaskedTextProvider : string -&gt; System.ComponentModel.MaskedTextProvider" Usage="new System.ComponentModel.MaskedTextProvider mask" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MaskedTextProvider(System::String ^ mask);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -85,15 +113,23 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -120,8 +156,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string mask, bool restrictToAscii) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.#ctor(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (mask As String, restrictToAscii As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; MaskedTextProvider(System::String ^ mask, bool restrictToAscii);" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.MaskedTextProvider : string * bool -&gt; System.ComponentModel.MaskedTextProvider" Usage="new System.ComponentModel.MaskedTextProvider (mask, restrictToAscii)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MaskedTextProvider(System::String ^ mask, bool restrictToAscii);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -132,15 +168,23 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -167,12 +211,13 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MaskedTextProvider (string mask, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="C#" Value="public MaskedTextProvider (string mask, System.Globalization.CultureInfo culture);" FrameworkAlternate="net-5.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string mask, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.#ctor(System.String,System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (mask As String, culture As CultureInfo)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; MaskedTextProvider(System::String ^ mask, System::Globalization::CultureInfo ^ culture);" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.MaskedTextProvider : string * System.Globalization.CultureInfo -&gt; System.ComponentModel.MaskedTextProvider" Usage="new System.ComponentModel.MaskedTextProvider (mask, culture)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MaskedTextProvider(System::String ^ mask, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="C#" Value="public MaskedTextProvider (string mask, System.Globalization.CultureInfo? culture);" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -183,20 +228,35 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
         <Parameter Name="mask" Type="System.String" />
-        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
       </Parameters>
       <Docs>
         <param name="mask">A <see cref="T:System.String" /> that represents the input mask.</param>
@@ -221,8 +281,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string mask, char passwordChar, bool allowPromptAsInput) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.#ctor(System.String,System.Char,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (mask As String, passwordChar As Char, allowPromptAsInput As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; MaskedTextProvider(System::String ^ mask, char passwordChar, bool allowPromptAsInput);" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.MaskedTextProvider : string * char * bool -&gt; System.ComponentModel.MaskedTextProvider" Usage="new System.ComponentModel.MaskedTextProvider (mask, passwordChar, allowPromptAsInput)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MaskedTextProvider(System::String ^ mask, char passwordChar, bool allowPromptAsInput);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -233,15 +293,23 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -271,12 +339,13 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MaskedTextProvider (string mask, System.Globalization.CultureInfo culture, bool restrictToAscii);" />
+      <MemberSignature Language="C#" Value="public MaskedTextProvider (string mask, System.Globalization.CultureInfo culture, bool restrictToAscii);" FrameworkAlternate="net-5.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string mask, class System.Globalization.CultureInfo culture, bool restrictToAscii) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.#ctor(System.String,System.Globalization.CultureInfo,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (mask As String, culture As CultureInfo, restrictToAscii As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; MaskedTextProvider(System::String ^ mask, System::Globalization::CultureInfo ^ culture, bool restrictToAscii);" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.MaskedTextProvider : string * System.Globalization.CultureInfo * bool -&gt; System.ComponentModel.MaskedTextProvider" Usage="new System.ComponentModel.MaskedTextProvider (mask, culture, restrictToAscii)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MaskedTextProvider(System::String ^ mask, System::Globalization::CultureInfo ^ culture, bool restrictToAscii);" />
+      <MemberSignature Language="C#" Value="public MaskedTextProvider (string mask, System.Globalization.CultureInfo? culture, bool restrictToAscii);" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -287,20 +356,35 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
         <Parameter Name="mask" Type="System.String" />
-        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="restrictToAscii" Type="System.Boolean" />
       </Parameters>
       <Docs>
@@ -325,12 +409,13 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MaskedTextProvider (string mask, System.Globalization.CultureInfo culture, char passwordChar, bool allowPromptAsInput);" />
+      <MemberSignature Language="C#" Value="public MaskedTextProvider (string mask, System.Globalization.CultureInfo culture, char passwordChar, bool allowPromptAsInput);" FrameworkAlternate="net-5.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string mask, class System.Globalization.CultureInfo culture, char passwordChar, bool allowPromptAsInput) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.#ctor(System.String,System.Globalization.CultureInfo,System.Char,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (mask As String, culture As CultureInfo, passwordChar As Char, allowPromptAsInput As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; MaskedTextProvider(System::String ^ mask, System::Globalization::CultureInfo ^ culture, char passwordChar, bool allowPromptAsInput);" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.MaskedTextProvider : string * System.Globalization.CultureInfo * char * bool -&gt; System.ComponentModel.MaskedTextProvider" Usage="new System.ComponentModel.MaskedTextProvider (mask, culture, passwordChar, allowPromptAsInput)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MaskedTextProvider(System::String ^ mask, System::Globalization::CultureInfo ^ culture, char passwordChar, bool allowPromptAsInput);" />
+      <MemberSignature Language="C#" Value="public MaskedTextProvider (string mask, System.Globalization.CultureInfo? culture, char passwordChar, bool allowPromptAsInput);" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -341,20 +426,35 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
         <Parameter Name="mask" Type="System.String" />
-        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="passwordChar" Type="System.Char" />
         <Parameter Name="allowPromptAsInput" Type="System.Boolean" />
       </Parameters>
@@ -382,12 +482,13 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MaskedTextProvider (string mask, System.Globalization.CultureInfo culture, bool allowPromptAsInput, char promptChar, char passwordChar, bool restrictToAscii);" />
+      <MemberSignature Language="C#" Value="public MaskedTextProvider (string mask, System.Globalization.CultureInfo culture, bool allowPromptAsInput, char promptChar, char passwordChar, bool restrictToAscii);" FrameworkAlternate="net-5.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string mask, class System.Globalization.CultureInfo culture, bool allowPromptAsInput, char promptChar, char passwordChar, bool restrictToAscii) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.#ctor(System.String,System.Globalization.CultureInfo,System.Boolean,System.Char,System.Char,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (mask As String, culture As CultureInfo, allowPromptAsInput As Boolean, promptChar As Char, passwordChar As Char, restrictToAscii As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; MaskedTextProvider(System::String ^ mask, System::Globalization::CultureInfo ^ culture, bool allowPromptAsInput, char promptChar, char passwordChar, bool restrictToAscii);" />
       <MemberSignature Language="F#" Value="new System.ComponentModel.MaskedTextProvider : string * System.Globalization.CultureInfo * bool * char * char * bool -&gt; System.ComponentModel.MaskedTextProvider" Usage="new System.ComponentModel.MaskedTextProvider (mask, culture, allowPromptAsInput, promptChar, passwordChar, restrictToAscii)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MaskedTextProvider(System::String ^ mask, System::Globalization::CultureInfo ^ culture, bool allowPromptAsInput, char promptChar, char passwordChar, bool restrictToAscii);" />
+      <MemberSignature Language="C#" Value="public MaskedTextProvider (string mask, System.Globalization.CultureInfo? culture, bool allowPromptAsInput, char promptChar, char passwordChar, bool restrictToAscii);" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -398,15 +499,29 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="mask" Type="System.String" />
-        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="allowPromptAsInput" Type="System.Boolean" />
         <Parameter Name="promptChar" Type="System.Char" />
         <Parameter Name="passwordChar" Type="System.Char" />
@@ -461,8 +576,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Add(char input) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Add(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (input As Char) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Add(char input);" />
       <MemberSignature Language="F#" Value="member this.Add : char -&gt; bool" Usage="maskedTextProvider.Add input" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Add(char input);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -473,11 +588,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -518,8 +640,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Add(string input) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (input As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Add(System::String ^ input);" />
       <MemberSignature Language="F#" Value="member this.Add : string -&gt; bool" Usage="maskedTextProvider.Add input" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Add(System::String ^ input);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -530,11 +652,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -578,8 +707,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Add(char input, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Add(System.Char,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (input As Char, ByRef testPosition As Integer, ByRef resultHint As MaskedTextResultHint) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Add : char * int * MaskedTextResultHint -&gt; bool" Usage="maskedTextProvider.Add (input, testPosition, resultHint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Add(char input, [Runtime::InteropServices::Out] int % testPosition, [Runtime::InteropServices::Out] System::ComponentModel::MaskedTextResultHint % resultHint);" />
-      <MemberSignature Language="F#" Value="member this.Add : char *  *  -&gt; bool" Usage="maskedTextProvider.Add (input, testPosition, resultHint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -590,11 +719,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -641,8 +777,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Add(string input, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Add(System.String,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (input As String, ByRef testPosition As Integer, ByRef resultHint As MaskedTextResultHint) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Add : string * int * MaskedTextResultHint -&gt; bool" Usage="maskedTextProvider.Add (input, testPosition, resultHint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Add(System::String ^ input, [Runtime::InteropServices::Out] int % testPosition, [Runtime::InteropServices::Out] System::ComponentModel::MaskedTextResultHint % resultHint);" />
-      <MemberSignature Language="F#" Value="member this.Add : string *  *  -&gt; bool" Usage="maskedTextProvider.Add (input, testPosition, resultHint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -653,11 +789,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -706,8 +849,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowPromptAsInput" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MaskedTextProvider.AllowPromptAsInput" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllowPromptAsInput As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowPromptAsInput { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.AllowPromptAsInput : bool" Usage="System.ComponentModel.MaskedTextProvider.AllowPromptAsInput" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowPromptAsInput { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -718,11 +861,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -751,8 +901,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool AsciiOnly" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MaskedTextProvider.AsciiOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AsciiOnly As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AsciiOnly { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.AsciiOnly : bool" Usage="System.ComponentModel.MaskedTextProvider.AsciiOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AsciiOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -763,11 +913,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -795,8 +952,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 AssignedEditPositionCount" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MaskedTextProvider.AssignedEditPositionCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssignedEditPositionCount As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AssignedEditPositionCount { int get(); };" />
       <MemberSignature Language="F#" Value="member this.AssignedEditPositionCount : int" Usage="System.ComponentModel.MaskedTextProvider.AssignedEditPositionCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AssignedEditPositionCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -807,15 +964,23 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -846,8 +1011,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 AvailableEditPositionCount" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MaskedTextProvider.AvailableEditPositionCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AvailableEditPositionCount As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AvailableEditPositionCount { int get(); };" />
       <MemberSignature Language="F#" Value="member this.AvailableEditPositionCount : int" Usage="System.ComponentModel.MaskedTextProvider.AvailableEditPositionCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AvailableEditPositionCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -858,11 +1023,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -900,8 +1072,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="maskedTextProvider.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -912,11 +1084,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -946,8 +1125,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear([out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Clear(System.ComponentModel.MaskedTextResultHint@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear (ByRef resultHint As MaskedTextResultHint)" />
+      <MemberSignature Language="F#" Value="member this.Clear : MaskedTextResultHint -&gt; unit" Usage="maskedTextProvider.Clear resultHint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear([Runtime::InteropServices::Out] System::ComponentModel::MaskedTextResultHint % resultHint);" />
-      <MemberSignature Language="F#" Value="member this.Clear :  -&gt; unit" Usage="maskedTextProvider.Clear resultHint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -958,11 +1137,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -994,8 +1180,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
       <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="maskedTextProvider.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -1009,12 +1195,25 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.UnsupportedOSPlatform("browser")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.UnsupportedOSPlatform("browser")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -1040,8 +1239,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.CultureInfo Culture" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MaskedTextProvider.Culture" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Culture As CultureInfo" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ Culture { System::Globalization::CultureInfo ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Culture : System.Globalization.CultureInfo" Usage="System.ComponentModel.MaskedTextProvider.Culture" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ Culture { System::Globalization::CultureInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1052,15 +1251,23 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1086,8 +1293,8 @@
       <MemberSignature Language="ILAsm" Value=".property char DefaultPasswordChar" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MaskedTextProvider.DefaultPasswordChar" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultPasswordChar As Char" />
+      <MemberSignature Language="F#" Value="static member DefaultPasswordChar : char" Usage="System.ComponentModel.MaskedTextProvider.DefaultPasswordChar" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property char DefaultPasswordChar { char get(); };" />
-      <MemberSignature Language="F#" Value="member this.DefaultPasswordChar : char" Usage="System.ComponentModel.MaskedTextProvider.DefaultPasswordChar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1098,11 +1305,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Char</ReturnType>
@@ -1128,8 +1342,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 EditPositionCount" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MaskedTextProvider.EditPositionCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EditPositionCount As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EditPositionCount { int get(); };" />
       <MemberSignature Language="F#" Value="member this.EditPositionCount : int" Usage="System.ComponentModel.MaskedTextProvider.EditPositionCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EditPositionCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1140,11 +1354,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1176,8 +1397,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerator EditPositions" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MaskedTextProvider.EditPositions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EditPositions As IEnumerator" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IEnumerator ^ EditPositions { System::Collections::IEnumerator ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.EditPositions : System.Collections.IEnumerator" Usage="System.ComponentModel.MaskedTextProvider.EditPositions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IEnumerator ^ EditPositions { System::Collections::IEnumerator ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1188,11 +1409,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
@@ -1223,8 +1451,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 FindAssignedEditPositionFrom(int32 position, bool direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.FindAssignedEditPositionFrom(System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAssignedEditPositionFrom (position As Integer, direction As Boolean) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindAssignedEditPositionFrom(int position, bool direction);" />
       <MemberSignature Language="F#" Value="member this.FindAssignedEditPositionFrom : int * bool -&gt; int" Usage="maskedTextProvider.FindAssignedEditPositionFrom (position, direction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindAssignedEditPositionFrom(int position, bool direction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1235,11 +1463,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1280,8 +1515,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 FindAssignedEditPositionInRange(int32 startPosition, int32 endPosition, bool direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.FindAssignedEditPositionInRange(System.Int32,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindAssignedEditPositionInRange (startPosition As Integer, endPosition As Integer, direction As Boolean) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindAssignedEditPositionInRange(int startPosition, int endPosition, bool direction);" />
       <MemberSignature Language="F#" Value="member this.FindAssignedEditPositionInRange : int * int * bool -&gt; int" Usage="maskedTextProvider.FindAssignedEditPositionInRange (startPosition, endPosition, direction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindAssignedEditPositionInRange(int startPosition, int endPosition, bool direction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1292,11 +1527,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1339,8 +1581,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 FindEditPositionFrom(int32 position, bool direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.FindEditPositionFrom(System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindEditPositionFrom (position As Integer, direction As Boolean) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindEditPositionFrom(int position, bool direction);" />
       <MemberSignature Language="F#" Value="member this.FindEditPositionFrom : int * bool -&gt; int" Usage="maskedTextProvider.FindEditPositionFrom (position, direction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindEditPositionFrom(int position, bool direction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1351,11 +1593,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1394,8 +1643,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 FindEditPositionInRange(int32 startPosition, int32 endPosition, bool direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.FindEditPositionInRange(System.Int32,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindEditPositionInRange (startPosition As Integer, endPosition As Integer, direction As Boolean) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindEditPositionInRange(int startPosition, int endPosition, bool direction);" />
       <MemberSignature Language="F#" Value="member this.FindEditPositionInRange : int * int * bool -&gt; int" Usage="maskedTextProvider.FindEditPositionInRange (startPosition, endPosition, direction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindEditPositionInRange(int startPosition, int endPosition, bool direction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1406,11 +1655,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1451,8 +1707,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 FindNonEditPositionFrom(int32 position, bool direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.FindNonEditPositionFrom(System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindNonEditPositionFrom (position As Integer, direction As Boolean) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindNonEditPositionFrom(int position, bool direction);" />
       <MemberSignature Language="F#" Value="member this.FindNonEditPositionFrom : int * bool -&gt; int" Usage="maskedTextProvider.FindNonEditPositionFrom (position, direction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindNonEditPositionFrom(int position, bool direction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1463,11 +1719,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1506,8 +1769,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 FindNonEditPositionInRange(int32 startPosition, int32 endPosition, bool direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.FindNonEditPositionInRange(System.Int32,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindNonEditPositionInRange (startPosition As Integer, endPosition As Integer, direction As Boolean) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindNonEditPositionInRange(int startPosition, int endPosition, bool direction);" />
       <MemberSignature Language="F#" Value="member this.FindNonEditPositionInRange : int * int * bool -&gt; int" Usage="maskedTextProvider.FindNonEditPositionInRange (startPosition, endPosition, direction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindNonEditPositionInRange(int startPosition, int endPosition, bool direction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1518,11 +1781,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1563,8 +1833,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 FindUnassignedEditPositionFrom(int32 position, bool direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.FindUnassignedEditPositionFrom(System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindUnassignedEditPositionFrom (position As Integer, direction As Boolean) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindUnassignedEditPositionFrom(int position, bool direction);" />
       <MemberSignature Language="F#" Value="member this.FindUnassignedEditPositionFrom : int * bool -&gt; int" Usage="maskedTextProvider.FindUnassignedEditPositionFrom (position, direction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindUnassignedEditPositionFrom(int position, bool direction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1575,11 +1845,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1620,8 +1897,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 FindUnassignedEditPositionInRange(int32 startPosition, int32 endPosition, bool direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.FindUnassignedEditPositionInRange(System.Int32,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function FindUnassignedEditPositionInRange (startPosition As Integer, endPosition As Integer, direction As Boolean) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindUnassignedEditPositionInRange(int startPosition, int endPosition, bool direction);" />
       <MemberSignature Language="F#" Value="member this.FindUnassignedEditPositionInRange : int * int * bool -&gt; int" Usage="maskedTextProvider.FindUnassignedEditPositionInRange (startPosition, endPosition, direction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindUnassignedEditPositionInRange(int startPosition, int endPosition, bool direction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1632,11 +1909,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1679,8 +1963,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetOperationResultFromHint(valuetype System.ComponentModel.MaskedTextResultHint hint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.GetOperationResultFromHint(System.ComponentModel.MaskedTextResultHint)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetOperationResultFromHint (hint As MaskedTextResultHint) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetOperationResultFromHint(System::ComponentModel::MaskedTextResultHint hint);" />
       <MemberSignature Language="F#" Value="static member GetOperationResultFromHint : System.ComponentModel.MaskedTextResultHint -&gt; bool" Usage="System.ComponentModel.MaskedTextProvider.GetOperationResultFromHint hint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetOperationResultFromHint(System::ComponentModel::MaskedTextResultHint hint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1691,11 +1975,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1724,8 +2015,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IncludeLiterals" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MaskedTextProvider.IncludeLiterals" />
       <MemberSignature Language="VB.NET" Value="Public Property IncludeLiterals As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeLiterals { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.IncludeLiterals : bool with get, set" Usage="System.ComponentModel.MaskedTextProvider.IncludeLiterals" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeLiterals { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1736,11 +2027,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1769,8 +2067,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IncludePrompt" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MaskedTextProvider.IncludePrompt" />
       <MemberSignature Language="VB.NET" Value="Public Property IncludePrompt As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludePrompt { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.IncludePrompt : bool with get, set" Usage="System.ComponentModel.MaskedTextProvider.IncludePrompt" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludePrompt { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1781,11 +2079,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1821,8 +2126,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool InsertAt(char input, int32 position) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.InsertAt(System.Char,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function InsertAt (input As Char, position As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool InsertAt(char input, int position);" />
       <MemberSignature Language="F#" Value="member this.InsertAt : char * int -&gt; bool" Usage="maskedTextProvider.InsertAt (input, position)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool InsertAt(char input, int position);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1833,11 +2138,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1887,8 +2199,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool InsertAt(string input, int32 position) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.InsertAt(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function InsertAt (input As String, position As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool InsertAt(System::String ^ input, int position);" />
       <MemberSignature Language="F#" Value="member this.InsertAt : string * int -&gt; bool" Usage="maskedTextProvider.InsertAt (input, position)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool InsertAt(System::String ^ input, int position);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1899,11 +2211,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1954,8 +2273,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool InsertAt(char input, int32 position, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.InsertAt(System.Char,System.Int32,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberSignature Language="VB.NET" Value="Public Function InsertAt (input As Char, position As Integer, ByRef testPosition As Integer, ByRef resultHint As MaskedTextResultHint) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.InsertAt : char * int * int * MaskedTextResultHint -&gt; bool" Usage="maskedTextProvider.InsertAt (input, position, testPosition, resultHint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool InsertAt(char input, int position, [Runtime::InteropServices::Out] int % testPosition, [Runtime::InteropServices::Out] System::ComponentModel::MaskedTextResultHint % resultHint);" />
-      <MemberSignature Language="F#" Value="member this.InsertAt : char * int *  *  -&gt; bool" Usage="maskedTextProvider.InsertAt (input, position, testPosition, resultHint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1966,11 +2285,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2024,8 +2350,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool InsertAt(string input, int32 position, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.InsertAt(System.String,System.Int32,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberSignature Language="VB.NET" Value="Public Function InsertAt (input As String, position As Integer, ByRef testPosition As Integer, ByRef resultHint As MaskedTextResultHint) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.InsertAt : string * int * int * MaskedTextResultHint -&gt; bool" Usage="maskedTextProvider.InsertAt (input, position, testPosition, resultHint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool InsertAt(System::String ^ input, int position, [Runtime::InteropServices::Out] int % testPosition, [Runtime::InteropServices::Out] System::ComponentModel::MaskedTextResultHint % resultHint);" />
-      <MemberSignature Language="F#" Value="member this.InsertAt : string * int *  *  -&gt; bool" Usage="maskedTextProvider.InsertAt (input, position, testPosition, resultHint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2036,11 +2362,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2095,8 +2428,8 @@
       <MemberSignature Language="ILAsm" Value=".property int32 InvalidIndex" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MaskedTextProvider.InvalidIndex" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property InvalidIndex As Integer" />
+      <MemberSignature Language="F#" Value="static member InvalidIndex : int" Usage="System.ComponentModel.MaskedTextProvider.InvalidIndex" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int InvalidIndex { int get(); };" />
-      <MemberSignature Language="F#" Value="member this.InvalidIndex : int" Usage="System.ComponentModel.MaskedTextProvider.InvalidIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2107,11 +2440,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2141,8 +2481,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsAvailablePosition(int32 position) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.IsAvailablePosition(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsAvailablePosition (position As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsAvailablePosition(int position);" />
       <MemberSignature Language="F#" Value="member this.IsAvailablePosition : int -&gt; bool" Usage="maskedTextProvider.IsAvailablePosition position" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsAvailablePosition(int position);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2153,11 +2493,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2195,8 +2542,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsEditPosition(int32 position) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.IsEditPosition(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsEditPosition (position As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsEditPosition(int position);" />
       <MemberSignature Language="F#" Value="member this.IsEditPosition : int -&gt; bool" Usage="maskedTextProvider.IsEditPosition position" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsEditPosition(int position);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2207,11 +2554,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2248,8 +2602,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPassword" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MaskedTextProvider.IsPassword" />
       <MemberSignature Language="VB.NET" Value="Public Property IsPassword As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPassword { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.IsPassword : bool with get, set" Usage="System.ComponentModel.MaskedTextProvider.IsPassword" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPassword { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2260,11 +2614,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2298,8 +2659,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsValidInputChar(char c) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.IsValidInputChar(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsValidInputChar (c As Char) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsValidInputChar(char c);" />
       <MemberSignature Language="F#" Value="static member IsValidInputChar : char -&gt; bool" Usage="System.ComponentModel.MaskedTextProvider.IsValidInputChar c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsValidInputChar(char c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2310,15 +2671,23 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2354,8 +2723,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsValidMaskChar(char c) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.IsValidMaskChar(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsValidMaskChar (c As Char) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsValidMaskChar(char c);" />
       <MemberSignature Language="F#" Value="static member IsValidMaskChar : char -&gt; bool" Usage="System.ComponentModel.MaskedTextProvider.IsValidMaskChar c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsValidMaskChar(char c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2366,15 +2735,23 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2406,8 +2783,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsValidPasswordChar(char c) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.IsValidPasswordChar(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsValidPasswordChar (c As Char) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsValidPasswordChar(char c);" />
       <MemberSignature Language="F#" Value="static member IsValidPasswordChar : char -&gt; bool" Usage="System.ComponentModel.MaskedTextProvider.IsValidPasswordChar c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsValidPasswordChar(char c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2418,11 +2795,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2454,8 +2838,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance char Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MaskedTextProvider.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As Char" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property char default[int] { char get(int index); };" />
       <MemberSignature Language="F#" Value="member this.Item(int) : char" Usage="System.ComponentModel.MaskedTextProvider.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property char default[int] { char get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2466,11 +2850,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Char</ReturnType>
@@ -2502,8 +2893,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 LastAssignedPosition" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MaskedTextProvider.LastAssignedPosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastAssignedPosition As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LastAssignedPosition { int get(); };" />
       <MemberSignature Language="F#" Value="member this.LastAssignedPosition : int" Usage="System.ComponentModel.MaskedTextProvider.LastAssignedPosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LastAssignedPosition { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2514,11 +2905,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2545,8 +2943,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Length" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MaskedTextProvider.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
       <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.ComponentModel.MaskedTextProvider.Length" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2557,11 +2955,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2589,8 +2994,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Mask" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MaskedTextProvider.Mask" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Mask As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Mask { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Mask : string" Usage="System.ComponentModel.MaskedTextProvider.Mask" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Mask { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2601,15 +3006,23 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2640,8 +3053,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool MaskCompleted" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MaskedTextProvider.MaskCompleted" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaskCompleted As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MaskCompleted { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.MaskCompleted : bool" Usage="System.ComponentModel.MaskedTextProvider.MaskCompleted" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MaskCompleted { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2652,11 +3065,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2687,8 +3107,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool MaskFull" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MaskedTextProvider.MaskFull" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaskFull As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MaskFull { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.MaskFull : bool" Usage="System.ComponentModel.MaskedTextProvider.MaskFull" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MaskFull { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2699,11 +3119,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2732,8 +3159,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance char PasswordChar" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MaskedTextProvider.PasswordChar" />
       <MemberSignature Language="VB.NET" Value="Public Property PasswordChar As Char" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property char PasswordChar { char get(); void set(char value); };" />
       <MemberSignature Language="F#" Value="member this.PasswordChar : char with get, set" Usage="System.ComponentModel.MaskedTextProvider.PasswordChar" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property char PasswordChar { char get(); void set(char value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2744,15 +3171,23 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2784,8 +3219,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance char PromptChar" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MaskedTextProvider.PromptChar" />
       <MemberSignature Language="VB.NET" Value="Public Property PromptChar As Char" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property char PromptChar { char get(); void set(char value); };" />
       <MemberSignature Language="F#" Value="member this.PromptChar : char with get, set" Usage="System.ComponentModel.MaskedTextProvider.PromptChar" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property char PromptChar { char get(); void set(char value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2796,15 +3231,23 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2847,8 +3290,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Remove() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Remove" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove () As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Remove();" />
       <MemberSignature Language="F#" Value="member this.Remove : unit -&gt; bool" Usage="maskedTextProvider.Remove " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Remove();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2859,11 +3302,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2897,8 +3347,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Remove([out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Remove(System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (ByRef testPosition As Integer, ByRef resultHint As MaskedTextResultHint) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Remove : int * MaskedTextResultHint -&gt; bool" Usage="maskedTextProvider.Remove (testPosition, resultHint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Remove([Runtime::InteropServices::Out] int % testPosition, [Runtime::InteropServices::Out] System::ComponentModel::MaskedTextResultHint % resultHint);" />
-      <MemberSignature Language="F#" Value="member this.Remove :  *  -&gt; bool" Usage="maskedTextProvider.Remove (testPosition, resultHint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2909,11 +3359,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2962,8 +3419,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveAt(int32 position) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveAt (position As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAt(int position);" />
       <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; bool" Usage="maskedTextProvider.RemoveAt position" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAt(int position);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2974,15 +3431,23 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3023,8 +3488,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveAt(int32 startPosition, int32 endPosition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.RemoveAt(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveAt (startPosition As Integer, endPosition As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAt(int startPosition, int endPosition);" />
       <MemberSignature Language="F#" Value="member this.RemoveAt : int * int -&gt; bool" Usage="maskedTextProvider.RemoveAt (startPosition, endPosition)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAt(int startPosition, int endPosition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3035,11 +3500,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -3077,8 +3549,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveAt(int32 startPosition, int32 endPosition, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.RemoveAt(System.Int32,System.Int32,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveAt (startPosition As Integer, endPosition As Integer, ByRef testPosition As Integer, ByRef resultHint As MaskedTextResultHint) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int * int * int * MaskedTextResultHint -&gt; bool" Usage="maskedTextProvider.RemoveAt (startPosition, endPosition, testPosition, resultHint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAt(int startPosition, int endPosition, [Runtime::InteropServices::Out] int % testPosition, [Runtime::InteropServices::Out] System::ComponentModel::MaskedTextResultHint % resultHint);" />
-      <MemberSignature Language="F#" Value="member this.RemoveAt : int * int *  *  -&gt; bool" Usage="maskedTextProvider.RemoveAt (startPosition, endPosition, testPosition, resultHint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3089,11 +3561,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -3147,8 +3626,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Replace(char input, int32 position) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Replace(System.Char,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Replace (input As Char, position As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Replace(char input, int position);" />
       <MemberSignature Language="F#" Value="member this.Replace : char * int -&gt; bool" Usage="maskedTextProvider.Replace (input, position)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Replace(char input, int position);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3159,11 +3638,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -3207,8 +3693,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Replace(string input, int32 position) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Replace(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Replace (input As String, position As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Replace(System::String ^ input, int position);" />
       <MemberSignature Language="F#" Value="member this.Replace : string * int -&gt; bool" Usage="maskedTextProvider.Replace (input, position)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Replace(System::String ^ input, int position);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3219,11 +3705,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -3269,8 +3762,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Replace(char input, int32 position, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Replace(System.Char,System.Int32,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Replace (input As Char, position As Integer, ByRef testPosition As Integer, ByRef resultHint As MaskedTextResultHint) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Replace : char * int * int * MaskedTextResultHint -&gt; bool" Usage="maskedTextProvider.Replace (input, position, testPosition, resultHint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Replace(char input, int position, [Runtime::InteropServices::Out] int % testPosition, [Runtime::InteropServices::Out] System::ComponentModel::MaskedTextResultHint % resultHint);" />
-      <MemberSignature Language="F#" Value="member this.Replace : char * int *  *  -&gt; bool" Usage="maskedTextProvider.Replace (input, position, testPosition, resultHint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3281,11 +3774,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -3334,8 +3834,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Replace(string input, int32 position, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Replace(System.String,System.Int32,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Replace (input As String, position As Integer, ByRef testPosition As Integer, ByRef resultHint As MaskedTextResultHint) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Replace : string * int * int * MaskedTextResultHint -&gt; bool" Usage="maskedTextProvider.Replace (input, position, testPosition, resultHint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Replace(System::String ^ input, int position, [Runtime::InteropServices::Out] int % testPosition, [Runtime::InteropServices::Out] System::ComponentModel::MaskedTextResultHint % resultHint);" />
-      <MemberSignature Language="F#" Value="member this.Replace : string * int *  *  -&gt; bool" Usage="maskedTextProvider.Replace (input, position, testPosition, resultHint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3346,11 +3846,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -3401,8 +3908,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Replace(char input, int32 startPosition, int32 endPosition, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Replace(System.Char,System.Int32,System.Int32,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Replace (input As Char, startPosition As Integer, endPosition As Integer, ByRef testPosition As Integer, ByRef resultHint As MaskedTextResultHint) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Replace : char * int * int * int * MaskedTextResultHint -&gt; bool" Usage="maskedTextProvider.Replace (input, startPosition, endPosition, testPosition, resultHint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Replace(char input, int startPosition, int endPosition, [Runtime::InteropServices::Out] int % testPosition, [Runtime::InteropServices::Out] System::ComponentModel::MaskedTextResultHint % resultHint);" />
-      <MemberSignature Language="F#" Value="member this.Replace : char * int * int *  *  -&gt; bool" Usage="maskedTextProvider.Replace (input, startPosition, endPosition, testPosition, resultHint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3413,11 +3920,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -3468,8 +3982,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Replace(string input, int32 startPosition, int32 endPosition, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Replace(System.String,System.Int32,System.Int32,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Replace (input As String, startPosition As Integer, endPosition As Integer, ByRef testPosition As Integer, ByRef resultHint As MaskedTextResultHint) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Replace : string * int * int * int * MaskedTextResultHint -&gt; bool" Usage="maskedTextProvider.Replace (input, startPosition, endPosition, testPosition, resultHint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Replace(System::String ^ input, int startPosition, int endPosition, [Runtime::InteropServices::Out] int % testPosition, [Runtime::InteropServices::Out] System::ComponentModel::MaskedTextResultHint % resultHint);" />
-      <MemberSignature Language="F#" Value="member this.Replace : string * int * int *  *  -&gt; bool" Usage="maskedTextProvider.Replace (input, startPosition, endPosition, testPosition, resultHint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3480,11 +3994,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -3537,8 +4058,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool ResetOnPrompt" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MaskedTextProvider.ResetOnPrompt" />
       <MemberSignature Language="VB.NET" Value="Public Property ResetOnPrompt As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ResetOnPrompt { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.ResetOnPrompt : bool with get, set" Usage="System.ComponentModel.MaskedTextProvider.ResetOnPrompt" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ResetOnPrompt { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3549,11 +4070,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -3594,8 +4122,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool ResetOnSpace" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MaskedTextProvider.ResetOnSpace" />
       <MemberSignature Language="VB.NET" Value="Public Property ResetOnSpace As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ResetOnSpace { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.ResetOnSpace : bool with get, set" Usage="System.ComponentModel.MaskedTextProvider.ResetOnSpace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ResetOnSpace { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3606,11 +4134,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -3650,8 +4185,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Set(string input) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Set(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Set (input As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Set(System::String ^ input);" />
       <MemberSignature Language="F#" Value="member this.Set : string -&gt; bool" Usage="maskedTextProvider.Set input" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Set(System::String ^ input);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3662,11 +4197,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -3708,8 +4250,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Set(string input, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.Set(System.String,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Set (input As String, ByRef testPosition As Integer, ByRef resultHint As MaskedTextResultHint) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Set : string * int * MaskedTextResultHint -&gt; bool" Usage="maskedTextProvider.Set (input, testPosition, resultHint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Set(System::String ^ input, [Runtime::InteropServices::Out] int % testPosition, [Runtime::InteropServices::Out] System::ComponentModel::MaskedTextResultHint % resultHint);" />
-      <MemberSignature Language="F#" Value="member this.Set : string *  *  -&gt; bool" Usage="maskedTextProvider.Set (input, testPosition, resultHint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3720,11 +4262,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -3772,8 +4321,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool SkipLiterals" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MaskedTextProvider.SkipLiterals" />
       <MemberSignature Language="VB.NET" Value="Public Property SkipLiterals As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SkipLiterals { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.SkipLiterals : bool with get, set" Usage="System.ComponentModel.MaskedTextProvider.SkipLiterals" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SkipLiterals { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3784,11 +4333,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -3821,8 +4377,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToDisplayString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.ToDisplayString" />
       <MemberSignature Language="VB.NET" Value="Public Function ToDisplayString () As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToDisplayString();" />
       <MemberSignature Language="F#" Value="member this.ToDisplayString : unit -&gt; string" Usage="maskedTextProvider.ToDisplayString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToDisplayString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3833,11 +4389,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -3878,8 +4441,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="maskedTextProvider.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3890,11 +4453,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -3926,8 +4496,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(bool ignorePasswordChar) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.ToString(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (ignorePasswordChar As Boolean) As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(bool ignorePasswordChar);" />
       <MemberSignature Language="F#" Value="override this.ToString : bool -&gt; string" Usage="maskedTextProvider.ToString ignorePasswordChar" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(bool ignorePasswordChar);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3938,11 +4508,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -3978,8 +4555,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(bool includePrompt, bool includeLiterals) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.ToString(System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (includePrompt As Boolean, includeLiterals As Boolean) As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(bool includePrompt, bool includeLiterals);" />
       <MemberSignature Language="F#" Value="override this.ToString : bool * bool -&gt; string" Usage="maskedTextProvider.ToString (includePrompt, includeLiterals)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(bool includePrompt, bool includeLiterals);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3990,11 +4567,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -4034,8 +4618,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(int32 startPosition, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.ToString(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (startPosition As Integer, length As Integer) As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(int startPosition, int length);" />
       <MemberSignature Language="F#" Value="override this.ToString : int * int -&gt; string" Usage="maskedTextProvider.ToString (startPosition, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(int startPosition, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4046,11 +4630,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -4097,8 +4688,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(bool ignorePasswordChar, int32 startPosition, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.ToString(System.Boolean,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (ignorePasswordChar As Boolean, startPosition As Integer, length As Integer) As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(bool ignorePasswordChar, int startPosition, int length);" />
       <MemberSignature Language="F#" Value="override this.ToString : bool * int * int -&gt; string" Usage="maskedTextProvider.ToString (ignorePasswordChar, startPosition, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(bool ignorePasswordChar, int startPosition, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4109,11 +4700,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -4163,8 +4761,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(bool includePrompt, bool includeLiterals, int32 startPosition, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.ToString(System.Boolean,System.Boolean,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (includePrompt As Boolean, includeLiterals As Boolean, startPosition As Integer, length As Integer) As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(bool includePrompt, bool includeLiterals, int startPosition, int length);" />
       <MemberSignature Language="F#" Value="override this.ToString : bool * bool * int * int -&gt; string" Usage="maskedTextProvider.ToString (includePrompt, includeLiterals, startPosition, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(bool includePrompt, bool includeLiterals, int startPosition, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4175,15 +4773,23 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4237,8 +4843,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(bool ignorePasswordChar, bool includePrompt, bool includeLiterals, int32 startPosition, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.ToString(System.Boolean,System.Boolean,System.Boolean,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (ignorePasswordChar As Boolean, includePrompt As Boolean, includeLiterals As Boolean, startPosition As Integer, length As Integer) As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(bool ignorePasswordChar, bool includePrompt, bool includeLiterals, int startPosition, int length);" />
       <MemberSignature Language="F#" Value="override this.ToString : bool * bool * bool * int * int -&gt; string" Usage="maskedTextProvider.ToString (ignorePasswordChar, includePrompt, includeLiterals, startPosition, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(bool ignorePasswordChar, bool includePrompt, bool includeLiterals, int startPosition, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4249,11 +4855,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -4309,8 +4922,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool VerifyChar(char input, int32 position, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; hint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.VerifyChar(System.Char,System.Int32,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberSignature Language="VB.NET" Value="Public Function VerifyChar (input As Char, position As Integer, ByRef hint As MaskedTextResultHint) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.VerifyChar : char * int * MaskedTextResultHint -&gt; bool" Usage="maskedTextProvider.VerifyChar (input, position, hint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool VerifyChar(char input, int position, [Runtime::InteropServices::Out] System::ComponentModel::MaskedTextResultHint % hint);" />
-      <MemberSignature Language="F#" Value="member this.VerifyChar : char * int *  -&gt; bool" Usage="maskedTextProvider.VerifyChar (input, position, hint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4321,11 +4934,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -4372,8 +4992,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool VerifyEscapeChar(char input, int32 position) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.VerifyEscapeChar(System.Char,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function VerifyEscapeChar (input As Char, position As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool VerifyEscapeChar(char input, int position);" />
       <MemberSignature Language="F#" Value="member this.VerifyEscapeChar : char * int -&gt; bool" Usage="maskedTextProvider.VerifyEscapeChar (input, position)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool VerifyEscapeChar(char input, int position);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4384,11 +5004,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -4442,8 +5069,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool VerifyString(string input) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.VerifyString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function VerifyString (input As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool VerifyString(System::String ^ input);" />
       <MemberSignature Language="F#" Value="member this.VerifyString : string -&gt; bool" Usage="maskedTextProvider.VerifyString input" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool VerifyString(System::String ^ input);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4454,11 +5081,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -4490,8 +5124,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool VerifyString(string input, [out] int32&amp; testPosition, [out] valuetype System.ComponentModel.MaskedTextResultHint&amp; resultHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MaskedTextProvider.VerifyString(System.String,System.Int32@,System.ComponentModel.MaskedTextResultHint@)" />
       <MemberSignature Language="VB.NET" Value="Public Function VerifyString (input As String, ByRef testPosition As Integer, ByRef resultHint As MaskedTextResultHint) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.VerifyString : string * int * MaskedTextResultHint -&gt; bool" Usage="maskedTextProvider.VerifyString (input, testPosition, resultHint)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool VerifyString(System::String ^ input, [Runtime::InteropServices::Out] int % testPosition, [Runtime::InteropServices::Out] System::ComponentModel::MaskedTextResultHint % resultHint);" />
-      <MemberSignature Language="F#" Value="member this.VerifyString : string *  *  -&gt; bool" Usage="maskedTextProvider.VerifyString (input, testPosition, resultHint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4502,11 +5136,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

@@ -1,10 +1,10 @@
-﻿<Type Name="SqlMembershipProvider" FullName="System.Web.Security.SqlMembershipProvider">
+<Type Name="SqlMembershipProvider" FullName="System.Web.Security.SqlMembershipProvider">
   <TypeSignature Language="C#" Value="public class SqlMembershipProvider : System.Web.Security.MembershipProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlMembershipProvider extends System.Web.Security.MembershipProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.SqlMembershipProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlMembershipProvider&#xA;Inherits MembershipProvider" />
-  <TypeSignature Language="C++ CLI" Value="public ref class SqlMembershipProvider : System::Web::Security::MembershipProvider" />
   <TypeSignature Language="F#" Value="type SqlMembershipProvider = class&#xA;    inherit MembershipProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlMembershipProvider : System::Web::Security::MembershipProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -19,8 +19,12 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- This class is used by the <xref:System.Web.Security.Membership> and <xref:System.Web.Security.MembershipUser> classes to provide membership services for an ASP.NET application using a SQL Server database. You cannot use a <xref:System.Web.Security.SqlMembershipProvider> without SQL Server. When your computer has SQL Server Express installed with the default instance name and user-instancing enabled, the <xref:System.Web.Security.SqlMembershipProvider> object will create a database called `aspnetdb` in the application's `App_Data` directory the first time the application is run.  
+## Remarks
+
+> [!NOTE]
+> ASP.NET membership providers have been superseded by [ASP.NET Identity](/aspnet/identity/overview/getting-started/introduction-to-aspnet-identity). We strongly recommend updating apps to use the ASP.NET Identity platform instead of the membership providers.
+
+This class is used by the <xref:System.Web.Security.Membership> and <xref:System.Web.Security.MembershipUser> classes to provide membership services for an ASP.NET application using a SQL Server database. You cannot use a <xref:System.Web.Security.SqlMembershipProvider> without SQL Server. When your computer has SQL Server Express installed with the default instance name and user-instancing enabled, the <xref:System.Web.Security.SqlMembershipProvider> object will create a database called `aspnetdb` in the application's `App_Data` directory the first time the application is run.  
   
  To manually create the database, run the `Aspnet_regsql.exe` executable found in the `%systemroot%\Microsoft.NET\Framework\ versionNumber` folder and specify the `-A m` option (for example `aspnet_regsql.exe -A m`). The database created is called Aspnetdb. Alternatively, run `Aspnet_regsql.exe` to pull up the GUI configuration mode and choose to configure all ASP.NET Features.  
   
@@ -28,9 +32,7 @@
   
  The Machine.config file defines a default <xref:System.Web.Security.SqlMembershipProvider> instance named `AspNetSqlMembershipProvider` that connects to the default SQL Server Express instance on the local machine. You can use this instance of the provider if you installed SQL Server Express with the default instance name, or you can define your own instance in the Web.config file for your ASP.NET application.  
   
- If you set the `passwordCompatMode` attribute to <xref:System.Web.Configuration.MembershipPasswordCompatibilityMode.Framework40>, the application can use the hashing and encryption membership options that were added in ASP.NET 4. However, if the `passwordCompatMode` attribute is set to <xref:System.Web.Configuration.MembershipPasswordCompatibilityMode.Framework20>, only the hashing and encryption membership options from the ASP.NET 2.0, ASP.NET 3.5, and ASP.NET 3.5 SP1 can be used. The default value is <xref:System.Web.Configuration.MembershipPasswordCompatibilityMode.Framework20>. For more information, see <xref:System.Web.Configuration.MembershipPasswordCompatibilityMode>.  
-  
-   
+ If you set the `passwordCompatMode` attribute to <xref:System.Web.Configuration.MembershipPasswordCompatibilityMode.Framework40>, the application can use the hashing and encryption membership options that were added in ASP.NET 4. However, if the `passwordCompatMode` attribute is set to <xref:System.Web.Configuration.MembershipPasswordCompatibilityMode.Framework20>, only the hashing and encryption membership options from the ASP.NET 2.0, ASP.NET 3.5, and ASP.NET 3.5 SP1 can be used. The default value is <xref:System.Web.Configuration.MembershipPasswordCompatibilityMode.Framework20>. For more information, see <xref:System.Web.Configuration.MembershipPasswordCompatibilityMode>.
   
 ## Examples  
  The following code example shows the Web.config file for an ASP.NET application configured to use a <xref:System.Web.Security.SqlMembershipProvider>.  
@@ -71,7 +73,7 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+    <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -88,7 +90,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -102,7 +105,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="ApplicationName">
@@ -110,8 +113,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ApplicationName" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.SqlMembershipProvider.ApplicationName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ApplicationName As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ApplicationName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.ApplicationName : string with get, set" Usage="System.Web.Security.SqlMembershipProvider.ApplicationName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ApplicationName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -120,7 +123,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -143,7 +147,7 @@
    
   
 ## Examples  
- The following code example shows the [membership](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1b9hw62f(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies the application's <xref:System.Web.Security.SqlMembershipProvider> instance and sets the <xref:System.Web.Security.SqlMembershipProvider.ApplicationName%2A> to `MyApplication`.  
+ The following code example shows the [membership](https://learn.microsoft.com/previous-versions/dotnet/netframework-4.0/1b9hw62f(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies the application's <xref:System.Web.Security.SqlMembershipProvider> instance and sets the <xref:System.Web.Security.SqlMembershipProvider.ApplicationName%2A> to `MyApplication`.  
   
 ```  
 <membership defaultProvider="SqlProvider" userIsOnlineTimeWindow="20">  
@@ -164,7 +168,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">An attempt was made to set the <see cref="P:System.Web.Security.SqlMembershipProvider.ApplicationName" /> property to an empty string or <see langword="null" />.</exception>
         <exception cref="T:System.Configuration.Provider.ProviderException">An attempt was made to set the <see cref="P:System.Web.Security.SqlMembershipProvider.ApplicationName" /> property to a string that is longer than 256 characters.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="ChangePassword">
@@ -172,8 +176,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ChangePassword(string username, string oldPassword, string newPassword) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.SqlMembershipProvider.ChangePassword(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ChangePassword (username As String, oldPassword As String, newPassword As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ChangePassword(System::String ^ username, System::String ^ oldPassword, System::String ^ newPassword);" />
       <MemberSignature Language="F#" Value="override this.ChangePassword : string * string * string -&gt; bool" Usage="sqlMembershipProvider.ChangePassword (username, oldPassword, newPassword)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ChangePassword(System::String ^ username, System::String ^ oldPassword, System::String ^ newPassword);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -219,8 +223,8 @@
 > [!NOTE]
 >  This example uses the <xref:System.Web.Security.Membership.Provider%2A> property of the <xref:System.Web.Security.Membership> class to call the <xref:System.Web.Security.SqlMembershipProvider> specified as the `defaultProvider` in the Web.config file. If you need to access the default provider as the type <xref:System.Web.Security.SqlMembershipProvider>, you can cast the <xref:System.Web.Security.Membership.Provider%2A> property of the <xref:System.Web.Security.Membership> class. To access other configured providers as a specific provider type, you can access them by their configured name with the <xref:System.Web.Security.Membership.Providers%2A> property of the <xref:System.Web.Security.Membership> class and cast them as the specific provider type.  
   
- [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/ChangePasswordcs.aspx#3)]
- [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/ChangePasswordvb.aspx#3)]  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#3](~/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/ChangePasswordcs.aspx#3)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#3](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/ChangePasswordvb.aspx#3)]  
   
  ]]></format>
         </remarks>
@@ -268,7 +272,7 @@
           <paramref name="username" /> was not found in the database.</exception>
         <exception cref="T:System.Configuration.Provider.ProviderException">An error occurred while setting the new password value at the database.</exception>
         <exception cref="T:System.Exception">An unhandled exception occurred.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="ChangePasswordQuestionAndAnswer">
@@ -276,8 +280,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ChangePasswordQuestionAndAnswer(string username, string password, string newPasswordQuestion, string newPasswordAnswer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.SqlMembershipProvider.ChangePasswordQuestionAndAnswer(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ChangePasswordQuestionAndAnswer (username As String, password As String, newPasswordQuestion As String, newPasswordAnswer As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ChangePasswordQuestionAndAnswer(System::String ^ username, System::String ^ password, System::String ^ newPasswordQuestion, System::String ^ newPasswordAnswer);" />
       <MemberSignature Language="F#" Value="override this.ChangePasswordQuestionAndAnswer : string * string * string * string -&gt; bool" Usage="sqlMembershipProvider.ChangePasswordQuestionAndAnswer (username, password, newPasswordQuestion, newPasswordAnswer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ChangePasswordQuestionAndAnswer(System::String ^ username, System::String ^ password, System::String ^ newPasswordQuestion, System::String ^ newPasswordAnswer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -325,8 +329,8 @@
 > [!NOTE]
 >  This example uses the <xref:System.Web.Security.Membership.Provider%2A> property of the <xref:System.Web.Security.Membership> class to call the <xref:System.Web.Security.SqlMembershipProvider> specified as the `defaultProvider` in the Web.config file. If you need to access the default provider as the type <xref:System.Web.Security.SqlMembershipProvider>, you can cast the <xref:System.Web.Security.Membership.Provider%2A> property of the <xref:System.Web.Security.Membership> class. To access other configured providers as a specific provider type, you can access them by their configured name with the <xref:System.Web.Security.Membership.Providers%2A> property of the <xref:System.Web.Security.Membership> class and cast them as the specific provider type.  
   
- [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#10](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/ChangePasswordQuestioncs.aspx#10)]
- [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/ChangePasswordQuestionvb.aspx#10)]  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#10](~/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/ChangePasswordQuestioncs.aspx#10)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#10](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/ChangePasswordQuestionvb.aspx#10)]  
   
  ]]></format>
         </remarks>
@@ -363,7 +367,7 @@
   
  <paramref name="newPasswordAnswer" /> is <see langword="null" /> and <see cref="P:System.Web.Security.SqlMembershipProvider.RequiresQuestionAndAnswer" /> is <see langword="true" />.</exception>
         <exception cref="T:System.Configuration.Provider.ProviderException">An error occurred when changing the password question and answer in the database.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="CreateUser">
@@ -371,8 +375,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Security.MembershipUser CreateUser(string username, string password, string email, string passwordQuestion, string passwordAnswer, bool isApproved, object providerUserKey, [out] valuetype System.Web.Security.MembershipCreateStatus&amp; status) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.SqlMembershipProvider.CreateUser(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Object,System.Web.Security.MembershipCreateStatus@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateUser (username As String, password As String, email As String, passwordQuestion As String, passwordAnswer As String, isApproved As Boolean, providerUserKey As Object, ByRef status As MembershipCreateStatus) As MembershipUser" />
+      <MemberSignature Language="F#" Value="override this.CreateUser : string * string * string * string * string * bool * obj * MembershipCreateStatus -&gt; System.Web.Security.MembershipUser" Usage="sqlMembershipProvider.CreateUser (username, password, email, passwordQuestion, passwordAnswer, isApproved, providerUserKey, status)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Security::MembershipUser ^ CreateUser(System::String ^ username, System::String ^ password, System::String ^ email, System::String ^ passwordQuestion, System::String ^ passwordAnswer, bool isApproved, System::Object ^ providerUserKey, [Runtime::InteropServices::Out] System::Web::Security::MembershipCreateStatus % status);" />
-      <MemberSignature Language="F#" Value="override this.CreateUser : string * string * string * string * string * bool * obj *  -&gt; System.Web.Security.MembershipUser" Usage="sqlMembershipProvider.CreateUser (username, password, email, passwordQuestion, passwordAnswer, isApproved, providerUserKey, status)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -455,12 +459,12 @@
 > [!NOTE]
 >  This sample calls the <xref:System.Web.Security.SqlMembershipProvider> specified as the `defaultProvider` in the Web.config file using the <xref:System.Web.Security.Membership> class. If you need to access the default provider as the type <xref:System.Web.Security.SqlMembershipProvider>, you can cast the <xref:System.Web.Security.Membership.Provider%2A> property of the <xref:System.Web.Security.Membership> class. To access other configured providers as a specific provider type, you can access them by their configured name with the <xref:System.Web.Security.Membership.Providers%2A> property of the <xref:System.Web.Security.Membership> class and cast them as the specific provider type.  
   
- [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/CreateUsercs.aspx#2)]
- [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/CreateUservb.aspx#2)]  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#2](~/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/CreateUsercs.aspx#2)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#2](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/CreateUservb.aspx#2)]  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteUser">
@@ -468,8 +472,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool DeleteUser(string username, bool deleteAllRelatedData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.SqlMembershipProvider.DeleteUser(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function DeleteUser (username As String, deleteAllRelatedData As Boolean) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool DeleteUser(System::String ^ username, bool deleteAllRelatedData);" />
       <MemberSignature Language="F#" Value="override this.DeleteUser : string * bool -&gt; bool" Usage="sqlMembershipProvider.DeleteUser (username, deleteAllRelatedData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool DeleteUser(System::String ^ username, bool deleteAllRelatedData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -512,8 +516,8 @@
 > [!NOTE]
 >  This example uses <xref:System.Web.Security.SqlMembershipProvider> to call the <xref:System.Web.Security.SqlMembershipProvider> specified as the `defaultProvider` in the Web.config file. If you need to access the default provider as the type <xref:System.Web.Security.SqlMembershipProvider>, you can cast the <xref:System.Web.Security.Membership.Provider%2A> property of the <xref:System.Web.Security.Membership> class. To access other configured providers as a specific provider type, you can access them by their configured name with the <xref:System.Web.Security.Membership.Providers%2A> property of the <xref:System.Web.Security.Membership> class and cast them as the specific provider type.  
   
- [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/DeleteUsercs.aspx#6)]
- [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/DeleteUservb.aspx#6)]  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#6](~/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/DeleteUsercs.aspx#6)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#6](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/DeleteUservb.aspx#6)]  
   
  ]]></format>
         </remarks>
@@ -521,7 +525,7 @@
           <paramref name="username" /> is an empty string (""), contains a comma, or is longer than 256 characters.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="username" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="EnablePasswordReset">
@@ -529,8 +533,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool EnablePasswordReset" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.SqlMembershipProvider.EnablePasswordReset" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property EnablePasswordReset As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnablePasswordReset { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.EnablePasswordReset : bool" Usage="System.Web.Security.SqlMembershipProvider.EnablePasswordReset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnablePasswordReset { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -539,7 +543,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -558,7 +563,7 @@
    
   
 ## Examples  
- The following code example shows the [membership](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1b9hw62f(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies the application's <xref:System.Web.Security.SqlMembershipProvider> instance and enables password reset.  
+ The following code example shows the [membership](https://learn.microsoft.com/previous-versions/dotnet/netframework-4.0/1b9hw62f(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies the application's <xref:System.Web.Security.SqlMembershipProvider> instance and enables password reset.  
   
 ```  
 <membership defaultProvider="SqlProvider" userIsOnlineTimeWindow="20">  
@@ -577,7 +582,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="EnablePasswordRetrieval">
@@ -585,8 +590,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool EnablePasswordRetrieval" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.SqlMembershipProvider.EnablePasswordRetrieval" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property EnablePasswordRetrieval As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnablePasswordRetrieval { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.EnablePasswordRetrieval : bool" Usage="System.Web.Security.SqlMembershipProvider.EnablePasswordRetrieval" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnablePasswordRetrieval { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -595,7 +600,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -609,14 +615,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Web.Security.SqlMembershipProvider.PasswordFormat%2A> property is set to <xref:System.Web.Security.MembershipPasswordFormat.Hashed>, a user will not be able to retrieve his or her existing password from the database. The <xref:System.Web.Security.MembershipPasswordFormat.Hashed> password format provides one-way encoding of password values. Passwords are hashed with a randomly generated salt value and compared to values stored in the database for authentication. Hashed values cannot be unencoded to retrieve the original password value.  
+ If the <xref:System.Web.Security.SqlMembershipProvider.PasswordFormat%2A> property is set to <xref:System.Web.Security.MembershipPasswordFormat.Hashed>, a user will not be able to retrieve their existing password from the database. The <xref:System.Web.Security.MembershipPasswordFormat.Hashed> password format provides one-way encoding of password values. Passwords are hashed with a randomly generated salt value and compared to values stored in the database for authentication. Hashed values cannot be unencoded to retrieve the original password value.  
   
  If the <xref:System.Web.Security.SqlMembershipProvider.PasswordFormat%2A> property is set to <xref:System.Web.Security.MembershipPasswordFormat.Hashed>, and <xref:System.Web.Security.SqlMembershipProvider.EnablePasswordRetrieval%2A> is set to `true`, a <xref:System.Configuration.Provider.ProviderException> is thrown when the provider is initialized.  
   
    
   
 ## Examples  
- The following code example shows the [membership](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1b9hw62f(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies the application's <xref:System.Web.Security.SqlMembershipProvider> instance and enables password retrieval.  
+ The following code example shows the [membership](https://learn.microsoft.com/previous-versions/dotnet/netframework-4.0/1b9hw62f(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies the application's <xref:System.Web.Security.SqlMembershipProvider> instance and enables password retrieval.  
   
 ```  
 <membership defaultProvider="SqlProvider" userIsOnlineTimeWindow="20">  
@@ -635,7 +641,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="FindUsersByEmail">
@@ -643,8 +649,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Security.MembershipUserCollection FindUsersByEmail(string emailToMatch, int32 pageIndex, int32 pageSize, [out] int32&amp; totalRecords) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.SqlMembershipProvider.FindUsersByEmail(System.String,System.Int32,System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function FindUsersByEmail (emailToMatch As String, pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As MembershipUserCollection" />
+      <MemberSignature Language="F#" Value="override this.FindUsersByEmail : string * int * int * int -&gt; System.Web.Security.MembershipUserCollection" Usage="sqlMembershipProvider.FindUsersByEmail (emailToMatch, pageIndex, pageSize, totalRecords)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Security::MembershipUserCollection ^ FindUsersByEmail(System::String ^ emailToMatch, int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
-      <MemberSignature Language="F#" Value="override this.FindUsersByEmail : string * int * int *  -&gt; System.Web.Security.MembershipUserCollection" Usage="sqlMembershipProvider.FindUsersByEmail (emailToMatch, pageIndex, pageSize, totalRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -687,8 +693,8 @@
 > [!NOTE]
 >  This example uses the <xref:System.Web.Security.Membership> class to call the <xref:System.Web.Security.SqlMembershipProvider> specified as the `defaultProvider` in the Web.config file. If you need to access the default provider as the type <xref:System.Web.Security.SqlMembershipProvider>, you can cast the <xref:System.Web.Security.Membership.Provider%2A> property of the <xref:System.Web.Security.Membership> class. To access other configured providers as a specific provider type, you can access them by their configured name with the <xref:System.Web.Security.Membership.Providers%2A> property of the <xref:System.Web.Security.Membership> class and cast them as the specific provider type.  
   
- [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#13](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/FindUsersByEmailcs.aspx#13)]
- [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#13](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/FindUsersByEmailvb.aspx#13)]  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#13](~/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/FindUsersByEmailcs.aspx#13)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#13](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/FindUsersByEmailvb.aspx#13)]  
   
  ]]></format>
         </remarks>
@@ -705,8 +711,8 @@
   
 -or-
   
- <paramref name="pageIndex" /> multiplied by <paramref name="pageSize" /> plus <paramref name="pageSize" /> minus one exceeds <see cref="F:System.Int32.MaxValue" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+ <paramref name="pageIndex" /> multiplied by <paramref name="pageSize" /> plus <paramref name="pageSize" /> minus one exceeds <see cref="F:System.Int32.MaxValue">Int32.MaxValue</see>.</exception>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="FindUsersByName">
@@ -714,8 +720,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Security.MembershipUserCollection FindUsersByName(string usernameToMatch, int32 pageIndex, int32 pageSize, [out] int32&amp; totalRecords) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.SqlMembershipProvider.FindUsersByName(System.String,System.Int32,System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function FindUsersByName (usernameToMatch As String, pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As MembershipUserCollection" />
+      <MemberSignature Language="F#" Value="override this.FindUsersByName : string * int * int * int -&gt; System.Web.Security.MembershipUserCollection" Usage="sqlMembershipProvider.FindUsersByName (usernameToMatch, pageIndex, pageSize, totalRecords)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Security::MembershipUserCollection ^ FindUsersByName(System::String ^ usernameToMatch, int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
-      <MemberSignature Language="F#" Value="override this.FindUsersByName : string * int * int *  -&gt; System.Web.Security.MembershipUserCollection" Usage="sqlMembershipProvider.FindUsersByName (usernameToMatch, pageIndex, pageSize, totalRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -758,8 +764,8 @@
 > [!NOTE]
 >  This example uses System.Web.Security.SqlMembershipProvider to call the <xref:System.Web.Security.SqlMembershipProvider> specified as the `defaultProvider` in the Web.config file. If you need to access the default provider as the type <xref:System.Web.Security.SqlMembershipProvider>, you can cast the <xref:System.Web.Security.Membership.Provider%2A> property of the <xref:System.Web.Security.Membership> class. To access other configured providers as a specific provider type, you can access them by their configured name with the <xref:System.Web.Security.Membership.Providers%2A> property of the <xref:System.Web.Security.Membership> class and cast them as the specific provider type.  
   
- [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#12](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/FindUsersByNamecs.aspx#12)]
- [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#12](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/FindUsersByNamevb.aspx#12)]  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#12](~/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/FindUsersByNamecs.aspx#12)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#12](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/FindUsersByNamevb.aspx#12)]  
   
  ]]></format>
         </remarks>
@@ -776,10 +782,10 @@
   
 -or-
   
- <paramref name="pageIndex" /> multiplied by <paramref name="pageSize" /> plus <paramref name="pageSize" /> minus one exceeds <see cref="F:System.Int32.MaxValue" />.</exception>
+ <paramref name="pageIndex" /> multiplied by <paramref name="pageSize" /> plus <paramref name="pageSize" /> minus one exceeds <see cref="F:System.Int32.MaxValue">Int32.MaxValue</see>.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="usernameToMatch" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="GeneratePassword">
@@ -787,8 +793,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GeneratePassword() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.SqlMembershipProvider.GeneratePassword" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GeneratePassword () As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GeneratePassword();" />
       <MemberSignature Language="F#" Value="abstract member GeneratePassword : unit -&gt; string&#xA;override this.GeneratePassword : unit -&gt; string" Usage="sqlMembershipProvider.GeneratePassword " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GeneratePassword();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -820,12 +826,12 @@
 ## Examples  
  The following code example generates a random 10-character password.  
   
- [!code-csharp[System.Web.Security.SqlMembershipProvider#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/GeneratePasswordcs.aspx#9)]
- [!code-vb[System.Web.Security.SqlMembershipProvider#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/GeneratePasswordvb.aspx#9)]  
+ [!code-csharp[System.Web.Security.SqlMembershipProvider#9](~/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/GeneratePasswordcs.aspx#9)]
+ [!code-vb[System.Web.Security.SqlMembershipProvider#9](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/GeneratePasswordvb.aspx#9)]  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="GetAllUsers">
@@ -833,8 +839,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Security.MembershipUserCollection GetAllUsers(int32 pageIndex, int32 pageSize, [out] int32&amp; totalRecords) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.SqlMembershipProvider.GetAllUsers(System.Int32,System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAllUsers (pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As MembershipUserCollection" />
+      <MemberSignature Language="F#" Value="override this.GetAllUsers : int * int * int -&gt; System.Web.Security.MembershipUserCollection" Usage="sqlMembershipProvider.GetAllUsers (pageIndex, pageSize, totalRecords)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Security::MembershipUserCollection ^ GetAllUsers(int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
-      <MemberSignature Language="F#" Value="override this.GetAllUsers : int * int *  -&gt; System.Web.Security.MembershipUserCollection" Usage="sqlMembershipProvider.GetAllUsers (pageIndex, pageSize, totalRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -871,8 +877,8 @@
 > [!NOTE]
 >  This example uses the <xref:System.Web.Security.Membership> class to call the <xref:System.Web.Security.SqlMembershipProvider> specified as the `defaultProvider` in the Web.config file. If you need to access the default provider as the type <xref:System.Web.Security.SqlMembershipProvider>, you can cast the <xref:System.Web.Security.Membership.Provider%2A> property of the <xref:System.Web.Security.Membership> class. To access other configured providers as a specific provider type, you can access them by their configured name with the <xref:System.Web.Security.Membership.Providers%2A> property of the <xref:System.Web.Security.Membership> class and cast them as the specific provider type.  
   
- [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/ShowUserscs.aspx#5)]
- [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/ShowUsersvb.aspx#5)]  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#5](~/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/ShowUserscs.aspx#5)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#5](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/ShowUsersvb.aspx#5)]  
   
  ]]></format>
         </remarks>
@@ -885,8 +891,8 @@
   
 -or-
   
- <paramref name="pageIndex" /> multiplied by <paramref name="pageSize" /> plus <paramref name="pageSize" /> minus one exceeds <see cref="F:System.Int32.MaxValue" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+ <paramref name="pageIndex" /> multiplied by <paramref name="pageSize" /> plus <paramref name="pageSize" /> minus one exceeds <see cref="F:System.Int32.MaxValue">Int32.MaxValue</see>.</exception>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="GetNumberOfUsersOnline">
@@ -894,8 +900,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetNumberOfUsersOnline() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.SqlMembershipProvider.GetNumberOfUsersOnline" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetNumberOfUsersOnline () As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetNumberOfUsersOnline();" />
       <MemberSignature Language="F#" Value="override this.GetNumberOfUsersOnline : unit -&gt; int" Usage="sqlMembershipProvider.GetNumberOfUsersOnline " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetNumberOfUsersOnline();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -927,12 +933,12 @@
 > [!NOTE]
 >  This example uses the <xref:System.Web.Security.Membership> class to call the <xref:System.Web.Security.SqlMembershipProvider> specified as the `defaultProvider` in the Web.config file. If you need to access the default provider as the type <xref:System.Web.Security.SqlMembershipProvider>, you can cast the <xref:System.Web.Security.Membership.Provider%2A> property of the <xref:System.Web.Security.Membership> class. To access other configured providers as a specific provider type, you can access them by their configured name with the <xref:System.Web.Security.Membership.Providers%2A> property of the <xref:System.Web.Security.Membership> class and cast them as the specific provider type.  
   
- [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/ShowUserscs.aspx#5)]
- [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/ShowUsersvb.aspx#5)]  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#5](~/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/ShowUserscs.aspx#5)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#5](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/ShowUsersvb.aspx#5)]  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="GetPassword">
@@ -940,8 +946,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetPassword(string username, string passwordAnswer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.SqlMembershipProvider.GetPassword(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPassword (username As String, passwordAnswer As String) As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetPassword(System::String ^ username, System::String ^ passwordAnswer);" />
       <MemberSignature Language="F#" Value="override this.GetPassword : string * string -&gt; string" Usage="sqlMembershipProvider.GetPassword (username, passwordAnswer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetPassword(System::String ^ username, System::String ^ passwordAnswer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -985,8 +991,8 @@
 > [!NOTE]
 >  This sample calls the <xref:System.Web.Security.SqlMembershipProvider> specified as the `defaultProvider` in the Web.config file by using the <xref:System.Web.Security.Membership> class. If you need to access the default provider as the type <xref:System.Web.Security.SqlMembershipProvider>, you can cast the <xref:System.Web.Security.Membership.Provider%2A> property of the <xref:System.Web.Security.Membership> class. To access other configured providers as a specific provider type, you can access them by their configured name with the <xref:System.Web.Security.Membership.Providers%2A> property of the <xref:System.Web.Security.Membership> class and cast them as the specific provider type.  
   
- [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/RetrievePasswordcs.aspx#4)]
- [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/RetrievePasswordvb.aspx#4)]  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#4](~/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/RetrievePasswordcs.aspx#4)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#4](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/RetrievePasswordvb.aspx#4)]  
   
  ]]></format>
         </remarks>
@@ -1027,7 +1033,7 @@
 -or-
   
  <paramref name="passwordAnswer" /> is <see langword="null" /> and <see cref="P:System.Web.Security.SqlMembershipProvider.RequiresQuestionAndAnswer" /> is <see langword="true" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetUser">
@@ -1037,7 +1043,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Gets the information for a membership user from the data source.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetUser">
@@ -1045,8 +1051,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Security.MembershipUser GetUser(object providerUserKey, bool userIsOnline) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.SqlMembershipProvider.GetUser(System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetUser (providerUserKey As Object, userIsOnline As Boolean) As MembershipUser" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Security::MembershipUser ^ GetUser(System::Object ^ providerUserKey, bool userIsOnline);" />
       <MemberSignature Language="F#" Value="override this.GetUser : obj * bool -&gt; System.Web.Security.MembershipUser" Usage="sqlMembershipProvider.GetUser (providerUserKey, userIsOnline)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Security::MembershipUser ^ GetUser(System::Object ^ providerUserKey, bool userIsOnline);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1078,7 +1084,7 @@
           <paramref name="providerUserKey" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="providerUserKey" /> is not of type <see cref="T:System.Guid" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="GetUser">
@@ -1086,8 +1092,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Security.MembershipUser GetUser(string username, bool userIsOnline) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.SqlMembershipProvider.GetUser(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetUser (username As String, userIsOnline As Boolean) As MembershipUser" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Security::MembershipUser ^ GetUser(System::String ^ username, bool userIsOnline);" />
       <MemberSignature Language="F#" Value="override this.GetUser : string * bool -&gt; System.Web.Security.MembershipUser" Usage="sqlMembershipProvider.GetUser (username, userIsOnline)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Security::MembershipUser ^ GetUser(System::String ^ username, bool userIsOnline);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1125,8 +1131,8 @@
 > [!NOTE]
 >  This example uses the <xref:System.Web.Security.Membership> class to call the <xref:System.Web.Security.SqlMembershipProvider> specified as the `defaultProvider` in the Web.config file. If you need to access the default provider as the type <xref:System.Web.Security.SqlMembershipProvider>, you can cast the <xref:System.Web.Security.Membership.Provider%2A> property of the <xref:System.Web.Security.Membership> class. To access other configured providers as a specific provider type, you can access them by their configured name with the <xref:System.Web.Security.Membership.Providers%2A> property of the <xref:System.Web.Security.Membership> class and cast them as the specific provider type.  
   
- [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/RetrievePasswordcs.aspx#4)]
- [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/RetrievePasswordvb.aspx#4)]  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#4](~/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/RetrievePasswordcs.aspx#4)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#4](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/RetrievePasswordvb.aspx#4)]  
   
  ]]></format>
         </remarks>
@@ -1138,7 +1144,7 @@
  <paramref name="username" /> contains a comma.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="username" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="GetUserNameByEmail">
@@ -1146,8 +1152,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetUserNameByEmail(string email) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.SqlMembershipProvider.GetUserNameByEmail(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetUserNameByEmail (email As String) As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetUserNameByEmail(System::String ^ email);" />
       <MemberSignature Language="F#" Value="override this.GetUserNameByEmail : string -&gt; string" Usage="sqlMembershipProvider.GetUserNameByEmail email" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetUserNameByEmail(System::String ^ email);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1182,15 +1188,15 @@
 > [!NOTE]
 >  This example uses the <xref:System.Web.Security.Membership> class to call the <xref:System.Web.Security.SqlMembershipProvider> specified as the `defaultProvider` in the Web.config file. If you need to access the default provider as the type <xref:System.Web.Security.SqlMembershipProvider>, you can cast the <xref:System.Web.Security.Membership.Provider%2A> property of the <xref:System.Web.Security.Membership> class. To access other configured providers as a specific provider type, you can access them by their configured name with the <xref:System.Web.Security.Membership.Providers%2A> property of the <xref:System.Web.Security.Membership> class and cast them as the specific provider type.  
   
- [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/GetUserByEmailcs.aspx#7)]
- [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/GetUserByEmailvb.aspx#7)]  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#7](~/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/GetUserByEmailcs.aspx#7)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#7](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/GetUserByEmailvb.aspx#7)]  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="email" /> exceeds 256 characters.</exception>
         <exception cref="T:System.Configuration.Provider.ProviderException">More than one user with the same email address exists in the database and <see cref="P:System.Web.Security.SqlMembershipProvider.RequiresUniqueEmail" /> is <see langword="true" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -1198,8 +1204,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(string name, class System.Collections.Specialized.NameValueCollection config) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.SqlMembershipProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (name As String, config As NameValueCollection)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::String ^ name, System::Collections::Specialized::NameValueCollection ^ config);" />
       <MemberSignature Language="F#" Value="override this.Initialize : string * System.Collections.Specialized.NameValueCollection -&gt; unit" Usage="sqlMembershipProvider.Initialize (name, config)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::String ^ name, System::Collections::Specialized::NameValueCollection ^ config);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1259,7 +1265,7 @@
   
 -or-
   
- The <see langword="passwordFormat" /> attribute is set to <see langword="Encrypted" /> and the <see href="https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/w8h3skw9(v%3dvs.100)">&lt;machineKey&gt;</see> configuration element specifies <see langword="AutoGenerate" /> for the <see langword="decryptionKey" /> attribute.  
+ The <see langword="passwordFormat" /> attribute is set to <see langword="Encrypted" /> and the <see href="https://learn.microsoft.com/previous-versions/dotnet/netframework-4.0/w8h3skw9(v%3dvs.100)">&lt;machineKey&gt;</see> configuration element specifies <see langword="AutoGenerate" /> for the <see langword="decryptionKey" /> attribute.  
   
 -or-
   
@@ -1278,7 +1284,7 @@
  The application configuration file for this <see cref="T:System.Web.Security.SqlMembershipProvider" /> instance contains an unrecognized attribute.</exception>
         <exception cref="T:System.Web.HttpException">The current trust level is less than <see langword="Low" />.</exception>
         <exception cref="T:System.InvalidOperationException">The provider has already been initialized prior to the current call to the <see cref="M:System.Web.Security.SqlMembershipProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" /> method.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="MaxInvalidPasswordAttempts">
@@ -1286,8 +1292,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxInvalidPasswordAttempts" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.SqlMembershipProvider.MaxInvalidPasswordAttempts" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MaxInvalidPasswordAttempts As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MaxInvalidPasswordAttempts { int get(); };" />
       <MemberSignature Language="F#" Value="member this.MaxInvalidPasswordAttempts : int" Usage="System.Web.Security.SqlMembershipProvider.MaxInvalidPasswordAttempts" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MaxInvalidPasswordAttempts { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1296,7 +1302,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1313,14 +1320,14 @@
   
  The <xref:System.Web.Security.SqlMembershipProvider> keeps counts of invalid password attempts and invalid password-answer attempts separately. Invalid password attempts result in only the password-attempt counter being incremented. Invalid password-answer attempts result in only the password-answer counter being incremented.  
   
- The <xref:System.Web.Security.Membership.MaxInvalidPasswordAttempts%2A> property value is set in the application configuration using the `maxInvalidPasswordAttempts` attribute of the [membership](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1b9hw62f(v%3dvs.100)) configuration section.  
+ The <xref:System.Web.Security.Membership.MaxInvalidPasswordAttempts%2A> property value is set in the application configuration using the `maxInvalidPasswordAttempts` attribute of the [membership](https://learn.microsoft.com/previous-versions/dotnet/netframework-4.0/1b9hw62f(v%3dvs.100)) configuration section.  
   
  If the <xref:System.Web.Security.Membership.RequiresQuestionAndAnswer%2A> property is set to `false`, invalid password-answer attempts are not tracked.  
   
    
   
 ## Examples  
- The following code example shows the [membership](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1b9hw62f(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies that the application use an instance of the <xref:System.Web.Security.SqlMembershipProvider> and sets the `maxInvalidPasswordAttempts` attribute to five invalid attempts and the `passwordAttemptWindow` to 30 minutes.  
+ The following code example shows the [membership](https://learn.microsoft.com/previous-versions/dotnet/netframework-4.0/1b9hw62f(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies that the application use an instance of the <xref:System.Web.Security.SqlMembershipProvider> and sets the `maxInvalidPasswordAttempts` attribute to five invalid attempts and the `passwordAttemptWindow` to 30 minutes.  
   
 ```  
 <membership defaultProvider="SqlProvider"   
@@ -1339,7 +1346,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="MinRequiredNonAlphanumericCharacters">
@@ -1347,8 +1354,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 MinRequiredNonAlphanumericCharacters" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.SqlMembershipProvider.MinRequiredNonAlphanumericCharacters" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MinRequiredNonAlphanumericCharacters As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MinRequiredNonAlphanumericCharacters { int get(); };" />
       <MemberSignature Language="F#" Value="member this.MinRequiredNonAlphanumericCharacters : int" Usage="System.Web.Security.SqlMembershipProvider.MinRequiredNonAlphanumericCharacters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MinRequiredNonAlphanumericCharacters { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1357,7 +1364,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1372,14 +1380,14 @@
 ## Remarks  
  The <xref:System.Web.Security.SqlMembershipProvider.MinRequiredNonAlphanumericCharacters%2A> property returns the minimum number of special, non-alphabetic characters that must be entered to create a valid password for the <xref:System.Web.Security.SqlMembershipProvider> object.  
   
- The <xref:System.Web.Security.SqlMembershipProvider.MinRequiredNonAlphanumericCharacters%2A> property value is set in the application configuration using the `minRequiredNonalphanumericCharacters` attribute of the [membership Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/b9c1ee8f-33ca-4361-8666-b42a0fe86049) configuration element.  
+ The <xref:System.Web.Security.SqlMembershipProvider.MinRequiredNonAlphanumericCharacters%2A> property value is set in the application configuration using the `minRequiredNonalphanumericCharacters` attribute of the [membership Element (ASP.NET Settings Schema)](https://learn.microsoft.com/previous-versions/dotnet/netframework-4.0/1b9hw62f(v=vs.100)) configuration element.  
   
  A non-alphanumeric character is a character for which the <xref:System.Char.IsLetterOrDigit%2A> method returns `false`.  
   
    
   
 ## Examples  
- The following example shows the [membership Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/b9c1ee8f-33ca-4361-8666-b42a0fe86049) configuration element in the `system.web` section of the application's Web.config file. It specifies that the application use an instance of the <xref:System.Web.Security.SqlMembershipProvider> class to provide membership services, and sets the `minRequiredNonalphanumericCharacters` attribute to one character.  
+ The following example shows the [membership Element (ASP.NET Settings Schema)](https://learn.microsoft.com/previous-versions/dotnet/netframework-4.0/1b9hw62f(v=vs.100)) configuration element in the `system.web` section of the application's Web.config file. It specifies that the application use an instance of the <xref:System.Web.Security.SqlMembershipProvider> class to provide membership services, and sets the `minRequiredNonalphanumericCharacters` attribute to one character.  
   
 ```  
 <membership defaultProvider="SqlProvider"  
@@ -1398,7 +1406,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="MinRequiredPasswordLength">
@@ -1406,8 +1414,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 MinRequiredPasswordLength" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.SqlMembershipProvider.MinRequiredPasswordLength" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MinRequiredPasswordLength As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MinRequiredPasswordLength { int get(); };" />
       <MemberSignature Language="F#" Value="member this.MinRequiredPasswordLength : int" Usage="System.Web.Security.SqlMembershipProvider.MinRequiredPasswordLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MinRequiredPasswordLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1416,7 +1424,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1431,12 +1440,12 @@
 ## Remarks  
  <xref:System.Web.Security.SqlMembershipProvider.MinRequiredPasswordLength%2A> property gets the minimum number of characters that must be entered to create a valid password for the <xref:System.Web.Security.SqlMembershipProvider> object.  
   
- The <xref:System.Web.Security.Membership.MinRequiredPasswordLength%2A> property value is set in the application configuration using the `minRequiredPasswordLength` attribute of the [membership Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/b9c1ee8f-33ca-4361-8666-b42a0fe86049) configuration element.  
+ The <xref:System.Web.Security.Membership.MinRequiredPasswordLength%2A> property value is set in the application configuration using the `minRequiredPasswordLength` attribute of the [membership Element (ASP.NET Settings Schema)](https://learn.microsoft.com/previous-versions/dotnet/netframework-4.0/1b9hw62f(v=vs.100)) configuration element.  
   
    
   
 ## Examples  
- The following example shows the [membership Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/b9c1ee8f-33ca-4361-8666-b42a0fe86049) configuration element in the `system.web` section of the application's Web.config file. It specifies that the application use an instance of the <xref:System.Web.Security.SqlMembershipProvider> class to provide membership services, and sets the `minRequiredPasswordLength` attribute to seven characters.  
+ The following example shows the [membership Element (ASP.NET Settings Schema)](https://learn.microsoft.com/previous-versions/dotnet/netframework-4.0/1b9hw62f(v=vs.100)) configuration element in the `system.web` section of the application's Web.config file. It specifies that the application use an instance of the <xref:System.Web.Security.SqlMembershipProvider> class to provide membership services, and sets the `minRequiredPasswordLength` attribute to seven characters.  
   
 ```  
 <membership defaultProvider="SqlProvider"  
@@ -1455,7 +1464,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="PasswordAttemptWindow">
@@ -1463,8 +1472,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 PasswordAttemptWindow" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.SqlMembershipProvider.PasswordAttemptWindow" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property PasswordAttemptWindow As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int PasswordAttemptWindow { int get(); };" />
       <MemberSignature Language="F#" Value="member this.PasswordAttemptWindow : int" Usage="System.Web.Security.SqlMembershipProvider.PasswordAttemptWindow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int PasswordAttemptWindow { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1473,7 +1482,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1486,18 +1496,18 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.SqlMembershipProvider.PasswordAttemptWindow%2A> property works in conjunction with the <xref:System.Web.Security.SqlMembershipProvider.MaxInvalidPasswordAttempts%2A> property to help guard against an unwanted source guessing the password or the password answer of a membership user through repeated attempts. When users are attempting to log in, change their password, or reset their password, only a certain number of consecutive attempts are allowed within a specified time window. The length of the time window is specified by the <xref:System.Web.Security.SqlMembershipProvider.PasswordAttemptWindow%2A> property, which identifies the number of minutes allowed between invalid attempts. If the number of consecutive failed attempts that a user makes to reset his or her password equals the value stored in the <xref:System.Web.Security.SqlMembershipProvider.MaxInvalidPasswordAttempts%2A> property, and the time elapsed since the last invalid attempt is less than the number of minutes specified for the <xref:System.Web.Security.SqlMembershipProvider.PasswordAttemptWindow%2A> property, then the membership user is locked out by setting the <xref:System.Web.Security.MembershipUser.IsLockedOut%2A> property to `true`. The user can be unlocked by calling the <xref:System.Web.Security.MembershipUser.UnlockUser%2A> method. If the interval between the current failed attempt and the last failed attempt is greater than the <xref:System.Web.Security.SqlMembershipProvider.PasswordAttemptWindow%2A> property setting, the current invalid attempt is counted as the first. If a valid password answer is supplied before the maximum number of allowed invalid attempts is reached, the count of invalid password-answer attempts is set to zero. If a valid password is supplied before the maximum number of allowed invalid attempts is reached, the count of invalid password attempts and the count of invalid password-answer attempts are set to zero.  
+ The <xref:System.Web.Security.SqlMembershipProvider.PasswordAttemptWindow%2A> property works in conjunction with the <xref:System.Web.Security.SqlMembershipProvider.MaxInvalidPasswordAttempts%2A> property to help guard against an unwanted source guessing the password or the password answer of a membership user through repeated attempts. When users are attempting to log in, change their password, or reset their password, only a certain number of consecutive attempts are allowed within a specified time window. The length of the time window is specified by the <xref:System.Web.Security.SqlMembershipProvider.PasswordAttemptWindow%2A> property, which identifies the number of minutes allowed between invalid attempts. If the number of consecutive failed attempts that a user makes to reset their password equals the value stored in the <xref:System.Web.Security.SqlMembershipProvider.MaxInvalidPasswordAttempts%2A> property, and the time elapsed since the last invalid attempt is less than the number of minutes specified for the <xref:System.Web.Security.SqlMembershipProvider.PasswordAttemptWindow%2A> property, then the membership user is locked out by setting the <xref:System.Web.Security.MembershipUser.IsLockedOut%2A> property to `true`. The user can be unlocked by calling the <xref:System.Web.Security.MembershipUser.UnlockUser%2A> method. If the interval between the current failed attempt and the last failed attempt is greater than the <xref:System.Web.Security.SqlMembershipProvider.PasswordAttemptWindow%2A> property setting, the current invalid attempt is counted as the first. If a valid password answer is supplied before the maximum number of allowed invalid attempts is reached, the count of invalid password-answer attempts is set to zero. If a valid password is supplied before the maximum number of allowed invalid attempts is reached, the count of invalid password attempts and the count of invalid password-answer attempts are set to zero.  
   
  The <xref:System.Web.Security.SqlMembershipProvider> keeps count of invalid password attempts and invalid password-answer attempts separately. Invalid password attempts result in only the password-attempt counter being incremented. Invalid password-answer attempts result in only the password-answer counter being incremented.  
   
- The <xref:System.Web.Security.Membership.PasswordAttemptWindow%2A> property value is set in the application configuration using the `passwordAttemptWindow` attribute of the [membership](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1b9hw62f(v%3dvs.100)) configuration section.  
+ The <xref:System.Web.Security.Membership.PasswordAttemptWindow%2A> property value is set in the application configuration using the `passwordAttemptWindow` attribute of the [membership](https://learn.microsoft.com/previous-versions/dotnet/netframework-4.0/1b9hw62f(v%3dvs.100)) configuration section.  
   
  If the <xref:System.Web.Security.Membership.RequiresQuestionAndAnswer%2A> property is set to `false`, invalid password-answer attempts are not tracked.  
   
    
   
 ## Examples  
- The following code example shows the [membership](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1b9hw62f(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies that the application use an instance of the <xref:System.Web.Security.SqlMembershipProvider> and sets the `maxInvalidPasswordAttempts` attribute to five invalid attempts and the `passwordAttemptWindow` to 30 minutes.  
+ The following code example shows the [membership](https://learn.microsoft.com/previous-versions/dotnet/netframework-4.0/1b9hw62f(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies that the application use an instance of the <xref:System.Web.Security.SqlMembershipProvider> and sets the `maxInvalidPasswordAttempts` attribute to five invalid attempts and the `passwordAttemptWindow` to 30 minutes.  
   
 ```  
 <membership defaultProvider="SqlProvider"   
@@ -1516,7 +1526,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="PasswordFormat">
@@ -1524,8 +1534,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Security.MembershipPasswordFormat PasswordFormat" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.SqlMembershipProvider.PasswordFormat" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property PasswordFormat As MembershipPasswordFormat" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::Security::MembershipPasswordFormat PasswordFormat { System::Web::Security::MembershipPasswordFormat get(); };" />
       <MemberSignature Language="F#" Value="member this.PasswordFormat : System.Web.Security.MembershipPasswordFormat" Usage="System.Web.Security.SqlMembershipProvider.PasswordFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::Security::MembershipPasswordFormat PasswordFormat { System::Web::Security::MembershipPasswordFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1534,7 +1544,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1549,16 +1560,16 @@
 ## Remarks  
  Use `Hashed` only, `Clear` and `Encrypted` are not secure. `Hashed` passwords are hashed using a one-way hash algorithm and a randomly generated salt value when stored in the database. When a password is validated, it is hashed with the salt value in the database for verification. Hashed passwords cannot be retrieved. `Encrypted` passwords are not considered safe, as a breach that reveals your database contents can also expose the encryption key. This means your encrypted passwords could be decrypted and exposed.  
   
- The <xref:System.Web.Security.SqlMembershipProvider.PasswordFormat%2A> value is specified in the [providers](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/6d4936ht(v%3dvs.100)) section of the Web.config file for the ASP.NET application.  
+ The <xref:System.Web.Security.SqlMembershipProvider.PasswordFormat%2A> value is specified in the [providers](https://learn.microsoft.com/previous-versions/dotnet/netframework-4.0/6d4936ht(v%3dvs.100)) section of the Web.config file for the ASP.NET application.  
   
- `Encrypted` and `Hashed` passwords are encrypted or hashed by default based on information supplied in the [machineKey](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/w8h3skw9(v%3dvs.100)) element in your configuration. Note that if you specify a value of `3DES` for the `validation` attribute, or if no value is specified, hashed passwords will be hashed using the <xref:System.Security.Cryptography.SHA1> algorithm.  
+ `Encrypted` and `Hashed` passwords are encrypted or hashed by default based on information supplied in the [machineKey](https://learn.microsoft.com/previous-versions/dotnet/netframework-4.0/w8h3skw9(v%3dvs.100)) element in your configuration. Note that if you specify a value of `3DES` for the `validation` attribute, or if no value is specified, hashed passwords will be hashed using the <xref:System.Security.Cryptography.SHA1> algorithm.  
   
- A custom hash algorithm can be defined using the `hashAlgorithmType` attribute of the [membership Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/b9c1ee8f-33ca-4361-8666-b42a0fe86049) configuration element. If you choose encryption, default password encryption uses AES. You can change the encryption algorithm by setting the `decryption` attribute of the [machineKey](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/w8h3skw9(v%3dvs.100)) configuration element. If you are encrypting passwords, you must provide an explicit value for the `decryptionKey` attribute in the [machineKey](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/w8h3skw9(v%3dvs.100)) element. The default value of `AutoGenerate` for the `decryptionKey` attribute is not supported when using encrypted passwords with ASP.NET Membership.  
+ A custom hash algorithm can be defined using the `hashAlgorithmType` attribute of the [membership Element (ASP.NET Settings Schema)](https://learn.microsoft.com/previous-versions/dotnet/netframework-4.0/1b9hw62f(v=vs.100)) configuration element. If you choose encryption, default password encryption uses AES. You can change the encryption algorithm by setting the `decryption` attribute of the [machineKey](https://learn.microsoft.com/previous-versions/dotnet/netframework-4.0/w8h3skw9(v%3dvs.100)) configuration element. If you are encrypting passwords, you must provide an explicit value for the `decryptionKey` attribute in the [machineKey](https://learn.microsoft.com/previous-versions/dotnet/netframework-4.0/w8h3skw9(v%3dvs.100)) element. The default value of `AutoGenerate` for the `decryptionKey` attribute is not supported when using encrypted passwords with ASP.NET Membership.  
   
-   
+ Due to collision problems with SHA1, Microsoft recommends a security model based on SHA256 or better.  
   
 ## Examples  
- The following code example shows the [membership](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1b9hw62f(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies the application's <xref:System.Web.Security.SqlMembershipProvider> instance and sets its password format to `Hashed`.  
+ The following code example shows the [membership](https://learn.microsoft.com/previous-versions/dotnet/netframework-4.0/1b9hw62f(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies the application's <xref:System.Web.Security.SqlMembershipProvider> instance and sets its password format to `Hashed`.  
   
 ```  
 <membership defaultProvider="SqlProvider" userIsOnlineTimeWindow="20">  
@@ -1577,7 +1588,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="PasswordStrengthRegularExpression">
@@ -1585,8 +1596,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string PasswordStrengthRegularExpression" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.SqlMembershipProvider.PasswordStrengthRegularExpression" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property PasswordStrengthRegularExpression As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PasswordStrengthRegularExpression { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.PasswordStrengthRegularExpression : string" Usage="System.Web.Security.SqlMembershipProvider.PasswordStrengthRegularExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PasswordStrengthRegularExpression { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1595,7 +1606,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1610,12 +1622,12 @@
 ## Remarks  
  The <xref:System.Web.Security.SqlMembershipProvider.PasswordStrengthRegularExpression%2A> property gets the regular expression used to evaluate password complexity for the <xref:System.Web.Security.SqlMembershipProvider> object.  
   
- The <xref:System.Web.Security.Membership.PasswordStrengthRegularExpression%2A> property is set in the application configuration using the `passwordStrengthRegularExpression` attribute of the [membership Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/b9c1ee8f-33ca-4361-8666-b42a0fe86049) configuration element.  
+ The <xref:System.Web.Security.Membership.PasswordStrengthRegularExpression%2A> property is set in the application configuration using the `passwordStrengthRegularExpression` attribute of the [membership Element (ASP.NET Settings Schema)](https://learn.microsoft.com/previous-versions/dotnet/netframework-4.0/1b9hw62f(v=vs.100)) configuration element.  
   
    
   
 ## Examples  
- The following example shows the [membership Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/b9c1ee8f-33ca-4361-8666-b42a0fe86049) configuration element in the `system.web` section of the application's Web.config file. It specifies that the application use an instance of the <xref:System.Web.Security.SqlMembershipProvider> class to provide membership services, and sets the `passwordStrengthRegularExpression` attribute to a regular expression that validates that the password meets the following criteria:  
+ The following example shows the [membership Element (ASP.NET Settings Schema)](https://learn.microsoft.com/previous-versions/dotnet/netframework-4.0/1b9hw62f(v=vs.100)) configuration element in the `system.web` section of the application's Web.config file. It specifies that the application use an instance of the <xref:System.Web.Security.SqlMembershipProvider> class to provide membership services, and sets the `passwordStrengthRegularExpression` attribute to a regular expression that validates that the password meets the following criteria:  
   
 -   Is at least seven characters.  
   
@@ -1642,7 +1654,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="RequiresQuestionAndAnswer">
@@ -1650,8 +1662,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool RequiresQuestionAndAnswer" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.SqlMembershipProvider.RequiresQuestionAndAnswer" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RequiresQuestionAndAnswer As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequiresQuestionAndAnswer { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.RequiresQuestionAndAnswer : bool" Usage="System.Web.Security.SqlMembershipProvider.RequiresQuestionAndAnswer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequiresQuestionAndAnswer { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1660,7 +1672,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1681,7 +1694,7 @@
    
   
 ## Examples  
- The following code example shows the [membership](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1b9hw62f(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies the application's <xref:System.Web.Security.SqlMembershipProvider> instance and configures it to require a password answer for password reset or retrieval.  
+ The following code example shows the [membership](https://learn.microsoft.com/previous-versions/dotnet/netframework-4.0/1b9hw62f(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies the application's <xref:System.Web.Security.SqlMembershipProvider> instance and configures it to require a password answer for password reset or retrieval.  
   
 ```  
 <membership defaultProvider="SqlProvider" userIsOnlineTimeWindow="20">  
@@ -1700,7 +1713,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="RequiresUniqueEmail">
@@ -1708,8 +1721,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool RequiresUniqueEmail" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.SqlMembershipProvider.RequiresUniqueEmail" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RequiresUniqueEmail As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequiresUniqueEmail { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.RequiresUniqueEmail : bool" Usage="System.Web.Security.SqlMembershipProvider.RequiresUniqueEmail" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequiresUniqueEmail { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1718,7 +1731,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1732,7 +1746,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows the [membership](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1b9hw62f(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies the <xref:System.Web.Security.SqlMembershipProvider> instance and configures it to require a unique email address for each user name.  
+ The following code example shows the [membership](https://learn.microsoft.com/previous-versions/dotnet/netframework-4.0/1b9hw62f(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies the <xref:System.Web.Security.SqlMembershipProvider> instance and configures it to require a unique email address for each user name.  
   
 ```  
 <membership defaultProvider="SqlProvider" userIsOnlineTimeWindow="20">  
@@ -1752,7 +1766,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="ResetPassword">
@@ -1760,8 +1774,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ResetPassword(string username, string passwordAnswer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.SqlMembershipProvider.ResetPassword(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ResetPassword (username As String, passwordAnswer As String) As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ResetPassword(System::String ^ username, System::String ^ passwordAnswer);" />
       <MemberSignature Language="F#" Value="override this.ResetPassword : string * string -&gt; string" Usage="sqlMembershipProvider.ResetPassword (username, passwordAnswer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ResetPassword(System::String ^ username, System::String ^ passwordAnswer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1805,8 +1819,8 @@
 > [!NOTE]
 >  This example uses the <xref:System.Web.Security.Membership> class to call the <xref:System.Web.Security.SqlMembershipProvider> specified as the `defaultProvider` in the Web.config file. If you need to access the default provider as the type <xref:System.Web.Security.SqlMembershipProvider>, you can cast the <xref:System.Web.Security.Membership.Provider%2A> property of the <xref:System.Web.Security.Membership> class. To access other configured providers as a specific provider type, you can access them by their configured name with the <xref:System.Web.Security.Membership.Providers%2A> property of the <xref:System.Web.Security.Membership> class and cast them as the specific provider type.  
   
- [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/ResetPasswordcs.aspx#8)]
- [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/ResetPasswordvb.aspx#8)]  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#8](~/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/ResetPasswordcs.aspx#8)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#8](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/ResetPasswordvb.aspx#8)]  
   
  ]]></format>
         </remarks>
@@ -1845,7 +1859,7 @@
   
  <paramref name="passwordAnswer" /> is <see langword="null" /> and <see cref="P:System.Web.Security.SqlMembershipProvider.RequiresQuestionAndAnswer" /> is <see langword="true" />.</exception>
         <exception cref="T:System.Exception">An unhandled exception occurred.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="UnlockUser">
@@ -1853,8 +1867,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool UnlockUser(string username) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.SqlMembershipProvider.UnlockUser(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function UnlockUser (username As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool UnlockUser(System::String ^ username);" />
       <MemberSignature Language="F#" Value="override this.UnlockUser : string -&gt; bool" Usage="sqlMembershipProvider.UnlockUser username" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool UnlockUser(System::String ^ username);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1886,7 +1900,7 @@
           <paramref name="username" /> is an empty string, is longer than 256 characters, or contains a comma.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="username" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="UpdateUser">
@@ -1894,8 +1908,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void UpdateUser(class System.Web.Security.MembershipUser user) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.SqlMembershipProvider.UpdateUser(System.Web.Security.MembershipUser)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub UpdateUser (user As MembershipUser)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void UpdateUser(System::Web::Security::MembershipUser ^ user);" />
       <MemberSignature Language="F#" Value="override this.UpdateUser : System.Web.Security.MembershipUser -&gt; unit" Usage="sqlMembershipProvider.UpdateUser user" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void UpdateUser(System::Web::Security::MembershipUser ^ user);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1929,8 +1943,8 @@
 > [!NOTE]
 >  This example uses the <xref:System.Web.Security.Membership> class to call the <xref:System.Web.Security.SqlMembershipProvider> specified as the `defaultProvider` in the Web.config file. If you need to access the default provider as the type <xref:System.Web.Security.SqlMembershipProvider>, you can cast the <xref:System.Web.Security.Membership.Provider%2A> property of the <xref:System.Web.Security.Membership> class. To access other configured providers as a specific provider type, you can access them by their configured name with the <xref:System.Web.Security.Membership.Providers%2A> property of the <xref:System.Web.Security.Membership> class and cast them as the specific provider type.  
   
- [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/UpdateEmailcs.aspx#11)]
- [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/UpdateEmailvb.aspx#11)]  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#11](~/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/UpdateEmailcs.aspx#11)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#11](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/UpdateEmailvb.aspx#11)]  
   
  ]]></format>
         </remarks>
@@ -1962,7 +1976,7 @@
 -or-
   
  The user update failed.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
     <Member MemberName="ValidateUser">
@@ -1970,8 +1984,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ValidateUser(string username, string password) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.SqlMembershipProvider.ValidateUser(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ValidateUser (username As String, password As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ValidateUser(System::String ^ username, System::String ^ password);" />
       <MemberSignature Language="F#" Value="override this.ValidateUser : string * string -&gt; bool" Usage="sqlMembershipProvider.ValidateUser (username, password)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ValidateUser(System::String ^ username, System::String ^ password);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2011,12 +2025,12 @@
 > [!NOTE]
 >  This example uses the <xref:System.Web.Security.Membership> class to call the <xref:System.Web.Security.SqlMembershipProvider> specified as the `defaultProvider` in the Web.config file. If you need to access the default provider as the type <xref:System.Web.Security.SqlMembershipProvider>, you can cast the <xref:System.Web.Security.Membership.Provider%2A> property of the <xref:System.Web.Security.Membership> class. To access other configured providers as a specific provider type, you can access them by their configured name with the <xref:System.Web.Security.Membership.Providers%2A> property of the <xref:System.Web.Security.Membership> class and cast them as the specific provider type.  
   
- [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/logincs.aspx#1)]
- [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/loginvb.aspx#1)]  
+ [!code-aspx-csharp[System.Web.Security.SqlMembershipProvider#1](~/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/logincs.aspx#1)]
+ [!code-aspx-vb[System.Web.Security.SqlMembershipProvider#1](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/loginvb.aspx#1)]  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to ASP.NET Membership</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/yh26yfzy(v=vs.100)">Introduction to ASP.NET Membership</related>
       </Docs>
     </Member>
   </Members>

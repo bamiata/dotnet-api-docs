@@ -1,15 +1,22 @@
-﻿<Type Name="XmlDictionaryString" FullName="System.Xml.XmlDictionaryString">
+<Type Name="XmlDictionaryString" FullName="System.Xml.XmlDictionaryString">
   <TypeSignature Language="C#" Value="public class XmlDictionaryString" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlDictionaryString extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlDictionaryString" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlDictionaryString" />
-  <TypeSignature Language="C++ CLI" Value="public ref class XmlDictionaryString" />
   <TypeSignature Language="F#" Value="type XmlDictionaryString = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlDictionaryString" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
     <AssemblyVersion>4.1.3.0</AssemblyVersion>
     <AssemblyVersion>4.1.4.0</AssemblyVersion>
+    <AssemblyVersion>4.1.5.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -20,11 +27,30 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Runtime.Serialization" FromVersion="4.0.0.0" To="System.Runtime.Serialization.Xml" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.Serialization.Xml" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.Serialization.Xml" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.Serialization.Xml" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.Serialization.Xml" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.Serialization.Xml" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Represents an entry stored in a <see cref="T:System.Xml.XmlDictionary" />.</summary>
     <remarks>
@@ -42,14 +68,21 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.IXmlDictionary dictionary, string value, int32 key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryString.#ctor(System.Xml.IXmlDictionary,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dictionary As IXmlDictionary, value As String, key As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlDictionaryString(System::Xml::IXmlDictionary ^ dictionary, System::String ^ value, int key);" />
       <MemberSignature Language="F#" Value="new System.Xml.XmlDictionaryString : System.Xml.IXmlDictionary * string * int -&gt; System.Xml.XmlDictionaryString" Usage="new System.Xml.XmlDictionaryString (dictionary, value, key)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlDictionaryString(System::Xml::IXmlDictionary ^ dictionary, System::String ^ value, int key);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -60,6 +93,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dictionary" Type="System.Xml.IXmlDictionary" />
@@ -82,7 +116,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="dictionary" /> or <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="key" /> is less than 0 or greater than <see cref="F:System.Int32.MaxValue" /> / 4.</exception>
+          <paramref name="key" /> is less than 0 or greater than <see cref="F:System.Int32.MaxValue">Int32.MaxValue</see> / 4.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dictionary">
@@ -90,14 +124,21 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.IXmlDictionary Dictionary" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDictionaryString.Dictionary" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Dictionary As IXmlDictionary" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::IXmlDictionary ^ Dictionary { System::Xml::IXmlDictionary ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Dictionary : System.Xml.IXmlDictionary" Usage="System.Xml.XmlDictionaryString.Dictionary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::IXmlDictionary ^ Dictionary { System::Xml::IXmlDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -108,6 +149,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.IXmlDictionary</ReturnType>
@@ -123,14 +165,21 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Xml.XmlDictionaryString Empty" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDictionaryString.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Empty As XmlDictionaryString" />
+      <MemberSignature Language="F#" Value="static member Empty : System.Xml.XmlDictionaryString" Usage="System.Xml.XmlDictionaryString.Empty" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xml::XmlDictionaryString ^ Empty { System::Xml::XmlDictionaryString ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Empty : System.Xml.XmlDictionaryString" Usage="System.Xml.XmlDictionaryString.Empty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -141,6 +190,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlDictionaryString</ReturnType>
@@ -156,14 +206,21 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Key" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDictionaryString.Key" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Key As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Key { int get(); };" />
       <MemberSignature Language="F#" Value="member this.Key : int" Usage="System.Xml.XmlDictionaryString.Key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Key { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -174,6 +231,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -196,14 +254,21 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryString.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="xmlDictionaryString.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -214,6 +279,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -230,14 +296,21 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDictionaryString.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Value : string" Usage="System.Xml.XmlDictionaryString.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -248,6 +321,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

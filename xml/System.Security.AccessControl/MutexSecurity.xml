@@ -1,15 +1,21 @@
-﻿<Type Name="MutexSecurity" FullName="System.Security.AccessControl.MutexSecurity">
+<Type Name="MutexSecurity" FullName="System.Security.AccessControl.MutexSecurity">
   <TypeSignature Language="C#" Value="public sealed class MutexSecurity : System.Security.AccessControl.NativeObjectSecurity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MutexSecurity extends System.Security.AccessControl.NativeObjectSecurity" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.MutexSecurity" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MutexSecurity&#xA;Inherits NativeObjectSecurity" />
-  <TypeSignature Language="C++ CLI" Value="public ref class MutexSecurity sealed : System::Security::AccessControl::NativeObjectSecurity" />
   <TypeSignature Language="F#" Value="type MutexSecurity = class&#xA;    inherit NativeObjectSecurity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MutexSecurity sealed : System::Security::AccessControl::NativeObjectSecurity" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
-    <AssemblyVersion>4.0.2.0</AssemblyVersion>
     <AssemblyVersion>4.0.3.0</AssemblyVersion>
+    <AssemblyVersion>4.0.4.0</AssemblyVersion>
+    <AssemblyVersion>4.0.5.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -17,13 +23,25 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Threading.AccessControl" FromVersion="9.0.0.0" To="mscorlib" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Security.AccessControl.NativeObjectSecurity</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
     <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
-      <AttributeName>System.Security.SecurityCritical</AttributeName>
+      <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -66,12 +84,7 @@
   
  To copy access control security from one mutex to another, use the <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=nameWithType> method to get a <xref:System.Security.AccessControl.MutexSecurity> object representing the access and audit rules for the first mutex, and then use the <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=nameWithType> method, or a constructor that accepts a <xref:System.Security.AccessControl.MutexSecurity> object, to assign those rules to the second mutex.  
   
- Users with an investment in the security descriptor definition language (SDDL) can use the <xref:System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorSddlForm%2A> method to set access rules for a named mutex, and the <xref:System.Security.AccessControl.ObjectSecurity.GetSecurityDescriptorSddlForm%2A> method to obtain a string that represents the access rules in SDDL format. This is not recommended for new development.  
-  
-> [!NOTE]
->  Security on synchronization objects is not supported for Windows 98 or Windows Millennium Edition.  
-  
-   
+ Users with an investment in the security descriptor definition language (SDDL) can use the <xref:System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorSddlForm%2A> method to set access rules for a named mutex, and the <xref:System.Security.AccessControl.ObjectSecurity.GetSecurityDescriptorSddlForm%2A> method to obtain a string that represents the access rules in SDDL format. This is not recommended for new development.
   
 ## Examples  
  The following code example demonstrates the separation between <xref:System.Security.AccessControl.AccessControlType.Allow> rules and <xref:System.Security.AccessControl.AccessControlType.Deny> rules, and shows the combination of rights in compatible rules. The example creates a <xref:System.Security.AccessControl.MutexSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType.Allow> rule.  
@@ -79,8 +92,8 @@
 > [!NOTE]
 >  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=nameWithType> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=nameWithType>.  
   
- [!code-csharp[System.Security.AccessControl.MutexSecurity.AddAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.AddAccessRule/CS/source.cs#1)]
- [!code-vb[System.Security.AccessControl.MutexSecurity.AddAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.AddAccessRule/VB/source.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Security.AccessControl/MutexAccessRule/Overview/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.AddAccessRule/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -95,7 +108,6 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.MutexSecurity" /> class.</summary>
@@ -111,8 +123,13 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -131,7 +148,6 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.NotSupportedException">This class is not supported on Windows 98 or Windows Millennium Edition.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -139,14 +155,19 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Security.AccessControl.AccessControlSections includeSections) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.#ctor(System.String,System.Security.AccessControl.AccessControlSections)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, includeSections As AccessControlSections)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; MutexSecurity(System::String ^ name, System::Security::AccessControl::AccessControlSections includeSections);" />
       <MemberSignature Language="F#" Value="new System.Security.AccessControl.MutexSecurity : string * System.Security.AccessControl.AccessControlSections -&gt; System.Security.AccessControl.MutexSecurity" Usage="new System.Security.AccessControl.MutexSecurity (name, includeSections)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MutexSecurity(System::String ^ name, System::Security::AccessControl::AccessControlSections includeSections);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -155,8 +176,9 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -178,7 +200,6 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.FileNotFoundException">There is no system object with the specified name.</exception>
-        <exception cref="T:System.NotSupportedException">This class is not supported on Windows 98 or Windows Millennium Edition.</exception>
       </Docs>
     </Member>
     <Member MemberName="AccessRightType">
@@ -186,14 +207,19 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type AccessRightType" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.MutexSecurity.AccessRightType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AccessRightType As Type" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ AccessRightType { Type ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.AccessRightType : Type" Usage="System.Security.AccessControl.MutexSecurity.AccessRightType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ AccessRightType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -221,14 +247,20 @@
       <MemberSignature Language="C#" Value="public override System.Security.AccessControl.AccessRule AccessRuleFactory (System.Security.Principal.IdentityReference identityReference, int accessMask, bool isInherited, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags, System.Security.AccessControl.AccessControlType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.AccessControl.AccessRule AccessRuleFactory(class System.Security.Principal.IdentityReference identityReference, int32 accessMask, bool isInherited, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AccessControlType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.AccessRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::AccessControl::AccessRule ^ AccessRuleFactory(System::Security::Principal::IdentityReference ^ identityReference, int accessMask, bool isInherited, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AccessControlType type);" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function AccessRuleFactory (identityReference As IdentityReference, accessMask As Integer, isInherited As Boolean, inheritanceFlags As InheritanceFlags, propagationFlags As PropagationFlags, type As AccessControlType) As AccessRule" />
       <MemberSignature Language="F#" Value="override this.AccessRuleFactory : System.Security.Principal.IdentityReference * int * bool * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.AccessControlType -&gt; System.Security.AccessControl.AccessRule" Usage="mutexSecurity.AccessRuleFactory (identityReference, accessMask, isInherited, inheritanceFlags, propagationFlags, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::AccessControl::AccessRule ^ AccessRuleFactory(System::Security::Principal::IdentityReference ^ identityReference, int accessMask, bool isInherited, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AccessControlType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -284,14 +316,19 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type AccessRuleType" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.MutexSecurity.AccessRuleType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AccessRuleType As Type" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ AccessRuleType { Type ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.AccessRuleType : Type" Usage="System.Security.AccessControl.MutexSecurity.AccessRuleType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ AccessRuleType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -320,14 +357,19 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAccessRule(class System.Security.AccessControl.MutexAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.AddAccessRule(System.Security.AccessControl.MutexAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddAccessRule (rule As MutexAccessRule)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAccessRule(System::Security::AccessControl::MutexAccessRule ^ rule);" />
       <MemberSignature Language="F#" Value="override this.AddAccessRule : System.Security.AccessControl.MutexAccessRule -&gt; unit" Usage="mutexSecurity.AddAccessRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAccessRule(System::Security::AccessControl::MutexAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -358,8 +400,8 @@
 > [!NOTE]
 >  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=nameWithType><xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=nameWithType>.  
   
- [!code-csharp[System.Security.AccessControl.MutexSecurity.AddAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.AddAccessRule/CS/source.cs#1)]
- [!code-vb[System.Security.AccessControl.MutexSecurity.AddAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.AddAccessRule/VB/source.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Security.AccessControl/MutexAccessRule/Overview/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.AddAccessRule/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -374,14 +416,19 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAuditRule(class System.Security.AccessControl.MutexAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.AddAuditRule(System.Security.AccessControl.MutexAuditRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddAuditRule (rule As MutexAuditRule)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAuditRule(System::Security::AccessControl::MutexAuditRule ^ rule);" />
       <MemberSignature Language="F#" Value="override this.AddAuditRule : System.Security.AccessControl.MutexAuditRule -&gt; unit" Usage="mutexSecurity.AddAuditRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAuditRule(System::Security::AccessControl::MutexAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -412,14 +459,20 @@
       <MemberSignature Language="C#" Value="public override System.Security.AccessControl.AuditRule AuditRuleFactory (System.Security.Principal.IdentityReference identityReference, int accessMask, bool isInherited, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags, System.Security.AccessControl.AuditFlags flags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.AccessControl.AuditRule AuditRuleFactory(class System.Security.Principal.IdentityReference identityReference, int32 accessMask, bool isInherited, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AuditFlags flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.AuditRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::AccessControl::AuditRule ^ AuditRuleFactory(System::Security::Principal::IdentityReference ^ identityReference, int accessMask, bool isInherited, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AuditFlags flags);" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function AuditRuleFactory (identityReference As IdentityReference, accessMask As Integer, isInherited As Boolean, inheritanceFlags As InheritanceFlags, propagationFlags As PropagationFlags, flags As AuditFlags) As AuditRule" />
       <MemberSignature Language="F#" Value="override this.AuditRuleFactory : System.Security.Principal.IdentityReference * int * bool * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.AuditFlags -&gt; System.Security.AccessControl.AuditRule" Usage="mutexSecurity.AuditRuleFactory (identityReference, accessMask, isInherited, inheritanceFlags, propagationFlags, flags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::AccessControl::AuditRule ^ AuditRuleFactory(System::Security::Principal::IdentityReference ^ identityReference, int accessMask, bool isInherited, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AuditFlags flags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -475,14 +528,19 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type AuditRuleType" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.MutexSecurity.AuditRuleType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AuditRuleType As Type" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ AuditRuleType { Type ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.AuditRuleType : Type" Usage="System.Security.AccessControl.MutexSecurity.AuditRuleType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ AuditRuleType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -511,14 +569,19 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveAccessRule(class System.Security.AccessControl.MutexAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.RemoveAccessRule(System.Security.AccessControl.MutexAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveAccessRule (rule As MutexAccessRule) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAccessRule(System::Security::AccessControl::MutexAccessRule ^ rule);" />
       <MemberSignature Language="F#" Value="override this.RemoveAccessRule : System.Security.AccessControl.MutexAccessRule -&gt; bool" Usage="mutexSecurity.RemoveAccessRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAccessRule(System::Security::AccessControl::MutexAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -556,8 +619,8 @@
 > [!NOTE]
 >  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=nameWithType> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=nameWithType>.  
   
- [!code-csharp[System.Security.AccessControl.MutexSecurity.RemoveAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRule/CS/source.cs#1)]
- [!code-vb[System.Security.AccessControl.MutexSecurity.RemoveAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRule/VB/source.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Security.AccessControl/MutexSecurity/RemoveAccessRule/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRule/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -570,14 +633,19 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAccessRuleAll(class System.Security.AccessControl.MutexAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.RemoveAccessRuleAll(System.Security.AccessControl.MutexAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAccessRuleAll (rule As MutexAccessRule)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAccessRuleAll(System::Security::AccessControl::MutexAccessRule ^ rule);" />
       <MemberSignature Language="F#" Value="override this.RemoveAccessRuleAll : System.Security.AccessControl.MutexAccessRule -&gt; unit" Usage="mutexSecurity.RemoveAccessRuleAll rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAccessRuleAll(System::Security::AccessControl::MutexAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -610,8 +678,8 @@
 > [!NOTE]
 >  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=nameWithType> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=nameWithType>.  
   
- [!code-csharp[System.Security.AccessControl.MutexSecurity.RemoveAccessRuleAll#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRuleAll/CS/source.cs#1)]
- [!code-vb[System.Security.AccessControl.MutexSecurity.RemoveAccessRuleAll#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRuleAll/VB/source.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Security.AccessControl/MutexSecurity/RemoveAccessRuleAll/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRuleAll/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -624,14 +692,19 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAccessRuleSpecific(class System.Security.AccessControl.MutexAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific(System.Security.AccessControl.MutexAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAccessRuleSpecific (rule As MutexAccessRule)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAccessRuleSpecific(System::Security::AccessControl::MutexAccessRule ^ rule);" />
       <MemberSignature Language="F#" Value="override this.RemoveAccessRuleSpecific : System.Security.AccessControl.MutexAccessRule -&gt; unit" Usage="mutexSecurity.RemoveAccessRuleSpecific rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAccessRuleSpecific(System::Security::AccessControl::MutexAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -667,8 +740,8 @@
 > [!NOTE]
 >  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=nameWithType> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=nameWithType>.  
   
- [!code-csharp[System.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific/CS/source.cs#1)]
- [!code-vb[System.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific/VB/source.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Security.AccessControl/MutexSecurity/RemoveAccessRuleSpecific/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -681,14 +754,19 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveAuditRule(class System.Security.AccessControl.MutexAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.RemoveAuditRule(System.Security.AccessControl.MutexAuditRule)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveAuditRule (rule As MutexAuditRule) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAuditRule(System::Security::AccessControl::MutexAuditRule ^ rule);" />
       <MemberSignature Language="F#" Value="override this.RemoveAuditRule : System.Security.AccessControl.MutexAuditRule -&gt; bool" Usage="mutexSecurity.RemoveAuditRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAuditRule(System::Security::AccessControl::MutexAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -727,14 +805,19 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAuditRuleAll(class System.Security.AccessControl.MutexAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.RemoveAuditRuleAll(System.Security.AccessControl.MutexAuditRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAuditRuleAll (rule As MutexAuditRule)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAuditRuleAll(System::Security::AccessControl::MutexAuditRule ^ rule);" />
       <MemberSignature Language="F#" Value="override this.RemoveAuditRuleAll : System.Security.AccessControl.MutexAuditRule -&gt; unit" Usage="mutexSecurity.RemoveAuditRuleAll rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAuditRuleAll(System::Security::AccessControl::MutexAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -768,14 +851,19 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAuditRuleSpecific(class System.Security.AccessControl.MutexAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.RemoveAuditRuleSpecific(System.Security.AccessControl.MutexAuditRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAuditRuleSpecific (rule As MutexAuditRule)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAuditRuleSpecific(System::Security::AccessControl::MutexAuditRule ^ rule);" />
       <MemberSignature Language="F#" Value="override this.RemoveAuditRuleSpecific : System.Security.AccessControl.MutexAuditRule -&gt; unit" Usage="mutexSecurity.RemoveAuditRuleSpecific rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAuditRuleSpecific(System::Security::AccessControl::MutexAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -812,14 +900,19 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetAccessRule(class System.Security.AccessControl.MutexAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.ResetAccessRule(System.Security.AccessControl.MutexAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetAccessRule (rule As MutexAccessRule)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetAccessRule(System::Security::AccessControl::MutexAccessRule ^ rule);" />
       <MemberSignature Language="F#" Value="override this.ResetAccessRule : System.Security.AccessControl.MutexAccessRule -&gt; unit" Usage="mutexSecurity.ResetAccessRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetAccessRule(System::Security::AccessControl::MutexAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -852,8 +945,8 @@
 > [!NOTE]
 >  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=nameWithType> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=nameWithType>.  
   
- [!code-csharp[System.Security.AccessControl.MutexSecurity.ResetAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.ResetAccessRule/CS/source.cs#1)]
- [!code-vb[System.Security.AccessControl.MutexSecurity.ResetAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.ResetAccessRule/VB/source.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Security.AccessControl/MutexSecurity/ResetAccessRule/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.ResetAccessRule/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -866,14 +959,19 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAccessRule(class System.Security.AccessControl.MutexAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.SetAccessRule(System.Security.AccessControl.MutexAccessRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAccessRule (rule As MutexAccessRule)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAccessRule(System::Security::AccessControl::MutexAccessRule ^ rule);" />
       <MemberSignature Language="F#" Value="override this.SetAccessRule : System.Security.AccessControl.MutexAccessRule -&gt; unit" Usage="mutexSecurity.SetAccessRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAccessRule(System::Security::AccessControl::MutexAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -908,8 +1006,8 @@
 > [!NOTE]
 >  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=nameWithType> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=nameWithType>.  
   
- [!code-csharp[System.Security.AccessControl.MutexSecurity.SetAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.SetAccessRule/CS/source.cs#1)]
- [!code-vb[System.Security.AccessControl.MutexSecurity.SetAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.SetAccessRule/VB/source.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Security.AccessControl/MutexSecurity/SetAccessRule/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.SetAccessRule/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -922,14 +1020,19 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAuditRule(class System.Security.AccessControl.MutexAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.SetAuditRule(System.Security.AccessControl.MutexAuditRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAuditRule (rule As MutexAuditRule)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAuditRule(System::Security::AccessControl::MutexAuditRule ^ rule);" />
       <MemberSignature Language="F#" Value="override this.SetAuditRule : System.Security.AccessControl.MutexAuditRule -&gt; unit" Usage="mutexSecurity.SetAuditRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAuditRule(System::Security::AccessControl::MutexAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

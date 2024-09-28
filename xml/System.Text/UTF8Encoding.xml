@@ -1,16 +1,23 @@
-﻿<Type Name="UTF8Encoding" FullName="System.Text.UTF8Encoding">
+<Type Name="UTF8Encoding" FullName="System.Text.UTF8Encoding">
   <TypeSignature Language="C#" Value="public class UTF8Encoding : System.Text.Encoding" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit UTF8Encoding extends System.Text.Encoding" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UTF8Encoding extends System.Text.Encoding" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
   <TypeSignature Language="DocId" Value="T:System.Text.UTF8Encoding" />
   <TypeSignature Language="VB.NET" Value="Public Class UTF8Encoding&#xA;Inherits Encoding" />
-  <TypeSignature Language="C++ CLI" Value="public ref class UTF8Encoding : System::Text::Encoding" />
   <TypeSignature Language="F#" Value="type UTF8Encoding = class&#xA;    inherit Encoding" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UTF8Encoding : System::Text::Encoding" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit UTF8Encoding extends System.Text.Encoding" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
   <AssemblyInfo>
     <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -22,17 +29,28 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Text.Encoding.Extensions" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Text.Encoding.Extensions" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Text.Encoding.Extensions" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Text.Encoding.Extensions" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Text.Encoding.Extensions" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Text.Encoding.Extensions" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Text.Encoding</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-      <AttributeName>System.Serializable</AttributeName>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(true)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -43,7 +61,7 @@
 ## Remarks  
  Encoding is the process of transforming a set of Unicode characters into a sequence of bytes. Decoding is the process of transforming a sequence of encoded bytes into a set of Unicode characters.  
   
- UTF-8 is a Unicode encoding that represents each code point as a sequence of one to four bytes. Unlike the UTF-16 and UTF-32 encodings, the UTF-8 encoding does not require "endianness"; the encoding scheme is the same regardless of whether the processor is big-endian or little-endian. <xref:System.Text.UTF8Encoding> corresponds to the Windows code page 65001. For more information about the UTFs and other encodings supported by <xref:System.Text>, see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md).  
+ UTF-8 is a Unicode encoding that represents each code point as a sequence of one to four bytes. Unlike the UTF-16 and UTF-32 encodings, the UTF-8 encoding does not require "endianness"; the encoding scheme is the same regardless of whether the processor is big-endian or little-endian. <xref:System.Text.UTF8Encoding> corresponds to the Windows code page 65001. For more information about the UTFs and other encodings supported by <xref:System.Text>, see [Character Encoding in the .NET Framework](/dotnet/standard/base-types/character-encoding).  
   
  You can instantiate a <xref:System.Text.UTF8Encoding> object in a number of ways, depending on whether you want to it to provide a byte order mark (BOM) and whether you want to enable error detection. The following table lists the constructors and the <xref:System.Text.Encoding> property that return a <xref:System.Text.UTF8Encoding> object.  
   
@@ -64,7 +82,7 @@
   
  If the encoder is configured to provide a BOM, you can retrieve it by calling the <xref:System.Text.UTF8Encoding.GetPreamble%2A> method; otherwise, the method returns an empty array. Note that, even if a <xref:System.Text.UTF8Encoding> object is configured for BOM support, you must include the BOM at the beginning of the encoded byte stream as appropriate; the encoding methods of the <xref:System.Text.UTF8Encoding> class do not do this automatically.  
   
-> [!NOTE]
+> [!CAUTION]
 >  To enable error detection and to make the class instance more secure, you should call the <xref:System.Text.UTF8Encoding.%23ctor%28System.Boolean%2CSystem.Boolean%29> constructor and set the `throwOnInvalidBytes` parameter to `true`. With error detection enabled, a method that detects an invalid sequence of characters or bytes throws an <xref:System.ArgumentException> exception. Without error detection, no exception is thrown, and the invalid sequence is generally ignored.  
   
 > [!NOTE]
@@ -75,20 +93,20 @@
 ## Examples  
  The following example uses a <xref:System.Text.UTF8Encoding> object to encode a string of Unicode characters and store them in a byte array. The Unicode string includes two characters, Pi (U+03A0) and Sigma (U+03A3), that are outside the ASCII character range. When the encoded byte array is decoded back to a string, the Pi and Sigma characters are still present.  
   
- [!code-cpp[System.Text.UTF8Encoding Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding Example/CPP/snippet.cpp#1)]
- [!code-csharp[System.Text.UTF8Encoding Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF8Encoding Example/CS/snippet.cs#1)]
- [!code-vb[System.Text.UTF8Encoding Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding Example/VB/snippet.vb#1)]  
-  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding Example/CPP/snippet.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Text/UTF8Encoding/Overview/snippet.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding Example/VB/snippet.vb" id="Snippet1":::
+
  The following example uses the same string as the previous example, except that it writes the encoded bytes to a file and prefixes the byte stream with a byte order mark (BOM). It then reads the file in two different ways: as a text file by using a <xref:System.IO.StreamReader> object; and as a binary file. As you would expect, neither newly-read string includes the BOM.  
-  
- [!code-csharp[System.Text.UTF8Encoding Example#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF8Encoding Example/CS/bom1.cs#2)]
- [!code-vb[System.Text.UTF8Encoding Example#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding Example/VB/bom1.vb#2)]  
-  
+ 
+ :::code language="csharp" source="~/snippets/csharp/System.Text/UTF8Encoding/Overview/bom1.cs" interactive="try-dotnet" id="Snippet2":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding Example/VB/bom1.vb" id="Snippet2":::
+
  ]]></format>
     </remarks>
     <altmember cref="T:System.Text.Decoder" />
     <altmember cref="T:System.Text.Encoder" />
-    <related type="Article" href="~/docs/standard/base-types/character-encoding.md">Understanding Encodings</related>
+    <related type="Article" href="/dotnet/standard/base-types/character-encoding">Understanding Encodings</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -115,6 +133,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -126,6 +150,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -136,7 +161,7 @@
 ## Remarks  
  This constructor creates an instance that does not provide a Unicode byte order mark and does not throw an exception when an invalid encoding is detected.  
   
-> [!NOTE]
+> [!CAUTION]
 >  For security reasons, we recommend that you enable error detection by calling a constructor with a `throwOnInvalidBytes` parameter and setting its value to `true`.  
   
    
@@ -144,10 +169,10 @@
 ## Examples  
  The following example creates a new <xref:System.Text.UTF8Encoding> instance and displays its name.  
   
- [!code-cpp[System.Text.UTF8Encoding.ctor1 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.ctor1 Example/CPP/ctor.cpp#1)]
- [!code-csharp[System.Text.UTF8Encoding.ctor1 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.ctor1 Example/CS/ctor.cs#1)]
- [!code-vb[System.Text.UTF8Encoding.ctor1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding.ctor1 Example/VB/ctor.vb#1)]  
-  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.ctor1 Example/CPP/ctor.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Text/UTF8Encoding/.ctor/ctor.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding.ctor1 Example/VB/ctor.vb" id="Snippet1":::
+
  ]]></format>
         </remarks>
         <altmember cref="M:System.Text.UTF8Encoding.GetPreamble" />
@@ -158,8 +183,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool encoderShouldEmitUTF8Identifier) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.UTF8Encoding.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (encoderShouldEmitUTF8Identifier As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; UTF8Encoding(bool encoderShouldEmitUTF8Identifier);" />
       <MemberSignature Language="F#" Value="new System.Text.UTF8Encoding : bool -&gt; System.Text.UTF8Encoding" Usage="new System.Text.UTF8Encoding encoderShouldEmitUTF8Identifier" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UTF8Encoding(bool encoderShouldEmitUTF8Identifier);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -167,6 +192,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -178,6 +209,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="encoderShouldEmitUTF8Identifier" Type="System.Boolean" />
@@ -192,7 +224,7 @@
 ## Remarks  
  This constructor creates an instance that does not throw an exception when an invalid encoding is detected.  
   
-> [!NOTE]
+> [!CAUTION]
 >  For security reasons, you should enable error detection by calling a constructor that includes a `throwOnInvalidBytes` parameter and setting its value to `true`.  
   
  The `encoderShouldEmitUTF8Identifier` parameter controls the operation of the <xref:System.Text.UTF8Encoding.GetPreamble%2A> method. If `true`, the method returns a byte array containing the Unicode byte order mark (BOM) in UTF-8 format.  If `false`, it returns a zero-length byte array. However, setting `encoderShouldEmitUTF8Identifier` to `true` does not cause the <xref:System.Text.UTF8Encoding.GetBytes%2A> method to prefix the BOM at the beginning of the byte array, nor does it cause the <xref:System.Text.UTF8Encoding.GetByteCount%2A> method to include the number of bytes in the BOM in the byte count.  
@@ -202,10 +234,10 @@
 ## Examples  
  The following example creates a new <xref:System.Text.UTF8Encoding> instance and specifies that a Unicode byte order mark prefix should be emitted by the <xref:System.Text.UTF8Encoding.GetPreamble%2A> method. The <xref:System.Text.UTF8Encoding.GetPreamble%2A> method then returns the Unicode byte order mark prefix.  
   
- [!code-cpp[System.Text.UTF8Encoding.ctor2 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.ctor2 Example/CPP/ctor-boolean.cpp#1)]
- [!code-csharp[System.Text.UTF8Encoding.ctor2 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.ctor2 Example/CS/ctor-boolean.cs#1)]
- [!code-vb[System.Text.UTF8Encoding.ctor2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding.ctor2 Example/VB/ctor-boolean.vb#1)]  
-  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.ctor2 Example/CPP/ctor-boolean.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Text/UTF8Encoding/.ctor/ctor-boolean.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding.ctor2 Example/VB/ctor-boolean.vb" id="Snippet1":::
+
  ]]></format>
         </remarks>
         <altmember cref="M:System.Text.UTF8Encoding.GetPreamble" />
@@ -216,8 +248,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool encoderShouldEmitUTF8Identifier, bool throwOnInvalidBytes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.UTF8Encoding.#ctor(System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (encoderShouldEmitUTF8Identifier As Boolean, throwOnInvalidBytes As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; UTF8Encoding(bool encoderShouldEmitUTF8Identifier, bool throwOnInvalidBytes);" />
       <MemberSignature Language="F#" Value="new System.Text.UTF8Encoding : bool * bool -&gt; System.Text.UTF8Encoding" Usage="new System.Text.UTF8Encoding (encoderShouldEmitUTF8Identifier, throwOnInvalidBytes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UTF8Encoding(bool encoderShouldEmitUTF8Identifier, bool throwOnInvalidBytes);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -225,6 +257,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -236,6 +274,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="encoderShouldEmitUTF8Identifier" Type="System.Boolean" />
@@ -255,7 +294,7 @@
   
  If `throwOnInvalidBytes` is `true`, a method that detects an invalid byte sequence throws an <xref:System.ArgumentException?displayProperty=nameWithType> exception. Otherwise, the method does not throw an exception, and the invalid sequence is ignored.  
   
-> [!NOTE]
+> [!CAUTION]
 >  For security reasons, you should enable error detection by calling a constructor that includes a `throwOnInvalidBytes` parameter and setting that parameter to `true`.  
   
    
@@ -263,22 +302,23 @@
 ## Examples  
  The following example creates a new <xref:System.Text.UTF8Encoding> instance, specifying that the <xref:System.Text.UTF8Encoding.GetPreamble%2A> method should not emit a Unicode byte order mark prefix, and an exception should be thrown when an invalid encoding is detected. The behavior of this constructor is compared to the default <xref:System.Text.UTF8Encoding.%23ctor> constructor, which does not throw an exception when an invalid encoding is detected. The two <xref:System.Text.UTF8Encoding> instances encode a character array that contains two high surrogates (U+D801 and U+D802) in a row, which is an invalid character sequence; a high surrogate should always be followed by a low surrogate.  
   
- [!code-cpp[System.Text.UTF8Encoding.ctor3 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.ctor3 Example/CPP/ctor-boolean-boolean.cpp#1)]
- [!code-csharp[System.Text.UTF8Encoding.ctor3 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.ctor3 Example/CS/ctor-boolean-boolean.cs#1)]
- [!code-vb[System.Text.UTF8Encoding.ctor3 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding.ctor3 Example/VB/ctor-boolean-boolean.vb#1)]  
-  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.ctor3 Example/CPP/ctor-boolean-boolean.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Text/UTF8Encoding/.ctor/ctor-boolean-boolean.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding.ctor3 Example/VB/ctor-boolean-boolean.vb" id="Snippet1":::
+
  ]]></format>
         </remarks>
         <altmember cref="M:System.Text.UTF8Encoding.GetPreamble" />
       </Docs>
     </Member>
     <Member MemberName="Equals">
-      <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
+      <MemberSignature Language="C#" Value="public override bool Equals (object value);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.UTF8Encoding.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="uTF8Encoding.Equals value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
+      <MemberSignature Language="C#" Value="public override bool Equals (object? value);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -286,6 +326,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -297,12 +343,26 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.NotNullWhen(true)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.NotNullWhen(true)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
       </Parameters>
       <Docs>
         <param name="value">The object to compare with the current instance.</param>
@@ -325,11 +385,11 @@
   
 ## Examples  
  The following example uses the <xref:System.Text.UTF8Encoding.Equals%2A> method to test whether the current <xref:System.Text.UTF8Encoding> object is equal to a different <xref:System.Text.UTF8Encoding> object. Four <xref:System.Text.UTF8Encoding> objects are created and compared and the results of the comparisons are displayed.  
-  
- [!code-cpp[System.Text.UTF8Encoding.Equals Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.Equals Example/CPP/equals-object.cpp#1)]
- [!code-csharp[System.Text.UTF8Encoding.Equals Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.Equals Example/CS/equals-object.cs#1)]
- [!code-vb[System.Text.UTF8Encoding.Equals Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding.Equals Example/VB/equals-object.vb#1)]  
-  
+ 
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.Equals Example/CPP/equals-object.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Text/UTF8Encoding/Equals/equals-object.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding.Equals Example/VB/equals-object.vb" id="Snippet1":::
+
  ]]></format>
         </remarks>
         <altmember cref="M:System.Text.UTF8Encoding.#ctor" />
@@ -348,12 +408,66 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="GetByteCount">
+      <MemberSignature Language="C#" Value="public override int GetByteCount (ReadOnlySpan&lt;char&gt; chars);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetByteCount(valuetype System.ReadOnlySpan`1&lt;char&gt; chars) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.UTF8Encoding.GetByteCount(System.ReadOnlySpan{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetByteCount (chars As ReadOnlySpan(Of Char)) As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetByteCount : ReadOnlySpan&lt;char&gt; -&gt; int" Usage="uTF8Encoding.GetByteCount chars" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetByteCount(ReadOnlySpan&lt;char&gt; chars);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="chars" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
+      </Parameters>
+      <Docs>
+        <param name="chars">The span that contains the set of characters to encode.</param>
+        <summary>Calculates the number of bytes produced by encoding the specified character span.</summary>
+        <returns>The number of bytes produced by encoding the specified character span.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To calculate the exact size required by <xref:System.Text.UTF8Encoding.GetBytes%2A> to store the resulting bytes, you call the <xref:System.Text.UTF8Encoding.GetByteCount%2A> method. To calculate the maximum size, you call the <xref:System.Text.UTF8Encoding.GetMaxByteCount%2A> method. The <xref:System.Text.UTF8Encoding.GetByteCount%2A> method generally allocates less memory, while the <xref:System.Text.UTF8Encoding.GetMaxByteCount%2A> method generally executes faster.  
+  
+ With error detection, an invalid sequence causes this method to throw an <xref:System.ArgumentException> exception. Without error detection, invalid sequences are ignored, and no exception is thrown.  
+  
+ To ensure that the encoded bytes are decoded properly when they are saved as a file or as a stream, you can prefix a stream of encoded bytes with a preamble. Inserting the preamble at the beginning of a byte stream (such as at the beginning of a series of bytes to be written to a file) is the developer's responsibility, and the number of bytes in the preamble is not reflected in the value returned by the <xref:System.Text.UTF8Encoding.GetByteCount%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">Error detection is enabled, and <paramref name="chars" /> contains an invalid sequence of characters.</exception>
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (for more information, see <see href="https://learn.microsoft.com/dotnet/standard/base-types/character-encoding">Character Encoding in .NET</see>).
+  
+ -and-  
+  
+ <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetByteCount">
       <MemberSignature Language="C#" Value="public override int GetByteCount (string chars);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetByteCount(string chars) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.UTF8Encoding.GetByteCount(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetByteCount (chars As String) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetByteCount(System::String ^ chars);" />
       <MemberSignature Language="F#" Value="override this.GetByteCount : string -&gt; int" Usage="uTF8Encoding.GetByteCount chars" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetByteCount(System::String ^ chars);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -361,6 +475,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -372,10 +492,16 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -402,17 +528,17 @@
   
 ## Examples  
  The following example calls the <xref:System.Text.UTF8Encoding.GetMaxByteCount%2A> and <xref:System.Text.UTF8Encoding.GetByteCount%28System.String%29> methods to calculate the maximum and actual number of bytes required to encode a string. It also displays the actual number of bytes required to store a byte stream with a byte order mark.  
-  
- [!code-csharp[System.Text.UTF8Encoding.GetByteCount#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.utf8encoding.getbytecount/cs/getbytecount1.cs#1)]
- [!code-vb[System.Text.UTF8Encoding.GetByteCount#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.utf8encoding.getbytecount/vb/getbytecount1.vb#1)]  
-  
+ 
+ :::code language="csharp" source="~/snippets/csharp/System.Text/UTF8Encoding/GetByteCount/getbytecount1.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.text.utf8encoding.getbytecount/vb/getbytecount1.vb" id="Snippet1":::
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="chars" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting number of bytes is greater than the maximum number that can be returned as an integer.</exception>
         <exception cref="T:System.ArgumentException">Error detection is enabled, and <paramref name="chars" /> contains an invalid sequence of characters.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (for more information, see <see href="https://learn.microsoft.com/dotnet/standard/base-types/character-encoding">Character Encoding in .NET</see>)
   
  -and-  
   
@@ -426,14 +552,20 @@
       <MemberSignature Language="C#" Value="public override int GetByteCount (char* chars, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetByteCount(char* chars, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.UTF8Encoding.GetByteCount(System.Char*,System.Int32)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetByteCount(char* chars, int count);" />
       <MemberSignature Language="F#" Value="override this.GetByteCount : nativeptr&lt;char&gt; * int -&gt; int" Usage="uTF8Encoding.GetByteCount (chars, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetByteCount(char* chars, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -444,24 +576,28 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
-          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        <Attribute FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1">
+          <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        <Attribute FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6">
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.0">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="chars" Type="System.Char*" />
-        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="chars" Type="System.Char*" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="count" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="chars">A pointer to the first character to encode.</param>
@@ -489,12 +625,11 @@
   
  The resulting number of bytes is greater than the maximum number that can be returned as an integer.</exception>
         <exception cref="T:System.ArgumentException">Error detection is enabled, and <paramref name="chars" /> contains an invalid sequence of characters.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for a complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see <see href="https://learn.microsoft.com/dotnet/standard/base-types/character-encoding">Character Encoding in .NET</see> for a complete explanation).
   
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <altmember cref="M:System.Text.UTF8Encoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)" />
         <altmember cref="M:System.Text.UTF8Encoding.GetMaxByteCount(System.Int32)" />
         <altmember cref="M:System.Text.UTF8Encoding.GetEncoder" />
@@ -505,8 +640,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetByteCount(char[] chars, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.UTF8Encoding.GetByteCount(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetByteCount (chars As Char(), index As Integer, count As Integer) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetByteCount(cli::array &lt;char&gt; ^ chars, int index, int count);" />
       <MemberSignature Language="F#" Value="override this.GetByteCount : char[] * int * int -&gt; int" Usage="uTF8Encoding.GetByteCount (chars, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetByteCount(cli::array &lt;char&gt; ^ chars, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -514,6 +649,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -525,10 +666,16 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -560,9 +707,9 @@
 ## Examples  
  The following example populates an array with a Latin uppercase and lowercase characters and calls the <xref:System.Text.UTF8Encoding.GetByteCount%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method to determine the number of bytes needed to encode the Latin lowercase characters. It then displays this information along with the total number of bytes needed if a byte order mark is added. It compares this number with the value returned by the <xref:System.Text.UTF8Encoding.GetMaxByteCount%2A> method, which indicates maximum number of bytes needed to encode the Latin lowercase characters.  
   
- [!code-csharp[System.Text.UTF8Encoding.GetByteCount#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.utf8encoding.getbytecount/cs/getbytecount2.cs#2)]
- [!code-vb[System.Text.UTF8Encoding.GetByteCount#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.utf8encoding.getbytecount/vb/getbytecount2.vb#2)]  
-  
+ :::code language="csharp" source="~/snippets/csharp/System.Text/UTF8Encoding/GetByteCount/getbytecount2.cs" interactive="try-dotnet" id="Snippet2":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.text.utf8encoding.getbytecount/vb/getbytecount2.vb" id="Snippet2"::: 
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -578,7 +725,7 @@
   
  The resulting number of bytes is greater than the maximum number that can be returned as an integer.</exception>
         <exception cref="T:System.ArgumentException">Error detection is enabled, and <paramref name="chars" /> contains an invalid sequence of characters.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (for more information, see <see href="https://learn.microsoft.com/dotnet/standard/base-types/character-encoding">Character Encoding in .NET</see>)
   
  -and-  
   
@@ -603,8 +750,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] GetBytes(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.UTF8Encoding.GetBytes(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetBytes (s As String) As Byte()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ GetBytes(System::String ^ s);" />
       <MemberSignature Language="F#" Value="override this.GetBytes : string -&gt; byte[]" Usage="uTF8Encoding.GetBytes s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ GetBytes(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -620,7 +767,7 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="s" Type="System.String" />
+        <Parameter Name="s" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
         <param name="s">The character string to encode.</param>
@@ -630,17 +777,75 @@
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
+      <MemberSignature Language="C#" Value="public override int GetBytes (ReadOnlySpan&lt;char&gt; chars, Span&lt;byte&gt; bytes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetBytes(valuetype System.ReadOnlySpan`1&lt;char&gt; chars, valuetype System.Span`1&lt;unsigned int8&gt; bytes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.UTF8Encoding.GetBytes(System.ReadOnlySpan{System.Char},System.Span{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetBytes (chars As ReadOnlySpan(Of Char), bytes As Span(Of Byte)) As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetBytes : ReadOnlySpan&lt;char&gt; * Span&lt;byte&gt; -&gt; int" Usage="uTF8Encoding.GetBytes (chars, bytes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetBytes(ReadOnlySpan&lt;char&gt; chars, Span&lt;System::Byte&gt; bytes);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="chars" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
+        <Parameter Name="bytes" Type="System.Span&lt;System.Byte&gt;" Index="1" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
+      </Parameters>
+      <Docs>
+        <param name="chars">The character span to encode.</param>
+        <param name="bytes">The span to contain the resulting set of bytes.</param>
+        <summary>Encodes the specified character span into the specified byte span.</summary>
+        <returns>The actual number of bytes written into <paramref name="bytes" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To calculate the exact size required by <xref:System.Text.UTF8Encoding.GetBytes%2A> to store the resulting bytes, you call the <xref:System.Text.UTF8Encoding.GetByteCount%2A> method. To calculate the maximum size, you call the <xref:System.Text.UTF8Encoding.GetMaxByteCount%2A> method. The <xref:System.Text.UTF8Encoding.GetByteCount%2A> method generally allocates less memory, while the <xref:System.Text.UTF8Encoding.GetMaxByteCount%2A> method generally executes faster.  
+  
+ With error detection, an invalid sequence causes this method to throw an <xref:System.ArgumentException> exception. Without error detection, invalid sequences are ignored, and no exception is thrown.  
+  
+ Data to be converted, such as data read from a stream, might be available only in sequential blocks. In this case, or if the amount of data is so large that it needs to be divided into smaller blocks, use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> returned by the <xref:System.Text.UTF8Encoding.GetDecoder%2A> method or the <xref:System.Text.UTF8Encoding.GetEncoder%2A> method, respectively.  
+  
+ To ensure that the encoded bytes are decoded properly when they are saved as a file or as a stream, you can prefix a stream of encoded bytes with a preamble. Inserting the preamble at the beginning of a byte stream (such as at the beginning of a series of bytes to be written to a file) is the developer's responsibility. The <xref:System.Text.UTF8Encoding.GetBytes%2A> method does not prepend a preamble to the beginning of a sequence of encoded bytes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBytes">
       <MemberSignature Language="C#" Value="public override int GetBytes (char* chars, int charCount, byte* bytes, int byteCount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetBytes(char* chars, int32 charCount, unsigned int8* bytes, int32 byteCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.UTF8Encoding.GetBytes(System.Char*,System.Int32,System.Byte*,System.Int32)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetBytes(char* chars, int charCount, System::Byte* bytes, int byteCount);" />
       <MemberSignature Language="F#" Value="override this.GetBytes : nativeptr&lt;char&gt; * int * nativeptr&lt;byte&gt; * int -&gt; int" Usage="uTF8Encoding.GetBytes (chars, charCount, bytes, byteCount)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetBytes(char* chars, int charCount, System::Byte* bytes, int byteCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -651,26 +856,30 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
-          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        <Attribute FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1">
+          <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        <Attribute FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6">
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.0">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="chars" Type="System.Char*" />
-        <Parameter Name="charCount" Type="System.Int32" />
-        <Parameter Name="bytes" Type="System.Byte*" />
-        <Parameter Name="byteCount" Type="System.Int32" />
+        <Parameter Name="chars" Type="System.Char*" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="charCount" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="bytes" Type="System.Byte*" Index="2" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="byteCount" Type="System.Int32" Index="3" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="chars">A pointer to the first character to encode.</param>
@@ -706,12 +915,11 @@
  -or-  
   
  <paramref name="byteCount" /> is less than the resulting number of bytes.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (for more information, see <see href="https://learn.microsoft.com/dotnet/standard/base-types/character-encoding">Character Encoding in .NET</see>)
   
  -and-  
   
  <see cref="P:System.Text.Encoding.EncoderFallback" /> is set to <see cref="T:System.Text.EncoderExceptionFallback" />.</exception>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <altmember cref="M:System.Text.UTF8Encoding.GetEncoder" />
         <altmember cref="M:System.Text.UTF8Encoding.GetByteCount(System.Char[],System.Int32,System.Int32)" />
         <altmember cref="M:System.Text.UTF8Encoding.GetMaxByteCount(System.Int32)" />
@@ -722,8 +930,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetBytes(char[] chars, int32 charIndex, int32 charCount, unsigned int8[] bytes, int32 byteIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.UTF8Encoding.GetBytes(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetBytes (chars As Char(), charIndex As Integer, charCount As Integer, bytes As Byte(), byteIndex As Integer) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetBytes(cli::array &lt;char&gt; ^ chars, int charIndex, int charCount, cli::array &lt;System::Byte&gt; ^ bytes, int byteIndex);" />
       <MemberSignature Language="F#" Value="override this.GetBytes : char[] * int * int * byte[] * int -&gt; int" Usage="uTF8Encoding.GetBytes (chars, charIndex, charCount, bytes, byteIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetBytes(cli::array &lt;char&gt; ^ chars, int charIndex, int charCount, cli::array &lt;System::Byte&gt; ^ bytes, int byteIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -731,6 +939,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -742,10 +956,16 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -782,11 +1002,11 @@
   
 ## Examples  
  The following example uses the <xref:System.Text.UTF8Encoding.GetBytes%2A> method to encode a range of characters from a string and stores the encoded bytes in a range of elements in a byte array.  
-  
- [!code-cpp[System.Text.UTF8Encoding.GetBytes3 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetBytes3 Example/CPP/getbytes-string-int32-int32-byte[]-int32.cpp#1)]
- [!code-csharp[System.Text.UTF8Encoding.GetBytes3 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetBytes3 Example/CS/getbytes-string-int32-int32-byte[]-int32.cs#1)]
- [!code-vb[System.Text.UTF8Encoding.GetBytes3 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetBytes3 Example/VB/getbytes-string-int32-int32-byte[]-int32.vb#1)]  
-  
+ 
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetBytes3 Example/CPP/getbytes-string-int32-int32-byte[]-int32.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Text/UTF8Encoding/GetBytes/getbytes-string-int32-int32-byte[]-int32.cs" interactive="try-dotnet" id="Snippet1":::  
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetBytes3 Example/VB/getbytes-string-int32-int32-byte[]-int32.vb" id="Snippet1":::
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -810,7 +1030,7 @@
  -or-  
   
  <paramref name="bytes" /> does not have enough capacity from <paramref name="byteIndex" /> to the end of the array to accommodate the resulting bytes.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (for more information, see <see href="https://learn.microsoft.com/dotnet/standard/base-types/character-encoding">Character Encoding in .NET</see>)
   
  -and-  
   
@@ -825,8 +1045,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetBytes(string s, int32 charIndex, int32 charCount, unsigned int8[] bytes, int32 byteIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.UTF8Encoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetBytes (s As String, charIndex As Integer, charCount As Integer, bytes As Byte(), byteIndex As Integer) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetBytes(System::String ^ s, int charIndex, int charCount, cli::array &lt;System::Byte&gt; ^ bytes, int byteIndex);" />
       <MemberSignature Language="F#" Value="override this.GetBytes : string * int * int * byte[] * int -&gt; int" Usage="uTF8Encoding.GetBytes (s, charIndex, charCount, bytes, byteIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetBytes(System::String ^ s, int charIndex, int charCount, cli::array &lt;System::Byte&gt; ^ bytes, int byteIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -834,6 +1054,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -845,10 +1071,16 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -885,11 +1117,11 @@
   
 ## Examples  
  The following example uses the <xref:System.Text.UTF8Encoding.GetBytes%2A> method to encode a range of elements from a Unicode character array and store the encoded bytes in a range of elements in a byte array.  
-  
- [!code-cpp[System.Text.UTF8Encoding.GetBytes1 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetBytes1 Example/CPP/getbytes-char[]-int32-int32-byte[]-int32.cpp#1)]
- [!code-csharp[System.Text.UTF8Encoding.GetBytes1 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetBytes1 Example/CS/getbytes-char[]-int32-int32-byte[]-int32.cs#1)]
- [!code-vb[System.Text.UTF8Encoding.GetBytes1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetBytes1 Example/VB/getbytes-char[]-int32-int32-byte[]-int32.vb#1)]  
-  
+ 
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetBytes1 Example/CPP/getbytes-char[]-int32-int32-byte[]-int32.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Text/UTF8Encoding/GetBytes/getbytes-char[]-int32-int32-byte[]-int32.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetBytes1 Example/VB/getbytes-char[]-int32-int32-byte[]-int32.vb" id="Snippet1":::
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -913,7 +1145,7 @@
  -or-  
   
  <paramref name="bytes" /> does not have enough capacity from <paramref name="byteIndex" /> to the end of the array to accommodate the resulting bytes.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (for more information, see <see href="https://learn.microsoft.com/dotnet/standard/base-types/character-encoding">Character Encoding in .NET</see>)
   
  -and-  
   
@@ -934,17 +1166,69 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="GetCharCount">
+      <MemberSignature Language="C#" Value="public override int GetCharCount (ReadOnlySpan&lt;byte&gt; bytes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetCharCount(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; bytes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.UTF8Encoding.GetCharCount(System.ReadOnlySpan{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCharCount (bytes As ReadOnlySpan(Of Byte)) As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetCharCount : ReadOnlySpan&lt;byte&gt; -&gt; int" Usage="uTF8Encoding.GetCharCount bytes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetCharCount(ReadOnlySpan&lt;System::Byte&gt; bytes);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bytes" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
+      </Parameters>
+      <Docs>
+        <param name="bytes">The span containing the set of bytes to decode.</param>
+        <summary>Calculates the number of characters produced by decoding the specified byte span.</summary>
+        <returns>The number of characters produced by decoding the specified byte span.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To calculate the exact size required by <xref:System.Text.UTF8Encoding.GetChars%2A> to store the resulting characters, call the <xref:System.Text.UTF8Encoding.GetCharCount%2A> method. To calculate the maximum size, call the <xref:System.Text.UTF8Encoding.GetMaxCharCount%2A> method. The <xref:System.Text.UTF8Encoding.GetCharCount%2A> method generally allocates less memory, while the <xref:System.Text.UTF8Encoding.GetMaxCharCount%2A> method generally executes faster.  
+  
+ With error detection, an invalid sequence causes this method to throw an <xref:System.ArgumentException> exception. Without error detection, invalid sequences are ignored, and no exception is thrown.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCharCount">
       <MemberSignature Language="C#" Value="public override int GetCharCount (byte* bytes, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetCharCount(unsigned int8* bytes, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.UTF8Encoding.GetCharCount(System.Byte*,System.Int32)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetCharCount(System::Byte* bytes, int count);" />
       <MemberSignature Language="F#" Value="override this.GetCharCount : nativeptr&lt;byte&gt; * int -&gt; int" Usage="uTF8Encoding.GetCharCount (bytes, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetCharCount(System::Byte* bytes, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -955,24 +1239,28 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
-          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        <Attribute FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1">
+          <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        <Attribute FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6">
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.0">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="bytes" Type="System.Byte*" />
-        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="bytes" Type="System.Byte*" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="count" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="bytes">A pointer to the first byte to decode.</param>
@@ -998,12 +1286,11 @@
   
  The resulting number of bytes is greater than the maximum number that can be returned as an integer.</exception>
         <exception cref="T:System.ArgumentException">Error detection is enabled, and <paramref name="bytes" /> contains an invalid sequence of bytes.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (for more information, see <see href="https://learn.microsoft.com/dotnet/standard/base-types/character-encoding">Character Encoding in .NET</see>)
   
  -and-  
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <altmember cref="Overload:System.Text.UTF8Encoding.GetChars" />
         <altmember cref="M:System.Text.UTF8Encoding.GetMaxCharCount(System.Int32)" />
         <altmember cref="M:System.Text.UTF8Encoding.GetDecoder" />
@@ -1014,8 +1301,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetCharCount(unsigned int8[] bytes, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.UTF8Encoding.GetCharCount(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCharCount (bytes As Byte(), index As Integer, count As Integer) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetCharCount(cli::array &lt;System::Byte&gt; ^ bytes, int index, int count);" />
       <MemberSignature Language="F#" Value="override this.GetCharCount : byte[] * int * int -&gt; int" Usage="uTF8Encoding.GetCharCount (bytes, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetCharCount(cli::array &lt;System::Byte&gt; ^ bytes, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -1023,6 +1310,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1034,10 +1327,16 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1066,11 +1365,11 @@
   
 ## Examples  
  The following example uses the <xref:System.Text.UTF8Encoding.GetCharCount%2A> method to return the number of characters produced by decoding a range of elements in a byte array.  
-  
- [!code-cpp[System.Text.UTF8Encoding.GetCharCount Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetCharCount Example/CPP/getcharcount-byte[]-int32-int32.cpp#1)]
- [!code-csharp[System.Text.UTF8Encoding.GetCharCount Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetCharCount Example/CS/getcharcount-byte[]-int32-int32.cs#1)]
- [!code-vb[System.Text.UTF8Encoding.GetCharCount Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetCharCount Example/VB/getcharcount-byte[]-int32-int32.vb#1)]  
-  
+ 
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetCharCount Example/CPP/getcharcount-byte[]-int32-int32.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Text/UTF8Encoding/GetCharCount/getcharcount-byte[]-int32-int32.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetCharCount Example/VB/getcharcount-byte[]-int32-int32.vb" id="Snippet1":::
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1086,7 +1385,7 @@
   
  The resulting number of bytes is greater than the maximum number that can be returned as an integer.</exception>
         <exception cref="T:System.ArgumentException">Error detection is enabled, and <paramref name="bytes" /> contains an invalid sequence of bytes.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (for more information, see <see href="https://learn.microsoft.com/dotnet/standard/base-types/character-encoding">Character Encoding in .NET</see>)
   
  -and-  
   
@@ -1107,17 +1406,75 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="GetChars">
+      <MemberSignature Language="C#" Value="public override int GetChars (ReadOnlySpan&lt;byte&gt; bytes, Span&lt;char&gt; chars);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetChars(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; bytes, valuetype System.Span`1&lt;char&gt; chars) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.UTF8Encoding.GetChars(System.ReadOnlySpan{System.Byte},System.Span{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChars (bytes As ReadOnlySpan(Of Byte), chars As Span(Of Char)) As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetChars : ReadOnlySpan&lt;byte&gt; * Span&lt;char&gt; -&gt; int" Usage="uTF8Encoding.GetChars (bytes, chars)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetChars(ReadOnlySpan&lt;System::Byte&gt; bytes, Span&lt;char&gt; chars);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bytes" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
+        <Parameter Name="chars" Type="System.Span&lt;System.Char&gt;" Index="1" FrameworkAlternate="netcore-3.0;netcore-3.1;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
+      </Parameters>
+      <Docs>
+        <param name="bytes">The span containing the bytes to decode.</param>
+        <param name="chars">The span to contain the resulting set of characters.</param>
+        <summary>Decodes the specified byte span into the specified character span.</summary>
+        <returns>The actual number of characters written into <paramref name="chars" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To calculate the exact size required by <xref:System.Text.UTF8Encoding.GetChars%2A> to store the resulting characters, call the <xref:System.Text.UTF8Encoding.GetCharCount%2A> method. To calculate the maximum size, call the <xref:System.Text.UTF8Encoding.GetMaxCharCount%2A> method. The <xref:System.Text.UTF8Encoding.GetCharCount%2A> method generally allocates less memory, while the <xref:System.Text.UTF8Encoding.GetMaxCharCount%2A> method generally executes faster.  
+  
+ With error detection, an invalid sequence causes this method to throw an <xref:System.ArgumentException> exception. Without error detection, invalid sequences are ignored, and no exception is thrown.  
+  
+ If the set of bytes to be decoded includes the byte order mark (BOM) and the span of bytes was returned by a method of a non-BOM aware type, the character `U+FFFE` is included in the span of characters returned by this method. You can remove it by calling the <xref:System.String.TrimStart%2A?displayProperty=nameWithType> method.  
+  
+ Data to be converted, such as data read from a stream, might be available only in sequential blocks. In this case, or if the amount of data is so large that it needs to be divided into smaller blocks, use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> object provided by the <xref:System.Text.UTF8Encoding.GetDecoder%2A> method or the <xref:System.Text.UTF8Encoding.GetEncoder%2A> method, respectively.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChars">
       <MemberSignature Language="C#" Value="public override int GetChars (byte* bytes, int byteCount, char* chars, int charCount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetChars(unsigned int8* bytes, int32 byteCount, char* chars, int32 charCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.UTF8Encoding.GetChars(System.Byte*,System.Int32,System.Char*,System.Int32)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetChars(System::Byte* bytes, int byteCount, char* chars, int charCount);" />
       <MemberSignature Language="F#" Value="override this.GetChars : nativeptr&lt;byte&gt; * int * nativeptr&lt;char&gt; * int -&gt; int" Usage="uTF8Encoding.GetChars (bytes, byteCount, chars, charCount)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetChars(System::Byte* bytes, int byteCount, char* chars, int charCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1128,26 +1485,30 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
-          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        <Attribute FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1">
+          <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        <Attribute FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6">
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.0">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="bytes" Type="System.Byte*" />
-        <Parameter Name="byteCount" Type="System.Int32" />
-        <Parameter Name="chars" Type="System.Char*" />
-        <Parameter Name="charCount" Type="System.Int32" />
+        <Parameter Name="bytes" Type="System.Byte*" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="byteCount" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="chars" Type="System.Char*" Index="2" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="charCount" Type="System.Int32" Index="3" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="bytes">A pointer to the first byte to decode.</param>
@@ -1183,12 +1544,11 @@
  -or-  
   
  <paramref name="charCount" /> is less than the resulting number of characters.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (for more information, see <see href="https://learn.microsoft.com/dotnet/standard/base-types/character-encoding">Character Encoding in .NET</see>)
   
  -and-  
   
  <see cref="P:System.Text.Encoding.DecoderFallback" /> is set to <see cref="T:System.Text.DecoderExceptionFallback" />.</exception>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <altmember cref="M:System.Text.UTF8Encoding.GetCharCount(System.Byte[],System.Int32,System.Int32)" />
         <altmember cref="M:System.Text.UTF8Encoding.GetMaxCharCount(System.Int32)" />
         <altmember cref="M:System.Text.UTF8Encoding.GetDecoder" />
@@ -1200,8 +1560,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetChars(unsigned int8[] bytes, int32 byteIndex, int32 byteCount, char[] chars, int32 charIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.UTF8Encoding.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChars (bytes As Byte(), byteIndex As Integer, byteCount As Integer, chars As Char(), charIndex As Integer) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetChars(cli::array &lt;System::Byte&gt; ^ bytes, int byteIndex, int byteCount, cli::array &lt;char&gt; ^ chars, int charIndex);" />
       <MemberSignature Language="F#" Value="override this.GetChars : byte[] * int * int * char[] * int -&gt; int" Usage="uTF8Encoding.GetChars (bytes, byteIndex, byteCount, chars, charIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetChars(cli::array &lt;System::Byte&gt; ^ bytes, int byteIndex, int byteCount, cli::array &lt;char&gt; ^ chars, int charIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -1209,6 +1569,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1220,10 +1586,16 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1261,10 +1633,10 @@
 ## Examples  
  The following example uses the <xref:System.Text.UTF8Encoding.GetChars%2A> method to decode a range of elements in a byte array and store the result in a character array.  
   
- [!code-cpp[System.Text.UTF8Encoding.GetChars Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetChars Example/CPP/getchars-byte[]-int32-int32-char[]-int32.cpp#1)]
- [!code-csharp[System.Text.UTF8Encoding.GetChars Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetChars Example/CS/getchars-byte[]-int32-int32-char[]-int32.cs#1)]
- [!code-vb[System.Text.UTF8Encoding.GetChars Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetChars Example/VB/getchars-byte[]-int32-int32-char[]-int32.vb#1)]  
-  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetChars Example/CPP/getchars-byte[]-int32-int32-char[]-int32.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Text/UTF8Encoding/GetChars/getchars-byte[]-int32-int32-char[]-int32.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetChars Example/VB/getchars-byte[]-int32-int32-char[]-int32.vb" id="Snippet1":::
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1288,7 +1660,7 @@
  -or-  
   
  <paramref name="chars" /> does not have enough capacity from <paramref name="charIndex" /> to the end of the array to accommodate the resulting characters.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (for more information, see <see href="https://learn.microsoft.com/dotnet/standard/base-types/character-encoding">Character Encoding in .NET</see>)
   
  -and-  
   
@@ -1304,8 +1676,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Text.Decoder GetDecoder() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.UTF8Encoding.GetDecoder" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDecoder () As Decoder" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Text::Decoder ^ GetDecoder();" />
       <MemberSignature Language="F#" Value="override this.GetDecoder : unit -&gt; System.Text.Decoder" Usage="uTF8Encoding.GetDecoder " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Text::Decoder ^ GetDecoder();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -1313,6 +1685,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1324,7 +1702,14 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Text.Decoder</ReturnType>
       </ReturnValue>
@@ -1345,10 +1730,10 @@
 ## Examples  
  The following example uses the <xref:System.Text.UTF8Encoding.GetDecoder%2A> method to obtain a UTF-8 decoder. The decoder converts a sequence of bytes into a sequence of characters.  
   
- [!code-cpp[System.Text.UTF8Encoding.GetDecoder Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetDecoder Example/CPP/getdecoder-.cpp#1)]
- [!code-csharp[System.Text.UTF8Encoding.GetDecoder Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetDecoder Example/CS/getdecoder-.cs#1)]
- [!code-vb[System.Text.UTF8Encoding.GetDecoder Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetDecoder Example/VB/getdecoder-.vb#1)]  
-  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetDecoder Example/CPP/getdecoder-.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Text/UTF8Encoding/GetDecoder/getdecoder-.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetDecoder Example/VB/getdecoder-.vb" id="Snippet1":::
+
  ]]></format>
         </remarks>
         <altmember cref="T:System.Text.Decoder" />
@@ -1356,7 +1741,7 @@
         <altmember cref="M:System.Text.UTF8Encoding.GetString(System.Byte[],System.Int32,System.Int32)" />
         <altmember cref="M:System.Text.UTF8Encoding.GetCharCount(System.Byte[],System.Int32,System.Int32)" />
         <altmember cref="M:System.Text.UTF8Encoding.GetEncoder" />
-        <related type="Article" href="~/docs/standard/base-types/character-encoding.md">Understanding Encodings</related>
+        <related type="Article" href="/dotnet/standard/base-types/character-encoding">Understanding Encodings</related>
       </Docs>
     </Member>
     <Member MemberName="GetEncoder">
@@ -1364,8 +1749,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Text.Encoder GetEncoder() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.UTF8Encoding.GetEncoder" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEncoder () As Encoder" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Text::Encoder ^ GetEncoder();" />
       <MemberSignature Language="F#" Value="override this.GetEncoder : unit -&gt; System.Text.Encoder" Usage="uTF8Encoding.GetEncoder " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Text::Encoder ^ GetEncoder();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -1373,6 +1758,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1384,7 +1775,14 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Text.Encoder</ReturnType>
       </ReturnValue>
@@ -1405,17 +1803,17 @@
 ## Examples  
  The following example uses the <xref:System.Text.UTF8Encoding.GetEncoder%2A> method to obtain an encoder to convert a sequence of characters into a UTF-8 encoded sequence of bytes.  
   
- [!code-cpp[System.Text.UTF8Encoding.GetEncoder Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetEncoder Example/CPP/getencoder-.cpp#1)]
- [!code-csharp[System.Text.UTF8Encoding.GetEncoder Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetEncoder Example/CS/getencoder-.cs#1)]
- [!code-vb[System.Text.UTF8Encoding.GetEncoder Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetEncoder Example/VB/getencoder-.vb#1)]  
-  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetEncoder Example/CPP/getencoder-.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Text/UTF8Encoding/GetEncoder/getencoder-.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetEncoder Example/VB/getencoder-.vb" id="Snippet1":::
+
  ]]></format>
         </remarks>
         <altmember cref="T:System.Text.Encoder" />
         <altmember cref="M:System.Text.UTF8Encoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)" />
         <altmember cref="M:System.Text.UTF8Encoding.GetByteCount(System.Char[],System.Int32,System.Int32)" />
         <altmember cref="M:System.Text.UTF8Encoding.GetDecoder" />
-        <related type="Article" href="~/docs/standard/base-types/character-encoding.md">Understanding Encodings</related>
+        <related type="Article" href="/dotnet/standard/base-types/character-encoding">Understanding Encodings</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -1423,8 +1821,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.UTF8Encoding.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="uTF8Encoding.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -1432,6 +1830,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1443,6 +1847,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1457,9 +1862,9 @@
 ## Examples  
  The following example uses the <xref:System.Text.UTF8Encoding.GetHashCode%2A> method to return a hash code for <xref:System.Text.UTF8Encoding> instances. Notice that the hash code returned by this method depends on the constructor used to create the <xref:System.Text.UTF8Encoding> object.  
   
- [!code-cpp[System.Text.UTF8Encoding.GetHashCode Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetHashCode Example/CPP/gethashcode-.cpp#1)]
- [!code-csharp[System.Text.UTF8Encoding.GetHashCode Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetHashCode Example/CS/gethashcode-.cs#1)]
- [!code-vb[System.Text.UTF8Encoding.GetHashCode Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetHashCode Example/VB/gethashcode-.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetHashCode Example/CPP/gethashcode-.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Text/UTF8Encoding/GetHashCode/gethashcode-.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetHashCode Example/VB/gethashcode-.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1471,8 +1876,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetMaxByteCount(int32 charCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.UTF8Encoding.GetMaxByteCount(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMaxByteCount (charCount As Integer) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetMaxByteCount(int charCount);" />
       <MemberSignature Language="F#" Value="override this.GetMaxByteCount : int -&gt; int" Usage="uTF8Encoding.GetMaxByteCount charCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetMaxByteCount(int charCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -1480,6 +1885,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1491,6 +1902,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1522,10 +1934,10 @@
 ## Examples  
  The following example uses the <xref:System.Text.UTF8Encoding.GetMaxByteCount%2A> method to return the maximum number of bytes required to encode a specified number of characters.  
   
- [!code-cpp[System.Text.utf8encoding.getmaxbytecount example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetMaxByteCount Example/CPP/getmaxbytecount-int32.cpp#1)]
- [!code-csharp[System.Text.utf8encoding.getmaxbytecount example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetMaxByteCount Example/CS/getmaxbytecount-int32.cs#1)]
- [!code-vb[System.Text.utf8encoding.getmaxbytecount example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetMaxByteCount Example/VB/getmaxbytecount-int32.vb#1)]  
-  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetMaxByteCount Example/CPP/getmaxbytecount-int32.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Text/UTF8Encoding/GetMaxByteCount/getmaxbytecount-int32.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetMaxByteCount Example/VB/getmaxbytecount-int32.vb" id="Snippet1":::
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1534,7 +1946,7 @@
  -or-  
   
  The resulting number of bytes is greater than the maximum number that can be returned as an integer.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (for more information, see <see href="https://learn.microsoft.com/dotnet/standard/base-types/character-encoding">Character Encoding in .NET</see>)
   
  -and-  
   
@@ -1549,8 +1961,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetMaxCharCount(int32 byteCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.UTF8Encoding.GetMaxCharCount(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMaxCharCount (byteCount As Integer) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetMaxCharCount(int byteCount);" />
       <MemberSignature Language="F#" Value="override this.GetMaxCharCount : int -&gt; int" Usage="uTF8Encoding.GetMaxCharCount byteCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetMaxCharCount(int byteCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -1558,6 +1970,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1569,6 +1987,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1600,10 +2019,10 @@
 ## Examples  
  The following example uses the <xref:System.Text.UTF8Encoding.GetMaxCharCount%2A> method to return the maximum number of characters produced by decoding a specified number of bytes.  
   
- [!code-cpp[System.Text.UTF8Encoding.GetMaxCharCount Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetMaxCharCount Example/CPP/getmaxcharcount-int32.cpp#1)]
- [!code-csharp[System.Text.UTF8Encoding.GetMaxCharCount Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetMaxCharCount Example/CS/getmaxcharcount-int32.cs#1)]
- [!code-vb[System.Text.UTF8Encoding.GetMaxCharCount Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetMaxCharCount Example/VB/getmaxcharcount-int32.vb#1)]  
-  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetMaxCharCount Example/CPP/getmaxcharcount-int32.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Text/UTF8Encoding/GetMaxCharCount/getmaxcharcount-int32.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetMaxCharCount Example/VB/getmaxcharcount-int32.vb" id="Snippet1":::
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1612,7 +2031,7 @@
  -or-  
   
  The resulting number of bytes is greater than the maximum number that can be returned as an integer.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (for more information, see <see href="https://learn.microsoft.com/dotnet/standard/base-types/character-encoding">Character Encoding in .NET</see>)
   
  -and-  
   
@@ -1628,8 +2047,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] GetPreamble() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.UTF8Encoding.GetPreamble" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPreamble () As Byte()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ GetPreamble();" />
       <MemberSignature Language="F#" Value="override this.GetPreamble : unit -&gt; byte[]" Usage="uTF8Encoding.GetPreamble " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ GetPreamble();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -1637,6 +2056,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1648,7 +2073,14 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
@@ -1678,22 +2110,20 @@
   
  For more information on byte order and the byte order mark, see The Unicode Standard at the [Unicode home page](https://go.microsoft.com/fwlink/?LinkId=37123).  
   
-> [!CAUTION]
->  To ensure that the encoded bytes are decoded properly when they are saved as a file or as a stream, you can prefix the beginning of a stream of encoded bytes with a preamble. Note that the <xref:System.Text.UTF8Encoding.GetBytes%2A> method does not prepend a BOM to a sequence of encoded bytes; supplying a BOM at the beginning of an appropriate byte stream is the developer's responsibility.  
-  
-   
+> [!IMPORTANT]
+>  To ensure that the encoded bytes are decoded properly when they are saved as a file or as a stream, you can prefix the beginning of a stream of encoded bytes with a preamble. Note that the <xref:System.Text.UTF8Encoding.GetBytes%2A> method does not prepend a BOM to a sequence of encoded bytes; supplying a BOM at the beginning of an appropriate byte stream is the developer's responsibility.
   
 ## Examples  
- The following example uses the <xref:System.Text.UTF8Encoding.GetPreamble%2A> method to return the Unicode byte order mark encoded in UTF-8 format. Notice that the default constructor for <xref:System.Text.UTF8Encoding> does not provide a preamble.  
+ The following example uses the <xref:System.Text.UTF8Encoding.GetPreamble%2A> method to return the Unicode byte order mark encoded in UTF-8 format. Notice that the parameterless constructor for <xref:System.Text.UTF8Encoding> does not provide a preamble.  
   
- [!code-cpp[System.Text.UTF8Encoding.GetPreamble Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetPreamble Example/CPP/getpreamble-.cpp#1)]
- [!code-csharp[System.Text.UTF8Encoding.GetPreamble Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetPreamble Example/CS/getpreamble-.cs#1)]
- [!code-vb[System.Text.UTF8Encoding.GetPreamble Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetPreamble Example/VB/getpreamble-.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetPreamble Example/CPP/getpreamble-.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Text/UTF8Encoding/GetPreamble/getpreamble-.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.UTF8Encoding.GetPreamble Example/VB/getpreamble-.vb" id="Snippet1":::  
   
  The following example instantiates two <xref:System.Text.UTF8Encoding> objects, the first by calling the parameterless <xref:System.Text.UTF8Encoding.%23ctor> constructor, which does not provide a BOM, and the second by calling the <xref:System.Text.UTF8Encoding.%23ctor%28System.Boolean%29> constructor with its `encoderShouldEmitUTF8Identifier` argument set to `true`. It then calls the <xref:System.Text.UTF8Encoding.GetPreamble%2A> method to write the BOM to a file before writing a UF8-encoded string. As the console output from the example shows, the file that saves the bytes from the second encoder has three more bytes than the first.  
   
- [!code-csharp[System.Text.UTF8Encoding.GetPreamble#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.utf8encoding.getpreamble/cs/getpreamble1.cs#1)]
- [!code-vb[System.Text.UTF8Encoding.GetPreamble#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.utf8encoding.getpreamble/vb/getpreamble1.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Text/UTF8Encoding/GetPreamble/getpreamble1.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.text.utf8encoding.getpreamble/vb/getpreamble1.vb" id="Snippet1":::
   
  You can also compare the files by using the `fc` command in a console window, or you can inspect the files in a text editor that includes a Hex View mode. Note that when the file is opened in an editor that supports UTF-8, the BOM is not displayed.  
   
@@ -1706,8 +2136,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetString(unsigned int8[] bytes, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.UTF8Encoding.GetString(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetString (bytes As Byte(), index As Integer, count As Integer) As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetString(cli::array &lt;System::Byte&gt; ^ bytes, int index, int count);" />
       <MemberSignature Language="F#" Value="override this.GetString : byte[] * int * int -&gt; string" Usage="uTF8Encoding.GetString (bytes, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetString(cli::array &lt;System::Byte&gt; ^ bytes, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
@@ -1715,6 +2145,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1725,22 +2161,29 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(false)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="bytes" Type="System.Byte[]" />
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="bytes" Type="System.Byte[]" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="index" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="bytes">The byte array containing the sequence of bytes to decode.</param>
@@ -1763,9 +2206,9 @@
 ## Examples  
  The following example initializes an array by calling the <xref:System.Text.UTF8Encoding.GetByteCount%2A> method to determine exactly how many bytes are required for an encoded string and then adding the size of the byte order mark (BOM). The example then calls the <xref:System.Text.UTF8Encoding.GetPreamble%2A> method to store the BOM to the array before calling the <xref:System.Text.UTF8Encoding.GetBytes%2A> method to store the encoded bytes to the array. The example then calls the <xref:System.Text.UTF8Encoding.GetString%2A> method to decode the string.  
   
- [!code-csharp[System.Text.UTF8Encoding.GetString#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.utf8encoding.getstring/cs/getstring1.cs#1)]
- [!code-vb[System.Text.UTF8Encoding.GetString#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.utf8encoding.getstring/vb/getstring1.vb#1)]  
-  
+ :::code language="csharp" source="~/snippets/csharp/System.Text/UnicodeEncoding/GetString/getstring1.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.text.utf8encoding.getstring/vb/getstring1.vb" id="Snippet1":::
+
  Note that in this case the decoded string differs from the original string, since it begins with a 16-bit byte order mark U+FFFD. This means that the two strings will compare as unequal, and that if the string is output, the BOM will be displayed as the replacement character "?". To remove the BOM at the beginning of the string, you can call the <xref:System.String.TrimStart%2A?displayProperty=nameWithType> method.  
   
  ]]></format>
@@ -1779,7 +2222,7 @@
   
  <paramref name="index" /> and <paramref name="count" /> do not denote a valid range in <paramref name="bytes" />.</exception>
         <exception cref="T:System.ArgumentException">Error detection is enabled, and <paramref name="bytes" /> contains an invalid sequence of bytes.</exception>
-        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for complete explanation)  
+        <exception cref="T:System.Text.DecoderFallbackException">A fallback occurred (for more information, see <see href="https://learn.microsoft.com/dotnet/standard/base-types/character-encoding">Character Encoding in .NET</see>)
   
  -and-  
   
@@ -1788,6 +2231,141 @@
         <altmember cref="M:System.Text.UTF8Encoding.GetDecoder" />
         <altmember cref="M:System.Text.UTF8Encoding.GetCharCount(System.Byte[],System.Int32,System.Int32)" />
         <altmember cref="M:System.Text.UTF8Encoding.GetMaxCharCount(System.Int32)" />
+      </Docs>
+    </Member>
+    <Member MemberName="Preamble">
+      <MemberSignature Language="C#" Value="public override ReadOnlySpan&lt;byte&gt; Preamble { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; Preamble" />
+      <MemberSignature Language="DocId" Value="P:System.Text.UTF8Encoding.Preamble" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Preamble As ReadOnlySpan(Of Byte)" />
+      <MemberSignature Language="F#" Value="member this.Preamble : ReadOnlySpan&lt;byte&gt;" Usage="System.Text.UTF8Encoding.Preamble" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property ReadOnlySpan&lt;System::Byte&gt; Preamble { ReadOnlySpan&lt;System::Byte&gt; get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlySpan&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a Unicode byte order mark encoded in UTF-8 format, if this object is configured to supply one.</summary>
+        <value>A byte span containing the Unicode byte order mark, if this object is configured to supply one; otherwise, the default span.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Text.UTF8Encoding> object can provide a preamble, which is a span of bytes that can be prefixed to the sequence of bytes that result from the encoding process. Prefacing a sequence of encoded bytes with a byte order mark (code point `U+FEFF`) helps the decoder determine the byte order and the transformation format, or UTF. The Unicode byte order mark (BOM) is serialized as 0xEF 0xBB 0xBF. Note that the Unicode Standard neither requires nor recommends the use of a BOM for UTF-8 encoded streams.  
+  
+ You can instantiate a <xref:System.Text.UTF8Encoding> object whose `Preamble` is a valid BOM in the following ways:  
+  
+-   By retrieving the <xref:System.Text.UTF8Encoding> object returned by the <xref:System.Text.Encoding.UTF8%2A?displayProperty=nameWithType> property.  
+  
+-   By calling a <xref:System.Text.UTF8Encoding> constructor with an `encoderShouldEmitUTF8Identifier` parameter and setting its value set to `true`.  
+  
+ All other <xref:System.Text.UTF8Encoding> objects are configured to return a default span rather than a valid BOM.  
+  
+ The BOM provides nearly certain identification of an encoding for files that otherwise have lost a reference to their encoding, such as untagged or improperly tagged web data or random text files stored when a business did not have international concerns. Often user problems might be avoided if data is consistently and properly tagged.  
+  
+ For standards that provide an encoding type, a BOM is somewhat redundant. However, it can be used to help a server send the correct encoding header. Alternatively, it can be used as a fallback in case the encoding is otherwise lost.  
+  
+ There are some disadvantages to using a BOM. For example, knowing how to limit the database fields that use a BOM can be difficult. Concatenation of files can be a problem also, for example, when files are merged in such a way that an unnecessary character can end up in the middle of data. In spite of the few disadvantages, however, the use of a BOM is highly recommended.  
+  
+ For more information on byte order and the byte order mark, see The Unicode Standard at the [Unicode home page](https://go.microsoft.com/fwlink/?LinkId=37123).  
+  
+> [!IMPORTANT]
+>  To ensure that the encoded bytes are decoded properly when they are saved as a file or as a stream, you can prefix the beginning of a stream of encoded bytes with a preamble. Note that the <xref:System.Text.UTF8Encoding.GetBytes%2A> method does not prepend a BOM to a sequence of encoded bytes; supplying a BOM at the beginning of an appropriate byte stream is the developer's responsibility.
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetBytes">
+      <MemberSignature Language="C#" Value="public override bool TryGetBytes (ReadOnlySpan&lt;char&gt; chars, Span&lt;byte&gt; bytes, out int bytesWritten);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryGetBytes(valuetype System.ReadOnlySpan`1&lt;char&gt; chars, valuetype System.Span`1&lt;unsigned int8&gt; bytes, [out] int32&amp; bytesWritten) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.UTF8Encoding.TryGetBytes(System.ReadOnlySpan{System.Char},System.Span{System.Byte},System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function TryGetBytes (chars As ReadOnlySpan(Of Char), bytes As Span(Of Byte), ByRef bytesWritten As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.TryGetBytes : ReadOnlySpan&lt;char&gt; * Span&lt;byte&gt; * int -&gt; bool" Usage="uTF8Encoding.TryGetBytes (chars, bytes, bytesWritten)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool TryGetBytes(ReadOnlySpan&lt;char&gt; chars, Span&lt;System::Byte&gt; bytes, [Runtime::InteropServices::Out] int % bytesWritten);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="chars" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="0" FrameworkAlternate="net-8.0;net-9.0" />
+        <Parameter Name="bytes" Type="System.Span&lt;System.Byte&gt;" Index="1" FrameworkAlternate="net-8.0;net-9.0" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="net-8.0;net-9.0" />
+      </Parameters>
+      <Docs>
+        <param name="chars">The span containing the set of characters to encode.</param>
+        <param name="bytes">The byte span to hold the encoded bytes.</param>
+        <param name="bytesWritten">Upon successful completion of the operation, the number of bytes encoded into <paramref name="bytes" />.</param>
+        <summary>Encodes into a span of bytes a set of characters from the specified read-only span if the destination is large enough.</summary>
+        <returns>
+          <see langword="true" /> if all of the characters were encoded into the destination; <see langword="false" /> if the destination was too small to contain all the encoded bytes.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetChars">
+      <MemberSignature Language="C#" Value="public override bool TryGetChars (ReadOnlySpan&lt;byte&gt; bytes, Span&lt;char&gt; chars, out int charsWritten);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryGetChars(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; bytes, valuetype System.Span`1&lt;char&gt; chars, [out] int32&amp; charsWritten) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.UTF8Encoding.TryGetChars(System.ReadOnlySpan{System.Byte},System.Span{System.Char},System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function TryGetChars (bytes As ReadOnlySpan(Of Byte), chars As Span(Of Char), ByRef charsWritten As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.TryGetChars : ReadOnlySpan&lt;byte&gt; * Span&lt;char&gt; * int -&gt; bool" Usage="uTF8Encoding.TryGetChars (bytes, chars, charsWritten)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool TryGetChars(ReadOnlySpan&lt;System::Byte&gt; bytes, Span&lt;char&gt; chars, [Runtime::InteropServices::Out] int % charsWritten);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bytes" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="net-8.0;net-9.0" />
+        <Parameter Name="chars" Type="System.Span&lt;System.Char&gt;" Index="1" FrameworkAlternate="net-8.0;net-9.0" />
+        <Parameter Name="charsWritten" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="net-8.0;net-9.0" />
+      </Parameters>
+      <Docs>
+        <param name="bytes">A read-only span containing the sequence of bytes to decode.</param>
+        <param name="chars">The character span receiving the decoded bytes.</param>
+        <param name="charsWritten">Upon successful completion of the operation, the number of chars decoded into <paramref name="chars" />.</param>
+        <summary>Decodes into a span of chars a set of bytes from the specified read-only span if the destination is large enough.</summary>
+        <returns>
+          <see langword="true" /> if all of the characters were decoded into the destination; <see langword="false" /> if the destination was too small to contain all the decoded chars.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
   </Members>

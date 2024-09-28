@@ -1,13 +1,19 @@
-﻿<Type Name="RibbonApplicationSplitMenuItem" FullName="System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem">
+<Type Name="RibbonApplicationSplitMenuItem" FullName="System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem">
   <TypeSignature Language="C#" Value="public class RibbonApplicationSplitMenuItem : System.Windows.Controls.Ribbon.RibbonSplitMenuItem" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi RibbonApplicationSplitMenuItem extends System.Windows.Controls.Ribbon.RibbonSplitMenuItem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi RibbonApplicationSplitMenuItem extends System.Windows.Controls.Ribbon.RibbonSplitMenuItem" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem" />
   <TypeSignature Language="VB.NET" Value="Public Class RibbonApplicationSplitMenuItem&#xA;Inherits RibbonSplitMenuItem" />
-  <TypeSignature Language="C++ CLI" Value="public ref class RibbonApplicationSplitMenuItem : System::Windows::Controls::Ribbon::RibbonSplitMenuItem" />
   <TypeSignature Language="F#" Value="type RibbonApplicationSplitMenuItem = class&#xA;    inherit RibbonSplitMenuItem" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RibbonApplicationSplitMenuItem : System::Windows::Controls::Ribbon::RibbonSplitMenuItem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RibbonApplicationSplitMenuItem extends System.Windows.Controls.Ribbon.RibbonSplitMenuItem" FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Windows.Controls.Ribbon.RibbonSplitMenuItem</BaseTypeName>
@@ -15,30 +21,31 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Windows.StyleTypedProperty(Property="ItemContainerStyle", StyleTargetType=typeof(System.Windows.Controls.Ribbon.RibbonApplicationMenuItem))</AttributeName>
+      <AttributeName Language="C#">[System.Windows.StyleTypedProperty(Property="ItemContainerStyle", StyleTargetType=typeof(System.Windows.Controls.Ribbon.RibbonApplicationMenuItem))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Windows.StyleTypedProperty(Property="ItemContainerStyle", StyleTargetType=typeof(System.Windows.Controls.Ribbon.RibbonApplicationMenuItem))&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
     <summary>Represents a menu item inside a <see cref="T:System.Windows.Controls.Ribbon.RibbonApplicationMenu" /> control that can invoke a command and also display a submenu.</summary>
     <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You typically use a <xref:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem> when you want to invoke a command and also display a submenu of related commands using a single menu item. For more information about using commands with menu items, see [How to: Add a Command to a MenuItem](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741839(v=vs.90)).  
-  
- The command that is associated with the <xref:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem> is invoked when the menu item is clicked. The submenu is displayed when the mouse pointer is moved over the menu item. The submenu of the <xref:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem> is made up of the objects within the <xref:System.Windows.Controls.ItemsControl.Items%2A> collection of a <xref:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem>. It is common for a <xref:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem> to host <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenuItem> objects to create submenus.  
-  
- The following illustration shows the Application Menu for a ribbon control. The **Save As** and **Print** items are examples of the <xref:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem> control.  
-  
- ![Ribbon Application Menu](~/add/media/wpfribbon-appmenu.png "Ribbon Application Menu")  
-  
-   
-  
-## Examples  
- The following example shows the menu items of the Application Menu shown previously. The <xref:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem> objects are hosting <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenuItem> objects.  
-  
- [!code-xaml[Ribbon_Snippets#AppMenuItems](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_snippets/cs/ribbonwindow1.xaml#appmenuitems)]  
-  
+      <format type="text/markdown"><![CDATA[
+
+## Remarks
+ You typically use a <xref:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem> when you want to invoke a command and also display a submenu of related commands using a single menu item. For more information about using commands with menu items, see [How to: Add a Command to a MenuItem](https://learn.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741839(v=vs.90)).
+
+ The command that is associated with the <xref:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem> is invoked when the menu item is clicked. The submenu is displayed when the mouse pointer is moved over the menu item. The submenu of the <xref:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem> is made up of the objects within the <xref:System.Windows.Controls.ItemsControl.Items%2A> collection of a <xref:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem>. It is common for a <xref:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem> to host <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenuItem> objects to create submenus.
+
+ The following illustration shows the Application Menu for a ribbon control. The **Save As** and **Print** items are examples of the <xref:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem> control.
+
+ ![Ribbon Application Menu](~/add/media/wpfribbon-appmenu.png "Ribbon Application Menu")
+
+
+
+## Examples
+ The following example shows the menu items of the Application Menu shown previously. The <xref:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem> objects are hosting <xref:System.Windows.Controls.Ribbon.RibbonApplicationMenuItem> objects.
+
+ :::code language="xaml" source="~/snippets/csharp/System.Windows.Controls.Ribbon/Ribbon/Overview/ribbonwindow1.xaml" id="Snippetappmenuitems":::
+
  ]]></format>
     </remarks>
   </Docs>
@@ -53,6 +60,11 @@
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -65,12 +77,17 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.DependencyObject GetContainerForItemOverride() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.GetContainerForItemOverride" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetContainerForItemOverride () As DependencyObject" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::DependencyObject ^ GetContainerForItemOverride();" />
       <MemberSignature Language="F#" Value="override this.GetContainerForItemOverride : unit -&gt; System.Windows.DependencyObject" Usage="ribbonApplicationSplitMenuItem.GetContainerForItemOverride " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::DependencyObject ^ GetContainerForItemOverride();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyObject</ReturnType>
@@ -87,12 +104,17 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsItemItsOwnContainerOverride(object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.IsItemItsOwnContainerOverride(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsItemItsOwnContainerOverride (item As Object) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsItemItsOwnContainerOverride(System::Object ^ item);" />
       <MemberSignature Language="F#" Value="override this.IsItemItsOwnContainerOverride : obj -&gt; bool" Usage="ribbonApplicationSplitMenuItem.IsItemItsOwnContainerOverride item" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsItemItsOwnContainerOverride(System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -113,32 +135,37 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel Level" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.Level" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Level As RibbonApplicationMenuItemLevel" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Ribbon::RibbonApplicationMenuItemLevel Level { System::Windows::Controls::Ribbon::RibbonApplicationMenuItemLevel get(); };" />
       <MemberSignature Language="F#" Value="member this.Level : System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel" Usage="System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.Level" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Ribbon::RibbonApplicationMenuItemLevel Level { System::Windows::Controls::Ribbon::RibbonApplicationMenuItemLevel get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates at what level the menu item is displayed.</summary>
-        <value>One the enumeration values that specifies at what level the menu item is displayed. The registered default is <see cref="F:System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel.Top" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <value>One the enumeration values that specifies at what level the menu item is displayed. The registered default is <see cref="F:System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel.Top" />. For more information about what can influence the value, see <see href="/dotnet/framework/wpf/advanced/dependency-property-value-precedence">Dependency Property Value Precedence</see>.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-<a name="dependencyPropertyInfo_Level"></a>   
-## Dependency Property Information  
-  
-|||  
-|-|-|  
-|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.LevelProperty>|  
-|Metadata properties set to `true`|None|  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+<a name="dependencyPropertyInfo_Level"></a>
+## Dependency Property Information
+
+|||
+|-|-|
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.LevelProperty>|
+|Metadata properties set to `true`|None|
+
  ]]></format>
         </remarks>
       </Docs>
@@ -148,12 +175,17 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty LevelProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.LevelProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LevelProperty As DependencyProperty " />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LevelProperty;" />
       <MemberSignature Language="F#" Value=" staticval mutable LevelProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.LevelProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LevelProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
@@ -168,12 +200,17 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnActivatingKeyTip(class System.Windows.Controls.ActivatingKeyTipEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.OnActivatingKeyTip(System.Windows.Controls.ActivatingKeyTipEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnActivatingKeyTip (e As ActivatingKeyTipEventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnActivatingKeyTip(System::Windows::Controls::ActivatingKeyTipEventArgs ^ e);" />
       <MemberSignature Language="F#" Value="override this.OnActivatingKeyTip : System.Windows.Controls.ActivatingKeyTipEventArgs -&gt; unit" Usage="ribbonApplicationSplitMenuItem.OnActivatingKeyTip e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnActivatingKeyTip(System::Windows::Controls::ActivatingKeyTipEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -192,12 +229,17 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnApplyTemplate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.OnApplyTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
       <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="ribbonApplicationSplitMenuItem.OnApplyTemplate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -206,11 +248,11 @@
       <Docs>
         <summary>Builds the visual tree for the <see cref="T:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem" /> when a new template is applied.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is invoked whenever application code or an internal process, such as a rebuilding layout pass, calls the <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> method.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ This method is invoked whenever application code or an internal process, such as a rebuilding layout pass, calls the <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> method.
+
  ]]></format>
         </remarks>
       </Docs>
@@ -220,12 +262,17 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyDown(class System.Windows.Input.KeyEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.OnKeyDown(System.Windows.Input.KeyEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
       <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="ribbonApplicationSplitMenuItem.OnKeyDown e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -244,12 +291,17 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PrepareContainerForItemOverride(class System.Windows.DependencyObject element, object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PrepareContainerForItemOverride (element As DependencyObject, item As Object)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PrepareContainerForItemOverride(System::Windows::DependencyObject ^ element, System::Object ^ item);" />
       <MemberSignature Language="F#" Value="override this.PrepareContainerForItemOverride : System.Windows.DependencyObject * obj -&gt; unit" Usage="ribbonApplicationSplitMenuItem.PrepareContainerForItemOverride (element, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PrepareContainerForItemOverride(System::Windows::DependencyObject ^ element, System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -270,12 +322,17 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ShouldApplyItemContainerStyle(class System.Windows.DependencyObject container, object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.ShouldApplyItemContainerStyle(System.Windows.DependencyObject,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ShouldApplyItemContainerStyle (container As DependencyObject, item As Object) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ShouldApplyItemContainerStyle(System::Windows::DependencyObject ^ container, System::Object ^ item);" />
       <MemberSignature Language="F#" Value="override this.ShouldApplyItemContainerStyle : System.Windows.DependencyObject * obj -&gt; bool" Usage="ribbonApplicationSplitMenuItem.ShouldApplyItemContainerStyle (container, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ShouldApplyItemContainerStyle(System::Windows::DependencyObject ^ container, System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

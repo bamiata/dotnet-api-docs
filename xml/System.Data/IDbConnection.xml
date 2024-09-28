@@ -1,15 +1,22 @@
-﻿<Type Name="IDbConnection" FullName="System.Data.IDbConnection">
+<Type Name="IDbConnection" FullName="System.Data.IDbConnection">
   <TypeSignature Language="C#" Value="public interface IDbConnection : IDisposable" />
-  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDbConnection implements class System.IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDbConnection implements class System.IDisposable" FrameworkAlternate="net-5.0;net-6.0;net-7.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
   <TypeSignature Language="DocId" Value="T:System.Data.IDbConnection" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDbConnection&#xA;Implements IDisposable" />
-  <TypeSignature Language="C++ CLI" Value="public interface class IDbConnection : IDisposable" />
   <TypeSignature Language="F#" Value="type IDbConnection = interface&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDbConnection : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IDbConnection implements class System.IDisposable" FrameworkAlternate="net-8.0;net-9.0" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
@@ -21,19 +28,33 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Data.Common" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Data.Common" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Data.Common" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Data.Common" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Data.Common" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Interfaces>
     <Interface>
       <InterfaceName>System.IDisposable</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
-    <summary>Represents an open connection to a data source, and is implemented by .NET Framework data providers that access relational databases.</summary>
+    <summary>Represents an open connection to a data source, and is implemented by .NET data providers that access relational databases.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.IDbConnection> interface enables an inheriting class to implement a Connection class, which represents a unique session with a data source (for example, a network connection to a server). For more information about Connection classes, see [Connecting to a Data Source](~/docs/framework/data/adonet/connecting-to-a-data-source.md).  
+ The <xref:System.Data.IDbConnection> interface enables an inheriting class to implement a Connection class, which represents a unique session with a data source (for example, a network connection to a server). For more information about Connection classes, see [Connecting to a Data Source](/dotnet/framework/data/adonet/connecting-to-a-data-source).  
   
  An application does not create an instance of the <xref:System.Data.IDbConnection> interface directly, but creates an instance of a class that inherits <xref:System.Data.IDbConnection>.  
   
@@ -44,8 +65,8 @@
 ## Examples  
  The following example creates instances of the derived classes, <xref:System.Data.SqlClient.SqlCommand> and <xref:System.Data.SqlClient.SqlConnection>. The <xref:System.Data.SqlClient.SqlConnection> is opened and set as the <xref:System.Data.SqlClient.SqlCommand.Connection%2A> for the <xref:System.Data.SqlClient.SqlCommand>. The example then calls <xref:System.Data.SqlClient.SqlCommand.ExecuteNonQuery%2A>, and closes the connection. To accomplish this, the <xref:System.Data.SqlClient.SqlCommand.ExecuteNonQuery%2A> is passed a connection string and a query string that is a Transact-SQL INSERT statement.  
   
- [!code-csharp[Classic WebData SqlConnection Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlConnection Example/CS/source.cs#1)]
- [!code-vb[Classic WebData SqlConnection Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlConnection Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlConnection Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlConnection Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -85,14 +106,20 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.IDbTransaction BeginTransaction() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.IDbConnection.BeginTransaction" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTransaction () As IDbTransaction" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::IDbTransaction ^ BeginTransaction();" />
       <MemberSignature Language="F#" Value="abstract member BeginTransaction : unit -&gt; System.Data.IDbTransaction" Usage="iDbConnection.BeginTransaction " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::IDbTransaction ^ BeginTransaction();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -104,6 +131,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IDbTransaction</ReturnType>
@@ -127,14 +155,20 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.IDbTransaction BeginTransaction(valuetype System.Data.IsolationLevel il) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.IDbConnection.BeginTransaction(System.Data.IsolationLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTransaction (il As IsolationLevel) As IDbTransaction" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::IDbTransaction ^ BeginTransaction(System::Data::IsolationLevel il);" />
       <MemberSignature Language="F#" Value="abstract member BeginTransaction : System.Data.IsolationLevel -&gt; System.Data.IDbTransaction" Usage="iDbConnection.BeginTransaction il" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::IDbTransaction ^ BeginTransaction(System::Data::IsolationLevel il);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -146,6 +180,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IDbTransaction</ReturnType>
@@ -172,14 +207,20 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ChangeDatabase(string databaseName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.IDbConnection.ChangeDatabase(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ChangeDatabase (databaseName As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ChangeDatabase(System::String ^ databaseName);" />
       <MemberSignature Language="F#" Value="abstract member ChangeDatabase : string -&gt; unit" Usage="iDbConnection.ChangeDatabase databaseName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ChangeDatabase(System::String ^ databaseName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -191,6 +232,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -209,14 +251,20 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.IDbConnection.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
       <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit" Usage="iDbConnection.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -228,6 +276,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -253,14 +302,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ConnectionString" />
       <MemberSignature Language="DocId" Value="P:System.Data.IDbConnection.ConnectionString" />
       <MemberSignature Language="VB.NET" Value="Public Property ConnectionString As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConnectionString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.ConnectionString : string with get, set" Usage="System.Data.IDbConnection.ConnectionString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConnectionString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -272,6 +327,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -290,8 +346,8 @@
 ## Examples  
  The following example creates an instance of a derived class, <xref:System.Data.OleDb.OleDbConnection>, sets its <xref:System.Data.OleDb.OleDbConnection.ConnectionString%2A>, and displays its <xref:System.Data.OleDb.OleDbConnection.State%2A>.  
   
- [!code-csharp[Classic WebData IDbConnection.ConnectionString Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData IDbConnection.ConnectionString Example/CS/source.cs#1)]
- [!code-vb[Classic WebData IDbConnection.ConnectionString Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData IDbConnection.ConnectionString Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData IDbConnection.ConnectionString Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData IDbConnection.ConnectionString Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -302,14 +358,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 ConnectionTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Data.IDbConnection.ConnectionTimeout" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectionTimeout As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ConnectionTimeout { int get(); };" />
       <MemberSignature Language="F#" Value="member this.ConnectionTimeout : int" Usage="System.Data.IDbConnection.ConnectionTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ConnectionTimeout { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -321,12 +383,13 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the time to wait while trying to establish a connection before terminating the attempt and generating an error.</summary>
+        <summary>Gets the time to wait (in seconds) while trying to establish a connection before terminating the attempt and generating an error.</summary>
         <value>The time (in seconds) to wait for a connection to open. The default value is 15 seconds.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -343,14 +406,20 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.IDbCommand CreateCommand() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.IDbConnection.CreateCommand" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateCommand () As IDbCommand" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::IDbCommand ^ CreateCommand();" />
       <MemberSignature Language="F#" Value="abstract member CreateCommand : unit -&gt; System.Data.IDbCommand" Usage="iDbConnection.CreateCommand " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::IDbCommand ^ CreateCommand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -362,6 +431,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IDbCommand</ReturnType>
@@ -378,14 +448,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Database" />
       <MemberSignature Language="DocId" Value="P:System.Data.IDbConnection.Database" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Database As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Database { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Database : string" Usage="System.Data.IDbConnection.Database" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Database { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -397,6 +473,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -422,14 +499,20 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Open() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.IDbConnection.Open" />
       <MemberSignature Language="VB.NET" Value="Public Sub Open ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Open();" />
       <MemberSignature Language="F#" Value="abstract member Open : unit -&gt; unit" Usage="iDbConnection.Open " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Open();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -441,6 +524,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -456,14 +540,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.ConnectionState State" />
       <MemberSignature Language="DocId" Value="P:System.Data.IDbConnection.State" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As ConnectionState" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::ConnectionState State { System::Data::ConnectionState get(); };" />
       <MemberSignature Language="F#" Value="member this.State : System.Data.ConnectionState" Usage="System.Data.IDbConnection.State" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::ConnectionState State { System::Data::ConnectionState get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -475,6 +565,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.ConnectionState</ReturnType>
@@ -497,8 +588,8 @@
 ## Examples  
  The following example creates an instance of a derived class, <xref:System.Data.OleDb.OleDbConnection>, sets its <xref:System.Data.IDbConnection.ConnectionString%2A>, and displays its <xref:System.Data.IDbConnection.State%2A>.  
   
- [!code-csharp[Classic WebData IDbConnection.ConnectionString Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData IDbConnection.ConnectionString Example/CS/source.cs#1)]
- [!code-vb[Classic WebData IDbConnection.ConnectionString Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData IDbConnection.ConnectionString Example/VB/source.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData IDbConnection.ConnectionString Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData IDbConnection.ConnectionString Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>

@@ -1,10 +1,10 @@
-﻿<Type Name="SoapDateTime" FullName="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime">
+<Type Name="SoapDateTime" FullName="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime">
   <TypeSignature Language="C#" Value="public sealed class SoapDateTime" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SoapDateTime extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapDateTime" />
-  <TypeSignature Language="C++ CLI" Value="public ref class SoapDateTime sealed" />
   <TypeSignature Language="F#" Value="type SoapDateTime = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoapDateTime sealed" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -17,8 +17,9 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(true)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -27,15 +28,16 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about XSD data types, see "XML Data Types Reference" in the MSDN Library at http://msdn.microsoft.com/library.  
+
+For more information about XSD data types, see the [XML Data Types Reference](https://learn.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256131(v=vs.100)).
   
    
   
 ## Examples  
  The following code example shows how to use the methods in the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime> class to convert between a <xref:System.DateTime> object and an XSD `dateTime` string.  
   
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime#10](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime/CPP/demo.cpp#10)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime#10](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime/CS/demo.cs#10)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime/CPP/demo.cpp" id="Snippet10":::
+ :::code language="csharp" source="~/snippets/csharp/System.Runtime.Remoting.Metadata.W3cXsd2001/SoapDateTime/Overview/demo.cs" id="Snippet10":::  
   
  ]]></format>
     </remarks>
@@ -52,7 +54,6 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -66,14 +67,13 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime Parse(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (value As String) As DateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime Parse(System::String ^ value);" />
       <MemberSignature Language="F#" Value="static member Parse : string -&gt; DateTime" Usage="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime.Parse value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime Parse(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -108,8 +108,8 @@
 ## Examples  
  The following code example shows how to use this method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime> class.  
   
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime#11](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime/CPP/demo.cpp#11)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime#11](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime/CS/demo.cs#11)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime/CPP/demo.cpp" id="Snippet11":::
+ :::code language="csharp" source="~/snippets/csharp/System.Runtime.Remoting.Metadata.W3cXsd2001/SoapDateTime/Overview/demo.cs" id="Snippet11":::  
   
  ]]></format>
         </remarks>
@@ -127,14 +127,13 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(valuetype System.DateTime value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime.ToString(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As DateTime) As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(DateTime value);" />
       <MemberSignature Language="F#" Value="static member ToString : DateTime -&gt; string" Usage="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime.ToString value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(DateTime value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -153,8 +152,8 @@
 ## Examples  
  The following code example shows how to use this method. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime> class.  
   
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime#12](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime/CPP/demo.cpp#12)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime#12](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime/CS/demo.cs#12)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime/CPP/demo.cpp" id="Snippet12":::
+ :::code language="csharp" source="~/snippets/csharp/System.Runtime.Remoting.Metadata.W3cXsd2001/SoapDateTime/Overview/demo.cs" id="Snippet12":::  
   
  ]]></format>
         </remarks>
@@ -165,14 +164,13 @@
       <MemberSignature Language="ILAsm" Value=".property string XsdType" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime.XsdType" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property XsdType As String" />
+      <MemberSignature Language="F#" Value="static member XsdType : string" Usage="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime.XsdType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ XsdType { System::String ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.XsdType : string" Usage="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime.XsdType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -187,8 +185,8 @@
 ## Examples  
  The following code example shows how to use this property. This code example is part of a larger example that is provided for the <xref:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime> class.  
   
- [!code-cpp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime#13](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime/CPP/demo.cpp#13)]
- [!code-csharp[System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime#13](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime/CS/demo.cs#13)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDateTime/CPP/demo.cpp" id="Snippet13":::
+ :::code language="csharp" source="~/snippets/csharp/System.Runtime.Remoting.Metadata.W3cXsd2001/SoapDateTime/Overview/demo.cs" id="Snippet13":::  
   
  ]]></format>
         </remarks>

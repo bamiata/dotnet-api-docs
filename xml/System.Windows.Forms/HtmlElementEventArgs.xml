@@ -1,19 +1,34 @@
-﻿<Type Name="HtmlElementEventArgs" FullName="System.Windows.Forms.HtmlElementEventArgs">
+<Type Name="HtmlElementEventArgs" FullName="System.Windows.Forms.HtmlElementEventArgs">
   <TypeSignature Language="C#" Value="public sealed class HtmlElementEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HtmlElementEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HtmlElementEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HtmlElementEventArgs&#xA;Inherits EventArgs" />
-  <TypeSignature Language="C++ CLI" Value="public ref class HtmlElementEventArgs sealed : EventArgs" />
   <TypeSignature Language="F#" Value="type HtmlElementEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HtmlElementEventArgs sealed : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.EventArgs</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Provides data for the events defined on <see cref="T:System.Windows.Forms.HtmlDocument" /> and <see cref="T:System.Windows.Forms.HtmlElement" />.</summary>
     <remarks>
@@ -22,23 +37,21 @@
 ## Remarks  
  <xref:System.Windows.Forms.HtmlElementEventArgs> encapsulates the same information found on the `window.event` object when programming against the unmanaged HTML DOM or when writing Active Script for HTML pages.  
   
- In most cases, you can use <xref:System.Windows.Forms.HtmlElementEventArgs.ToElement%2A> to find the HTML element that is receiving the event action, and <xref:System.Windows.Forms.HtmlElementEventArgs.FromElement%2A> to find the HTML element that the current event is causing us to leave. However, not every event supplies a value for these properties; see the managed documentation for an event, or the corresponding documentation in the Internet Explorer SDK documentation, to discover if the event supplies it.  
+ In most cases, you can use <xref:System.Windows.Forms.HtmlElementEventArgs.ToElement%2A> to find the HTML element that's receiving the event action, and <xref:System.Windows.Forms.HtmlElementEventArgs.FromElement%2A> to find the HTML element that's being left. However, not every event supplies a value for these properties.
   
- Many events in the HTML DOM are sent to their parent elements unless they are cancelled. This is known as event bubbling. If a `SPAN` inside of a `DIV` receives a click, then a click event is raised for the `SPAN` first, then for the `DIV`, and finally for the HTML page's `BODY` element. <xref:System.Windows.Forms.HtmlElementEventArgs.BubbleEvent%2A> controls whether an event will behave in this manner or not.  
-  
-   
+ Many events in the HTML DOM are sent to their parent elements unless they are cancelled. This is known as event bubbling. If a `SPAN` inside of a `DIV` receives a click, then a click event is raised for the `SPAN` first, then for the `DIV`, and finally for the HTML page's `BODY` element. <xref:System.Windows.Forms.HtmlElementEventArgs.BubbleEvent%2A> controls whether an event behaves in this manner or not.     
   
 ## Examples  
  The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.HtmlDocument.Click> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A> with <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlDocument> named `HtmlDocument1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlDocument.Click> event.  
   
- [!code-csharp[System.Windows.Forms.EventExamples#422](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#422)]
- [!code-vb[System.Windows.Forms.EventExamples#422](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#422)]  
+ :::code language="csharp" source="~/snippets/csharp/System.ComponentModel/CollectionChangeEventArgs/Overview/EventExamples.cs" id="Snippet422":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb" id="Snippet422":::  
   
  ]]></format>
     </remarks>
-    <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/?url=/workshop/author/dhtml/reference/objects/obj_event.asp?frame=true">event Object</related>
+    <related type="ExternalDocumentation" href="https://developer.mozilla.org/docs/Web/API/Event">event Object</related>
   </Docs>
   <Members>
     <Member MemberName="AltKeyPressed">
@@ -46,13 +59,18 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool AltKeyPressed" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementEventArgs.AltKeyPressed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AltKeyPressed As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AltKeyPressed { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.AltKeyPressed : bool" Usage="System.Windows.Forms.HtmlElementEventArgs.AltKeyPressed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AltKeyPressed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -69,12 +87,12 @@
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlDocument> named `HtmlDocument1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=nameWithType> event.  
   
- [!code-csharp[System.Windows.Forms.EventExamples#422](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#422)]
- [!code-vb[System.Windows.Forms.EventExamples#422](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#422)]  
+ :::code language="csharp" source="~/snippets/csharp/System.ComponentModel/CollectionChangeEventArgs/Overview/EventExamples.cs" id="Snippet422":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb" id="Snippet422":::  
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/?url=/workshop/author/dhtml/reference/properties/altkey.asp?frame=true">altKey Property</related>
+        <related type="ExternalDocumentation" href="https://developer.mozilla.org/docs/Web/API/KeyboardEvent/altKey">altKey Property</related>
       </Docs>
     </Member>
     <Member MemberName="BubbleEvent">
@@ -82,13 +100,18 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool BubbleEvent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementEventArgs.BubbleEvent" />
       <MemberSignature Language="VB.NET" Value="Public Property BubbleEvent As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BubbleEvent { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.BubbleEvent : bool with get, set" Usage="System.Windows.Forms.HtmlElementEventArgs.BubbleEvent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BubbleEvent { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -110,12 +133,12 @@
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlDocument> named `HtmlDocument1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=nameWithType> event.  
   
- [!code-csharp[System.Windows.Forms.EventExamples#422](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#422)]
- [!code-vb[System.Windows.Forms.EventExamples#422](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#422)]  
+ :::code language="csharp" source="~/snippets/csharp/System.ComponentModel/CollectionChangeEventArgs/Overview/EventExamples.cs" id="Snippet422":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb" id="Snippet422":::  
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/?url=/workshop/author/dhtml/reference/properties/cancelbubble.asp">cancelBubble Event</related>
+        <related type="ExternalDocumentation" href="https://developer.mozilla.org/docs/Web/API/Event/cancelBubble">cancelBubble Event</related>
       </Docs>
     </Member>
     <Member MemberName="ClientMousePosition">
@@ -123,13 +146,18 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Point ClientMousePosition" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementEventArgs.ClientMousePosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientMousePosition As Point" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point ClientMousePosition { System::Drawing::Point get(); };" />
       <MemberSignature Language="F#" Value="member this.ClientMousePosition : System.Drawing.Point" Usage="System.Windows.Forms.HtmlElementEventArgs.ClientMousePosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point ClientMousePosition { System::Drawing::Point get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Point</ReturnType>
@@ -170,15 +198,15 @@
   
  This example requires that you have configured `Document_MouseDown` as a handler for the <xref:System.Windows.Forms.HtmlDocument.MouseDown> event on <xref:System.Windows.Forms.HtmlDocument>.  
   
- [!code-csharp[System.Windows.Forms.HtmlElementEventArgs#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlElementEventArgs/CS/Form1.cs#2)]
- [!code-vb[System.Windows.Forms.HtmlElementEventArgs#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlElementEventArgs/VB/Form1.vb#2)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Windows.Forms/HtmlElementEventArgs/ClientMousePosition/Form1.cs" id="Snippet2":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlElementEventArgs/VB/Form1.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
         <altmember cref="P:System.Windows.Forms.HtmlElementEventArgs.MousePosition" />
         <altmember cref="P:System.Windows.Forms.HtmlElementEventArgs.OffsetMousePosition" />
-        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/?url=/workshop/author/dhtml/reference/properties/clientx.asp?frame=true">clientX Property</related>
-        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/?url=/workshop/author/dhtml/reference/properties/clienty.asp?frame=true">clientY Property</related>
+        <related type="ExternalDocumentation" href="https://developer.mozilla.org/docs/Web/API/MouseEvent/clientX">clientX Property</related>
+        <related type="ExternalDocumentation" href="https://developer.mozilla.org/docs/Web/API/MouseEvent/clientY">clientY Property</related>
       </Docs>
     </Member>
     <Member MemberName="CtrlKeyPressed">
@@ -186,13 +214,18 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool CtrlKeyPressed" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementEventArgs.CtrlKeyPressed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CtrlKeyPressed As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CtrlKeyPressed { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.CtrlKeyPressed : bool" Usage="System.Windows.Forms.HtmlElementEventArgs.CtrlKeyPressed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CtrlKeyPressed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -209,12 +242,12 @@
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlDocument> named `HtmlDocument1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=nameWithType> event.  
   
- [!code-csharp[System.Windows.Forms.EventExamples#422](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#422)]
- [!code-vb[System.Windows.Forms.EventExamples#422](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#422)]  
+ :::code language="csharp" source="~/snippets/csharp/System.ComponentModel/CollectionChangeEventArgs/Overview/EventExamples.cs" id="Snippet422":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb" id="Snippet422":::  
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/?url=/workshop/author/dhtml/reference/properties/ctrlkey.asp?frame=true">ctrlKey Property</related>
+        <related type="ExternalDocumentation" href="https://developer.mozilla.org/docs/Web/API/KeyboardEvent/ctrlKey">ctrlKey Property</related>
       </Docs>
     </Member>
     <Member MemberName="EventType">
@@ -222,13 +255,18 @@
       <MemberSignature Language="ILAsm" Value=".property instance string EventType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementEventArgs.EventType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventType As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EventType { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.EventType : string" Usage="System.Windows.Forms.HtmlElementEventArgs.EventType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EventType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -244,35 +282,51 @@
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlDocument> named `HtmlDocument1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=nameWithType> event.  
   
- [!code-csharp[System.Windows.Forms.EventExamples#422](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#422)]
- [!code-vb[System.Windows.Forms.EventExamples#422](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#422)]  
+ :::code language="csharp" source="~/snippets/csharp/System.ComponentModel/CollectionChangeEventArgs/Overview/EventExamples.cs" id="Snippet422":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb" id="Snippet422":::  
   
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.Forms.HtmlDocument" />
         <altmember cref="T:System.Windows.Forms.HtmlElement" />
-        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/?url=/workshop/author/dhtml/reference/properties/type_4.asp?frame=true">type Property</related>
+        <related type="ExternalDocumentation" href="https://developer.mozilla.org/docs/Web/API/Event/type">type Property</related>
       </Docs>
     </Member>
     <Member MemberName="FromElement">
-      <MemberSignature Language="C#" Value="public System.Windows.Forms.HtmlElement FromElement { get; }" />
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.HtmlElement FromElement { get; }" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.HtmlElement FromElement" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementEventArgs.FromElement" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FromElement As HtmlElement" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HtmlElement ^ FromElement { System::Windows::Forms::HtmlElement ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.FromElement : System.Windows.Forms.HtmlElement" Usage="System.Windows.Forms.HtmlElementEventArgs.FromElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HtmlElement ^ FromElement { System::Windows::Forms::HtmlElement ^ get(); };" />
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.HtmlElement? FromElement { get; }" FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -296,13 +350,18 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 KeyPressedCode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementEventArgs.KeyPressedCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyPressedCode As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int KeyPressedCode { int get(); };" />
       <MemberSignature Language="F#" Value="member this.KeyPressedCode : int" Usage="System.Windows.Forms.HtmlElementEventArgs.KeyPressedCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int KeyPressedCode { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -318,12 +377,12 @@
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlDocument> named `HtmlDocument1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=nameWithType> event.  
   
- [!code-csharp[System.Windows.Forms.EventExamples#422](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#422)]
- [!code-vb[System.Windows.Forms.EventExamples#422](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#422)]  
+ :::code language="csharp" source="~/snippets/csharp/System.ComponentModel/CollectionChangeEventArgs/Overview/EventExamples.cs" id="Snippet422":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb" id="Snippet422":::  
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/?url=/workshop/author/dhtml/reference/properties/keycode.asp?frame=true">keyCode Property</related>
+        <related type="ExternalDocumentation" href="https://developer.mozilla.org/docs/Web/API/KeyboardEvent/keyCode">keyCode Property</related>
       </Docs>
     </Member>
     <Member MemberName="MouseButtonsPressed">
@@ -331,13 +390,18 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.MouseButtons MouseButtonsPressed" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementEventArgs.MouseButtonsPressed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MouseButtonsPressed As MouseButtons" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::MouseButtons MouseButtonsPressed { System::Windows::Forms::MouseButtons get(); };" />
       <MemberSignature Language="F#" Value="member this.MouseButtonsPressed : System.Windows.Forms.MouseButtons" Usage="System.Windows.Forms.HtmlElementEventArgs.MouseButtonsPressed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::MouseButtons MouseButtonsPressed { System::Windows::Forms::MouseButtons get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MouseButtons</ReturnType>
@@ -353,8 +417,8 @@
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlDocument> named `HtmlDocument1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=nameWithType> event.  
   
- [!code-csharp[System.Windows.Forms.EventExamples#422](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#422)]
- [!code-vb[System.Windows.Forms.EventExamples#422](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#422)]  
+ :::code language="csharp" source="~/snippets/csharp/System.ComponentModel/CollectionChangeEventArgs/Overview/EventExamples.cs" id="Snippet422":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb" id="Snippet422":::  
   
  ]]></format>
         </remarks>
@@ -365,13 +429,18 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Point MousePosition" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementEventArgs.MousePosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MousePosition As Point" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point MousePosition { System::Drawing::Point get(); };" />
       <MemberSignature Language="F#" Value="member this.MousePosition : System.Drawing.Point" Usage="System.Windows.Forms.HtmlElementEventArgs.MousePosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point MousePosition { System::Drawing::Point get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Point</ReturnType>
@@ -414,15 +483,15 @@
   
  This example requires that you have configured `Document_MouseDown` as a handler for the <xref:System.Windows.Forms.HtmlDocument.MouseDown> event on <xref:System.Windows.Forms.HtmlDocument>.  
   
- [!code-csharp[System.Windows.Forms.HtmlElementEventArgs#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlElementEventArgs/CS/Form1.cs#2)]
- [!code-vb[System.Windows.Forms.HtmlElementEventArgs#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlElementEventArgs/VB/Form1.vb#2)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Windows.Forms/HtmlElementEventArgs/ClientMousePosition/Form1.cs" id="Snippet2":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlElementEventArgs/VB/Form1.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
         <altmember cref="P:System.Windows.Forms.HtmlElementEventArgs.ClientMousePosition" />
         <altmember cref="P:System.Windows.Forms.HtmlElementEventArgs.OffsetMousePosition" />
-        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/?url=/workshop/author/dhtml/reference/properties/x.asp?frame=true">x Property</related>
-        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/?url=/workshop/author/dhtml/reference/properties/y.asp?frame=true">y Property</related>
+        <related type="ExternalDocumentation" href="https://developer.mozilla.org/docs/Web/API/MouseEvent/X">x Property</related>
+        <related type="ExternalDocumentation" href="https://developer.mozilla.org/docs/Web/API/MouseEvent/Y">y Property</related>
       </Docs>
     </Member>
     <Member MemberName="OffsetMousePosition">
@@ -430,13 +499,18 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Point OffsetMousePosition" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementEventArgs.OffsetMousePosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OffsetMousePosition As Point" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point OffsetMousePosition { System::Drawing::Point get(); };" />
       <MemberSignature Language="F#" Value="member this.OffsetMousePosition : System.Drawing.Point" Usage="System.Windows.Forms.HtmlElementEventArgs.OffsetMousePosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point OffsetMousePosition { System::Drawing::Point get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Point</ReturnType>
@@ -472,15 +546,15 @@
   
  This example requires that you have configured `Document_MouseDown` as a handler for the <xref:System.Windows.Forms.HtmlDocument.MouseDown> event on <xref:System.Windows.Forms.HtmlDocument>.  
   
- [!code-csharp[System.Windows.Forms.HtmlElementEventArgs#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlElementEventArgs/CS/Form1.cs#2)]
- [!code-vb[System.Windows.Forms.HtmlElementEventArgs#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlElementEventArgs/VB/Form1.vb#2)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Windows.Forms/HtmlElementEventArgs/ClientMousePosition/Form1.cs" id="Snippet2":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlElementEventArgs/VB/Form1.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
         <altmember cref="P:System.Windows.Forms.HtmlElementEventArgs.ClientMousePosition" />
         <altmember cref="P:System.Windows.Forms.HtmlElementEventArgs.MousePosition" />
-        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/?url=/workshop/author/dhtml/reference/properties/offsetx.asp?frame=true">offsetX Property</related>
-        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/?url=/workshop/author/dhtml/reference/properties/offsety.asp?frame=truehttp://msdn.microsoft.com/library/?url=/workshop/author/dhtml/reference/properties/offsety.asp?frame=true">offsetY Property</related>
+        <related type="ExternalDocumentation" href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/offsetX">offsetX Property</related>
+        <related type="ExternalDocumentation" href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/offsetY">offsetY Property</related>
       </Docs>
     </Member>
     <Member MemberName="ReturnValue">
@@ -488,13 +562,18 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool ReturnValue" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementEventArgs.ReturnValue" />
       <MemberSignature Language="VB.NET" Value="Public Property ReturnValue As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReturnValue { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.ReturnValue : bool with get, set" Usage="System.Windows.Forms.HtmlElementEventArgs.ReturnValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReturnValue { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -511,8 +590,8 @@
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlDocument> named `HtmlDocument1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=nameWithType> event.  
   
- [!code-csharp[System.Windows.Forms.EventExamples#422](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#422)]
- [!code-vb[System.Windows.Forms.EventExamples#422](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#422)]  
+ :::code language="csharp" source="~/snippets/csharp/System.ComponentModel/CollectionChangeEventArgs/Overview/EventExamples.cs" id="Snippet422":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb" id="Snippet422":::  
   
  ]]></format>
         </remarks>
@@ -523,13 +602,18 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool ShiftKeyPressed" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementEventArgs.ShiftKeyPressed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ShiftKeyPressed As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShiftKeyPressed { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.ShiftKeyPressed : bool" Usage="System.Windows.Forms.HtmlElementEventArgs.ShiftKeyPressed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShiftKeyPressed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -546,33 +630,49 @@
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlDocument> named `HtmlDocument1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=nameWithType> event.  
   
- [!code-csharp[System.Windows.Forms.EventExamples#422](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#422)]
- [!code-vb[System.Windows.Forms.EventExamples#422](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#422)]  
+ :::code language="csharp" source="~/snippets/csharp/System.ComponentModel/CollectionChangeEventArgs/Overview/EventExamples.cs" id="Snippet422":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb" id="Snippet422":::  
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/?url=/workshop/author/dhtml/reference/properties/shiftkey.asp?frame=true">shiftKey Property</related>
+        <related type="ExternalDocumentation" href="https://developer.mozilla.org/docs/Web/API/KeyboardEvent/shiftKey">shiftKey Property</related>
       </Docs>
     </Member>
     <Member MemberName="ToElement">
-      <MemberSignature Language="C#" Value="public System.Windows.Forms.HtmlElement ToElement { get; }" />
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.HtmlElement ToElement { get; }" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.HtmlElement ToElement" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementEventArgs.ToElement" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ToElement As HtmlElement" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HtmlElement ^ ToElement { System::Windows::Forms::HtmlElement ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.ToElement : System.Windows.Forms.HtmlElement" Usage="System.Windows.Forms.HtmlElementEventArgs.ToElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HtmlElement ^ ToElement { System::Windows::Forms::HtmlElement ^ get(); };" />
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.HtmlElement? ToElement { get; }" FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -594,12 +694,11 @@
   
  To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.HtmlDocument> named `HtmlDocument1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.HtmlDocument.Click?displayProperty=nameWithType> event.  
   
- [!code-csharp[System.Windows.Forms.EventExamples#422](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#422)]
- [!code-vb[System.Windows.Forms.EventExamples#422](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#422)]  
+ :::code language="csharp" source="~/snippets/csharp/System.ComponentModel/CollectionChangeEventArgs/Overview/EventExamples.cs" id="Snippet422":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb" id="Snippet422":::  
   
  ]]></format>
         </remarks>
-        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/?url=/workshop/author/dhtml/reference/properties/toelement.asp?frame=true">toElement Property</related>
       </Docs>
     </Member>
   </Members>

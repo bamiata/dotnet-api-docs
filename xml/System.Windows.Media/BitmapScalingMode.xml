@@ -1,14 +1,19 @@
-﻿<Type Name="BitmapScalingMode" FullName="System.Windows.Media.BitmapScalingMode">
+<Type Name="BitmapScalingMode" FullName="System.Windows.Media.BitmapScalingMode">
   <TypeSignature Language="C#" Value="public enum BitmapScalingMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BitmapScalingMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.BitmapScalingMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum BitmapScalingMode" />
-  <TypeSignature Language="C++ CLI" Value="public enum class BitmapScalingMode" />
   <TypeSignature Language="F#" Value="type BitmapScalingMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class BitmapScalingMode" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -19,15 +24,15 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When animating the scale of any bitmap, the default high-quality image re-sampling algorithm can sometimes consume sufficient system resources to cause frame rate degradation. This frame rate degradation can cause animations to skip frames or stutter. By setting the <xref:System.Windows.Media.RenderOptions.BitmapScalingMode%2A> property of the <xref:System.Windows.Media.RenderOptions> object to LowQuality you can create a smoother animation when scaling a bitmap.  
+ When animating the scale of any bitmap, the default high-quality image resampling algorithm can sometimes consume sufficient system resources to cause frame rate degradation. This frame rate degradation can cause animations to skip frames or stutter. By setting the <xref:System.Windows.Media.RenderOptions.BitmapScalingMode%2A?displayProperty=nameWithType> property to `LowQuality`, you can create a smoother animation when scaling a bitmap.  
   
    
   
 ## Examples  
- The following example shows how to set the <xref:System.Windows.Media.BitmapScalingMode.LowQuality> for an image object.  
+ The following example shows how to use the <xref:System.Windows.Media.RenderOptions.SetBitmapScalingMode%2A?displayProperty=nameWithType> method to set the bitmap scale mode to `LowQuality` for an image object:
   
- [!code-csharp[RenderOptions#RenderOptionsSnippet2](~/samples/snippets/csharp/VS_Snippets_Wpf/RenderOptions/CSharp/Window1.xaml.cs#renderoptionssnippet2)]
- [!code-vb[RenderOptions#RenderOptionsSnippet2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RenderOptions/visualbasic/window1.xaml.vb#renderoptionssnippet2)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Windows.Media/BitmapScalingMode/Overview/Window1.xaml.cs" id="Snippetrenderoptionssnippet2":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Wpf/RenderOptions/visualbasic/window1.xaml.vb" id="Snippetrenderoptionssnippet2":::  
   
  ]]></format>
     </remarks>
@@ -39,13 +44,18 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.BitmapScalingMode Fant = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.BitmapScalingMode.Fant" />
       <MemberSignature Language="VB.NET" Value="Fant" />
-      <MemberSignature Language="C++ CLI" Value="Fant" />
       <MemberSignature Language="F#" Value="Fant = 2" Usage="System.Windows.Media.BitmapScalingMode.Fant" />
+      <MemberSignature Language="C++ CLI" Value="Fant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.BitmapScalingMode</ReturnType>
@@ -60,13 +70,18 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.BitmapScalingMode HighQuality = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.BitmapScalingMode.HighQuality" />
       <MemberSignature Language="VB.NET" Value="HighQuality" />
-      <MemberSignature Language="C++ CLI" Value="HighQuality" />
       <MemberSignature Language="F#" Value="HighQuality = 2" Usage="System.Windows.Media.BitmapScalingMode.HighQuality" />
+      <MemberSignature Language="C++ CLI" Value="HighQuality" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.BitmapScalingMode</ReturnType>
@@ -81,13 +96,18 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.BitmapScalingMode Linear = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.BitmapScalingMode.Linear" />
       <MemberSignature Language="VB.NET" Value="Linear" />
-      <MemberSignature Language="C++ CLI" Value="Linear" />
       <MemberSignature Language="F#" Value="Linear = 1" Usage="System.Windows.Media.BitmapScalingMode.Linear" />
+      <MemberSignature Language="C++ CLI" Value="Linear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.BitmapScalingMode</ReturnType>
@@ -102,13 +122,18 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.BitmapScalingMode LowQuality = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.BitmapScalingMode.LowQuality" />
       <MemberSignature Language="VB.NET" Value="LowQuality" />
-      <MemberSignature Language="C++ CLI" Value="LowQuality" />
       <MemberSignature Language="F#" Value="LowQuality = 1" Usage="System.Windows.Media.BitmapScalingMode.LowQuality" />
+      <MemberSignature Language="C++ CLI" Value="LowQuality" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.BitmapScalingMode</ReturnType>
@@ -123,13 +148,18 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.BitmapScalingMode NearestNeighbor = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.BitmapScalingMode.NearestNeighbor" />
       <MemberSignature Language="VB.NET" Value="NearestNeighbor" />
-      <MemberSignature Language="C++ CLI" Value="NearestNeighbor" />
       <MemberSignature Language="F#" Value="NearestNeighbor = 3" Usage="System.Windows.Media.BitmapScalingMode.NearestNeighbor" />
+      <MemberSignature Language="C++ CLI" Value="NearestNeighbor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.BitmapScalingMode</ReturnType>
@@ -144,13 +174,18 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.BitmapScalingMode Unspecified = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.BitmapScalingMode.Unspecified" />
       <MemberSignature Language="VB.NET" Value="Unspecified" />
-      <MemberSignature Language="C++ CLI" Value="Unspecified" />
       <MemberSignature Language="F#" Value="Unspecified = 0" Usage="System.Windows.Media.BitmapScalingMode.Unspecified" />
+      <MemberSignature Language="C++ CLI" Value="Unspecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Media.BitmapScalingMode</ReturnType>

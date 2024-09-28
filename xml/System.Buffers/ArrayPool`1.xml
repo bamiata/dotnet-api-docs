@@ -1,10 +1,10 @@
-﻿<Type Name="ArrayPool&lt;T&gt;" FullName="System.Buffers.ArrayPool&lt;T&gt;">
+<Type Name="ArrayPool&lt;T&gt;" FullName="System.Buffers.ArrayPool&lt;T&gt;">
   <TypeSignature Language="C#" Value="public abstract class ArrayPool&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ArrayPool`1&lt;T&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Buffers.ArrayPool`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ArrayPool(Of T)" />
-  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ArrayPool abstract" />
   <TypeSignature Language="F#" Value="type ArrayPool&lt;'T&gt; = class" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ArrayPool abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Buffers</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,16 +12,57 @@
     <AssemblyVersion>4.0.2.0</AssemblyVersion>
     <AssemblyVersion>4.0.3.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="System.Buffers" FromVersion="5.0.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.Buffers" FromVersion="6.0.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="System.Buffers" FromVersion="7.0.0.0" To="System.Runtime" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="System.Buffers" FromVersion="8.0.0.0" To="System.Runtime" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+    <TypeForwarding From="System.Buffers" FromVersion="9.0.0.0" To="System.Runtime" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <TypeParameters>
-    <TypeParameter Name="T" />
+    <TypeParameter Name="T">
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+    </TypeParameter>
   </TypeParameters>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <typeparam name="T">The type of the objects that are in the resource pool.</typeparam>
-    <summary>Provides a resource pool that enables reusing instances of type <see cref="T:T[]" />.</summary>
+    <summary>Provides a resource pool that enables reusing instances of type T[].</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -48,6 +89,18 @@
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Buffers.ArrayPool`1" /> class.</summary>
@@ -66,8 +119,8 @@ Note that this constructor is protected; it can only be called by classes derive
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Buffers.ArrayPool`1&lt;!T&gt; Create() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.ArrayPool`1.Create" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As ArrayPool(Of T)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Buffers::ArrayPool&lt;T&gt; ^ Create();" />
       <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Buffers.ArrayPool&lt;'T&gt;" Usage="System.Buffers.ArrayPool&lt;'T&gt;.Create " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Buffers::ArrayPool&lt;T&gt; ^ Create();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Buffers</AssemblyName>
@@ -76,6 +129,18 @@ Note that this constructor is protected; it can only be called by classes derive
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ArrayPool&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -83,7 +148,8 @@ Note that this constructor is protected; it can only be called by classes derive
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Buffers.ArrayPool`1" /> class.</summary>
         <returns>A new instance of the <see cref="T:System.Buffers.ArrayPool`1" /> class.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -91,8 +157,8 @@ Note that this constructor is protected; it can only be called by classes derive
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Buffers.ArrayPool`1&lt;!T&gt; Create(int32 maxArrayLength, int32 maxArraysPerBucket) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.ArrayPool`1.Create(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (maxArrayLength As Integer, maxArraysPerBucket As Integer) As ArrayPool(Of T)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Buffers::ArrayPool&lt;T&gt; ^ Create(int maxArrayLength, int maxArraysPerBucket);" />
       <MemberSignature Language="F#" Value="static member Create : int * int -&gt; System.Buffers.ArrayPool&lt;'T&gt;" Usage="System.Buffers.ArrayPool&lt;'T&gt;.Create (maxArrayLength, maxArraysPerBucket)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Buffers::ArrayPool&lt;T&gt; ^ Create(int maxArrayLength, int maxArraysPerBucket);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Buffers</AssemblyName>
@@ -100,6 +166,18 @@ Note that this constructor is protected; it can only be called by classes derive
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ArrayPool&lt;T&gt;</ReturnType>
@@ -111,7 +189,7 @@ Note that this constructor is protected; it can only be called by classes derive
       <Docs>
         <param name="maxArrayLength">The maximum length of an array instance that may be stored in the pool.</param>
         <param name="maxArraysPerBucket">The maximum number of array instances that may be stored in each bucket in the pool. The pool groups arrays of similar lengths into buckets for faster access.</param>
-        <summary>Creates a new instance of the <see cref="T:System.Buffers.ArrayPool`1" /> class using the specifed configuration.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Buffers.ArrayPool`1" /> class using the specified configuration.</summary>
         <returns>A new instance of the <see cref="T:System.Buffers.ArrayPool`1" /> class with the specified configuration.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -128,8 +206,8 @@ The instance of the <xref:System.Buffers.ArrayPool%601> class created by this me
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T[] Rent(int32 minimumLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Buffers.ArrayPool`1.Rent(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Rent (minimumLength As Integer) As T()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;T&gt; ^ Rent(int minimumLength);" />
       <MemberSignature Language="F#" Value="abstract member Rent : int -&gt; 'T[]" Usage="arrayPool.Rent minimumLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;T&gt; ^ Rent(int minimumLength);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Buffers</AssemblyName>
@@ -137,6 +215,18 @@ The instance of the <xref:System.Buffers.ArrayPool%601> class created by this me
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T[]</ReturnType>
@@ -147,14 +237,16 @@ The instance of the <xref:System.Buffers.ArrayPool%601> class created by this me
       <Docs>
         <param name="minimumLength">The minimum length of the array.</param>
         <summary>Retrieves a buffer that is at least the requested length.</summary>
-        <returns>An array of type <see cref="T:T[]" /> that is at least <paramref name="minimumLength" /> in length.</returns>
+        <returns>An array of type T that is at least <paramref name="minimumLength" /> in length.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
 
 This buffer is loaned to the caller and should be returned to the same pool using the <xref:System.Buffers.ArrayPool%601.Return%2A> method, so that it can be reused in subsequent calls to the <xref:System.Buffers.ArrayPool%601.Rent%2A> method. Failure to return a rented buffer is not a fatal error. However, it may lead to decreased application performance, as the pool may need to create a new buffer to replace the lost one.
- ]]></format>
+
+The array returned by this method may not be zero-initialized. 
+]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -171,6 +263,18 @@ This buffer is loaned to the caller and should be returned to the same pool usin
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -198,8 +302,8 @@ Once a buffer has been returned to the pool, the caller gives up all ownership o
       <MemberSignature Language="ILAsm" Value=".property class System.Buffers.ArrayPool`1&lt;!T&gt; Shared" />
       <MemberSignature Language="DocId" Value="P:System.Buffers.ArrayPool`1.Shared" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Shared As ArrayPool(Of T)" />
+      <MemberSignature Language="F#" Value="static member Shared : System.Buffers.ArrayPool&lt;'T&gt;" Usage="System.Buffers.ArrayPool&lt;'T&gt;.Shared" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Buffers::ArrayPool&lt;T&gt; ^ Shared { System::Buffers::ArrayPool&lt;T&gt; ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Shared : System.Buffers.ArrayPool&lt;'T&gt;" Usage="System.Buffers.ArrayPool&lt;'T&gt;.Shared" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Buffers</AssemblyName>
@@ -207,6 +311,18 @@ Once a buffer has been returned to the pool, the caller gives up all ownership o
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.ArrayPool&lt;T&gt;</ReturnType>

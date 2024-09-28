@@ -1,14 +1,19 @@
-﻿<Type Name="Annotation" FullName="System.Windows.Annotations.Annotation">
+<Type Name="Annotation" FullName="System.Windows.Annotations.Annotation">
   <TypeSignature Language="C#" Value="public sealed class Annotation : System.Xml.Serialization.IXmlSerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Annotation extends System.Object implements class System.Xml.Serialization.IXmlSerializable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.Annotation" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Annotation&#xA;Implements IXmlSerializable" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Annotation sealed : System::Xml::Serialization::IXmlSerializable" />
   <TypeSignature Language="F#" Value="type Annotation = class&#xA;    interface IXmlSerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Annotation sealed : System::Xml::Serialization::IXmlSerializable" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -19,8 +24,9 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
-      <AttributeName>System.Xml.Serialization.XmlRoot(ElementName="Annotation", Namespace="http://schemas.microsoft.com/windows/annotations/2003/11/core")</AttributeName>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Xml.Serialization.XmlRoot(ElementName="Annotation", Namespace="http://schemas.microsoft.com/windows/annotations/2003/11/core")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Xml.Serialization.XmlRoot(ElementName="Annotation", Namespace="http://schemas.microsoft.com/windows/annotations/2003/11/core")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -67,6 +73,11 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -77,7 +88,7 @@
 ## Remarks  
   
 > [!NOTE]
->  Applications should not use the default constructor without parameters-the default constructor does not fully initialize the instance. To create a new <xref:System.Windows.Annotations.Annotation> applications should use one of the parameter-based constructors.  
+>  Applications should not use the parameterless constructor without parameters-the parameterless constructor does not fully initialize the instance. To create a new <xref:System.Windows.Annotations.Annotation> applications should use one of the parameter-based constructors.  
   
  ]]></format>
         </remarks>
@@ -88,13 +99,18 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlQualifiedName annotationType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Annotation.#ctor(System.Xml.XmlQualifiedName)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (annotationType As XmlQualifiedName)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Annotation(System::Xml::XmlQualifiedName ^ annotationType);" />
       <MemberSignature Language="F#" Value="new System.Windows.Annotations.Annotation : System.Xml.XmlQualifiedName -&gt; System.Windows.Annotations.Annotation" Usage="new System.Windows.Annotations.Annotation annotationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Annotation(System::Xml::XmlQualifiedName ^ annotationType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="annotationType" Type="System.Xml.XmlQualifiedName" />
@@ -110,13 +126,18 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlQualifiedName annotationType, valuetype System.Guid id, valuetype System.DateTime creationTime, valuetype System.DateTime lastModificationTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Annotation.#ctor(System.Xml.XmlQualifiedName,System.Guid,System.DateTime,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (annotationType As XmlQualifiedName, id As Guid, creationTime As DateTime, lastModificationTime As DateTime)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Annotation(System::Xml::XmlQualifiedName ^ annotationType, Guid id, DateTime creationTime, DateTime lastModificationTime);" />
       <MemberSignature Language="F#" Value="new System.Windows.Annotations.Annotation : System.Xml.XmlQualifiedName * Guid * DateTime * DateTime -&gt; System.Windows.Annotations.Annotation" Usage="new System.Windows.Annotations.Annotation (annotationType, id, creationTime, lastModificationTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Annotation(System::Xml::XmlQualifiedName ^ annotationType, Guid id, DateTime creationTime, DateTime lastModificationTime);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="annotationType" Type="System.Xml.XmlQualifiedName" />
@@ -147,14 +168,20 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Annotations.AnnotationResourceChangedEventHandler AnchorChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Annotations.AnnotationResourceChangedEventHandler AnchorChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Annotations.Annotation.AnchorChanged" />
-      <MemberSignature Language="VB.NET" Value="Public Event AnchorChanged As AnnotationResourceChangedEventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Annotations::AnnotationResourceChangedEventHandler ^ AnchorChanged;" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event AnchorChanged As AnnotationResourceChangedEventHandler " FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
       <MemberSignature Language="F#" Value="member this.AnchorChanged : System.Windows.Annotations.AnnotationResourceChangedEventHandler " Usage="member this.AnchorChanged : System.Windows.Annotations.AnnotationResourceChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Annotations::AnnotationResourceChangedEventHandler ^ AnchorChanged;" />
+      <MemberSignature Language="VB.NET" Value="Public Event AnchorChanged As AnnotationResourceChangedEventHandler " FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Annotations.AnnotationResourceChangedEventHandler</ReturnType>
@@ -176,17 +203,23 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Windows.Annotations.AnnotationResource&gt; Anchors" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.Annotation.Anchors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Anchors As Collection(Of AnnotationResource)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Windows::Annotations::AnnotationResource ^&gt; ^ Anchors { System::Collections::ObjectModel::Collection&lt;System::Windows::Annotations::AnnotationResource ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Anchors : System.Collections.ObjectModel.Collection&lt;System.Windows.Annotations.AnnotationResource&gt;" Usage="System.Windows.Annotations.Annotation.Anchors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Windows::Annotations::AnnotationResource ^&gt; ^ Anchors { System::Collections::ObjectModel::Collection&lt;System::Windows::Annotations::AnnotationResource ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -212,17 +245,23 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlQualifiedName AnnotationType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.Annotation.AnnotationType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AnnotationType As XmlQualifiedName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlQualifiedName ^ AnnotationType { System::Xml::XmlQualifiedName ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.AnnotationType : System.Xml.XmlQualifiedName" Usage="System.Windows.Annotations.Annotation.AnnotationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlQualifiedName ^ AnnotationType { System::Xml::XmlQualifiedName ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -238,7 +277,7 @@
  The returned annotation type is the <xref:System.Xml.XmlQualifiedName> name passed as a parameter to the <xref:System.Windows.Annotations.Annotation.%23ctor%2A> constructor.  
   
 > [!NOTE]
->  <xref:System.Windows.Annotations.Annotation.AnnotationType%2A> returns `null` if the annotation was incorrectly constructed by using a default constructor without parameters.  (The default constructor without parameters does not fully initialize the instance and is used only internally in combination with XML serialization.)  To create a new annotation, applications should use the <xref:System.Windows.Annotations.Annotation.%23ctor%2A> constructor that takes an <xref:System.Xml.XmlQualifiedName> as a parameter.  
+>  <xref:System.Windows.Annotations.Annotation.AnnotationType%2A> returns `null` if the annotation was incorrectly constructed by using a parameterless constructor without parameters.  (The parameterless constructor without parameters does not fully initialize the instance and is used only internally in combination with XML serialization.)  To create a new annotation, applications should use the <xref:System.Windows.Annotations.Annotation.%23ctor%2A> constructor that takes an <xref:System.Xml.XmlQualifiedName> as a parameter.  
   
  ]]></format>
         </remarks>
@@ -248,14 +287,20 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Annotations.AnnotationAuthorChangedEventHandler AuthorChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Annotations.AnnotationAuthorChangedEventHandler AuthorChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Annotations.Annotation.AuthorChanged" />
-      <MemberSignature Language="VB.NET" Value="Public Event AuthorChanged As AnnotationAuthorChangedEventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Annotations::AnnotationAuthorChangedEventHandler ^ AuthorChanged;" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event AuthorChanged As AnnotationAuthorChangedEventHandler " FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
       <MemberSignature Language="F#" Value="member this.AuthorChanged : System.Windows.Annotations.AnnotationAuthorChangedEventHandler " Usage="member this.AuthorChanged : System.Windows.Annotations.AnnotationAuthorChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Annotations::AnnotationAuthorChangedEventHandler ^ AuthorChanged;" />
+      <MemberSignature Language="VB.NET" Value="Public Event AuthorChanged As AnnotationAuthorChangedEventHandler " FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Annotations.AnnotationAuthorChangedEventHandler</ReturnType>
@@ -270,17 +315,23 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;string&gt; Authors" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.Annotation.Authors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Authors As Collection(Of String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ Authors { System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Authors : System.Collections.ObjectModel.Collection&lt;string&gt;" Usage="System.Windows.Annotations.Annotation.Authors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ Authors { System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -305,14 +356,20 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Annotations.AnnotationResourceChangedEventHandler CargoChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Annotations.AnnotationResourceChangedEventHandler CargoChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Annotations.Annotation.CargoChanged" />
-      <MemberSignature Language="VB.NET" Value="Public Event CargoChanged As AnnotationResourceChangedEventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Annotations::AnnotationResourceChangedEventHandler ^ CargoChanged;" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event CargoChanged As AnnotationResourceChangedEventHandler " FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
       <MemberSignature Language="F#" Value="member this.CargoChanged : System.Windows.Annotations.AnnotationResourceChangedEventHandler " Usage="member this.CargoChanged : System.Windows.Annotations.AnnotationResourceChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Annotations::AnnotationResourceChangedEventHandler ^ CargoChanged;" />
+      <MemberSignature Language="VB.NET" Value="Public Event CargoChanged As AnnotationResourceChangedEventHandler " FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Annotations.AnnotationResourceChangedEventHandler</ReturnType>
@@ -334,17 +391,23 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Windows.Annotations.AnnotationResource&gt; Cargos" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.Annotation.Cargos" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Cargos As Collection(Of AnnotationResource)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Windows::Annotations::AnnotationResource ^&gt; ^ Cargos { System::Collections::ObjectModel::Collection&lt;System::Windows::Annotations::AnnotationResource ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Cargos : System.Collections.ObjectModel.Collection&lt;System.Windows.Annotations.AnnotationResource&gt;" Usage="System.Windows.Annotations.Annotation.Cargos" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Windows::Annotations::AnnotationResource ^&gt; ^ Cargos { System::Collections::ObjectModel::Collection&lt;System::Windows::Annotations::AnnotationResource ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -370,17 +433,23 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime CreationTime" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.Annotation.CreationTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreationTime As DateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime CreationTime { DateTime get(); };" />
       <MemberSignature Language="F#" Value="member this.CreationTime : DateTime" Usage="System.Windows.Annotations.Annotation.CreationTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime CreationTime { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -407,8 +476,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.Schema.XmlSchema GetSchema() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Annotation.GetSchema" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSchema () As XmlSchema" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::Schema::XmlSchema ^ GetSchema();" />
       <MemberSignature Language="F#" Value="abstract member GetSchema : unit -&gt; System.Xml.Schema.XmlSchema&#xA;override this.GetSchema : unit -&gt; System.Xml.Schema.XmlSchema" Usage="annotation.GetSchema " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::Schema::XmlSchema ^ GetSchema();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.GetSchema</InterfaceMember>
@@ -417,14 +486,19 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchema</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Always returns <see langword="null" />.  See <see href="https://docs.microsoft.com/dotnet/framework/wpf/advanced/annotations-schema">Annotations Schema</see> for schema details.</summary>
-        <returns>Always <see langword="null" />.  See <see href="https://docs.microsoft.com/dotnet/framework/wpf/advanced/annotations-schema">Annotations Schema</see> for schema details.</returns>
+        <summary>Always returns <see langword="null" />.  See <see href="https://learn.microsoft.com/dotnet/framework/wpf/advanced/annotations-schema">Annotations Schema</see> for schema details.</summary>
+        <returns>Always <see langword="null" />.  See <see href="https://learn.microsoft.com/dotnet/framework/wpf/advanced/annotations-schema">Annotations Schema</see> for schema details.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -433,17 +507,23 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Id" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.Annotation.Id" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As Guid" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid Id { Guid get(); };" />
       <MemberSignature Language="F#" Value="member this.Id : Guid" Usage="System.Windows.Annotations.Annotation.Id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid Id { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -469,17 +549,23 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime LastModificationTime" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.Annotation.LastModificationTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastModificationTime As DateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime LastModificationTime { DateTime get(); };" />
       <MemberSignature Language="F#" Value="member this.LastModificationTime : DateTime" Usage="System.Windows.Annotations.Annotation.LastModificationTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime LastModificationTime { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -497,8 +583,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReadXml(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Annotation.ReadXml(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReadXml (reader As XmlReader)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReadXml(System::Xml::XmlReader ^ reader);" />
       <MemberSignature Language="F#" Value="abstract member ReadXml : System.Xml.XmlReader -&gt; unit&#xA;override this.ReadXml : System.Xml.XmlReader -&gt; unit" Usage="annotation.ReadXml reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReadXml(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.ReadXml(System.Xml.XmlReader)</InterfaceMember>
@@ -507,6 +593,11 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -529,8 +620,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteXml(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Annotation.WriteXml(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteXml (writer As XmlWriter)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteXml(System::Xml::XmlWriter ^ writer);" />
       <MemberSignature Language="F#" Value="abstract member WriteXml : System.Xml.XmlWriter -&gt; unit&#xA;override this.WriteXml : System.Xml.XmlWriter -&gt; unit" Usage="annotation.WriteXml writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteXml(System::Xml::XmlWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.WriteXml(System.Xml.XmlWriter)</InterfaceMember>
@@ -539,6 +630,11 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

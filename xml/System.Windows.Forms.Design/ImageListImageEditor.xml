@@ -1,19 +1,58 @@
-﻿<Type Name="ImageListImageEditor" FullName="System.Windows.Forms.Design.ImageListImageEditor">
+<Type Name="ImageListImageEditor" FullName="System.Windows.Forms.Design.ImageListImageEditor">
   <TypeSignature Language="C#" Value="public class ImageListImageEditor : System.Drawing.Design.ImageEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ImageListImageEditor extends System.Drawing.Design.ImageEditor" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ImageListImageEditor" />
   <TypeSignature Language="VB.NET" Value="Public Class ImageListImageEditor&#xA;Inherits ImageEditor" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ImageListImageEditor : System::Drawing::Design::ImageEditor" />
   <TypeSignature Language="F#" Value="type ImageListImageEditor = class&#xA;    inherit ImageEditor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ImageListImageEditor : System::Drawing::Design::ImageEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Design" FromVersion="4.0.0.0" To="System.Windows.Forms.Design.Editors" ToVersion="4.0.0.0" FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1" />
+    <TypeForwarding From="System.Design" FromVersion="5.0.0.0" To="System.Windows.Forms.Design" ToVersion="5.0.0.0" FrameworkAlternate="windowsdesktop-5.0" />
+    <TypeForwarding From="System.Windows.Forms.Design.Editors" FromVersion="5.0.0.0" To="System.Windows.Forms.Design" ToVersion="5.0.0.0" FrameworkAlternate="windowsdesktop-5.0" />
+    <TypeForwarding From="System.Design" FromVersion="6.0.0.0" To="System.Windows.Forms.Design" ToVersion="6.0.0.0" FrameworkAlternate="windowsdesktop-6.0" />
+    <TypeForwarding From="System.Windows.Forms.Design.Editors" FromVersion="6.0.0.0" To="System.Windows.Forms.Design" ToVersion="6.0.0.0" FrameworkAlternate="windowsdesktop-6.0" />
+    <TypeForwarding From="System.Design" FromVersion="7.0.0.0" To="System.Windows.Forms.Design" ToVersion="7.0.0.0" FrameworkAlternate="windowsdesktop-7.0" />
+    <TypeForwarding From="System.Windows.Forms.Design.Editors" FromVersion="7.0.0.0" To="System.Windows.Forms.Design" ToVersion="7.0.0.0" FrameworkAlternate="windowsdesktop-7.0" />
+    <TypeForwarding From="System.Design" FromVersion="8.0.0.0" To="System.Windows.Forms.Design" ToVersion="8.0.0.0" FrameworkAlternate="windowsdesktop-8.0" />
+    <TypeForwarding From="System.Windows.Forms.Design.Editors" FromVersion="8.0.0.0" To="System.Windows.Forms.Design" ToVersion="8.0.0.0" FrameworkAlternate="windowsdesktop-8.0" />
+    <TypeForwarding From="System.Design" FromVersion="9.0.0.0" To="System.Windows.Forms.Design" ToVersion="9.0.0.0" FrameworkAlternate="windowsdesktop-9.0" />
+    <TypeForwarding From="System.Windows.Forms.Design.Editors" FromVersion="9.0.0.0" To="System.Windows.Forms.Design" ToVersion="9.0.0.0" FrameworkAlternate="windowsdesktop-9.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Drawing.Design.ImageEditor</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0">
+      <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Provides an editor that can perform default file searching for bitmap (.bmp) files.</summary>
     <remarks>To be added.</remarks>
@@ -31,9 +70,22 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -43,24 +95,50 @@
       </Docs>
     </Member>
     <Member MemberName="EditValue">
-      <MemberSignature Language="C#" Value="public override object EditValue (System.ComponentModel.ITypeDescriptorContext context, IServiceProvider provider, object value);" />
+      <MemberSignature Language="C#" Value="public override object EditValue (System.ComponentModel.ITypeDescriptorContext context, IServiceProvider provider, object value);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object EditValue(class System.ComponentModel.ITypeDescriptorContext context, class System.IServiceProvider provider, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ImageListImageEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function EditValue (context As ITypeDescriptorContext, provider As IServiceProvider, value As Object) As Object" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ EditValue(System::ComponentModel::ITypeDescriptorContext ^ context, IServiceProvider ^ provider, System::Object ^ value);" />
       <MemberSignature Language="F#" Value="override this.EditValue : System.ComponentModel.ITypeDescriptorContext * IServiceProvider * obj -&gt; obj" Usage="imageListImageEditor.EditValue (context, provider, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ EditValue(System::ComponentModel::ITypeDescriptorContext ^ context, IServiceProvider ^ provider, System::Object ^ value);" />
+      <MemberSignature Language="C#" Value="public override object? EditValue (System.ComponentModel.ITypeDescriptorContext? context, IServiceProvider provider, object? value);" FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
-        <Parameter Name="provider" Type="System.IServiceProvider" />
+        <Parameter Name="provider" Type="System.IServiceProvider">
+          <Attributes>
+            <Attribute FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
@@ -84,13 +162,25 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetFileDialogDescription() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ImageListImageEditor.GetFileDialogDescription" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetFileDialogDescription () As String" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetFileDialogDescription();" />
       <MemberSignature Language="F#" Value="override this.GetFileDialogDescription : unit -&gt; string" Usage="imageListImageEditor.GetFileDialogDescription " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetFileDialogDescription();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -114,13 +204,25 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Type[] GetImageExtenders() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ImageListImageEditor.GetImageExtenders" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetImageExtenders () As Type()" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;Type ^&gt; ^ GetImageExtenders();" />
       <MemberSignature Language="F#" Value="override this.GetImageExtenders : unit -&gt; Type[]" Usage="imageListImageEditor.GetImageExtenders " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;Type ^&gt; ^ GetImageExtenders();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type[]</ReturnType>
@@ -133,18 +235,37 @@
       </Docs>
     </Member>
     <Member MemberName="GetPaintValueSupported">
-      <MemberSignature Language="C#" Value="public override bool GetPaintValueSupported (System.ComponentModel.ITypeDescriptorContext context);" />
+      <MemberSignature Language="C#" Value="public override bool GetPaintValueSupported (System.ComponentModel.ITypeDescriptorContext context);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool GetPaintValueSupported(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ImageListImageEditor.GetPaintValueSupported(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPaintValueSupported (context As ITypeDescriptorContext) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetPaintValueSupported(System::ComponentModel::ITypeDescriptorContext ^ context);" />
       <MemberSignature Language="F#" Value="override this.GetPaintValueSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="imageListImageEditor.GetPaintValueSupported context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetPaintValueSupported(System::ComponentModel::ITypeDescriptorContext ^ context);" />
+      <MemberSignature Language="C#" Value="public override bool GetPaintValueSupported (System.ComponentModel.ITypeDescriptorContext? context);" FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -164,13 +285,25 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void PaintValue(class System.Drawing.Design.PaintValueEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ImageListImageEditor.PaintValue(System.Drawing.Design.PaintValueEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub PaintValue (e As PaintValueEventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PaintValue(System::Drawing::Design::PaintValueEventArgs ^ e);" />
       <MemberSignature Language="F#" Value="override this.PaintValue : System.Drawing.Design.PaintValueEventArgs -&gt; unit" Usage="imageListImageEditor.PaintValue e" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PaintValue(System::Drawing::Design::PaintValueEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

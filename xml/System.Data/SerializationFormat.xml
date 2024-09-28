@@ -1,10 +1,10 @@
-﻿<Type Name="SerializationFormat" FullName="System.Data.SerializationFormat">
+<Type Name="SerializationFormat" FullName="System.Data.SerializationFormat">
   <TypeSignature Language="C#" Value="public enum SerializationFormat" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SerializationFormat extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.SerializationFormat" />
   <TypeSignature Language="VB.NET" Value="Public Enum SerializationFormat" />
-  <TypeSignature Language="C++ CLI" Value="public enum class SerializationFormat" />
   <TypeSignature Language="F#" Value="type SerializationFormat = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SerializationFormat" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -14,12 +14,26 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Data.Common" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Data.Common" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Data.Common" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Data.Common" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Data.Common" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
@@ -28,11 +42,12 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- Microsoft ADO.NET 2.0 introduces the ability to serialize a <xref:System.Data.DataSet> as binary content. Earlier versions of the Microsoft .NET Framework do not support binary serialization.  
-  
- The default format is Xml. This is backward compatible and will work with all versions of the .NET Framework.  
-  
+## Remarks
+
+Microsoft ADO.NET 2.0 introduced the ability to serialize a <xref:System.Data.DataSet> as binary content. Earlier versions of .NET Framework did not support binary serialization. The `Binary` field is obsolete starting in .NET 7, because it relies on <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, which is inherently insecure.
+
+The default format is `Xml`. This format is backward compatible and will work with all versions of .NET.
+
  ]]></format>
     </remarks>
   </Docs>
@@ -42,8 +57,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SerializationFormat Binary = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.SerializationFormat.Binary" />
       <MemberSignature Language="VB.NET" Value="Binary" />
-      <MemberSignature Language="C++ CLI" Value="Binary" />
       <MemberSignature Language="F#" Value="Binary = 1" Usage="System.Data.SerializationFormat.Binary" />
+      <MemberSignature Language="C++ CLI" Value="Binary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -54,18 +69,31 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-7.0;net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Obsolete("SerializationFormat.Binary is obsolete and should not be used. See https://aka.ms/serializationformat-binary-obsolete for more information.", DiagnosticId="SYSLIB0038")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("SerializationFormat.Binary is obsolete and should not be used. See https://aka.ms/serializationformat-binary-obsolete for more information.", DiagnosticId="SYSLIB0038")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Data.SerializationFormat</ReturnType>
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Serialize as binary content. Available in ADO.NET 2.0 only.</summary>
+        <summary>Serialize as binary content. Available in ADO.NET 2.0 and later versions only. This field is obsolete starting in .NET 7.</summary>
       </Docs>
     </Member>
     <Member MemberName="Xml">
@@ -73,8 +101,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SerializationFormat Xml = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Data.SerializationFormat.Xml" />
       <MemberSignature Language="VB.NET" Value="Xml" />
-      <MemberSignature Language="C++ CLI" Value="Xml" />
       <MemberSignature Language="F#" Value="Xml = 0" Usage="System.Data.SerializationFormat.Xml" />
+      <MemberSignature Language="C++ CLI" Value="Xml" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -85,11 +113,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SerializationFormat</ReturnType>

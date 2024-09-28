@@ -1,10 +1,10 @@
-﻿<Type Name="ProxyWebPartManager" FullName="System.Web.UI.WebControls.WebParts.ProxyWebPartManager">
+<Type Name="ProxyWebPartManager" FullName="System.Web.UI.WebControls.WebParts.ProxyWebPartManager">
   <TypeSignature Language="C#" Value="public class ProxyWebPartManager : System.Web.UI.Control" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProxyWebPartManager extends System.Web.UI.Control" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.ProxyWebPartManager" />
   <TypeSignature Language="VB.NET" Value="Public Class ProxyWebPartManager&#xA;Inherits Control" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ProxyWebPartManager : System::Web::UI::Control" />
   <TypeSignature Language="F#" Value="type ProxyWebPartManager = class&#xA;    inherit Control" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProxyWebPartManager : System::Web::UI::Control" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -16,22 +16,28 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.Bindable(false)</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.WebParts.ProxyWebPartManagerDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName>System.Web.UI.NonVisualControl</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName>System.Web.UI.ParseChildren(true)</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName>System.Web.UI.PersistChildren(false)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.Bindable(false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.Bindable(false)&gt;]</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.WebParts.ProxyWebPartManagerDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.Designer("System.Web.UI.Design.WebControls.WebParts.ProxyWebPartManagerDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.Designer("System.Web.UI.Design.WebControls.WebParts.ProxyWebPartManagerDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Web.UI.NonVisualControl]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Web.UI.NonVisualControl&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Web.UI.ParseChildren(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Web.UI.ParseChildren(true)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Web.UI.PersistChildren(false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Web.UI.PersistChildren(false)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.ComponentModel.Designer("System.Web.UI.Design.WebControls.WebParts.ProxyWebPartManagerDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.Designer("System.Web.UI.Design.WebControls.WebParts.ProxyWebPartManagerDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -42,7 +48,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.WebParts.ProxyWebPartManager> control exists for the particular scenario of declaring static connections in content pages when a <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control has already been declared in a master page.  
   
- By design, a Web page that uses Web Parts controls must contain one (and only one) <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control that manages all Web Parts controls on the page. When a Web Parts application uses master pages, it is common to place the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control in the master page, because all the content pages are merged with the master page at run time and the single <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control will manage all the Web Parts controls from all content pages. However, when developers want to declare static connections in the content pages of such an application, they might seem to face a limitation. A static Web Parts connection can be declared only by adding an <`asp:webpartconnection>` element as a child of a `<staticconnections>` element, which itself must be a child of a `<asp:webpartmanager>` element. But because the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control was already declared in the master page, and is the one permitted <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control, developers cannot declare additional <xref:System.Web.UI.WebControls.WebParts.WebPartManager> controls in the content pages to add static connections.  
+ By design, a Web page that uses Web Parts controls must contain one (and only one) <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control that manages all Web Parts controls on the page. When a Web Parts application uses master pages, it is common to place the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control in the master page, because all the content pages are merged with the master page at run time and the single <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control will manage all the Web Parts controls from all content pages. However, when developers want to declare static connections in the content pages of such an application, they might seem to face a limitation. A static Web Parts connection can be declared only by adding an `<asp:webpartconnection>` element as a child of a `<staticconnections>` element, which itself must be a child of a `<asp:webpartmanager>` element. But because the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control was already declared in the master page, and is the one permitted <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control, developers cannot declare additional <xref:System.Web.UI.WebControls.WebParts.WebPartManager> controls in the content pages to add static connections.  
   
  The <xref:System.Web.UI.WebControls.WebParts.ProxyWebPartManager> control takes the place of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control in this scenario. Developers declare an `<asp:proxywebpartmanager>` element instead of an `<asp:webpartmanager>` element in their content pages, and can then declare static connections as child elements. At run time, the connections in the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPartManager> control are simply added to the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.StaticConnections%2A> collection of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control and treated like any other connection.  
   
@@ -67,25 +73,25 @@
   
  The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting master page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
   
- [!code-aspx-csharp[WebParts_ProxyWebPartManager_Overview#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ProxyWebPartManager_Overview/CS/displaymodemenucs.ascx#6)]
- [!code-aspx-vb[WebParts_ProxyWebPartManager_Overview#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ProxyWebPartManager_Overview/VB/DisplayModeMenuVB.ascx#6)]  
+ [!code-aspx-csharp[WebParts_ProxyWebPartManager_Overview#6](~/snippets/csharp/VS_Snippets_WebNet/WebParts_ProxyWebPartManager_Overview/CS/displaymodemenucs.ascx#6)]
+ [!code-aspx-vb[WebParts_ProxyWebPartManager_Overview#6](~/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ProxyWebPartManager_Overview/VB/DisplayModeMenuVB.ascx#6)]  
   
  The second part of the code example is the source code for the interface and controls. The source file contains a simple interface named `IZipCode`. There is also a <xref:System.Web.UI.WebControls.WebParts.WebPart> class named `ZipCodeWebPart` that implements the interface and acts as the provider control. Its `ProvideIZipCode` method is the callback method that implements the interface's only member. The method simply returns an instance of the interface. Note that the method is marked with a `ConnectionProvider` attribute in its metadata. This is the mechanism for identifying the method as the callback method for the provider's connection point. The other <xref:System.Web.UI.WebControls.WebParts.WebPart> class is named `WeatherWebPart`, and it acts as the consumer for the connection. This class has a method named `GetZipCode` that gets an instance of the `IZipCode` interface from the provider control. Note that this method is marked as the consumer's connection point method with a `ConnectionConsumer` attribute in its metadata.  
   
  For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
   
- [!code-csharp[WebParts_ProxyWebPartManager_Overview#4](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ProxyWebPartManager_Overview/CS/ZipCodeComponent.cs#4)]
- [!code-vb[WebParts_ProxyWebPartManager_Overview#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ProxyWebPartManager_Overview/VB/ZipCodeComponent.vb#4)]  
+ [!code-csharp[WebParts_ProxyWebPartManager_Overview#4](~/snippets/csharp/VS_Snippets_WebNet/WebParts_ProxyWebPartManager_Overview/CS/ZipCodeComponent.cs#4)]
+ [!code-vb[WebParts_ProxyWebPartManager_Overview#4](~/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ProxyWebPartManager_Overview/VB/ZipCodeComponent.vb#4)]  
   
  The third part of the code example is the master page. You should take the following source code and save it in a file, naming it MasterPageCS.master or MasterPageVB.master (depending on which language you use). Note that the master page contains a `Register` directive to register the user control, and it references the user control itself in the body of the page. The master page also declares the single `<asp:webpartmanager>` element used for this page and all related content pages. Finally, the master page has an `<asp: contentplaceholder>` element that declares the point in the page where the content page is inserted.  
   
- [!code-aspx-csharp[WebParts_ProxyWebPartManager_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ProxyWebPartManager_Overview/CS/MasterPageCS.master#1)]
- [!code-aspx-vb[WebParts_ProxyWebPartManager_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ProxyWebPartManager_Overview/VB/MasterPageVB.master#1)]  
+ [!code-aspx-csharp[WebParts_ProxyWebPartManager_Overview#1](~/snippets/csharp/VS_Snippets_WebNet/WebParts_ProxyWebPartManager_Overview/CS/MasterPageCS.master#1)]
+ [!code-aspx-vb[WebParts_ProxyWebPartManager_Overview#1](~/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ProxyWebPartManager_Overview/VB/MasterPageVB.master#1)]  
   
- The fourth part of the code example is the content page. You should copy the following source code and save it in a file with an .aspx extension. Notice that its `Page` directive contains a `MasterFile` attribute to refer to the master page. Also, this page has a `Register` directive to register the file in the App_Code folder that contains the dynamically compiled custom <xref:System.Web.UI.WebControls.WebParts.WebPart> controls that participate in the connection. Within the `<asp:content>` tags of the page, there is an <`asp:proxywebpartmanager>` element, with a child `<staticconnections>` element, which in turn has a child `<asp:webpartconnection>` element to declare the details of the connection. Within the `<script>` tags on the page, the `Button1_Click` method adds some code that accesses the main <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control in the master page and the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPartManager> control in the content page, and writes some of their details to the page.  
+ The fourth part of the code example is the content page. You should copy the following source code and save it in a file with an .aspx extension. Notice that its `Page` directive contains a `MasterFile` attribute to refer to the master page. Also, this page has a `Register` directive to register the file in the App_Code folder that contains the dynamically compiled custom <xref:System.Web.UI.WebControls.WebParts.WebPart> controls that participate in the connection. Within the `<asp:content>` tags of the page, there is an `<asp:proxywebpartmanager>` element, with a child `<staticconnections>` element, which in turn has a child `<asp:webpartconnection>` element to declare the details of the connection. Within the `<script>` tags on the page, the `Button1_Click` method adds some code that accesses the main <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control in the master page and the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPartManager> control in the content page, and writes some of their details to the page.  
   
- [!code-aspx-csharp[WebParts_ProxyWebPartManager_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ProxyWebPartManager_Overview/CS/contentPage1CS.aspx#2)]
- [!code-aspx-vb[WebParts_ProxyWebPartManager_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ProxyWebPartManager_Overview/VB/contentPage1VB.aspx#2)]  
+ [!code-aspx-csharp[WebParts_ProxyWebPartManager_Overview#2](~/snippets/csharp/VS_Snippets_WebNet/WebParts_ProxyWebPartManager_Overview/CS/contentPage1CS.aspx#2)]
+ [!code-aspx-vb[WebParts_ProxyWebPartManager_Overview#2](~/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ProxyWebPartManager_Overview/VB/contentPage1VB.aspx#2)]  
   
  After you load the page in a browser, click the **WebPartManager Information** button and observe the information about the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control in the master page, and the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPartManager> control in the content page. For example, note that they both have the same count in their respective properties that track static connections (the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPartManager.StaticConnections%2A> property). Note also that although the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control has a <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebParts%2A> property that tracks the number of <xref:System.Web.UI.WebControls.WebParts.WebPart> controls it manages, the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPartManager> control has no such property, as its only purpose is to contain static connections.  
   
@@ -93,7 +99,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" />
-    <related type="Article" href="https://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/e0s9t4ck(v=vs.100)">ASP.NET Web Parts Controls</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -110,7 +116,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -124,8 +131,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ClientID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ProxyWebPartManager.ClientID" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ClientID As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ClientID { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.ClientID : string" Usage="System.Web.UI.WebControls.WebParts.ProxyWebPartManager.ClientID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ClientID { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -134,7 +141,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -152,8 +160,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ControlCollection Controls" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ProxyWebPartManager.Controls" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Controls As ControlCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ControlCollection ^ Controls { System::Web::UI::ControlCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Controls : System.Web.UI.ControlCollection" Usage="System.Web.UI.WebControls.WebParts.ProxyWebPartManager.Controls" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ControlCollection ^ Controls { System::Web::UI::ControlCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -162,7 +170,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -180,8 +189,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.ControlCollection CreateControlCollection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ProxyWebPartManager.CreateControlCollection" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlCollection () As ControlCollection" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::ControlCollection ^ CreateControlCollection();" />
       <MemberSignature Language="F#" Value="override this.CreateControlCollection : unit -&gt; System.Web.UI.ControlCollection" Usage="proxyWebPartManager.CreateControlCollection " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::ControlCollection ^ CreateControlCollection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -211,8 +220,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableTheming" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ProxyWebPartManager.EnableTheming" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property EnableTheming As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableTheming { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.EnableTheming : bool with get, set" Usage="System.Web.UI.WebControls.WebParts.ProxyWebPartManager.EnableTheming" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableTheming { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -221,10 +230,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -251,8 +262,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Focus() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ProxyWebPartManager.Focus" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Focus ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Focus();" />
       <MemberSignature Language="F#" Value="override this.Focus : unit -&gt; unit" Usage="proxyWebPartManager.Focus " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Focus();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -261,7 +272,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -287,8 +299,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ProxyWebPartManager.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
       <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="proxyWebPartManager.OnInit e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -322,8 +334,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string SkinID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ProxyWebPartManager.SkinID" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property SkinID As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SkinID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.SkinID : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ProxyWebPartManager.SkinID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SkinID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -332,13 +344,16 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -365,8 +380,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.ProxyWebPartConnectionCollection StaticConnections" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ProxyWebPartManager.StaticConnections" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StaticConnections As ProxyWebPartConnectionCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::ProxyWebPartConnectionCollection ^ StaticConnections { System::Web::UI::WebControls::WebParts::ProxyWebPartConnectionCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.StaticConnections : System.Web.UI.WebControls.WebParts.ProxyWebPartConnectionCollection" Usage="System.Web.UI.WebControls.WebParts.ProxyWebPartManager.StaticConnections" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::ProxyWebPartConnectionCollection ^ StaticConnections { System::Web::UI::WebControls::WebParts::ProxyWebPartConnectionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -375,19 +390,24 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.MergableProperty(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.MergableProperty(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -411,8 +431,8 @@
   
  The following code is the content page that declares the `<staticconnections>` element as a child of the `<asp:proxywebpartmanager>` element. Also note that the `Button1_Click` method checks the count of the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPartManager.StaticConnections%2A> property on the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPartManager> control and writes it to the page.  
   
- [!code-aspx-csharp[WebParts_ProxyWebPartManager_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ProxyWebPartManager_Overview/CS/contentPage1CS.aspx#2)]
- [!code-aspx-vb[WebParts_ProxyWebPartManager_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ProxyWebPartManager_Overview/VB/contentPage1VB.aspx#2)]  
+ [!code-aspx-csharp[WebParts_ProxyWebPartManager_Overview#2](~/snippets/csharp/VS_Snippets_WebNet/WebParts_ProxyWebPartManager_Overview/CS/contentPage1CS.aspx#2)]
+ [!code-aspx-vb[WebParts_ProxyWebPartManager_Overview#2](~/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ProxyWebPartManager_Overview/VB/contentPage1VB.aspx#2)]  
   
  After you load the page in a browser, click the **WebPartManager Information** button and observe the information about the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control in the master page, and the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPartManager> control in the content page. For example, note that they both have the same count in their respective properties that track static connections (the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPartManager.StaticConnections%2A> property).  
   
@@ -426,8 +446,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ProxyWebPartManager.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Visible As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Visible { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Web.UI.WebControls.WebParts.ProxyWebPartManager.Visible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Visible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -436,13 +456,16 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(false)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

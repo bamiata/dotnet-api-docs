@@ -1,13 +1,15 @@
-﻿<Type Name="CacheEntryChangeMonitor" FullName="System.Runtime.Caching.CacheEntryChangeMonitor">
+<Type Name="CacheEntryChangeMonitor" FullName="System.Runtime.Caching.CacheEntryChangeMonitor">
   <TypeSignature Language="C#" Value="public abstract class CacheEntryChangeMonitor : System.Runtime.Caching.ChangeMonitor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CacheEntryChangeMonitor extends System.Runtime.Caching.ChangeMonitor" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.CacheEntryChangeMonitor" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CacheEntryChangeMonitor&#xA;Inherits ChangeMonitor" />
-  <TypeSignature Language="C++ CLI" Value="public ref class CacheEntryChangeMonitor abstract : System::Runtime::Caching::ChangeMonitor" />
   <TypeSignature Language="F#" Value="type CacheEntryChangeMonitor = class&#xA;    inherit ChangeMonitor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CacheEntryChangeMonitor abstract : System::Runtime::Caching::ChangeMonitor" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Caching</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Runtime.Caching.ChangeMonitor</BaseTypeName>
@@ -38,10 +40,13 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -51,7 +56,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Runtime.Caching.CacheEntryChangeMonitor> class has a default constructor.  
+ The <xref:System.Runtime.Caching.CacheEntryChangeMonitor> class has a parameterless constructor.  
   
  ]]></format>
         </remarks>
@@ -65,12 +70,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; CacheKeys" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.CacheEntryChangeMonitor.CacheKeys" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property CacheKeys As ReadOnlyCollection(Of String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ CacheKeys { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.CacheKeys : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt;" Usage="System.Runtime.Caching.CacheEntryChangeMonitor.CacheKeys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ CacheKeys { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.String&gt;</ReturnType>
@@ -93,12 +100,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset LastModified" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.CacheEntryChangeMonitor.LastModified" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property LastModified As DateTimeOffset" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property DateTimeOffset LastModified { DateTimeOffset get(); };" />
       <MemberSignature Language="F#" Value="member this.LastModified : DateTimeOffset" Usage="System.Runtime.Caching.CacheEntryChangeMonitor.LastModified" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property DateTimeOffset LastModified { DateTimeOffset get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTimeOffset</ReturnType>
@@ -123,12 +132,14 @@
       <MemberSignature Language="ILAsm" Value=".property instance string RegionName" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.CacheEntryChangeMonitor.RegionName" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property RegionName As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ RegionName { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.RegionName : string" Usage="System.Runtime.Caching.CacheEntryChangeMonitor.RegionName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ RegionName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

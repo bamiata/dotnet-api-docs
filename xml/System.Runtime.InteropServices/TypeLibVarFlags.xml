@@ -1,10 +1,11 @@
-﻿<Type Name="TypeLibVarFlags" FullName="System.Runtime.InteropServices.TypeLibVarFlags">
+<Type Name="TypeLibVarFlags" FullName="System.Runtime.InteropServices.TypeLibVarFlags">
   <TypeSignature Language="C#" Value="public enum TypeLibVarFlags" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TypeLibVarFlags extends System.Enum" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TypeLibVarFlags extends System.Enum" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-2.1" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.TypeLibVarFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum TypeLibVarFlags" />
-  <TypeSignature Language="C++ CLI" Value="public enum class TypeLibVarFlags" />
   <TypeSignature Language="F#" Value="type TypeLibVarFlags = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TypeLibVarFlags" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TypeLibVarFlags extends System.Enum" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -16,19 +17,39 @@
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.InteropServices" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.InteropServices" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.InteropServices" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.InteropServices" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.InteropServices" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
-      <AttributeName>System.Flags</AttributeName>
+    <Attribute>
+      <AttributeName Language="C#">[System.Flags]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Flags&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-      <AttributeName>System.Serializable</AttributeName>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(true)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -50,8 +71,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibVarFlags FBindable = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibVarFlags.FBindable" />
       <MemberSignature Language="VB.NET" Value="FBindable" />
-      <MemberSignature Language="C++ CLI" Value="FBindable" />
       <MemberSignature Language="F#" Value="FBindable = 4" Usage="System.Runtime.InteropServices.TypeLibVarFlags.FBindable" />
+      <MemberSignature Language="C++ CLI" Value="FBindable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -64,6 +85,16 @@
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibVarFlags</ReturnType>
@@ -78,8 +109,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibVarFlags FDefaultBind = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibVarFlags.FDefaultBind" />
       <MemberSignature Language="VB.NET" Value="FDefaultBind" />
-      <MemberSignature Language="C++ CLI" Value="FDefaultBind" />
       <MemberSignature Language="F#" Value="FDefaultBind = 32" Usage="System.Runtime.InteropServices.TypeLibVarFlags.FDefaultBind" />
+      <MemberSignature Language="C++ CLI" Value="FDefaultBind" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -92,6 +123,16 @@
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibVarFlags</ReturnType>
@@ -106,8 +147,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibVarFlags FDefaultCollelem = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibVarFlags.FDefaultCollelem" />
       <MemberSignature Language="VB.NET" Value="FDefaultCollelem" />
-      <MemberSignature Language="C++ CLI" Value="FDefaultCollelem" />
       <MemberSignature Language="F#" Value="FDefaultCollelem = 256" Usage="System.Runtime.InteropServices.TypeLibVarFlags.FDefaultCollelem" />
+      <MemberSignature Language="C++ CLI" Value="FDefaultCollelem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -120,6 +161,16 @@
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibVarFlags</ReturnType>
@@ -134,8 +185,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibVarFlags FDisplayBind = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibVarFlags.FDisplayBind" />
       <MemberSignature Language="VB.NET" Value="FDisplayBind" />
-      <MemberSignature Language="C++ CLI" Value="FDisplayBind" />
       <MemberSignature Language="F#" Value="FDisplayBind = 16" Usage="System.Runtime.InteropServices.TypeLibVarFlags.FDisplayBind" />
+      <MemberSignature Language="C++ CLI" Value="FDisplayBind" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -148,6 +199,16 @@
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibVarFlags</ReturnType>
@@ -162,8 +223,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibVarFlags FHidden = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibVarFlags.FHidden" />
       <MemberSignature Language="VB.NET" Value="FHidden" />
-      <MemberSignature Language="C++ CLI" Value="FHidden" />
       <MemberSignature Language="F#" Value="FHidden = 64" Usage="System.Runtime.InteropServices.TypeLibVarFlags.FHidden" />
+      <MemberSignature Language="C++ CLI" Value="FHidden" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -176,6 +237,16 @@
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibVarFlags</ReturnType>
@@ -190,8 +261,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibVarFlags FImmediateBind = int32(4096)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibVarFlags.FImmediateBind" />
       <MemberSignature Language="VB.NET" Value="FImmediateBind" />
-      <MemberSignature Language="C++ CLI" Value="FImmediateBind" />
       <MemberSignature Language="F#" Value="FImmediateBind = 4096" Usage="System.Runtime.InteropServices.TypeLibVarFlags.FImmediateBind" />
+      <MemberSignature Language="C++ CLI" Value="FImmediateBind" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -204,6 +275,16 @@
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibVarFlags</ReturnType>
@@ -218,8 +299,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibVarFlags FNonBrowsable = int32(1024)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibVarFlags.FNonBrowsable" />
       <MemberSignature Language="VB.NET" Value="FNonBrowsable" />
-      <MemberSignature Language="C++ CLI" Value="FNonBrowsable" />
       <MemberSignature Language="F#" Value="FNonBrowsable = 1024" Usage="System.Runtime.InteropServices.TypeLibVarFlags.FNonBrowsable" />
+      <MemberSignature Language="C++ CLI" Value="FNonBrowsable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -232,6 +313,16 @@
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibVarFlags</ReturnType>
@@ -246,8 +337,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibVarFlags FReadOnly = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibVarFlags.FReadOnly" />
       <MemberSignature Language="VB.NET" Value="FReadOnly" />
-      <MemberSignature Language="C++ CLI" Value="FReadOnly" />
       <MemberSignature Language="F#" Value="FReadOnly = 1" Usage="System.Runtime.InteropServices.TypeLibVarFlags.FReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="FReadOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -260,6 +351,16 @@
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibVarFlags</ReturnType>
@@ -274,8 +375,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibVarFlags FReplaceable = int32(2048)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibVarFlags.FReplaceable" />
       <MemberSignature Language="VB.NET" Value="FReplaceable" />
-      <MemberSignature Language="C++ CLI" Value="FReplaceable" />
       <MemberSignature Language="F#" Value="FReplaceable = 2048" Usage="System.Runtime.InteropServices.TypeLibVarFlags.FReplaceable" />
+      <MemberSignature Language="C++ CLI" Value="FReplaceable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -288,6 +389,16 @@
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibVarFlags</ReturnType>
@@ -302,8 +413,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibVarFlags FRequestEdit = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibVarFlags.FRequestEdit" />
       <MemberSignature Language="VB.NET" Value="FRequestEdit" />
-      <MemberSignature Language="C++ CLI" Value="FRequestEdit" />
       <MemberSignature Language="F#" Value="FRequestEdit = 8" Usage="System.Runtime.InteropServices.TypeLibVarFlags.FRequestEdit" />
+      <MemberSignature Language="C++ CLI" Value="FRequestEdit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -316,6 +427,16 @@
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibVarFlags</ReturnType>
@@ -330,8 +451,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibVarFlags FRestricted = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibVarFlags.FRestricted" />
       <MemberSignature Language="VB.NET" Value="FRestricted" />
-      <MemberSignature Language="C++ CLI" Value="FRestricted" />
       <MemberSignature Language="F#" Value="FRestricted = 128" Usage="System.Runtime.InteropServices.TypeLibVarFlags.FRestricted" />
+      <MemberSignature Language="C++ CLI" Value="FRestricted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -344,6 +465,16 @@
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibVarFlags</ReturnType>
@@ -358,8 +489,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibVarFlags FSource = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibVarFlags.FSource" />
       <MemberSignature Language="VB.NET" Value="FSource" />
-      <MemberSignature Language="C++ CLI" Value="FSource" />
       <MemberSignature Language="F#" Value="FSource = 2" Usage="System.Runtime.InteropServices.TypeLibVarFlags.FSource" />
+      <MemberSignature Language="C++ CLI" Value="FSource" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -372,6 +503,16 @@
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibVarFlags</ReturnType>
@@ -386,8 +527,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibVarFlags FUiDefault = int32(512)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibVarFlags.FUiDefault" />
       <MemberSignature Language="VB.NET" Value="FUiDefault" />
-      <MemberSignature Language="C++ CLI" Value="FUiDefault" />
       <MemberSignature Language="F#" Value="FUiDefault = 512" Usage="System.Runtime.InteropServices.TypeLibVarFlags.FUiDefault" />
+      <MemberSignature Language="C++ CLI" Value="FUiDefault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -400,6 +541,16 @@
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibVarFlags</ReturnType>

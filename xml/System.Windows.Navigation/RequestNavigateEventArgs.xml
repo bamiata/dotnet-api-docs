@@ -1,14 +1,19 @@
-﻿<Type Name="RequestNavigateEventArgs" FullName="System.Windows.Navigation.RequestNavigateEventArgs">
+<Type Name="RequestNavigateEventArgs" FullName="System.Windows.Navigation.RequestNavigateEventArgs">
   <TypeSignature Language="C#" Value="public class RequestNavigateEventArgs : System.Windows.RoutedEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RequestNavigateEventArgs extends System.Windows.RoutedEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.RequestNavigateEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class RequestNavigateEventArgs&#xA;Inherits RoutedEventArgs" />
-  <TypeSignature Language="C++ CLI" Value="public ref class RequestNavigateEventArgs : System::Windows::RoutedEventArgs" />
   <TypeSignature Language="F#" Value="type RequestNavigateEventArgs = class&#xA;    inherit RoutedEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RequestNavigateEventArgs : System::Windows::RoutedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Windows.RoutedEventArgs</BaseTypeName>
@@ -46,6 +51,11 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -57,22 +67,28 @@
       <MemberSignature Language="C#" Value="public RequestNavigateEventArgs (Uri uri, string target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri uri, string target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.RequestNavigateEventArgs.#ctor(System.Uri,System.String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; RequestNavigateEventArgs(Uri ^ uri, System::String ^ target);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (uri As Uri, target As String)" />
       <MemberSignature Language="F#" Value="new System.Windows.Navigation.RequestNavigateEventArgs : Uri * string -&gt; System.Windows.Navigation.RequestNavigateEventArgs" Usage="new System.Windows.Navigation.RequestNavigateEventArgs (uri, target)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RequestNavigateEventArgs(Uri ^ uri, System::String ^ target);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="uri" Type="System.Uri" />
         <Parameter Name="target" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="uri">The target [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)].</param>
+        <param name="uri">The target URI.</param>
         <param name="target">The target name.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Navigation.RequestNavigateEventArgs" /> class with a [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] and target name.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Navigation.RequestNavigateEventArgs" /> class with a uniform resource identifier (URI) and target name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,13 +97,18 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InvokeEventHandler(class System.Delegate genericHandler, object genericTarget) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.RequestNavigateEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
       <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="requestNavigateEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -108,17 +129,23 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Target" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.RequestNavigateEventArgs.Target" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Target As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Target { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Target : string" Usage="System.Windows.Navigation.RequestNavigateEventArgs.Target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Target { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -135,25 +162,31 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Uri" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.RequestNavigateEventArgs.Uri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Uri As Uri" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Uri { Uri ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Uri : Uri" Usage="System.Windows.Navigation.RequestNavigateEventArgs.Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Uri { Uri ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] for the content that is being navigated to.</summary>
-        <value>The [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] for the content that is being navigated to.</value>
+        <summary>The uniform resource identifier (URI) for the content that is being navigated to.</summary>
+        <value>The URI for the content that is being navigated to.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

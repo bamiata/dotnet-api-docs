@@ -1,12 +1,14 @@
-﻿<Type Name="HebrewCalendar" FullName="System.Globalization.HebrewCalendar">
+<Type Name="HebrewCalendar" FullName="System.Globalization.HebrewCalendar">
   <TypeSignature Language="C#" Value="public class HebrewCalendar : System.Globalization.Calendar" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit HebrewCalendar extends System.Globalization.Calendar" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HebrewCalendar extends System.Globalization.Calendar" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
   <TypeSignature Language="DocId" Value="T:System.Globalization.HebrewCalendar" />
   <TypeSignature Language="VB.NET" Value="Public Class HebrewCalendar&#xA;Inherits Calendar" />
-  <TypeSignature Language="C++ CLI" Value="public ref class HebrewCalendar : System::Globalization::Calendar" />
   <TypeSignature Language="F#" Value="type HebrewCalendar = class&#xA;    inherit Calendar" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HebrewCalendar : System::Globalization::Calendar" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit HebrewCalendar extends System.Globalization.Calendar" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
   <AssemblyInfo>
     <AssemblyName>System.Globalization.Calendars</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -19,22 +21,54 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="System.Globalization.Calendars" FromVersion="5.0.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.Globalization.Calendars" FromVersion="6.0.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="System.Globalization.Calendars" FromVersion="7.0.0.0" To="System.Runtime" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="System.Globalization.Calendars" FromVersion="8.0.0.0" To="System.Runtime" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+    <TypeForwarding From="System.Globalization.Calendars" FromVersion="9.0.0.0" To="System.Runtime" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+    <TypeForwarding From="System.Globalization.Calendars" FromVersion="4.1.0.0" To="System.Runtime" ToVersion="4.2.0.0" FrameworkAlternate="netcore-2.0" />
+    <TypeForwarding From="System.Globalization.Calendars" FromVersion="4.1.1.0" To="System.Runtime" ToVersion="4.2.1.0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+    <TypeForwarding From="System.Globalization.Calendars" FromVersion="4.1.2.0" To="System.Runtime" ToVersion="4.2.2.0" FrameworkAlternate="netcore-3.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Globalization.Calendar</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-      <AttributeName>System.Serializable</AttributeName>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(true)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -46,7 +80,7 @@
  The Hebrew calendar recognizes two eras: B.C.E. (before the common era) and A.M. (Latin "Anno Mundi", which means "the year of the world"). This implementation of the <xref:System.Globalization.HebrewCalendar> class recognizes only the current era (A.M.) and the Hebrew years 5343 to 5999 (1583 to 2239 in the Gregorian calendar).  
   
 > [!NOTE]
->  For information about using the <xref:System.Globalization.HebrewCalendar> class and the other calendar classes in the .NET Framework, see [Working with Calendars](~/docs/standard/datetime/working-with-calendars.md).  
+>  For information about using the <xref:System.Globalization.HebrewCalendar> class and the other calendar classes in the .NET Framework, see [Working with Calendars](/dotnet/standard/datetime/working-with-calendars).  
   
  In every 19-year cycle that ends with a year that is evenly divisible by 19, the 3rd, 6th, 8th, 11th, 14th, 17th, and 19th years are leap years. A common year can have from 353 to 355 days, depending on the placement of Jewish holidays. A leap year can have from 383 to 385 days.  
   
@@ -80,18 +114,17 @@
 ## Examples  
  The following example creates a file that contains the date ranges supported by the <xref:System.Globalization.HebrewCalendar> class, and displays the number of days in each month of the year 5772.  
   
- [!code-csharp[System.Globalization.HebrewCalendar.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.hebrewcalendar.class/cs/example1.cs#1)]
- [!code-vb[System.Globalization.HebrewCalendar.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.hebrewcalendar.class/vb/example1.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Globalization/HebrewCalendar/Overview/example1.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.hebrewcalendar.class/vb/example1.vb" id="Snippet1":::  
   
- The example instantiates a <xref:System.Globalization.HebrewCalendar> object and makes it the current calendar of a Hebrew (Israel) <xref:System.Globalization.CultureInfo> object. It then makes Hebrew (Israel) the current thread culture. This causes the common language runtime to interpret all dates and times in relation to the Hebrew calendar.  
+ The example instantiates a <xref:System.Globalization.HebrewCalendar> object and makes it the current calendar of a Hebrew (Israel) <xref:System.Globalization.CultureInfo> object. It then makes Hebrew (Israel) the current culture. This causes the common language runtime to interpret all dates and times in relation to the Hebrew calendar.  
   
  ]]></format>
     </remarks>
     <altmember cref="T:System.Globalization.Calendar" />
     <altmember cref="P:System.Globalization.CultureInfo.Calendar" />
     <altmember cref="P:System.Globalization.CultureInfo.OptionalCalendars" />
-    <related type="Article" href="~/docs/standard/datetime/working-with-calendars.md">Working with Calendars</related>
-    <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/NET-Framework-4-Calendar-3360a84a">Sample: Calendar Week Range Utility</related>
+    <related type="Article" href="/dotnet/standard/datetime/working-with-calendars">Working with Calendars</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -103,6 +136,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -115,11 +149,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -132,11 +173,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.DateTime AddMonths(valuetype System.DateTime time, int32 months) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.HebrewCalendar.AddMonths(System.DateTime,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function AddMonths (time As DateTime, months As Integer) As DateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override DateTime AddMonths(DateTime time, int months);" />
       <MemberSignature Language="F#" Value="override this.AddMonths : DateTime * int -&gt; DateTime" Usage="hebrewCalendar.AddMonths (time, months)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override DateTime AddMonths(DateTime time, int months);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -149,11 +191,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -181,17 +230,17 @@
   
  The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
   
- [!code-csharp[System.Globalization.Calendar.AddMethods#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#5)]
- [!code-vb[System.Globalization.Calendar.AddMethods#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#5)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Globalization/Calendar/AddDays/add1.cs" id="Snippet5":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb" id="Snippet5":::  
   
    
   
 ## Examples  
  The following code example displays the values of several components of a <xref:System.DateTime> in terms of the Hebrew calendar.  
   
- [!code-cpp[System.Globalization.HebrewCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/CPP/hebrewcalendar_addget.cpp#1)]
- [!code-csharp[System.Globalization.HebrewCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/CS/hebrewcalendar_addget.cs#1)]
- [!code-vb[System.Globalization.HebrewCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/VB/hebrewcalendar_addget.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/CPP/hebrewcalendar_addget.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Globalization/HebrewCalendar/AddMonths/hebrewcalendar_addget.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/VB/hebrewcalendar_addget.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -213,11 +262,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.DateTime AddYears(valuetype System.DateTime time, int32 years) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.HebrewCalendar.AddYears(System.DateTime,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function AddYears (time As DateTime, years As Integer) As DateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override DateTime AddYears(DateTime time, int years);" />
       <MemberSignature Language="F#" Value="override this.AddYears : DateTime * int -&gt; DateTime" Usage="hebrewCalendar.AddYears (time, years)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override DateTime AddYears(DateTime time, int years);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -230,11 +280,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -266,17 +323,17 @@
   
  The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=nameWithType> method, as the following example shows.  
   
- [!code-csharp[System.Globalization.Calendar.AddMethods#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#8)]
- [!code-vb[System.Globalization.Calendar.AddMethods#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#8)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Globalization/Calendar/AddDays/add1.cs" id="Snippet8":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb" id="Snippet8":::  
   
    
   
 ## Examples  
  The following code example displays the values of several components of a <xref:System.DateTime> in terms of the Hebrew calendar.  
   
- [!code-cpp[System.Globalization.HebrewCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/CPP/hebrewcalendar_addget.cpp#1)]
- [!code-csharp[System.Globalization.HebrewCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/CS/hebrewcalendar_addget.cs#1)]
- [!code-vb[System.Globalization.HebrewCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/VB/hebrewcalendar_addget.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/CPP/hebrewcalendar_addget.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Globalization/HebrewCalendar/AddMonths/hebrewcalendar_addget.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/VB/hebrewcalendar_addget.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -296,8 +353,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Globalization.CalendarAlgorithmType AlgorithmType" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.HebrewCalendar.AlgorithmType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AlgorithmType As CalendarAlgorithmType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Globalization::CalendarAlgorithmType AlgorithmType { System::Globalization::CalendarAlgorithmType get(); };" />
       <MemberSignature Language="F#" Value="member this.AlgorithmType : System.Globalization.CalendarAlgorithmType" Usage="System.Globalization.HebrewCalendar.AlgorithmType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Globalization::CalendarAlgorithmType AlgorithmType { System::Globalization::CalendarAlgorithmType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -308,11 +365,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -329,8 +393,8 @@
 ## Examples  
  The following example uses reflection to instantiate each <xref:System.Globalization.Calendar> type found in the .NET Framework and displays the value of its <xref:System.Globalization.Calendar.AlgorithmType%2A> property.  
   
- [!code-csharp[System.Globalization.Calendar.AlgorithmType#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.algorithmtype/cs/algorithmtype1.cs#1)]
- [!code-vb[System.Globalization.Calendar.AlgorithmType#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.algorithmtype/vb/algorithmtype1.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Globalization/Calendar/AlgorithmType/algorithmtype1.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.algorithmtype/vb/algorithmtype1.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -341,11 +405,12 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32[] Eras" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.HebrewCalendar.Eras" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Eras As Integer()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;int&gt; ^ Eras { cli::array &lt;int&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Eras : int[]" Usage="System.Globalization.HebrewCalendar.Eras" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;int&gt; ^ Eras { cli::array &lt;int&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -358,11 +423,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32[]</ReturnType>
@@ -387,11 +459,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetDayOfMonth(valuetype System.DateTime time) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.HebrewCalendar.GetDayOfMonth(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDayOfMonth (time As DateTime) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetDayOfMonth(DateTime time);" />
       <MemberSignature Language="F#" Value="override this.GetDayOfMonth : DateTime -&gt; int" Usage="hebrewCalendar.GetDayOfMonth time" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetDayOfMonth(DateTime time);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -404,11 +477,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -426,9 +506,9 @@
 ## Examples  
  The following code example displays the values of several components of a <xref:System.DateTime> in terms of the Hebrew calendar.  
   
- [!code-cpp[System.Globalization.HebrewCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/CPP/hebrewcalendar_addget.cpp#1)]
- [!code-csharp[System.Globalization.HebrewCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/CS/hebrewcalendar_addget.cs#1)]
- [!code-vb[System.Globalization.HebrewCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/VB/hebrewcalendar_addget.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/CPP/hebrewcalendar_addget.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Globalization/HebrewCalendar/AddMonths/hebrewcalendar_addget.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/VB/hebrewcalendar_addget.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -446,11 +526,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.DayOfWeek GetDayOfWeek(valuetype System.DateTime time) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.HebrewCalendar.GetDayOfWeek(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDayOfWeek (time As DateTime) As DayOfWeek" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override DayOfWeek GetDayOfWeek(DateTime time);" />
       <MemberSignature Language="F#" Value="override this.GetDayOfWeek : DateTime -&gt; DayOfWeek" Usage="hebrewCalendar.GetDayOfWeek time" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override DayOfWeek GetDayOfWeek(DateTime time);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -463,11 +544,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DayOfWeek</ReturnType>
@@ -500,9 +588,9 @@
 ## Examples  
  The following code example displays the values of several components of a <xref:System.DateTime> in terms of the Hebrew calendar.  
   
- [!code-cpp[System.Globalization.HebrewCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/CPP/hebrewcalendar_addget.cpp#1)]
- [!code-csharp[System.Globalization.HebrewCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/CS/hebrewcalendar_addget.cs#1)]
- [!code-vb[System.Globalization.HebrewCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/VB/hebrewcalendar_addget.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/CPP/hebrewcalendar_addget.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Globalization/HebrewCalendar/AddMonths/hebrewcalendar_addget.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/VB/hebrewcalendar_addget.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -521,11 +609,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetDayOfYear(valuetype System.DateTime time) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.HebrewCalendar.GetDayOfYear(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDayOfYear (time As DateTime) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetDayOfYear(DateTime time);" />
       <MemberSignature Language="F#" Value="override this.GetDayOfYear : DateTime -&gt; int" Usage="hebrewCalendar.GetDayOfYear time" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetDayOfYear(DateTime time);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -538,11 +627,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -567,9 +663,9 @@
 ## Examples  
  The following code example displays the values of several components of a <xref:System.DateTime> in terms of the Hebrew calendar.  
   
- [!code-cpp[System.Globalization.HebrewCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/CPP/hebrewcalendar_addget.cpp#1)]
- [!code-csharp[System.Globalization.HebrewCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/CS/hebrewcalendar_addget.cs#1)]
- [!code-vb[System.Globalization.HebrewCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/VB/hebrewcalendar_addget.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/CPP/hebrewcalendar_addget.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Globalization/HebrewCalendar/AddMonths/hebrewcalendar_addget.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/VB/hebrewcalendar_addget.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -589,11 +685,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetDaysInMonth(int32 year, int32 month, int32 era) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.HebrewCalendar.GetDaysInMonth(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDaysInMonth (year As Integer, month As Integer, era As Integer) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetDaysInMonth(int year, int month, int era);" />
       <MemberSignature Language="F#" Value="override this.GetDaysInMonth : int * int * int -&gt; int" Usage="hebrewCalendar.GetDaysInMonth (year, month, era)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetDaysInMonth(int year, int month, int era);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -606,11 +703,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -639,9 +743,9 @@
 ## Examples  
  The following code example calls `GetDaysInMonth` for the second month in each of five years in each era.  
   
- [!code-cpp[System.Globalization.HebrewCalendar.GetDaysInMonth#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar.GetDaysInMonth/CPP/hebrewcalendar_getdaysinmonth.cpp#1)]
- [!code-csharp[System.Globalization.HebrewCalendar.GetDaysInMonth#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar.GetDaysInMonth/CS/hebrewcalendar_getdaysinmonth.cs#1)]
- [!code-vb[System.Globalization.HebrewCalendar.GetDaysInMonth#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar.GetDaysInMonth/VB/hebrewcalendar_getdaysinmonth.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar.GetDaysInMonth/CPP/hebrewcalendar_getdaysinmonth.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Globalization/HebrewCalendar/GetDaysInMonth/hebrewcalendar_getdaysinmonth.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar.GetDaysInMonth/VB/hebrewcalendar_getdaysinmonth.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -659,11 +763,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetDaysInYear(int32 year, int32 era) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.HebrewCalendar.GetDaysInYear(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDaysInYear (year As Integer, era As Integer) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetDaysInYear(int year, int era);" />
       <MemberSignature Language="F#" Value="override this.GetDaysInYear : int * int -&gt; int" Usage="hebrewCalendar.GetDaysInYear (year, era)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetDaysInYear(int year, int era);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -676,11 +781,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -707,9 +819,9 @@
 ## Examples  
  The following code example calls `GetDaysInYear` for five years in each era.  
   
- [!code-cpp[System.Globalization.HebrewCalendar_GetDaysInYear#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_GetDaysInYear/CPP/hebrewcalendar_getdaysinyear.cpp#1)]
- [!code-csharp[System.Globalization.HebrewCalendar_GetDaysInYear#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_GetDaysInYear/CS/hebrewcalendar_getdaysinyear.cs#1)]
- [!code-vb[System.Globalization.HebrewCalendar_GetDaysInYear#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_GetDaysInYear/VB/hebrewcalendar_getdaysinyear.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_GetDaysInYear/CPP/hebrewcalendar_getdaysinyear.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Globalization/HebrewCalendar/GetDaysInYear/hebrewcalendar_getdaysinyear.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_GetDaysInYear/VB/hebrewcalendar_getdaysinyear.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -727,11 +839,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetEra(valuetype System.DateTime time) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.HebrewCalendar.GetEra(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEra (time As DateTime) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetEra(DateTime time);" />
       <MemberSignature Language="F#" Value="override this.GetEra : DateTime -&gt; int" Usage="hebrewCalendar.GetEra time" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetEra(DateTime time);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -744,11 +857,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -771,9 +891,9 @@
 ## Examples  
  The following code example displays the values of several components of a <xref:System.DateTime> in terms of the Hebrew calendar.  
   
- [!code-cpp[System.Globalization.HebrewCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/CPP/hebrewcalendar_addget.cpp#1)]
- [!code-csharp[System.Globalization.HebrewCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/CS/hebrewcalendar_addget.cs#1)]
- [!code-vb[System.Globalization.HebrewCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/VB/hebrewcalendar_addget.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/CPP/hebrewcalendar_addget.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Globalization/HebrewCalendar/AddMonths/hebrewcalendar_addget.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/VB/hebrewcalendar_addget.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -798,11 +918,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetLeapMonth(int32 year, int32 era) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.HebrewCalendar.GetLeapMonth(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetLeapMonth (year As Integer, era As Integer) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetLeapMonth(int year, int era);" />
       <MemberSignature Language="F#" Value="override this.GetLeapMonth : int * int -&gt; int" Usage="hebrewCalendar.GetLeapMonth (year, era)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetLeapMonth(int year, int era);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -814,18 +935,25 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="year" Type="System.Int32" />
-        <Parameter Name="era" Type="System.Int32" />
+        <Parameter Name="year" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="era" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="year">A year.</param>
@@ -853,11 +981,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetMonth(valuetype System.DateTime time) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.HebrewCalendar.GetMonth(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMonth (time As DateTime) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetMonth(DateTime time);" />
       <MemberSignature Language="F#" Value="override this.GetMonth : DateTime -&gt; int" Usage="hebrewCalendar.GetMonth time" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetMonth(DateTime time);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -870,11 +999,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -892,9 +1028,9 @@
 ## Examples  
  The following code example displays the values of several components of a <xref:System.DateTime> in terms of the Hebrew calendar.  
   
- [!code-cpp[System.Globalization.HebrewCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/CPP/hebrewcalendar_addget.cpp#1)]
- [!code-csharp[System.Globalization.HebrewCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/CS/hebrewcalendar_addget.cs#1)]
- [!code-vb[System.Globalization.HebrewCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/VB/hebrewcalendar_addget.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/CPP/hebrewcalendar_addget.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Globalization/HebrewCalendar/AddMonths/hebrewcalendar_addget.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/VB/hebrewcalendar_addget.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -918,11 +1054,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetMonthsInYear(int32 year, int32 era) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.HebrewCalendar.GetMonthsInYear(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMonthsInYear (year As Integer, era As Integer) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetMonthsInYear(int year, int era);" />
       <MemberSignature Language="F#" Value="override this.GetMonthsInYear : int * int -&gt; int" Usage="hebrewCalendar.GetMonthsInYear (year, era)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetMonthsInYear(int year, int era);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -935,11 +1072,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -964,9 +1108,9 @@
 ## Examples  
  The following code example calls `GetMonthsInYear` for five years in each era.  
   
- [!code-cpp[System.Globalization.HebrewCalendar.GetMonthsInYear#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar.GetMonthsInYear/CPP/hebrewcalendar_getmonthsinyear.cpp#1)]
- [!code-csharp[System.Globalization.HebrewCalendar.GetMonthsInYear#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar.GetMonthsInYear/CS/hebrewcalendar_getmonthsinyear.cs#1)]
- [!code-vb[System.Globalization.HebrewCalendar.GetMonthsInYear#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar.GetMonthsInYear/VB/hebrewcalendar_getmonthsinyear.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar.GetMonthsInYear/CPP/hebrewcalendar_getmonthsinyear.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Globalization/HebrewCalendar/GetMonthsInYear/hebrewcalendar_getmonthsinyear.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar.GetMonthsInYear/VB/hebrewcalendar_getmonthsinyear.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -984,11 +1128,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetYear(valuetype System.DateTime time) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.HebrewCalendar.GetYear(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetYear (time As DateTime) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetYear(DateTime time);" />
       <MemberSignature Language="F#" Value="override this.GetYear : DateTime -&gt; int" Usage="hebrewCalendar.GetYear time" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetYear(DateTime time);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1001,11 +1146,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1028,9 +1180,9 @@
 ## Examples  
  The following code example displays the values of several components of a <xref:System.DateTime> in terms of the Hebrew calendar.  
   
- [!code-cpp[System.Globalization.HebrewCalendar_AddGet#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/CPP/hebrewcalendar_addget.cpp#1)]
- [!code-csharp[System.Globalization.HebrewCalendar_AddGet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/CS/hebrewcalendar_addget.cs#1)]
- [!code-vb[System.Globalization.HebrewCalendar_AddGet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/VB/hebrewcalendar_addget.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/CPP/hebrewcalendar_addget.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Globalization/HebrewCalendar/AddMonths/hebrewcalendar_addget.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_AddGet/VB/hebrewcalendar_addget.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1054,8 +1206,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static initonly int32 HebrewEra" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.HebrewCalendar.HebrewEra" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HebrewEra As Integer " />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly int HebrewEra;" />
       <MemberSignature Language="F#" Value=" staticval mutable HebrewEra : int" Usage="System.Globalization.HebrewCalendar.HebrewEra" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int HebrewEra;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1067,11 +1219,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -1100,11 +1259,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsLeapDay(int32 year, int32 month, int32 day, int32 era) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.HebrewCalendar.IsLeapDay(System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsLeapDay (year As Integer, month As Integer, day As Integer, era As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsLeapDay(int year, int month, int day, int era);" />
       <MemberSignature Language="F#" Value="override this.IsLeapDay : int * int * int * int -&gt; bool" Usage="hebrewCalendar.IsLeapDay (year, month, day, era)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsLeapDay(int year, int month, int day, int era);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1117,11 +1277,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1155,9 +1322,9 @@
 ## Examples  
  The following code example calls `IsLeapDay` for the last day of the second month (February) for five years in each of the eras.  
   
- [!code-cpp[System.Globalization.HebrewCalendar.IsLeapDay#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar.IsLeapDay/CPP/hebrewcalendar_isleapday.cpp#1)]
- [!code-csharp[System.Globalization.HebrewCalendar.IsLeapDay#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar.IsLeapDay/CS/hebrewcalendar_isleapday.cs#1)]
- [!code-vb[System.Globalization.HebrewCalendar.IsLeapDay#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar.IsLeapDay/VB/hebrewcalendar_isleapday.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar.IsLeapDay/CPP/hebrewcalendar_isleapday.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Globalization/HebrewCalendar/IsLeapDay/hebrewcalendar_isleapday.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar.IsLeapDay/VB/hebrewcalendar_isleapday.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1177,11 +1344,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsLeapMonth(int32 year, int32 month, int32 era) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.HebrewCalendar.IsLeapMonth(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsLeapMonth (year As Integer, month As Integer, era As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsLeapMonth(int year, int month, int era);" />
       <MemberSignature Language="F#" Value="override this.IsLeapMonth : int * int * int -&gt; bool" Usage="hebrewCalendar.IsLeapMonth (year, month, era)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsLeapMonth(int year, int month, int era);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1194,11 +1362,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1230,9 +1405,9 @@
 ## Examples  
  The following code example calls `IsLeapMonth` for all the months in five years in the current era.  
   
- [!code-cpp[System.Globalization.HebrewCalendar.IsLeapMonth#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar.IsLeapMonth/CPP/hebrewcalendar_isleapmonth.cpp#1)]
- [!code-csharp[System.Globalization.HebrewCalendar.IsLeapMonth#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar.IsLeapMonth/CS/hebrewcalendar_isleapmonth.cs#1)]
- [!code-vb[System.Globalization.HebrewCalendar.IsLeapMonth#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar.IsLeapMonth/VB/hebrewcalendar_isleapmonth.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar.IsLeapMonth/CPP/hebrewcalendar_isleapmonth.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Globalization/HebrewCalendar/IsLeapMonth/hebrewcalendar_isleapmonth.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar.IsLeapMonth/VB/hebrewcalendar_isleapmonth.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1251,11 +1426,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsLeapYear(int32 year, int32 era) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.HebrewCalendar.IsLeapYear(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsLeapYear (year As Integer, era As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsLeapYear(int year, int era);" />
       <MemberSignature Language="F#" Value="override this.IsLeapYear : int * int -&gt; bool" Usage="hebrewCalendar.IsLeapYear (year, era)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsLeapYear(int year, int era);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1268,11 +1444,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1300,9 +1483,9 @@
 ## Examples  
  The following code example calls `IsLeapYear` for five years in each of the eras.  
   
- [!code-cpp[System.Globalization.HebrewCalendar.IsLeapYear#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar.IsLeapYear/CPP/hebrewcalendar_isleapyear.cpp#1)]
- [!code-csharp[System.Globalization.HebrewCalendar.IsLeapYear#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar.IsLeapYear/CS/hebrewcalendar_isleapyear.cs#1)]
- [!code-vb[System.Globalization.HebrewCalendar.IsLeapYear#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar.IsLeapYear/VB/hebrewcalendar_isleapyear.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar.IsLeapYear/CPP/hebrewcalendar_isleapyear.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Globalization/HebrewCalendar/IsLeapYear/hebrewcalendar_isleapyear.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar.IsLeapYear/VB/hebrewcalendar_isleapyear.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1320,11 +1503,12 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime MaxSupportedDateTime" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.HebrewCalendar.MaxSupportedDateTime" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MaxSupportedDateTime As DateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime MaxSupportedDateTime { DateTime get(); };" />
       <MemberSignature Language="F#" Value="member this.MaxSupportedDateTime : DateTime" Usage="System.Globalization.HebrewCalendar.MaxSupportedDateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime MaxSupportedDateTime { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1336,11 +1520,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -1354,9 +1545,9 @@
 ## Examples  
  The following code example gets the minimum value and the maximum value of the calendar.  
   
- [!code-cpp[System.Globalization.HebrewCalendar_MinMax#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_MinMax/CPP/hebrewcalendar_minmax.cpp#1)]
- [!code-csharp[System.Globalization.HebrewCalendar_MinMax#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_MinMax/CS/hebrewcalendar_minmax.cs#1)]
- [!code-vb[System.Globalization.HebrewCalendar_MinMax#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_MinMax/VB/hebrewcalendar_minmax.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_MinMax/CPP/hebrewcalendar_minmax.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Globalization/HebrewCalendar/MaxSupportedDateTime/hebrewcalendar_minmax.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_MinMax/VB/hebrewcalendar_minmax.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1367,11 +1558,12 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime MinSupportedDateTime" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.HebrewCalendar.MinSupportedDateTime" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MinSupportedDateTime As DateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime MinSupportedDateTime { DateTime get(); };" />
       <MemberSignature Language="F#" Value="member this.MinSupportedDateTime : DateTime" Usage="System.Globalization.HebrewCalendar.MinSupportedDateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime MinSupportedDateTime { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1383,11 +1575,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -1399,16 +1598,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Microsoft Visual Basic represents time of day as the specified time on the minimum date supported by the <xref:System.DateTime> type, which is January 1, 0001 C.E. However, the <xref:System.Globalization.HebrewCalendar> type does not support that minimum date. Consequently, if you call a method to format the time of day using the current calendar but you do not specify a format specifier, formatting uses the ISO 8601 sortable ("s") date/time pattern format specifier instead of the default general ("G") date/time pattern format specifier. For more information, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md).  
+ Microsoft Visual Basic represents time of day as the specified time on the minimum date supported by the <xref:System.DateTime> type, which is January 1, 0001 C.E. However, the <xref:System.Globalization.HebrewCalendar> type does not support that minimum date. Consequently, if you call a method to format the time of day using the current calendar but you do not specify a format specifier, formatting uses the ISO 8601 sortable ("s") date/time pattern format specifier instead of the default general ("G") date/time pattern format specifier. For more information, see [Standard Date and Time Format Strings](/dotnet/standard/base-types/standard-date-and-time-format-strings).  
   
    
   
 ## Examples  
  The following code example gets the minimum value and the maximum value of the calendar.  
   
- [!code-cpp[System.Globalization.HebrewCalendar_MinMax#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_MinMax/CPP/hebrewcalendar_minmax.cpp#1)]
- [!code-csharp[System.Globalization.HebrewCalendar_MinMax#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_MinMax/CS/hebrewcalendar_minmax.cs#1)]
- [!code-vb[System.Globalization.HebrewCalendar_MinMax#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_MinMax/VB/hebrewcalendar_minmax.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_MinMax/CPP/hebrewcalendar_minmax.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Globalization/HebrewCalendar/MaxSupportedDateTime/hebrewcalendar_minmax.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.HebrewCalendar_MinMax/VB/hebrewcalendar_minmax.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1419,11 +1618,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.DateTime ToDateTime(int32 year, int32 month, int32 day, int32 hour, int32 minute, int32 second, int32 millisecond, int32 era) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.HebrewCalendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToDateTime (year As Integer, month As Integer, day As Integer, hour As Integer, minute As Integer, second As Integer, millisecond As Integer, era As Integer) As DateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override DateTime ToDateTime(int year, int month, int day, int hour, int minute, int second, int millisecond, int era);" />
       <MemberSignature Language="F#" Value="override this.ToDateTime : int * int * int * int * int * int * int * int -&gt; DateTime" Usage="hebrewCalendar.ToDateTime (year, month, day, hour, minute, second, millisecond, era)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override DateTime ToDateTime(int year, int month, int day, int hour, int minute, int second, int millisecond, int era);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1436,11 +1636,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -1507,11 +1714,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 ToFourDigitYear(int32 year) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.HebrewCalendar.ToFourDigitYear(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToFourDigitYear (year As Integer) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ToFourDigitYear(int year);" />
       <MemberSignature Language="F#" Value="override this.ToFourDigitYear : int -&gt; int" Usage="hebrewCalendar.ToFourDigitYear year" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ToFourDigitYear(int year);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1524,11 +1732,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1566,11 +1781,12 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 TwoDigitYearMax" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.HebrewCalendar.TwoDigitYearMax" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property TwoDigitYearMax As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int TwoDigitYearMax { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.TwoDigitYearMax : int with get, set" Usage="System.Globalization.HebrewCalendar.TwoDigitYearMax" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int TwoDigitYearMax { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1583,11 +1799,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

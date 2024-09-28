@@ -1,10 +1,10 @@
-﻿<Type Name="XmlDsigExcC14NWithCommentsTransform" FullName="System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform">
+<Type Name="XmlDsigExcC14NWithCommentsTransform" FullName="System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform">
   <TypeSignature Language="C#" Value="public class XmlDsigExcC14NWithCommentsTransform : System.Security.Cryptography.Xml.XmlDsigExcC14NTransform" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlDsigExcC14NWithCommentsTransform extends System.Security.Cryptography.Xml.XmlDsigExcC14NTransform" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlDsigExcC14NWithCommentsTransform&#xA;Inherits XmlDsigExcC14NTransform" />
-  <TypeSignature Language="C++ CLI" Value="public ref class XmlDsigExcC14NWithCommentsTransform : System::Security::Cryptography::Xml::XmlDsigExcC14NTransform" />
   <TypeSignature Language="F#" Value="type XmlDsigExcC14NWithCommentsTransform = class&#xA;    inherit XmlDsigExcC14NTransform" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlDsigExcC14NWithCommentsTransform : System::Security::Cryptography::Xml::XmlDsigExcC14NTransform" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -12,9 +12,18 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+    <AssemblyVersion>4.0.3.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Security.Cryptography.Xml" FromVersion="9.0.0.0" To="System.Security" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Security.Cryptography.Xml.XmlDsigExcC14NTransform</BaseTypeName>
   </Base>
@@ -33,16 +42,16 @@
   
  The URI that describes the <xref:System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform> class is defined by the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigExcC14NWithCommentsTransformUrl> field.  
   
- For more information about the exclusive C14N transform, see the XMLDSIG specification, which is available from the World Wide Web Consortium (W3C) at www.w3.org/TR/xmldsig-core/. The canonicalization algorithm is defined in the W3C Canonical XML specification, which is available at www.w3.org/2001/10/xml-exc-c14n.  
+ For more information about the exclusive C14N transform, see the [XMLDSIG specification](https://www.w3.org/TR/xmldsig-core/), which is available from the W3C website. The canonicalization algorithm is defined in the [W3C Canonical XML specification](https://www.w3.org/TR/2002/REC-xml-exc-c14n-20020718/).  
   
    
   
 ## Examples  
  The following code example shows how to sign and verify an XML document using the <xref:System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform> class.  This example creates an envelope signature.  
   
- [!code-cpp[Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.XML.XmlDsigExcC14NWithCommentsTransform/CPP/sample.cpp#1)]
- [!code-csharp[Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.XmlDsigExcC14NWithCommentsTransform/CS/sample.cs#1)]
- [!code-vb[Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.XmlDsigExcC14NWithCommentsTransform/VB/sample.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR/Cryptography.XML.XmlDsigExcC14NWithCommentsTransform/CPP/sample.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography.Xml/SignedXml/XmlDsigExcC14NWithCommentsTransformUrl/sample.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.XmlDsigExcC14NWithCommentsTransform/VB/sample.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -71,8 +80,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -85,8 +99,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string inclusiveNamespacesPrefixList) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (inclusiveNamespacesPrefixList As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlDsigExcC14NWithCommentsTransform(System::String ^ inclusiveNamespacesPrefixList);" />
       <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform : string -&gt; System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform" Usage="new System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform inclusiveNamespacesPrefixList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlDsigExcC14NWithCommentsTransform(System::String ^ inclusiveNamespacesPrefixList);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -95,9 +109,20 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="inclusiveNamespacesPrefixList" Type="System.String" />
       </Parameters>

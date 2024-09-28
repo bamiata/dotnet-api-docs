@@ -1,10 +1,11 @@
-﻿<Type Name="UnionCodeGroup" FullName="System.Security.Policy.UnionCodeGroup">
+<Type Name="UnionCodeGroup" FullName="System.Security.Policy.UnionCodeGroup">
   <TypeSignature Language="C#" Value="public sealed class UnionCodeGroup : System.Security.Policy.CodeGroup" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit UnionCodeGroup extends System.Security.Policy.CodeGroup" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit UnionCodeGroup extends System.Security.Policy.CodeGroup" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netstandard-2.0;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.UnionCodeGroup" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UnionCodeGroup&#xA;Inherits CodeGroup" />
-  <TypeSignature Language="C++ CLI" Value="public ref class UnionCodeGroup sealed : System::Security::Policy::CodeGroup" />
   <TypeSignature Language="F#" Value="type UnionCodeGroup = class&#xA;    inherit CodeGroup" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UnionCodeGroup sealed : System::Security::Policy::CodeGroup" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit UnionCodeGroup extends System.Security.Policy.CodeGroup" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -14,25 +15,38 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Security.Permissions</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+    <AssemblyVersion>4.0.3.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Security.Permissions" FromVersion="9.0.0.0" To="mscorlib" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Security.Policy.CodeGroup</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0">
+      <AttributeName Language="C#">[System.Obsolete("This type is obsolete. See https://go.microsoft.com/fwlink/?LinkID=155570 for more information.")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("This type is obsolete. See https://go.microsoft.com/fwlink/?LinkID=155570 for more information.")&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.Obsolete("This type is obsolete and will be removed in a future release of the .NET Framework. See http://go.microsoft.com/fwlink/?LinkID=155570 for more information.")</AttributeName>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="dotnet-plat-ext-2.1;netcore-2.1;netcore-2.2;netcore-2.0;dotnet-plat-ext-2.2">
-      <AttributeName>System.Obsolete("This type is obsolete. See http://go.microsoft.com/fwlink/?LinkID=155570 for more information.")</AttributeName>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(true)&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-      <AttributeName>System.Serializable</AttributeName>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Obsolete("This type is obsolete and will be removed in a future release of the .NET Framework. See http://go.microsoft.com/fwlink/?LinkID=155570 for more information.")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("This type is obsolete and will be removed in a future release of the .NET Framework. See http://go.microsoft.com/fwlink/?LinkID=155570 for more information.")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -40,12 +54,15 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
+## Remarks
+
+[!INCLUDE[cas-deprecated](~/includes/cas-deprecated.md)]
+
  Code groups are the building blocks of code access security policy. Each policy level consists of a root code group that can have child code groups (and so on), forming a tree. Each code group has a membership condition that determines if a given assembly belongs to it or not, based on the evidence for that assembly. Only code groups whose membership conditions match a given assembly and their child code groups apply policy.  
   
  <xref:System.Security.Policy.UnionCodeGroup> is the most common type of code group; the policy statement of all matching child code groups (and by extension their child code groups) are combined with the permission set of the matching parent code group. Thus, if its membership condition matches, this code group forms the union of its policy statement and those of all its child code groups that also match the evidence.  
   
- <xref:System.Security.Policy.UnionCodeGroup> code groups are the code groups created by the CASPOL utility (see [Caspol.exe (Code Access Security Policy Tool)](~/docs/framework/tools/caspol-exe-code-access-security-policy-tool.md)).  
+ <xref:System.Security.Policy.UnionCodeGroup> code groups are the code groups created by the CASPOL utility (see [Caspol.exe (Code Access Security Policy Tool)](/dotnet/framework/tools/caspol-exe-code-access-security-policy-tool)).  
   
  ]]></format>
     </remarks>
@@ -56,8 +73,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Policy.IMembershipCondition membershipCondition, class System.Security.Policy.PolicyStatement policy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.UnionCodeGroup.#ctor(System.Security.Policy.IMembershipCondition,System.Security.Policy.PolicyStatement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (membershipCondition As IMembershipCondition, policy As PolicyStatement)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; UnionCodeGroup(System::Security::Policy::IMembershipCondition ^ membershipCondition, System::Security::Policy::PolicyStatement ^ policy);" />
       <MemberSignature Language="F#" Value="new System.Security.Policy.UnionCodeGroup : System.Security.Policy.IMembershipCondition * System.Security.Policy.PolicyStatement -&gt; System.Security.Policy.UnionCodeGroup" Usage="new System.Security.Policy.UnionCodeGroup (membershipCondition, policy)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UnionCodeGroup(System::Security::Policy::IMembershipCondition ^ membershipCondition, System::Security::Policy::PolicyStatement ^ policy);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -68,8 +85,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="membershipCondition" Type="System.Security.Policy.IMembershipCondition" />
@@ -99,8 +121,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Policy.CodeGroup Copy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.UnionCodeGroup.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As CodeGroup" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Policy::CodeGroup ^ Copy();" />
       <MemberSignature Language="F#" Value="override this.Copy : unit -&gt; System.Security.Policy.CodeGroup" Usage="unionCodeGroup.Copy " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Policy::CodeGroup ^ Copy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -111,12 +133,18 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -141,8 +169,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string MergeLogic" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.UnionCodeGroup.MergeLogic" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MergeLogic As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MergeLogic { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.MergeLogic : string" Usage="System.Security.Policy.UnionCodeGroup.MergeLogic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MergeLogic { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -153,8 +181,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -169,8 +202,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.Policy.PolicyStatement Resolve (System.Security.Policy.Evidence evidence);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Policy.PolicyStatement Resolve(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.UnionCodeGroup.Resolve(System.Security.Policy.Evidence)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Policy::PolicyStatement ^ Resolve(System::Security::Policy::Evidence ^ evidence);" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Resolve (evidence As Evidence) As PolicyStatement" />
       <MemberSignature Language="F#" Value="override this.Resolve : System.Security.Policy.Evidence -&gt; System.Security.Policy.PolicyStatement" Usage="unionCodeGroup.Resolve evidence" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Policy::PolicyStatement ^ Resolve(System::Security::Policy::Evidence ^ evidence);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -181,12 +215,18 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -221,8 +261,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.Policy.CodeGroup ResolveMatchingCodeGroups (System.Security.Policy.Evidence evidence);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Policy.CodeGroup ResolveMatchingCodeGroups(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.UnionCodeGroup.ResolveMatchingCodeGroups(System.Security.Policy.Evidence)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Policy::CodeGroup ^ ResolveMatchingCodeGroups(System::Security::Policy::Evidence ^ evidence);" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ResolveMatchingCodeGroups (evidence As Evidence) As CodeGroup" />
       <MemberSignature Language="F#" Value="override this.ResolveMatchingCodeGroups : System.Security.Policy.Evidence -&gt; System.Security.Policy.CodeGroup" Usage="unionCodeGroup.ResolveMatchingCodeGroups evidence" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Policy::CodeGroup ^ ResolveMatchingCodeGroups(System::Security::Policy::Evidence ^ evidence);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -233,12 +274,18 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

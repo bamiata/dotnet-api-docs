@@ -1,22 +1,45 @@
-﻿<Type Name="SecurityAlgorithmSuite" FullName="System.ServiceModel.Security.SecurityAlgorithmSuite">
+<Type Name="SecurityAlgorithmSuite" FullName="System.ServiceModel.Security.SecurityAlgorithmSuite">
   <TypeSignature Language="C#" Value="public abstract class SecurityAlgorithmSuite" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract SecurityAlgorithmSuite extends System.Object" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SecurityAlgorithmSuite extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.SecurityAlgorithmSuite" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SecurityAlgorithmSuite" />
-  <TypeSignature Language="C++ CLI" Value="public ref class SecurityAlgorithmSuite abstract" />
   <TypeSignature Language="F#" Value="type SecurityAlgorithmSuite = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityAlgorithmSuite abstract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Security</AssemblyName>
+    <AssemblyVersion>4.6.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.9.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.2.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Private.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.ServiceModel.Security" FromVersion="6.0.0.0" To="System.ServiceModel.Primitives" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ServiceModel.Configuration.SecurityAlgorithmSuiteConverter))</AttributeName>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.ComponentModel.TypeConverter(typeof(System.ServiceModel.Configuration.SecurityAlgorithmSuiteConverter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.TypeConverter(typeof(System.ServiceModel.Configuration.SecurityAlgorithmSuiteConverter))&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -45,9 +68,25 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -68,13 +107,19 @@
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite Basic128" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic128" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Basic128 As SecurityAlgorithmSuite" />
+      <MemberSignature Language="F#" Value="static member Basic128 : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.Basic128" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ Basic128 { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Basic128 : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.Basic128" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityAlgorithmSuite</ReturnType>
@@ -97,13 +142,19 @@
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite Basic128Rsa15" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic128Rsa15" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Basic128Rsa15 As SecurityAlgorithmSuite" />
+      <MemberSignature Language="F#" Value="static member Basic128Rsa15 : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.Basic128Rsa15" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ Basic128Rsa15 { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Basic128Rsa15 : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.Basic128Rsa15" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityAlgorithmSuite</ReturnType>
@@ -126,13 +177,19 @@
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite Basic128Sha256" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic128Sha256" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Basic128Sha256 As SecurityAlgorithmSuite" />
+      <MemberSignature Language="F#" Value="static member Basic128Sha256 : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.Basic128Sha256" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ Basic128Sha256 { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Basic128Sha256 : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.Basic128Sha256" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityAlgorithmSuite</ReturnType>
@@ -155,13 +212,19 @@
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite Basic128Sha256Rsa15" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic128Sha256Rsa15" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Basic128Sha256Rsa15 As SecurityAlgorithmSuite" />
+      <MemberSignature Language="F#" Value="static member Basic128Sha256Rsa15 : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.Basic128Sha256Rsa15" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ Basic128Sha256Rsa15 { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Basic128Sha256Rsa15 : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.Basic128Sha256Rsa15" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityAlgorithmSuite</ReturnType>
@@ -184,13 +247,19 @@
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite Basic192" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic192" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Basic192 As SecurityAlgorithmSuite" />
+      <MemberSignature Language="F#" Value="static member Basic192 : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.Basic192" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ Basic192 { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Basic192 : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.Basic192" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityAlgorithmSuite</ReturnType>
@@ -213,13 +282,19 @@
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite Basic192Rsa15" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic192Rsa15" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Basic192Rsa15 As SecurityAlgorithmSuite" />
+      <MemberSignature Language="F#" Value="static member Basic192Rsa15 : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.Basic192Rsa15" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ Basic192Rsa15 { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Basic192Rsa15 : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.Basic192Rsa15" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityAlgorithmSuite</ReturnType>
@@ -242,13 +317,19 @@
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite Basic192Sha256" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic192Sha256" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Basic192Sha256 As SecurityAlgorithmSuite" />
+      <MemberSignature Language="F#" Value="static member Basic192Sha256 : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.Basic192Sha256" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ Basic192Sha256 { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Basic192Sha256 : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.Basic192Sha256" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityAlgorithmSuite</ReturnType>
@@ -271,13 +352,19 @@
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite Basic192Sha256Rsa15" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic192Sha256Rsa15" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Basic192Sha256Rsa15 As SecurityAlgorithmSuite" />
+      <MemberSignature Language="F#" Value="static member Basic192Sha256Rsa15 : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.Basic192Sha256Rsa15" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ Basic192Sha256Rsa15 { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Basic192Sha256Rsa15 : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.Basic192Sha256Rsa15" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityAlgorithmSuite</ReturnType>
@@ -300,13 +387,28 @@
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite Basic256" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Basic256 As SecurityAlgorithmSuite" />
+      <MemberSignature Language="F#" Value="static member Basic256 : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ Basic256 { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Basic256 : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityAlgorithmSuite</ReturnType>
@@ -325,8 +427,8 @@
 ## Examples  
  The following code shows how to set <xref:System.ServiceModel.MessageSecurityOverHttp.AlgorithmSuite%2A> to this property.  
   
- [!code-csharp[c_ProgrammingSecurity#8](~/samples/snippets/csharp/VS_Snippets_CFX/c_programmingsecurity/cs/source.cs#8)]
- [!code-vb[c_ProgrammingSecurity#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_programmingsecurity/vb/source.vb#8)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/c_programmingsecurity/cs/source.cs" id="Snippet8":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/c_programmingsecurity/vb/source.vb" id="Snippet8":::  
   
  ]]></format>
         </remarks>
@@ -337,13 +439,19 @@
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite Basic256Rsa15" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256Rsa15" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Basic256Rsa15 As SecurityAlgorithmSuite" />
+      <MemberSignature Language="F#" Value="static member Basic256Rsa15 : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256Rsa15" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ Basic256Rsa15 { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Basic256Rsa15 : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256Rsa15" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityAlgorithmSuite</ReturnType>
@@ -366,13 +474,28 @@
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite Basic256Sha256" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256Sha256" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Basic256Sha256 As SecurityAlgorithmSuite" />
+      <MemberSignature Language="F#" Value="static member Basic256Sha256 : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256Sha256" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ Basic256Sha256 { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Basic256Sha256 : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256Sha256" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityAlgorithmSuite</ReturnType>
@@ -395,13 +518,19 @@
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite Basic256Sha256Rsa15" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256Sha256Rsa15" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Basic256Sha256Rsa15 As SecurityAlgorithmSuite" />
+      <MemberSignature Language="F#" Value="static member Basic256Sha256Rsa15 : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256Sha256Rsa15" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ Basic256Sha256Rsa15 { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Basic256Sha256Rsa15 : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256Sha256Rsa15" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityAlgorithmSuite</ReturnType>
@@ -424,17 +553,33 @@
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite Default" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As SecurityAlgorithmSuite" />
+      <MemberSignature Language="F#" Value="static member Default : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.Default" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ Default { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Default : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -458,13 +603,28 @@
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultAsymmetricKeyWrapAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultAsymmetricKeyWrapAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DefaultAsymmetricKeyWrapAlgorithm As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ DefaultAsymmetricKeyWrapAlgorithm { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.DefaultAsymmetricKeyWrapAlgorithm : string" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultAsymmetricKeyWrapAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ DefaultAsymmetricKeyWrapAlgorithm { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -487,13 +647,28 @@
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultAsymmetricSignatureAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultAsymmetricSignatureAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DefaultAsymmetricSignatureAlgorithm As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ DefaultAsymmetricSignatureAlgorithm { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.DefaultAsymmetricSignatureAlgorithm : string" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultAsymmetricSignatureAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ DefaultAsymmetricSignatureAlgorithm { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -516,13 +691,28 @@
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultCanonicalizationAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultCanonicalizationAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DefaultCanonicalizationAlgorithm As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ DefaultCanonicalizationAlgorithm { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.DefaultCanonicalizationAlgorithm : string" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultCanonicalizationAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ DefaultCanonicalizationAlgorithm { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -545,13 +735,28 @@
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultDigestAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultDigestAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DefaultDigestAlgorithm As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ DefaultDigestAlgorithm { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.DefaultDigestAlgorithm : string" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultDigestAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ DefaultDigestAlgorithm { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -574,13 +779,28 @@
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultEncryptionAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultEncryptionAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DefaultEncryptionAlgorithm As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ DefaultEncryptionAlgorithm { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.DefaultEncryptionAlgorithm : string" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultEncryptionAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ DefaultEncryptionAlgorithm { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -603,13 +823,28 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 DefaultEncryptionKeyDerivationLength" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultEncryptionKeyDerivationLength" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DefaultEncryptionKeyDerivationLength As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int DefaultEncryptionKeyDerivationLength { int get(); };" />
       <MemberSignature Language="F#" Value="member this.DefaultEncryptionKeyDerivationLength : int" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultEncryptionKeyDerivationLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int DefaultEncryptionKeyDerivationLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -632,13 +867,28 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 DefaultSignatureKeyDerivationLength" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultSignatureKeyDerivationLength" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DefaultSignatureKeyDerivationLength As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int DefaultSignatureKeyDerivationLength { int get(); };" />
       <MemberSignature Language="F#" Value="member this.DefaultSignatureKeyDerivationLength : int" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultSignatureKeyDerivationLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int DefaultSignatureKeyDerivationLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -661,13 +911,28 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 DefaultSymmetricKeyLength" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultSymmetricKeyLength" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DefaultSymmetricKeyLength As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int DefaultSymmetricKeyLength { int get(); };" />
       <MemberSignature Language="F#" Value="member this.DefaultSymmetricKeyLength : int" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultSymmetricKeyLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int DefaultSymmetricKeyLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -690,13 +955,28 @@
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultSymmetricKeyWrapAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultSymmetricKeyWrapAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DefaultSymmetricKeyWrapAlgorithm As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ DefaultSymmetricKeyWrapAlgorithm { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.DefaultSymmetricKeyWrapAlgorithm : string" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultSymmetricKeyWrapAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ DefaultSymmetricKeyWrapAlgorithm { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -712,13 +992,28 @@
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultSymmetricSignatureAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultSymmetricSignatureAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DefaultSymmetricSignatureAlgorithm As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ DefaultSymmetricSignatureAlgorithm { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.DefaultSymmetricSignatureAlgorithm : string" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.DefaultSymmetricSignatureAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ DefaultSymmetricSignatureAlgorithm { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -734,13 +1029,26 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsAsymmetricKeyLengthSupported(int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityAlgorithmSuite.IsAsymmetricKeyLengthSupported(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsAsymmetricKeyLengthSupported (length As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsAsymmetricKeyLengthSupported(int length);" />
       <MemberSignature Language="F#" Value="abstract member IsAsymmetricKeyLengthSupported : int -&gt; bool" Usage="securityAlgorithmSuite.IsAsymmetricKeyLengthSupported length" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsAsymmetricKeyLengthSupported(int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -768,19 +1076,31 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsAsymmetricKeyWrapAlgorithmSupported(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityAlgorithmSuite.IsAsymmetricKeyWrapAlgorithmSupported(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsAsymmetricKeyWrapAlgorithmSupported (algorithm As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsAsymmetricKeyWrapAlgorithmSupported(System::String ^ algorithm);" />
       <MemberSignature Language="F#" Value="abstract member IsAsymmetricKeyWrapAlgorithmSupported : string -&gt; bool&#xA;override this.IsAsymmetricKeyWrapAlgorithmSupported : string -&gt; bool" Usage="securityAlgorithmSuite.IsAsymmetricKeyWrapAlgorithmSupported algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsAsymmetricKeyWrapAlgorithmSupported(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="algorithm" Type="System.String" />
+        <Parameter Name="algorithm" Type="System.String" Index="0" FrameworkAlternate="net-6.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
       </Parameters>
       <Docs>
         <param name="algorithm">The algorithm to check.</param>
@@ -802,19 +1122,31 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsAsymmetricSignatureAlgorithmSupported(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityAlgorithmSuite.IsAsymmetricSignatureAlgorithmSupported(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsAsymmetricSignatureAlgorithmSupported (algorithm As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsAsymmetricSignatureAlgorithmSupported(System::String ^ algorithm);" />
       <MemberSignature Language="F#" Value="abstract member IsAsymmetricSignatureAlgorithmSupported : string -&gt; bool&#xA;override this.IsAsymmetricSignatureAlgorithmSupported : string -&gt; bool" Usage="securityAlgorithmSuite.IsAsymmetricSignatureAlgorithmSupported algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsAsymmetricSignatureAlgorithmSupported(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="algorithm" Type="System.String" />
+        <Parameter Name="algorithm" Type="System.String" Index="0" FrameworkAlternate="net-6.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
       </Parameters>
       <Docs>
         <param name="algorithm">The algorithm name to check.</param>
@@ -836,19 +1168,31 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsCanonicalizationAlgorithmSupported(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityAlgorithmSuite.IsCanonicalizationAlgorithmSupported(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsCanonicalizationAlgorithmSupported (algorithm As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsCanonicalizationAlgorithmSupported(System::String ^ algorithm);" />
       <MemberSignature Language="F#" Value="abstract member IsCanonicalizationAlgorithmSupported : string -&gt; bool&#xA;override this.IsCanonicalizationAlgorithmSupported : string -&gt; bool" Usage="securityAlgorithmSuite.IsCanonicalizationAlgorithmSupported algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsCanonicalizationAlgorithmSupported(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="algorithm" Type="System.String" />
+        <Parameter Name="algorithm" Type="System.String" Index="0" FrameworkAlternate="net-6.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
       </Parameters>
       <Docs>
         <param name="algorithm">The algorithm name to check.</param>
@@ -870,19 +1214,31 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsDigestAlgorithmSupported(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityAlgorithmSuite.IsDigestAlgorithmSupported(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsDigestAlgorithmSupported (algorithm As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsDigestAlgorithmSupported(System::String ^ algorithm);" />
       <MemberSignature Language="F#" Value="abstract member IsDigestAlgorithmSupported : string -&gt; bool&#xA;override this.IsDigestAlgorithmSupported : string -&gt; bool" Usage="securityAlgorithmSuite.IsDigestAlgorithmSupported algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsDigestAlgorithmSupported(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="algorithm" Type="System.String" />
+        <Parameter Name="algorithm" Type="System.String" Index="0" FrameworkAlternate="net-6.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
       </Parameters>
       <Docs>
         <param name="algorithm">The algorithm name to check.</param>
@@ -904,19 +1260,31 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsEncryptionAlgorithmSupported(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityAlgorithmSuite.IsEncryptionAlgorithmSupported(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsEncryptionAlgorithmSupported (algorithm As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsEncryptionAlgorithmSupported(System::String ^ algorithm);" />
       <MemberSignature Language="F#" Value="abstract member IsEncryptionAlgorithmSupported : string -&gt; bool&#xA;override this.IsEncryptionAlgorithmSupported : string -&gt; bool" Usage="securityAlgorithmSuite.IsEncryptionAlgorithmSupported algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsEncryptionAlgorithmSupported(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="algorithm" Type="System.String" />
+        <Parameter Name="algorithm" Type="System.String" Index="0" FrameworkAlternate="net-6.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
       </Parameters>
       <Docs>
         <param name="algorithm">The algorithm name to check.</param>
@@ -938,19 +1306,31 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsEncryptionKeyDerivationAlgorithmSupported(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityAlgorithmSuite.IsEncryptionKeyDerivationAlgorithmSupported(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsEncryptionKeyDerivationAlgorithmSupported (algorithm As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsEncryptionKeyDerivationAlgorithmSupported(System::String ^ algorithm);" />
       <MemberSignature Language="F#" Value="abstract member IsEncryptionKeyDerivationAlgorithmSupported : string -&gt; bool&#xA;override this.IsEncryptionKeyDerivationAlgorithmSupported : string -&gt; bool" Usage="securityAlgorithmSuite.IsEncryptionKeyDerivationAlgorithmSupported algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsEncryptionKeyDerivationAlgorithmSupported(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="algorithm" Type="System.String" />
+        <Parameter Name="algorithm" Type="System.String" Index="0" FrameworkAlternate="net-6.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
       </Parameters>
       <Docs>
         <param name="algorithm">The algorithm name to check.</param>
@@ -965,19 +1345,31 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSignatureKeyDerivationAlgorithmSupported(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityAlgorithmSuite.IsSignatureKeyDerivationAlgorithmSupported(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsSignatureKeyDerivationAlgorithmSupported (algorithm As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsSignatureKeyDerivationAlgorithmSupported(System::String ^ algorithm);" />
       <MemberSignature Language="F#" Value="abstract member IsSignatureKeyDerivationAlgorithmSupported : string -&gt; bool&#xA;override this.IsSignatureKeyDerivationAlgorithmSupported : string -&gt; bool" Usage="securityAlgorithmSuite.IsSignatureKeyDerivationAlgorithmSupported algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsSignatureKeyDerivationAlgorithmSupported(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="algorithm" Type="System.String" />
+        <Parameter Name="algorithm" Type="System.String" Index="0" FrameworkAlternate="net-6.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
       </Parameters>
       <Docs>
         <param name="algorithm">The algorithm name to check.</param>
@@ -992,13 +1384,26 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSymmetricKeyLengthSupported(int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityAlgorithmSuite.IsSymmetricKeyLengthSupported(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsSymmetricKeyLengthSupported (length As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsSymmetricKeyLengthSupported(int length);" />
       <MemberSignature Language="F#" Value="abstract member IsSymmetricKeyLengthSupported : int -&gt; bool" Usage="securityAlgorithmSuite.IsSymmetricKeyLengthSupported length" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsSymmetricKeyLengthSupported(int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1026,19 +1431,31 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSymmetricKeyWrapAlgorithmSupported(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityAlgorithmSuite.IsSymmetricKeyWrapAlgorithmSupported(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsSymmetricKeyWrapAlgorithmSupported (algorithm As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsSymmetricKeyWrapAlgorithmSupported(System::String ^ algorithm);" />
       <MemberSignature Language="F#" Value="abstract member IsSymmetricKeyWrapAlgorithmSupported : string -&gt; bool&#xA;override this.IsSymmetricKeyWrapAlgorithmSupported : string -&gt; bool" Usage="securityAlgorithmSuite.IsSymmetricKeyWrapAlgorithmSupported algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsSymmetricKeyWrapAlgorithmSupported(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="algorithm" Type="System.String" />
+        <Parameter Name="algorithm" Type="System.String" Index="0" FrameworkAlternate="net-6.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
       </Parameters>
       <Docs>
         <param name="algorithm">The algorithm name to check.</param>
@@ -1053,19 +1470,31 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSymmetricSignatureAlgorithmSupported(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityAlgorithmSuite.IsSymmetricSignatureAlgorithmSupported(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsSymmetricSignatureAlgorithmSupported (algorithm As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsSymmetricSignatureAlgorithmSupported(System::String ^ algorithm);" />
       <MemberSignature Language="F#" Value="abstract member IsSymmetricSignatureAlgorithmSupported : string -&gt; bool&#xA;override this.IsSymmetricSignatureAlgorithmSupported : string -&gt; bool" Usage="securityAlgorithmSuite.IsSymmetricSignatureAlgorithmSupported algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsSymmetricSignatureAlgorithmSupported(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="algorithm" Type="System.String" />
+        <Parameter Name="algorithm" Type="System.String" Index="0" FrameworkAlternate="net-6.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
       </Parameters>
       <Docs>
         <param name="algorithm">The algorithm name to check.</param>
@@ -1080,13 +1509,27 @@
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite TripleDes" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.TripleDes" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TripleDes As SecurityAlgorithmSuite" />
+      <MemberSignature Language="F#" Value="static member TripleDes : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.TripleDes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ TripleDes { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.TripleDes : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.TripleDes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.7.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityAlgorithmSuite</ReturnType>
@@ -1109,13 +1552,19 @@
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite TripleDesRsa15" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.TripleDesRsa15" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TripleDesRsa15 As SecurityAlgorithmSuite" />
+      <MemberSignature Language="F#" Value="static member TripleDesRsa15 : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.TripleDesRsa15" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ TripleDesRsa15 { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.TripleDesRsa15 : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.TripleDesRsa15" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityAlgorithmSuite</ReturnType>
@@ -1138,13 +1587,19 @@
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite TripleDesSha256" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.TripleDesSha256" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TripleDesSha256 As SecurityAlgorithmSuite" />
+      <MemberSignature Language="F#" Value="static member TripleDesSha256 : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.TripleDesSha256" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ TripleDesSha256 { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.TripleDesSha256 : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.TripleDesSha256" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityAlgorithmSuite</ReturnType>
@@ -1167,13 +1622,19 @@
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.SecurityAlgorithmSuite TripleDesSha256Rsa15" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityAlgorithmSuite.TripleDesSha256Rsa15" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TripleDesSha256Rsa15 As SecurityAlgorithmSuite" />
+      <MemberSignature Language="F#" Value="static member TripleDesSha256Rsa15 : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.TripleDesSha256Rsa15" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Security::SecurityAlgorithmSuite ^ TripleDesSha256Rsa15 { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.TripleDesSha256Rsa15 : System.ServiceModel.Security.SecurityAlgorithmSuite" Usage="System.ServiceModel.Security.SecurityAlgorithmSuite.TripleDesSha256Rsa15" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Security</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityAlgorithmSuite</ReturnType>

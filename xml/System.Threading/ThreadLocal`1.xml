@@ -1,16 +1,22 @@
-﻿<Type Name="ThreadLocal&lt;T&gt;" FullName="System.Threading.ThreadLocal&lt;T&gt;">
+<Type Name="ThreadLocal&lt;T&gt;" FullName="System.Threading.ThreadLocal&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class ThreadLocal&lt;T&gt; : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ThreadLocal`1&lt;T&gt; extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Threading.ThreadLocal`1" />
   <TypeSignature Language="VB.NET" Value="Public Class ThreadLocal(Of T)&#xA;Implements IDisposable" />
-  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ThreadLocal : IDisposable" />
   <TypeSignature Language="F#" Value="type ThreadLocal&lt;'T&gt; = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ThreadLocal : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -20,9 +26,25 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Threading" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Threading" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Threading" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Threading" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Threading" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Threading" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <TypeParameters>
-    <TypeParameter Name="T" />
+    <TypeParameter Name="T">
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+    </TypeParameter>
   </TypeParameters>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -33,14 +55,25 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Diagnostics.DebuggerDisplay("IsValueCreated={IsValueCreated}, Value={ValueForDebugDisplay}, Count={ValuesCountForDebugDisplay}")</AttributeName>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Threading.SystemThreading_ThreadLocalDebugView`1))</AttributeName>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-4.0">
-      <AttributeName>System.Diagnostics.DebuggerDisplay("IsValueCreated={IsValueCreated}, Value={ValueForDebugDisplay}")</AttributeName>
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerDisplay("IsValueCreated={IsValueCreated}, Value={ValueForDebugDisplay}")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("IsValueCreated={IsValueCreated}, Value={ValueForDebugDisplay}")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerTypeProxy(typeof(System.Threading.SystemThreading_ThreadLocalDebugView&lt;&gt;))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerTypeProxy(typeof(System.Threading.SystemThreading_ThreadLocalDebugView&lt;&gt;))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerDisplay("IsValueCreated={IsValueCreated}, Value={ValueForDebugDisplay}, Count={ValuesCountForDebugDisplay}")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("IsValueCreated={IsValueCreated}, Value={ValueForDebugDisplay}, Count={ValuesCountForDebugDisplay}")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -52,16 +85,16 @@
 ## Examples  
  The following example shows how to use <xref:System.Threading.ThreadLocal%601>:  
   
- [!code-csharp[System.Threading.ThreadLocal#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.threadlocal/cs/threadlocal.cs#01)]
- [!code-vb[System.Threading.ThreadLocal#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.threadlocal/vb/threadlocal.vb#01)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Threading/ThreadLocalT/Overview/threadlocal.cs" id="Snippet01":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.threadlocal/vb/threadlocal.vb" id="Snippet01":::  
   
  ]]></format>
     </remarks>
     <threadsafe>With the exception of <see cref="M:System.Threading.ThreadLocal`1.Dispose" />, all public and protected members of <see cref="T:System.Threading.ThreadLocal`1" /> are thread-safe and may be used concurrently from multiple threads. The value returned for the <see cref="P:System.Threading.ThreadLocal`1.Value" /> and <see cref="P:System.Threading.ThreadLocal`1.IsValueCreated" /> properties is specific for the thread on which the property is accessed.</threadsafe>
     <altmember cref="T:System.Lazy`1" />
     <altmember cref="T:System.Threading.AsyncLocal`1" />
-    <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
-    <related type="Article" href="https://msdn.microsoft.com/library/8cd68620-dcc3-4f20-8835-c728a6820e71">How to: Perform Lazy Initialization of Objects</related>
+    <related type="Article" href="/dotnet/framework/performance/lazy-initialization">Lazy Initialization</related>
+    <related type="Article" href="/dotnet/framework/performance/how-to-perform-lazy-initialization-of-objects">How to: Perform Lazy Initialization of Objects</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -88,6 +121,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -97,10 +136,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -117,8 +158,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Lazy`1" />
-        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/8cd68620-dcc3-4f20-8835-c728a6820e71">How to: Perform Lazy Initialization of Objects</related>
+        <related type="Article" href="/dotnet/framework/performance/lazy-initialization">Lazy Initialization</related>
+        <related type="Article" href="/dotnet/framework/performance/how-to-perform-lazy-initialization-of-objects">How to: Perform Lazy Initialization of Objects</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -126,8 +167,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool trackAllValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadLocal`1.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (trackAllValues As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ThreadLocal(bool trackAllValues);" />
       <MemberSignature Language="F#" Value="new System.Threading.ThreadLocal&lt;'T&gt; : bool -&gt; System.Threading.ThreadLocal&lt;'T&gt;" Usage="new System.Threading.ThreadLocal&lt;'T&gt; trackAllValues" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ThreadLocal(bool trackAllValues);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -135,6 +176,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -144,13 +191,14 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="trackAllValues" Type="System.Boolean" />
+        <Parameter Name="trackAllValues" Type="System.Boolean" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="trackAllValues">
-          <see langword="true" /> to track all values set on the instance and expose them through the <see cref="P:System.Threading.ThreadLocal`1.Values" /> property; <see langword="false" /> otherwise.</param>
+          <see langword="true" /> to track all values set on the instance and expose them through the <see cref="P:System.Threading.ThreadLocal`1.Values" /> property; <see langword="false" /> otherwise. When set to <see langword="true" />, a value stored from a given thread will be available through <see cref="P:System.Threading.ThreadLocal`1.Values" /> even after that thread has exited.</param>
         <summary>Initializes the <see cref="T:System.Threading.ThreadLocal`1" /> instance and specifies whether all values are accessible from any thread.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -167,8 +215,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`1&lt;!T&gt; valueFactory) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadLocal`1.#ctor(System.Func{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (valueFactory As Func(Of T))" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ThreadLocal(Func&lt;T&gt; ^ valueFactory);" />
       <MemberSignature Language="F#" Value="new System.Threading.ThreadLocal&lt;'T&gt; : Func&lt;'T&gt; -&gt; System.Threading.ThreadLocal&lt;'T&gt;" Usage="new System.Threading.ThreadLocal&lt;'T&gt; valueFactory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ThreadLocal(Func&lt;T&gt; ^ valueFactory);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -176,6 +224,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -185,6 +239,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="valueFactory" Type="System.Func&lt;T&gt;" />
@@ -196,8 +251,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="valueFactory" /> is a null reference (Nothing in Visual Basic).</exception>
         <altmember cref="T:System.Lazy`1" />
-        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/8cd68620-dcc3-4f20-8835-c728a6820e71">How to: Perform Lazy Initialization of Objects</related>
+        <related type="Article" href="/dotnet/framework/performance/lazy-initialization">Lazy Initialization</related>
+        <related type="Article" href="/dotnet/framework/performance/how-to-perform-lazy-initialization-of-objects">How to: Perform Lazy Initialization of Objects</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -205,8 +260,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`1&lt;!T&gt; valueFactory, bool trackAllValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadLocal`1.#ctor(System.Func{`0},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (valueFactory As Func(Of T), trackAllValues As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ThreadLocal(Func&lt;T&gt; ^ valueFactory, bool trackAllValues);" />
       <MemberSignature Language="F#" Value="new System.Threading.ThreadLocal&lt;'T&gt; : Func&lt;'T&gt; * bool -&gt; System.Threading.ThreadLocal&lt;'T&gt;" Usage="new System.Threading.ThreadLocal&lt;'T&gt; (valueFactory, trackAllValues)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ThreadLocal(Func&lt;T&gt; ^ valueFactory, bool trackAllValues);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -214,6 +269,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -223,15 +284,16 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="valueFactory" Type="System.Func&lt;T&gt;" />
-        <Parameter Name="trackAllValues" Type="System.Boolean" />
+        <Parameter Name="valueFactory" Type="System.Func&lt;T&gt;" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="trackAllValues" Type="System.Boolean" Index="1" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="valueFactory">The <see cref="T:System.Func`1" /> invoked to produce a lazily-initialized value when an attempt is made to retrieve <see cref="P:System.Threading.ThreadLocal`1.Value" /> without it having been previously initialized.</param>
         <param name="trackAllValues">
-          <see langword="true" /> to track all values set on the instance and expose them through the <see cref="P:System.Threading.ThreadLocal`1.Values" /> property; <see langword="false" /> otherwise.</param>
+          <see langword="true" /> to track all values set on the instance and expose them through the <see cref="P:System.Threading.ThreadLocal`1.Values" /> property; <see langword="false" /> otherwise. When set to <see langword="true" />, a value stored from a given thread will be available through <see cref="P:System.Threading.ThreadLocal`1.Values" /> even after that thread has exited.</param>
         <summary>Initializes the <see cref="T:System.Threading.ThreadLocal`1" /> instance with the specified <paramref name="valueFactory" /> function and a flag that indicates whether all values are accessible from any thread.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -261,8 +323,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadLocal`1.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="threadLocal.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -273,6 +335,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -282,6 +350,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -295,7 +364,7 @@
 ## Remarks  
  Call `Dispose` when you are finished using the <xref:System.Threading.ThreadLocal%601>. The `Dispose` method leaves the <xref:System.Threading.ThreadLocal%601> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Threading.ThreadLocal%601> so the garbage collector can reclaim the memory that the <xref:System.Threading.ThreadLocal%601> was occupying.  
   
- For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+ For more information, see [Cleaning Up Unmanaged Resources](/dotnet/standard/garbage-collection/unmanaged) and [Implementing a Dispose Method](/dotnet/standard/garbage-collection/implementing-dispose).  
   
 > [!NOTE]
 >  Always call `Dispose` before you release your last reference to the <xref:System.Threading.ThreadLocal%601>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Threading.ThreadLocal%601> object's `Finalize` method.  
@@ -303,8 +372,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Lazy`1" />
-        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/8cd68620-dcc3-4f20-8835-c728a6820e71">How to: Perform Lazy Initialization of Objects</related>
+        <related type="Article" href="/dotnet/framework/performance/lazy-initialization">Lazy Initialization</related>
+        <related type="Article" href="/dotnet/framework/performance/how-to-perform-lazy-initialization-of-objects">How to: Perform Lazy Initialization of Objects</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -312,8 +381,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadLocal`1.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="threadLocal.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -321,6 +390,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -330,6 +405,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -349,8 +425,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Lazy`1" />
-        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/8cd68620-dcc3-4f20-8835-c728a6820e71">How to: Perform Lazy Initialization of Objects</related>
+        <related type="Article" href="/dotnet/framework/performance/lazy-initialization">Lazy Initialization</related>
+        <related type="Article" href="/dotnet/framework/performance/how-to-perform-lazy-initialization-of-objects">How to: Perform Lazy Initialization of Objects</related>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -358,8 +434,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadLocal`1.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
-      <MemberSignature Language="C++ CLI" Value="!ThreadLocal`1 ()" />
       <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="threadLocal.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!ThreadLocal`1 ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -367,6 +443,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -376,6 +458,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -385,8 +468,8 @@
         <summary>Releases the resources used by this <see cref="T:System.Threading.ThreadLocal`1" /> instance.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Lazy`1" />
-        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/8cd68620-dcc3-4f20-8835-c728a6820e71">How to: Perform Lazy Initialization of Objects</related>
+        <related type="Article" href="/dotnet/framework/performance/lazy-initialization">Lazy Initialization</related>
+        <related type="Article" href="/dotnet/framework/performance/how-to-perform-lazy-initialization-of-objects">How to: Perform Lazy Initialization of Objects</related>
       </Docs>
     </Member>
     <Member MemberName="IsValueCreated">
@@ -394,8 +477,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsValueCreated" />
       <MemberSignature Language="DocId" Value="P:System.Threading.ThreadLocal`1.IsValueCreated" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsValueCreated As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsValueCreated { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsValueCreated : bool" Usage="System.Threading.ThreadLocal&lt;'T&gt;.IsValueCreated" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsValueCreated { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -403,6 +486,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -412,6 +501,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -422,17 +512,18 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.ThreadLocal`1" /> instance has been disposed.</exception>
         <altmember cref="T:System.Lazy`1" />
-        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/8cd68620-dcc3-4f20-8835-c728a6820e71">How to: Perform Lazy Initialization of Objects</related>
+        <related type="Article" href="/dotnet/framework/performance/lazy-initialization">Lazy Initialization</related>
+        <related type="Article" href="/dotnet/framework/performance/how-to-perform-lazy-initialization-of-objects">How to: Perform Lazy Initialization of Objects</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
-      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="C#" Value="public override string ToString ();" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadLocal`1.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="threadLocal.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="C#" Value="public override string? ToString ();" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -440,6 +531,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -449,7 +546,14 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -468,10 +572,10 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.ThreadLocal`1" /> instance has been disposed.</exception>
         <exception cref="T:System.NullReferenceException">The <see cref="P:System.Threading.ThreadLocal`1.Value" /> for the current thread is a null reference (Nothing in Visual Basic).</exception>
         <exception cref="T:System.InvalidOperationException">The initialization function attempted to reference <see cref="P:System.Threading.ThreadLocal`1.Value" /> recursively.</exception>
-        <exception cref="T:System.MissingMemberException">No default constructor is provided and no value factory is supplied.</exception>
+        <exception cref="T:System.MissingMemberException">No parameterless constructor is provided and no value factory is supplied.</exception>
         <altmember cref="T:System.Lazy`1" />
-        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/8cd68620-dcc3-4f20-8835-c728a6820e71">How to: Perform Lazy Initialization of Objects</related>
+        <related type="Article" href="/dotnet/framework/performance/lazy-initialization">Lazy Initialization</related>
+        <related type="Article" href="/dotnet/framework/performance/how-to-perform-lazy-initialization-of-objects">How to: Perform Lazy Initialization of Objects</related>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -479,8 +583,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance !T Value" />
       <MemberSignature Language="DocId" Value="P:System.Threading.ThreadLocal`1.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As T" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Value { T get(); void set(T value); };" />
       <MemberSignature Language="F#" Value="member this.Value : 'T with get, set" Usage="System.Threading.ThreadLocal&lt;'T&gt;.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Value { T get(); void set(T value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -488,6 +592,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -497,10 +607,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -513,16 +625,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If this instance was not previously initialized for the current thread, accessing <xref:System.Threading.ThreadLocal%601.Value%2A> will attempt to initialize it. If an initialization function was supplied during the construction, that initialization will happen by invoking the function to retrieve the initial value for <xref:System.Threading.ThreadLocal%601.Value%2A>. Otherwise, the default value of will be used. If an exception is thrown, that exception is cached and thrown on each subsequent access of the property.  
+ If this instance was not previously initialized for the current thread, accessing <xref:System.Threading.ThreadLocal%601.Value%2A> will attempt to initialize it. If an initialization function was supplied during the construction, that initialization will happen by invoking the function to retrieve the initial value for <xref:System.Threading.ThreadLocal%601.Value%2A>. Otherwise, the default value of `T` will be used.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.ThreadLocal`1" /> instance has been disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The initialization function attempted to reference <see cref="P:System.Threading.ThreadLocal`1.Value" /> recursively.</exception>
-        <exception cref="T:System.MissingMemberException">No default constructor is provided and no value factory is supplied.</exception>
+        <exception cref="T:System.MissingMemberException">No parameterless constructor is provided and no value factory is supplied.</exception>
         <altmember cref="T:System.Lazy`1" />
-        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/8cd68620-dcc3-4f20-8835-c728a6820e71">How to: Perform Lazy Initialization of Objects</related>
+        <related type="Article" href="/dotnet/framework/performance/lazy-initialization">Lazy Initialization</related>
+        <related type="Article" href="/dotnet/framework/performance/how-to-perform-lazy-initialization-of-objects">How to: Perform Lazy Initialization of Objects</related>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -530,8 +642,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;!T&gt; Values" />
       <MemberSignature Language="DocId" Value="P:System.Threading.ThreadLocal`1.Values" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As IList(Of T)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;T&gt; ^ Values { System::Collections::Generic::IList&lt;T&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Values : System.Collections.Generic.IList&lt;'T&gt;" Usage="System.Threading.ThreadLocal&lt;'T&gt;.Values" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;T&gt; ^ Values { System::Collections::Generic::IList&lt;T&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -539,6 +651,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -548,14 +666,15 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a list for all of the values currently stored by all of the threads that have accessed this instance.</summary>
-        <value>A list for all of the values currently stored by all of the threads that have accessed this instance.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a list containing the values stored by all threads that have accessed this instance.</summary>
+        <value>A list for all of the values stored by all of the threads that have accessed this instance.</value>
+        <remarks>Each thread that has ever accessed this instance will contribute to this list the value last stored into the instance.  This includes threads that have since exited.</remarks>
         <exception cref="T:System.InvalidOperationException">Values stored by all threads are not available because this instance was initialized with the <paramref name="trackAllValues" /> argument set to <see langword="false" /> in the call to a class constructor.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.ThreadLocal`1" /> instance has been disposed.</exception>
       </Docs>

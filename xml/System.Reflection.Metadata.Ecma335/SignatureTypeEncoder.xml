@@ -1,27 +1,44 @@
-﻿<Type Name="SignatureTypeEncoder" FullName="System.Reflection.Metadata.Ecma335.SignatureTypeEncoder">
-  <TypeSignature Language="C#" Value="public struct SignatureTypeEncoder" />
+<Type Name="SignatureTypeEncoder" FullName="System.Reflection.Metadata.Ecma335.SignatureTypeEncoder">
+  <TypeSignature Language="C#" Value="public readonly struct SignatureTypeEncoder" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit SignatureTypeEncoder extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder" />
   <TypeSignature Language="VB.NET" Value="Public Structure SignatureTypeEncoder" />
-  <TypeSignature Language="C++ CLI" Value="public value class SignatureTypeEncoder" />
   <TypeSignature Language="F#" Value="type SignatureTypeEncoder = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class SignatureTypeEncoder" />
+  <TypeSignature Language="C#" Value="public struct SignatureTypeEncoder" FrameworkAlternate="netcore-1.1;netcore-2.0" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
     <AssemblyVersion>1.4.2.0</AssemblyVersion>
     <AssemblyVersion>1.4.3.0</AssemblyVersion>
+    <AssemblyVersion>1.4.4.0</AssemblyVersion>
+    <AssemblyVersion>1.4.5.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2">
-      <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+    <Attribute FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Encodes a type in a signature.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,21 +47,26 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Metadata.BlobBuilder builder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.#ctor(System.Reflection.Metadata.BlobBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (builder As BlobBuilder)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignatureTypeEncoder(System::Reflection::Metadata::BlobBuilder ^ builder);" />
       <MemberSignature Language="F#" Value="new System.Reflection.Metadata.Ecma335.SignatureTypeEncoder : System.Reflection.Metadata.BlobBuilder -&gt; System.Reflection.Metadata.Ecma335.SignatureTypeEncoder" Usage="new System.Reflection.Metadata.Ecma335.SignatureTypeEncoder builder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignatureTypeEncoder(System::Reflection::Metadata::BlobBuilder ^ builder);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="builder" Type="System.Reflection.Metadata.BlobBuilder" />
       </Parameters>
       <Docs>
-        <param name="builder">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="builder">The <see cref="T:System.Reflection.Metadata.BlobBuilder" /> where the signature will be written.</param>
+        <summary>Creates a <see cref="T:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,14 +75,19 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Array(class System.Action`1&lt;valuetype System.Reflection.Metadata.Ecma335.SignatureTypeEncoder&gt; elementType, class System.Action`1&lt;valuetype System.Reflection.Metadata.Ecma335.ArrayShapeEncoder&gt; arrayShape) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.Array(System.Action{System.Reflection.Metadata.Ecma335.SignatureTypeEncoder},System.Action{System.Reflection.Metadata.Ecma335.ArrayShapeEncoder})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Array (elementType As Action(Of SignatureTypeEncoder), arrayShape As Action(Of ArrayShapeEncoder))" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Array(Action&lt;System::Reflection::Metadata::Ecma335::SignatureTypeEncoder&gt; ^ elementType, Action&lt;System::Reflection::Metadata::Ecma335::ArrayShapeEncoder&gt; ^ arrayShape);" />
       <MemberSignature Language="F#" Value="member this.Array : Action&lt;System.Reflection.Metadata.Ecma335.SignatureTypeEncoder&gt; * Action&lt;System.Reflection.Metadata.Ecma335.ArrayShapeEncoder&gt; -&gt; unit" Usage="signatureTypeEncoder.Array (elementType, arrayShape)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Array(Action&lt;System::Reflection::Metadata::Ecma335::SignatureTypeEncoder&gt; ^ elementType, Action&lt;System::Reflection::Metadata::Ecma335::ArrayShapeEncoder&gt; ^ arrayShape);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -70,10 +97,12 @@
         <Parameter Name="arrayShape" Type="System.Action&lt;System.Reflection.Metadata.Ecma335.ArrayShapeEncoder&gt;" />
       </Parameters>
       <Docs>
-        <param name="elementType">To be added.</param>
-        <param name="arrayShape">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="elementType">Called first, to encode the type of the element.</param>
+        <param name="arrayShape">Called second, to encode the shape of the array.</param>
+        <summary>Encodes an array type.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="elementType" /> or <paramref name="arrayShape" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Array">
@@ -81,14 +110,19 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Array([out] valuetype System.Reflection.Metadata.Ecma335.SignatureTypeEncoder&amp; elementType, [out] valuetype System.Reflection.Metadata.Ecma335.ArrayShapeEncoder&amp; arrayShape) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.Array(System.Reflection.Metadata.Ecma335.SignatureTypeEncoder@,System.Reflection.Metadata.Ecma335.ArrayShapeEncoder@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Array (ByRef elementType As SignatureTypeEncoder, ByRef arrayShape As ArrayShapeEncoder)" />
+      <MemberSignature Language="F#" Value="member this.Array : SignatureTypeEncoder * ArrayShapeEncoder -&gt; unit" Usage="signatureTypeEncoder.Array (elementType, arrayShape)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Array([Runtime::InteropServices::Out] System::Reflection::Metadata::Ecma335::SignatureTypeEncoder % elementType, [Runtime::InteropServices::Out] System::Reflection::Metadata::Ecma335::ArrayShapeEncoder % arrayShape);" />
-      <MemberSignature Language="F#" Value="member this.Array :  *  -&gt; unit" Usage="signatureTypeEncoder.Array (elementType, arrayShape)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -98,9 +132,9 @@
         <Parameter Name="arrayShape" Type="System.Reflection.Metadata.Ecma335.ArrayShapeEncoder" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="elementType">To be added.</param>
-        <param name="arrayShape">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="elementType">Use first, to encode the type of the element.</param>
+        <param name="arrayShape">Use second, to encode the shape of the array.</param>
+        <summary>Encodes an array type. Returns a pair of encoders that must be used in the order they appear in the parameter list.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,21 +143,26 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Boolean() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.Boolean" />
       <MemberSignature Language="VB.NET" Value="Public Sub Boolean ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Boolean();" />
       <MemberSignature Language="F#" Value="member this.Boolean : unit -&gt; unit" Usage="signatureTypeEncoder.Boolean " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Boolean();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Encodes <see cref="T:System.Boolean" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,20 +171,25 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Metadata.BlobBuilder Builder" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.Builder" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Builder As BlobBuilder" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobBuilder ^ Builder { System::Reflection::Metadata::BlobBuilder ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Builder : System.Reflection.Metadata.BlobBuilder" Usage="System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.Builder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobBuilder ^ Builder { System::Reflection::Metadata::BlobBuilder ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.BlobBuilder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <see cref="T:System.Reflection.Metadata.BlobBuilder" /> where the signature is written to.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -155,21 +199,26 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Byte() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.Byte" />
       <MemberSignature Language="VB.NET" Value="Public Sub Byte ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Byte();" />
       <MemberSignature Language="F#" Value="member this.Byte : unit -&gt; unit" Usage="signatureTypeEncoder.Byte " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Byte();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Encodes <see cref="T:System.Byte" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,21 +227,26 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Char() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.Char" />
       <MemberSignature Language="VB.NET" Value="Public Sub Char ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Char();" />
       <MemberSignature Language="F#" Value="member this.Char : unit -&gt; unit" Usage="signatureTypeEncoder.Char " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Char();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Encodes <see cref="T:System.Char" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -201,21 +255,26 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.Ecma335.CustomModifiersEncoder CustomModifiers() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.CustomModifiers" />
       <MemberSignature Language="VB.NET" Value="Public Function CustomModifiers () As CustomModifiersEncoder" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::Ecma335::CustomModifiersEncoder CustomModifiers();" />
       <MemberSignature Language="F#" Value="member this.CustomModifiers : unit -&gt; System.Reflection.Metadata.Ecma335.CustomModifiersEncoder" Usage="signatureTypeEncoder.CustomModifiers " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::Ecma335::CustomModifiersEncoder CustomModifiers();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.CustomModifiersEncoder</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Starts a signature of a type with custom modifiers.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -225,21 +284,26 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Double() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.Double" />
       <MemberSignature Language="VB.NET" Value="Public Sub Double ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Double();" />
       <MemberSignature Language="F#" Value="member this.Double : unit -&gt; unit" Usage="signatureTypeEncoder.Double " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Double();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Encodes <see cref="T:System.Double" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,6 +319,11 @@
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.MethodSignatureEncoder</ReturnType>
@@ -265,12 +334,16 @@
         <Parameter Name="genericParameterCount" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="convention">To be added.</param>
-        <param name="attributes">To be added.</param>
-        <param name="genericParameterCount">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="convention">Calling convention.</param>
+        <param name="attributes">Function pointer attributes.</param>
+        <param name="genericParameterCount">Generic parameter count.</param>
+        <summary>Starts a function pointer signature.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="attributes" /> is invalid.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="genericParameterCount" /> is not in range [0, 0xffff].</exception>
       </Docs>
     </Member>
     <Member MemberName="GenericInstantiation">
@@ -278,14 +351,19 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.Ecma335.GenericTypeArgumentsEncoder GenericInstantiation(valuetype System.Reflection.Metadata.EntityHandle genericType, int32 genericArgumentCount, bool isValueType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.GenericInstantiation(System.Reflection.Metadata.EntityHandle,System.Int32,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GenericInstantiation (genericType As EntityHandle, genericArgumentCount As Integer, isValueType As Boolean) As GenericTypeArgumentsEncoder" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::Ecma335::GenericTypeArgumentsEncoder GenericInstantiation(System::Reflection::Metadata::EntityHandle genericType, int genericArgumentCount, bool isValueType);" />
       <MemberSignature Language="F#" Value="member this.GenericInstantiation : System.Reflection.Metadata.EntityHandle * int * bool -&gt; System.Reflection.Metadata.Ecma335.GenericTypeArgumentsEncoder" Usage="signatureTypeEncoder.GenericInstantiation (genericType, genericArgumentCount, isValueType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::Ecma335::GenericTypeArgumentsEncoder GenericInstantiation(System::Reflection::Metadata::EntityHandle genericType, int genericArgumentCount, bool isValueType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.GenericTypeArgumentsEncoder</ReturnType>
@@ -296,12 +374,18 @@
         <Parameter Name="isValueType" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="genericType">To be added.</param>
-        <param name="genericArgumentCount">To be added.</param>
-        <param name="isValueType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="genericType">
+          <see cref="T:System.Reflection.Metadata.TypeDefinitionHandle" /> or <see cref="T:System.Reflection.Metadata.TypeReferenceHandle" />.</param>
+        <param name="genericArgumentCount">Generic argument count.</param>
+        <param name="isValueType">
+          <see langword="true" /> to mark the type as value type, <see langword="false" /> to mark it as a reference type in the signature.</param>
+        <summary>Starts a generic instantiation signature.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="genericType" /> doesn't have the expected handle kind.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="genericArgumentCount" /> is not in range [1, 0xffff].</exception>
       </Docs>
     </Member>
     <Member MemberName="GenericMethodTypeParameter">
@@ -309,14 +393,19 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GenericMethodTypeParameter(int32 parameterIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.GenericMethodTypeParameter(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GenericMethodTypeParameter (parameterIndex As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GenericMethodTypeParameter(int parameterIndex);" />
       <MemberSignature Language="F#" Value="member this.GenericMethodTypeParameter : int -&gt; unit" Usage="signatureTypeEncoder.GenericMethodTypeParameter parameterIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GenericMethodTypeParameter(int parameterIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -325,9 +414,11 @@
         <Parameter Name="parameterIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="parameterIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parameterIndex">Parameter index.</param>
+        <summary>Encodes a reference to type parameter of a containing generic method.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="parameterIndex" /> is not in range [0, 0xffff].</exception>
       </Docs>
     </Member>
     <Member MemberName="GenericTypeParameter">
@@ -335,14 +426,19 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GenericTypeParameter(int32 parameterIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.GenericTypeParameter(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GenericTypeParameter (parameterIndex As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GenericTypeParameter(int parameterIndex);" />
       <MemberSignature Language="F#" Value="member this.GenericTypeParameter : int -&gt; unit" Usage="signatureTypeEncoder.GenericTypeParameter parameterIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GenericTypeParameter(int parameterIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -351,9 +447,11 @@
         <Parameter Name="parameterIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="parameterIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="parameterIndex">Parameter index.</param>
+        <summary>Encodes a reference to type parameter of a containing generic type.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="parameterIndex" /> is not in range [0, 0xffff].</exception>
       </Docs>
     </Member>
     <Member MemberName="Int16">
@@ -361,21 +459,26 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Int16() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.Int16" />
       <MemberSignature Language="VB.NET" Value="Public Sub Int16 ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Int16();" />
       <MemberSignature Language="F#" Value="member this.Int16 : unit -&gt; unit" Usage="signatureTypeEncoder.Int16 " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Int16();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Encodes <see cref="T:System.Int16" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -384,21 +487,26 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Int32() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.Int32" />
       <MemberSignature Language="VB.NET" Value="Public Sub Int32 ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Int32();" />
       <MemberSignature Language="F#" Value="member this.Int32 : unit -&gt; unit" Usage="signatureTypeEncoder.Int32 " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Int32();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Encodes <see cref="T:System.Int32" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -407,21 +515,26 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Int64() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.Int64" />
       <MemberSignature Language="VB.NET" Value="Public Sub Int64 ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Int64();" />
       <MemberSignature Language="F#" Value="member this.Int64 : unit -&gt; unit" Usage="signatureTypeEncoder.Int64 " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Int64();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Encodes <see cref="T:System.Int64" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -430,21 +543,26 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void IntPtr() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.IntPtr" />
       <MemberSignature Language="VB.NET" Value="Public Sub IntPtr ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void IntPtr();" />
       <MemberSignature Language="F#" Value="member this.IntPtr : unit -&gt; unit" Usage="signatureTypeEncoder.IntPtr " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void IntPtr();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Encodes <see cref="T:System.IntPtr" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -453,21 +571,26 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Object() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.Object" />
       <MemberSignature Language="VB.NET" Value="Public Sub Object ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Object();" />
       <MemberSignature Language="F#" Value="member this.Object : unit -&gt; unit" Usage="signatureTypeEncoder.Object " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Object();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Encodes <see cref="T:System.Object" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -476,21 +599,26 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.Ecma335.SignatureTypeEncoder Pointer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.Pointer" />
       <MemberSignature Language="VB.NET" Value="Public Function Pointer () As SignatureTypeEncoder" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::Ecma335::SignatureTypeEncoder Pointer();" />
       <MemberSignature Language="F#" Value="member this.Pointer : unit -&gt; System.Reflection.Metadata.Ecma335.SignatureTypeEncoder" Usage="signatureTypeEncoder.Pointer " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::Ecma335::SignatureTypeEncoder Pointer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.SignatureTypeEncoder</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Starts pointer signature.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -500,14 +628,19 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PrimitiveType(valuetype System.Reflection.Metadata.PrimitiveTypeCode type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.PrimitiveType(System.Reflection.Metadata.PrimitiveTypeCode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub PrimitiveType (type As PrimitiveTypeCode)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PrimitiveType(System::Reflection::Metadata::PrimitiveTypeCode type);" />
       <MemberSignature Language="F#" Value="member this.PrimitiveType : System.Reflection.Metadata.PrimitiveTypeCode -&gt; unit" Usage="signatureTypeEncoder.PrimitiveType type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PrimitiveType(System::Reflection::Metadata::PrimitiveTypeCode type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -516,9 +649,11 @@
         <Parameter Name="type" Type="System.Reflection.Metadata.PrimitiveTypeCode" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">Any primitive type code except for <see cref="F:System.Reflection.Metadata.PrimitiveTypeCode.TypedReference" /> and <see cref="F:System.Reflection.Metadata.PrimitiveTypeCode.Void" />.</param>
+        <summary>Writes primitive type code.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="type" /> is not valid in this context.</exception>
       </Docs>
     </Member>
     <Member MemberName="SByte">
@@ -526,21 +661,26 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SByte() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.SByte" />
       <MemberSignature Language="VB.NET" Value="Public Sub SByte ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SByte();" />
       <MemberSignature Language="F#" Value="member this.SByte : unit -&gt; unit" Usage="signatureTypeEncoder.SByte " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SByte();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Encodes <see cref="T:System.SByte" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -549,21 +689,26 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Single() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.Single" />
       <MemberSignature Language="VB.NET" Value="Public Sub Single ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Single();" />
       <MemberSignature Language="F#" Value="member this.Single : unit -&gt; unit" Usage="signatureTypeEncoder.Single " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Single();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Encodes <see cref="T:System.Single" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -572,21 +717,26 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void String() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.String" />
       <MemberSignature Language="VB.NET" Value="Public Sub String ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void String();" />
       <MemberSignature Language="F#" Value="member this.String : unit -&gt; unit" Usage="signatureTypeEncoder.String " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void String();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Encodes <see cref="T:System.String" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -595,21 +745,26 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.Ecma335.SignatureTypeEncoder SZArray() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.SZArray" />
       <MemberSignature Language="VB.NET" Value="Public Function SZArray () As SignatureTypeEncoder" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::Ecma335::SignatureTypeEncoder SZArray();" />
       <MemberSignature Language="F#" Value="member this.SZArray : unit -&gt; System.Reflection.Metadata.Ecma335.SignatureTypeEncoder" Usage="signatureTypeEncoder.SZArray " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::Ecma335::SignatureTypeEncoder SZArray();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.Ecma335.SignatureTypeEncoder</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Starts SZ array (vector) signature.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -619,14 +774,19 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Type(valuetype System.Reflection.Metadata.EntityHandle type, bool isValueType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.Type(System.Reflection.Metadata.EntityHandle,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Type (type As EntityHandle, isValueType As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Type(System::Reflection::Metadata::EntityHandle type, bool isValueType);" />
       <MemberSignature Language="F#" Value="member this.Type : System.Reflection.Metadata.EntityHandle * bool -&gt; unit" Usage="signatureTypeEncoder.Type (type, isValueType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Type(System::Reflection::Metadata::EntityHandle type, bool isValueType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -636,9 +796,35 @@
         <Parameter Name="isValueType" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="isValueType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="type">
+          <see cref="T:System.Reflection.Metadata.TypeDefinitionHandle" /> or <see cref="T:System.Reflection.Metadata.TypeReferenceHandle" />.</param>
+        <param name="isValueType">
+          <see langword="true" /> to mark the type as value type, <see langword="false" /> to mark it as a reference type in the signature.</param>
+        <summary>Encodes a reference to a type.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="type" /> doesn't have the expected handle kind.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TypedReference">
+      <MemberSignature Language="C#" Value="public void TypedReference ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TypedReference() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.TypedReference" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TypedReference ()" />
+      <MemberSignature Language="F#" Value="member this.TypedReference : unit -&gt; unit" Usage="signatureTypeEncoder.TypedReference " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TypedReference();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Encodes <see cref="T:System.TypedReference" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -647,21 +833,26 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UInt16() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.UInt16" />
       <MemberSignature Language="VB.NET" Value="Public Sub UInt16 ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UInt16();" />
       <MemberSignature Language="F#" Value="member this.UInt16 : unit -&gt; unit" Usage="signatureTypeEncoder.UInt16 " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UInt16();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Encodes <see cref="T:System.UInt16" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -670,21 +861,26 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UInt32() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.UInt32" />
       <MemberSignature Language="VB.NET" Value="Public Sub UInt32 ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UInt32();" />
       <MemberSignature Language="F#" Value="member this.UInt32 : unit -&gt; unit" Usage="signatureTypeEncoder.UInt32 " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UInt32();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Encodes <see cref="T:System.UInt32" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -693,21 +889,26 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UInt64() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.UInt64" />
       <MemberSignature Language="VB.NET" Value="Public Sub UInt64 ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UInt64();" />
       <MemberSignature Language="F#" Value="member this.UInt64 : unit -&gt; unit" Usage="signatureTypeEncoder.UInt64 " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UInt64();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Encodes <see cref="T:System.UInt64" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -716,21 +917,26 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UIntPtr() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.UIntPtr" />
       <MemberSignature Language="VB.NET" Value="Public Sub UIntPtr ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UIntPtr();" />
       <MemberSignature Language="F#" Value="member this.UIntPtr : unit -&gt; unit" Usage="signatureTypeEncoder.UIntPtr " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UIntPtr();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Encodes <see cref="T:System.UIntPtr" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -739,21 +945,26 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void VoidPointer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureTypeEncoder.VoidPointer" />
       <MemberSignature Language="VB.NET" Value="Public Sub VoidPointer ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void VoidPointer();" />
       <MemberSignature Language="F#" Value="member this.VoidPointer : unit -&gt; unit" Usage="signatureTypeEncoder.VoidPointer " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void VoidPointer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Encodes a void pointer (<c>void*</c>).</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

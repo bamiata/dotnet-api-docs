@@ -1,10 +1,10 @@
-﻿<Type Name="SecurityHeaderLayout" FullName="System.ServiceModel.Channels.SecurityHeaderLayout">
+<Type Name="SecurityHeaderLayout" FullName="System.ServiceModel.Channels.SecurityHeaderLayout">
   <TypeSignature Language="C#" Value="public enum SecurityHeaderLayout" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SecurityHeaderLayout extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.SecurityHeaderLayout" />
   <TypeSignature Language="VB.NET" Value="Public Enum SecurityHeaderLayout" />
-  <TypeSignature Language="C++ CLI" Value="public enum class SecurityHeaderLayout" />
   <TypeSignature Language="F#" Value="type SecurityHeaderLayout = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SecurityHeaderLayout" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -13,10 +13,30 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Security</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
     <AssemblyVersion>4.0.2.0</AssemblyVersion>
-    <AssemblyVersion>4.0.3.0</AssemblyVersion>
+    <AssemblyVersion>4.6.0.0</AssemblyVersion>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.9.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.2.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Private.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.ServiceModel" FromVersion="4.0.0.0" To="System.ServiceModel.Security" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="System.ServiceModel.Security" FromVersion="6.0.0.0" To="System.ServiceModel.Primitives" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
@@ -37,8 +57,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.SecurityHeaderLayout Lax = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.SecurityHeaderLayout.Lax" />
       <MemberSignature Language="VB.NET" Value="Lax" />
-      <MemberSignature Language="C++ CLI" Value="Lax" />
       <MemberSignature Language="F#" Value="Lax = 1" Usage="System.ServiceModel.Channels.SecurityHeaderLayout.Lax" />
+      <MemberSignature Language="C++ CLI" Value="Lax" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -48,9 +68,19 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.SecurityHeaderLayout</ReturnType>
@@ -65,17 +95,24 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.SecurityHeaderLayout LaxTimestampFirst = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.SecurityHeaderLayout.LaxTimestampFirst" />
       <MemberSignature Language="VB.NET" Value="LaxTimestampFirst" />
-      <MemberSignature Language="C++ CLI" Value="LaxTimestampFirst" />
       <MemberSignature Language="F#" Value="LaxTimestampFirst = 2" Usage="System.ServiceModel.Channels.SecurityHeaderLayout.LaxTimestampFirst" />
+      <MemberSignature Language="C++ CLI" Value="LaxTimestampFirst" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Security</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.SecurityHeaderLayout</ReturnType>
@@ -90,17 +127,24 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.SecurityHeaderLayout LaxTimestampLast = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.SecurityHeaderLayout.LaxTimestampLast" />
       <MemberSignature Language="VB.NET" Value="LaxTimestampLast" />
-      <MemberSignature Language="C++ CLI" Value="LaxTimestampLast" />
       <MemberSignature Language="F#" Value="LaxTimestampLast = 3" Usage="System.ServiceModel.Channels.SecurityHeaderLayout.LaxTimestampLast" />
+      <MemberSignature Language="C++ CLI" Value="LaxTimestampLast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Security</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.SecurityHeaderLayout</ReturnType>
@@ -115,8 +159,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.SecurityHeaderLayout Strict = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.SecurityHeaderLayout.Strict" />
       <MemberSignature Language="VB.NET" Value="Strict" />
-      <MemberSignature Language="C++ CLI" Value="Strict" />
       <MemberSignature Language="F#" Value="Strict = 0" Usage="System.ServiceModel.Channels.SecurityHeaderLayout.Strict" />
+      <MemberSignature Language="C++ CLI" Value="Strict" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -126,9 +170,19 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.2.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.SecurityHeaderLayout</ReturnType>

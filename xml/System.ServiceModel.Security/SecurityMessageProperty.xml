@@ -1,14 +1,24 @@
-﻿<Type Name="SecurityMessageProperty" FullName="System.ServiceModel.Security.SecurityMessageProperty">
+<Type Name="SecurityMessageProperty" FullName="System.ServiceModel.Security.SecurityMessageProperty">
   <TypeSignature Language="C#" Value="public class SecurityMessageProperty : IDisposable, System.ServiceModel.Channels.IMessageProperty" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SecurityMessageProperty extends System.Object implements class System.IDisposable, class System.ServiceModel.Channels.IMessageProperty" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.SecurityMessageProperty" />
   <TypeSignature Language="VB.NET" Value="Public Class SecurityMessageProperty&#xA;Implements IDisposable, IMessageProperty" />
-  <TypeSignature Language="C++ CLI" Value="public ref class SecurityMessageProperty : IDisposable, System::ServiceModel::Channels::IMessageProperty" />
   <TypeSignature Language="F#" Value="type SecurityMessageProperty = class&#xA;    interface IMessageProperty&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityMessageProperty : IDisposable, System::ServiceModel::Channels::IMessageProperty" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.2.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Private.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.10.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -45,6 +55,14 @@
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.SecurityMessageProperty" /> class.</summary>
@@ -56,8 +74,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.IMessageProperty CreateCopy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityMessageProperty.CreateCopy" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateCopy () As IMessageProperty" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::IMessageProperty ^ CreateCopy();" />
       <MemberSignature Language="F#" Value="abstract member CreateCopy : unit -&gt; System.ServiceModel.Channels.IMessageProperty&#xA;override this.CreateCopy : unit -&gt; System.ServiceModel.Channels.IMessageProperty" Usage="securityMessageProperty.CreateCopy " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::IMessageProperty ^ CreateCopy();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ServiceModel.Channels.IMessageProperty.CreateCopy</InterfaceMember>
@@ -66,6 +84,14 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.IMessageProperty</ReturnType>
@@ -78,8 +104,8 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To access any objects in the <xref:System.ServiceModel.Security.SecurityMessageProperty>, such as <xref:System.ServiceModel.Security.SecurityMessageProperty.ServiceSecurityContext%2A>, <xref:System.ServiceModel.Security.SecurityMessageProperty.TransportToken%2A>, or <xref:System.ServiceModel.Security.SecurityMessageProperty.IncomingSupportingTokens%2A>), a copy must be created because these properties are undefined after the message is disposed of.  
-  
+ To access any objects in the <xref:System.ServiceModel.Security.SecurityMessageProperty>, such as <xref:System.ServiceModel.Security.SecurityMessageProperty.ServiceSecurityContext%2A>, <xref:System.ServiceModel.Security.SecurityMessageProperty.TransportToken%2A>, or <xref:System.ServiceModel.Security.SecurityMessageProperty.IncomingSupportingTokens%2A>, a copy must be created because these properties are undefined after the message is disposed of.
+
  ]]></format>
         </remarks>
       </Docs>
@@ -89,8 +115,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityMessageProperty.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="securityMessageProperty.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -99,6 +125,14 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -114,20 +148,30 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Policy.IAuthorizationPolicy&gt; ExternalAuthorizationPolicies" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityMessageProperty.ExternalAuthorizationPolicies" />
       <MemberSignature Language="VB.NET" Value="Public Property ExternalAuthorizationPolicies As ReadOnlyCollection(Of IAuthorizationPolicy)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ ExternalAuthorizationPolicies { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ get(); void set(System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ value); };" />
       <MemberSignature Language="F#" Value="member this.ExternalAuthorizationPolicies : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; with get, set" Usage="System.ServiceModel.Security.SecurityMessageProperty.ExternalAuthorizationPolicies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ ExternalAuthorizationPolicies { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ get(); void set(System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -150,13 +194,22 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.SecurityMessageProperty GetOrCreate (System.ServiceModel.Channels.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Security.SecurityMessageProperty GetOrCreate(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityMessageProperty.GetOrCreate(System.ServiceModel.Channels.Message)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Security::SecurityMessageProperty ^ GetOrCreate(System::ServiceModel::Channels::Message ^ message);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetOrCreate (message As Message) As SecurityMessageProperty" />
       <MemberSignature Language="F#" Value="static member GetOrCreate : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.Security.SecurityMessageProperty" Usage="System.ServiceModel.Security.SecurityMessageProperty.GetOrCreate message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Security::SecurityMessageProperty ^ GetOrCreate(System::ServiceModel::Channels::Message ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityMessageProperty</ReturnType>
@@ -176,13 +229,21 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool HasIncomingSupportingTokens" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityMessageProperty.HasIncomingSupportingTokens" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasIncomingSupportingTokens As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasIncomingSupportingTokens { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.HasIncomingSupportingTokens : bool" Usage="System.ServiceModel.Security.SecurityMessageProperty.HasIncomingSupportingTokens" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasIncomingSupportingTokens { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -206,13 +267,21 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Security.SupportingTokenSpecification&gt; IncomingSupportingTokens" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityMessageProperty.IncomingSupportingTokens" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IncomingSupportingTokens As Collection(Of SupportingTokenSpecification)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Security::SupportingTokenSpecification ^&gt; ^ IncomingSupportingTokens { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Security::SupportingTokenSpecification ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.IncomingSupportingTokens : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Security.SupportingTokenSpecification&gt;" Usage="System.ServiceModel.Security.SecurityMessageProperty.IncomingSupportingTokens" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Security::SupportingTokenSpecification ^&gt; ^ IncomingSupportingTokens { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Security::SupportingTokenSpecification ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Security.SupportingTokenSpecification&gt;</ReturnType>
@@ -235,13 +304,21 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Security.SecurityTokenSpecification InitiatorToken" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityMessageProperty.InitiatorToken" />
       <MemberSignature Language="VB.NET" Value="Public Property InitiatorToken As SecurityTokenSpecification" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::SecurityTokenSpecification ^ InitiatorToken { System::ServiceModel::Security::SecurityTokenSpecification ^ get(); void set(System::ServiceModel::Security::SecurityTokenSpecification ^ value); };" />
       <MemberSignature Language="F#" Value="member this.InitiatorToken : System.ServiceModel.Security.SecurityTokenSpecification with get, set" Usage="System.ServiceModel.Security.SecurityMessageProperty.InitiatorToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::SecurityTokenSpecification ^ InitiatorToken { System::ServiceModel::Security::SecurityTokenSpecification ^ get(); void set(System::ServiceModel::Security::SecurityTokenSpecification ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityTokenSpecification</ReturnType>
@@ -264,13 +341,21 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Security.SupportingTokenSpecification&gt; OutgoingSupportingTokens" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityMessageProperty.OutgoingSupportingTokens" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutgoingSupportingTokens As Collection(Of SupportingTokenSpecification)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Security::SupportingTokenSpecification ^&gt; ^ OutgoingSupportingTokens { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Security::SupportingTokenSpecification ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.OutgoingSupportingTokens : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Security.SupportingTokenSpecification&gt;" Usage="System.ServiceModel.Security.SecurityMessageProperty.OutgoingSupportingTokens" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Security::SupportingTokenSpecification ^&gt; ^ OutgoingSupportingTokens { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Security::SupportingTokenSpecification ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Security.SupportingTokenSpecification&gt;</ReturnType>
@@ -286,13 +371,21 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Security.SecurityTokenSpecification ProtectionToken" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityMessageProperty.ProtectionToken" />
       <MemberSignature Language="VB.NET" Value="Public Property ProtectionToken As SecurityTokenSpecification" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::SecurityTokenSpecification ^ ProtectionToken { System::ServiceModel::Security::SecurityTokenSpecification ^ get(); void set(System::ServiceModel::Security::SecurityTokenSpecification ^ value); };" />
       <MemberSignature Language="F#" Value="member this.ProtectionToken : System.ServiceModel.Security.SecurityTokenSpecification with get, set" Usage="System.ServiceModel.Security.SecurityMessageProperty.ProtectionToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::SecurityTokenSpecification ^ ProtectionToken { System::ServiceModel::Security::SecurityTokenSpecification ^ get(); void set(System::ServiceModel::Security::SecurityTokenSpecification ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityTokenSpecification</ReturnType>
@@ -315,13 +408,21 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Security.SecurityTokenSpecification RecipientToken" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityMessageProperty.RecipientToken" />
       <MemberSignature Language="VB.NET" Value="Public Property RecipientToken As SecurityTokenSpecification" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::SecurityTokenSpecification ^ RecipientToken { System::ServiceModel::Security::SecurityTokenSpecification ^ get(); void set(System::ServiceModel::Security::SecurityTokenSpecification ^ value); };" />
       <MemberSignature Language="F#" Value="member this.RecipientToken : System.ServiceModel.Security.SecurityTokenSpecification with get, set" Usage="System.ServiceModel.Security.SecurityMessageProperty.RecipientToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::SecurityTokenSpecification ^ RecipientToken { System::ServiceModel::Security::SecurityTokenSpecification ^ get(); void set(System::ServiceModel::Security::SecurityTokenSpecification ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityTokenSpecification</ReturnType>
@@ -344,17 +445,26 @@
       <MemberSignature Language="ILAsm" Value=".property instance string SenderIdPrefix" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityMessageProperty.SenderIdPrefix" />
       <MemberSignature Language="VB.NET" Value="Public Property SenderIdPrefix As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SenderIdPrefix { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.SenderIdPrefix : string with get, set" Usage="System.ServiceModel.Security.SecurityMessageProperty.SenderIdPrefix" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SenderIdPrefix { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -382,13 +492,21 @@ No character of the property value is alphabetic, numeric, or equal to "_", ".",
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.ServiceSecurityContext ServiceSecurityContext" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityMessageProperty.ServiceSecurityContext" />
       <MemberSignature Language="VB.NET" Value="Public Property ServiceSecurityContext As ServiceSecurityContext" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::ServiceSecurityContext ^ ServiceSecurityContext { System::ServiceModel::ServiceSecurityContext ^ get(); void set(System::ServiceModel::ServiceSecurityContext ^ value); };" />
       <MemberSignature Language="F#" Value="member this.ServiceSecurityContext : System.ServiceModel.ServiceSecurityContext with get, set" Usage="System.ServiceModel.Security.SecurityMessageProperty.ServiceSecurityContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::ServiceSecurityContext ^ ServiceSecurityContext { System::ServiceModel::ServiceSecurityContext ^ get(); void set(System::ServiceModel::ServiceSecurityContext ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.ServiceSecurityContext</ReturnType>
@@ -413,13 +531,21 @@ No character of the property value is alphabetic, numeric, or equal to "_", ".",
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Security.SecurityTokenSpecification TransportToken" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityMessageProperty.TransportToken" />
       <MemberSignature Language="VB.NET" Value="Public Property TransportToken As SecurityTokenSpecification" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::SecurityTokenSpecification ^ TransportToken { System::ServiceModel::Security::SecurityTokenSpecification ^ get(); void set(System::ServiceModel::Security::SecurityTokenSpecification ^ value); };" />
       <MemberSignature Language="F#" Value="member this.TransportToken : System.ServiceModel.Security.SecurityTokenSpecification with get, set" Usage="System.ServiceModel.Security.SecurityMessageProperty.TransportToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::SecurityTokenSpecification ^ TransportToken { System::ServiceModel::Security::SecurityTokenSpecification ^ get(); void set(System::ServiceModel::Security::SecurityTokenSpecification ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Private.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.10.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityTokenSpecification</ReturnType>

@@ -1,10 +1,13 @@
-﻿<Type Name="FtpWebResponse" FullName="System.Net.FtpWebResponse">
-  <TypeSignature Language="C#" Value="public class FtpWebResponse : System.Net.WebResponse" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FtpWebResponse extends System.Net.WebResponse" />
+<Type Name="FtpWebResponse" FullName="System.Net.FtpWebResponse">
+  <TypeSignature Language="C#" Value="public class FtpWebResponse : System.Net.WebResponse, IDisposable" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FtpWebResponse extends System.Net.WebResponse implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Net.FtpWebResponse" />
-  <TypeSignature Language="VB.NET" Value="Public Class FtpWebResponse&#xA;Inherits WebResponse" />
-  <TypeSignature Language="C++ CLI" Value="public ref class FtpWebResponse : System::Net::WebResponse" />
-  <TypeSignature Language="F#" Value="type FtpWebResponse = class&#xA;    inherit WebResponse" />
+  <TypeSignature Language="VB.NET" Value="Public Class FtpWebResponse&#xA;Inherits WebResponse&#xA;Implements IDisposable" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  <TypeSignature Language="F#" Value="type FtpWebResponse = class&#xA;    inherit WebResponse&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FtpWebResponse : System::Net::WebResponse, IDisposable" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  <TypeSignature Language="C#" Value="public class FtpWebResponse : System.Net.WebResponse" FrameworkAlternate="netstandard-2.0;netstandard-2.1" />
+  <TypeSignature Language="VB.NET" Value="Public Class FtpWebResponse&#xA;Inherits WebResponse" FrameworkAlternate="netstandard-2.0;netstandard-2.1" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FtpWebResponse : System::Net::WebResponse" FrameworkAlternate="netstandard-2.0;netstandard-2.1" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -14,16 +17,44 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Net.Requests</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Requests" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Requests" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Requests" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Requests" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Requests" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Net.WebResponse</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Encapsulates a File Transfer Protocol (FTP) server's response to a request.</summary>
     <remarks>
@@ -41,8 +72,8 @@
 ## Examples  
  The following code example sends a request to delete a file on an FTP server and displays the status message from the server's response to the request. For additional examples, see the members of the <xref:System.Net.WebRequestMethods.Ftp> and <xref:System.Net.FtpWebRequest> classes.  
   
- [!code-cpp[NCLFtpClient#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#4)]
- [!code-csharp[NCLFtpClient#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#4)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp" id="Snippet4":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/FtpStatusCode/Overview/ftptests.cs" id="Snippet4":::  
   
  ]]></format>
     </remarks>
@@ -55,12 +86,13 @@
   </Docs>
   <Members>
     <Member MemberName="BannerMessage">
-      <MemberSignature Language="C#" Value="public string BannerMessage { get; }" />
+      <MemberSignature Language="C#" Value="public string? BannerMessage { get; }" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".property instance string BannerMessage" />
       <MemberSignature Language="DocId" Value="P:System.Net.FtpWebResponse.BannerMessage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BannerMessage As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BannerMessage { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.BannerMessage : string" Usage="System.Net.FtpWebResponse.BannerMessage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BannerMessage { System::String ^ get(); };" />
+      <MemberSignature Language="C#" Value="public string BannerMessage { get; }" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -71,15 +103,23 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -94,8 +134,8 @@
 ## Examples  
  The following code example displays the value of this property.  
   
- [!code-cpp[NclFtpClient#12](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#12)]
- [!code-csharp[NclFtpClient#12](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#12)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp" id="Snippet12":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/FtpStatusCode/Overview/ftptests.cs" id="Snippet12":::  
   
  ]]></format>
         </remarks>
@@ -112,8 +152,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.FtpWebResponse.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
       <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="ftpWebResponse.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -124,11 +164,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -143,15 +190,15 @@
  The <xref:System.Net.FtpWebResponse.Close%2A> method closes the data stream returned by the <xref:System.Net.FtpWebResponse.GetResponseStream%2A> method if the <xref:System.Net.FtpWebRequest.KeepAlive%2A> property is `false`. During the close, data might be sent to the server on the control connection.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](/dotnet/framework/network-programming/network-tracing).  
   
    
   
 ## Examples  
  The following code example downloads data from a server, reads the data from the response stream, and then closes it.  
   
- [!code-cpp[NCLFtpClient#9](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#9)]
- [!code-csharp[NCLFtpClient#9](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#9)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp" id="Snippet9":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/FtpStatusCode/Overview/ftptests.cs" id="Snippet9":::  
   
  ]]></format>
         </remarks>
@@ -168,8 +215,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int64 ContentLength" />
       <MemberSignature Language="DocId" Value="P:System.Net.FtpWebResponse.ContentLength" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ContentLength As Long" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long ContentLength { long get(); };" />
       <MemberSignature Language="F#" Value="member this.ContentLength : int64" Usage="System.Net.FtpWebResponse.ContentLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long ContentLength { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -180,11 +227,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -205,8 +259,8 @@
 ## Examples  
  The following code example downloads a file from on the specified FTP server. This property contains the number of bytes in the downloaded file.  
   
- [!code-cpp[NCLFtpClient#9](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#9)]
- [!code-csharp[NCLFtpClient#9](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#9)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp" id="Snippet9":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/FtpStatusCode/Overview/ftptests.cs" id="Snippet9":::  
   
  ]]></format>
         </remarks>
@@ -223,16 +277,18 @@
       <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
       <MemberSignature Language="DocId" Value="P:System.Net.FtpWebResponse.ContentType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ContentType As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ContentType { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.ContentType : string" Usage="System.Net.FtpWebResponse.ContentType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ContentType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -241,18 +297,28 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Throws a <see cref="T:System.NotImplementedException" /> in all cases.</summary>
+        <value>Throws a <see cref="T:System.NotImplementedException" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+This property is provided only for compatibility with other implementations of the <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> classes.
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">In all cases.</exception>
       </Docs>
     </Member>
     <Member MemberName="ExitMessage">
-      <MemberSignature Language="C#" Value="public string ExitMessage { get; }" />
+      <MemberSignature Language="C#" Value="public string? ExitMessage { get; }" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".property instance string ExitMessage" />
       <MemberSignature Language="DocId" Value="P:System.Net.FtpWebResponse.ExitMessage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExitMessage As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExitMessage { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.ExitMessage : string" Usage="System.Net.FtpWebResponse.ExitMessage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExitMessage { System::String ^ get(); };" />
+      <MemberSignature Language="C#" Value="public string ExitMessage { get; }" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -263,15 +329,23 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -291,8 +365,8 @@
 ## Examples  
  The following code example displays the value of this property.  
   
- [!code-cpp[NclFtpClient#17](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#17)]
- [!code-csharp[NclFtpClient#17](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#17)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp" id="Snippet17":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/FtpStatusCode/Overview/ftptests.cs" id="Snippet17":::  
   
  ]]></format>
         </remarks>
@@ -311,8 +385,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IO.Stream GetResponseStream() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.FtpWebResponse.GetResponseStream" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetResponseStream () As Stream" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::IO::Stream ^ GetResponseStream();" />
       <MemberSignature Language="F#" Value="override this.GetResponseStream : unit -&gt; System.IO.Stream" Usage="ftpWebResponse.GetResponseStream " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::IO::Stream ^ GetResponseStream();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -323,12 +397,25 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
@@ -349,8 +436,8 @@
 ## Examples  
  The following code example demonstrates getting the response stream for a <xref:System.Net.WebRequestMethods.Ftp.ListDirectory> request.  
   
- [!code-cpp[NCLFtpClient#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#1)]
- [!code-csharp[NCLFtpClient#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/FtpStatusCode/Overview/ftptests.cs" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -369,8 +456,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.WebHeaderCollection Headers" />
       <MemberSignature Language="DocId" Value="P:System.Net.FtpWebResponse.Headers" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Headers As WebHeaderCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::WebHeaderCollection ^ Headers { System::Net::WebHeaderCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Headers : System.Net.WebHeaderCollection" Usage="System.Net.FtpWebResponse.Headers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::WebHeaderCollection ^ Headers { System::Net::WebHeaderCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -381,12 +468,29 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.WebHeaderCollection</ReturnType>
       </ReturnValue>
@@ -414,8 +518,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime LastModified" />
       <MemberSignature Language="DocId" Value="P:System.Net.FtpWebResponse.LastModified" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastModified As DateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime LastModified { DateTime get(); };" />
       <MemberSignature Language="F#" Value="member this.LastModified : DateTime" Usage="System.Net.FtpWebResponse.LastModified" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime LastModified { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -426,11 +530,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -449,8 +560,8 @@
 ## Examples  
  The following code example displays the date and time that a file on an FTP server was last modified.  
   
- [!code-cpp[NclFtpClient#21](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#21)]
- [!code-csharp[NclFtpClient#21](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#21)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp" id="Snippet21":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/FtpStatusCode/Overview/ftptests.cs" id="Snippet21":::  
   
  ]]></format>
         </remarks>
@@ -467,8 +578,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ResponseUri" />
       <MemberSignature Language="DocId" Value="P:System.Net.FtpWebResponse.ResponseUri" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ResponseUri As Uri" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Uri ^ ResponseUri { Uri ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.ResponseUri : Uri" Usage="System.Net.FtpWebResponse.ResponseUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Uri ^ ResponseUri { Uri ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -479,12 +590,29 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
@@ -504,8 +632,8 @@
 ## Examples  
  The following code example displays the value of this property.  
   
- [!code-cpp[NCLFtpClient#9](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#9)]
- [!code-csharp[NCLFtpClient#9](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#9)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp" id="Snippet9":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/FtpStatusCode/Overview/ftptests.cs" id="Snippet9":::  
   
  ]]></format>
         </remarks>
@@ -522,8 +650,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.FtpStatusCode StatusCode" />
       <MemberSignature Language="DocId" Value="P:System.Net.FtpWebResponse.StatusCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StatusCode As FtpStatusCode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::FtpStatusCode StatusCode { System::Net::FtpStatusCode get(); };" />
       <MemberSignature Language="F#" Value="member this.StatusCode : System.Net.FtpStatusCode" Usage="System.Net.FtpWebResponse.StatusCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::FtpStatusCode StatusCode { System::Net::FtpStatusCode get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -534,11 +662,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.FtpStatusCode</ReturnType>
@@ -557,8 +692,8 @@
 ## Examples  
  The following code example uploads a file to a server and displays the status.  
   
- [!code-cpp[NCLFtpClient#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#2)]
- [!code-csharp[NCLFtpClient#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#2)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/FtpStatusCode/Overview/ftptests.cs" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -571,12 +706,13 @@
       </Docs>
     </Member>
     <Member MemberName="StatusDescription">
-      <MemberSignature Language="C#" Value="public string StatusDescription { get; }" />
+      <MemberSignature Language="C#" Value="public string? StatusDescription { get; }" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".property instance string StatusDescription" />
       <MemberSignature Language="DocId" Value="P:System.Net.FtpWebResponse.StatusDescription" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StatusDescription As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StatusDescription { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.StatusDescription : string" Usage="System.Net.FtpWebResponse.StatusDescription" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StatusDescription { System::String ^ get(); };" />
+      <MemberSignature Language="C#" Value="public string StatusDescription { get; }" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -587,11 +723,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -610,8 +753,8 @@
 ## Examples  
  The following code example sends a request to delete a file on an FTP server and displays the status message from the server's response to the request.  
   
- [!code-cpp[NCLFtpClient#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#4)]
- [!code-csharp[NCLFtpClient#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#4)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp" id="Snippet4":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/FtpStatusCode/Overview/ftptests.cs" id="Snippet4":::  
   
  ]]></format>
         </remarks>
@@ -628,8 +771,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsHeaders" />
       <MemberSignature Language="DocId" Value="P:System.Net.FtpWebResponse.SupportsHeaders" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SupportsHeaders As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsHeaders { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.SupportsHeaders : bool" Usage="System.Net.FtpWebResponse.SupportsHeaders" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsHeaders { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -639,11 +782,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -657,19 +807,20 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is always true for [!INCLUDE[net_v45](~/includes/net-v45-md.md)].  
+ This property is always true for .NET Framework 4.5.  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="WelcomeMessage">
-      <MemberSignature Language="C#" Value="public string WelcomeMessage { get; }" />
+      <MemberSignature Language="C#" Value="public string? WelcomeMessage { get; }" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".property instance string WelcomeMessage" />
       <MemberSignature Language="DocId" Value="P:System.Net.FtpWebResponse.WelcomeMessage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WelcomeMessage As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WelcomeMessage { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.WelcomeMessage : string" Usage="System.Net.FtpWebResponse.WelcomeMessage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WelcomeMessage { System::String ^ get(); };" />
+      <MemberSignature Language="C#" Value="public string WelcomeMessage { get; }" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -680,15 +831,23 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -708,8 +867,8 @@
 ## Examples  
  The following code example displays the value of this property.  
   
- [!code-cpp[NclFtpClient#13](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#13)]
- [!code-csharp[NclFtpClient#13](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#13)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp" id="Snippet13":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/FtpStatusCode/Overview/ftptests.cs" id="Snippet13":::  
   
  ]]></format>
         </remarks>

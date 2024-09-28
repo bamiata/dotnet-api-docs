@@ -1,16 +1,23 @@
-﻿<Type Name="IDynamicExpression" FullName="System.Linq.Expressions.IDynamicExpression">
+<Type Name="IDynamicExpression" FullName="System.Linq.Expressions.IDynamicExpression">
   <TypeSignature Language="C#" Value="public interface IDynamicExpression : System.Linq.Expressions.IArgumentProvider" />
-  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDynamicExpression implements class System.Linq.Expressions.IArgumentProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDynamicExpression implements class System.Linq.Expressions.IArgumentProvider" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.IDynamicExpression" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDynamicExpression&#xA;Implements IArgumentProvider" />
-  <TypeSignature Language="C++ CLI" Value="public interface class IDynamicExpression : System::Linq::Expressions::IArgumentProvider" />
   <TypeSignature Language="F#" Value="type IDynamicExpression = interface&#xA;    interface IArgumentProvider" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDynamicExpression : System::Linq::Expressions::IArgumentProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IDynamicExpression implements class System.Linq.Expressions.IArgumentProvider" FrameworkAlternate="net-8.0;net-9.0" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
@@ -20,12 +27,26 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Linq.Expressions" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Linq.Expressions" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Linq.Expressions" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Linq.Expressions" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Linq.Expressions" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Interfaces>
     <Interface>
       <InterfaceName>System.Linq.Expressions.IArgumentProvider</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Provides an internal interface for accessing the arguments of DynamicExpression tree nodes as well as CallSite and Rewriting functionality.  You should not use this API.  It is only public due to DLL refactoring and exists only for internal performance optimizations.</summary>
     <remarks>To be added.</remarks>
@@ -36,8 +57,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CreateCallSite() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.IDynamicExpression.CreateCallSite" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateCallSite () As Object" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ CreateCallSite();" />
       <MemberSignature Language="F#" Value="abstract member CreateCallSite : unit -&gt; obj" Usage="iDynamicExpression.CreateCallSite " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ CreateCallSite();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -45,6 +66,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -54,6 +81,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -70,8 +98,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type DelegateType" />
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.IDynamicExpression.DelegateType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DelegateType As Type" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ DelegateType { Type ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.DelegateType : Type" Usage="System.Linq.Expressions.IDynamicExpression.DelegateType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ DelegateType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -79,6 +107,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -88,12 +122,13 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the delegate type used by the CallSite, which is the type of the rules used in the dynamic expression's polymorhphic inline cache.</summary>
+        <summary>Gets the delegate type used by the CallSite, which is the type of the rules used in the dynamic expression's polymorphic inline cache.</summary>
         <value>The delegate type used by the CallSite.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -103,8 +138,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Linq.Expressions.Expression Rewrite(class System.Linq.Expressions.Expression[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.IDynamicExpression.Rewrite(System.Linq.Expressions.Expression[])" />
       <MemberSignature Language="VB.NET" Value="Public Function Rewrite (args As Expression()) As Expression" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::Expressions::Expression ^ Rewrite(cli::array &lt;System::Linq::Expressions::Expression ^&gt; ^ args);" />
       <MemberSignature Language="F#" Value="abstract member Rewrite : System.Linq.Expressions.Expression[] -&gt; System.Linq.Expressions.Expression" Usage="iDynamicExpression.Rewrite args" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::Expressions::Expression ^ Rewrite(cli::array &lt;System::Linq::Expressions::Expression ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -112,6 +147,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -121,6 +162,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.Expression</ReturnType>

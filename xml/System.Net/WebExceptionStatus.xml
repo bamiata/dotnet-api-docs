@@ -1,15 +1,21 @@
-﻿<Type Name="WebExceptionStatus" FullName="System.Net.WebExceptionStatus">
+<Type Name="WebExceptionStatus" FullName="System.Net.WebExceptionStatus">
   <TypeSignature Language="C#" Value="public enum WebExceptionStatus" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebExceptionStatus extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.WebExceptionStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum WebExceptionStatus" />
-  <TypeSignature Language="C++ CLI" Value="public enum class WebExceptionStatus" />
   <TypeSignature Language="F#" Value="type WebExceptionStatus = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class WebExceptionStatus" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Requests</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -21,10 +27,21 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System" FromVersion="4.0.0.0" To="System.Net.Requests" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="System.Net" FromVersion="4.0.0.0" To="System.Net.Requests" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Requests" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Requests" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Requests" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Requests" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Requests" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+    <TypeForwarding From="System.Net" FromVersion="4.0.0.0" To="System" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
@@ -40,7 +57,7 @@
     </remarks>
     <forInternalUseOnly />
     <altmember cref="T:System.Net.WebException" />
-    <related type="Article" href="~/docs/framework/network-programming/handling-errors.md">Handling Errors</related>
+    <related type="Article" href="/dotnet/framework/network-programming/handling-errors">Handling Errors</related>
   </Docs>
   <Members>
     <Member MemberName="CacheEntryNotFound">
@@ -48,14 +65,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebExceptionStatus CacheEntryNotFound = int32(18)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebExceptionStatus.CacheEntryNotFound" />
       <MemberSignature Language="VB.NET" Value="CacheEntryNotFound" />
-      <MemberSignature Language="C++ CLI" Value="CacheEntryNotFound" />
       <MemberSignature Language="F#" Value="CacheEntryNotFound = 18" Usage="System.Net.WebExceptionStatus.CacheEntryNotFound" />
+      <MemberSignature Language="C++ CLI" Value="CacheEntryNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -66,6 +89,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -84,14 +108,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebExceptionStatus ConnectFailure = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebExceptionStatus.ConnectFailure" />
       <MemberSignature Language="VB.NET" Value="ConnectFailure" />
-      <MemberSignature Language="C++ CLI" Value="ConnectFailure" />
       <MemberSignature Language="F#" Value="ConnectFailure = 2" Usage="System.Net.WebExceptionStatus.ConnectFailure" />
+      <MemberSignature Language="C++ CLI" Value="ConnectFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -103,6 +133,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -121,14 +152,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebExceptionStatus ConnectionClosed = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebExceptionStatus.ConnectionClosed" />
       <MemberSignature Language="VB.NET" Value="ConnectionClosed" />
-      <MemberSignature Language="C++ CLI" Value="ConnectionClosed" />
       <MemberSignature Language="F#" Value="ConnectionClosed = 8" Usage="System.Net.WebExceptionStatus.ConnectionClosed" />
+      <MemberSignature Language="C++ CLI" Value="ConnectionClosed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -140,6 +177,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -158,14 +196,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebExceptionStatus KeepAliveFailure = int32(12)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebExceptionStatus.KeepAliveFailure" />
       <MemberSignature Language="VB.NET" Value="KeepAliveFailure" />
-      <MemberSignature Language="C++ CLI" Value="KeepAliveFailure" />
       <MemberSignature Language="F#" Value="KeepAliveFailure = 12" Usage="System.Net.WebExceptionStatus.KeepAliveFailure" />
+      <MemberSignature Language="C++ CLI" Value="KeepAliveFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -177,6 +221,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -195,14 +240,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebExceptionStatus MessageLengthLimitExceeded = int32(17)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebExceptionStatus.MessageLengthLimitExceeded" />
       <MemberSignature Language="VB.NET" Value="MessageLengthLimitExceeded" />
-      <MemberSignature Language="C++ CLI" Value="MessageLengthLimitExceeded" />
       <MemberSignature Language="F#" Value="MessageLengthLimitExceeded = 17" Usage="System.Net.WebExceptionStatus.MessageLengthLimitExceeded" />
+      <MemberSignature Language="C++ CLI" Value="MessageLengthLimitExceeded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -214,6 +265,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -232,14 +284,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebExceptionStatus NameResolutionFailure = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebExceptionStatus.NameResolutionFailure" />
       <MemberSignature Language="VB.NET" Value="NameResolutionFailure" />
-      <MemberSignature Language="C++ CLI" Value="NameResolutionFailure" />
       <MemberSignature Language="F#" Value="NameResolutionFailure = 1" Usage="System.Net.WebExceptionStatus.NameResolutionFailure" />
+      <MemberSignature Language="C++ CLI" Value="NameResolutionFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -251,6 +309,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -269,14 +328,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebExceptionStatus Pending = int32(13)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebExceptionStatus.Pending" />
       <MemberSignature Language="VB.NET" Value="Pending" />
-      <MemberSignature Language="C++ CLI" Value="Pending" />
       <MemberSignature Language="F#" Value="Pending = 13" Usage="System.Net.WebExceptionStatus.Pending" />
+      <MemberSignature Language="C++ CLI" Value="Pending" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -288,6 +353,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -306,14 +372,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebExceptionStatus PipelineFailure = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebExceptionStatus.PipelineFailure" />
       <MemberSignature Language="VB.NET" Value="PipelineFailure" />
-      <MemberSignature Language="C++ CLI" Value="PipelineFailure" />
       <MemberSignature Language="F#" Value="PipelineFailure = 5" Usage="System.Net.WebExceptionStatus.PipelineFailure" />
+      <MemberSignature Language="C++ CLI" Value="PipelineFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -325,6 +397,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -343,14 +416,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebExceptionStatus ProtocolError = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebExceptionStatus.ProtocolError" />
       <MemberSignature Language="VB.NET" Value="ProtocolError" />
-      <MemberSignature Language="C++ CLI" Value="ProtocolError" />
       <MemberSignature Language="F#" Value="ProtocolError = 7" Usage="System.Net.WebExceptionStatus.ProtocolError" />
+      <MemberSignature Language="C++ CLI" Value="ProtocolError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -362,6 +441,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -380,14 +460,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebExceptionStatus ProxyNameResolutionFailure = int32(15)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebExceptionStatus.ProxyNameResolutionFailure" />
       <MemberSignature Language="VB.NET" Value="ProxyNameResolutionFailure" />
-      <MemberSignature Language="C++ CLI" Value="ProxyNameResolutionFailure" />
       <MemberSignature Language="F#" Value="ProxyNameResolutionFailure = 15" Usage="System.Net.WebExceptionStatus.ProxyNameResolutionFailure" />
+      <MemberSignature Language="C++ CLI" Value="ProxyNameResolutionFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -399,6 +485,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -417,14 +504,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebExceptionStatus ReceiveFailure = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebExceptionStatus.ReceiveFailure" />
       <MemberSignature Language="VB.NET" Value="ReceiveFailure" />
-      <MemberSignature Language="C++ CLI" Value="ReceiveFailure" />
       <MemberSignature Language="F#" Value="ReceiveFailure = 3" Usage="System.Net.WebExceptionStatus.ReceiveFailure" />
+      <MemberSignature Language="C++ CLI" Value="ReceiveFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -436,6 +529,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -454,14 +548,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebExceptionStatus RequestCanceled = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebExceptionStatus.RequestCanceled" />
       <MemberSignature Language="VB.NET" Value="RequestCanceled" />
-      <MemberSignature Language="C++ CLI" Value="RequestCanceled" />
       <MemberSignature Language="F#" Value="RequestCanceled = 6" Usage="System.Net.WebExceptionStatus.RequestCanceled" />
+      <MemberSignature Language="C++ CLI" Value="RequestCanceled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -473,6 +573,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -491,14 +592,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebExceptionStatus RequestProhibitedByCachePolicy = int32(19)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebExceptionStatus.RequestProhibitedByCachePolicy" />
       <MemberSignature Language="VB.NET" Value="RequestProhibitedByCachePolicy" />
-      <MemberSignature Language="C++ CLI" Value="RequestProhibitedByCachePolicy" />
       <MemberSignature Language="F#" Value="RequestProhibitedByCachePolicy = 19" Usage="System.Net.WebExceptionStatus.RequestProhibitedByCachePolicy" />
+      <MemberSignature Language="C++ CLI" Value="RequestProhibitedByCachePolicy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -509,6 +616,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -527,14 +635,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebExceptionStatus RequestProhibitedByProxy = int32(20)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebExceptionStatus.RequestProhibitedByProxy" />
       <MemberSignature Language="VB.NET" Value="RequestProhibitedByProxy" />
-      <MemberSignature Language="C++ CLI" Value="RequestProhibitedByProxy" />
       <MemberSignature Language="F#" Value="RequestProhibitedByProxy = 20" Usage="System.Net.WebExceptionStatus.RequestProhibitedByProxy" />
+      <MemberSignature Language="C++ CLI" Value="RequestProhibitedByProxy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -545,6 +659,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -563,14 +678,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebExceptionStatus SecureChannelFailure = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebExceptionStatus.SecureChannelFailure" />
       <MemberSignature Language="VB.NET" Value="SecureChannelFailure" />
-      <MemberSignature Language="C++ CLI" Value="SecureChannelFailure" />
       <MemberSignature Language="F#" Value="SecureChannelFailure = 10" Usage="System.Net.WebExceptionStatus.SecureChannelFailure" />
+      <MemberSignature Language="C++ CLI" Value="SecureChannelFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -582,6 +703,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -600,14 +722,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebExceptionStatus SendFailure = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebExceptionStatus.SendFailure" />
       <MemberSignature Language="VB.NET" Value="SendFailure" />
-      <MemberSignature Language="C++ CLI" Value="SendFailure" />
       <MemberSignature Language="F#" Value="SendFailure = 4" Usage="System.Net.WebExceptionStatus.SendFailure" />
+      <MemberSignature Language="C++ CLI" Value="SendFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -619,6 +747,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -637,14 +766,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebExceptionStatus ServerProtocolViolation = int32(11)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebExceptionStatus.ServerProtocolViolation" />
       <MemberSignature Language="VB.NET" Value="ServerProtocolViolation" />
-      <MemberSignature Language="C++ CLI" Value="ServerProtocolViolation" />
       <MemberSignature Language="F#" Value="ServerProtocolViolation = 11" Usage="System.Net.WebExceptionStatus.ServerProtocolViolation" />
+      <MemberSignature Language="C++ CLI" Value="ServerProtocolViolation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -656,6 +791,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -674,14 +810,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebExceptionStatus Success = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebExceptionStatus.Success" />
       <MemberSignature Language="VB.NET" Value="Success" />
-      <MemberSignature Language="C++ CLI" Value="Success" />
       <MemberSignature Language="F#" Value="Success = 0" Usage="System.Net.WebExceptionStatus.Success" />
+      <MemberSignature Language="C++ CLI" Value="Success" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -693,6 +835,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -711,14 +854,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebExceptionStatus Timeout = int32(14)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebExceptionStatus.Timeout" />
       <MemberSignature Language="VB.NET" Value="Timeout" />
-      <MemberSignature Language="C++ CLI" Value="Timeout" />
       <MemberSignature Language="F#" Value="Timeout = 14" Usage="System.Net.WebExceptionStatus.Timeout" />
+      <MemberSignature Language="C++ CLI" Value="Timeout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -730,6 +879,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -748,14 +898,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebExceptionStatus TrustFailure = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebExceptionStatus.TrustFailure" />
       <MemberSignature Language="VB.NET" Value="TrustFailure" />
-      <MemberSignature Language="C++ CLI" Value="TrustFailure" />
       <MemberSignature Language="F#" Value="TrustFailure = 9" Usage="System.Net.WebExceptionStatus.TrustFailure" />
+      <MemberSignature Language="C++ CLI" Value="TrustFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -767,6 +923,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -785,14 +942,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebExceptionStatus UnknownError = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebExceptionStatus.UnknownError" />
       <MemberSignature Language="VB.NET" Value="UnknownError" />
-      <MemberSignature Language="C++ CLI" Value="UnknownError" />
       <MemberSignature Language="F#" Value="UnknownError = 16" Usage="System.Net.WebExceptionStatus.UnknownError" />
+      <MemberSignature Language="C++ CLI" Value="UnknownError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -804,6 +967,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

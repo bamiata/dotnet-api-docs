@@ -1,10 +1,10 @@
-﻿<Type Name="CallbackValidatorAttribute" FullName="System.Configuration.CallbackValidatorAttribute">
+<Type Name="CallbackValidatorAttribute" FullName="System.Configuration.CallbackValidatorAttribute">
   <TypeSignature Language="C#" Value="public sealed class CallbackValidatorAttribute : System.Configuration.ConfigurationValidatorAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CallbackValidatorAttribute extends System.Configuration.ConfigurationValidatorAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.CallbackValidatorAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CallbackValidatorAttribute&#xA;Inherits ConfigurationValidatorAttribute" />
-  <TypeSignature Language="C++ CLI" Value="public ref class CallbackValidatorAttribute sealed : System::Configuration::ConfigurationValidatorAttribute" />
   <TypeSignature Language="F#" Value="type CallbackValidatorAttribute = class&#xA;    inherit ConfigurationValidatorAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CallbackValidatorAttribute sealed : System::Configuration::ConfigurationValidatorAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -12,16 +12,26 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+    <AssemblyVersion>4.0.3.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Configuration.ConfigurationManager" FromVersion="9.0.0.0" To="System.Configuration" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Configuration.ConfigurationValidatorAttribute</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-2.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2">
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property)</AttributeName>
+    <Attribute>
+      <AttributeName Language="C#">[System.AttributeUsage(System.AttributeTargets.Property)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.AttributeUsage(System.AttributeTargets.Property)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -52,8 +62,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -67,8 +82,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string CallbackMethodName" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.CallbackValidatorAttribute.CallbackMethodName" />
       <MemberSignature Language="VB.NET" Value="Public Property CallbackMethodName As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CallbackMethodName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.CallbackMethodName : string with get, set" Usage="System.Configuration.CallbackValidatorAttribute.CallbackMethodName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CallbackMethodName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -77,8 +92,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -95,8 +115,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.CallbackValidatorAttribute.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As Type" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); void set(Type ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Type : Type with get, set" Usage="System.Configuration.CallbackValidatorAttribute.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -105,8 +125,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
@@ -123,8 +148,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationValidatorBase ValidatorInstance" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.CallbackValidatorAttribute.ValidatorInstance" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ValidatorInstance As ConfigurationValidatorBase" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::ConfigurationValidatorBase ^ ValidatorInstance { System::Configuration::ConfigurationValidatorBase ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.ValidatorInstance : System.Configuration.ConfigurationValidatorBase" Usage="System.Configuration.CallbackValidatorAttribute.ValidatorInstance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::ConfigurationValidatorBase ^ ValidatorInstance { System::Configuration::ConfigurationValidatorBase ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -133,8 +158,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationValidatorBase</ReturnType>

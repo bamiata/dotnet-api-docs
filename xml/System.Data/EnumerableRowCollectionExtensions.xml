@@ -1,19 +1,57 @@
-﻿<Type Name="EnumerableRowCollectionExtensions" FullName="System.Data.EnumerableRowCollectionExtensions">
+<Type Name="EnumerableRowCollectionExtensions" FullName="System.Data.EnumerableRowCollectionExtensions">
   <TypeSignature Language="C#" Value="public static class EnumerableRowCollectionExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit EnumerableRowCollectionExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.EnumerableRowCollectionExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module EnumerableRowCollectionExtensions" />
-  <TypeSignature Language="C++ CLI" Value="public ref class EnumerableRowCollectionExtensions abstract sealed" />
   <TypeSignature Language="F#" Value="type EnumerableRowCollectionExtensions = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EnumerableRowCollectionExtensions abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
     <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Common</AssemblyName>
+    <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Data.Common" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="System.Data.DataSetExtensions" FromVersion="4.0.0.0" To="System.Data.Common" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Data.Common" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.Data.DataSetExtensions" FromVersion="4.0.0.0" To="System.Data.Common" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Data.Common" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="System.Data.DataSetExtensions" FromVersion="4.0.0.0" To="System.Data.Common" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Data.Common" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="System.Data.DataSetExtensions" FromVersion="8.0.0.0" To="System.Data.Common" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Data.Common" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+    <TypeForwarding From="System.Data.DataSetExtensions" FromVersion="9.0.0.0" To="System.Data.Common" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+    <TypeForwarding From="System.Data.DataSetExtensions" FromVersion="4.0.0.0" To="System.Data.Common" ToVersion="4.2.1.0" FrameworkAlternate="netcore-3.0" />
+    <TypeForwarding From="System.Data.DataSetExtensions" FromVersion="4.0.1.0" To="System.Data.Common" ToVersion="4.2.2.0" FrameworkAlternate="netcore-3.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Contains the extension methods for the data row collection classes.</summary>
     <remarks>
@@ -29,7 +67,8 @@
     <forInternalUseOnly />
     <altmember cref="T:System.Data.EnumerableRowCollection`1" />
     <altmember cref="T:System.Data.OrderedEnumerableRowCollection`1" />
-    <related type="Article" href="https://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2">Standard Query Operators Overview</related>
+    <related type="Article" href="/dotnet/csharp/programming-guide/concepts/linq/standard-query-operators-overview">Standard Query Operators Overview (C#)</related>
+    <related type="Article" href="/dotnet/visual-basic/programming-guide/concepts/linq/standard-query-operators-overview">Standard Query Operators Overview (Visual Basic)</related>
   </Docs>
   <Members>
     <Member MemberName="Cast&lt;TResult&gt;">
@@ -37,19 +76,40 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.EnumerableRowCollection`1&lt;!!TResult&gt; Cast&lt;TResult&gt;(class System.Data.EnumerableRowCollection source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EnumerableRowCollectionExtensions.Cast``1(System.Data.EnumerableRowCollection)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Cast(Of TResult) (source As EnumerableRowCollection) As EnumerableRowCollection(Of TResult)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResult&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::EnumerableRowCollection&lt;TResult&gt; ^ Cast(System::Data::EnumerableRowCollection ^ source);" />
       <MemberSignature Language="F#" Value="static member Cast : System.Data.EnumerableRowCollection -&gt; System.Data.EnumerableRowCollection&lt;'Result&gt;" Usage="System.Data.EnumerableRowCollectionExtensions.Cast source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResult&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::EnumerableRowCollection&lt;TResult&gt; ^ Cast(System::Data::EnumerableRowCollection ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.EnumerableRowCollection&lt;TResult&gt;</ReturnType>
       </ReturnValue>
       <TypeParameters>
-        <TypeParameter Name="TResult" />
+        <TypeParameter Name="TResult">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </TypeParameter>
       </TypeParameters>
       <Parameters>
         <Parameter Name="source" Type="System.Data.EnumerableRowCollection" RefType="this" />
@@ -90,20 +150,48 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.OrderedEnumerableRowCollection`1&lt;!!TRow&gt; OrderBy&lt;TRow, TKey&gt;(class System.Data.EnumerableRowCollection`1&lt;!!TRow&gt; source, class System.Func`2&lt;!!TRow, !!TKey&gt; keySelector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EnumerableRowCollectionExtensions.OrderBy``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function OrderBy(Of TRow, TKey) (source As EnumerableRowCollection(Of TRow), keySelector As Func(Of TRow, TKey)) As OrderedEnumerableRowCollection(Of TRow)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ OrderBy(System::Data::EnumerableRowCollection&lt;TRow&gt; ^ source, Func&lt;TRow, TKey&gt; ^ keySelector);" />
       <MemberSignature Language="F#" Value="static member OrderBy : System.Data.EnumerableRowCollection&lt;'Row&gt; * Func&lt;'Row, 'Key&gt; -&gt; System.Data.OrderedEnumerableRowCollection&lt;'Row&gt;" Usage="System.Data.EnumerableRowCollectionExtensions.OrderBy (source, keySelector)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ OrderBy(System::Data::EnumerableRowCollection&lt;TRow&gt; ^ source, Func&lt;TRow, TKey&gt; ^ keySelector);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.OrderedEnumerableRowCollection&lt;TRow&gt;</ReturnType>
       </ReturnValue>
       <TypeParameters>
-        <TypeParameter Name="TRow" />
-        <TypeParameter Name="TKey" />
+        <TypeParameter Name="TRow">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </TypeParameter>
+        <TypeParameter Name="TKey">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </TypeParameter>
       </TypeParameters>
       <Parameters>
         <Parameter Name="source" Type="System.Data.EnumerableRowCollection&lt;TRow&gt;" RefType="this" />
@@ -125,7 +213,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
-        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})" />
+        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1})" />
         <altmember cref="Overload:System.Data.EnumerableRowCollectionExtensions.ThenBy" />
         <altmember cref="M:System.Linq.Enumerable.OrderBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
       </Docs>
@@ -135,20 +223,48 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.OrderedEnumerableRowCollection`1&lt;!!TRow&gt; OrderBy&lt;TRow, TKey&gt;(class System.Data.EnumerableRowCollection`1&lt;!!TRow&gt; source, class System.Func`2&lt;!!TRow, !!TKey&gt; keySelector, class System.Collections.Generic.IComparer`1&lt;!!TKey&gt; comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EnumerableRowCollectionExtensions.OrderBy``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function OrderBy(Of TRow, TKey) (source As EnumerableRowCollection(Of TRow), keySelector As Func(Of TRow, TKey), comparer As IComparer(Of TKey)) As OrderedEnumerableRowCollection(Of TRow)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ OrderBy(System::Data::EnumerableRowCollection&lt;TRow&gt; ^ source, Func&lt;TRow, TKey&gt; ^ keySelector, System::Collections::Generic::IComparer&lt;TKey&gt; ^ comparer);" />
       <MemberSignature Language="F#" Value="static member OrderBy : System.Data.EnumerableRowCollection&lt;'Row&gt; * Func&lt;'Row, 'Key&gt; * System.Collections.Generic.IComparer&lt;'Key&gt; -&gt; System.Data.OrderedEnumerableRowCollection&lt;'Row&gt;" Usage="System.Data.EnumerableRowCollectionExtensions.OrderBy (source, keySelector, comparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ OrderBy(System::Data::EnumerableRowCollection&lt;TRow&gt; ^ source, Func&lt;TRow, TKey&gt; ^ keySelector, System::Collections::Generic::IComparer&lt;TKey&gt; ^ comparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.OrderedEnumerableRowCollection&lt;TRow&gt;</ReturnType>
       </ReturnValue>
       <TypeParameters>
-        <TypeParameter Name="TRow" />
-        <TypeParameter Name="TKey" />
+        <TypeParameter Name="TRow">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </TypeParameter>
+        <TypeParameter Name="TKey">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </TypeParameter>
       </TypeParameters>
       <Parameters>
         <Parameter Name="source" Type="System.Data.EnumerableRowCollection&lt;TRow&gt;" RefType="this" />
@@ -172,7 +288,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
-        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})" />
+        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1})" />
         <altmember cref="Overload:System.Data.EnumerableRowCollectionExtensions.ThenBy" />
         <altmember cref="M:System.Linq.Enumerable.OrderBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
       </Docs>
@@ -192,20 +308,48 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.OrderedEnumerableRowCollection`1&lt;!!TRow&gt; OrderByDescending&lt;TRow, TKey&gt;(class System.Data.EnumerableRowCollection`1&lt;!!TRow&gt; source, class System.Func`2&lt;!!TRow, !!TKey&gt; keySelector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EnumerableRowCollectionExtensions.OrderByDescending``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function OrderByDescending(Of TRow, TKey) (source As EnumerableRowCollection(Of TRow), keySelector As Func(Of TRow, TKey)) As OrderedEnumerableRowCollection(Of TRow)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ OrderByDescending(System::Data::EnumerableRowCollection&lt;TRow&gt; ^ source, Func&lt;TRow, TKey&gt; ^ keySelector);" />
       <MemberSignature Language="F#" Value="static member OrderByDescending : System.Data.EnumerableRowCollection&lt;'Row&gt; * Func&lt;'Row, 'Key&gt; -&gt; System.Data.OrderedEnumerableRowCollection&lt;'Row&gt;" Usage="System.Data.EnumerableRowCollectionExtensions.OrderByDescending (source, keySelector)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ OrderByDescending(System::Data::EnumerableRowCollection&lt;TRow&gt; ^ source, Func&lt;TRow, TKey&gt; ^ keySelector);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.OrderedEnumerableRowCollection&lt;TRow&gt;</ReturnType>
       </ReturnValue>
       <TypeParameters>
-        <TypeParameter Name="TRow" />
-        <TypeParameter Name="TKey" />
+        <TypeParameter Name="TRow">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </TypeParameter>
+        <TypeParameter Name="TKey">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </TypeParameter>
       </TypeParameters>
       <Parameters>
         <Parameter Name="source" Type="System.Data.EnumerableRowCollection&lt;TRow&gt;" RefType="this" />
@@ -227,7 +371,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
-        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})" />
+        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1})" />
         <altmember cref="Overload:System.Data.EnumerableRowCollectionExtensions.ThenByDescending" />
         <altmember cref="M:System.Linq.Enumerable.OrderByDescending``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})" />
       </Docs>
@@ -237,20 +381,48 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.OrderedEnumerableRowCollection`1&lt;!!TRow&gt; OrderByDescending&lt;TRow, TKey&gt;(class System.Data.EnumerableRowCollection`1&lt;!!TRow&gt; source, class System.Func`2&lt;!!TRow, !!TKey&gt; keySelector, class System.Collections.Generic.IComparer`1&lt;!!TKey&gt; comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EnumerableRowCollectionExtensions.OrderByDescending``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function OrderByDescending(Of TRow, TKey) (source As EnumerableRowCollection(Of TRow), keySelector As Func(Of TRow, TKey), comparer As IComparer(Of TKey)) As OrderedEnumerableRowCollection(Of TRow)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ OrderByDescending(System::Data::EnumerableRowCollection&lt;TRow&gt; ^ source, Func&lt;TRow, TKey&gt; ^ keySelector, System::Collections::Generic::IComparer&lt;TKey&gt; ^ comparer);" />
       <MemberSignature Language="F#" Value="static member OrderByDescending : System.Data.EnumerableRowCollection&lt;'Row&gt; * Func&lt;'Row, 'Key&gt; * System.Collections.Generic.IComparer&lt;'Key&gt; -&gt; System.Data.OrderedEnumerableRowCollection&lt;'Row&gt;" Usage="System.Data.EnumerableRowCollectionExtensions.OrderByDescending (source, keySelector, comparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ OrderByDescending(System::Data::EnumerableRowCollection&lt;TRow&gt; ^ source, Func&lt;TRow, TKey&gt; ^ keySelector, System::Collections::Generic::IComparer&lt;TKey&gt; ^ comparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.OrderedEnumerableRowCollection&lt;TRow&gt;</ReturnType>
       </ReturnValue>
       <TypeParameters>
-        <TypeParameter Name="TRow" />
-        <TypeParameter Name="TKey" />
+        <TypeParameter Name="TRow">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </TypeParameter>
+        <TypeParameter Name="TKey">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </TypeParameter>
       </TypeParameters>
       <Parameters>
         <Parameter Name="source" Type="System.Data.EnumerableRowCollection&lt;TRow&gt;" RefType="this" />
@@ -274,7 +446,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
-        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})" />
+        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1})" />
         <altmember cref="Overload:System.Data.EnumerableRowCollectionExtensions.ThenByDescending" />
         <altmember cref="M:System.Linq.Enumerable.OrderByDescending``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
       </Docs>
@@ -284,20 +456,48 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.EnumerableRowCollection`1&lt;!!S&gt; Select&lt;TRow, S&gt;(class System.Data.EnumerableRowCollection`1&lt;!!TRow&gt; source, class System.Func`2&lt;!!TRow, !!S&gt; selector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Select(Of TRow, S) (source As EnumerableRowCollection(Of TRow), selector As Func(Of TRow, S)) As EnumerableRowCollection(Of S)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename S&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::EnumerableRowCollection&lt;S&gt; ^ Select(System::Data::EnumerableRowCollection&lt;TRow&gt; ^ source, Func&lt;TRow, S&gt; ^ selector);" />
       <MemberSignature Language="F#" Value="static member Select : System.Data.EnumerableRowCollection&lt;'Row&gt; * Func&lt;'Row, 'S&gt; -&gt; System.Data.EnumerableRowCollection&lt;'S&gt;" Usage="System.Data.EnumerableRowCollectionExtensions.Select (source, selector)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename S&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::EnumerableRowCollection&lt;S&gt; ^ Select(System::Data::EnumerableRowCollection&lt;TRow&gt; ^ source, Func&lt;TRow, S&gt; ^ selector);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.EnumerableRowCollection&lt;S&gt;</ReturnType>
       </ReturnValue>
       <TypeParameters>
-        <TypeParameter Name="TRow" />
-        <TypeParameter Name="S" />
+        <TypeParameter Name="TRow">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </TypeParameter>
+        <TypeParameter Name="S">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </TypeParameter>
       </TypeParameters>
       <Parameters>
         <Parameter Name="source" Type="System.Data.EnumerableRowCollection&lt;TRow&gt;" RefType="this" />
@@ -338,20 +538,48 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.OrderedEnumerableRowCollection`1&lt;!!TRow&gt; ThenBy&lt;TRow, TKey&gt;(class System.Data.OrderedEnumerableRowCollection`1&lt;!!TRow&gt; source, class System.Func`2&lt;!!TRow, !!TKey&gt; keySelector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EnumerableRowCollectionExtensions.ThenBy``2(System.Data.OrderedEnumerableRowCollection{``0},System.Func{``0,``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ThenBy(Of TRow, TKey) (source As OrderedEnumerableRowCollection(Of TRow), keySelector As Func(Of TRow, TKey)) As OrderedEnumerableRowCollection(Of TRow)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ ThenBy(System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ source, Func&lt;TRow, TKey&gt; ^ keySelector);" />
       <MemberSignature Language="F#" Value="static member ThenBy : System.Data.OrderedEnumerableRowCollection&lt;'Row&gt; * Func&lt;'Row, 'Key&gt; -&gt; System.Data.OrderedEnumerableRowCollection&lt;'Row&gt;" Usage="System.Data.EnumerableRowCollectionExtensions.ThenBy (source, keySelector)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ ThenBy(System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ source, Func&lt;TRow, TKey&gt; ^ keySelector);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.OrderedEnumerableRowCollection&lt;TRow&gt;</ReturnType>
       </ReturnValue>
       <TypeParameters>
-        <TypeParameter Name="TRow" />
-        <TypeParameter Name="TKey" />
+        <TypeParameter Name="TRow">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </TypeParameter>
+        <TypeParameter Name="TKey">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </TypeParameter>
       </TypeParameters>
       <Parameters>
         <Parameter Name="source" Type="System.Data.OrderedEnumerableRowCollection&lt;TRow&gt;" RefType="this" />
@@ -375,7 +603,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
-        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})" />
+        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1})" />
         <altmember cref="Overload:System.Data.EnumerableRowCollectionExtensions.OrderBy" />
         <altmember cref="M:System.Linq.Enumerable.ThenBy``2(System.Linq.IOrderedEnumerable{``0},System.Func{``0,``1})" />
       </Docs>
@@ -385,20 +613,48 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.OrderedEnumerableRowCollection`1&lt;!!TRow&gt; ThenBy&lt;TRow, TKey&gt;(class System.Data.OrderedEnumerableRowCollection`1&lt;!!TRow&gt; source, class System.Func`2&lt;!!TRow, !!TKey&gt; keySelector, class System.Collections.Generic.IComparer`1&lt;!!TKey&gt; comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EnumerableRowCollectionExtensions.ThenBy``2(System.Data.OrderedEnumerableRowCollection{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ThenBy(Of TRow, TKey) (source As OrderedEnumerableRowCollection(Of TRow), keySelector As Func(Of TRow, TKey), comparer As IComparer(Of TKey)) As OrderedEnumerableRowCollection(Of TRow)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ ThenBy(System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ source, Func&lt;TRow, TKey&gt; ^ keySelector, System::Collections::Generic::IComparer&lt;TKey&gt; ^ comparer);" />
       <MemberSignature Language="F#" Value="static member ThenBy : System.Data.OrderedEnumerableRowCollection&lt;'Row&gt; * Func&lt;'Row, 'Key&gt; * System.Collections.Generic.IComparer&lt;'Key&gt; -&gt; System.Data.OrderedEnumerableRowCollection&lt;'Row&gt;" Usage="System.Data.EnumerableRowCollectionExtensions.ThenBy (source, keySelector, comparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ ThenBy(System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ source, Func&lt;TRow, TKey&gt; ^ keySelector, System::Collections::Generic::IComparer&lt;TKey&gt; ^ comparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.OrderedEnumerableRowCollection&lt;TRow&gt;</ReturnType>
       </ReturnValue>
       <TypeParameters>
-        <TypeParameter Name="TRow" />
-        <TypeParameter Name="TKey" />
+        <TypeParameter Name="TRow">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </TypeParameter>
+        <TypeParameter Name="TKey">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </TypeParameter>
       </TypeParameters>
       <Parameters>
         <Parameter Name="source" Type="System.Data.OrderedEnumerableRowCollection&lt;TRow&gt;" RefType="this" />
@@ -424,7 +680,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
-        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})" />
+        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1})" />
         <altmember cref="Overload:System.Data.EnumerableRowCollectionExtensions.OrderBy" />
         <altmember cref="M:System.Linq.Enumerable.ThenBy``2(System.Linq.IOrderedEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
       </Docs>
@@ -444,20 +700,48 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.OrderedEnumerableRowCollection`1&lt;!!TRow&gt; ThenByDescending&lt;TRow, TKey&gt;(class System.Data.OrderedEnumerableRowCollection`1&lt;!!TRow&gt; source, class System.Func`2&lt;!!TRow, !!TKey&gt; keySelector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EnumerableRowCollectionExtensions.ThenByDescending``2(System.Data.OrderedEnumerableRowCollection{``0},System.Func{``0,``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ThenByDescending(Of TRow, TKey) (source As OrderedEnumerableRowCollection(Of TRow), keySelector As Func(Of TRow, TKey)) As OrderedEnumerableRowCollection(Of TRow)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ ThenByDescending(System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ source, Func&lt;TRow, TKey&gt; ^ keySelector);" />
       <MemberSignature Language="F#" Value="static member ThenByDescending : System.Data.OrderedEnumerableRowCollection&lt;'Row&gt; * Func&lt;'Row, 'Key&gt; -&gt; System.Data.OrderedEnumerableRowCollection&lt;'Row&gt;" Usage="System.Data.EnumerableRowCollectionExtensions.ThenByDescending (source, keySelector)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ ThenByDescending(System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ source, Func&lt;TRow, TKey&gt; ^ keySelector);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.OrderedEnumerableRowCollection&lt;TRow&gt;</ReturnType>
       </ReturnValue>
       <TypeParameters>
-        <TypeParameter Name="TRow" />
-        <TypeParameter Name="TKey" />
+        <TypeParameter Name="TRow">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </TypeParameter>
+        <TypeParameter Name="TKey">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </TypeParameter>
       </TypeParameters>
       <Parameters>
         <Parameter Name="source" Type="System.Data.OrderedEnumerableRowCollection&lt;TRow&gt;" RefType="this" />
@@ -481,7 +765,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
-        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})" />
+        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1})" />
         <altmember cref="Overload:System.Data.EnumerableRowCollectionExtensions.OrderByDescending" />
         <altmember cref="M:System.Linq.Enumerable.ThenByDescending``2(System.Linq.IOrderedEnumerable{``0},System.Func{``0,``1})" />
       </Docs>
@@ -491,20 +775,48 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.OrderedEnumerableRowCollection`1&lt;!!TRow&gt; ThenByDescending&lt;TRow, TKey&gt;(class System.Data.OrderedEnumerableRowCollection`1&lt;!!TRow&gt; source, class System.Func`2&lt;!!TRow, !!TKey&gt; keySelector, class System.Collections.Generic.IComparer`1&lt;!!TKey&gt; comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EnumerableRowCollectionExtensions.ThenByDescending``2(System.Data.OrderedEnumerableRowCollection{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ThenByDescending(Of TRow, TKey) (source As OrderedEnumerableRowCollection(Of TRow), keySelector As Func(Of TRow, TKey), comparer As IComparer(Of TKey)) As OrderedEnumerableRowCollection(Of TRow)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ ThenByDescending(System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ source, Func&lt;TRow, TKey&gt; ^ keySelector, System::Collections::Generic::IComparer&lt;TKey&gt; ^ comparer);" />
       <MemberSignature Language="F#" Value="static member ThenByDescending : System.Data.OrderedEnumerableRowCollection&lt;'Row&gt; * Func&lt;'Row, 'Key&gt; * System.Collections.Generic.IComparer&lt;'Key&gt; -&gt; System.Data.OrderedEnumerableRowCollection&lt;'Row&gt;" Usage="System.Data.EnumerableRowCollectionExtensions.ThenByDescending (source, keySelector, comparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow, typename TKey&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ ThenByDescending(System::Data::OrderedEnumerableRowCollection&lt;TRow&gt; ^ source, Func&lt;TRow, TKey&gt; ^ keySelector, System::Collections::Generic::IComparer&lt;TKey&gt; ^ comparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.OrderedEnumerableRowCollection&lt;TRow&gt;</ReturnType>
       </ReturnValue>
       <TypeParameters>
-        <TypeParameter Name="TRow" />
-        <TypeParameter Name="TKey" />
+        <TypeParameter Name="TRow">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </TypeParameter>
+        <TypeParameter Name="TKey">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </TypeParameter>
       </TypeParameters>
       <Parameters>
         <Parameter Name="source" Type="System.Data.OrderedEnumerableRowCollection&lt;TRow&gt;" RefType="this" />
@@ -530,7 +842,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
-        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})" />
+        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1})" />
         <altmember cref="Overload:System.Data.EnumerableRowCollectionExtensions.OrderByDescending" />
         <altmember cref="M:System.Linq.Enumerable.ThenByDescending``2(System.Linq.IOrderedEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IComparer{``1})" />
       </Docs>
@@ -540,19 +852,40 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.EnumerableRowCollection`1&lt;!!TRow&gt; Where&lt;TRow&gt;(class System.Data.EnumerableRowCollection`1&lt;!!TRow&gt; source, class System.Func`2&lt;!!TRow, bool&gt; predicate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EnumerableRowCollectionExtensions.Where``1(System.Data.EnumerableRowCollection{``0},System.Func{``0,System.Boolean})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Where(Of TRow) (source As EnumerableRowCollection(Of TRow), predicate As Func(Of TRow, Boolean)) As EnumerableRowCollection(Of TRow)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::EnumerableRowCollection&lt;TRow&gt; ^ Where(System::Data::EnumerableRowCollection&lt;TRow&gt; ^ source, Func&lt;TRow, bool&gt; ^ predicate);" />
       <MemberSignature Language="F#" Value="static member Where : System.Data.EnumerableRowCollection&lt;'Row&gt; * Func&lt;'Row, bool&gt; -&gt; System.Data.EnumerableRowCollection&lt;'Row&gt;" Usage="System.Data.EnumerableRowCollectionExtensions.Where (source, predicate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TRow&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Data::EnumerableRowCollection&lt;TRow&gt; ^ Where(System::Data::EnumerableRowCollection&lt;TRow&gt; ^ source, Func&lt;TRow, bool&gt; ^ predicate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.EnumerableRowCollection&lt;TRow&gt;</ReturnType>
       </ReturnValue>
       <TypeParameters>
-        <TypeParameter Name="TRow" />
+        <TypeParameter Name="TRow">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </TypeParameter>
       </TypeParameters>
       <Parameters>
         <Parameter Name="source" Type="System.Data.EnumerableRowCollection&lt;TRow&gt;" RefType="this" />
@@ -573,7 +906,7 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
-        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})" />
+        <altmember cref="M:System.Data.EnumerableRowCollectionExtensions.Select``2(System.Data.EnumerableRowCollection{``0},System.Func{``0,``1})" />
         <altmember cref="M:System.Linq.Enumerable.Where``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})" />
       </Docs>
     </Member>

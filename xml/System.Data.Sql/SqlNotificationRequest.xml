@@ -1,10 +1,10 @@
-﻿<Type Name="SqlNotificationRequest" FullName="System.Data.Sql.SqlNotificationRequest">
+<Type Name="SqlNotificationRequest" FullName="System.Data.Sql.SqlNotificationRequest">
   <TypeSignature Language="C#" Value="public sealed class SqlNotificationRequest" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlNotificationRequest extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Sql.SqlNotificationRequest" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlNotificationRequest" />
-  <TypeSignature Language="C++ CLI" Value="public ref class SqlNotificationRequest sealed" />
   <TypeSignature Language="F#" Value="type SqlNotificationRequest = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlNotificationRequest sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -15,6 +15,11 @@
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.6.0.0</AssemblyVersion>
+    <AssemblyVersion>4.6.1.0</AssemblyVersion>
+    <AssemblyVersion>4.6.1.1</AssemblyVersion>
+    <AssemblyVersion>4.6.1.5</AssemblyVersion>
+    <AssemblyVersion>4.6.1.6</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,7 +35,7 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="~/docs/framework/data/adonet/sql/query-notifications-in-sql-server.md">Using Query Notifications</related>
+    <related type="Article" href="/dotnet/framework/data/adonet/sql/query-notifications-in-sql-server">Using Query Notifications</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -53,13 +58,16 @@
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.1</AssemblyVersion>
+        <AssemblyVersion>4.6.1.6</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -68,11 +76,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the default constructor is used to create a <xref:System.Data.Sql.SqlNotificationRequest> object, that instance must have its <xref:System.Data.Sql.SqlNotificationRequest.UserData%2A> and <xref:System.Data.Sql.SqlNotificationRequest.Options%2A> properties initialized before assigning the object to a <xref:System.Data.SqlClient.SqlCommand> object's <xref:System.Data.SqlClient.SqlCommand.Notification%2A> property. The default values used by the constructor are NULL (`Nothing` in Visual Basic) for the <xref:System.Data.Sql.SqlNotificationRequest.UserData%2A>, an empty string for the <xref:System.Data.Sql.SqlNotificationRequest.Options%2A>, and zero for the <xref:System.Data.Sql.SqlNotificationRequest.Timeout%2A>.  
+ If the parameterless constructor is used to create a <xref:System.Data.Sql.SqlNotificationRequest> object, that instance must have its <xref:System.Data.Sql.SqlNotificationRequest.UserData%2A> and <xref:System.Data.Sql.SqlNotificationRequest.Options%2A> properties initialized before assigning the object to a <xref:System.Data.SqlClient.SqlCommand> object's <xref:System.Data.SqlClient.SqlCommand.Notification%2A> property. The default values used by the constructor are NULL (`Nothing` in Visual Basic) for the <xref:System.Data.Sql.SqlNotificationRequest.UserData%2A>, an empty string for the <xref:System.Data.Sql.SqlNotificationRequest.Options%2A>, and zero for the <xref:System.Data.Sql.SqlNotificationRequest.Timeout%2A>.  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/query-notifications-in-sql-server.md">Using Query Notifications</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/query-notifications-in-sql-server">Using Query Notifications</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -80,19 +88,22 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string userData, string options, int32 timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Sql.SqlNotificationRequest.#ctor(System.String,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (userData As String, options As String, timeout As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlNotificationRequest(System::String ^ userData, System::String ^ options, int timeout);" />
       <MemberSignature Language="F#" Value="new System.Data.Sql.SqlNotificationRequest : string * string * int -&gt; System.Data.Sql.SqlNotificationRequest" Usage="new System.Data.Sql.SqlNotificationRequest (userData, options, timeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlNotificationRequest(System::String ^ userData, System::String ^ options, int timeout);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.1</AssemblyVersion>
+        <AssemblyVersion>4.6.1.6</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="userData" Type="System.String" />
@@ -116,7 +127,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value of the <paramref name="options" /> parameter is NULL.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="options" /> or <paramref name="userData" /> parameter is longer than <see langword="uint16.MaxValue" /> or the value in the <paramref name="timeout" /> parameter is less than zero.</exception>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/query-notifications-in-sql-server.md">Using Query Notifications</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/query-notifications-in-sql-server">Using Query Notifications</related>
       </Docs>
     </Member>
     <Member MemberName="Options">
@@ -124,19 +135,22 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Options" />
       <MemberSignature Language="DocId" Value="P:System.Data.Sql.SqlNotificationRequest.Options" />
       <MemberSignature Language="VB.NET" Value="Public Property Options As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Options { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Options : string with get, set" Usage="System.Data.Sql.SqlNotificationRequest.Options" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Options { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.1</AssemblyVersion>
+        <AssemblyVersion>4.6.1.6</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -163,7 +177,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value is NULL.</exception>
         <exception cref="T:System.ArgumentException">The value is longer than <see langword="uint16.MaxValue" />.</exception>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/query-notifications-in-sql-server.md">Using Query Notifications</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/query-notifications-in-sql-server">Using Query Notifications</related>
       </Docs>
     </Member>
     <Member MemberName="Timeout">
@@ -171,19 +185,22 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Timeout" />
       <MemberSignature Language="DocId" Value="P:System.Data.Sql.SqlNotificationRequest.Timeout" />
       <MemberSignature Language="VB.NET" Value="Public Property Timeout As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Timeout { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.Timeout : int with get, set" Usage="System.Data.Sql.SqlNotificationRequest.Timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Timeout { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.1</AssemblyVersion>
+        <AssemblyVersion>4.6.1.6</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -200,7 +217,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value is less than zero.</exception>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/query-notifications-in-sql-server.md">Using Query Notifications</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/query-notifications-in-sql-server">Using Query Notifications</related>
       </Docs>
     </Member>
     <Member MemberName="UserData">
@@ -208,19 +225,22 @@
       <MemberSignature Language="ILAsm" Value=".property instance string UserData" />
       <MemberSignature Language="DocId" Value="P:System.Data.Sql.SqlNotificationRequest.UserData" />
       <MemberSignature Language="VB.NET" Value="Public Property UserData As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserData { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.UserData : string with get, set" Usage="System.Data.Sql.SqlNotificationRequest.UserData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserData { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.1</AssemblyVersion>
+        <AssemblyVersion>4.6.1.6</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -237,7 +257,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The value is longer than <see langword="uint16.MaxValue" />.</exception>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/query-notifications-in-sql-server.md">Using Query Notifications</related>
+        <related type="Article" href="/dotnet/framework/data/adonet/sql/query-notifications-in-sql-server">Using Query Notifications</related>
       </Docs>
     </Member>
   </Members>

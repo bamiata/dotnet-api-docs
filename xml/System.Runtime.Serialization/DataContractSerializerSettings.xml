@@ -1,15 +1,22 @@
-﻿<Type Name="DataContractSerializerSettings" FullName="System.Runtime.Serialization.DataContractSerializerSettings">
+<Type Name="DataContractSerializerSettings" FullName="System.Runtime.Serialization.DataContractSerializerSettings">
   <TypeSignature Language="C#" Value="public class DataContractSerializerSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataContractSerializerSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.DataContractSerializerSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class DataContractSerializerSettings" />
-  <TypeSignature Language="C++ CLI" Value="public ref class DataContractSerializerSettings" />
   <TypeSignature Language="F#" Value="type DataContractSerializerSettings = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataContractSerializerSettings" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
     <AssemblyVersion>4.1.3.0</AssemblyVersion>
     <AssemblyVersion>4.1.4.0</AssemblyVersion>
+    <AssemblyVersion>4.1.5.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -19,11 +26,30 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Runtime.Serialization" FromVersion="4.0.0.0" To="System.Runtime.Serialization.Xml" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.Serialization.Xml" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.Serialization.Xml" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.Serialization.Xml" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.Serialization.Xml" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.Serialization.Xml" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Specifies data contract serializer settings.</summary>
     <remarks>To be added.</remarks>
@@ -38,9 +64,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -50,6 +83,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -58,18 +92,26 @@
       </Docs>
     </Member>
     <Member MemberName="DataContractResolver">
-      <MemberSignature Language="C#" Value="public System.Runtime.Serialization.DataContractResolver DataContractResolver { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.Runtime.Serialization.DataContractResolver DataContractResolver { get; set; }" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Serialization.DataContractResolver DataContractResolver" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractSerializerSettings.DataContractResolver" />
       <MemberSignature Language="VB.NET" Value="Public Property DataContractResolver As DataContractResolver" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::DataContractResolver ^ DataContractResolver { System::Runtime::Serialization::DataContractResolver ^ get(); void set(System::Runtime::Serialization::DataContractResolver ^ value); };" />
       <MemberSignature Language="F#" Value="member this.DataContractResolver : System.Runtime.Serialization.DataContractResolver with get, set" Usage="System.Runtime.Serialization.DataContractSerializerSettings.DataContractResolver" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::DataContractResolver ^ DataContractResolver { System::Runtime::Serialization::DataContractResolver ^ get(); void set(System::Runtime::Serialization::DataContractResolver ^ value); };" />
+      <MemberSignature Language="C#" Value="public System.Runtime.Serialization.DataContractResolver? DataContractResolver { get; set; }" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -79,6 +121,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Serialization.DataContractResolver</ReturnType>
@@ -94,12 +137,11 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Serialization.IDataContractSurrogate DataContractSurrogate" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractSerializerSettings.DataContractSurrogate" />
       <MemberSignature Language="VB.NET" Value="Public Property DataContractSurrogate As IDataContractSurrogate" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::IDataContractSurrogate ^ DataContractSurrogate { System::Runtime::Serialization::IDataContractSurrogate ^ get(); void set(System::Runtime::Serialization::IDataContractSurrogate ^ value); };" />
       <MemberSignature Language="F#" Value="member this.DataContractSurrogate : System.Runtime.Serialization.IDataContractSurrogate with get, set" Usage="System.Runtime.Serialization.DataContractSerializerSettings.DataContractSurrogate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::IDataContractSurrogate ^ DataContractSurrogate { System::Runtime::Serialization::IDataContractSurrogate ^ get(); void set(System::Runtime::Serialization::IDataContractSurrogate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -122,8 +164,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreExtensionDataObject" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractSerializerSettings.IgnoreExtensionDataObject" />
       <MemberSignature Language="VB.NET" Value="Public Property IgnoreExtensionDataObject As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreExtensionDataObject { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.IgnoreExtensionDataObject : bool with get, set" Usage="System.Runtime.Serialization.DataContractSerializerSettings.IgnoreExtensionDataObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreExtensionDataObject { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -133,11 +175,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -150,18 +199,26 @@
       </Docs>
     </Member>
     <Member MemberName="KnownTypes">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Type&gt; KnownTypes { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Type&gt; KnownTypes { get; set; }" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; KnownTypes" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractSerializerSettings.KnownTypes" />
       <MemberSignature Language="VB.NET" Value="Public Property KnownTypes As IEnumerable(Of Type)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ KnownTypes { System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ get(); void set(System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ value); };" />
       <MemberSignature Language="F#" Value="member this.KnownTypes : seq&lt;Type&gt; with get, set" Usage="System.Runtime.Serialization.DataContractSerializerSettings.KnownTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ KnownTypes { System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ get(); void set(System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ value); };" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Type&gt;? KnownTypes { get; set; }" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -171,7 +228,14 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Type&gt;</ReturnType>
       </ReturnValue>
@@ -186,14 +250,21 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxItemsInObjectGraph" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractSerializerSettings.MaxItemsInObjectGraph" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxItemsInObjectGraph As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxItemsInObjectGraph { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.MaxItemsInObjectGraph : int with get, set" Usage="System.Runtime.Serialization.DataContractSerializerSettings.MaxItemsInObjectGraph" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxItemsInObjectGraph { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -203,6 +274,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -218,14 +290,21 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool PreserveObjectReferences" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractSerializerSettings.PreserveObjectReferences" />
       <MemberSignature Language="VB.NET" Value="Public Property PreserveObjectReferences As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PreserveObjectReferences { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.PreserveObjectReferences : bool with get, set" Usage="System.Runtime.Serialization.DataContractSerializerSettings.PreserveObjectReferences" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PreserveObjectReferences { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -235,6 +314,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -247,18 +327,26 @@
       </Docs>
     </Member>
     <Member MemberName="RootName">
-      <MemberSignature Language="C#" Value="public System.Xml.XmlDictionaryString RootName { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDictionaryString RootName { get; set; }" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlDictionaryString RootName" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractSerializerSettings.RootName" />
       <MemberSignature Language="VB.NET" Value="Public Property RootName As XmlDictionaryString" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlDictionaryString ^ RootName { System::Xml::XmlDictionaryString ^ get(); void set(System::Xml::XmlDictionaryString ^ value); };" />
       <MemberSignature Language="F#" Value="member this.RootName : System.Xml.XmlDictionaryString with get, set" Usage="System.Runtime.Serialization.DataContractSerializerSettings.RootName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlDictionaryString ^ RootName { System::Xml::XmlDictionaryString ^ get(); void set(System::Xml::XmlDictionaryString ^ value); };" />
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDictionaryString? RootName { get; set; }" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -268,6 +356,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlDictionaryString</ReturnType>
@@ -279,18 +368,26 @@
       </Docs>
     </Member>
     <Member MemberName="RootNamespace">
-      <MemberSignature Language="C#" Value="public System.Xml.XmlDictionaryString RootNamespace { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDictionaryString RootNamespace { get; set; }" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlDictionaryString RootNamespace" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractSerializerSettings.RootNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Property RootNamespace As XmlDictionaryString" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlDictionaryString ^ RootNamespace { System::Xml::XmlDictionaryString ^ get(); void set(System::Xml::XmlDictionaryString ^ value); };" />
       <MemberSignature Language="F#" Value="member this.RootNamespace : System.Xml.XmlDictionaryString with get, set" Usage="System.Runtime.Serialization.DataContractSerializerSettings.RootNamespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlDictionaryString ^ RootNamespace { System::Xml::XmlDictionaryString ^ get(); void set(System::Xml::XmlDictionaryString ^ value); };" />
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDictionaryString? RootNamespace { get; set; }" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -300,6 +397,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlDictionaryString</ReturnType>
@@ -315,14 +413,21 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool SerializeReadOnlyTypes" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractSerializerSettings.SerializeReadOnlyTypes" />
       <MemberSignature Language="VB.NET" Value="Public Property SerializeReadOnlyTypes As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SerializeReadOnlyTypes { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.SerializeReadOnlyTypes : bool with get, set" Usage="System.Runtime.Serialization.DataContractSerializerSettings.SerializeReadOnlyTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SerializeReadOnlyTypes { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -332,6 +437,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

@@ -1,10 +1,11 @@
-﻿<Type Name="VARFLAGS" FullName="System.Runtime.InteropServices.ComTypes.VARFLAGS">
+<Type Name="VARFLAGS" FullName="System.Runtime.InteropServices.ComTypes.VARFLAGS">
   <TypeSignature Language="C#" Value="public enum VARFLAGS" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed VARFLAGS extends System.Enum" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VARFLAGS extends System.Enum" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.VARFLAGS" />
   <TypeSignature Language="VB.NET" Value="Public Enum VARFLAGS" />
-  <TypeSignature Language="C++ CLI" Value="public enum class VARFLAGS" />
   <TypeSignature Language="F#" Value="type VARFLAGS = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class VARFLAGS" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed VARFLAGS extends System.Enum" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -14,6 +15,12 @@
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -24,22 +31,32 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Runtime.InteropServices" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.InteropServices" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.InteropServices" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.InteropServices" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.InteropServices" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.InteropServices" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+    <TypeForwarding From="System.Runtime.InteropServices" FromVersion="4.1.0.0" To="mscorlib" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
-      <AttributeName>System.Flags</AttributeName>
+    <Attribute FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.1">
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netstandard-1.5;netstandard-1.6;netcore-2.2">
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    <Attribute>
+      <AttributeName Language="C#">[System.Flags]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Flags&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-      <AttributeName>System.Serializable</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netstandard-1.2;netstandard-1.3;netstandard-1.4">
-      <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -48,9 +65,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For additional information about `VARFLAGS`, see the MSDN Library.  
+ For more information, see [VARFLAGS enumeration](/windows/win32/api/oaidl/ne-oaidl-varflags).
   
- The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
+ The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](/dotnet/framework/interop/how-to-map-hresults-and-exceptions).  
   
  ]]></format>
     </remarks>
@@ -61,8 +78,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.VARFLAGS VARFLAG_FBINDABLE = int16(4)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARFLAGS.VARFLAG_FBINDABLE" />
       <MemberSignature Language="VB.NET" Value="VARFLAG_FBINDABLE" />
-      <MemberSignature Language="C++ CLI" Value="VARFLAG_FBINDABLE" />
       <MemberSignature Language="F#" Value="VARFLAG_FBINDABLE = 4" Usage="System.Runtime.InteropServices.ComTypes.VARFLAGS.VARFLAG_FBINDABLE" />
+      <MemberSignature Language="C++ CLI" Value="VARFLAG_FBINDABLE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -73,6 +90,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -83,6 +106,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.VARFLAGS</ReturnType>
@@ -97,8 +121,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.VARFLAGS VARFLAG_FDEFAULTBIND = int16(32)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARFLAGS.VARFLAG_FDEFAULTBIND" />
       <MemberSignature Language="VB.NET" Value="VARFLAG_FDEFAULTBIND" />
-      <MemberSignature Language="C++ CLI" Value="VARFLAG_FDEFAULTBIND" />
       <MemberSignature Language="F#" Value="VARFLAG_FDEFAULTBIND = 32" Usage="System.Runtime.InteropServices.ComTypes.VARFLAGS.VARFLAG_FDEFAULTBIND" />
+      <MemberSignature Language="C++ CLI" Value="VARFLAG_FDEFAULTBIND" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -109,6 +133,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -119,6 +149,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.VARFLAGS</ReturnType>
@@ -133,8 +164,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.VARFLAGS VARFLAG_FDEFAULTCOLLELEM = int16(256)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARFLAGS.VARFLAG_FDEFAULTCOLLELEM" />
       <MemberSignature Language="VB.NET" Value="VARFLAG_FDEFAULTCOLLELEM" />
-      <MemberSignature Language="C++ CLI" Value="VARFLAG_FDEFAULTCOLLELEM" />
       <MemberSignature Language="F#" Value="VARFLAG_FDEFAULTCOLLELEM = 256" Usage="System.Runtime.InteropServices.ComTypes.VARFLAGS.VARFLAG_FDEFAULTCOLLELEM" />
+      <MemberSignature Language="C++ CLI" Value="VARFLAG_FDEFAULTCOLLELEM" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -145,6 +176,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -155,6 +192,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.VARFLAGS</ReturnType>
@@ -169,8 +207,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.VARFLAGS VARFLAG_FDISPLAYBIND = int16(16)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARFLAGS.VARFLAG_FDISPLAYBIND" />
       <MemberSignature Language="VB.NET" Value="VARFLAG_FDISPLAYBIND" />
-      <MemberSignature Language="C++ CLI" Value="VARFLAG_FDISPLAYBIND" />
       <MemberSignature Language="F#" Value="VARFLAG_FDISPLAYBIND = 16" Usage="System.Runtime.InteropServices.ComTypes.VARFLAGS.VARFLAG_FDISPLAYBIND" />
+      <MemberSignature Language="C++ CLI" Value="VARFLAG_FDISPLAYBIND" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -181,6 +219,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -191,6 +235,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.VARFLAGS</ReturnType>
@@ -205,8 +250,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.VARFLAGS VARFLAG_FHIDDEN = int16(64)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARFLAGS.VARFLAG_FHIDDEN" />
       <MemberSignature Language="VB.NET" Value="VARFLAG_FHIDDEN" />
-      <MemberSignature Language="C++ CLI" Value="VARFLAG_FHIDDEN" />
       <MemberSignature Language="F#" Value="VARFLAG_FHIDDEN = 64" Usage="System.Runtime.InteropServices.ComTypes.VARFLAGS.VARFLAG_FHIDDEN" />
+      <MemberSignature Language="C++ CLI" Value="VARFLAG_FHIDDEN" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -217,6 +262,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -227,6 +278,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.VARFLAGS</ReturnType>
@@ -241,8 +293,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.VARFLAGS VARFLAG_FIMMEDIATEBIND = int16(4096)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARFLAGS.VARFLAG_FIMMEDIATEBIND" />
       <MemberSignature Language="VB.NET" Value="VARFLAG_FIMMEDIATEBIND" />
-      <MemberSignature Language="C++ CLI" Value="VARFLAG_FIMMEDIATEBIND" />
       <MemberSignature Language="F#" Value="VARFLAG_FIMMEDIATEBIND = 4096" Usage="System.Runtime.InteropServices.ComTypes.VARFLAGS.VARFLAG_FIMMEDIATEBIND" />
+      <MemberSignature Language="C++ CLI" Value="VARFLAG_FIMMEDIATEBIND" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -253,6 +305,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -263,6 +321,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.VARFLAGS</ReturnType>
@@ -277,8 +336,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.VARFLAGS VARFLAG_FNONBROWSABLE = int16(1024)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARFLAGS.VARFLAG_FNONBROWSABLE" />
       <MemberSignature Language="VB.NET" Value="VARFLAG_FNONBROWSABLE" />
-      <MemberSignature Language="C++ CLI" Value="VARFLAG_FNONBROWSABLE" />
       <MemberSignature Language="F#" Value="VARFLAG_FNONBROWSABLE = 1024" Usage="System.Runtime.InteropServices.ComTypes.VARFLAGS.VARFLAG_FNONBROWSABLE" />
+      <MemberSignature Language="C++ CLI" Value="VARFLAG_FNONBROWSABLE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -289,6 +348,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -299,6 +364,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.VARFLAGS</ReturnType>
@@ -313,8 +379,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.VARFLAGS VARFLAG_FREADONLY = int16(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARFLAGS.VARFLAG_FREADONLY" />
       <MemberSignature Language="VB.NET" Value="VARFLAG_FREADONLY" />
-      <MemberSignature Language="C++ CLI" Value="VARFLAG_FREADONLY" />
       <MemberSignature Language="F#" Value="VARFLAG_FREADONLY = 1" Usage="System.Runtime.InteropServices.ComTypes.VARFLAGS.VARFLAG_FREADONLY" />
+      <MemberSignature Language="C++ CLI" Value="VARFLAG_FREADONLY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -325,6 +391,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -335,6 +407,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.VARFLAGS</ReturnType>
@@ -349,8 +422,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.VARFLAGS VARFLAG_FREPLACEABLE = int16(2048)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARFLAGS.VARFLAG_FREPLACEABLE" />
       <MemberSignature Language="VB.NET" Value="VARFLAG_FREPLACEABLE" />
-      <MemberSignature Language="C++ CLI" Value="VARFLAG_FREPLACEABLE" />
       <MemberSignature Language="F#" Value="VARFLAG_FREPLACEABLE = 2048" Usage="System.Runtime.InteropServices.ComTypes.VARFLAGS.VARFLAG_FREPLACEABLE" />
+      <MemberSignature Language="C++ CLI" Value="VARFLAG_FREPLACEABLE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -361,6 +434,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -371,6 +450,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.VARFLAGS</ReturnType>
@@ -385,8 +465,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.VARFLAGS VARFLAG_FREQUESTEDIT = int16(8)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARFLAGS.VARFLAG_FREQUESTEDIT" />
       <MemberSignature Language="VB.NET" Value="VARFLAG_FREQUESTEDIT" />
-      <MemberSignature Language="C++ CLI" Value="VARFLAG_FREQUESTEDIT" />
       <MemberSignature Language="F#" Value="VARFLAG_FREQUESTEDIT = 8" Usage="System.Runtime.InteropServices.ComTypes.VARFLAGS.VARFLAG_FREQUESTEDIT" />
+      <MemberSignature Language="C++ CLI" Value="VARFLAG_FREQUESTEDIT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -397,6 +477,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -407,6 +493,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.VARFLAGS</ReturnType>
@@ -421,8 +508,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.VARFLAGS VARFLAG_FRESTRICTED = int16(128)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARFLAGS.VARFLAG_FRESTRICTED" />
       <MemberSignature Language="VB.NET" Value="VARFLAG_FRESTRICTED" />
-      <MemberSignature Language="C++ CLI" Value="VARFLAG_FRESTRICTED" />
       <MemberSignature Language="F#" Value="VARFLAG_FRESTRICTED = 128" Usage="System.Runtime.InteropServices.ComTypes.VARFLAGS.VARFLAG_FRESTRICTED" />
+      <MemberSignature Language="C++ CLI" Value="VARFLAG_FRESTRICTED" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -433,6 +520,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -443,6 +536,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.VARFLAGS</ReturnType>
@@ -457,8 +551,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.VARFLAGS VARFLAG_FSOURCE = int16(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARFLAGS.VARFLAG_FSOURCE" />
       <MemberSignature Language="VB.NET" Value="VARFLAG_FSOURCE" />
-      <MemberSignature Language="C++ CLI" Value="VARFLAG_FSOURCE" />
       <MemberSignature Language="F#" Value="VARFLAG_FSOURCE = 2" Usage="System.Runtime.InteropServices.ComTypes.VARFLAGS.VARFLAG_FSOURCE" />
+      <MemberSignature Language="C++ CLI" Value="VARFLAG_FSOURCE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -469,6 +563,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -479,6 +579,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.VARFLAGS</ReturnType>
@@ -493,8 +594,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.VARFLAGS VARFLAG_FUIDEFAULT = int16(512)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARFLAGS.VARFLAG_FUIDEFAULT" />
       <MemberSignature Language="VB.NET" Value="VARFLAG_FUIDEFAULT" />
-      <MemberSignature Language="C++ CLI" Value="VARFLAG_FUIDEFAULT" />
       <MemberSignature Language="F#" Value="VARFLAG_FUIDEFAULT = 512" Usage="System.Runtime.InteropServices.ComTypes.VARFLAGS.VARFLAG_FUIDEFAULT" />
+      <MemberSignature Language="C++ CLI" Value="VARFLAG_FUIDEFAULT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -505,6 +606,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -515,6 +622,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.VARFLAGS</ReturnType>

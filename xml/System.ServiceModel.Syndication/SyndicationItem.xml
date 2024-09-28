@@ -1,10 +1,10 @@
-﻿<Type Name="SyndicationItem" FullName="System.ServiceModel.Syndication.SyndicationItem">
+<Type Name="SyndicationItem" FullName="System.ServiceModel.Syndication.SyndicationItem">
   <TypeSignature Language="C#" Value="public class SyndicationItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SyndicationItem extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.SyndicationItem" />
   <TypeSignature Language="VB.NET" Value="Public Class SyndicationItem" />
-  <TypeSignature Language="C++ CLI" Value="public ref class SyndicationItem" />
   <TypeSignature Language="F#" Value="type SyndicationItem = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SyndicationItem" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -17,14 +17,26 @@
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.ServiceModel.Web" FromVersion="4.0.0.0" To="System.ServiceModel" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+    <TypeForwarding From="System.ServiceModel.Syndication" FromVersion="9.0.0.0" To="System.ServiceModel" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -39,9 +51,9 @@
 |------------------------------|---------------------|  
 |<xref:System.ServiceModel.Syndication.SyndicationItem.AttributeExtensions%2A>|Attribute in the `<entry>` element.|  
 |<xref:System.ServiceModel.Syndication.SyndicationItem.Authors%2A>|An `<author>` element for each author in the collection.|  
-|<xref:System.ServiceModel.Syndication.SyndicationItem.Categories%2A>|A`<category>` element.|  
-|<xref:System.ServiceModel.Syndication.SyndicationItem.Content%2A>|A`<content>` element.|  
-|<xref:System.ServiceModel.Syndication.SyndicationItem.Contributors%2A>|A`<contributor>` element for each contributor in the collection.|  
+|<xref:System.ServiceModel.Syndication.SyndicationItem.Categories%2A>|A `<category>` element.|  
+|<xref:System.ServiceModel.Syndication.SyndicationItem.Content%2A>|A `<content>` element.|  
+|<xref:System.ServiceModel.Syndication.SyndicationItem.Contributors%2A>|A `<contributor>` element for each contributor in the collection.|  
 |<xref:System.ServiceModel.Syndication.SyndicationItem.Copyright%2A>|A`<rights>` element.|  
 |<xref:System.ServiceModel.Syndication.SyndicationItem.ElementExtensions%2A>|Element in the `<entry>` element.|  
 |<xref:System.ServiceModel.Syndication.SyndicationItem.Id%2A>|An `<id>` element.|  
@@ -76,8 +88,8 @@
 ## Examples  
  The following code shows how to use the <xref:System.ServiceModel.Syndication.SyndicationItem> class.  
   
- [!code-csharp[SyndicationItem#0](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs#0)]
- [!code-vb[SyndicationItem#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb#0)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs" id="Snippet0":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb" id="Snippet0":::  
   
  ]]></format>
     </remarks>
@@ -110,11 +122,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -128,8 +142,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Syndication.SyndicationItem source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.#ctor(System.ServiceModel.Syndication.SyndicationItem)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (source As SyndicationItem)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SyndicationItem(System::ServiceModel::Syndication::SyndicationItem ^ source);" />
       <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.SyndicationItem : System.ServiceModel.Syndication.SyndicationItem -&gt; System.ServiceModel.Syndication.SyndicationItem" Usage="new System.ServiceModel.Syndication.SyndicationItem source" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SyndicationItem(System::ServiceModel::Syndication::SyndicationItem ^ source);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -142,7 +156,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="source" Type="System.ServiceModel.Syndication.SyndicationItem" />
@@ -154,18 +169,12 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SyndicationItem (string title, string content, Uri itemAlternateLink);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, string content, class System.Uri itemAlternateLink) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (title As String, content As String, itemAlternateLink As Uri)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SyndicationItem(System::String ^ title, System::String ^ content, Uri ^ itemAlternateLink);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="C#" Value="public SyndicationItem (string title, string content, Uri feedAlternateLink);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, string content, class System.Uri feedAlternateLink) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.#ctor(System.String,System.String,System.Uri)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.1;netcore-2.2;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (title As String, content As String, feedAlternateLink As Uri)" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SyndicationItem(System::String ^ title, System::String ^ content, Uri ^ feedAlternateLink);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.SyndicationItem : string * string * Uri -&gt; System.ServiceModel.Syndication.SyndicationItem" Usage="new System.ServiceModel.Syndication.SyndicationItem (title, content, itemAlternateLink)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-4.0;netframework-4.5.1;netframework-4.5.2;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.SyndicationItem : string * string * Uri -&gt; System.ServiceModel.Syndication.SyndicationItem" Usage="new System.ServiceModel.Syndication.SyndicationItem (title, content, feedAlternateLink)" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.#ctor(System.String,System.String,System.Uri)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C#" Value="public SyndicationItem (string title, string content, Uri itemAlternateLink);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, string content, class System.Uri itemAlternateLink) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.#ctor(System.String,System.String,System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (title As String, content As String, itemAlternateLink As Uri)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.SyndicationItem : string * string * Uri -&gt; System.ServiceModel.Syndication.SyndicationItem" Usage="new System.ServiceModel.Syndication.SyndicationItem (title, content, itemAlternateLink)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SyndicationItem(System::String ^ title, System::String ^ content, Uri ^ itemAlternateLink);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -178,19 +187,18 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="title" Type="System.String" Index="0" />
-        <Parameter Name="content" Type="System.String" Index="1" />
-        <Parameter Name="itemAlternateLink" Type="System.Uri" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.1;netcore-2.2;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="feedAlternateLink" Type="System.Uri" Index="2" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="content" Type="System.String" />
+        <Parameter Name="itemAlternateLink" Type="System.Uri" />
       </Parameters>
       <Docs>
         <param name="title">The item title.</param>
         <param name="content">The item content.</param>
         <param name="itemAlternateLink">The item URL.</param>
-        <param name="feedAlternateLink">To be added.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> class with the specified title, content, and link.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -198,26 +206,20 @@
 ## Examples  
  The following example shows how to call this constructor.  
   
- [!code-csharp[SyndicationItem#1](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs#1)]
- [!code-vb[SyndicationItem#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SyndicationItem (string title, System.ServiceModel.Syndication.SyndicationContent content, Uri itemAlternateLink, string id, DateTimeOffset lastUpdatedTime);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, class System.ServiceModel.Syndication.SyndicationContent content, class System.Uri itemAlternateLink, string id, valuetype System.DateTimeOffset lastUpdatedTime) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (title As String, content As SyndicationContent, itemAlternateLink As Uri, id As String, lastUpdatedTime As DateTimeOffset)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SyndicationItem(System::String ^ title, System::ServiceModel::Syndication::SyndicationContent ^ content, Uri ^ itemAlternateLink, System::String ^ id, DateTimeOffset lastUpdatedTime);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="C#" Value="public SyndicationItem (string title, System.ServiceModel.Syndication.SyndicationContent content, Uri feedAlternateLink, string id, DateTimeOffset lastUpdatedTime);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, class System.ServiceModel.Syndication.SyndicationContent content, class System.Uri feedAlternateLink, string id, valuetype System.DateTimeOffset lastUpdatedTime) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.#ctor(System.String,System.ServiceModel.Syndication.SyndicationContent,System.Uri,System.String,System.DateTimeOffset)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.1;netcore-2.2;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (title As String, content As SyndicationContent, feedAlternateLink As Uri, id As String, lastUpdatedTime As DateTimeOffset)" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SyndicationItem(System::String ^ title, System::ServiceModel::Syndication::SyndicationContent ^ content, Uri ^ feedAlternateLink, System::String ^ id, DateTimeOffset lastUpdatedTime);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.SyndicationItem : string * System.ServiceModel.Syndication.SyndicationContent * Uri * string * DateTimeOffset -&gt; System.ServiceModel.Syndication.SyndicationItem" Usage="new System.ServiceModel.Syndication.SyndicationItem (title, content, itemAlternateLink, id, lastUpdatedTime)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-4.0;netframework-4.5.1;netframework-4.5.2;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.SyndicationItem : string * System.ServiceModel.Syndication.SyndicationContent * Uri * string * DateTimeOffset -&gt; System.ServiceModel.Syndication.SyndicationItem" Usage="new System.ServiceModel.Syndication.SyndicationItem (title, content, feedAlternateLink, id, lastUpdatedTime)" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.#ctor(System.String,System.ServiceModel.Syndication.SyndicationContent,System.Uri,System.String,System.DateTimeOffset)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C#" Value="public SyndicationItem (string title, System.ServiceModel.Syndication.SyndicationContent content, Uri itemAlternateLink, string id, DateTimeOffset lastUpdatedTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, class System.ServiceModel.Syndication.SyndicationContent content, class System.Uri itemAlternateLink, string id, valuetype System.DateTimeOffset lastUpdatedTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.#ctor(System.String,System.ServiceModel.Syndication.SyndicationContent,System.Uri,System.String,System.DateTimeOffset)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (title As String, content As SyndicationContent, itemAlternateLink As Uri, id As String, lastUpdatedTime As DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.SyndicationItem : string * System.ServiceModel.Syndication.SyndicationContent * Uri * string * DateTimeOffset -&gt; System.ServiceModel.Syndication.SyndicationItem" Usage="new System.ServiceModel.Syndication.SyndicationItem (title, content, itemAlternateLink, id, lastUpdatedTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SyndicationItem(System::String ^ title, System::ServiceModel::Syndication::SyndicationContent ^ content, Uri ^ itemAlternateLink, System::String ^ id, DateTimeOffset lastUpdatedTime);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -230,21 +232,20 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="title" Type="System.String" Index="0" />
-        <Parameter Name="content" Type="System.ServiceModel.Syndication.SyndicationContent" Index="1" />
-        <Parameter Name="itemAlternateLink" Type="System.Uri" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.1;netcore-2.2;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="feedAlternateLink" Type="System.Uri" Index="2" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="id" Type="System.String" Index="3" />
-        <Parameter Name="lastUpdatedTime" Type="System.DateTimeOffset" Index="4" />
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="content" Type="System.ServiceModel.Syndication.SyndicationContent" />
+        <Parameter Name="itemAlternateLink" Type="System.Uri" />
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="lastUpdatedTime" Type="System.DateTimeOffset" />
       </Parameters>
       <Docs>
         <param name="title">The title of the syndication item.</param>
         <param name="content">A <see cref="T:System.ServiceModel.Syndication.SyndicationContent" /> instance containing the content of the syndication item.</param>
         <param name="itemAlternateLink">The alternate URI for the syndication item.</param>
-        <param name="feedAlternateLink">To be added.</param>
         <param name="id">The ID of the syndication item.</param>
         <param name="lastUpdatedTime">The <see cref="T:System.DateTimeOffset" /> that contains the last time the syndication item was last updated.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> class.</summary>
@@ -254,26 +255,20 @@
 ## Examples  
  The following code shows how to call this constructor.  
   
- [!code-csharp[SyndicationItem#35](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs#35)]
- [!code-vb[SyndicationItem#35](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb#35)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs" id="Snippet35":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb" id="Snippet35":::  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SyndicationItem (string title, string content, Uri itemAlternateLink, string id, DateTimeOffset lastUpdatedTime);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, string content, class System.Uri itemAlternateLink, string id, valuetype System.DateTimeOffset lastUpdatedTime) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (title As String, content As String, itemAlternateLink As Uri, id As String, lastUpdatedTime As DateTimeOffset)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SyndicationItem(System::String ^ title, System::String ^ content, Uri ^ itemAlternateLink, System::String ^ id, DateTimeOffset lastUpdatedTime);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="C#" Value="public SyndicationItem (string title, string content, Uri feedAlternateLink, string id, DateTimeOffset lastUpdatedTime);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, string content, class System.Uri feedAlternateLink, string id, valuetype System.DateTimeOffset lastUpdatedTime) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.#ctor(System.String,System.String,System.Uri,System.String,System.DateTimeOffset)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.1;netcore-2.2;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (title As String, content As String, feedAlternateLink As Uri, id As String, lastUpdatedTime As DateTimeOffset)" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SyndicationItem(System::String ^ title, System::String ^ content, Uri ^ feedAlternateLink, System::String ^ id, DateTimeOffset lastUpdatedTime);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.SyndicationItem : string * string * Uri * string * DateTimeOffset -&gt; System.ServiceModel.Syndication.SyndicationItem" Usage="new System.ServiceModel.Syndication.SyndicationItem (title, content, itemAlternateLink, id, lastUpdatedTime)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-4.0;netframework-4.5.1;netframework-4.5.2;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.SyndicationItem : string * string * Uri * string * DateTimeOffset -&gt; System.ServiceModel.Syndication.SyndicationItem" Usage="new System.ServiceModel.Syndication.SyndicationItem (title, content, feedAlternateLink, id, lastUpdatedTime)" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.#ctor(System.String,System.String,System.Uri,System.String,System.DateTimeOffset)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C#" Value="public SyndicationItem (string title, string content, Uri itemAlternateLink, string id, DateTimeOffset lastUpdatedTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, string content, class System.Uri itemAlternateLink, string id, valuetype System.DateTimeOffset lastUpdatedTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.#ctor(System.String,System.String,System.Uri,System.String,System.DateTimeOffset)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (title As String, content As String, itemAlternateLink As Uri, id As String, lastUpdatedTime As DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.SyndicationItem : string * string * Uri * string * DateTimeOffset -&gt; System.ServiceModel.Syndication.SyndicationItem" Usage="new System.ServiceModel.Syndication.SyndicationItem (title, content, itemAlternateLink, id, lastUpdatedTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SyndicationItem(System::String ^ title, System::String ^ content, Uri ^ itemAlternateLink, System::String ^ id, DateTimeOffset lastUpdatedTime);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -286,21 +281,20 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="title" Type="System.String" Index="0" />
-        <Parameter Name="content" Type="System.String" Index="1" />
-        <Parameter Name="itemAlternateLink" Type="System.Uri" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.1;netcore-2.2;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="feedAlternateLink" Type="System.Uri" Index="2" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="id" Type="System.String" Index="3" />
-        <Parameter Name="lastUpdatedTime" Type="System.DateTimeOffset" Index="4" />
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="content" Type="System.String" />
+        <Parameter Name="itemAlternateLink" Type="System.Uri" />
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="lastUpdatedTime" Type="System.DateTimeOffset" />
       </Parameters>
       <Docs>
         <param name="title">The title of the syndication item.</param>
         <param name="content">The content of the syndication item.</param>
         <param name="itemAlternateLink">The alternate URI for the syndication item.</param>
-        <param name="feedAlternateLink">To be added.</param>
         <param name="id">The ID of the syndication item.</param>
         <param name="lastUpdatedTime">The <see cref="T:System.DateTimeOffset" /> that contains the last time the syndication item was last updated.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> class.</summary>
@@ -310,26 +304,20 @@
 ## Examples  
  The following code shows how to call this constructor.  
   
- [!code-csharp[SyndicationItem#34](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs#34)]
- [!code-vb[SyndicationItem#34](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb#34)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs" id="Snippet34":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb" id="Snippet34":::  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddPermalink">
-      <MemberSignature Language="C#" Value="public void AddPermalink (Uri permalink);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddPermalink(class System.Uri permalink) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="VB.NET" Value="Public Sub AddPermalink (permalink As Uri)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPermalink(Uri ^ permalink);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="C#" Value="public void AddPermalink (Uri link);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddPermalink(class System.Uri link) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.AddPermalink(System.Uri)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.1;netcore-2.2;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="VB.NET" Value="Public Sub AddPermalink (link As Uri)" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPermalink(Uri ^ link);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="member this.AddPermalink : Uri -&gt; unit" Usage="syndicationItem.AddPermalink permalink" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-4.0;netframework-4.5.1;netframework-4.5.2;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="member this.AddPermalink : Uri -&gt; unit" Usage="syndicationItem.AddPermalink link" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.AddPermalink(System.Uri)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C#" Value="public void AddPermalink (Uri permalink);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddPermalink(class System.Uri permalink) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.AddPermalink(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddPermalink (permalink As Uri)" />
+      <MemberSignature Language="F#" Value="member this.AddPermalink : Uri -&gt; unit" Usage="syndicationItem.AddPermalink permalink" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPermalink(Uri ^ permalink);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -342,18 +330,17 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="permalink" Type="System.Uri" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.1;netcore-2.2;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="link" Type="System.Uri" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="permalink" Type="System.Uri" />
       </Parameters>
       <Docs>
         <param name="permalink">The <see cref="T:System.Uri" /> that points to the content.</param>
-        <param name="link">To be added.</param>
         <summary>Adds a *permalink* to the <see cref="T:System.ServiceModel.Syndication.SyndicationItem" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -366,8 +353,8 @@
 ## Examples  
  The following code shows how to add a permalink to a syndication item.  
   
- [!code-csharp[SyndicationItem#36](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs#36)]
- [!code-vb[SyndicationItem#36](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb#36)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs" id="Snippet36":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb" id="Snippet36":::  
   
  ]]></format>
         </remarks>
@@ -378,12 +365,9 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;class System.Xml.XmlQualifiedName, string&gt; AttributeExtensions" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationItem.AttributeExtensions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AttributeExtensions As Dictionary(Of XmlQualifiedName, String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::Xml::XmlQualifiedName ^, System::String ^&gt; ^ AttributeExtensions { System::Collections::Generic::Dictionary&lt;System::Xml::XmlQualifiedName ^, System::String ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.AttributeExtensions : System.Collections.Generic.Dictionary&lt;System.Xml.XmlQualifiedName, string&gt;" Usage="System.ServiceModel.Syndication.SyndicationItem.AttributeExtensions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::Xml::XmlQualifiedName ^, System::String ^&gt; ^ AttributeExtensions { System::Collections::Generic::Dictionary&lt;System::Xml::XmlQualifiedName ^, System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ServiceModel.Syndication.ISyndicationElement.AttributeExtensions</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -395,7 +379,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.Dictionary&lt;System.Xml.XmlQualifiedName,System.String&gt;</ReturnType>
@@ -407,23 +392,23 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The Syndication object model allows you to add custom attributes to a <xref:System.ServiceModel.Syndication.SyndicationItem> instance. When serialized for Atom 1.0, the custom attribute is written to an `<entry>` element. When serialized for RSS 2.0, the custom attribute is written to an `<item>` element. For a complete example that shows how to add an attribute extension, see the [Loosely-Typed Extensions](~/docs/framework/wcf/samples/loosely-typed-extensions-sample.md) sample.  
+ The Syndication object model allows you to add custom attributes to a <xref:System.ServiceModel.Syndication.SyndicationItem> instance. When serialized for Atom 1.0, the custom attribute is written to an `<entry>` element. When serialized for RSS 2.0, the custom attribute is written to an `<item>` element. For a complete example that shows how to add an attribute extension, see the [Loosely-Typed Extensions](/dotnet/framework/wcf/samples/loosely-typed-extensions-sample) sample.  
   
    
   
 ## Examples  
  The following code shows how to add an attribute extension to a syndication feed.  
   
- [!code-csharp[LooselyTypedExtensions#3](~/samples/snippets/csharp/VS_Snippets_CFX/looselytypedextensions/cs/snippets.cs#3)]
- [!code-vb[LooselyTypedExtensions#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/looselytypedextensions/vb/snippets.vb#3)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/looselytypedextensions/cs/snippets.cs" id="Snippet3":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/looselytypedextensions/vb/snippets.vb" id="Snippet3":::  
   
  The following XML code shows an Atom 1.0 serialization of a <xref:System.ServiceModel.Syndication.SyndicationItem> instance with a custom attribute called `itemAttrib`.  
   
- [!code-xml[SyndicationItem#4](~/samples/snippets/common/VS_Snippets_CFX/syndicationitem/common/atom.xml#4)]  
+ :::code language="xml" source="~/snippets/common/VS_Snippets_CFX/syndicationitem/common/atom.xml" id="Snippet4":::  
   
  The following code shows the same <xref:System.ServiceModel.Syndication.SyndicationItem> instance serialized as RSS 2.0.  
   
- [!code-xml[SyndicationItem#5](~/samples/snippets/common/VS_Snippets_CFX/syndicationitem/common/rss.xml#5)]  
+ :::code language="xml" source="~/snippets/common/VS_Snippets_CFX/syndicationitem/common/rss.xml" id="Snippet5":::  
   
  ]]></format>
         </remarks>
@@ -434,8 +419,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Syndication.SyndicationPerson&gt; Authors" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationItem.Authors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Authors As Collection(Of SyndicationPerson)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::SyndicationPerson ^&gt; ^ Authors { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::SyndicationPerson ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Authors : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Syndication.SyndicationPerson&gt;" Usage="System.ServiceModel.Syndication.SyndicationItem.Authors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::SyndicationPerson ^&gt; ^ Authors { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::SyndicationPerson ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -448,7 +433,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Syndication.SyndicationPerson&gt;</ReturnType>
@@ -469,16 +455,16 @@
 ## Examples  
  The following code shows how to add an author to the <xref:System.ServiceModel.Syndication.SyndicationItem.Authors%2A> collection of a <xref:System.ServiceModel.Syndication.SyndicationItem>.  
   
- [!code-csharp[SyndicationItem#22](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs#22)]
- [!code-vb[SyndicationItem#22](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb#22)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs" id="Snippet22":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb" id="Snippet22":::  
   
  The following XML shows how the preceding <xref:System.ServiceModel.Syndication.SyndicationItem> is serialized to Atom 1.0.  
   
- [!code-xml[SyndicationItem#6](~/samples/snippets/common/VS_Snippets_CFX/syndicationitem/common/atom.xml#6)]  
+ :::code language="xml" source="~/snippets/common/VS_Snippets_CFX/syndicationitem/common/atom.xml" id="Snippet6":::  
   
  The following XML shows how the preceding <xref:System.ServiceModel.Syndication.SyndicationItem> is serialized to RSS 2.0.  
   
- [!code-xml[SyndicationItem#7](~/samples/snippets/common/VS_Snippets_CFX/syndicationitem/common/rss.xml#7)]  
+ :::code language="xml" source="~/snippets/common/VS_Snippets_CFX/syndicationitem/common/rss.xml" id="Snippet7":::  
   
  ]]></format>
         </remarks>
@@ -489,8 +475,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri BaseUri" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationItem.BaseUri" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseUri As Uri" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberSignature Language="F#" Value="member this.BaseUri : Uri with get, set" Usage="System.ServiceModel.Syndication.SyndicationItem.BaseUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -503,14 +489,17 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -525,8 +514,8 @@
 ## Examples  
  The following example shows how to set the base URI of a syndication item.  
   
- [!code-csharp[SyndicationItem#33](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs#33)]
- [!code-vb[SyndicationItem#33](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb#33)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs" id="Snippet33":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb" id="Snippet33":::  
   
  ]]></format>
         </remarks>
@@ -537,8 +526,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Syndication.SyndicationCategory&gt; Categories" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationItem.Categories" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Categories As Collection(Of SyndicationCategory)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::SyndicationCategory ^&gt; ^ Categories { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::SyndicationCategory ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Categories : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Syndication.SyndicationCategory&gt;" Usage="System.ServiceModel.Syndication.SyndicationItem.Categories" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::SyndicationCategory ^&gt; ^ Categories { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::SyndicationCategory ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -551,7 +540,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Syndication.SyndicationCategory&gt;</ReturnType>
@@ -570,16 +560,16 @@
 ## Examples  
  The following code shows how to add a category to the <xref:System.ServiceModel.Syndication.SyndicationItem.Categories%2A> collection of a <xref:System.ServiceModel.Syndication.SyndicationItem>.  
   
- [!code-csharp[SyndicationItem#23](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs#23)]
- [!code-vb[SyndicationItem#23](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb#23)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs" id="Snippet23":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb" id="Snippet23":::  
   
  The following XML shows how a <xref:System.ServiceModel.Syndication.SyndicationItem> instance with a category is serialized to Atom 1.0.  
   
- [!code-xml[SyndicationItem#8](~/samples/snippets/common/VS_Snippets_CFX/syndicationitem/common/atom.xml#8)]  
+ :::code language="xml" source="~/snippets/common/VS_Snippets_CFX/syndicationitem/common/atom.xml" id="Snippet8":::  
   
  The following XML shows how a <xref:System.ServiceModel.Syndication.SyndicationItem> instance with a category is serialized to RSS 2.0.  
   
- [!code-xml[SyndicationItem#9](~/samples/snippets/common/VS_Snippets_CFX/syndicationitem/common/rss.xml#9)]  
+ :::code language="xml" source="~/snippets/common/VS_Snippets_CFX/syndicationitem/common/rss.xml" id="Snippet9":::  
   
  ]]></format>
         </remarks>
@@ -590,8 +580,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Syndication.SyndicationItem Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As SyndicationItem" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Syndication::SyndicationItem ^ Clone();" />
       <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; System.ServiceModel.Syndication.SyndicationItem&#xA;override this.Clone : unit -&gt; System.ServiceModel.Syndication.SyndicationItem" Usage="syndicationItem.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Syndication::SyndicationItem ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -604,7 +594,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.SyndicationItem</ReturnType>
@@ -619,8 +610,8 @@
 ## Examples  
  The following code shows how to clone an instance of the <xref:System.ServiceModel.Syndication.SyndicationItem> class.  
   
- [!code-csharp[SyndicationItem#41](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs#41)]
- [!code-vb[SyndicationItem#41](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb#41)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs" id="Snippet41":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb" id="Snippet41":::  
   
  ]]></format>
         </remarks>
@@ -631,8 +622,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Syndication.SyndicationContent Content" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationItem.Content" />
       <MemberSignature Language="VB.NET" Value="Public Property Content As SyndicationContent" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Syndication::SyndicationContent ^ Content { System::ServiceModel::Syndication::SyndicationContent ^ get(); void set(System::ServiceModel::Syndication::SyndicationContent ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Content : System.ServiceModel.Syndication.SyndicationContent with get, set" Usage="System.ServiceModel.Syndication.SyndicationItem.Content" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Syndication::SyndicationContent ^ Content { System::ServiceModel::Syndication::SyndicationContent ^ get(); void set(System::ServiceModel::Syndication::SyndicationContent ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -645,14 +636,17 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -665,7 +659,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.ServiceModel.Syndication.SyndicationContent> is a base class for all syndication content types. The [!INCLUDE[netfx35_short](~/includes/netfx35-short-md.md)] defines the following syndication content types:  
+ <xref:System.ServiceModel.Syndication.SyndicationContent> is a base class for all syndication content types. The .NET Framework 3.5 defines the following syndication content types:  
   
 -   <xref:System.ServiceModel.Syndication.TextSyndicationContent>  
   
@@ -684,8 +678,8 @@
 ## Examples  
  The following code shows how to add content to a <xref:System.ServiceModel.Syndication.SyndicationItem>.  
   
- [!code-csharp[SyndicationItem#24](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs#24)]
- [!code-vb[SyndicationItem#24](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb#24)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs" id="Snippet24":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb" id="Snippet24":::  
   
  The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationItem.Content%2A> property is serialized for Atom 1.0.  
   
@@ -740,8 +734,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Syndication.SyndicationPerson&gt; Contributors" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationItem.Contributors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Contributors As Collection(Of SyndicationPerson)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::SyndicationPerson ^&gt; ^ Contributors { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::SyndicationPerson ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Contributors : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Syndication.SyndicationPerson&gt;" Usage="System.ServiceModel.Syndication.SyndicationItem.Contributors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::SyndicationPerson ^&gt; ^ Contributors { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::SyndicationPerson ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -754,7 +748,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Syndication.SyndicationPerson&gt;</ReturnType>
@@ -775,16 +770,16 @@
 ## Examples  
  The following code shows how to add a contributor to a <xref:System.ServiceModel.Syndication.SyndicationItem>.  
   
- [!code-csharp[SyndicationItem#25](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs#25)]
- [!code-vb[SyndicationItem#25](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb#25)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs" id="Snippet25":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb" id="Snippet25":::  
   
  The following XML shows how this property is serialized to Atom 1.0.  
   
- [!code-xml[SyndicationItem#10](~/samples/snippets/common/VS_Snippets_CFX/syndicationitem/common/atom.xml#10)]  
+ :::code language="xml" source="~/snippets/common/VS_Snippets_CFX/syndicationitem/common/atom.xml" id="Snippet10":::  
   
  The following XML shows how this property is serialized to RSS 2.0.  
   
- [!code-xml[SyndicationItem#11](~/samples/snippets/common/VS_Snippets_CFX/syndicationitem/common/rss.xml#11)]  
+ :::code language="xml" source="~/snippets/common/VS_Snippets_CFX/syndicationitem/common/rss.xml" id="Snippet11":::  
   
  ]]></format>
         </remarks>
@@ -795,8 +790,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Syndication.TextSyndicationContent Copyright" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationItem.Copyright" />
       <MemberSignature Language="VB.NET" Value="Public Property Copyright As TextSyndicationContent" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Syndication::TextSyndicationContent ^ Copyright { System::ServiceModel::Syndication::TextSyndicationContent ^ get(); void set(System::ServiceModel::Syndication::TextSyndicationContent ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Copyright : System.ServiceModel.Syndication.TextSyndicationContent with get, set" Usage="System.ServiceModel.Syndication.SyndicationItem.Copyright" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Syndication::TextSyndicationContent ^ Copyright { System::ServiceModel::Syndication::TextSyndicationContent ^ get(); void set(System::ServiceModel::Syndication::TextSyndicationContent ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -809,14 +804,17 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -836,8 +834,8 @@
 ## Examples  
  The following code shows how to add copyright information to a <xref:System.ServiceModel.Syndication.SyndicationItem>.  
   
- [!code-csharp[SyndicationItem#26](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs#26)]
- [!code-vb[SyndicationItem#26](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb#26)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs" id="Snippet26":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb" id="Snippet26":::  
   
  The following XML shows how this property is serialized to Atom 1.0.  
   
@@ -860,8 +858,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.ServiceModel.Syndication.SyndicationCategory CreateCategory() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.CreateCategory" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function CreateCategory () As SyndicationCategory" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::ServiceModel::Syndication::SyndicationCategory ^ CreateCategory();" />
       <MemberSignature Language="F#" Value="abstract member CreateCategory : unit -&gt; System.ServiceModel.Syndication.SyndicationCategory&#xA;override this.CreateCategory : unit -&gt; System.ServiceModel.Syndication.SyndicationCategory" Usage="syndicationItem.CreateCategory " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::ServiceModel::Syndication::SyndicationCategory ^ CreateCategory();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -874,7 +872,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.SyndicationCategory</ReturnType>
@@ -898,8 +897,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.ServiceModel.Syndication.SyndicationLink CreateLink() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.CreateLink" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function CreateLink () As SyndicationLink" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::ServiceModel::Syndication::SyndicationLink ^ CreateLink();" />
       <MemberSignature Language="F#" Value="abstract member CreateLink : unit -&gt; System.ServiceModel.Syndication.SyndicationLink&#xA;override this.CreateLink : unit -&gt; System.ServiceModel.Syndication.SyndicationLink" Usage="syndicationItem.CreateLink " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::ServiceModel::Syndication::SyndicationLink ^ CreateLink();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -912,7 +911,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.SyndicationLink</ReturnType>
@@ -936,8 +936,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.ServiceModel.Syndication.SyndicationPerson CreatePerson() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.CreatePerson" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function CreatePerson () As SyndicationPerson" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::ServiceModel::Syndication::SyndicationPerson ^ CreatePerson();" />
       <MemberSignature Language="F#" Value="abstract member CreatePerson : unit -&gt; System.ServiceModel.Syndication.SyndicationPerson&#xA;override this.CreatePerson : unit -&gt; System.ServiceModel.Syndication.SyndicationPerson" Usage="syndicationItem.CreatePerson " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::ServiceModel::Syndication::SyndicationPerson ^ CreatePerson();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -950,7 +950,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.SyndicationPerson</ReturnType>
@@ -974,12 +975,9 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Syndication.SyndicationElementExtensionCollection ElementExtensions" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationItem.ElementExtensions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElementExtensions As SyndicationElementExtensionCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Syndication::SyndicationElementExtensionCollection ^ ElementExtensions { System::ServiceModel::Syndication::SyndicationElementExtensionCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.ElementExtensions : System.ServiceModel.Syndication.SyndicationElementExtensionCollection" Usage="System.ServiceModel.Syndication.SyndicationItem.ElementExtensions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Syndication::SyndicationElementExtensionCollection ^ ElementExtensions { System::ServiceModel::Syndication::SyndicationElementExtensionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ServiceModel.Syndication.ISyndicationElement.ElementExtensions</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -991,7 +989,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.SyndicationElementExtensionCollection</ReturnType>
@@ -1009,15 +1008,15 @@
 <mg:MyElement xmlns:mg="http://myserver/elements" />  
 ```  
   
- For a complete example that shows how to add element extensions, see the [Loosely-Typed Extensions](~/docs/framework/wcf/samples/loosely-typed-extensions-sample.md) sample.  
+ For a complete example that shows how to add element extensions, see the [Loosely-Typed Extensions](/dotnet/framework/wcf/samples/loosely-typed-extensions-sample) sample.  
   
    
   
 ## Examples  
  The following code shows how to add element extensions to a <xref:System.ServiceModel.Syndication.SyndicationItem> instance.  
   
- [!code-csharp[LooselyTypedExtensions#2](~/samples/snippets/csharp/VS_Snippets_CFX/looselytypedextensions/cs/snippets.cs#2)]
- [!code-vb[LooselyTypedExtensions#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/looselytypedextensions/vb/snippets.vb#2)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/looselytypedextensions/cs/snippets.cs" id="Snippet2":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/looselytypedextensions/vb/snippets.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -1028,8 +1027,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Syndication.Atom10ItemFormatter GetAtom10Formatter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.GetAtom10Formatter" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAtom10Formatter () As Atom10ItemFormatter" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Syndication::Atom10ItemFormatter ^ GetAtom10Formatter();" />
       <MemberSignature Language="F#" Value="member this.GetAtom10Formatter : unit -&gt; System.ServiceModel.Syndication.Atom10ItemFormatter" Usage="syndicationItem.GetAtom10Formatter " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Syndication::Atom10ItemFormatter ^ GetAtom10Formatter();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1042,7 +1041,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.Atom10ItemFormatter</ReturnType>
@@ -1057,8 +1057,8 @@
 ## Examples  
  The following code shows how to write a syndication item in Atom 1.0 format to an XML file.  
   
- [!code-csharp[SyndicationItem#42](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs#42)]
- [!code-vb[SyndicationItem#42](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb#42)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs" id="Snippet42":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb" id="Snippet42":::  
   
  ]]></format>
         </remarks>
@@ -1078,8 +1078,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Syndication.Rss20ItemFormatter GetRss20Formatter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.GetRss20Formatter" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRss20Formatter () As Rss20ItemFormatter" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Syndication::Rss20ItemFormatter ^ GetRss20Formatter();" />
       <MemberSignature Language="F#" Value="member this.GetRss20Formatter : unit -&gt; System.ServiceModel.Syndication.Rss20ItemFormatter" Usage="syndicationItem.GetRss20Formatter " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Syndication::Rss20ItemFormatter ^ GetRss20Formatter();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1092,11 +1092,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1112,8 +1114,8 @@
 ## Examples  
  The following code shows how to write a syndication item in RSS 2.0 format to an XML file.  
   
- [!code-csharp[SyndicationItem#43](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs#43)]
- [!code-vb[SyndicationItem#43](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb#43)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs" id="Snippet43":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb" id="Snippet43":::  
   
  ]]></format>
         </remarks>
@@ -1124,8 +1126,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Syndication.Rss20ItemFormatter GetRss20Formatter(bool serializeExtensionsAsAtom) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.GetRss20Formatter(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRss20Formatter (serializeExtensionsAsAtom As Boolean) As Rss20ItemFormatter" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Syndication::Rss20ItemFormatter ^ GetRss20Formatter(bool serializeExtensionsAsAtom);" />
       <MemberSignature Language="F#" Value="member this.GetRss20Formatter : bool -&gt; System.ServiceModel.Syndication.Rss20ItemFormatter" Usage="syndicationItem.GetRss20Formatter serializeExtensionsAsAtom" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Syndication::Rss20ItemFormatter ^ GetRss20Formatter(bool serializeExtensionsAsAtom);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1138,7 +1140,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.Rss20ItemFormatter</ReturnType>
@@ -1161,8 +1164,8 @@
 ## Examples  
  The following code shows how to write a syndication item in RSS 2.0 format to an XML file, serializing attribute and element extensions.  
   
- [!code-csharp[SyndicationItem#44](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs#44)]
- [!code-vb[SyndicationItem#44](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb#44)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs" id="Snippet44":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb" id="Snippet44":::  
   
  ]]></format>
         </remarks>
@@ -1173,8 +1176,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationItem.Id" />
       <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="System.ServiceModel.Syndication.SyndicationItem.Id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1187,14 +1190,17 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1214,8 +1220,8 @@
 ## Examples  
  The following code shows how to set the <xref:System.ServiceModel.Syndication.SyndicationItem.Id%2A> property on a <xref:System.ServiceModel.Syndication.SyndicationItem> instance.  
   
- [!code-csharp[SyndicationItem#27](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs#27)]
- [!code-vb[SyndicationItem#27](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb#27)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs" id="Snippet27":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb" id="Snippet27":::  
   
  The following XML shows how this property is serialized to Atom 1.0.  
   
@@ -1238,8 +1244,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset LastUpdatedTime" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationItem.LastUpdatedTime" />
       <MemberSignature Language="VB.NET" Value="Public Property LastUpdatedTime As DateTimeOffset" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTimeOffset LastUpdatedTime { DateTimeOffset get(); void set(DateTimeOffset value); };" />
       <MemberSignature Language="F#" Value="member this.LastUpdatedTime : DateTimeOffset with get, set" Usage="System.ServiceModel.Syndication.SyndicationItem.LastUpdatedTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTimeOffset LastUpdatedTime { DateTimeOffset get(); void set(DateTimeOffset value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1252,14 +1258,17 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1279,8 +1288,8 @@
 ## Examples  
  The following code shows how to set the <xref:System.ServiceModel.Syndication.SyndicationItem.LastUpdatedTime%2A> property on a <xref:System.ServiceModel.Syndication.SyndicationItem> instance.  
   
- [!code-csharp[SyndicationItem#28](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs#28)]
- [!code-vb[SyndicationItem#28](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb#28)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs" id="Snippet28":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb" id="Snippet28":::  
   
  The following XML shows how this property is serialized to Atom 1.0.  
   
@@ -1303,8 +1312,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Syndication.SyndicationLink&gt; Links" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationItem.Links" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Links As Collection(Of SyndicationLink)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::SyndicationLink ^&gt; ^ Links { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::SyndicationLink ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Links : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Syndication.SyndicationLink&gt;" Usage="System.ServiceModel.Syndication.SyndicationItem.Links" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::SyndicationLink ^&gt; ^ Links { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Syndication::SyndicationLink ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1317,7 +1326,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Syndication.SyndicationLink&gt;</ReturnType>
@@ -1336,16 +1346,16 @@
 ## Examples  
  The following code shows how to add a link to the <xref:System.ServiceModel.Syndication.SyndicationItem.Links%2A> collection of a <xref:System.ServiceModel.Syndication.SyndicationItem> instance.  
   
- [!code-csharp[SyndicationItem#29](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs#29)]
- [!code-vb[SyndicationItem#29](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb#29)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs" id="Snippet29":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb" id="Snippet29":::  
   
  The following XML shows how this property is serialized to Atom 1.0.  
   
- [!code-xml[SyndicationItem#12](~/samples/snippets/common/VS_Snippets_CFX/syndicationitem/common/atom.xml#12)]  
+ :::code language="xml" source="~/snippets/common/VS_Snippets_CFX/syndicationitem/common/atom.xml" id="Snippet12":::  
   
  The following XML shows how this property is serialized to RSS 2.0.  
   
- [!code-xml[SyndicationItem#13](~/samples/snippets/common/VS_Snippets_CFX/syndicationitem/common/rss.xml#13)]  
+ :::code language="xml" source="~/snippets/common/VS_Snippets_CFX/syndicationitem/common/rss.xml" id="Snippet13":::  
   
  ]]></format>
         </remarks>
@@ -1356,8 +1366,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Syndication.SyndicationItem Load(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.Load(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Load (reader As XmlReader) As SyndicationItem" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Syndication::SyndicationItem ^ Load(System::Xml::XmlReader ^ reader);" />
       <MemberSignature Language="F#" Value="static member Load : System.Xml.XmlReader -&gt; System.ServiceModel.Syndication.SyndicationItem" Usage="System.ServiceModel.Syndication.SyndicationItem.Load reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Syndication::SyndicationItem ^ Load(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1370,11 +1380,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1393,8 +1405,8 @@
 ## Examples  
  The following example shows how to load a syndication item into a <xref:System.ServiceModel.Syndication.SyndicationItem> instance.  
   
- [!code-csharp[SyndicationItem#21](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs#21)]
- [!code-vb[SyndicationItem#21](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb#21)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs" id="Snippet21":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb" id="Snippet21":::  
   
  ]]></format>
         </remarks>
@@ -1402,12 +1414,12 @@
       </Docs>
     </Member>
     <Member MemberName="Load&lt;TSyndicationItem&gt;">
-      <MemberSignature Language="C#" Value="public static TSyndicationItem Load&lt;TSyndicationItem&gt; (System.Xml.XmlReader reader) where TSyndicationItem : System.ServiceModel.Syndication.SyndicationItemnew();" />
+      <MemberSignature Language="C#" Value="public static TSyndicationItem Load&lt;TSyndicationItem&gt; (System.Xml.XmlReader reader) where TSyndicationItem : System.ServiceModel.Syndication.SyndicationItem, new();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TSyndicationItem Load&lt;.ctor (class System.ServiceModel.Syndication.SyndicationItem) TSyndicationItem&gt;(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.Load``1(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Load(Of TSyndicationItem As {SyndicationItemNew}) (reader As XmlReader) As TSyndicationItem" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSyndicationItem&gt;&#xA; where TSyndicationItem : System::ServiceModel::Syndication::SyndicationItemgcnew() static TSyndicationItem Load(System::Xml::XmlReader ^ reader);" />
       <MemberSignature Language="F#" Value="static member Load : System.Xml.XmlReader -&gt; 'SyndicationItem (requires 'SyndicationItem :&gt; System.ServiceModel.Syndication.SyndicationItem and 'SyndicationItem : (new : unit -&gt; 'SyndicationItem))" Usage="System.ServiceModel.Syndication.SyndicationItem.Load reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSyndicationItem&gt;&#xA; where TSyndicationItem : System::ServiceModel::Syndication::SyndicationItemgcnew() static TSyndicationItem Load(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1420,7 +1432,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TSyndicationItem</ReturnType>
@@ -1452,8 +1465,8 @@
 ## Examples  
  The following code shows how to load a syndication item of the specified type from an XML reader.  
   
- [!code-csharp[SyndicationItem#37](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs#37)]
- [!code-vb[SyndicationItem#37](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb#37)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs" id="Snippet37":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb" id="Snippet37":::  
   
  ]]></format>
         </remarks>
@@ -1464,8 +1477,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset PublishDate" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationItem.PublishDate" />
       <MemberSignature Language="VB.NET" Value="Public Property PublishDate As DateTimeOffset" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTimeOffset PublishDate { DateTimeOffset get(); void set(DateTimeOffset value); };" />
       <MemberSignature Language="F#" Value="member this.PublishDate : DateTimeOffset with get, set" Usage="System.ServiceModel.Syndication.SyndicationItem.PublishDate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTimeOffset PublishDate { DateTimeOffset get(); void set(DateTimeOffset value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1478,14 +1491,17 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1505,8 +1521,8 @@
 ## Examples  
  The following code shows how to set the <xref:System.ServiceModel.Syndication.SyndicationItem.PublishDate%2A> on a <xref:System.ServiceModel.Syndication.SyndicationItem> instance.  
   
- [!code-csharp[SyndicationItem#30](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs#30)]
- [!code-vb[SyndicationItem#30](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb#30)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs" id="Snippet30":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb" id="Snippet30":::  
   
  The following XML shows how this property is serialized to Atom 1.0.  
   
@@ -1529,8 +1545,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveAsAtom10(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.SaveAsAtom10(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveAsAtom10 (writer As XmlWriter)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveAsAtom10(System::Xml::XmlWriter ^ writer);" />
       <MemberSignature Language="F#" Value="member this.SaveAsAtom10 : System.Xml.XmlWriter -&gt; unit" Usage="syndicationItem.SaveAsAtom10 writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveAsAtom10(System::Xml::XmlWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1543,7 +1559,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1560,8 +1577,8 @@
 ## Examples  
  The following code shows how to save a syndication item in Atom 1.0 format to the specified XML writer.  
   
- [!code-csharp[SyndicationItem#38](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs#38)]
- [!code-vb[SyndicationItem#38](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb#38)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs" id="Snippet38":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb" id="Snippet38":::  
   
  ]]></format>
         </remarks>
@@ -1572,8 +1589,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveAsRss20(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.SaveAsRss20(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveAsRss20 (writer As XmlWriter)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveAsRss20(System::Xml::XmlWriter ^ writer);" />
       <MemberSignature Language="F#" Value="member this.SaveAsRss20 : System.Xml.XmlWriter -&gt; unit" Usage="syndicationItem.SaveAsRss20 writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveAsRss20(System::Xml::XmlWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1586,7 +1603,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1603,8 +1621,8 @@
 ## Examples  
  The following code shows how to save a syndication item in RSS 2.0 format to the specified XML writer.  
   
- [!code-csharp[SyndicationItem#39](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs#39)]
- [!code-vb[SyndicationItem#39](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb#39)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs" id="Snippet39":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb" id="Snippet39":::  
   
  ]]></format>
         </remarks>
@@ -1615,8 +1633,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Syndication.SyndicationFeed SourceFeed" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationItem.SourceFeed" />
       <MemberSignature Language="VB.NET" Value="Public Property SourceFeed As SyndicationFeed" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Syndication::SyndicationFeed ^ SourceFeed { System::ServiceModel::Syndication::SyndicationFeed ^ get(); void set(System::ServiceModel::Syndication::SyndicationFeed ^ value); };" />
       <MemberSignature Language="F#" Value="member this.SourceFeed : System.ServiceModel.Syndication.SyndicationFeed with get, set" Usage="System.ServiceModel.Syndication.SyndicationItem.SourceFeed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Syndication::SyndicationFeed ^ SourceFeed { System::ServiceModel::Syndication::SyndicationFeed ^ get(); void set(System::ServiceModel::Syndication::SyndicationFeed ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1629,14 +1647,17 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1656,11 +1677,11 @@
 ## Examples  
  The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationItem.SourceFeed%2A> property is serialized to Atom 1.0.  
   
- [!code-xml[SyndicationItem#14](~/samples/snippets/common/VS_Snippets_CFX/syndicationitem/common/atom.xml#14)]  
+ :::code language="xml" source="~/snippets/common/VS_Snippets_CFX/syndicationitem/common/atom.xml" id="Snippet14":::  
   
  The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationItem.SourceFeed%2A> property is serialized to RSS 2.0.  
   
- [!code-xml[SyndicationItem#15](~/samples/snippets/common/VS_Snippets_CFX/syndicationitem/common/rss.xml#15)]  
+ :::code language="xml" source="~/snippets/common/VS_Snippets_CFX/syndicationitem/common/rss.xml" id="Snippet15":::  
   
  ]]></format>
         </remarks>
@@ -1671,8 +1692,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Syndication.TextSyndicationContent Summary" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationItem.Summary" />
       <MemberSignature Language="VB.NET" Value="Public Property Summary As TextSyndicationContent" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Syndication::TextSyndicationContent ^ Summary { System::ServiceModel::Syndication::TextSyndicationContent ^ get(); void set(System::ServiceModel::Syndication::TextSyndicationContent ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Summary : System.ServiceModel.Syndication.TextSyndicationContent with get, set" Usage="System.ServiceModel.Syndication.SyndicationItem.Summary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Syndication::TextSyndicationContent ^ Summary { System::ServiceModel::Syndication::TextSyndicationContent ^ get(); void set(System::ServiceModel::Syndication::TextSyndicationContent ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1685,14 +1706,17 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1712,16 +1736,16 @@
 ## Examples  
  The following code shows how to set the <xref:System.ServiceModel.Syndication.SyndicationItem.Summary%2A> property on a <xref:System.ServiceModel.Syndication.SyndicationItem> instance.  
   
- [!code-csharp[SyndicationItem#31](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs#31)]
- [!code-vb[SyndicationItem#31](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb#31)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs" id="Snippet31":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb" id="Snippet31":::  
   
  The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationItem.Summary%2A> property is serialized to Atom 1.0.  
   
- [!code-xml[SyndicationItem#16](~/samples/snippets/common/VS_Snippets_CFX/syndicationitem/common/atom.xml#16)]  
+ :::code language="xml" source="~/snippets/common/VS_Snippets_CFX/syndicationitem/common/atom.xml" id="Snippet16":::  
   
  The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationItem.Summary%2A> property is serialized to RSS 2.0.  
   
- [!code-xml[SyndicationItem#17](~/samples/snippets/common/VS_Snippets_CFX/syndicationitem/common/rss.xml#17)]  
+ :::code language="xml" source="~/snippets/common/VS_Snippets_CFX/syndicationitem/common/rss.xml" id="Snippet17":::  
   
  ]]></format>
         </remarks>
@@ -1732,8 +1756,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Syndication.TextSyndicationContent Title" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationItem.Title" />
       <MemberSignature Language="VB.NET" Value="Public Property Title As TextSyndicationContent" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Syndication::TextSyndicationContent ^ Title { System::ServiceModel::Syndication::TextSyndicationContent ^ get(); void set(System::ServiceModel::Syndication::TextSyndicationContent ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Title : System.ServiceModel.Syndication.TextSyndicationContent with get, set" Usage="System.ServiceModel.Syndication.SyndicationItem.Title" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Syndication::TextSyndicationContent ^ Title { System::ServiceModel::Syndication::TextSyndicationContent ^ get(); void set(System::ServiceModel::Syndication::TextSyndicationContent ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1746,14 +1770,17 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1773,16 +1800,16 @@
 ## Examples  
  The following code shows how to set the <xref:System.ServiceModel.Syndication.SyndicationItem.Title%2A> property on a <xref:System.ServiceModel.Syndication.SyndicationItem> instance.  
   
- [!code-csharp[SyndicationItem#32](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs#32)]
- [!code-vb[SyndicationItem#32](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb#32)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/syndicationitem/cs/program.cs" id="Snippet32":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/syndicationitem/vb/snippets.vb" id="Snippet32":::  
   
  The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationItem.Title%2A> property is serialized to Atom 1.0.  
   
- [!code-xml[SyndicationItem#18](~/samples/snippets/common/VS_Snippets_CFX/syndicationitem/common/atom.xml#18)]  
+ :::code language="xml" source="~/snippets/common/VS_Snippets_CFX/syndicationitem/common/atom.xml" id="Snippet18":::  
   
  The following XML code shows how the <xref:System.ServiceModel.Syndication.SyndicationItem.Title%2A> property is serialized to RSS 2.0.  
   
- [!code-xml[SyndicationItem#19](~/samples/snippets/common/VS_Snippets_CFX/syndicationitem/common/rss.xml#19)]  
+ :::code language="xml" source="~/snippets/common/VS_Snippets_CFX/syndicationitem/common/rss.xml" id="Snippet19":::  
   
  ]]></format>
         </remarks>
@@ -1793,8 +1820,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool TryParseAttribute(string name, string ns, string value, string version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.TryParseAttribute(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function TryParseAttribute (name As String, ns As String, value As String, version As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool TryParseAttribute(System::String ^ name, System::String ^ ns, System::String ^ value, System::String ^ version);" />
       <MemberSignature Language="F#" Value="abstract member TryParseAttribute : string * string * string * string -&gt; bool&#xA;override this.TryParseAttribute : string * string * string * string -&gt; bool" Usage="syndicationItem.TryParseAttribute (name, ns, value, version)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool TryParseAttribute(System::String ^ name, System::String ^ ns, System::String ^ value, System::String ^ version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1807,7 +1834,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1841,8 +1869,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool TryParseContent(class System.Xml.XmlReader reader, string contentType, string version, [out] class System.ServiceModel.Syndication.SyndicationContent&amp; content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.TryParseContent(System.Xml.XmlReader,System.String,System.String,System.ServiceModel.Syndication.SyndicationContent@)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function TryParseContent (reader As XmlReader, contentType As String, version As String, ByRef content As SyndicationContent) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TryParseContent : System.Xml.XmlReader * string * string * SyndicationContent -&gt; bool&#xA;override this.TryParseContent : System.Xml.XmlReader * string * string * SyndicationContent -&gt; bool" Usage="syndicationItem.TryParseContent (reader, contentType, version, content)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool TryParseContent(System::Xml::XmlReader ^ reader, System::String ^ contentType, System::String ^ version, [Runtime::InteropServices::Out] System::ServiceModel::Syndication::SyndicationContent ^ % content);" />
-      <MemberSignature Language="F#" Value="abstract member TryParseContent : System.Xml.XmlReader * string * string *  -&gt; bool&#xA;override this.TryParseContent : System.Xml.XmlReader * string * string *  -&gt; bool" Usage="syndicationItem.TryParseContent (reader, contentType, version, content)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1855,7 +1883,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1888,8 +1917,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool TryParseElement(class System.Xml.XmlReader reader, string version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.TryParseElement(System.Xml.XmlReader,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function TryParseElement (reader As XmlReader, version As String) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool TryParseElement(System::Xml::XmlReader ^ reader, System::String ^ version);" />
       <MemberSignature Language="F#" Value="abstract member TryParseElement : System.Xml.XmlReader * string -&gt; bool&#xA;override this.TryParseElement : System.Xml.XmlReader * string -&gt; bool" Usage="syndicationItem.TryParseElement (reader, version)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool TryParseElement(System::Xml::XmlReader ^ reader, System::String ^ version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1902,7 +1931,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1932,8 +1962,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void WriteAttributeExtensions(class System.Xml.XmlWriter writer, string version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.WriteAttributeExtensions(System.Xml.XmlWriter,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub WriteAttributeExtensions (writer As XmlWriter, version As String)" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void WriteAttributeExtensions(System::Xml::XmlWriter ^ writer, System::String ^ version);" />
       <MemberSignature Language="F#" Value="abstract member WriteAttributeExtensions : System.Xml.XmlWriter * string -&gt; unit&#xA;override this.WriteAttributeExtensions : System.Xml.XmlWriter * string -&gt; unit" Usage="syndicationItem.WriteAttributeExtensions (writer, version)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void WriteAttributeExtensions(System::Xml::XmlWriter ^ writer, System::String ^ version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1946,7 +1976,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1974,8 +2005,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void WriteElementExtensions(class System.Xml.XmlWriter writer, string version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationItem.WriteElementExtensions(System.Xml.XmlWriter,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub WriteElementExtensions (writer As XmlWriter, version As String)" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void WriteElementExtensions(System::Xml::XmlWriter ^ writer, System::String ^ version);" />
       <MemberSignature Language="F#" Value="abstract member WriteElementExtensions : System.Xml.XmlWriter * string -&gt; unit&#xA;override this.WriteElementExtensions : System.Xml.XmlWriter * string -&gt; unit" Usage="syndicationItem.WriteElementExtensions (writer, version)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void WriteElementExtensions(System::Xml::XmlWriter ^ writer, System::String ^ version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1988,7 +2019,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

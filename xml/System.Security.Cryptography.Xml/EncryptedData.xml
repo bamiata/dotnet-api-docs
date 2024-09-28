@@ -1,10 +1,10 @@
-﻿<Type Name="EncryptedData" FullName="System.Security.Cryptography.Xml.EncryptedData">
+<Type Name="EncryptedData" FullName="System.Security.Cryptography.Xml.EncryptedData">
   <TypeSignature Language="C#" Value="public sealed class EncryptedData : System.Security.Cryptography.Xml.EncryptedType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EncryptedData extends System.Security.Cryptography.Xml.EncryptedType" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.EncryptedData" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EncryptedData&#xA;Inherits EncryptedType" />
-  <TypeSignature Language="C++ CLI" Value="public ref class EncryptedData sealed : System::Security::Cryptography::Xml::EncryptedType" />
   <TypeSignature Language="F#" Value="type EncryptedData = class&#xA;    inherit EncryptedType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EncryptedData sealed : System::Security::Cryptography::Xml::EncryptedType" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -12,13 +12,32 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+    <AssemblyVersion>4.0.3.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Security.Cryptography.Xml" FromVersion="9.0.0.0" To="System.Security" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Security.Cryptography.Xml.EncryptedType</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Represents the <see langword="&lt;EncryptedData&gt;" /> element in XML encryption. This class cannot be inherited.</summary>
     <remarks>
@@ -32,8 +51,8 @@
 ## Examples  
  The following example demonstrates how to encrypt and decrypt an XML element by using the <xref:System.Security.Cryptography.Xml.EncryptedData> class. This example then displays various properties of the <xref:System.Security.Cryptography.Xml.EncryptedData> class to the console.  
   
- [!code-csharp[Cryptography.XML.EncryptedData#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptedData/cs/sample.cs#1)]
- [!code-vb[Cryptography.XML.EncryptedData#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptedData/vb/sample.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography.Xml/EncryptedData/Overview/sample.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptedData/vb/sample.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -53,8 +72,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -70,8 +94,8 @@
 ## Examples  
  The following example demonstrates how to encrypt and decrypt an XML element by using the <xref:System.Security.Cryptography.Xml.EncryptedData> class. This example then displays various properties of the <xref:System.Security.Cryptography.Xml.EncryptedData> class to the console.  
   
- [!code-csharp[Cryptography.XML.EncryptedData#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptedData/cs/sample.cs#1)]
- [!code-vb[Cryptography.XML.EncryptedData#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptedData/vb/sample.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography.Xml/EncryptedData/Overview/sample.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptedData/vb/sample.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -82,8 +106,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlElement GetXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedData.GetXml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetXml () As XmlElement" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlElement ^ GetXml();" />
       <MemberSignature Language="F#" Value="override this.GetXml : unit -&gt; System.Xml.XmlElement" Usage="encryptedData.GetXml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlElement ^ GetXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -92,8 +116,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlElement</ReturnType>
@@ -118,8 +147,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void LoadXml(class System.Xml.XmlElement value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedData.LoadXml(System.Xml.XmlElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub LoadXml (value As XmlElement)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void LoadXml(System::Xml::XmlElement ^ value);" />
       <MemberSignature Language="F#" Value="override this.LoadXml : System.Xml.XmlElement -&gt; unit" Usage="encryptedData.LoadXml value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void LoadXml(System::Xml::XmlElement ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -128,9 +157,24 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("The algorithm implementations referenced in the XML payload might be removed. Ensure the required algorithm implementations are preserved in your application.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("The algorithm implementations referenced in the XML payload might be removed. Ensure the required algorithm implementations are preserved in your application.")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-7.0;net-8.0;net-9.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.RequiresDynamicCode("XmlDsigXsltTransform uses XslCompiledTransform which requires dynamic code.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.RequiresDynamicCode("XmlDsigXsltTransform uses XslCompiledTransform which requires dynamic code.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -151,8 +195,8 @@
 ## Examples  
  The following code example demonstrates how to encrypt and decrypt an XML element by using the <xref:System.Security.Cryptography.Xml.EncryptedData> class. This example then displays various properties of the <xref:System.Security.Cryptography.Xml.EncryptedData> class to the console.  
   
- [!code-csharp[Cryptography.XML.EncryptedData#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptedData/cs/sample.cs#1)]
- [!code-vb[Cryptography.XML.EncryptedData#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptedData/vb/sample.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography.Xml/EncryptedData/Overview/sample.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptedData/vb/sample.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>

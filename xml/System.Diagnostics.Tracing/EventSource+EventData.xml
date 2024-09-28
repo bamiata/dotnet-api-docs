@@ -1,4 +1,4 @@
-﻿<Type Name="EventSource+EventData" FullName="System.Diagnostics.Tracing.EventSource+EventData">
+<Type Name="EventSource+EventData" FullName="System.Diagnostics.Tracing.EventSource+EventData">
   <TypeSignature Language="C#" Value="protected internal struct EventSource.EventData" />
   <TypeSignature Language="ILAsm" Value=".class nested protected sequential ansi sealed beforefieldinit EventSource/EventData extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventSource.EventData" />
@@ -12,6 +12,12 @@
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -21,11 +27,27 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Diagnostics.Tracing" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Diagnostics.Tracing" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Diagnostics.Tracing" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Diagnostics.Tracing" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Diagnostics.Tracing" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Diagnostics.Tracing" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+    <TypeForwarding From="System.Diagnostics.Tracing" FromVersion="4.1.1.0" To="mscorlib" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(0)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Provides the event data for creating fast <see cref="Overload:System.Diagnostics.Tracing.EventSource.WriteEvent" /> overloads by using the <see cref="M:System.Diagnostics.Tracing.EventSource.WriteEventCore(System.Int32,System.Int32,System.Diagnostics.Tracing.EventSource.EventData*)" /> method.</summary>
     <remarks>
@@ -38,7 +60,7 @@
   
 [NonEvent]  
 public unsafe void WriteEvent(int eventId, int arg1, int arg2, int arg3, int arg4) {  
-    EventData* dataDesc = stackalloc EventProvider.EventData[4];  
+    EventData* dataDesc = stackalloc EventSource.EventData[4];  
   
     dataDesc[0].DataPointer = (IntPtr)(&arg1);  
     dataDesc[0].Size = 4;  
@@ -63,8 +85,8 @@ public unsafe void WriteEvent(int eventId, int arg1, int arg2, int arg3, int arg
       <MemberSignature Language="ILAsm" Value=".property instance native int DataPointer" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventSource.EventData.DataPointer" />
       <MemberSignature Language="VB.NET" Value="Public Property DataPointer As IntPtr" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr DataPointer { IntPtr get(); void set(IntPtr value); };" />
       <MemberSignature Language="F#" Value="member this.DataPointer : nativeint with get, set" Usage="System.Diagnostics.Tracing.EventSource.EventData.DataPointer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr DataPointer { IntPtr get(); void set(IntPtr value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -74,6 +96,12 @@ public unsafe void WriteEvent(int eventId, int arg1, int arg2, int arg3, int arg
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -83,10 +111,12 @@ public unsafe void WriteEvent(int eventId, int arg1, int arg2, int arg3, int arg
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.7.2;netframework-4.8">
-          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[get: System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -103,8 +133,8 @@ public unsafe void WriteEvent(int eventId, int arg1, int arg2, int arg3, int arg
       <MemberSignature Language="ILAsm" Value=".property instance int32 Size" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventSource.EventData.Size" />
       <MemberSignature Language="VB.NET" Value="Public Property Size As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Size { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.Size : int with get, set" Usage="System.Diagnostics.Tracing.EventSource.EventData.Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Size { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -114,6 +144,12 @@ public unsafe void WriteEvent(int eventId, int arg1, int arg2, int arg3, int arg
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -123,6 +159,7 @@ public unsafe void WriteEvent(int eventId, int arg1, int arg2, int arg3, int arg
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

@@ -1,23 +1,32 @@
-﻿<Type Name="SqlFacetAttribute" FullName="Microsoft.SqlServer.Server.SqlFacetAttribute">
+<Type Name="SqlFacetAttribute" FullName="Microsoft.SqlServer.Server.SqlFacetAttribute">
   <TypeSignature Language="C#" Value="public class SqlFacetAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlFacetAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Server.SqlFacetAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlFacetAttribute&#xA;Inherits Attribute" />
-  <TypeSignature Language="C++ CLI" Value="public ref class SqlFacetAttribute : Attribute" />
   <TypeSignature Language="F#" Value="type SqlFacetAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlFacetAttribute : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Data.SqlClient</AssemblyName>
+    <AssemblyVersion>4.6.0.0</AssemblyVersion>
+    <AssemblyVersion>4.6.1.0</AssemblyVersion>
+    <AssemblyVersion>4.6.1.1</AssemblyVersion>
+    <AssemblyVersion>4.6.1.5</AssemblyVersion>
+    <AssemblyVersion>4.6.1.6</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field | System.AttributeTargets.Parameter | System.AttributeTargets.ReturnValue, AllowMultiple=false, Inherited=false)</AttributeName>
+    <Attribute>
+      <AttributeName Language="C#">[System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Parameter | System.AttributeTargets.Property | System.AttributeTargets.ReturnValue, AllowMultiple=false, Inherited=false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Parameter | System.AttributeTargets.Property | System.AttributeTargets.ReturnValue, AllowMultiple=false, Inherited=false)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -26,7 +35,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:Microsoft.SqlServer.Server.SqlFacetAttribute> may only be specified on non-void return values.  
+ <xref:Microsoft.SqlServer.Server.SqlFacetAttribute> can only be specified on non-void return values or on input parameters. 
+
+To specify the <xref:Microsoft.SqlServer.Server.SqlFacetAttribute> on an input parameter, add the decoration inline with the parameter.
   
  <xref:Microsoft.SqlServer.Server.SqlFacetAttribute> is used only to derive information about the return type, and is not intended to be a constraint specification on what can be stored in the type. Thus, if a field has a <xref:Microsoft.SqlServer.Server.SqlFacetAttribute> indicating its size to be 2 characters, then the SQL Server type of the field access expression is of size 2, but assignments into the field are not restricted by this facet.  
   
@@ -75,8 +86,13 @@
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.1</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -89,14 +105,19 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFixedLength" />
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlFacetAttribute.IsFixedLength" />
       <MemberSignature Language="VB.NET" Value="Public Property IsFixedLength As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFixedLength { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.IsFixedLength : bool with get, set" Usage="Microsoft.SqlServer.Server.SqlFacetAttribute.IsFixedLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFixedLength { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -122,14 +143,19 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNullable" />
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlFacetAttribute.IsNullable" />
       <MemberSignature Language="VB.NET" Value="Public Property IsNullable As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNullable { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.IsNullable : bool with get, set" Usage="Microsoft.SqlServer.Server.SqlFacetAttribute.IsNullable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNullable { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -153,14 +179,19 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxSize" />
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlFacetAttribute.MaxSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxSize As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxSize { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.MaxSize : int with get, set" Usage="Microsoft.SqlServer.Server.SqlFacetAttribute.MaxSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -187,14 +218,19 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Precision" />
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlFacetAttribute.Precision" />
       <MemberSignature Language="VB.NET" Value="Public Property Precision As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Precision { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.Precision : int with get, set" Usage="Microsoft.SqlServer.Server.SqlFacetAttribute.Precision" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Precision { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -219,14 +255,19 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Scale" />
       <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Server.SqlFacetAttribute.Scale" />
       <MemberSignature Language="VB.NET" Value="Public Property Scale As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Scale { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.Scale : int with get, set" Usage="Microsoft.SqlServer.Server.SqlFacetAttribute.Scale" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Scale { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.1</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

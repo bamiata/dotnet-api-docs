@@ -1,10 +1,10 @@
-﻿<Type Name="DecoderExceptionFallbackBuffer" FullName="System.Text.DecoderExceptionFallbackBuffer">
+<Type Name="DecoderExceptionFallbackBuffer" FullName="System.Text.DecoderExceptionFallbackBuffer">
   <TypeSignature Language="C#" Value="public sealed class DecoderExceptionFallbackBuffer : System.Text.DecoderFallbackBuffer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DecoderExceptionFallbackBuffer extends System.Text.DecoderFallbackBuffer" />
   <TypeSignature Language="DocId" Value="T:System.Text.DecoderExceptionFallbackBuffer" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DecoderExceptionFallbackBuffer&#xA;Inherits DecoderFallbackBuffer" />
-  <TypeSignature Language="C++ CLI" Value="public ref class DecoderExceptionFallbackBuffer sealed : System::Text::DecoderFallbackBuffer" />
   <TypeSignature Language="F#" Value="type DecoderExceptionFallbackBuffer = class&#xA;    inherit DecoderFallbackBuffer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DecoderExceptionFallbackBuffer sealed : System::Text::DecoderFallbackBuffer" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -14,12 +14,26 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Text.DecoderFallbackBuffer</BaseTypeName>
   </Base>
@@ -54,11 +68,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -71,8 +92,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Fallback(unsigned int8[] bytesUnknown, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.DecoderExceptionFallbackBuffer.Fallback(System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Fallback (bytesUnknown As Byte(), index As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Fallback(cli::array &lt;System::Byte&gt; ^ bytesUnknown, int index);" />
       <MemberSignature Language="F#" Value="override this.Fallback : byte[] * int -&gt; bool" Usage="decoderExceptionFallbackBuffer.Fallback (bytesUnknown, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Fallback(cli::array &lt;System::Byte&gt; ^ bytesUnknown, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -83,12 +104,25 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -119,8 +153,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance char GetNextChar() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.DecoderExceptionFallbackBuffer.GetNextChar" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetNextChar () As Char" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override char GetNextChar();" />
       <MemberSignature Language="F#" Value="override this.GetNextChar : unit -&gt; char" Usage="decoderExceptionFallbackBuffer.GetNextChar " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override char GetNextChar();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -131,11 +165,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Char</ReturnType>
@@ -161,8 +202,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool MovePrevious() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.DecoderExceptionFallbackBuffer.MovePrevious" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function MovePrevious () As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool MovePrevious();" />
       <MemberSignature Language="F#" Value="override this.MovePrevious : unit -&gt; bool" Usage="decoderExceptionFallbackBuffer.MovePrevious " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool MovePrevious();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -173,11 +214,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -203,8 +251,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 Remaining" />
       <MemberSignature Language="DocId" Value="P:System.Text.DecoderExceptionFallbackBuffer.Remaining" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Remaining As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Remaining { int get(); };" />
       <MemberSignature Language="F#" Value="member this.Remaining : int" Usage="System.Text.DecoderExceptionFallbackBuffer.Remaining" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Remaining { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -215,11 +263,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

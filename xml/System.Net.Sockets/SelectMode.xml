@@ -1,15 +1,21 @@
-﻿<Type Name="SelectMode" FullName="System.Net.Sockets.SelectMode">
+<Type Name="SelectMode" FullName="System.Net.Sockets.SelectMode">
   <TypeSignature Language="C#" Value="public enum SelectMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SelectMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SelectMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum SelectMode" />
-  <TypeSignature Language="C++ CLI" Value="public enum class SelectMode" />
   <TypeSignature Language="F#" Value="type SelectMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SelectMode" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -21,7 +27,15 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Sockets" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Sockets" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Sockets" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Sockets" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Sockets" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
@@ -38,9 +52,9 @@
 ## Examples  
  The following example checks the status of a <xref:System.Net.Sockets.Socket> using all three <xref:System.Net.Sockets.SelectMode> enumeration values. A call to <xref:System.Net.Sockets.Socket.Poll%2A?displayProperty=nameWithType> using the SelectWrite enumerated value should return `true`.  
   
- [!code-cpp[SelectModeExample#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SelectModeExample/CPP/source.cpp#1)]
- [!code-csharp[SelectModeExample#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SelectModeExample/CS/source.cs#1)]
- [!code-vb[SelectModeExample#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SelectModeExample/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/SelectModeExample/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net.Sockets/SelectMode/Overview/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Remoting/SelectModeExample/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -53,14 +67,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SelectMode SelectError = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SelectMode.SelectError" />
       <MemberSignature Language="VB.NET" Value="SelectError" />
-      <MemberSignature Language="C++ CLI" Value="SelectError" />
       <MemberSignature Language="F#" Value="SelectError = 2" Usage="System.Net.Sockets.SelectMode.SelectError" />
+      <MemberSignature Language="C++ CLI" Value="SelectError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -72,6 +92,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SelectMode</ReturnType>
@@ -86,14 +107,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SelectMode SelectRead = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SelectMode.SelectRead" />
       <MemberSignature Language="VB.NET" Value="SelectRead" />
-      <MemberSignature Language="C++ CLI" Value="SelectRead" />
       <MemberSignature Language="F#" Value="SelectRead = 0" Usage="System.Net.Sockets.SelectMode.SelectRead" />
+      <MemberSignature Language="C++ CLI" Value="SelectRead" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -105,6 +132,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SelectMode</ReturnType>
@@ -119,14 +147,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SelectMode SelectWrite = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SelectMode.SelectWrite" />
       <MemberSignature Language="VB.NET" Value="SelectWrite" />
-      <MemberSignature Language="C++ CLI" Value="SelectWrite" />
       <MemberSignature Language="F#" Value="SelectWrite = 1" Usage="System.Net.Sockets.SelectMode.SelectWrite" />
+      <MemberSignature Language="C++ CLI" Value="SelectWrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -138,6 +172,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SelectMode</ReturnType>

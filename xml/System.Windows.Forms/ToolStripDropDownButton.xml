@@ -1,14 +1,19 @@
-﻿<Type Name="ToolStripDropDownButton" FullName="System.Windows.Forms.ToolStripDropDownButton">
+<Type Name="ToolStripDropDownButton" FullName="System.Windows.Forms.ToolStripDropDownButton">
   <TypeSignature Language="C#" Value="public class ToolStripDropDownButton : System.Windows.Forms.ToolStripDropDownItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripDropDownButton extends System.Windows.Forms.ToolStripDropDownItem" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripDropDownButton" />
   <TypeSignature Language="VB.NET" Value="Public Class ToolStripDropDownButton&#xA;Inherits ToolStripDropDownItem" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ToolStripDropDownButton : System::Windows::Forms::ToolStripDropDownItem" />
   <TypeSignature Language="F#" Value="type ToolStripDropDownButton = class&#xA;    inherit ToolStripDropDownItem" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ToolStripDropDownButton : System::Windows::Forms::ToolStripDropDownItem" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Windows.Forms.ToolStripDropDownItem</BaseTypeName>
@@ -16,7 +21,16 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Windows.Forms.Design.ToolStripItemDesignerAvailability(System.Windows.Forms.Design.ToolStripItemDesignerAvailability.ToolStrip | System.Windows.Forms.Design.ToolStripItemDesignerAvailability.StatusStrip)</AttributeName>
+      <AttributeName Language="C#">[System.Windows.Forms.Design.ToolStripItemDesignerAvailability(System.Windows.Forms.Design.ToolStripItemDesignerAvailability.StatusStrip | System.Windows.Forms.Design.ToolStripItemDesignerAvailability.ToolStrip)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Windows.Forms.Design.ToolStripItemDesignerAvailability(System.Windows.Forms.Design.ToolStripItemDesignerAvailability.StatusStrip | System.Windows.Forms.Design.ToolStripItemDesignerAvailability.ToolStrip)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -34,14 +48,14 @@
 ## Examples  
  The following code example displays three <xref:System.Windows.Forms.ToolStripButton> controls when the <xref:System.Windows.Forms.ToolStripDropDownButton> is clicked. The buttons change the foreground color of the form.  
   
- [!code-cpp[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CPP/form1.cpp#5)]
- [!code-csharp[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CS/form1.cs#5)]
- [!code-vb[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/VB/form1.vb#5)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CPP/form1.cpp" id="Snippet5":::
+ :::code language="csharp" source="~/snippets/csharp/System.Windows.Forms/ToolStripButton/Checked/form1.cs" id="Snippet5":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/VB/form1.vb" id="Snippet5":::  
   
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Forms.ToolStripDropDownItem" />
-    <related type="Article" href="https://msdn.microsoft.com/library/e5ef455a-e049-429c-8005-30c93132fb79">ToolStrip Control (Windows Forms)</related>
+    <related type="Article" href="/dotnet/framework/winforms/controls/toolstrip-control-windows-forms">ToolStrip Control (Windows Forms)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -64,6 +78,11 @@
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -74,26 +93,39 @@
 ## Examples  
  The following code example creates and initializes a <xref:System.Windows.Forms.ToolStripDropDownButton> control.  
   
- [!code-cpp[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CPP/form1.cpp#5)]
- [!code-csharp[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CS/form1.cs#5)]
- [!code-vb[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/VB/form1.vb#5)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CPP/form1.cpp" id="Snippet5":::
+ :::code language="csharp" source="~/snippets/csharp/System.Windows.Forms/ToolStripButton/Checked/form1.cs" id="Snippet5":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/VB/form1.vb" id="Snippet5":::  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ToolStripDropDownButton (System.Drawing.Image image);" />
+      <MemberSignature Language="C#" Value="public ToolStripDropDownButton (System.Drawing.Image image);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Image image) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripDropDownButton.#ctor(System.Drawing.Image)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripDropDownButton(System::Drawing::Image ^ image);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (image As Image)" />
       <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripDropDownButton : System.Drawing.Image -&gt; System.Windows.Forms.ToolStripDropDownButton" Usage="new System.Windows.Forms.ToolStripDropDownButton image" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripDropDownButton(System::Drawing::Image ^ image);" />
+      <MemberSignature Language="C#" Value="public ToolStripDropDownButton (System.Drawing.Image? image);" FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="image" Type="System.Drawing.Image" />
       </Parameters>
@@ -104,18 +136,30 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ToolStripDropDownButton (string text);" />
+      <MemberSignature Language="C#" Value="public ToolStripDropDownButton (string text);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripDropDownButton.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (text As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripDropDownButton(System::String ^ text);" />
       <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripDropDownButton : string -&gt; System.Windows.Forms.ToolStripDropDownButton" Usage="new System.Windows.Forms.ToolStripDropDownButton text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripDropDownButton(System::String ^ text);" />
+      <MemberSignature Language="C#" Value="public ToolStripDropDownButton (string? text);" FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="text" Type="System.String" />
       </Parameters>
@@ -126,17 +170,30 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ToolStripDropDownButton (string text, System.Drawing.Image image);" />
+      <MemberSignature Language="C#" Value="public ToolStripDropDownButton (string text, System.Drawing.Image image);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, class System.Drawing.Image image) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripDropDownButton.#ctor(System.String,System.Drawing.Image)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripDropDownButton(System::String ^ text, System::Drawing::Image ^ image);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, image As Image)" />
       <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripDropDownButton : string * System.Drawing.Image -&gt; System.Windows.Forms.ToolStripDropDownButton" Usage="new System.Windows.Forms.ToolStripDropDownButton (text, image)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripDropDownButton(System::String ^ text, System::Drawing::Image ^ image);" />
+      <MemberSignature Language="C#" Value="public ToolStripDropDownButton (string? text, System.Drawing.Image? image);" FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="text" Type="System.String" />
         <Parameter Name="image" Type="System.Drawing.Image" />
@@ -149,17 +206,30 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ToolStripDropDownButton (string text, System.Drawing.Image image, EventHandler onClick);" />
+      <MemberSignature Language="C#" Value="public ToolStripDropDownButton (string text, System.Drawing.Image image, EventHandler onClick);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, class System.Drawing.Image image, class System.EventHandler onClick) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripDropDownButton.#ctor(System.String,System.Drawing.Image,System.EventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripDropDownButton(System::String ^ text, System::Drawing::Image ^ image, EventHandler ^ onClick);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, image As Image, onClick As EventHandler)" />
       <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripDropDownButton : string * System.Drawing.Image * EventHandler -&gt; System.Windows.Forms.ToolStripDropDownButton" Usage="new System.Windows.Forms.ToolStripDropDownButton (text, image, onClick)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripDropDownButton(System::String ^ text, System::Drawing::Image ^ image, EventHandler ^ onClick);" />
+      <MemberSignature Language="C#" Value="public ToolStripDropDownButton (string? text, System.Drawing.Image? image, EventHandler? onClick);" FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="text" Type="System.String" />
         <Parameter Name="image" Type="System.Drawing.Image" />
@@ -174,24 +244,42 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ToolStripDropDownButton (string text, System.Drawing.Image image, params System.Windows.Forms.ToolStripItem[] dropDownItems);" />
+      <MemberSignature Language="C#" Value="public ToolStripDropDownButton (string text, System.Drawing.Image image, params System.Windows.Forms.ToolStripItem[] dropDownItems);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, class System.Drawing.Image image, class System.Windows.Forms.ToolStripItem[] dropDownItems) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripDropDownButton.#ctor(System.String,System.Drawing.Image,System.Windows.Forms.ToolStripItem[])" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripDropDownButton(System::String ^ text, System::Drawing::Image ^ image, ... cli::array &lt;System::Windows::Forms::ToolStripItem ^&gt; ^ dropDownItems);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, image As Image, ParamArray dropDownItems As ToolStripItem())" />
       <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripDropDownButton : string * System.Drawing.Image * System.Windows.Forms.ToolStripItem[] -&gt; System.Windows.Forms.ToolStripDropDownButton" Usage="new System.Windows.Forms.ToolStripDropDownButton (text, image, dropDownItems)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripDropDownButton(System::String ^ text, System::Drawing::Image ^ image, ... cli::array &lt;System::Windows::Forms::ToolStripItem ^&gt; ^ dropDownItems);" />
+      <MemberSignature Language="C#" Value="public ToolStripDropDownButton (string? text, System.Drawing.Image? image, params System.Windows.Forms.ToolStripItem[]? dropDownItems);" FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="text" Type="System.String" />
         <Parameter Name="image" Type="System.Drawing.Image" />
         <Parameter Name="dropDownItems" Type="System.Windows.Forms.ToolStripItem[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
+            </Attribute>
+            <Attribute FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -205,17 +293,30 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ToolStripDropDownButton (string text, System.Drawing.Image image, EventHandler onClick, string name);" />
+      <MemberSignature Language="C#" Value="public ToolStripDropDownButton (string text, System.Drawing.Image image, EventHandler onClick, string name);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, class System.Drawing.Image image, class System.EventHandler onClick, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripDropDownButton.#ctor(System.String,System.Drawing.Image,System.EventHandler,System.String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripDropDownButton(System::String ^ text, System::Drawing::Image ^ image, EventHandler ^ onClick, System::String ^ name);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, image As Image, onClick As EventHandler, name As String)" />
       <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripDropDownButton : string * System.Drawing.Image * EventHandler * string -&gt; System.Windows.Forms.ToolStripDropDownButton" Usage="new System.Windows.Forms.ToolStripDropDownButton (text, image, onClick, name)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripDropDownButton(System::String ^ text, System::Drawing::Image ^ image, EventHandler ^ onClick, System::String ^ name);" />
+      <MemberSignature Language="C#" Value="public ToolStripDropDownButton (string? text, System.Drawing.Image? image, EventHandler? onClick, string? name);" FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="text" Type="System.String" />
         <Parameter Name="image" Type="System.Drawing.Image" />
@@ -236,17 +337,23 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoToolTip" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripDropDownButton.AutoToolTip" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoToolTip As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoToolTip { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.AutoToolTip : bool with get, set" Usage="System.Windows.Forms.ToolStripDropDownButton.AutoToolTip" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoToolTip { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -264,12 +371,17 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Forms.AccessibleObject CreateAccessibilityInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripDropDownButton.CreateAccessibilityInstance" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateAccessibilityInstance () As AccessibleObject" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::AccessibleObject ^ CreateAccessibilityInstance();" />
       <MemberSignature Language="F#" Value="override this.CreateAccessibilityInstance : unit -&gt; System.Windows.Forms.AccessibleObject" Usage="toolStripDropDownButton.CreateAccessibilityInstance " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::AccessibleObject ^ CreateAccessibilityInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AccessibleObject</ReturnType>
@@ -285,7 +397,7 @@
 
 The <xref:System.Windows.Forms.AccessibleObject> instance returned by this method supports the UI Automation expand/collapse pattern. 
 However, it's only available in applications that are running on the .NET Framework 4.7.1 or later versions and are either recompiled to target the .NET Framework 4.7.1 or opt in to this .NET Framework accessibility enhancements by using an AppCompat switch. 
-For more information, see the [migration guide](~/docs/framework/migration-guide/retargeting/4.7-4.7.1.md#windows-forms). 
+For more information, see the [migration guide](/dotnet/framework/migration-guide/retargeting/4.7-4.7.1#windows-forms). 
   
  ]]></format>
         </remarks>
@@ -296,13 +408,18 @@ For more information, see the [migration guide](~/docs/framework/migration-guide
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Forms.ToolStripDropDown CreateDefaultDropDown() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripDropDownButton.CreateDefaultDropDown" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDefaultDropDown () As ToolStripDropDown" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::ToolStripDropDown ^ CreateDefaultDropDown();" />
       <MemberSignature Language="F#" Value="override this.CreateDefaultDropDown : unit -&gt; System.Windows.Forms.ToolStripDropDown" Usage="toolStripDropDownButton.CreateDefaultDropDown " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::ToolStripDropDown ^ CreateDefaultDropDown();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripDropDown</ReturnType>
@@ -319,13 +436,18 @@ For more information, see the [migration guide](~/docs/framework/migration-guide
       <MemberSignature Language="ILAsm" Value=".property instance bool DefaultAutoToolTip" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripDropDownButton.DefaultAutoToolTip" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultAutoToolTip As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool DefaultAutoToolTip { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.DefaultAutoToolTip : bool" Usage="System.Windows.Forms.ToolStripDropDownButton.DefaultAutoToolTip" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool DefaultAutoToolTip { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -342,13 +464,18 @@ For more information, see the [migration guide](~/docs/framework/migration-guide
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseDown(class System.Windows.Forms.MouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripDropDownButton.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseDown (e As MouseEventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseDown(System::Windows::Forms::MouseEventArgs ^ e);" />
       <MemberSignature Language="F#" Value="override this.OnMouseDown : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="toolStripDropDownButton.OnMouseDown e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseDown(System::Windows::Forms::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -363,7 +490,7 @@ For more information, see the [migration guide](~/docs/framework/migration-guide
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.ToolStripDropDownButton.OnMouseDown%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -379,13 +506,18 @@ For more information, see the [migration guide](~/docs/framework/migration-guide
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseLeave(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripDropDownButton.OnMouseLeave(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeave (e As EventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeave(EventArgs ^ e);" />
       <MemberSignature Language="F#" Value="override this.OnMouseLeave : EventArgs -&gt; unit" Usage="toolStripDropDownButton.OnMouseLeave e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeave(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -400,7 +532,7 @@ For more information, see the [migration guide](~/docs/framework/migration-guide
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.ToolStripDropDownButton.OnMouseLeave%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -416,13 +548,18 @@ For more information, see the [migration guide](~/docs/framework/migration-guide
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseUp(class System.Windows.Forms.MouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripDropDownButton.OnMouseUp(System.Windows.Forms.MouseEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseUp (e As MouseEventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseUp(System::Windows::Forms::MouseEventArgs ^ e);" />
       <MemberSignature Language="F#" Value="override this.OnMouseUp : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="toolStripDropDownButton.OnMouseUp e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseUp(System::Windows::Forms::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -441,13 +578,18 @@ For more information, see the [migration guide](~/docs/framework/migration-guide
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPaint(class System.Windows.Forms.PaintEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripDropDownButton.OnPaint(System.Windows.Forms.PaintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaint (e As PaintEventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaint(System::Windows::Forms::PaintEventArgs ^ e);" />
       <MemberSignature Language="F#" Value="override this.OnPaint : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="toolStripDropDownButton.OnPaint e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaint(System::Windows::Forms::PaintEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -462,7 +604,7 @@ For more information, see the [migration guide](~/docs/framework/migration-guide
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.ToolStripDropDownButton.OnPaint%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -478,13 +620,18 @@ For more information, see the [migration guide](~/docs/framework/migration-guide
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool ProcessMnemonic(char charCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripDropDownButton.ProcessMnemonic(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function ProcessMnemonic (charCode As Char) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool ProcessMnemonic(char charCode);" />
       <MemberSignature Language="F#" Value="override this.ProcessMnemonic : char -&gt; bool" Usage="toolStripDropDownButton.ProcessMnemonic charCode" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool ProcessMnemonic(char charCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -498,7 +645,6 @@ For more information, see the [migration guide](~/docs/framework/migration-guide
         <returns>
           <see langword="true" /> if the drop-down list has items; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.Permissions.UIPermission">for all windows for inheriting classes to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /> value of <see cref="T:System.Security.Permissions.UIPermissionWindow" />.</permission>
       </Docs>
     </Member>
     <Member MemberName="ShowDropDownArrow">
@@ -506,20 +652,27 @@ For more information, see the [migration guide](~/docs/framework/migration-guide
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowDropDownArrow" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripDropDownButton.ShowDropDownArrow" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowDropDownArrow As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowDropDownArrow { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.ShowDropDownArrow : bool with get, set" Usage="System.Windows.Forms.ToolStripDropDownButton.ShowDropDownArrow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowDropDownArrow { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(true)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -535,9 +688,9 @@ For more information, see the [migration guide](~/docs/framework/migration-guide
 ## Examples  
  The following code example creates and initializes a <xref:System.Windows.Forms.ToolStripDropDownButton> control. The <xref:System.Windows.Forms.ToolStripDropDownButton.ShowDropDownArrow%2A> property is set to `false`.  
   
- [!code-cpp[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CPP/form1.cpp#5)]
- [!code-csharp[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CS/form1.cs#5)]
- [!code-vb[System.Windows.Forms.ToolStrip1#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/VB/form1.vb#5)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CPP/form1.cpp" id="Snippet5":::
+ :::code language="csharp" source="~/snippets/csharp/System.Windows.Forms/ToolStripButton/Checked/form1.cs" id="Snippet5":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/VB/form1.vb" id="Snippet5":::  
   
  ]]></format>
         </remarks>

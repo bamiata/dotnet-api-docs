@@ -1,10 +1,10 @@
-﻿<Type Name="TableNotEnabledForNotificationException" FullName="System.Web.Caching.TableNotEnabledForNotificationException">
+<Type Name="TableNotEnabledForNotificationException" FullName="System.Web.Caching.TableNotEnabledForNotificationException">
   <TypeSignature Language="C#" Value="public sealed class TableNotEnabledForNotificationException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit TableNotEnabledForNotificationException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.TableNotEnabledForNotificationException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TableNotEnabledForNotificationException&#xA;Inherits SystemException" />
-  <TypeSignature Language="C++ CLI" Value="public ref class TableNotEnabledForNotificationException sealed : SystemException" />
   <TypeSignature Language="F#" Value="type TableNotEnabledForNotificationException = class&#xA;    inherit SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TableNotEnabledForNotificationException sealed : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -16,7 +16,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Serializable</AttributeName>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -27,8 +28,8 @@
 ## Examples  
  The following code example attempts to create a <xref:System.Web.Caching.SqlCacheDependency> object and add an item to the <xref:System.Web.Caching.Cache> with a dependency on the <xref:System.Web.Caching.SqlCacheDependency> object. If the SQL Server database table is not enabled for dependency notifications, the <xref:System.Web.Caching.TableNotEnabledForNotificationException> is thrown and handled by calling the <xref:System.Web.Caching.SqlCacheDependencyAdmin.EnableTableForNotifications%2A?displayProperty=nameWithType> method.  
   
- [!code-csharp[CachingSamples_SqlCacheDependency#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CachingSamples_SqlCacheDependency/CS/sqlcachedepsamplecs.aspx#2)]
- [!code-vb[CachingSamples_SqlCacheDependency#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CachingSamples_SqlCacheDependency/VB/sqlcachedepsamplevb.aspx#2)]  
+ [!code-csharp[CachingSamples_SqlCacheDependency#2](~/snippets/csharp/VS_Snippets_WebNet/CachingSamples_SqlCacheDependency/CS/sqlcachedepsamplecs.aspx#2)]
+ [!code-vb[CachingSamples_SqlCacheDependency#2](~/snippets/visualbasic/VS_Snippets_WebNet/CachingSamples_SqlCacheDependency/VB/sqlcachedepsamplevb.aspx#2)]  
   
  ]]></format>
     </remarks>
@@ -57,7 +58,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -71,8 +73,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.TableNotEnabledForNotificationException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; TableNotEnabledForNotificationException(System::String ^ message);" />
       <MemberSignature Language="F#" Value="new System.Web.Caching.TableNotEnabledForNotificationException : string -&gt; System.Web.Caching.TableNotEnabledForNotificationException" Usage="new System.Web.Caching.TableNotEnabledForNotificationException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TableNotEnabledForNotificationException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -81,7 +83,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -98,8 +101,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.TableNotEnabledForNotificationException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; TableNotEnabledForNotificationException(System::String ^ message, Exception ^ innerException);" />
       <MemberSignature Language="F#" Value="new System.Web.Caching.TableNotEnabledForNotificationException : string * Exception -&gt; System.Web.Caching.TableNotEnabledForNotificationException" Usage="new System.Web.Caching.TableNotEnabledForNotificationException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TableNotEnabledForNotificationException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -108,7 +111,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>

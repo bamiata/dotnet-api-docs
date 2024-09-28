@@ -1,15 +1,21 @@
-﻿<Type Name="TraceLevel" FullName="System.Diagnostics.TraceLevel">
+<Type Name="TraceLevel" FullName="System.Diagnostics.TraceLevel">
   <TypeSignature Language="C#" Value="public enum TraceLevel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TraceLevel extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.TraceLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum TraceLevel" />
-  <TypeSignature Language="C++ CLI" Value="public enum class TraceLevel" />
   <TypeSignature Language="F#" Value="type TraceLevel = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TraceLevel" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -21,7 +27,15 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Diagnostics.TraceSource" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Diagnostics.TraceSource" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Diagnostics.TraceSource" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Diagnostics.TraceSource" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Diagnostics.TraceSource" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
@@ -41,24 +55,7 @@
   
  For more information on instrumenting your application, see <xref:System.Diagnostics.Debug> and <xref:System.Diagnostics.Trace>.  
   
-> [!NOTE]
->  In the .NET Framework version 2.0, you can use text to specify the value for a switch. For example, `true` for a <xref:System.Diagnostics.BooleanSwitch> or the text representing an enumeration value such as `Error` for a <xref:System.Diagnostics.TraceSwitch>. The line `<add name="mySwitch" value="Error" />` is equivalent to `<add name="mySwitch" value="1" />`.  
-  
- In the .NET Framework versions 1.0 and 1.1, trace levels in configuration files are set using the integer value corresponding to the enumeration member, rather than the enumeration member itself, as the following example demonstrates.  
-  
-```xml  
-<configuration>  
-    <system.diagnostics>  
-       <switches>  
-          <add name="mySwitch" value="4" />  
-       </switches>  
-    </system.diagnostics>  
-</configuration>  
-```  
-  
- In addition to setting trace levels using the integer value of the enumeration, the .NET Framework version 2.0 trace levels can be set using the text representation of the enumeration value. For example, `Verbose` for a <xref:System.Diagnostics.TraceSwitch>. The line `<add name="mySwitch" value="Verbose" />` is equivalent to `<add name="mySwitch" value="4" />`.  
-  
- The following table shows the relationship between the <xref:System.Diagnostics.TraceLevel> enumeration members and their corresponding configuration file entries.  
+In .NET Framework app configuration files, you can use text to specify the value for a switch. For example, `true` for a <xref:System.Diagnostics.BooleanSwitch>, or the text representing an enumeration value such as `Error` for a <xref:System.Diagnostics.TraceSwitch>. The line `<add name="mySwitch" value="Error" />` is equivalent to `<add name="mySwitch" value="1" />`. You can also set trace levels using the integer value of the enumeration. The following table shows the relationship between the <xref:System.Diagnostics.TraceLevel> enumeration members and their corresponding configuration file entries.  
   
 |Trace Level|Configuration File Value|  
 |-----------------|------------------------------|  
@@ -80,14 +77,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.TraceLevel Error = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.TraceLevel.Error" />
       <MemberSignature Language="VB.NET" Value="Error" />
-      <MemberSignature Language="C++ CLI" Value="Error" />
       <MemberSignature Language="F#" Value="Error = 1" Usage="System.Diagnostics.TraceLevel.Error" />
+      <MemberSignature Language="C++ CLI" Value="Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -99,6 +102,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.TraceLevel</ReturnType>
@@ -113,14 +117,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.TraceLevel Info = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.TraceLevel.Info" />
       <MemberSignature Language="VB.NET" Value="Info" />
-      <MemberSignature Language="C++ CLI" Value="Info" />
       <MemberSignature Language="F#" Value="Info = 3" Usage="System.Diagnostics.TraceLevel.Info" />
+      <MemberSignature Language="C++ CLI" Value="Info" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -132,6 +142,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.TraceLevel</ReturnType>
@@ -146,14 +157,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.TraceLevel Off = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.TraceLevel.Off" />
       <MemberSignature Language="VB.NET" Value="Off" />
-      <MemberSignature Language="C++ CLI" Value="Off" />
       <MemberSignature Language="F#" Value="Off = 0" Usage="System.Diagnostics.TraceLevel.Off" />
+      <MemberSignature Language="C++ CLI" Value="Off" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -165,6 +182,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.TraceLevel</ReturnType>
@@ -179,14 +197,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.TraceLevel Verbose = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.TraceLevel.Verbose" />
       <MemberSignature Language="VB.NET" Value="Verbose" />
-      <MemberSignature Language="C++ CLI" Value="Verbose" />
       <MemberSignature Language="F#" Value="Verbose = 4" Usage="System.Diagnostics.TraceLevel.Verbose" />
+      <MemberSignature Language="C++ CLI" Value="Verbose" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -198,6 +222,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.TraceLevel</ReturnType>
@@ -212,14 +237,20 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.TraceLevel Warning = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.TraceLevel.Warning" />
       <MemberSignature Language="VB.NET" Value="Warning" />
-      <MemberSignature Language="C++ CLI" Value="Warning" />
       <MemberSignature Language="F#" Value="Warning = 2" Usage="System.Diagnostics.TraceLevel.Warning" />
+      <MemberSignature Language="C++ CLI" Value="Warning" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -231,6 +262,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.TraceLevel</ReturnType>

@@ -1,24 +1,39 @@
-﻿<Type Name="ThreadPoolBoundHandle" FullName="System.Threading.ThreadPoolBoundHandle">
+<Type Name="ThreadPoolBoundHandle" FullName="System.Threading.ThreadPoolBoundHandle">
   <TypeSignature Language="C#" Value="public sealed class ThreadPoolBoundHandle : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ThreadPoolBoundHandle extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Threading.ThreadPoolBoundHandle" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ThreadPoolBoundHandle&#xA;Implements IDisposable" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ThreadPoolBoundHandle sealed : IDisposable" />
   <TypeSignature Language="F#" Value="type ThreadPoolBoundHandle = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ThreadPoolBoundHandle sealed : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Overlapped</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Threading.Overlapped" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Threading.Overlapped" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Threading.Overlapped" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Threading.Overlapped" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Threading.Overlapped" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -29,7 +44,8 @@
   </Interfaces>
   <Attributes>
     <Attribute FrameworkAlternate="netstandard-2.0">
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -51,36 +67,53 @@
       <MemberSignature Language="C#" Value="public System.Threading.NativeOverlapped* AllocateNativeOverlapped (System.Threading.PreAllocatedOverlapped preAllocated);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Threading.NativeOverlapped* AllocateNativeOverlapped(class System.Threading.PreAllocatedOverlapped preAllocated) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPoolBoundHandle.AllocateNativeOverlapped(System.Threading.PreAllocatedOverlapped)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::NativeOverlapped* AllocateNativeOverlapped(System::Threading::PreAllocatedOverlapped ^ preAllocated);" />
       <MemberSignature Language="F#" Value="member this.AllocateNativeOverlapped : System.Threading.PreAllocatedOverlapped -&gt; nativeptr&lt;System.Threading.NativeOverlapped&gt;" Usage="threadPoolBoundHandle.AllocateNativeOverlapped preAllocated" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::NativeOverlapped* AllocateNativeOverlapped(System::Threading::PreAllocatedOverlapped ^ preAllocated);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Overlapped</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;netframework-4.8;netcore-2.2">
-          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        <Attribute>
+          <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.NativeOverlapped*</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="preAllocated" Type="System.Threading.PreAllocatedOverlapped" />
+        <Parameter Name="preAllocated" Type="System.Threading.PreAllocatedOverlapped">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
       </Parameters>
       <Docs>
         <param name="preAllocated">An object from which to create the <see cref="T:System.Threading.NativeOverlapped" /> pointer.</param>
@@ -107,39 +140,61 @@
       </Docs>
     </Member>
     <Member MemberName="AllocateNativeOverlapped">
-      <MemberSignature Language="C#" Value="public System.Threading.NativeOverlapped* AllocateNativeOverlapped (System.Threading.IOCompletionCallback callback, object state, object pinData);" />
+      <MemberSignature Language="C#" Value="public System.Threading.NativeOverlapped* AllocateNativeOverlapped (System.Threading.IOCompletionCallback callback, object state, object pinData);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Threading.NativeOverlapped* AllocateNativeOverlapped(class System.Threading.IOCompletionCallback callback, object state, object pinData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPoolBoundHandle.AllocateNativeOverlapped(System.Threading.IOCompletionCallback,System.Object,System.Object)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::NativeOverlapped* AllocateNativeOverlapped(System::Threading::IOCompletionCallback ^ callback, System::Object ^ state, System::Object ^ pinData);" />
       <MemberSignature Language="F#" Value="member this.AllocateNativeOverlapped : System.Threading.IOCompletionCallback * obj * obj -&gt; nativeptr&lt;System.Threading.NativeOverlapped&gt;" Usage="threadPoolBoundHandle.AllocateNativeOverlapped (callback, state, pinData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::NativeOverlapped* AllocateNativeOverlapped(System::Threading::IOCompletionCallback ^ callback, System::Object ^ state, System::Object ^ pinData);" />
+      <MemberSignature Language="C#" Value="public System.Threading.NativeOverlapped* AllocateNativeOverlapped (System.Threading.IOCompletionCallback callback, object? state, object? pinData);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Overlapped</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;netframework-4.8;netcore-2.2">
-          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        <Attribute>
+          <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.NativeOverlapped*</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="callback" Type="System.Threading.IOCompletionCallback" />
+        <Parameter Name="callback" Type="System.Threading.IOCompletionCallback">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="state" Type="System.Object" />
         <Parameter Name="pinData" Type="System.Object" />
       </Parameters>
@@ -149,7 +204,18 @@
         <param name="pinData">An object or array of objects that represent the input or output buffer for the operation, or <see langword="null" />. Each object represents a buffer, such an array of bytes.</param>
         <summary>Returns an unmanaged pointer to a <see cref="T:System.Threading.NativeOverlapped" /> structure, specifying a delegate that is invoked when the asynchronous I/O operation is complete, a user-provided object that supplies context, and managed objects that serve as buffers.</summary>
         <returns>An unmanaged pointer to a <see cref="T:System.Threading.NativeOverlapped" /> structure.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+The unmanaged pointer returned by this method can be passed to the operating system in overlapped I/O operations. The <xref:System.Threading.NativeOverlapped> structure is fixed in physical memory until <xref:System.Threading.ThreadPoolBoundHandle.FreeNativeOverlapped%2A?displayProperty=nameWithType> is called.
+
+> [!NOTE]
+> The buffers specified in `pinData` are pinned for the duration of the I/O operation.
+
+The buffer or buffers specified in `pinData` must be the same as those passed to the unmanaged operating system function that performs the asynchronous I/O. 
+
+        ]]></format>
+        </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="callback" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">This method was called after the <see cref="T:System.Threading.ThreadPoolBoundHandle" /> object was disposed.</exception>
@@ -160,26 +226,39 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.ThreadPoolBoundHandle BindHandle(class System.Runtime.InteropServices.SafeHandle handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPoolBoundHandle.BindHandle(System.Runtime.InteropServices.SafeHandle)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function BindHandle (handle As SafeHandle) As ThreadPoolBoundHandle" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::ThreadPoolBoundHandle ^ BindHandle(System::Runtime::InteropServices::SafeHandle ^ handle);" />
       <MemberSignature Language="F#" Value="static member BindHandle : System.Runtime.InteropServices.SafeHandle -&gt; System.Threading.ThreadPoolBoundHandle" Usage="System.Threading.ThreadPoolBoundHandle.BindHandle handle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::ThreadPoolBoundHandle ^ BindHandle(System::Runtime::InteropServices::SafeHandle ^ handle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Overlapped</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -225,21 +304,29 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPoolBoundHandle.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="threadPoolBoundHandle.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Overlapped</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -258,29 +345,39 @@
       <MemberSignature Language="C#" Value="public void FreeNativeOverlapped (System.Threading.NativeOverlapped* overlapped);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FreeNativeOverlapped(valuetype System.Threading.NativeOverlapped* overlapped) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPoolBoundHandle.FreeNativeOverlapped(System.Threading.NativeOverlapped*)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void FreeNativeOverlapped(System::Threading::NativeOverlapped* overlapped);" />
       <MemberSignature Language="F#" Value="member this.FreeNativeOverlapped : nativeptr&lt;System.Threading.NativeOverlapped&gt; -&gt; unit" Usage="threadPoolBoundHandle.FreeNativeOverlapped overlapped" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void FreeNativeOverlapped(System::Threading::NativeOverlapped* overlapped);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Overlapped</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;netframework-4.8;netcore-2.2">
-          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        <Attribute>
+          <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -290,7 +387,7 @@
         <Parameter Name="overlapped" Type="System.Threading.NativeOverlapped*" />
       </Parameters>
       <Docs>
-        <param name="overlapped">An unmanaged pointer to the <see cref="T:System.Threading.NativeOverlapped" /> structure structure to be freed.</param>
+        <param name="overlapped">An unmanaged pointer to the <see cref="T:System.Threading.NativeOverlapped" /> structure to be freed.</param>
         <summary>Frees the memory associated with a <see cref="T:System.Threading.NativeOverlapped" /> structure allocated by the <see cref="Overload:System.Threading.ThreadPoolBoundHandle.AllocateNativeOverlapped" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -298,7 +395,7 @@
 ## Remarks  
   
 > [!CAUTION]
->  You must call the <xref:System.Threading.ThreadPoolBoundHandle.FreeNativeOverlapped%2A> method exactly once on every <xref:System.Threading.NativeOverlapped> unmanaged pointer allocated by using the <xref:System.Threading.ThreadPoolBoundHandle.AllocateNativeOverlapped%2A> method. If you do not call the <xref:System.Threading.ThreadPoolBoundHandle.FreeNativeOverlapped%2A> method, you will leak memory. If you call the <xref:System.Threading.ThreadPoolBoundHandle.FreeNativeOverlapped%2A> method method more than once on the same <xref:System.Threading.NativeOverlapped> unmanaged pointer, memory will be corrupted.  
+>  You must call the <xref:System.Threading.ThreadPoolBoundHandle.FreeNativeOverlapped%2A> method exactly once on every <xref:System.Threading.NativeOverlapped> unmanaged pointer allocated by using the <xref:System.Threading.ThreadPoolBoundHandle.AllocateNativeOverlapped%2A> method. If you do not call the <xref:System.Threading.ThreadPoolBoundHandle.FreeNativeOverlapped%2A> method, you will leak memory. If you call the <xref:System.Threading.ThreadPoolBoundHandle.FreeNativeOverlapped%2A> method more than once on the same <xref:System.Threading.NativeOverlapped> unmanaged pointer, memory will be corrupted.  
   
  ]]></format>
         </remarks>
@@ -308,32 +405,43 @@
       </Docs>
     </Member>
     <Member MemberName="GetNativeOverlappedState">
-      <MemberSignature Language="C#" Value="public static object GetNativeOverlappedState (System.Threading.NativeOverlapped* overlapped);" />
+      <MemberSignature Language="C#" Value="public static object GetNativeOverlappedState (System.Threading.NativeOverlapped* overlapped);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetNativeOverlappedState(valuetype System.Threading.NativeOverlapped* overlapped) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPoolBoundHandle.GetNativeOverlappedState(System.Threading.NativeOverlapped*)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetNativeOverlappedState(System::Threading::NativeOverlapped* overlapped);" />
       <MemberSignature Language="F#" Value="static member GetNativeOverlappedState : nativeptr&lt;System.Threading.NativeOverlapped&gt; -&gt; obj" Usage="System.Threading.ThreadPoolBoundHandle.GetNativeOverlappedState overlapped" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetNativeOverlappedState(System::Threading::NativeOverlapped* overlapped);" />
+      <MemberSignature Language="C#" Value="public static object? GetNativeOverlappedState (System.Threading.NativeOverlapped* overlapped);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Overlapped</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;netframework-4.8;netcore-2.2">
-          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        <Attribute>
+          <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -345,7 +453,7 @@
       <Docs>
         <param name="overlapped">An unmanaged pointer to the <see cref="T:System.Threading.NativeOverlapped" /> structure from which to return the associated user-provided object.</param>
         <summary>Returns the user-provided object that was specified when the <see cref="T:System.Threading.NativeOverlapped" /> instance was allocated by calling the <see cref="M:System.Threading.ThreadPoolBoundHandle.AllocateNativeOverlapped(System.Threading.IOCompletionCallback,System.Object,System.Object)" /> method.</summary>
-        <returns>A user-provided object that distinguishes this <see cref="T:System.Threading.NativeOverlapped" /> instance from other <see cref="T:System.Threading.NativeOverlapped" /> instances, or <see langword="null" /> if one was not specified when the intstance was allocated by calling the <see cref="Overload:System.Threading.ThreadPoolBoundHandle.AllocateNativeOverlapped" /> method.</returns>
+        <returns>A user-provided object that distinguishes this <see cref="T:System.Threading.NativeOverlapped" /> instance from other <see cref="T:System.Threading.NativeOverlapped" /> instances, or <see langword="null" /> if one was not specified when the instance was allocated by calling the <see cref="Overload:System.Threading.ThreadPoolBoundHandle.AllocateNativeOverlapped" /> method.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="overlapped" /> is <see langword="null" />.</exception>
@@ -356,26 +464,43 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.InteropServices.SafeHandle Handle" />
       <MemberSignature Language="DocId" Value="P:System.Threading.ThreadPoolBoundHandle.Handle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Handle As SafeHandle" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::InteropServices::SafeHandle ^ Handle { System::Runtime::InteropServices::SafeHandle ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Handle : System.Runtime.InteropServices.SafeHandle" Usage="System.Threading.ThreadPoolBoundHandle.Handle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::InteropServices::SafeHandle ^ Handle { System::Runtime::InteropServices::SafeHandle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Overlapped</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[get: System.Security.SecurityCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Security.SecurityCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -385,6 +510,76 @@
         <summary>Gets the bound operating system handle.</summary>
         <value>An object that holds the bound operating system handle.</value>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsafeAllocateNativeOverlapped">
+      <MemberSignature Language="C#" Value="public System.Threading.NativeOverlapped* UnsafeAllocateNativeOverlapped (System.Threading.IOCompletionCallback callback, object? state, object? pinData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Threading.NativeOverlapped* UnsafeAllocateNativeOverlapped(class System.Threading.IOCompletionCallback callback, object state, object pinData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPoolBoundHandle.UnsafeAllocateNativeOverlapped(System.Threading.IOCompletionCallback,System.Object,System.Object)" />
+      <MemberSignature Language="F#" Value="member this.UnsafeAllocateNativeOverlapped : System.Threading.IOCompletionCallback * obj * obj -&gt; nativeptr&lt;System.Threading.NativeOverlapped&gt;" Usage="threadPoolBoundHandle.UnsafeAllocateNativeOverlapped (callback, state, pinData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::NativeOverlapped* UnsafeAllocateNativeOverlapped(System::Threading::IOCompletionCallback ^ callback, System::Object ^ state, System::Object ^ pinData);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Overlapped</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.NativeOverlapped*</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="callback" Type="System.Threading.IOCompletionCallback" Index="0" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="state" Type="System.Object" Index="1" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0" />
+        <Parameter Name="pinData" Type="System.Object" Index="2" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0" />
+      </Parameters>
+      <Docs>
+        <param name="callback">An <see cref="T:System.Threading.IOCompletionCallback" /> delegate that represents the callback method invoked when the asynchronous I/O operation completes.</param>
+        <param name="state">A user-provided object that distinguishes this <see cref="T:System.Threading.NativeOverlapped" /> from other <see cref="T:System.Threading.NativeOverlapped" /> instances. Can be <see langword="null" />.</param>
+        <param name="pinData">An object or array of objects representing the input or output buffer for the operation. Each object represents a buffer, for example an array of bytes.  Can be <see langword="null" />.</param>
+        <summary>Returns an unmanaged pointer to a <see cref="T:System.Threading.NativeOverlapped" /> structure, specifying a delegate that is invoked when the asynchronous I/O operation is complete, a user-provided object providing context, and managed objects that serve as buffers.</summary>
+        <returns>An unmanaged pointer to a <see cref="T:System.Threading.NativeOverlapped" /> structure.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+The unmanaged pointer returned by this method can be passed to the operating system in overlapped I/O operations. The <xref:System.Threading.NativeOverlapped> structure is fixed in physical memory until <xref:System.Threading.ThreadPoolBoundHandle.FreeNativeOverlapped(System.Threading.NativeOverlapped*)> is called.
+
+The buffer or buffers specified in `pinData` must be the same as those passed to the unmanaged operating system function that performs the asynchronous I/O.
+
+<xref:System.Threading.ExecutionContext> is not flowed to the invocation of the callback.
+
+> [!NOTE]
+> The buffers specified in `pinData` are pinned for the duration of the I/O operation.
+
+          ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callback" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">This method was called after the <see cref="T:System.Threading.ThreadPoolBoundHandle" /> was disposed.</exception>
       </Docs>
     </Member>
   </Members>

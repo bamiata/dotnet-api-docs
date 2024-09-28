@@ -1,15 +1,21 @@
-﻿<Type Name="UnicastIPAddressInformation" FullName="System.Net.NetworkInformation.UnicastIPAddressInformation">
+<Type Name="UnicastIPAddressInformation" FullName="System.Net.NetworkInformation.UnicastIPAddressInformation">
   <TypeSignature Language="C#" Value="public abstract class UnicastIPAddressInformation : System.Net.NetworkInformation.IPAddressInformation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit UnicastIPAddressInformation extends System.Net.NetworkInformation.IPAddressInformation" />
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.UnicastIPAddressInformation" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class UnicastIPAddressInformation&#xA;Inherits IPAddressInformation" />
-  <TypeSignature Language="C++ CLI" Value="public ref class UnicastIPAddressInformation abstract : System::Net::NetworkInformation::IPAddressInformation" />
   <TypeSignature Language="F#" Value="type UnicastIPAddressInformation = class&#xA;    inherit IPAddressInformation" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UnicastIPAddressInformation abstract : System::Net::NetworkInformation::IPAddressInformation" />
   <AssemblyInfo>
     <AssemblyName>System.Net.NetworkInformation</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -20,11 +26,29 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.NetworkInformation" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.NetworkInformation" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.NetworkInformation" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.NetworkInformation" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.NetworkInformation" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Net.NetworkInformation.IPAddressInformation</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Provides information about a network interface's unicast address.</summary>
     <remarks>
@@ -49,6 +73,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -59,10 +89,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -83,14 +115,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance int64 AddressPreferredLifetime" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.UnicastIPAddressInformation.AddressPreferredLifetime" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property AddressPreferredLifetime As Long" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long AddressPreferredLifetime { long get(); };" />
       <MemberSignature Language="F#" Value="member this.AddressPreferredLifetime : int64" Usage="System.Net.NetworkInformation.UnicastIPAddressInformation.AddressPreferredLifetime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long AddressPreferredLifetime { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -101,7 +139,14 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-7.0;net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
@@ -124,14 +169,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance int64 AddressValidLifetime" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.UnicastIPAddressInformation.AddressValidLifetime" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property AddressValidLifetime As Long" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long AddressValidLifetime { long get(); };" />
       <MemberSignature Language="F#" Value="member this.AddressValidLifetime : int64" Usage="System.Net.NetworkInformation.UnicastIPAddressInformation.AddressValidLifetime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long AddressValidLifetime { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -142,7 +193,14 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-7.0;net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
@@ -165,14 +223,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance int64 DhcpLeaseLifetime" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.UnicastIPAddressInformation.DhcpLeaseLifetime" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DhcpLeaseLifetime As Long" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long DhcpLeaseLifetime { long get(); };" />
       <MemberSignature Language="F#" Value="member this.DhcpLeaseLifetime : int64" Usage="System.Net.NetworkInformation.UnicastIPAddressInformation.DhcpLeaseLifetime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long DhcpLeaseLifetime { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -183,7 +247,14 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-7.0;net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
@@ -207,14 +278,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.NetworkInformation.DuplicateAddressDetectionState DuplicateAddressDetectionState" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.UnicastIPAddressInformation.DuplicateAddressDetectionState" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DuplicateAddressDetectionState As DuplicateAddressDetectionState" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Net::NetworkInformation::DuplicateAddressDetectionState DuplicateAddressDetectionState { System::Net::NetworkInformation::DuplicateAddressDetectionState get(); };" />
       <MemberSignature Language="F#" Value="member this.DuplicateAddressDetectionState : System.Net.NetworkInformation.DuplicateAddressDetectionState" Usage="System.Net.NetworkInformation.UnicastIPAddressInformation.DuplicateAddressDetectionState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Net::NetworkInformation::DuplicateAddressDetectionState DuplicateAddressDetectionState { System::Net::NetworkInformation::DuplicateAddressDetectionState get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -225,7 +302,14 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-7.0;net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.DuplicateAddressDetectionState</ReturnType>
       </ReturnValue>
@@ -248,14 +332,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.IPAddress IPv4Mask" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.UnicastIPAddressInformation.IPv4Mask" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IPv4Mask As IPAddress" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Net::IPAddress ^ IPv4Mask { System::Net::IPAddress ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.IPv4Mask : System.Net.IPAddress" Usage="System.Net.NetworkInformation.UnicastIPAddressInformation.IPv4Mask" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Net::IPAddress ^ IPv4Mask { System::Net::IPAddress ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -266,6 +356,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.IPAddress</ReturnType>
@@ -281,14 +372,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 PrefixLength" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.UnicastIPAddressInformation.PrefixLength" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PrefixLength As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int PrefixLength { int get(); };" />
       <MemberSignature Language="F#" Value="member this.PrefixLength : int" Usage="System.Net.NetworkInformation.UnicastIPAddressInformation.PrefixLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int PrefixLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -298,6 +395,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -313,14 +411,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.NetworkInformation.PrefixOrigin PrefixOrigin" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.UnicastIPAddressInformation.PrefixOrigin" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property PrefixOrigin As PrefixOrigin" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Net::NetworkInformation::PrefixOrigin PrefixOrigin { System::Net::NetworkInformation::PrefixOrigin get(); };" />
       <MemberSignature Language="F#" Value="member this.PrefixOrigin : System.Net.NetworkInformation.PrefixOrigin" Usage="System.Net.NetworkInformation.UnicastIPAddressInformation.PrefixOrigin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Net::NetworkInformation::PrefixOrigin PrefixOrigin { System::Net::NetworkInformation::PrefixOrigin get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -331,7 +435,14 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-7.0;net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.PrefixOrigin</ReturnType>
       </ReturnValue>
@@ -354,14 +465,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.NetworkInformation.SuffixOrigin SuffixOrigin" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.UnicastIPAddressInformation.SuffixOrigin" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property SuffixOrigin As SuffixOrigin" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Net::NetworkInformation::SuffixOrigin SuffixOrigin { System::Net::NetworkInformation::SuffixOrigin get(); };" />
       <MemberSignature Language="F#" Value="member this.SuffixOrigin : System.Net.NetworkInformation.SuffixOrigin" Usage="System.Net.NetworkInformation.UnicastIPAddressInformation.SuffixOrigin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Net::NetworkInformation::SuffixOrigin SuffixOrigin { System::Net::NetworkInformation::SuffixOrigin get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -372,7 +489,14 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-7.0;net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.SuffixOrigin</ReturnType>
       </ReturnValue>

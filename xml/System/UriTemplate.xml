@@ -1,10 +1,10 @@
-﻿<Type Name="UriTemplate" FullName="System.UriTemplate">
+<Type Name="UriTemplate" FullName="System.UriTemplate">
   <TypeSignature Language="C#" Value="public class UriTemplate" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UriTemplate extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.UriTemplate" />
   <TypeSignature Language="VB.NET" Value="Public Class UriTemplate" />
-  <TypeSignature Language="C++ CLI" Value="public ref class UriTemplate" />
   <TypeSignature Language="F#" Value="type UriTemplate = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UriTemplate" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,13 +15,17 @@
     <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.ServiceModel.Web" FromVersion="4.0.0.0" To="System.ServiceModel" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -49,8 +53,8 @@
 ## Examples  
  The following code demonstrates how to create a <xref:System.UriTemplate> instance, and bind and match it to a candidate URI.  
   
- [!code-csharp[UriTemplate#0](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplate/cs/snippets.cs#0)]
- [!code-vb[UriTemplate#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplate/vb/snippets.vb#0)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/uritemplate/cs/snippets.cs" id="Snippet0":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/uritemplate/vb/snippets.vb" id="Snippet0":::  
   
  ]]></format>
     </remarks>
@@ -62,7 +66,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.UriTemplate" /> class</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.UriTemplate" /> class.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -70,8 +74,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string template) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UriTemplate.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (template As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; UriTemplate(System::String ^ template);" />
       <MemberSignature Language="F#" Value="new UriTemplate : string -&gt; UriTemplate" Usage="new System.UriTemplate template" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UriTemplate(System::String ^ template);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -79,13 +83,12 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -100,8 +103,8 @@
 ## Examples  
  The following example shows how to call the constructor.  
   
- [!code-csharp[UriTemplate#1](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplate/cs/snippets.cs#1)]
- [!code-vb[UriTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplate/vb/snippets.vb#1)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/uritemplate/cs/snippets.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/uritemplate/vb/snippets.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -112,8 +115,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string template, bool ignoreTrailingSlash) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UriTemplate.#ctor(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (template As String, ignoreTrailingSlash As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; UriTemplate(System::String ^ template, bool ignoreTrailingSlash);" />
       <MemberSignature Language="F#" Value="new UriTemplate : string * bool -&gt; UriTemplate" Usage="new System.UriTemplate (template, ignoreTrailingSlash)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UriTemplate(System::String ^ template, bool ignoreTrailingSlash);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -121,13 +124,12 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -142,15 +144,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the `ignoreTrailingSlash` is set to `true`, trailing slashes on the end of template are ignored when matching a candidate URI. For example, a template such as "http://www.microsoft.com/customer/" would match the following candidate URIs:  
+ When the `ignoreTrailingSlash` is set to `true`, trailing slashes on the end of template are ignored when matching a candidate URI. For example, a template such as `http://www.microsoft.com/customer/` would match the following candidate URIs:  
   
--   "http://www.microsoft.com/customer/"  
-  
--   "http://www.microsoft.com/customer"  
-  
--   "http://www.microsoft.com/customer/?wsdl"  
-  
--   "http://www.microsoft.com/customer?wsdl"  
+- `http://www.microsoft.com/customer/`  
+- `http://www.microsoft.com/customer`  
+- `http://www.microsoft.com/customer/?wsdl`  
+- `http://www.microsoft.com/customer?wsdl`
   
  ]]></format>
         </remarks>
@@ -161,8 +160,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string template, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; additionalDefaults) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UriTemplate.#ctor(System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (template As String, additionalDefaults As IDictionary(Of String, String))" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; UriTemplate(System::String ^ template, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ additionalDefaults);" />
       <MemberSignature Language="F#" Value="new UriTemplate : string * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; UriTemplate" Usage="new System.UriTemplate (template, additionalDefaults)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UriTemplate(System::String ^ template, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ additionalDefaults);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -170,13 +169,12 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -195,8 +193,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string template, bool ignoreTrailingSlash, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; additionalDefaults) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UriTemplate.#ctor(System.String,System.Boolean,System.Collections.Generic.IDictionary{System.String,System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (template As String, ignoreTrailingSlash As Boolean, additionalDefaults As IDictionary(Of String, String))" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; UriTemplate(System::String ^ template, bool ignoreTrailingSlash, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ additionalDefaults);" />
       <MemberSignature Language="F#" Value="new UriTemplate : string * bool * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; UriTemplate" Usage="new System.UriTemplate (template, ignoreTrailingSlash, additionalDefaults)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UriTemplate(System::String ^ template, bool ignoreTrailingSlash, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ additionalDefaults);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -204,9 +202,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="template" Type="System.String" />
@@ -236,8 +232,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Uri BindByName(class System.Uri baseAddress, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UriTemplate.BindByName(System.Uri,System.Collections.Generic.IDictionary{System.String,System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Function BindByName (baseAddress As Uri, parameters As IDictionary(Of String, String)) As Uri" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Uri ^ BindByName(Uri ^ baseAddress, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ parameters);" />
       <MemberSignature Language="F#" Value="member this.BindByName : Uri * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Uri" Usage="uriTemplate.BindByName (baseAddress, parameters)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Uri ^ BindByName(Uri ^ baseAddress, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -245,13 +241,12 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -287,8 +282,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Uri BindByName(class System.Uri baseAddress, class System.Collections.Specialized.NameValueCollection parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UriTemplate.BindByName(System.Uri,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Function BindByName (baseAddress As Uri, parameters As NameValueCollection) As Uri" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Uri ^ BindByName(Uri ^ baseAddress, System::Collections::Specialized::NameValueCollection ^ parameters);" />
       <MemberSignature Language="F#" Value="member this.BindByName : Uri * System.Collections.Specialized.NameValueCollection -&gt; Uri" Usage="uriTemplate.BindByName (baseAddress, parameters)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Uri ^ BindByName(Uri ^ baseAddress, System::Collections::Specialized::NameValueCollection ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -296,13 +291,12 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -334,8 +328,8 @@
 ## Examples  
  The following example shows how to call the <xref:System.UriTemplate.BindByName%28System.Uri%2CSystem.Collections.Specialized.NameValueCollection%29> method.  
   
- [!code-csharp[UriTemplate#4](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplate/cs/snippets.cs#4)]
- [!code-vb[UriTemplate#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplate/vb/snippets.vb#4)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/uritemplate/cs/snippets.cs" id="Snippet4":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/uritemplate/vb/snippets.vb" id="Snippet4":::  
   
  ]]></format>
         </remarks>
@@ -346,8 +340,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Uri BindByName(class System.Uri baseAddress, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; parameters, bool omitDefaults) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UriTemplate.BindByName(System.Uri,System.Collections.Generic.IDictionary{System.String,System.String},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function BindByName (baseAddress As Uri, parameters As IDictionary(Of String, String), omitDefaults As Boolean) As Uri" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Uri ^ BindByName(Uri ^ baseAddress, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ parameters, bool omitDefaults);" />
       <MemberSignature Language="F#" Value="member this.BindByName : Uri * System.Collections.Generic.IDictionary&lt;string, string&gt; * bool -&gt; Uri" Usage="uriTemplate.BindByName (baseAddress, parameters, omitDefaults)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Uri ^ BindByName(Uri ^ baseAddress, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ parameters, bool omitDefaults);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -355,9 +349,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -382,8 +374,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Uri BindByName(class System.Uri baseAddress, class System.Collections.Specialized.NameValueCollection parameters, bool omitDefaults) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UriTemplate.BindByName(System.Uri,System.Collections.Specialized.NameValueCollection,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function BindByName (baseAddress As Uri, parameters As NameValueCollection, omitDefaults As Boolean) As Uri" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Uri ^ BindByName(Uri ^ baseAddress, System::Collections::Specialized::NameValueCollection ^ parameters, bool omitDefaults);" />
       <MemberSignature Language="F#" Value="member this.BindByName : Uri * System.Collections.Specialized.NameValueCollection * bool -&gt; Uri" Usage="uriTemplate.BindByName (baseAddress, parameters, omitDefaults)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Uri ^ BindByName(Uri ^ baseAddress, System::Collections::Specialized::NameValueCollection ^ parameters, bool omitDefaults);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -391,9 +383,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -418,8 +408,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Uri BindByPosition(class System.Uri baseAddress, string[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UriTemplate.BindByPosition(System.Uri,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Function BindByPosition (baseAddress As Uri, ParamArray values As String()) As Uri" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Uri ^ BindByPosition(Uri ^ baseAddress, ... cli::array &lt;System::String ^&gt; ^ values);" />
       <MemberSignature Language="F#" Value="member this.BindByPosition : Uri * string[] -&gt; Uri" Usage="uriTemplate.BindByPosition (baseAddress, values)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Uri ^ BindByPosition(Uri ^ baseAddress, ... cli::array &lt;System::String ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -427,9 +417,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -439,7 +427,8 @@
         <Parameter Name="values" Type="System.String[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -480,8 +469,8 @@
 ## Examples  
  The following example shows how to call the <xref:System.UriTemplate.BindByPosition%28System.Uri%2CSystem.String%5B%5D%29>.  
   
- [!code-csharp[UriTemplate#5](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplate/cs/snippets.cs#5)]
- [!code-vb[UriTemplate#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplate/vb/snippets.vb#5)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/uritemplate/cs/snippets.cs" id="Snippet5":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/uritemplate/vb/snippets.vb" id="Snippet5":::  
   
  ]]></format>
         </remarks>
@@ -492,8 +481,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; Defaults" />
       <MemberSignature Language="DocId" Value="P:System.UriTemplate.Defaults" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Defaults As IDictionary(Of String, String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ Defaults { System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Defaults : System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="System.UriTemplate.Defaults" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ Defaults { System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -501,9 +490,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
@@ -519,8 +506,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreTrailingSlash" />
       <MemberSignature Language="DocId" Value="P:System.UriTemplate.IgnoreTrailingSlash" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IgnoreTrailingSlash As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreTrailingSlash { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IgnoreTrailingSlash : bool" Usage="System.UriTemplate.IgnoreTrailingSlash" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreTrailingSlash { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -528,13 +515,12 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -552,8 +538,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsEquivalentTo(class System.UriTemplate other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UriTemplate.IsEquivalentTo(System.UriTemplate)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsEquivalentTo (other As UriTemplate) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsEquivalentTo(UriTemplate ^ other);" />
       <MemberSignature Language="F#" Value="member this.IsEquivalentTo : UriTemplate -&gt; bool" Usage="uriTemplate.IsEquivalentTo other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsEquivalentTo(UriTemplate ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -561,9 +547,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -587,8 +571,8 @@
 ## Examples  
  The following example shows how to call the <xref:System.UriTemplate.IsEquivalentTo%28System.UriTemplate%29>.  
   
- [!code-csharp[UriTemplate#6](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplate/cs/snippets.cs#6)]
- [!code-vb[UriTemplate#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplate/vb/snippets.vb#6)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/uritemplate/cs/snippets.cs" id="Snippet6":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/uritemplate/vb/snippets.vb" id="Snippet6":::  
   
  ]]></format>
         </remarks>
@@ -599,8 +583,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.UriTemplateMatch Match(class System.Uri baseAddress, class System.Uri candidate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UriTemplate.Match(System.Uri,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Function Match (baseAddress As Uri, candidate As Uri) As UriTemplateMatch" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; UriTemplateMatch ^ Match(Uri ^ baseAddress, Uri ^ candidate);" />
       <MemberSignature Language="F#" Value="member this.Match : Uri * Uri -&gt; UriTemplateMatch" Usage="uriTemplate.Match (baseAddress, candidate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UriTemplateMatch ^ Match(Uri ^ baseAddress, Uri ^ candidate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -608,9 +592,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.UriTemplateMatch</ReturnType>
@@ -635,8 +617,8 @@
 ## Examples  
  The following example shows how to call the <xref:System.UriTemplate.Match%28System.Uri%2CSystem.Uri%29> method.  
   
- [!code-csharp[UriTemplate#7](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplate/cs/snippets.cs#7)]
- [!code-vb[UriTemplate#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplate/vb/snippets.vb#7)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/uritemplate/cs/snippets.cs" id="Snippet7":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/uritemplate/vb/snippets.vb" id="Snippet7":::  
   
  ]]></format>
         </remarks>
@@ -647,8 +629,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; PathSegmentVariableNames" />
       <MemberSignature Language="DocId" Value="P:System.UriTemplate.PathSegmentVariableNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PathSegmentVariableNames As ReadOnlyCollection(Of String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ PathSegmentVariableNames { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.PathSegmentVariableNames : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt;" Usage="System.UriTemplate.PathSegmentVariableNames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ PathSegmentVariableNames { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -656,9 +638,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.String&gt;</ReturnType>
@@ -677,8 +657,8 @@
 ## Examples  
  The following example shows how to access the <xref:System.UriTemplate.PathSegmentVariableNames%2A> property.  
   
- [!code-csharp[UriTemplate#2](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplate/cs/snippets.cs#2)]
- [!code-vb[UriTemplate#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplate/vb/snippets.vb#2)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/uritemplate/cs/snippets.cs" id="Snippet2":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/uritemplate/vb/snippets.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -689,8 +669,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; QueryValueVariableNames" />
       <MemberSignature Language="DocId" Value="P:System.UriTemplate.QueryValueVariableNames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueryValueVariableNames As ReadOnlyCollection(Of String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ QueryValueVariableNames { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.QueryValueVariableNames : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt;" Usage="System.UriTemplate.QueryValueVariableNames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ QueryValueVariableNames { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -698,9 +678,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.String&gt;</ReturnType>
@@ -719,8 +697,8 @@
 ## Examples  
  The following example shows how to access the <xref:System.UriTemplate.QueryValueVariableNames%2A> property.  
   
- [!code-csharp[UriTemplate#3](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplate/cs/snippets.cs#3)]
- [!code-vb[UriTemplate#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplate/vb/snippets.vb#3)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/uritemplate/cs/snippets.cs" id="Snippet3":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/uritemplate/vb/snippets.vb" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -731,8 +709,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UriTemplate.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="uriTemplate.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -740,9 +718,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -757,8 +733,8 @@
 ## Examples  
  The following example shows how to call the <xref:System.UriTemplate.ToString> method.  
   
- [!code-csharp[UriTemplate#8](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplate/cs/snippets.cs#8)]
- [!code-vb[UriTemplate#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplate/vb/snippets.vb#8)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/uritemplate/cs/snippets.cs" id="Snippet8":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CFX/uritemplate/vb/snippets.vb" id="Snippet8":::  
   
  ]]></format>
         </remarks>

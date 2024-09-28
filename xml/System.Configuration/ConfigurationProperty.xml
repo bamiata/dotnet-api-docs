@@ -1,10 +1,10 @@
-﻿<Type Name="ConfigurationProperty" FullName="System.Configuration.ConfigurationProperty">
+<Type Name="ConfigurationProperty" FullName="System.Configuration.ConfigurationProperty">
   <TypeSignature Language="C#" Value="public sealed class ConfigurationProperty" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ConfigurationProperty extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationProperty" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConfigurationProperty" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ConfigurationProperty sealed" />
   <TypeSignature Language="F#" Value="type ConfigurationProperty = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConfigurationProperty sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -12,9 +12,18 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+    <AssemblyVersion>4.0.3.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Configuration.ConfigurationManager" FromVersion="9.0.0.0" To="System.Configuration" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -22,56 +31,56 @@
   <Docs>
     <summary>Represents an attribute or a child of a configuration element. This class cannot be inherited.</summary>
     <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In the case of a simple <xref:System.Configuration.ConfigurationElement>, such as the `CustomSection` shown in the next example, the <xref:System.Configuration.ConfigurationProperty> objects represent attributes such as `fileName`.  
-  
- In the case of more complex configuration elements such as a section containing subsections, for instance `authentication`, the <xref:System.Configuration.ConfigurationProperty> objects can represent <xref:System.Configuration.ConfigurationElement> objects as well as attributes.  
-  
- The <xref:System.Configuration.ConfigurationPropertyCollection> class represents the collection of the <xref:System.Configuration.ConfigurationProperty> objects that can be either attributes or <xref:System.Configuration.ConfigurationElement> objects of a configuration element.  
-  
- The <xref:System.Configuration.ConfigurationProperty> class represents an individual configuration setting. This class allows you to get or set the name, type, and default value for a particular configuration entity (attribute or element) and specify whether the attribute is required, is an element key, or represents a default element collection.  
-  
-   
-  
-## Examples  
-  
-1.  The following code example shows how to use the <xref:System.Configuration.ConfigurationProperty> when you create a custom section.  
-  
- [!code-csharp[System.Configuration.ConfigurationProperty#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#1)]
- [!code-vb[System.Configuration.ConfigurationProperty#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#1)]  
-  
- The following is an excerpt of the configuration file used by the code in the previous example.  
-  
+      <format type="text/markdown"><![CDATA[
+
+## Remarks
+ In the case of a simple <xref:System.Configuration.ConfigurationElement>, such as the `CustomSection` shown in the next example, the <xref:System.Configuration.ConfigurationProperty> objects represent attributes such as `fileName`.
+
+ In the case of more complex configuration elements such as a section containing subsections, for instance `authentication`, the <xref:System.Configuration.ConfigurationProperty> objects can represent <xref:System.Configuration.ConfigurationElement> objects as well as attributes.
+
+ The <xref:System.Configuration.ConfigurationPropertyCollection> class represents the collection of the <xref:System.Configuration.ConfigurationProperty> objects that can be either attributes or <xref:System.Configuration.ConfigurationElement> objects of a configuration element.
+
+ The <xref:System.Configuration.ConfigurationProperty> class represents an individual configuration setting. This class allows you to get or set the name, type, and default value for a particular configuration entity (attribute or element) and specify whether the attribute is required, is an element key, or represents a default element collection.
+
+
+
+## Examples
+
+1.  The following code example shows how to use the <xref:System.Configuration.ConfigurationProperty> when you create a custom section.
+
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb" id="Snippet1":::
+
+ The following is an excerpt of the configuration file used by the code in the previous example.
+
 ```xml
 <configuration>
   <configSections>
-    <section name="CustomSection" type="ConfigurationPropertyExample.CustomSection, ConfigurationPropertyExample" 
-      allowDefinition="Everywhere" allowExeDefinition="MachineToApplication" 
+    <section name="CustomSection" type="ConfigurationPropertyExample.CustomSection, ConfigurationPropertyExample"
+      allowDefinition="Everywhere" allowExeDefinition="MachineToApplication"
       restartOnExternalChanges="true" />
   </configSections>
-  <CustomSection fileName="override.txt" alias="alias.txt" 
+  <CustomSection fileName="override.txt" alias="alias.txt"
     maxUsers="1000" maxIdleTime="00:05:00" />
 </configuration>
 ```
-  
- The following example shows how to create the previous section in code.  
-  
- [!code-csharp[System.Configuration.ConfigurationProperty#30](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#30)]
- [!code-vb[System.Configuration.ConfigurationProperty#30](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#30)]  
-  
+
+ The following example shows how to create the previous section in code.
+
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs" id="Snippet30":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb" id="Snippet30":::
+
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
-      <para>Every <see cref="T:System.Configuration.ConfigurationElement" /> object creates an internal <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> collection of <see cref="T:System.Configuration.ConfigurationProperty" /> objects that represents either the element attributes or a collection of child elements.  
-  
- Non-customizable information and functionality is contained by an <see cref="T:System.Configuration.ElementInformation" /> object provided by the <see cref="P:System.Configuration.ConfigurationElement.ElementInformation" /> property.  
-  
- You can use a programmatic or a declarative (attributed) coding model to create a custom configuration element.  
-  
--   Programmatic Model. This model requires that you create a property for each element attribute to get and/or set its value and add it to the internal property bag of the underlying <see cref="T:System.Configuration.ConfigurationElement" /> base class.  
-  
+      <para>Every <see cref="T:System.Configuration.ConfigurationElement" /> object creates an internal <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> collection of <see cref="T:System.Configuration.ConfigurationProperty" /> objects that represents either the element attributes or a collection of child elements.
+
+ Non-customizable information and functionality is contained by an <see cref="T:System.Configuration.ElementInformation" /> object provided by the <see cref="P:System.Configuration.ConfigurationElement.ElementInformation" /> property.
+
+ You can use a programmatic or a declarative (attributed) coding model to create a custom configuration element.
+
+-   Programmatic Model. This model requires that you create a property for each element attribute to get and/or set its value and add it to the internal property bag of the underlying <see cref="T:System.Configuration.ConfigurationElement" /> base class.
+
 -   Declarative Model. This simpler model, also called attributed model, allows you to define an element attribute by using a property and decorate it with attributes. These attributes instruct the ASP.NET configuration system about the property types and their default values. With this information, obtained through reflection, the ASP.NET configuration system creates the element property objects for you and performs the required initialization.</para>
     </block>
     <forInternalUseOnly />
@@ -96,8 +105,9 @@
       <MemberSignature Language="C#" Value="public ConfigurationProperty (string name, Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationProperty.#ctor(System.String,System.Type)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationProperty(System::String ^ name, Type ^ type);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, type As Type)" />
       <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationProperty : string * Type -&gt; System.Configuration.ConfigurationProperty" Usage="new System.Configuration.ConfigurationProperty (name, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationProperty(System::String ^ name, Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -106,8 +116,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -122,16 +137,12 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ConfigurationProperty (string name, Type type, object defaultValue);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type type, object defaultValue) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationProperty(System::String ^ name, Type ^ type, System::Object ^ defaultValue);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="C#" Value="public ConfigurationProperty (string name, Type type, object default_value);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type type, object default_value) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationProperty.#ctor(System.String,System.Type,System.Object)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationProperty(System::String ^ name, Type ^ type, System::Object ^ default_value);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationProperty : string * Type * obj -&gt; System.Configuration.ConfigurationProperty" Usage="new System.Configuration.ConfigurationProperty (name, type, default_value)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationProperty.#ctor(System.String,System.Type,System.Object)" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationProperty : string * Type * obj -&gt; System.Configuration.ConfigurationProperty" Usage="new System.Configuration.ConfigurationProperty (name, type, default_value)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C#" Value="public ConfigurationProperty (string name, Type type, object defaultValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type type, object defaultValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationProperty.#ctor(System.String,System.Type,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, type As Type, defaultValue As Object)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationProperty : string * Type * obj -&gt; System.Configuration.ConfigurationProperty" Usage="new System.Configuration.ConfigurationProperty (name, type, defaultValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationProperty(System::String ^ name, Type ^ type, System::Object ^ defaultValue);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -140,35 +151,38 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="name" Type="System.String" Index="0" />
-        <Parameter Name="type" Type="System.Type" Index="1" />
-        <Parameter Name="defaultValue" Type="System.Object" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="default_value" Type="System.Object" Index="2" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="defaultValue" Type="System.Object" />
       </Parameters>
       <Docs>
         <param name="name">The name of the configuration entity.</param>
         <param name="type">The type of the configuration entity.</param>
         <param name="defaultValue">The default value of the configuration entity.</param>
-        <param name="default_value">To be added.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationProperty" /> class.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you instantiate a <xref:System.Configuration.ConfigurationProperty> object using this constructor, the <xref:System.Configuration.ConfigurationProperty.IsRequired%2A> and <xref:System.Configuration.ConfigurationProperty.IsKey%2A> properties are set to `false`. Additionally, an instance made with this constructor will not function as a default collection-key property.  
-  
-   
-  
-## Examples  
- The following code example shows how to use the <xref:System.Configuration.ConfigurationProperty.%23ctor%28System.String%2CSystem.Type%2CSystem.Object%29?displayProperty=nameWithType> constructor to instantiate a configuration-property object.  
-  
- [!code-csharp[System.Configuration.ConfigurationProperty#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#2)]
- [!code-vb[System.Configuration.ConfigurationProperty#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#2)]  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ When you instantiate a <xref:System.Configuration.ConfigurationProperty> object using this constructor, the <xref:System.Configuration.ConfigurationProperty.IsRequired%2A> and <xref:System.Configuration.ConfigurationProperty.IsKey%2A> properties are set to `false`. Additionally, an instance made with this constructor will not function as a default collection-key property.
+
+
+
+## Examples
+ The following code example shows how to use the <xref:System.Configuration.ConfigurationProperty.%23ctor%28System.String%2CSystem.Type%2CSystem.Object%29?displayProperty=nameWithType> constructor to instantiate a configuration-property object.
+
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs" id="Snippet2":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb" id="Snippet2":::
+
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -181,16 +195,12 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ConfigurationProperty (string name, Type type, object defaultValue, System.Configuration.ConfigurationPropertyOptions options);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type type, object defaultValue, valuetype System.Configuration.ConfigurationPropertyOptions options) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationProperty(System::String ^ name, Type ^ type, System::Object ^ defaultValue, System::Configuration::ConfigurationPropertyOptions options);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="C#" Value="public ConfigurationProperty (string name, Type type, object default_value, System.Configuration.ConfigurationPropertyOptions flags);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type type, object default_value, valuetype System.Configuration.ConfigurationPropertyOptions flags) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationProperty.#ctor(System.String,System.Type,System.Object,System.Configuration.ConfigurationPropertyOptions)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationProperty(System::String ^ name, Type ^ type, System::Object ^ default_value, System::Configuration::ConfigurationPropertyOptions flags);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationProperty : string * Type * obj * System.Configuration.ConfigurationPropertyOptions -&gt; System.Configuration.ConfigurationProperty" Usage="new System.Configuration.ConfigurationProperty (name, type, default_value, flags)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationProperty.#ctor(System.String,System.Type,System.Object,System.Configuration.ConfigurationPropertyOptions)" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationProperty : string * Type * obj * System.Configuration.ConfigurationPropertyOptions -&gt; System.Configuration.ConfigurationProperty" Usage="new System.Configuration.ConfigurationProperty (name, type, default_value, flags)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C#" Value="public ConfigurationProperty (string name, Type type, object defaultValue, System.Configuration.ConfigurationPropertyOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type type, object defaultValue, valuetype System.Configuration.ConfigurationPropertyOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationProperty.#ctor(System.String,System.Type,System.Object,System.Configuration.ConfigurationPropertyOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, type As Type, defaultValue As Object, options As ConfigurationPropertyOptions)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationProperty : string * Type * obj * System.Configuration.ConfigurationPropertyOptions -&gt; System.Configuration.ConfigurationProperty" Usage="new System.Configuration.ConfigurationProperty (name, type, defaultValue, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationProperty(System::String ^ name, Type ^ type, System::Object ^ defaultValue, System::Configuration::ConfigurationPropertyOptions options);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -199,34 +209,35 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="name" Type="System.String" Index="0" />
-        <Parameter Name="type" Type="System.Type" Index="1" />
-        <Parameter Name="defaultValue" Type="System.Object" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="default_value" Type="System.Object" Index="2" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="options" Type="System.Configuration.ConfigurationPropertyOptions" Index="3" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="flags" Type="System.Configuration.ConfigurationPropertyOptions" Index="3" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="defaultValue" Type="System.Object" />
+        <Parameter Name="options" Type="System.Configuration.ConfigurationPropertyOptions" />
       </Parameters>
       <Docs>
         <param name="name">The name of the configuration entity.</param>
         <param name="type">The type of the configuration entity.</param>
         <param name="defaultValue">The default value of the configuration entity.</param>
-        <param name="default_value">To be added.</param>
         <param name="options">One of the <see cref="T:System.Configuration.ConfigurationPropertyOptions" /> enumeration values.</param>
-        <param name="flags">To be added.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationProperty" /> class.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use <xref:System.Configuration.ConfigurationProperty.%23ctor%28System.String%2CSystem.Type%2CSystem.Object%2CSystem.Configuration.ConfigurationPropertyOptions%29?displayProperty=nameWithType> constructor to instantiate a configuration-property object.  
-  
- [!code-csharp[System.Configuration.ConfigurationProperty#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#3)]
- [!code-vb[System.Configuration.ConfigurationProperty#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#3)]  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Examples
+ The following code example shows how to use <xref:System.Configuration.ConfigurationProperty.%23ctor%28System.String%2CSystem.Type%2CSystem.Object%2CSystem.Configuration.ConfigurationPropertyOptions%29?displayProperty=nameWithType> constructor to instantiate a configuration-property object.
+
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs" id="Snippet3":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb" id="Snippet3":::
+
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -239,16 +250,12 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ConfigurationProperty (string name, Type type, object defaultValue, System.ComponentModel.TypeConverter typeConverter, System.Configuration.ConfigurationValidatorBase validator, System.Configuration.ConfigurationPropertyOptions options);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type type, object defaultValue, class System.ComponentModel.TypeConverter typeConverter, class System.Configuration.ConfigurationValidatorBase validator, valuetype System.Configuration.ConfigurationPropertyOptions options) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationProperty(System::String ^ name, Type ^ type, System::Object ^ defaultValue, System::ComponentModel::TypeConverter ^ typeConverter, System::Configuration::ConfigurationValidatorBase ^ validator, System::Configuration::ConfigurationPropertyOptions options);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="C#" Value="public ConfigurationProperty (string name, Type type, object default_value, System.ComponentModel.TypeConverter converter, System.Configuration.ConfigurationValidatorBase validation, System.Configuration.ConfigurationPropertyOptions flags);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type type, object default_value, class System.ComponentModel.TypeConverter converter, class System.Configuration.ConfigurationValidatorBase validation, valuetype System.Configuration.ConfigurationPropertyOptions flags) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationProperty.#ctor(System.String,System.Type,System.Object,System.ComponentModel.TypeConverter,System.Configuration.ConfigurationValidatorBase,System.Configuration.ConfigurationPropertyOptions)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationProperty(System::String ^ name, Type ^ type, System::Object ^ default_value, System::ComponentModel::TypeConverter ^ converter, System::Configuration::ConfigurationValidatorBase ^ validation, System::Configuration::ConfigurationPropertyOptions flags);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationProperty : string * Type * obj * System.ComponentModel.TypeConverter * System.Configuration.ConfigurationValidatorBase * System.Configuration.ConfigurationPropertyOptions -&gt; System.Configuration.ConfigurationProperty" Usage="new System.Configuration.ConfigurationProperty (name, type, default_value, converter, validation, flags)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationProperty.#ctor(System.String,System.Type,System.Object,System.ComponentModel.TypeConverter,System.Configuration.ConfigurationValidatorBase,System.Configuration.ConfigurationPropertyOptions)" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationProperty : string * Type * obj * System.ComponentModel.TypeConverter * System.Configuration.ConfigurationValidatorBase * System.Configuration.ConfigurationPropertyOptions -&gt; System.Configuration.ConfigurationProperty" Usage="new System.Configuration.ConfigurationProperty (name, type, default_value, converter, validation, flags)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C#" Value="public ConfigurationProperty (string name, Type type, object defaultValue, System.ComponentModel.TypeConverter typeConverter, System.Configuration.ConfigurationValidatorBase validator, System.Configuration.ConfigurationPropertyOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type type, object defaultValue, class System.ComponentModel.TypeConverter typeConverter, class System.Configuration.ConfigurationValidatorBase validator, valuetype System.Configuration.ConfigurationPropertyOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationProperty.#ctor(System.String,System.Type,System.Object,System.ComponentModel.TypeConverter,System.Configuration.ConfigurationValidatorBase,System.Configuration.ConfigurationPropertyOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, type As Type, defaultValue As Object, typeConverter As TypeConverter, validator As ConfigurationValidatorBase, options As ConfigurationPropertyOptions)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationProperty : string * Type * obj * System.ComponentModel.TypeConverter * System.Configuration.ConfigurationValidatorBase * System.Configuration.ConfigurationPropertyOptions -&gt; System.Configuration.ConfigurationProperty" Usage="new System.Configuration.ConfigurationProperty (name, type, defaultValue, typeConverter, validator, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationProperty(System::String ^ name, Type ^ type, System::Object ^ defaultValue, System::ComponentModel::TypeConverter ^ typeConverter, System::Configuration::ConfigurationValidatorBase ^ validator, System::Configuration::ConfigurationPropertyOptions options);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -257,42 +264,39 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="name" Type="System.String" Index="0" />
-        <Parameter Name="type" Type="System.Type" Index="1" />
-        <Parameter Name="defaultValue" Type="System.Object" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="default_value" Type="System.Object" Index="2" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="typeConverter" Type="System.ComponentModel.TypeConverter" Index="3" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="converter" Type="System.ComponentModel.TypeConverter" Index="3" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="validator" Type="System.Configuration.ConfigurationValidatorBase" Index="4" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="validation" Type="System.Configuration.ConfigurationValidatorBase" Index="4" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="options" Type="System.Configuration.ConfigurationPropertyOptions" Index="5" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="flags" Type="System.Configuration.ConfigurationPropertyOptions" Index="5" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="defaultValue" Type="System.Object" />
+        <Parameter Name="typeConverter" Type="System.ComponentModel.TypeConverter" />
+        <Parameter Name="validator" Type="System.Configuration.ConfigurationValidatorBase" />
+        <Parameter Name="options" Type="System.Configuration.ConfigurationPropertyOptions" />
       </Parameters>
       <Docs>
         <param name="name">The name of the configuration entity.</param>
         <param name="type">The type of the configuration entity.</param>
         <param name="defaultValue">The default value of the configuration entity.</param>
-        <param name="default_value">To be added.</param>
         <param name="typeConverter">The type of the converter to apply.</param>
-        <param name="converter">To be added.</param>
         <param name="validator">The validator to use.</param>
-        <param name="validation">To be added.</param>
         <param name="options">One of the <see cref="T:System.Configuration.ConfigurationPropertyOptions" /> enumeration values.</param>
-        <param name="flags">To be added.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationProperty" /> class.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows the kind of parameters to use when calling the <xref:System.Configuration.ConfigurationProperty.%23ctor%28System.String%2CSystem.Type%2CSystem.Object%2CSystem.ComponentModel.TypeConverter%2CSystem.Configuration.ConfigurationValidatorBase%2CSystem.Configuration.ConfigurationPropertyOptions%29?displayProperty=nameWithType> constructor.  
-  
- [!code-csharp[System.Configuration.ConfigurationProperty#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#4)]
- [!code-vb[System.Configuration.ConfigurationProperty#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#4)]  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Examples
+ The following code example shows the kind of parameters to use when calling the <xref:System.Configuration.ConfigurationProperty.%23ctor%28System.String%2CSystem.Type%2CSystem.Object%2CSystem.ComponentModel.TypeConverter%2CSystem.Configuration.ConfigurationValidatorBase%2CSystem.Configuration.ConfigurationPropertyOptions%29?displayProperty=nameWithType> constructor.
+
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs" id="Snippet4":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb" id="Snippet4":::
+
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -305,16 +309,12 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ConfigurationProperty (string name, Type type, object defaultValue, System.ComponentModel.TypeConverter typeConverter, System.Configuration.ConfigurationValidatorBase validator, System.Configuration.ConfigurationPropertyOptions options, string description);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type type, object defaultValue, class System.ComponentModel.TypeConverter typeConverter, class System.Configuration.ConfigurationValidatorBase validator, valuetype System.Configuration.ConfigurationPropertyOptions options, string description) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationProperty(System::String ^ name, Type ^ type, System::Object ^ defaultValue, System::ComponentModel::TypeConverter ^ typeConverter, System::Configuration::ConfigurationValidatorBase ^ validator, System::Configuration::ConfigurationPropertyOptions options, System::String ^ description);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="C#" Value="public ConfigurationProperty (string name, Type type, object default_value, System.ComponentModel.TypeConverter converter, System.Configuration.ConfigurationValidatorBase validation, System.Configuration.ConfigurationPropertyOptions flags, string description);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type type, object default_value, class System.ComponentModel.TypeConverter converter, class System.Configuration.ConfigurationValidatorBase validation, valuetype System.Configuration.ConfigurationPropertyOptions flags, string description) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationProperty.#ctor(System.String,System.Type,System.Object,System.ComponentModel.TypeConverter,System.Configuration.ConfigurationValidatorBase,System.Configuration.ConfigurationPropertyOptions,System.String)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationProperty(System::String ^ name, Type ^ type, System::Object ^ default_value, System::ComponentModel::TypeConverter ^ converter, System::Configuration::ConfigurationValidatorBase ^ validation, System::Configuration::ConfigurationPropertyOptions flags, System::String ^ description);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationProperty : string * Type * obj * System.ComponentModel.TypeConverter * System.Configuration.ConfigurationValidatorBase * System.Configuration.ConfigurationPropertyOptions * string -&gt; System.Configuration.ConfigurationProperty" Usage="new System.Configuration.ConfigurationProperty (name, type, default_value, converter, validation, flags, description)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationProperty.#ctor(System.String,System.Type,System.Object,System.ComponentModel.TypeConverter,System.Configuration.ConfigurationValidatorBase,System.Configuration.ConfigurationPropertyOptions,System.String)" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationProperty : string * Type * obj * System.ComponentModel.TypeConverter * System.Configuration.ConfigurationValidatorBase * System.Configuration.ConfigurationPropertyOptions * string -&gt; System.Configuration.ConfigurationProperty" Usage="new System.Configuration.ConfigurationProperty (name, type, default_value, converter, validation, flags, description)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C#" Value="public ConfigurationProperty (string name, Type type, object defaultValue, System.ComponentModel.TypeConverter typeConverter, System.Configuration.ConfigurationValidatorBase validator, System.Configuration.ConfigurationPropertyOptions options, string description);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type type, object defaultValue, class System.ComponentModel.TypeConverter typeConverter, class System.Configuration.ConfigurationValidatorBase validator, valuetype System.Configuration.ConfigurationPropertyOptions options, string description) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationProperty.#ctor(System.String,System.Type,System.Object,System.ComponentModel.TypeConverter,System.Configuration.ConfigurationValidatorBase,System.Configuration.ConfigurationPropertyOptions,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, type As Type, defaultValue As Object, typeConverter As TypeConverter, validator As ConfigurationValidatorBase, options As ConfigurationPropertyOptions, description As String)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationProperty : string * Type * obj * System.ComponentModel.TypeConverter * System.Configuration.ConfigurationValidatorBase * System.Configuration.ConfigurationPropertyOptions * string -&gt; System.Configuration.ConfigurationProperty" Usage="new System.Configuration.ConfigurationProperty (name, type, defaultValue, typeConverter, validator, options, description)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationProperty(System::String ^ name, Type ^ type, System::Object ^ defaultValue, System::ComponentModel::TypeConverter ^ typeConverter, System::Configuration::ConfigurationValidatorBase ^ validator, System::Configuration::ConfigurationPropertyOptions options, System::String ^ description);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -323,44 +323,41 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="name" Type="System.String" Index="0" />
-        <Parameter Name="type" Type="System.Type" Index="1" />
-        <Parameter Name="defaultValue" Type="System.Object" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="default_value" Type="System.Object" Index="2" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="typeConverter" Type="System.ComponentModel.TypeConverter" Index="3" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="converter" Type="System.ComponentModel.TypeConverter" Index="3" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="validator" Type="System.Configuration.ConfigurationValidatorBase" Index="4" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="validation" Type="System.Configuration.ConfigurationValidatorBase" Index="4" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="options" Type="System.Configuration.ConfigurationPropertyOptions" Index="5" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="flags" Type="System.Configuration.ConfigurationPropertyOptions" Index="5" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="description" Type="System.String" Index="6" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="defaultValue" Type="System.Object" />
+        <Parameter Name="typeConverter" Type="System.ComponentModel.TypeConverter" />
+        <Parameter Name="validator" Type="System.Configuration.ConfigurationValidatorBase" />
+        <Parameter Name="options" Type="System.Configuration.ConfigurationPropertyOptions" />
+        <Parameter Name="description" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="name">The name of the configuration entity.</param>
         <param name="type">The type of the configuration entity.</param>
         <param name="defaultValue">The default value of the configuration entity.</param>
-        <param name="default_value">To be added.</param>
         <param name="typeConverter">The type of the converter to apply.</param>
-        <param name="converter">To be added.</param>
         <param name="validator">The validator to use.</param>
-        <param name="validation">To be added.</param>
         <param name="options">One of the <see cref="T:System.Configuration.ConfigurationPropertyOptions" /> enumeration values.</param>
-        <param name="flags">To be added.</param>
         <param name="description">The description of the configuration entity.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationProperty" /> class.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use the <xref:System.Configuration.ConfigurationProperty.%23ctor%28System.String%2CSystem.Type%2CSystem.Object%2CSystem.ComponentModel.TypeConverter%2CSystem.Configuration.ConfigurationValidatorBase%2CSystem.Configuration.ConfigurationPropertyOptions%2CSystem.String%29?displayProperty=nameWithType> constructor to instantiate a configuration-property object.  
-  
- [!code-csharp[System.Configuration.ConfigurationProperty#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#4)]
- [!code-vb[System.Configuration.ConfigurationProperty#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#4)]  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Examples
+ The following code example shows how to use the <xref:System.Configuration.ConfigurationProperty.%23ctor%28System.String%2CSystem.Type%2CSystem.Object%2CSystem.ComponentModel.TypeConverter%2CSystem.Configuration.ConfigurationValidatorBase%2CSystem.Configuration.ConfigurationPropertyOptions%2CSystem.String%29?displayProperty=nameWithType> constructor to instantiate a configuration-property object.
+
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs" id="Snippet4":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb" id="Snippet4":::
+
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -377,8 +374,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.TypeConverter Converter" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationProperty.Converter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Converter As TypeConverter" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::TypeConverter ^ Converter { System::ComponentModel::TypeConverter ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Converter : System.ComponentModel.TypeConverter" Usage="System.Configuration.ConfigurationProperty.Converter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::TypeConverter ^ Converter { System::ComponentModel::TypeConverter ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -387,8 +384,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.TypeConverter</ReturnType>
@@ -397,14 +399,14 @@
         <summary>Gets the <see cref="T:System.ComponentModel.TypeConverter" /> used to convert this <see cref="T:System.Configuration.ConfigurationProperty" /> into an XML representation for writing to the configuration file.</summary>
         <value>A <see cref="T:System.ComponentModel.TypeConverter" /> used to convert this <see cref="T:System.Configuration.ConfigurationProperty" /> into an XML representation for writing to the configuration file.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to use the <xref:System.Configuration.ConfigurationProperty.Converter%2A> property to get the <xref:System.ComponentModel.TypeConverter> for a specified configuration-property object.  
-  
- [!code-csharp[System.Configuration.ConfigurationProperty#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#5)]
- [!code-vb[System.Configuration.ConfigurationProperty#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#5)]  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Examples
+ The following code example shows how to use the <xref:System.Configuration.ConfigurationProperty.Converter%2A> property to get the <xref:System.ComponentModel.TypeConverter> for a specified configuration-property object.
+
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs" id="Snippet5":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb" id="Snippet5":::
+
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">This <see cref="T:System.Configuration.ConfigurationProperty" /> cannot be converted.</exception>
@@ -422,8 +424,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object DefaultValue" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationProperty.DefaultValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultValue As Object" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DefaultValue { System::Object ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.DefaultValue : obj" Usage="System.Configuration.ConfigurationProperty.DefaultValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DefaultValue { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -432,8 +434,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -442,19 +449,19 @@
         <summary>Gets the default value for this <see cref="T:System.Configuration.ConfigurationProperty" /> property.</summary>
         <value>An <see cref="T:System.Object" /> that can be cast to the type specified by the <see cref="P:System.Configuration.ConfigurationProperty.Type" /> property.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value of a new <xref:System.Configuration.ConfigurationProperty> object is passed into its constructor. That same object will be returned by the <xref:System.Configuration.ConfigurationProperty.DefaultValue%2A> property.  
-  
-   
-  
-## Examples  
- The following code example shows how to get the <xref:System.Configuration.ConfigurationProperty.DefaultValue%2A> for a specified property.  
-  
- [!code-csharp[System.Configuration.ConfigurationProperty#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#6)]
- [!code-vb[System.Configuration.ConfigurationProperty#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#6)]  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ The default value of a new <xref:System.Configuration.ConfigurationProperty> object is passed into its constructor. That same object will be returned by the <xref:System.Configuration.ConfigurationProperty.DefaultValue%2A> property.
+
+
+
+## Examples
+ The following code example shows how to get the <xref:System.Configuration.ConfigurationProperty.DefaultValue%2A> for a specified property.
+
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs" id="Snippet6":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb" id="Snippet6":::
+
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -471,8 +478,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationProperty.Description" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.Configuration.ConfigurationProperty.Description" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -481,8 +488,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -491,14 +503,14 @@
         <summary>Gets the description associated with the <see cref="T:System.Configuration.ConfigurationProperty" />.</summary>
         <value>A <see langword="string" /> value that describes the property.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to get the <xref:System.Configuration.ConfigurationProperty.Description%2A> for a specified property.  
-  
- [!code-csharp[System.Configuration.ConfigurationProperty#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#11)]
- [!code-vb[System.Configuration.ConfigurationProperty#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#11)]  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Examples
+ The following code example shows how to get the <xref:System.Configuration.ConfigurationProperty.Description%2A> for a specified property.
+
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs" id="Snippet11":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb" id="Snippet11":::
+
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -515,8 +527,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAssemblyStringTransformationRequired" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationProperty.IsAssemblyStringTransformationRequired" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAssemblyStringTransformationRequired As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAssemblyStringTransformationRequired { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsAssemblyStringTransformationRequired : bool" Usage="System.Configuration.ConfigurationProperty.IsAssemblyStringTransformationRequired" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAssemblyStringTransformationRequired { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -524,26 +536,31 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether the assembly name for the configuration property requires transformation when it is serialized for an earlier version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)].</summary>
+        <summary>Indicates whether the assembly name for the configuration property requires transformation when it is serialized for an earlier version of the .NET Framework.</summary>
         <value>
           <see langword="true" /> if the property requires assembly name transformation; otherwise, <see langword="false" />.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You use <xref:System.Configuration.ConfigurationPropertyOptions> to set this property when you call a constructor that includes a <xref:System.Configuration.ConfigurationPropertyOptions> parameter. This value is ignored if the property does not contain an assembly name string.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ You use <xref:System.Configuration.ConfigurationPropertyOptions> to set this property when you call a constructor that includes a <xref:System.Configuration.ConfigurationPropertyOptions> parameter. This value is ignored if the property does not contain an assembly name string.
+
  ]]></format>
         </remarks>
         <forInternalUseOnly />
-        <related type="Article" href="https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76">.NET Framework Targeting for Web Projects</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/bb398791(v=vs.100)">.NET Framework Targeting for Web Projects</related>
       </Docs>
     </Member>
     <Member MemberName="IsDefaultCollection">
@@ -551,8 +568,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDefaultCollection" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationProperty.IsDefaultCollection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDefaultCollection As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDefaultCollection { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsDefaultCollection : bool" Usage="System.Configuration.ConfigurationProperty.IsDefaultCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDefaultCollection { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -561,8 +578,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -572,11 +594,11 @@
         <value>
           <see langword="true" /> if the property is the default collection of an element; otherwise, <see langword="false" />.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This value is ignored if the property is not a collection.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ This value is ignored if the property is not a collection.
+
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -587,8 +609,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsKey" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationProperty.IsKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsKey As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsKey { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsKey : bool" Usage="System.Configuration.ConfigurationProperty.IsKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsKey { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -597,8 +619,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -608,19 +635,19 @@
         <value>
           <see langword="true" /> if this <see cref="T:System.Configuration.ConfigurationProperty" /> object is the key for the containing element; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can define a new <xref:System.Configuration.ConfigurationProperty> object to be the key for the containing element when implementing the <xref:System.Configuration.ConfigurationElement> element. If this flag is not used, the <xref:System.Configuration.ConfigurationProperty.IsKey%2A> property will return `false`.  
-  
-   
-  
-## Examples  
- The following code example shows how to get the <xref:System.Configuration.ConfigurationProperty.IsKey%2A> property for a specified property.  
-  
- [!code-csharp[System.Configuration.ConfigurationProperty#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#7)]
- [!code-vb[System.Configuration.ConfigurationProperty#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#7)]  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ You can define a new <xref:System.Configuration.ConfigurationProperty> object to be the key for the containing element when implementing the <xref:System.Configuration.ConfigurationElement> element. If this flag is not used, the <xref:System.Configuration.ConfigurationProperty.IsKey%2A> property will return `false`.
+
+
+
+## Examples
+ The following code example shows how to get the <xref:System.Configuration.ConfigurationProperty.IsKey%2A> property for a specified property.
+
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs" id="Snippet7":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb" id="Snippet7":::
+
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -637,8 +664,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsRequired" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationProperty.IsRequired" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRequired As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRequired { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsRequired : bool" Usage="System.Configuration.ConfigurationProperty.IsRequired" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRequired { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -647,8 +674,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -658,14 +690,14 @@
         <value>
           <see langword="true" /> if the <see cref="T:System.Configuration.ConfigurationProperty" /> is required; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to get the <xref:System.Configuration.ConfigurationProperty.IsRequired%2A> property value for a specified configuration-property object.  
-  
- [!code-csharp[System.Configuration.ConfigurationProperty#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#8)]
- [!code-vb[System.Configuration.ConfigurationProperty#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#8)]  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Examples
+ The following code example shows how to get the <xref:System.Configuration.ConfigurationProperty.IsRequired%2A> property value for a specified configuration-property object.
+
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs" id="Snippet8":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb" id="Snippet8":::
+
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -682,8 +714,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsTypeStringTransformationRequired" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationProperty.IsTypeStringTransformationRequired" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsTypeStringTransformationRequired As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsTypeStringTransformationRequired { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsTypeStringTransformationRequired : bool" Usage="System.Configuration.ConfigurationProperty.IsTypeStringTransformationRequired" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsTypeStringTransformationRequired { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -691,26 +723,31 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether the type name for the configuration property requires transformation when it is serialized for an earlier version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)].</summary>
+        <summary>Indicates whether the type name for the configuration property requires transformation when it is serialized for an earlier version of the .NET Framework.</summary>
         <value>
           <see langword="true" /> if the property requires type-name transformation; otherwise, <see langword="false" />.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You use <xref:System.Configuration.ConfigurationPropertyOptions> to set this property when you call a constructor that includes a <xref:System.Configuration.ConfigurationPropertyOptions> parameter. This value is ignored if the property does not contain a type-name string.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ You use <xref:System.Configuration.ConfigurationPropertyOptions> to set this property when you call a constructor that includes a <xref:System.Configuration.ConfigurationPropertyOptions> parameter. This value is ignored if the property does not contain a type-name string.
+
  ]]></format>
         </remarks>
         <forInternalUseOnly />
-        <related type="Article" href="https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76">.NET Framework Targeting for Web Projects</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/bb398791(v=vs.100)">.NET Framework Targeting for Web Projects</related>
       </Docs>
     </Member>
     <Member MemberName="IsVersionCheckRequired">
@@ -718,8 +755,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsVersionCheckRequired" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationProperty.IsVersionCheckRequired" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsVersionCheckRequired As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsVersionCheckRequired { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsVersionCheckRequired : bool" Usage="System.Configuration.ConfigurationProperty.IsVersionCheckRequired" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsVersionCheckRequired { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -727,8 +764,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -738,17 +780,17 @@
         <value>
           <see langword="true" /> if the parent configuration section should be queried; otherwise, <see langword="false" />.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you are creating a configuration property for the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] or later versions, and if the property value should not be serialized to XML when an earlier version of the framework is targeted, set this property to `true`.  
-  
- You use <xref:System.Configuration.ConfigurationPropertyOptions> to set this property when you call a constructor that includes a <xref:System.Configuration.ConfigurationPropertyOptions> parameter.  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ If you are creating a configuration property for the .NET Framework 4 or later versions, and if the property value should not be serialized to XML when an earlier version of the framework is targeted, set this property to `true`.
+
+ You use <xref:System.Configuration.ConfigurationPropertyOptions> to set this property when you call a constructor that includes a <xref:System.Configuration.ConfigurationPropertyOptions> parameter.
+
  ]]></format>
         </remarks>
         <forInternalUseOnly />
-        <related type="Article" href="https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76">.NET Framework Targeting for Web Projects</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/bb398791(v=vs.100)">.NET Framework Targeting for Web Projects</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -756,8 +798,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationProperty.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Configuration.ConfigurationProperty.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -766,8 +808,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -776,19 +823,19 @@
         <summary>Gets the name of this <see cref="T:System.Configuration.ConfigurationProperty" />.</summary>
         <value>The name of the <see cref="T:System.Configuration.ConfigurationProperty" />.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If an instance of a <xref:System.Configuration.ConfigurationProperty> is a default collection, its name will be automatically defined to be an empty string.  
-  
-   
-  
-## Examples  
- The following code example shows how to get the <xref:System.Configuration.ConfigurationProperty.Name%2A> for a specified property.  
-  
- [!code-csharp[System.Configuration.ConfigurationProperty#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#9)]
- [!code-vb[System.Configuration.ConfigurationProperty#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#9)]  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ If an instance of a <xref:System.Configuration.ConfigurationProperty> is a default collection, its name will be automatically defined to be an empty string.
+
+
+
+## Examples
+ The following code example shows how to get the <xref:System.Configuration.ConfigurationProperty.Name%2A> for a specified property.
+
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs" id="Snippet9":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb" id="Snippet9":::
+
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -805,8 +852,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationProperty.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Type" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Configuration.ConfigurationProperty.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -815,8 +862,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
@@ -825,19 +877,19 @@
         <summary>Gets the type of this <see cref="T:System.Configuration.ConfigurationProperty" /> object.</summary>
         <value>A <see cref="T:System.Type" /> representing the type of this <see cref="T:System.Configuration.ConfigurationProperty" /> object.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use `Type` to determine the fully qualified namespace and class name for this derived instance of <xref:System.Configuration.ConfigurationProperty>.  
-  
-   
-  
-## Examples  
- The following example shows how to get the <xref:System.Configuration.ConfigurationProperty.Type%2A> property value for a specified configuration-property object.  
-  
- [!code-csharp[System.Configuration.ConfigurationProperty#10](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#10)]
- [!code-vb[System.Configuration.ConfigurationProperty#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#10)]  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ Use `Type` to determine the fully qualified namespace and class name for this derived instance of <xref:System.Configuration.ConfigurationProperty>.
+
+
+
+## Examples
+ The following example shows how to get the <xref:System.Configuration.ConfigurationProperty.Type%2A> property value for a specified configuration-property object.
+
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs" id="Snippet10":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb" id="Snippet10":::
+
  ]]></format>
         </remarks>
         <forInternalUseOnly />
@@ -854,8 +906,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationValidatorBase Validator" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationProperty.Validator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Validator As ConfigurationValidatorBase" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConfigurationValidatorBase ^ Validator { System::Configuration::ConfigurationValidatorBase ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Validator : System.Configuration.ConfigurationValidatorBase" Usage="System.Configuration.ConfigurationProperty.Validator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConfigurationValidatorBase ^ Validator { System::Configuration::ConfigurationValidatorBase ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -864,8 +916,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationValidatorBase</ReturnType>
@@ -874,14 +931,14 @@
         <summary>Gets the <see cref="T:System.Configuration.ConfigurationValidatorAttribute" />, which is used to validate this <see cref="T:System.Configuration.ConfigurationProperty" /> object.</summary>
         <value>The <see cref="T:System.Configuration.ConfigurationValidatorBase" /> validator, which is used to validate this <see cref="T:System.Configuration.ConfigurationProperty" />.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example shows how to get the <xref:System.Configuration.ConfigurationProperty.Validator%2A> for a specified property.  
-  
- [!code-csharp[System.Configuration.ConfigurationProperty#12](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs#12)]
- [!code-vb[System.Configuration.ConfigurationProperty#12](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb#12)]  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Examples
+ The following code example shows how to get the <xref:System.Configuration.ConfigurationProperty.Validator%2A> for a specified property.
+
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/CS/ConfigurationProperty.cs" id="Snippet12":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationProperty/VB/ConfigurationProperty.vb" id="Snippet12":::
+
  ]]></format>
         </remarks>
         <forInternalUseOnly />

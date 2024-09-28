@@ -1,10 +1,11 @@
-﻿<Type Name="ITypeInfo2" FullName="System.Runtime.InteropServices.ComTypes.ITypeInfo2">
+<Type Name="ITypeInfo2" FullName="System.Runtime.InteropServices.ComTypes.ITypeInfo2">
   <TypeSignature Language="C#" Value="public interface ITypeInfo2 : System.Runtime.InteropServices.ComTypes.ITypeInfo" />
-  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITypeInfo2 implements class System.Runtime.InteropServices.ComTypes.ITypeInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITypeInfo2 implements class System.Runtime.InteropServices.ComTypes.ITypeInfo" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.ITypeInfo2" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITypeInfo2&#xA;Implements ITypeInfo" />
-  <TypeSignature Language="C++ CLI" Value="public interface class ITypeInfo2 : System::Runtime::InteropServices::ComTypes::ITypeInfo" />
   <TypeSignature Language="F#" Value="type ITypeInfo2 = interface&#xA;    interface ITypeInfo" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ITypeInfo2 : System::Runtime::InteropServices::ComTypes::ITypeInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit ITypeInfo2 implements class System.Runtime.InteropServices.ComTypes.ITypeInfo" FrameworkAlternate="net-8.0;net-9.0" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -14,6 +15,12 @@
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -24,24 +31,38 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Runtime.InteropServices" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.InteropServices" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.InteropServices" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.InteropServices" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.InteropServices" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.InteropServices" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+    <TypeForwarding From="System.Runtime.InteropServices" FromVersion="4.1.0.0" To="mscorlib" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Interfaces>
     <Interface>
       <InterfaceName>System.Runtime.InteropServices.ComTypes.ITypeInfo</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Runtime.InteropServices.Guid("00020412-0000-0000-C000-000000000046")</AttributeName>
+    <Attribute FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.1">
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    <Attribute FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.1">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netstandard-1.5;netstandard-1.6;netcore-2.2">
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netstandard-1.2;netstandard-1.3;netstandard-1.4">
-      <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.Guid("00020412-0000-0000-C000-000000000046")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.Guid("00020412-0000-0000-C000-000000000046")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -50,7 +71,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
+ The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](/dotnet/framework/interop/how-to-map-hresults-and-exceptions).  
   
  ]]></format>
     </remarks>
@@ -61,8 +82,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddressOfMember(int32 memid, valuetype System.Runtime.InteropServices.ComTypes.INVOKEKIND invKind, [out] native int&amp; ppv) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.AddressOfMember(System.Int32,System.Runtime.InteropServices.ComTypes.INVOKEKIND,System.IntPtr@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddressOfMember (memid As Integer, invKind As INVOKEKIND, ByRef ppv As IntPtr)" />
+      <MemberSignature Language="F#" Value="abstract member AddressOfMember : int * System.Runtime.InteropServices.ComTypes.INVOKEKIND * nativeint -&gt; unit" Usage="iTypeInfo2.AddressOfMember (memid, invKind, ppv)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddressOfMember(int memid, System::Runtime::InteropServices::ComTypes::INVOKEKIND invKind, [Runtime::InteropServices::Out] IntPtr % ppv);" />
-      <MemberSignature Language="F#" Value="abstract member AddressOfMember : int * System.Runtime.InteropServices.ComTypes.INVOKEKIND *  -&gt; unit" Usage="iTypeInfo2.AddressOfMember (memid, invKind, ppv)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.AddressOfMember(System.Int32,System.Runtime.InteropServices.ComTypes.INVOKEKIND,System.IntPtr@)</InterfaceMember>
@@ -76,6 +97,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -86,6 +113,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -104,19 +132,21 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For additional information about `ITypeInfo::AddressOfMember`, see the MSDN Library.  
+ For more information, see [AddressOfMember method](/windows/win32/api/oaidl/nf-oaidl-itypeinfo-addressofmember).
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
-      <MemberSignature Language="C#" Value="public void CreateInstance (object pUnkOuter, ref Guid riid, out object ppvObj);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CreateInstance(object pUnkOuter, [in]valuetype System.Guid&amp; riid, [out] object&amp; ppvObj) cil managed" />
+      <MemberSignature Language="C#" Value="public void CreateInstance (object pUnkOuter, ref Guid riid, out object ppvObj);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CreateInstance(object pUnkOuter, valuetype System.Guid&amp; riid, [out] object&amp; ppvObj) cil managed" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.CreateInstance(System.Object,System.Guid@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CreateInstance (pUnkOuter As Object, ByRef riid As Guid, ByRef ppvObj As Object)" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstance : obj * Guid * obj -&gt; unit" Usage="iTypeInfo2.CreateInstance (pUnkOuter, riid, ppvObj)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CreateInstance(System::Object ^ pUnkOuter, Guid % riid, [Runtime::InteropServices::Out] System::Object ^ % ppvObj);" />
-      <MemberSignature Language="F#" Value="abstract member CreateInstance : obj *  *  -&gt; unit" Usage="iTypeInfo2.CreateInstance (pUnkOuter, riid, ppvObj)" />
+      <MemberSignature Language="C#" Value="public void CreateInstance (object? pUnkOuter, ref Guid riid, out object ppvObj);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CreateInstance(object pUnkOuter, [in]valuetype System.Guid&amp; riid, [out] object&amp; ppvObj) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.CreateInstance(System.Object,System.Guid@,System.Object@)</InterfaceMember>
@@ -130,6 +160,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -140,12 +176,20 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pUnkOuter" Type="System.Object" />
+        <Parameter Name="pUnkOuter" Type="System.Object">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-8.0;net-9.0">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="riid" Type="System.Guid" RefType="ref" />
         <Parameter Name="ppvObj" Type="System.Object" RefType="out" />
       </Parameters>
@@ -158,7 +202,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For additional information about `ITypeInfo::CreateInstance`, see the MSDN Library.  
+ For more information, see [ITypeInfo::CreateInstance method](/windows/win32/api/oaidl/nf-oaidl-itypeinfo-createinstance).
   
  ]]></format>
         </remarks>
@@ -169,8 +213,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetAllCustData(native int pCustData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetAllCustData(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetAllCustData (pCustData As IntPtr)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetAllCustData(IntPtr pCustData);" />
       <MemberSignature Language="F#" Value="abstract member GetAllCustData : nativeint -&gt; unit" Usage="iTypeInfo2.GetAllCustData pCustData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetAllCustData(IntPtr pCustData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -181,6 +225,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -191,6 +241,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -209,8 +260,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetAllFuncCustData(int32 index, native int pCustData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetAllFuncCustData(System.Int32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetAllFuncCustData (index As Integer, pCustData As IntPtr)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetAllFuncCustData(int index, IntPtr pCustData);" />
       <MemberSignature Language="F#" Value="abstract member GetAllFuncCustData : int * nativeint -&gt; unit" Usage="iTypeInfo2.GetAllFuncCustData (index, pCustData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetAllFuncCustData(int index, IntPtr pCustData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -221,6 +272,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -231,6 +288,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -247,7 +305,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For additional information about `ITypeInfo2::GetAllFuncCustData`, see the MSDN Library.  
+ For more information, see [ITypeInfo2::GetAllFuncCustData method](/windows/win32/api/oaidl/nf-oaidl-itypeinfo2-getallfunccustdata).
   
  ]]></format>
         </remarks>
@@ -258,8 +316,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetAllImplTypeCustData(int32 index, native int pCustData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetAllImplTypeCustData(System.Int32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetAllImplTypeCustData (index As Integer, pCustData As IntPtr)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetAllImplTypeCustData(int index, IntPtr pCustData);" />
       <MemberSignature Language="F#" Value="abstract member GetAllImplTypeCustData : int * nativeint -&gt; unit" Usage="iTypeInfo2.GetAllImplTypeCustData (index, pCustData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetAllImplTypeCustData(int index, IntPtr pCustData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -270,6 +328,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -280,6 +344,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -296,7 +361,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For additional information about `ITypeInfo2::GetAllImplTypeCustData`, see the MSDN Library.  
+ For more information, see [ITypeInfo2::GetAllImplTypeCustData method](/windows/win32/api/oaidl/nf-oaidl-itypeinfo2-getallimpltypecustdata).
   
  ]]></format>
         </remarks>
@@ -307,8 +372,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetAllParamCustData(int32 indexFunc, int32 indexParam, native int pCustData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetAllParamCustData(System.Int32,System.Int32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetAllParamCustData (indexFunc As Integer, indexParam As Integer, pCustData As IntPtr)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetAllParamCustData(int indexFunc, int indexParam, IntPtr pCustData);" />
       <MemberSignature Language="F#" Value="abstract member GetAllParamCustData : int * int * nativeint -&gt; unit" Usage="iTypeInfo2.GetAllParamCustData (indexFunc, indexParam, pCustData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetAllParamCustData(int indexFunc, int indexParam, IntPtr pCustData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -319,6 +384,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -329,6 +400,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -351,8 +423,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetAllVarCustData(int32 index, native int pCustData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetAllVarCustData(System.Int32,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetAllVarCustData (index As Integer, pCustData As IntPtr)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetAllVarCustData(int index, IntPtr pCustData);" />
       <MemberSignature Language="F#" Value="abstract member GetAllVarCustData : int * nativeint -&gt; unit" Usage="iTypeInfo2.GetAllVarCustData (index, pCustData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetAllVarCustData(int index, IntPtr pCustData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -363,6 +435,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -373,6 +451,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -393,8 +472,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetContainingTypeLib([out] class System.Runtime.InteropServices.ComTypes.ITypeLib&amp; ppTLB, [out] int32&amp; pIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetContainingTypeLib(System.Runtime.InteropServices.ComTypes.ITypeLib@,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetContainingTypeLib (ByRef ppTLB As ITypeLib, ByRef pIndex As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member GetContainingTypeLib : ITypeLib * int -&gt; unit" Usage="iTypeInfo2.GetContainingTypeLib (ppTLB, pIndex)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetContainingTypeLib([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::ITypeLib ^ % ppTLB, [Runtime::InteropServices::Out] int % pIndex);" />
-      <MemberSignature Language="F#" Value="abstract member GetContainingTypeLib :  *  -&gt; unit" Usage="iTypeInfo2.GetContainingTypeLib (ppTLB, pIndex)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetContainingTypeLib(System.Runtime.InteropServices.ComTypes.ITypeLib@,System.Int32@)</InterfaceMember>
@@ -408,6 +487,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -418,6 +503,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -434,7 +520,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For additional information about `ITypeInfo::GetContainingTypeLib`, see the MSDN Library.  
+ For more information, see [ITypeInfo::GetContainingTypeLib method](/windows/win32/api/oaidl/nf-oaidl-itypeinfo-getcontainingtypelib).
   
  ]]></format>
         </remarks>
@@ -445,8 +531,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetCustData(valuetype System.Guid&amp; guid, [out] object&amp; pVarVal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetCustData(System.Guid@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetCustData (ByRef guid As Guid, ByRef pVarVal As Object)" />
+      <MemberSignature Language="F#" Value="abstract member GetCustData : Guid * obj -&gt; unit" Usage="iTypeInfo2.GetCustData (guid, pVarVal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetCustData(Guid % guid, [Runtime::InteropServices::Out] System::Object ^ % pVarVal);" />
-      <MemberSignature Language="F#" Value="abstract member GetCustData :  *  -&gt; unit" Usage="iTypeInfo2.GetCustData (guid, pVarVal)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -457,6 +543,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -467,6 +559,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -483,7 +576,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For additional information about `ITypeInfo2::GetCustData`, see the MSDN Library.  
+ For more information, see [ITypeInfo2::GetCustData method](/windows/win32/api/oaidl/nf-oaidl-itypeinfo2-getcustdata).
   
  ]]></format>
         </remarks>
@@ -494,8 +587,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetDllEntry(int32 memid, valuetype System.Runtime.InteropServices.ComTypes.INVOKEKIND invKind, native int pBstrDllName, native int pBstrName, native int pwOrdinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDllEntry(System.Int32,System.Runtime.InteropServices.ComTypes.INVOKEKIND,System.IntPtr,System.IntPtr,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetDllEntry (memid As Integer, invKind As INVOKEKIND, pBstrDllName As IntPtr, pBstrName As IntPtr, pwOrdinal As IntPtr)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetDllEntry(int memid, System::Runtime::InteropServices::ComTypes::INVOKEKIND invKind, IntPtr pBstrDllName, IntPtr pBstrName, IntPtr pwOrdinal);" />
       <MemberSignature Language="F#" Value="abstract member GetDllEntry : int * System.Runtime.InteropServices.ComTypes.INVOKEKIND * nativeint * nativeint * nativeint -&gt; unit" Usage="iTypeInfo2.GetDllEntry (memid, invKind, pBstrDllName, pBstrName, pwOrdinal)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetDllEntry(int memid, System::Runtime::InteropServices::ComTypes::INVOKEKIND invKind, IntPtr pBstrDllName, IntPtr pBstrName, IntPtr pwOrdinal);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetDllEntry(System.Int32,System.Runtime.InteropServices.ComTypes.INVOKEKIND,System.IntPtr,System.IntPtr,System.IntPtr)</InterfaceMember>
@@ -509,6 +602,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -519,6 +618,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -541,7 +641,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For additional information about `ITypeInfo::GetDllEntry`, see the MSDN Library.  
+ For more information, see [ITypeInfo::GetDllEntry method](/windows/win32/api/oaidl/nf-oaidl-itypeinfo-getdllentry).
   
  ]]></format>
         </remarks>
@@ -552,8 +652,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetDocumentation(int32 index, [out] string&amp; strName, [out] string&amp; strDocString, [out] int32&amp; dwHelpContext, [out] string&amp; strHelpFile) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation(System.Int32,System.String@,System.String@,System.Int32@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetDocumentation (index As Integer, ByRef strName As String, ByRef strDocString As String, ByRef dwHelpContext As Integer, ByRef strHelpFile As String)" />
+      <MemberSignature Language="F#" Value="abstract member GetDocumentation : int * string * string * int * string -&gt; unit" Usage="iTypeInfo2.GetDocumentation (index, strName, strDocString, dwHelpContext, strHelpFile)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetDocumentation(int index, [Runtime::InteropServices::Out] System::String ^ % strName, [Runtime::InteropServices::Out] System::String ^ % strDocString, [Runtime::InteropServices::Out] int % dwHelpContext, [Runtime::InteropServices::Out] System::String ^ % strHelpFile);" />
-      <MemberSignature Language="F#" Value="abstract member GetDocumentation : int *  *  *  *  -&gt; unit" Usage="iTypeInfo2.GetDocumentation (index, strName, strDocString, dwHelpContext, strHelpFile)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetDocumentation(System.Int32,System.String@,System.String@,System.Int32@,System.String@)</InterfaceMember>
@@ -567,6 +667,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -577,6 +683,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -599,7 +706,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For additional information about `ITypeInfo::GetDocumentation`, see the MSDN Library.  
+ For more information, see [ITypeInfo::GetDocumentation method](/windows/win32/api/oaidl/nf-oaidl-itypeinfo-getdocumentation).
   
  ]]></format>
         </remarks>
@@ -610,8 +717,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetDocumentation2(int32 memid, [out] string&amp; pbstrHelpString, [out] int32&amp; pdwHelpStringContext, [out] string&amp; pbstrHelpStringDll) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2(System.Int32,System.String@,System.Int32@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetDocumentation2 (memid As Integer, ByRef pbstrHelpString As String, ByRef pdwHelpStringContext As Integer, ByRef pbstrHelpStringDll As String)" />
+      <MemberSignature Language="F#" Value="abstract member GetDocumentation2 : int * string * int * string -&gt; unit" Usage="iTypeInfo2.GetDocumentation2 (memid, pbstrHelpString, pdwHelpStringContext, pbstrHelpStringDll)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetDocumentation2(int memid, [Runtime::InteropServices::Out] System::String ^ % pbstrHelpString, [Runtime::InteropServices::Out] int % pdwHelpStringContext, [Runtime::InteropServices::Out] System::String ^ % pbstrHelpStringDll);" />
-      <MemberSignature Language="F#" Value="abstract member GetDocumentation2 : int *  *  *  -&gt; unit" Usage="iTypeInfo2.GetDocumentation2 (memid, pbstrHelpString, pdwHelpStringContext, pbstrHelpStringDll)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -622,6 +729,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -632,10 +745,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.LCIDConversion(1)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1">
+          <AttributeName Language="C#">[System.Runtime.InteropServices.LCIDConversion(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.LCIDConversion(1)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -661,8 +776,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetFuncCustData(int32 index, valuetype System.Guid&amp; guid, [out] object&amp; pVarVal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetFuncCustData(System.Int32,System.Guid@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetFuncCustData (index As Integer, ByRef guid As Guid, ByRef pVarVal As Object)" />
+      <MemberSignature Language="F#" Value="abstract member GetFuncCustData : int * Guid * obj -&gt; unit" Usage="iTypeInfo2.GetFuncCustData (index, guid, pVarVal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetFuncCustData(int index, Guid % guid, [Runtime::InteropServices::Out] System::Object ^ % pVarVal);" />
-      <MemberSignature Language="F#" Value="abstract member GetFuncCustData : int *  *  -&gt; unit" Usage="iTypeInfo2.GetFuncCustData (index, guid, pVarVal)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -673,6 +788,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -683,6 +804,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -705,8 +827,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetFuncDesc(int32 index, [out] native int&amp; ppFuncDesc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetFuncDesc(System.Int32,System.IntPtr@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetFuncDesc (index As Integer, ByRef ppFuncDesc As IntPtr)" />
+      <MemberSignature Language="F#" Value="abstract member GetFuncDesc : int * nativeint -&gt; unit" Usage="iTypeInfo2.GetFuncDesc (index, ppFuncDesc)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetFuncDesc(int index, [Runtime::InteropServices::Out] IntPtr % ppFuncDesc);" />
-      <MemberSignature Language="F#" Value="abstract member GetFuncDesc : int *  -&gt; unit" Usage="iTypeInfo2.GetFuncDesc (index, ppFuncDesc)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetFuncDesc(System.Int32,System.IntPtr@)</InterfaceMember>
@@ -720,6 +842,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -730,6 +858,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -748,7 +877,7 @@
 ## Remarks  
  The values of the `ppFuncDesc` parameter can be accessed through the <xref:System.Runtime.InteropServices.Marshal.PtrToStructure%2A> method.  
   
- For additional information about `ITypeInfo::GetFuncDesc`, see the MSDN Library.  
+ For more information, see [ITypeInfo::GetFuncDesc method](/windows/win32/api/oaidl/nf-oaidl-itypeinfo-getfuncdesc).
   
  ]]></format>
         </remarks>
@@ -759,8 +888,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetFuncIndexOfMemId(int32 memid, valuetype System.Runtime.InteropServices.ComTypes.INVOKEKIND invKind, [out] int32&amp; pFuncIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetFuncIndexOfMemId(System.Int32,System.Runtime.InteropServices.ComTypes.INVOKEKIND,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetFuncIndexOfMemId (memid As Integer, invKind As INVOKEKIND, ByRef pFuncIndex As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member GetFuncIndexOfMemId : int * System.Runtime.InteropServices.ComTypes.INVOKEKIND * int -&gt; unit" Usage="iTypeInfo2.GetFuncIndexOfMemId (memid, invKind, pFuncIndex)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetFuncIndexOfMemId(int memid, System::Runtime::InteropServices::ComTypes::INVOKEKIND invKind, [Runtime::InteropServices::Out] int % pFuncIndex);" />
-      <MemberSignature Language="F#" Value="abstract member GetFuncIndexOfMemId : int * System.Runtime.InteropServices.ComTypes.INVOKEKIND *  -&gt; unit" Usage="iTypeInfo2.GetFuncIndexOfMemId (memid, invKind, pFuncIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -771,6 +900,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -781,6 +916,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -800,11 +936,12 @@
     </Member>
     <Member MemberName="GetIDsOfNames">
       <MemberSignature Language="C#" Value="public void GetIDsOfNames (string[] rgszNames, int cNames, int[] pMemId);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetIDsOfNames([in]string[] rgszNames, int32 cNames, [out] int32[] pMemId) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetIDsOfNames(string[] rgszNames, int32 cNames, int32[] pMemId) cil managed" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetIDsOfNames(System.String[],System.Int32,System.Int32[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetIDsOfNames (rgszNames As String(), cNames As Integer, pMemId As Integer())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetIDsOfNames(cli::array &lt;System::String ^&gt; ^ rgszNames, int cNames, cli::array &lt;int&gt; ^ pMemId);" />
       <MemberSignature Language="F#" Value="abstract member GetIDsOfNames : string[] * int * int[] -&gt; unit" Usage="iTypeInfo2.GetIDsOfNames (rgszNames, cNames, pMemId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetIDsOfNames(cli::array &lt;System::String ^&gt; ^ rgszNames, int cNames, cli::array &lt;int&gt; ^ pMemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetIDsOfNames([in]string[] rgszNames, int32 cNames, [out] int32[] pMemId) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetIDsOfNames(System.String[],System.Int32,System.Int32[])</InterfaceMember>
@@ -818,6 +955,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -828,6 +971,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -846,7 +990,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For additional information about `ITypeInfo::GetIDsOfNames`, see the MSDN Library.  
+ For more information, see [ITypeInfo::GetIDsOfNames method](/windows/win32/api/oaidl/nf-oaidl-itypeinfo-getidsofnames).
   
  ]]></format>
         </remarks>
@@ -857,8 +1001,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetImplTypeCustData(int32 index, valuetype System.Guid&amp; guid, [out] object&amp; pVarVal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetImplTypeCustData(System.Int32,System.Guid@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetImplTypeCustData (index As Integer, ByRef guid As Guid, ByRef pVarVal As Object)" />
+      <MemberSignature Language="F#" Value="abstract member GetImplTypeCustData : int * Guid * obj -&gt; unit" Usage="iTypeInfo2.GetImplTypeCustData (index, guid, pVarVal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetImplTypeCustData(int index, Guid % guid, [Runtime::InteropServices::Out] System::Object ^ % pVarVal);" />
-      <MemberSignature Language="F#" Value="abstract member GetImplTypeCustData : int *  *  -&gt; unit" Usage="iTypeInfo2.GetImplTypeCustData (index, guid, pVarVal)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -869,6 +1013,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -879,6 +1029,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -897,7 +1048,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For additional information about `ITypeInfo2::GetImplTypeCustData`, see the MSDN Library.  
+ For more information, see [ITypeInfo2::GetImplTypeCustData method](/windows/win32/api/oaidl/nf-oaidl-itypeinfo2-getimpltypecustdata).
   
  ]]></format>
         </remarks>
@@ -908,8 +1059,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetImplTypeFlags(int32 index, [out] valuetype System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS&amp; pImplTypeFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetImplTypeFlags(System.Int32,System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetImplTypeFlags (index As Integer, ByRef pImplTypeFlags As IMPLTYPEFLAGS)" />
+      <MemberSignature Language="F#" Value="abstract member GetImplTypeFlags : int * IMPLTYPEFLAGS -&gt; unit" Usage="iTypeInfo2.GetImplTypeFlags (index, pImplTypeFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetImplTypeFlags(int index, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IMPLTYPEFLAGS % pImplTypeFlags);" />
-      <MemberSignature Language="F#" Value="abstract member GetImplTypeFlags : int *  -&gt; unit" Usage="iTypeInfo2.GetImplTypeFlags (index, pImplTypeFlags)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetImplTypeFlags(System.Int32,System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS@)</InterfaceMember>
@@ -923,6 +1074,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -933,6 +1090,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -949,19 +1107,20 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For additional information about `ITypeInfo::GetImplTypeFlags`, see the MSDN Library.  
+ For more information, see [ITypeInfo::GetImplTypeFlags method](/windows/win32/api/oaidl/nf-oaidl-itypeinfo-getimpltypeflags).
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMops">
-      <MemberSignature Language="C#" Value="public void GetMops (int memid, out string pBstrMops);" />
+      <MemberSignature Language="C#" Value="public void GetMops (int memid, out string pBstrMops);" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetMops(int32 memid, [out] string&amp; pBstrMops) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetMops(System.Int32,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetMops (memid As Integer, ByRef pBstrMops As String)" />
+      <MemberSignature Language="F#" Value="abstract member GetMops : int * string -&gt; unit" Usage="iTypeInfo2.GetMops (memid, pBstrMops)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetMops(int memid, [Runtime::InteropServices::Out] System::String ^ % pBstrMops);" />
-      <MemberSignature Language="F#" Value="abstract member GetMops : int *  -&gt; unit" Usage="iTypeInfo2.GetMops (memid, pBstrMops)" />
+      <MemberSignature Language="C#" Value="public void GetMops (int memid, out string? pBstrMops);" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetMops(System.Int32,System.String@)</InterfaceMember>
@@ -975,6 +1134,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -985,7 +1150,14 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1001,7 +1173,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For additional information about `ITypeInfo::GetMops`, see the MSDN Library.  
+ For more information, see [ITypeInfo::GetMops method](/windows/win32/api/oaidl/nf-oaidl-itypeinfo-getmops).
   
  ]]></format>
         </remarks>
@@ -1009,11 +1181,12 @@
     </Member>
     <Member MemberName="GetNames">
       <MemberSignature Language="C#" Value="public void GetNames (int memid, string[] rgBstrNames, int cMaxNames, out int pcNames);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetNames(int32 memid, [out] string[] rgBstrNames, int32 cMaxNames, [out] int32&amp; pcNames) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetNames(int32 memid, string[] rgBstrNames, int32 cMaxNames, [out] int32&amp; pcNames) cil managed" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetNames(System.Int32,System.String[],System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetNames (memid As Integer, rgBstrNames As String(), cMaxNames As Integer, ByRef pcNames As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member GetNames : int * string[] * int * int -&gt; unit" Usage="iTypeInfo2.GetNames (memid, rgBstrNames, cMaxNames, pcNames)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetNames(int memid, cli::array &lt;System::String ^&gt; ^ rgBstrNames, int cMaxNames, [Runtime::InteropServices::Out] int % pcNames);" />
-      <MemberSignature Language="F#" Value="abstract member GetNames : int * string[] * int *  -&gt; unit" Usage="iTypeInfo2.GetNames (memid, rgBstrNames, cMaxNames, pcNames)" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetNames(int32 memid, [out] string[] rgBstrNames, int32 cMaxNames, [out] int32&amp; pcNames) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetNames(System.Int32,System.String[],System.Int32,System.Int32@)</InterfaceMember>
@@ -1027,6 +1200,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1037,6 +1216,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1057,7 +1237,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For additional information about `ITypeInfo::GetNames`, see the MSDN Library.  
+ For more information, see [ITypeInfo::GetNames method](/windows/win32/api/oaidl/nf-oaidl-itypeinfo-getnames).
   
  ]]></format>
         </remarks>
@@ -1068,8 +1248,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetParamCustData(int32 indexFunc, int32 indexParam, valuetype System.Guid&amp; guid, [out] object&amp; pVarVal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetParamCustData(System.Int32,System.Int32,System.Guid@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetParamCustData (indexFunc As Integer, indexParam As Integer, ByRef guid As Guid, ByRef pVarVal As Object)" />
+      <MemberSignature Language="F#" Value="abstract member GetParamCustData : int * int * Guid * obj -&gt; unit" Usage="iTypeInfo2.GetParamCustData (indexFunc, indexParam, guid, pVarVal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetParamCustData(int indexFunc, int indexParam, Guid % guid, [Runtime::InteropServices::Out] System::Object ^ % pVarVal);" />
-      <MemberSignature Language="F#" Value="abstract member GetParamCustData : int * int *  *  -&gt; unit" Usage="iTypeInfo2.GetParamCustData (indexFunc, indexParam, guid, pVarVal)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1080,6 +1260,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1090,6 +1276,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1114,8 +1301,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetRefTypeInfo(int32 hRef, [out] class System.Runtime.InteropServices.ComTypes.ITypeInfo&amp; ppTI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetRefTypeInfo(System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetRefTypeInfo (hRef As Integer, ByRef ppTI As ITypeInfo)" />
+      <MemberSignature Language="F#" Value="abstract member GetRefTypeInfo : int * ITypeInfo -&gt; unit" Usage="iTypeInfo2.GetRefTypeInfo (hRef, ppTI)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRefTypeInfo(int hRef, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::ITypeInfo ^ % ppTI);" />
-      <MemberSignature Language="F#" Value="abstract member GetRefTypeInfo : int *  -&gt; unit" Usage="iTypeInfo2.GetRefTypeInfo (hRef, ppTI)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetRefTypeInfo(System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo@)</InterfaceMember>
@@ -1129,6 +1316,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1139,6 +1332,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1155,7 +1349,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For additional information about `ITypeInfo::GetRefTypeInfo`, see the MSDN Library.  
+ For more information, see [ITypeInfo::GetRefTypeInfo method](/windows/win32/api/oaidl/nf-oaidl-itypeinfo-getreftypeinfo).
   
  ]]></format>
         </remarks>
@@ -1166,8 +1360,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetRefTypeOfImplType(int32 index, [out] int32&amp; href) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetRefTypeOfImplType(System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetRefTypeOfImplType (index As Integer, ByRef href As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member GetRefTypeOfImplType : int * int -&gt; unit" Usage="iTypeInfo2.GetRefTypeOfImplType (index, href)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRefTypeOfImplType(int index, [Runtime::InteropServices::Out] int % href);" />
-      <MemberSignature Language="F#" Value="abstract member GetRefTypeOfImplType : int *  -&gt; unit" Usage="iTypeInfo2.GetRefTypeOfImplType (index, href)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetRefTypeOfImplType(System.Int32,System.Int32@)</InterfaceMember>
@@ -1181,6 +1375,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1191,6 +1391,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1207,7 +1408,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For additional information about `ITypeInfo::GetRefTypeOfImplType`, see the MSDN Library.  
+ For more information, see [ITypeInfo::GetRefTypeOfImplType method](/windows/win32/api/oaidl/nf-oaidl-itypeinfo-getreftypeofimpltype).
   
  ]]></format>
         </remarks>
@@ -1218,8 +1419,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetTypeAttr([out] native int&amp; ppTypeAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetTypeAttr(System.IntPtr@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetTypeAttr (ByRef ppTypeAttr As IntPtr)" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeAttr : nativeint -&gt; unit" Usage="iTypeInfo2.GetTypeAttr ppTypeAttr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTypeAttr([Runtime::InteropServices::Out] IntPtr % ppTypeAttr);" />
-      <MemberSignature Language="F#" Value="abstract member GetTypeAttr :  -&gt; unit" Usage="iTypeInfo2.GetTypeAttr ppTypeAttr" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetTypeAttr(System.IntPtr@)</InterfaceMember>
@@ -1233,6 +1434,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1243,6 +1450,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1259,7 +1467,7 @@
 ## Remarks  
  The values of the `ppTypeAttr` parameter can be accessed through the <xref:System.Runtime.InteropServices.Marshal.PtrToStructure%2A> method.  
   
- For additional information about `ITypeInfo::GetTypeAttr`, see the MSDN Library.  
+ For more information, see [ITypeInfo::GetTypeAttr method](/windows/win32/api/oaidl/nf-oaidl-itypeinfo-gettypeattr).
   
  ]]></format>
         </remarks>
@@ -1270,8 +1478,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetTypeComp([out] class System.Runtime.InteropServices.ComTypes.ITypeComp&amp; ppTComp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetTypeComp(System.Runtime.InteropServices.ComTypes.ITypeComp@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetTypeComp (ByRef ppTComp As ITypeComp)" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeComp : ITypeComp -&gt; unit" Usage="iTypeInfo2.GetTypeComp ppTComp" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTypeComp([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::ITypeComp ^ % ppTComp);" />
-      <MemberSignature Language="F#" Value="abstract member GetTypeComp :  -&gt; unit" Usage="iTypeInfo2.GetTypeComp ppTComp" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetTypeComp(System.Runtime.InteropServices.ComTypes.ITypeComp@)</InterfaceMember>
@@ -1285,6 +1493,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1295,6 +1509,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1309,7 +1524,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For additional information about `ITypeInfo::GetTypeComp`, see the MSDN Library.  
+ For more information, see [ITypeInfo::GetTypeComp method](/windows/win32/api/oaidl/nf-oaidl-itypeinfo-gettypecomp).
   
  ]]></format>
         </remarks>
@@ -1320,8 +1535,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetTypeFlags([out] int32&amp; pTypeFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetTypeFlags(System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetTypeFlags (ByRef pTypeFlags As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeFlags : int -&gt; unit" Usage="iTypeInfo2.GetTypeFlags pTypeFlags" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTypeFlags([Runtime::InteropServices::Out] int % pTypeFlags);" />
-      <MemberSignature Language="F#" Value="abstract member GetTypeFlags :  -&gt; unit" Usage="iTypeInfo2.GetTypeFlags pTypeFlags" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1332,6 +1547,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1342,6 +1563,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1360,8 +1582,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetTypeKind([out] valuetype System.Runtime.InteropServices.ComTypes.TYPEKIND&amp; pTypeKind) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetTypeKind(System.Runtime.InteropServices.ComTypes.TYPEKIND@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetTypeKind (ByRef pTypeKind As TYPEKIND)" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeKind : TYPEKIND -&gt; unit" Usage="iTypeInfo2.GetTypeKind pTypeKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTypeKind([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::TYPEKIND % pTypeKind);" />
-      <MemberSignature Language="F#" Value="abstract member GetTypeKind :  -&gt; unit" Usage="iTypeInfo2.GetTypeKind pTypeKind" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1372,6 +1594,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1382,6 +1610,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1400,8 +1629,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetVarCustData(int32 index, valuetype System.Guid&amp; guid, [out] object&amp; pVarVal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetVarCustData(System.Int32,System.Guid@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetVarCustData (index As Integer, ByRef guid As Guid, ByRef pVarVal As Object)" />
+      <MemberSignature Language="F#" Value="abstract member GetVarCustData : int * Guid * obj -&gt; unit" Usage="iTypeInfo2.GetVarCustData (index, guid, pVarVal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetVarCustData(int index, Guid % guid, [Runtime::InteropServices::Out] System::Object ^ % pVarVal);" />
-      <MemberSignature Language="F#" Value="abstract member GetVarCustData : int *  *  -&gt; unit" Usage="iTypeInfo2.GetVarCustData (index, guid, pVarVal)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1412,6 +1641,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1422,6 +1657,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1440,7 +1676,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For additional information about `ITypeInfo2::GetVarCustData`, see the MSDN Library.  
+ For more information, see [ITypeInfo2::GetVarCustData method](/windows/win32/api/oaidl/nf-oaidl-itypeinfo2-getvarcustdata).
   
  ]]></format>
         </remarks>
@@ -1451,8 +1687,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetVarDesc(int32 index, [out] native int&amp; ppVarDesc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetVarDesc(System.Int32,System.IntPtr@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetVarDesc (index As Integer, ByRef ppVarDesc As IntPtr)" />
+      <MemberSignature Language="F#" Value="abstract member GetVarDesc : int * nativeint -&gt; unit" Usage="iTypeInfo2.GetVarDesc (index, ppVarDesc)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetVarDesc(int index, [Runtime::InteropServices::Out] IntPtr % ppVarDesc);" />
-      <MemberSignature Language="F#" Value="abstract member GetVarDesc : int *  -&gt; unit" Usage="iTypeInfo2.GetVarDesc (index, ppVarDesc)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetVarDesc(System.Int32,System.IntPtr@)</InterfaceMember>
@@ -1466,6 +1702,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1476,6 +1718,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1494,7 +1737,7 @@
 ## Remarks  
  The values of the `ppVarDesc` parameter can be accessed through the <xref:System.Runtime.InteropServices.Marshal.PtrToStructure%2A> method.  
   
- For additional information about `ITypeInfo::GetVarDesc`, see the MSDN Library.  
+ For more information, see [ITypeInfo::GetVarDesc method](/windows/win32/api/oaidl/nf-oaidl-itypeinfo-getvardesc).
   
  ]]></format>
         </remarks>
@@ -1505,8 +1748,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetVarIndexOfMemId(int32 memid, [out] int32&amp; pVarIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetVarIndexOfMemId(System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetVarIndexOfMemId (memid As Integer, ByRef pVarIndex As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member GetVarIndexOfMemId : int * int -&gt; unit" Usage="iTypeInfo2.GetVarIndexOfMemId (memid, pVarIndex)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetVarIndexOfMemId(int memid, [Runtime::InteropServices::Out] int % pVarIndex);" />
-      <MemberSignature Language="F#" Value="abstract member GetVarIndexOfMemId : int *  -&gt; unit" Usage="iTypeInfo2.GetVarIndexOfMemId (memid, pVarIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -1517,6 +1760,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1527,6 +1776,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1547,8 +1797,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Invoke(object pvInstance, int32 memid, int16 wFlags, valuetype System.Runtime.InteropServices.ComTypes.DISPPARAMS&amp; pDispParams, native int pVarResult, native int pExcepInfo, [out] int32&amp; puArgErr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.Invoke(System.Object,System.Int32,System.Int16,System.Runtime.InteropServices.ComTypes.DISPPARAMS@,System.IntPtr,System.IntPtr,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Invoke (pvInstance As Object, memid As Integer, wFlags As Short, ByRef pDispParams As DISPPARAMS, pVarResult As IntPtr, pExcepInfo As IntPtr, ByRef puArgErr As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member Invoke : obj * int * int16 * DISPPARAMS * nativeint * nativeint * int -&gt; unit" Usage="iTypeInfo2.Invoke (pvInstance, memid, wFlags, pDispParams, pVarResult, pExcepInfo, puArgErr)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invoke(System::Object ^ pvInstance, int memid, short wFlags, System::Runtime::InteropServices::ComTypes::DISPPARAMS % pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, [Runtime::InteropServices::Out] int % puArgErr);" />
-      <MemberSignature Language="F#" Value="abstract member Invoke : obj * int * int16 *  * nativeint * nativeint *  -&gt; unit" Usage="iTypeInfo2.Invoke (pvInstance, memid, wFlags, pDispParams, pVarResult, pExcepInfo, puArgErr)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.Invoke(System.Object,System.Int32,System.Int16,System.Runtime.InteropServices.ComTypes.DISPPARAMS@,System.IntPtr,System.IntPtr,System.Int32@)</InterfaceMember>
@@ -1562,6 +1812,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1572,6 +1828,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1609,7 +1866,7 @@
 |DISPATCH_PROPERTYPUT|The member is changed as a property or data member.|  
 |DISPATCH_PROPERTYPUTREF|The member is changed by using a reference assignment, rather than a value assignment. This value is valid only when the property accepts a reference to an object.|  
   
- For additional information about `ITypeInfo::Invoke`, see the MSDN Library.  
+ For more information, see [ITypeInfo::Invoke method](/windows/win32/api/oaidl/nf-oaidl-itypeinfo-invoke).
   
  ]]></format>
         </remarks>
@@ -1620,8 +1877,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReleaseFuncDesc(native int pFuncDesc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.ReleaseFuncDesc(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReleaseFuncDesc (pFuncDesc As IntPtr)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseFuncDesc(IntPtr pFuncDesc);" />
       <MemberSignature Language="F#" Value="abstract member ReleaseFuncDesc : nativeint -&gt; unit" Usage="iTypeInfo2.ReleaseFuncDesc pFuncDesc" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseFuncDesc(IntPtr pFuncDesc);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.ReleaseFuncDesc(System.IntPtr)</InterfaceMember>
@@ -1635,6 +1892,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1645,6 +1908,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1659,7 +1923,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For additional information about `ITypeInfo::ReleaseFuncDesc`, see the MSDN Library.  
+ For more information, see [ITypeInfo::ReleaseFuncDesc method](/windows/win32/api/oaidl/nf-oaidl-itypeinfo-releasefuncdesc).
   
  ]]></format>
         </remarks>
@@ -1670,8 +1934,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReleaseTypeAttr(native int pTypeAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.ReleaseTypeAttr(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReleaseTypeAttr (pTypeAttr As IntPtr)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseTypeAttr(IntPtr pTypeAttr);" />
       <MemberSignature Language="F#" Value="abstract member ReleaseTypeAttr : nativeint -&gt; unit" Usage="iTypeInfo2.ReleaseTypeAttr pTypeAttr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseTypeAttr(IntPtr pTypeAttr);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.ReleaseTypeAttr(System.IntPtr)</InterfaceMember>
@@ -1685,6 +1949,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1695,6 +1965,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1709,7 +1980,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For additional information about `ITypeInfo::ReleaseTypeAttr`, see the MSDN Library.  
+ For more information, see [ITypeInfo::ReleaseTypeAttr method](/windows/win32/api/oaidl/nf-oaidl-itypeinfo-releasetypeattr).
   
  ]]></format>
         </remarks>
@@ -1720,8 +1991,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReleaseVarDesc(native int pVarDesc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo2.ReleaseVarDesc(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReleaseVarDesc (pVarDesc As IntPtr)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseVarDesc(IntPtr pVarDesc);" />
       <MemberSignature Language="F#" Value="abstract member ReleaseVarDesc : nativeint -&gt; unit" Usage="iTypeInfo2.ReleaseVarDesc pVarDesc" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseVarDesc(IntPtr pVarDesc);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.ITypeInfo.ReleaseVarDesc(System.IntPtr)</InterfaceMember>
@@ -1735,6 +2006,12 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1745,6 +2022,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1759,7 +2037,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For additional information about `ITypeInfo::ReleaseVarDesc`, see the MSDN Library.  
+ For more information, see [ITypeInfo::ReleaseVarDesc method](/windows/win32/api/oaidl/nf-oaidl-itypeinfo-releasevardesc).
   
  ]]></format>
         </remarks>

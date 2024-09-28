@@ -1,10 +1,10 @@
-﻿<Type Name="ProfileModule" FullName="System.Web.Profile.ProfileModule">
+<Type Name="ProfileModule" FullName="System.Web.Profile.ProfileModule">
   <TypeSignature Language="C#" Value="public sealed class ProfileModule : System.Web.IHttpModule" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProfileModule extends System.Object implements class System.Web.IHttpModule" />
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.ProfileModule" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProfileModule&#xA;Implements IHttpModule" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ProfileModule sealed : System::Web::IHttpModule" />
   <TypeSignature Language="F#" Value="type ProfileModule = class&#xA;    interface IHttpModule" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProfileModule sealed : System::Web::IHttpModule" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -63,12 +63,12 @@
   
  The following code example shows the <xref:System.Web.Profile.ProfileModule.MigrateAnonymous> event included in the Global.asax file for an ASP.NET application. The <xref:System.Web.Profile.ProfileModule.MigrateAnonymous> event copies profile property values from the anonymous profile to the profile for the current user.  
   
- [!code-csharp[System.Web.Profile.ProfileManager#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/global.asax#1)]
- [!code-vb[System.Web.Profile.ProfileManager#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/global.asax#1)]  
+ [!code-csharp[System.Web.Profile.ProfileManager#1](~/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/global.asax#1)]
+ [!code-vb[System.Web.Profile.ProfileManager#1](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/global.asax#1)]  
   
  ]]></format>
     </remarks>
-    <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+    <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/2y3fs9xs(v=vs.100)">ASP.NET Profile Properties Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -85,7 +85,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -101,7 +102,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/2y3fs9xs(v=vs.100)">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -109,8 +110,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileModule.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="profileModule.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.IHttpModule.Dispose</InterfaceMember>
@@ -136,7 +137,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/2y3fs9xs(v=vs.100)">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Init">
@@ -144,8 +145,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Init(class System.Web.HttpApplication app) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileModule.Init(System.Web.HttpApplication)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Init (app As HttpApplication)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Init(System::Web::HttpApplication ^ app);" />
       <MemberSignature Language="F#" Value="abstract member Init : System.Web.HttpApplication -&gt; unit&#xA;override this.Init : System.Web.HttpApplication -&gt; unit" Usage="profileModule.Init app" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Init(System::Web::HttpApplication ^ app);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.IHttpModule.Init(System.Web.HttpApplication)</InterfaceMember>
@@ -174,7 +175,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/2y3fs9xs(v=vs.100)">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="MigrateAnonymous">
@@ -182,8 +183,8 @@
       <MemberSignature Language="ILAsm" Value=".event class System.Web.Profile.ProfileMigrateEventHandler MigrateAnonymous" />
       <MemberSignature Language="DocId" Value="E:System.Web.Profile.ProfileModule.MigrateAnonymous" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event MigrateAnonymous As ProfileMigrateEventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::Profile::ProfileMigrateEventHandler ^ MigrateAnonymous;" />
       <MemberSignature Language="F#" Value="member this.MigrateAnonymous : System.Web.Profile.ProfileMigrateEventHandler " Usage="member this.MigrateAnonymous : System.Web.Profile.ProfileMigrateEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::Profile::ProfileMigrateEventHandler ^ MigrateAnonymous;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -203,14 +204,12 @@
   
  You can use the <xref:System.Web.Profile.ProfileModule.MigrateAnonymous> event to copy profile property values from an anonymous profile to an authenticated profile when a user who has been anonymously using your application logs in.  
   
- When an application that has the user profile enabled is started, ASP.NET creates a new class of type `ProfileCommon`, which inherits from the <xref:System.Web.Profile.ProfileBase> class. Strongly typed accessors are added to the `ProfileCommon` class for each property defined in the  configuration section. A `GetProfile` method enables you to retrieve a `ProfileCommon` object based on a user name. You can use the `GetProfile` method of the current, authenticated profile to retrieve the property values of the anonymous profile. The anonymous property values can then be copied to the current profile for the authenticated user.  
-  
-   
+ When an application that has the user profile enabled is started, ASP.NET creates a new class of type `ProfileCommon`, which inherits from the <xref:System.Web.Profile.ProfileBase> class. Strongly typed accessors are added to the `ProfileCommon` class for each property defined in the \<profile> configuration section. A `GetProfile` method enables you to retrieve a `ProfileCommon` object based on a user name. You can use the `GetProfile` method of the current, authenticated profile to retrieve the property values of the anonymous profile. The anonymous property values can then be copied to the current profile for the authenticated user.
   
 ## Examples  
  The following example shows a Web.config file that enables anonymous identification and profile properties that support anonymous users.  
   
-```  
+```xml
 <configuration>  
   <system.web>  
     <authentication mode="Forms" >  
@@ -232,12 +231,12 @@
   
  The following code example shows the <xref:System.Web.Profile.ProfileModule.MigrateAnonymous> event included in the Global.asax file for an ASP.NET application. The <xref:System.Web.Profile.ProfileModule.MigrateAnonymous> event copies profile property values from the anonymous profile to the profile for the current user.  
   
- [!code-csharp[System.Web.Profile.ProfileManager#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/global.asax#1)]
- [!code-vb[System.Web.Profile.ProfileManager#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/global.asax#1)]  
+ [!code-csharp[System.Web.Profile.ProfileManager#1](~/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/global.asax#1)]
+ [!code-vb[System.Web.Profile.ProfileManager#1](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/global.asax#1)]  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/2y3fs9xs(v=vs.100)">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Personalize">
@@ -245,8 +244,8 @@
       <MemberSignature Language="ILAsm" Value=".event class System.Web.Profile.ProfileEventHandler Personalize" />
       <MemberSignature Language="DocId" Value="E:System.Web.Profile.ProfileModule.Personalize" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Personalize As ProfileEventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::Profile::ProfileEventHandler ^ Personalize;" />
       <MemberSignature Language="F#" Value="member this.Personalize : System.Web.Profile.ProfileEventHandler " Usage="member this.Personalize : System.Web.Profile.ProfileEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::Profile::ProfileEventHandler ^ Personalize;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -271,8 +270,8 @@
 ## Examples  
  The following code example shows the <xref:System.Web.Profile.ProfileModule.Personalize> event declared in the Global.asax file for an application. The event code loads a user profile for a user based on role membership.  
   
- [!code-csharp[System.Web.Profile.ProfileManager.Personalize#12](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager.Personalize/CS/global.asax#12)]
- [!code-vb[System.Web.Profile.ProfileManager.Personalize#12](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager.Personalize/VB/global.asax#12)]  
+ [!code-csharp[System.Web.Profile.ProfileManager.Personalize#12](~/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager.Personalize/CS/global.asax#12)]
+ [!code-vb[System.Web.Profile.ProfileManager.Personalize#12](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager.Personalize/VB/global.asax#12)]  
   
  ]]></format>
         </remarks>
@@ -283,8 +282,8 @@
       <MemberSignature Language="ILAsm" Value=".event class System.Web.Profile.ProfileAutoSaveEventHandler ProfileAutoSaving" />
       <MemberSignature Language="DocId" Value="E:System.Web.Profile.ProfileModule.ProfileAutoSaving" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ProfileAutoSaving As ProfileAutoSaveEventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::Profile::ProfileAutoSaveEventHandler ^ ProfileAutoSaving;" />
       <MemberSignature Language="F#" Value="member this.ProfileAutoSaving : System.Web.Profile.ProfileAutoSaveEventHandler " Usage="member this.ProfileAutoSaving : System.Web.Profile.ProfileAutoSaveEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::Profile::ProfileAutoSaveEventHandler ^ ProfileAutoSaving;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -313,12 +312,12 @@
 ## Examples  
  The following code example shows the <xref:System.Web.Profile.ProfileModule.ProfileAutoSaving> event included in the Global.asax file for an ASP.NET application.  
   
- [!code-csharp[System.Web.Profile.ProfileManager.ProfileAutoSaving#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager.ProfileAutoSaving/CS/global.asax#11)]
- [!code-vb[System.Web.Profile.ProfileManager.ProfileAutoSaving#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager.ProfileAutoSaving/VB/global.asax#11)]  
+ [!code-csharp[System.Web.Profile.ProfileManager.ProfileAutoSaving#11](~/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager.ProfileAutoSaving/CS/global.asax#11)]
+ [!code-vb[System.Web.Profile.ProfileManager.ProfileAutoSaving#11](~/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager.ProfileAutoSaving/VB/global.asax#11)]  
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
+        <related type="Article" href="https://learn.microsoft.com/previous-versions/aspnet/2y3fs9xs(v=vs.100)">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
   </Members>

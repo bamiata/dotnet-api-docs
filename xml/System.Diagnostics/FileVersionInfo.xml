@@ -1,15 +1,21 @@
-﻿<Type Name="FileVersionInfo" FullName="System.Diagnostics.FileVersionInfo">
+<Type Name="FileVersionInfo" FullName="System.Diagnostics.FileVersionInfo">
   <TypeSignature Language="C#" Value="public sealed class FileVersionInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FileVersionInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.FileVersionInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FileVersionInfo" />
-  <TypeSignature Language="C++ CLI" Value="public ref class FileVersionInfo sealed" />
   <TypeSignature Language="F#" Value="type FileVersionInfo = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FileVersionInfo sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.2.0</AssemblyVersion>
     <AssemblyVersion>4.0.3.0</AssemblyVersion>
+    <AssemblyVersion>4.0.4.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -21,11 +27,29 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Diagnostics.FileVersionInfo" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Diagnostics.FileVersionInfo" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Diagnostics.FileVersionInfo" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Diagnostics.FileVersionInfo" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Diagnostics.FileVersionInfo" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(2)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(2)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Provides version information for a physical file on disk.</summary>
     <remarks>
@@ -46,40 +70,46 @@
   
  The <xref:System.Diagnostics.FileVersionInfo> properties are based on version resource information built into the file. Version resources are often built into binary files such as .exe or .dll files; text files do not have version resource information.  
   
- Version resources are typically specified in a Win32 resource file, or in assembly attributes. For example the <xref:System.Diagnostics.FileVersionInfo.IsDebug%2A> property reflects the `VS_FF_DEBUG` flag value in the file's `VS_FIXEDFILEINFO` block, which is built from the `VERSIONINFO` resource in a Win32 resource file.  For more information about specifying version resources in a Win32 resource file, see "About Resource Files" and "VERSIONINFO Resource" in the Platform SDK. For more information about specifying version resources in a .NET module, see the [Setting Assembly Attributes](~/docs/framework/app-domains/set-assembly-attributes.md) topic.  
+ Version resources are typically specified in a Win32 resource file, or in assembly attributes. For example the <xref:System.Diagnostics.FileVersionInfo.IsDebug%2A> property reflects the `VS_FF_DEBUG` flag value in the file's `VS_FIXEDFILEINFO` block, which is built from the `VERSIONINFO` resource in a Win32 resource file.  For more information about specifying version resources in a Win32 resource file, see "About Resource Files" and "VERSIONINFO Resource" in the Platform SDK. For more information about specifying version resources in a .NET module, see the [Setting Assembly Attributes](/dotnet/standard/assembly/set-attributes) topic.  
   
 > [!NOTE]
->  This class makes a link demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the immediate caller does not have full trust permission. For details about link demands, see [Link Demands](~/docs/framework/misc/link-demands.md).  
+>  This class makes a link demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the immediate caller does not have full trust permission. For details about link demands, see [Link Demands](/dotnet/framework/misc/link-demands).  
   
    
   
 ## Examples  
- The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the file description and version number in a text box. This code assumes `textBox1` has been instantiated.  
+ The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the file description and version number to the console.  
   
- [!code-cpp[Classic FileVersionInfo Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileVersionInfo Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileVersionInfo Example/CS/source.cs#1)]
- [!code-vb[Classic FileVersionInfo Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/FileVersionInfo/Overview/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
-    <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
     <altmember cref="P:System.Diagnostics.FileVersionInfo.FileVersion" />
     <altmember cref="T:System.Version" />
   </Docs>
   <Members>
     <Member MemberName="Comments">
-      <MemberSignature Language="C#" Value="public string Comments { get; }" />
+      <MemberSignature Language="C#" Value="public string? Comments { get; }" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".property instance string Comments" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.Comments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Comments As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Comments { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Comments : string" Usage="System.Diagnostics.FileVersionInfo.Comments" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Comments { System::String ^ get(); };" />
+      <MemberSignature Language="C#" Value="public string Comments { get; }" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -91,10 +121,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -114,27 +146,34 @@
 ## Examples  
  The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the comments in a text box. This code assumes `textBox1` has been instantiated.  
   
- [!code-cpp[Classic FileVersionInfo.Comments Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/Classic FileVersionInfo.Comments Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileVersionInfo.Comments Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/Classic FileVersionInfo.Comments Example/CS/source.cs#1)]
- [!code-vb[Classic FileVersionInfo.Comments Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/Classic FileVersionInfo.Comments Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_Classic/Classic FileVersionInfo.Comments Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/FileVersionInfo/Comments/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_Classic/Classic FileVersionInfo.Comments Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="CompanyName">
-      <MemberSignature Language="C#" Value="public string CompanyName { get; }" />
+      <MemberSignature Language="C#" Value="public string? CompanyName { get; }" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".property instance string CompanyName" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.CompanyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CompanyName As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CompanyName { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.CompanyName : string" Usage="System.Diagnostics.FileVersionInfo.CompanyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CompanyName { System::String ^ get(); };" />
+      <MemberSignature Language="C#" Value="public string CompanyName { get; }" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -146,10 +185,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -164,9 +205,9 @@
 ## Examples  
  The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the <xref:System.Diagnostics.FileVersionInfo.CompanyName%2A> in a text box. This code assumes `textBox1` has been instantiated.  
   
- [!code-cpp[Classic FileVersionInfo.CompanyName Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.CompanyName Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileVersionInfo.CompanyName Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileVersionInfo.CompanyName Example/CS/source.cs#1)]
- [!code-vb[Classic FileVersionInfo.CompanyName Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.CompanyName Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.CompanyName Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/FileVersionInfo/CompanyName/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.CompanyName Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -177,14 +218,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 FileBuildPart" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.FileBuildPart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileBuildPart As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FileBuildPart { int get(); };" />
       <MemberSignature Language="F#" Value="member this.FileBuildPart : int" Usage="System.Diagnostics.FileVersionInfo.FileBuildPart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FileBuildPart { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -196,10 +243,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -229,9 +278,9 @@
 ## Examples  
  The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the <xref:System.Diagnostics.FileVersionInfo.FileBuildPart%2A> in a text box. This code assumes `textBox1` has been instantiated.  
   
- [!code-cpp[Classic FileVersionInfo.FileBuildPart Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.FileBuildPart Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileVersionInfo.FileBuildPart Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileVersionInfo.FileBuildPart Example/CS/source.cs#1)]
- [!code-vb[Classic FileVersionInfo.FileBuildPart Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.FileBuildPart Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.FileBuildPart Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/FileVersionInfo/FileBuildPart/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.FileBuildPart Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -243,18 +292,25 @@
       </Docs>
     </Member>
     <Member MemberName="FileDescription">
-      <MemberSignature Language="C#" Value="public string FileDescription { get; }" />
+      <MemberSignature Language="C#" Value="public string? FileDescription { get; }" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".property instance string FileDescription" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.FileDescription" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileDescription As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileDescription { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.FileDescription : string" Usage="System.Diagnostics.FileVersionInfo.FileDescription" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileDescription { System::String ^ get(); };" />
+      <MemberSignature Language="C#" Value="public string FileDescription { get; }" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -266,10 +322,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -284,9 +342,9 @@
 ## Examples  
  The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the <xref:System.Diagnostics.FileVersionInfo.FileDescription%2A> in a text box. This code assumes `textBox1` has been instantiated.  
   
- [!code-cpp[Classic FileVersionInfo.FileDescription Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.FileDescription Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileVersionInfo.FileDescription Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileVersionInfo.FileDescription Example/CS/source.cs#1)]
- [!code-vb[Classic FileVersionInfo.FileDescription Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.FileDescription Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.FileDescription Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/FileVersionInfo/FileDescription/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.FileDescription Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -297,14 +355,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 FileMajorPart" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.FileMajorPart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileMajorPart As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FileMajorPart { int get(); };" />
       <MemberSignature Language="F#" Value="member this.FileMajorPart : int" Usage="System.Diagnostics.FileVersionInfo.FileMajorPart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FileMajorPart { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -316,10 +380,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -349,9 +415,9 @@
 ## Examples  
  The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the <xref:System.Diagnostics.FileVersionInfo.FileMajorPart%2A> in a text box. This code assumes `textBox1` has been instantiated.  
   
- [!code-cpp[Classic FileVersionInfo.FileMajorPart Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.FileMajorPart Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileVersionInfo.FileMajorPart Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileVersionInfo.FileMajorPart Example/CS/source.cs#1)]
- [!code-vb[Classic FileVersionInfo.FileMajorPart Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.FileMajorPart Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.FileMajorPart Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/FileVersionInfo/FileMajorPart/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.FileMajorPart Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -366,14 +432,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 FileMinorPart" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.FileMinorPart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileMinorPart As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FileMinorPart { int get(); };" />
       <MemberSignature Language="F#" Value="member this.FileMinorPart : int" Usage="System.Diagnostics.FileVersionInfo.FileMinorPart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FileMinorPart { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -385,10 +457,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -418,9 +492,9 @@
 ## Examples  
  The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the <xref:System.Diagnostics.FileVersionInfo.FileMinorPart%2A> in a text box. This code assumes `textBox1` has been instantiated.  
   
- [!code-cpp[Classic FileVersionInfo.FileMinorPart Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.FileMinorPart Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileVersionInfo.FileMinorPart Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileVersionInfo.FileMinorPart Example/CS/source.cs#1)]
- [!code-vb[Classic FileVersionInfo.FileMinorPart Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.FileMinorPart Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.FileMinorPart Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/FileVersionInfo/FileMinorPart/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.FileMinorPart Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -435,14 +509,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance string FileName" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.FileName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileName As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.FileName : string" Usage="System.Diagnostics.FileVersionInfo.FileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -454,7 +534,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[get: System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -467,13 +558,12 @@
 ## Examples  
  The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the <xref:System.Diagnostics.FileVersionInfo.FileName%2A> in a text box. This code assumes `textBox1` has been instantiated.  
   
- [!code-cpp[Classic FileVersionInfo.FileName Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.FileName Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileVersionInfo.FileName Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileVersionInfo.FileName Example/CS/source.cs#1)]
- [!code-vb[Classic FileVersionInfo.FileName Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.FileName Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.FileName Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/FileVersionInfo/FileName/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.FileName Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">to get the file name. Associated enumeration: <see cref="T:System.Security.Permissions.FileIOPermissionAccess" /></permission>
       </Docs>
     </Member>
     <Member MemberName="FilePrivatePart">
@@ -481,14 +571,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 FilePrivatePart" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.FilePrivatePart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FilePrivatePart As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FilePrivatePart { int get(); };" />
       <MemberSignature Language="F#" Value="member this.FilePrivatePart : int" Usage="System.Diagnostics.FileVersionInfo.FilePrivatePart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FilePrivatePart { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -500,10 +596,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -533,9 +631,9 @@
 ## Examples  
  The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the <xref:System.Diagnostics.FileVersionInfo.FilePrivatePart%2A> in a text box. This code assumes `textBox1` has been instantiated.  
   
- [!code-cpp[Classic FileVersionInfo.FilePrivatePart Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.FilePrivatePart Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileVersionInfo.FilePrivatePart Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileVersionInfo.FilePrivatePart Example/CS/source.cs#1)]
- [!code-vb[Classic FileVersionInfo.FilePrivatePart Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.FilePrivatePart Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.FilePrivatePart Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/FileVersionInfo/FilePrivatePart/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.FilePrivatePart Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -547,18 +645,25 @@
       </Docs>
     </Member>
     <Member MemberName="FileVersion">
-      <MemberSignature Language="C#" Value="public string FileVersion { get; }" />
+      <MemberSignature Language="C#" Value="public string? FileVersion { get; }" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".property instance string FileVersion" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.FileVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileVersion As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileVersion { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.FileVersion : string" Usage="System.Diagnostics.FileVersionInfo.FileVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileVersion { System::String ^ get(); };" />
+      <MemberSignature Language="C#" Value="public string FileVersion { get; }" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -570,10 +675,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -601,9 +708,9 @@
 ## Examples  
  The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the file description and version number in a text box. This code assumes `textBox1` has been instantiated.  
   
- [!code-cpp[classic fileversioninfo example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo Example/CPP/source.cpp#1)]
- [!code-csharp[classic fileversioninfo example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileVersionInfo Example/CS/source.cs#1)]
- [!code-vb[classic fileversioninfo example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/FileVersionInfo/Overview/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -619,14 +726,20 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.FileVersionInfo GetVersionInfo(string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.FileVersionInfo.GetVersionInfo(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetVersionInfo (fileName As String) As FileVersionInfo" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Diagnostics::FileVersionInfo ^ GetVersionInfo(System::String ^ fileName);" />
       <MemberSignature Language="F#" Value="static member GetVersionInfo : string -&gt; System.Diagnostics.FileVersionInfo" Usage="System.Diagnostics.FileVersionInfo.GetVersionInfo fileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Diagnostics::FileVersionInfo ^ GetVersionInfo(System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -638,7 +751,14 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Diagnostics.FileVersionInfo</ReturnType>
       </ReturnValue>
@@ -655,15 +775,13 @@
 ## Examples  
  The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for Notepad and  displays the file description and version number in the console window.  
   
- [!code-cpp[classic fileversioninfo example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo Example/CPP/source.cpp#1)]
- [!code-csharp[classic fileversioninfo example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileVersionInfo Example/CS/source.cs#1)]
- [!code-vb[classic fileversioninfo example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/FileVersionInfo/Overview/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.FileNotFoundException">The file specified cannot be found.</exception>
-        <permission cref="T:System.Security.Permissions.FileIOPermission">to get the version information. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
-        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
         <altmember cref="P:System.Diagnostics.FileVersionInfo.SpecialBuild" />
         <altmember cref="P:System.Diagnostics.FileVersionInfo.ProductVersion" />
         <altmember cref="P:System.Diagnostics.FileVersionInfo.ProductPrivatePart" />
@@ -693,18 +811,25 @@
       </Docs>
     </Member>
     <Member MemberName="InternalName">
-      <MemberSignature Language="C#" Value="public string InternalName { get; }" />
+      <MemberSignature Language="C#" Value="public string? InternalName { get; }" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".property instance string InternalName" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.InternalName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InternalName As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InternalName { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.InternalName : string" Usage="System.Diagnostics.FileVersionInfo.InternalName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InternalName { System::String ^ get(); };" />
+      <MemberSignature Language="C#" Value="public string InternalName { get; }" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -716,10 +841,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -734,9 +861,9 @@
 ## Examples  
  The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the <xref:System.Diagnostics.FileVersionInfo.InternalName%2A> in a text box. This code assumes `textBox1` has been instantiated.  
   
- [!code-cpp[Classic FileVersionInfo.InternalName Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.InternalName Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileVersionInfo.InternalName Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileVersionInfo.InternalName Example/CS/source.cs#1)]
- [!code-vb[Classic FileVersionInfo.InternalName Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.InternalName Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.InternalName Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/FileVersionInfo/InternalName/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.InternalName Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -747,14 +874,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDebug" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.IsDebug" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDebug As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDebug { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsDebug : bool" Usage="System.Diagnostics.FileVersionInfo.IsDebug" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDebug { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -766,6 +899,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -787,9 +921,9 @@
 ## Examples  
  The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it displays the state of the Boolean <xref:System.Diagnostics.FileVersionInfo.IsDebug%2A> in a text box. This code assumes `textBox1` has been instantiated.  
   
- [!code-cpp[Classic FileVersionInfo.IsDebug Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.IsDebug Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileVersionInfo.IsDebug Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileVersionInfo.IsDebug Example/CS/source.cs#1)]
- [!code-vb[Classic FileVersionInfo.IsDebug Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.IsDebug Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.IsDebug Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/FileVersionInfo/IsDebug/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.IsDebug Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -800,14 +934,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPatched" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.IsPatched" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPatched As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPatched { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsPatched : bool" Usage="System.Diagnostics.FileVersionInfo.IsPatched" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPatched { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -819,6 +959,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -833,9 +974,9 @@
 ## Examples  
  The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it displays the state of the Boolean <xref:System.Diagnostics.FileVersionInfo.IsPatched%2A> in a text box. This code assumes `textBox1` has been instantiated.  
   
- [!code-cpp[Classic FileVersionInfo.IsPatched Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.IsPatched Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileVersionInfo.IsPatched Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileVersionInfo.IsPatched Example/CS/source.cs#1)]
- [!code-vb[Classic FileVersionInfo.IsPatched Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.IsPatched Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.IsPatched Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/FileVersionInfo/IsPatched/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.IsPatched Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -846,14 +987,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPreRelease" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.IsPreRelease" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPreRelease As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPreRelease { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsPreRelease : bool" Usage="System.Diagnostics.FileVersionInfo.IsPreRelease" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPreRelease { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -865,6 +1012,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -879,9 +1027,9 @@
 ## Examples  
  The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it displays whether this version is a prerelease version in a text box. This code assumes `textBox1` has been instantiated.  
   
- [!code-cpp[Classic FileVersionInfo.IsPreRelease Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.IsPreRelease Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileVersionInfo.IsPreRelease Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileVersionInfo.IsPreRelease Example/CS/source.cs#1)]
- [!code-vb[Classic FileVersionInfo.IsPreRelease Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.IsPreRelease Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.IsPreRelease Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/FileVersionInfo/IsPreRelease/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.IsPreRelease Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -892,14 +1040,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPrivateBuild" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.IsPrivateBuild" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPrivateBuild As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPrivateBuild { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsPrivateBuild : bool" Usage="System.Diagnostics.FileVersionInfo.IsPrivateBuild" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPrivateBuild { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -911,6 +1065,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -930,9 +1085,9 @@
 ## Examples  
  The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it displays the private build information in a text box. This code assumes `textBox1` has been instantiated.  
   
- [!code-cpp[Classic FileVersionInfo.IsPrivateBuild Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.IsPrivateBuild Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileVersionInfo.IsPrivateBuild Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileVersionInfo.IsPrivateBuild Example/CS/source.cs#1)]
- [!code-vb[Classic FileVersionInfo.IsPrivateBuild Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.IsPrivateBuild Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.IsPrivateBuild Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/FileVersionInfo/IsPrivateBuild/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.IsPrivateBuild Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -944,14 +1099,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSpecialBuild" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.IsSpecialBuild" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSpecialBuild As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSpecialBuild { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsSpecialBuild : bool" Usage="System.Diagnostics.FileVersionInfo.IsSpecialBuild" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSpecialBuild { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -963,6 +1124,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -982,9 +1144,9 @@
 ## Examples  
  The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it displays whether this version is a special build version in a text box. This code assumes `textBox1` has been instantiated.  
   
- [!code-cpp[Classic FileVersionInfo.IsSpecialBuild Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.IsSpecialBuild Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileVersionInfo.IsSpecialBuild Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileVersionInfo.IsSpecialBuild Example/CS/source.cs#1)]
- [!code-vb[Classic FileVersionInfo.IsSpecialBuild Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.IsSpecialBuild Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.IsSpecialBuild Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/FileVersionInfo/IsSpecialBuild/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.IsSpecialBuild Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -992,18 +1154,25 @@
       </Docs>
     </Member>
     <Member MemberName="Language">
-      <MemberSignature Language="C#" Value="public string Language { get; }" />
+      <MemberSignature Language="C#" Value="public string? Language { get; }" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".property instance string Language" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.Language" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Language As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Language { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Language : string" Usage="System.Diagnostics.FileVersionInfo.Language" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Language { System::String ^ get(); };" />
+      <MemberSignature Language="C#" Value="public string Language { get; }" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1015,10 +1184,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1031,18 +1202,25 @@
       </Docs>
     </Member>
     <Member MemberName="LegalCopyright">
-      <MemberSignature Language="C#" Value="public string LegalCopyright { get; }" />
+      <MemberSignature Language="C#" Value="public string? LegalCopyright { get; }" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".property instance string LegalCopyright" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.LegalCopyright" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LegalCopyright As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LegalCopyright { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.LegalCopyright : string" Usage="System.Diagnostics.FileVersionInfo.LegalCopyright" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LegalCopyright { System::String ^ get(); };" />
+      <MemberSignature Language="C#" Value="public string LegalCopyright { get; }" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1054,10 +1232,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1077,27 +1257,34 @@
 ## Examples  
  The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the <xref:System.Diagnostics.FileVersionInfo.LegalCopyright%2A> in a text box. This code assumes `textBox1` has been instantiated.  
   
- [!code-cpp[Classic FileVersionInfo.LegalCopyright Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.LegalCopyright Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileVersionInfo.LegalCopyright Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileVersionInfo.LegalCopyright Example/CS/source.cs#1)]
- [!code-vb[Classic FileVersionInfo.LegalCopyright Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.LegalCopyright Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.LegalCopyright Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/FileVersionInfo/LegalCopyright/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.LegalCopyright Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="LegalTrademarks">
-      <MemberSignature Language="C#" Value="public string LegalTrademarks { get; }" />
+      <MemberSignature Language="C#" Value="public string? LegalTrademarks { get; }" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".property instance string LegalTrademarks" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.LegalTrademarks" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LegalTrademarks As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LegalTrademarks { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.LegalTrademarks : string" Usage="System.Diagnostics.FileVersionInfo.LegalTrademarks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LegalTrademarks { System::String ^ get(); };" />
+      <MemberSignature Language="C#" Value="public string LegalTrademarks { get; }" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1109,10 +1296,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1132,27 +1321,34 @@
 ## Examples  
  The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the <xref:System.Diagnostics.FileVersionInfo.LegalTrademarks%2A> in a text box. This code assumes `textBox1` has been instantiated.  
   
- [!code-cpp[Classic FileVersionInfo.LegalTrademarks Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.LegalTrademarks Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileVersionInfo.LegalTrademarks Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileVersionInfo.LegalTrademarks Example/CS/source.cs#1)]
- [!code-vb[Classic FileVersionInfo.LegalTrademarks Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.LegalTrademarks Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.LegalTrademarks Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/FileVersionInfo/LegalTrademarks/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.LegalTrademarks Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="OriginalFilename">
-      <MemberSignature Language="C#" Value="public string OriginalFilename { get; }" />
+      <MemberSignature Language="C#" Value="public string? OriginalFilename { get; }" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".property instance string OriginalFilename" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.OriginalFilename" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginalFilename As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OriginalFilename { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.OriginalFilename : string" Usage="System.Diagnostics.FileVersionInfo.OriginalFilename" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OriginalFilename { System::String ^ get(); };" />
+      <MemberSignature Language="C#" Value="public string OriginalFilename { get; }" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1164,10 +1360,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1187,27 +1385,34 @@
 ## Examples  
  The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the <xref:System.Diagnostics.FileVersionInfo.OriginalFilename%2A> in a text box. This code assumes `textBox1` has been instantiated.  
   
- [!code-cpp[Classic FileVersionInfo.OriginalFilename Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.OriginalFilename Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileVersionInfo.OriginalFilename Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileVersionInfo.OriginalFilename Example/CS/source.cs#1)]
- [!code-vb[Classic FileVersionInfo.OriginalFilename Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.OriginalFilename Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.OriginalFilename Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/FileVersionInfo/OriginalFilename/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.OriginalFilename Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="PrivateBuild">
-      <MemberSignature Language="C#" Value="public string PrivateBuild { get; }" />
+      <MemberSignature Language="C#" Value="public string? PrivateBuild { get; }" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".property instance string PrivateBuild" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.PrivateBuild" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrivateBuild As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PrivateBuild { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.PrivateBuild : string" Usage="System.Diagnostics.FileVersionInfo.PrivateBuild" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PrivateBuild { System::String ^ get(); };" />
+      <MemberSignature Language="C#" Value="public string PrivateBuild { get; }" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1219,10 +1424,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1242,9 +1449,9 @@
 ## Examples  
  The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the private build information in a text box. This code assumes `textBox1` has been instantiated.  
   
- [!code-cpp[Classic FileVersionInfo.PrivateBuild Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.PrivateBuild Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileVersionInfo.PrivateBuild Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileVersionInfo.PrivateBuild Example/CS/source.cs#1)]
- [!code-vb[Classic FileVersionInfo.PrivateBuild Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.PrivateBuild Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.PrivateBuild Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/FileVersionInfo/PrivateBuild/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.PrivateBuild Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1256,14 +1463,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 ProductBuildPart" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.ProductBuildPart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProductBuildPart As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ProductBuildPart { int get(); };" />
       <MemberSignature Language="F#" Value="member this.ProductBuildPart : int" Usage="System.Diagnostics.FileVersionInfo.ProductBuildPart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ProductBuildPart { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1275,10 +1488,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1308,9 +1523,9 @@
 ## Examples  
  The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the <xref:System.Diagnostics.FileVersionInfo.ProductBuildPart%2A> in a text box. This code assumes `textBox1` has been instantiated.  
   
- [!code-cpp[Classic FileVersionInfo.ProductBuildPart Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.ProductBuildPart Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileVersionInfo.ProductBuildPart Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileVersionInfo.ProductBuildPart Example/CS/source.cs#1)]
- [!code-vb[Classic FileVersionInfo.ProductBuildPart Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.ProductBuildPart Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.ProductBuildPart Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/FileVersionInfo/ProductBuildPart/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.ProductBuildPart Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1325,14 +1540,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 ProductMajorPart" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.ProductMajorPart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProductMajorPart As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ProductMajorPart { int get(); };" />
       <MemberSignature Language="F#" Value="member this.ProductMajorPart : int" Usage="System.Diagnostics.FileVersionInfo.ProductMajorPart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ProductMajorPart { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1344,10 +1565,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1377,9 +1600,9 @@
 ## Examples  
  The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the <xref:System.Diagnostics.FileVersionInfo.ProductMajorPart%2A> in a text box. This code assumes `textBox1` has been instantiated.  
   
- [!code-cpp[Classic FileVersionInfo.ProductMajorPart Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.ProductMajorPart Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileVersionInfo.ProductMajorPart Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileVersionInfo.ProductMajorPart Example/CS/source.cs#1)]
- [!code-vb[Classic FileVersionInfo.ProductMajorPart Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.ProductMajorPart Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.ProductMajorPart Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/FileVersionInfo/ProductMajorPart/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.ProductMajorPart Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1393,14 +1616,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 ProductMinorPart" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.ProductMinorPart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProductMinorPart As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ProductMinorPart { int get(); };" />
       <MemberSignature Language="F#" Value="member this.ProductMinorPart : int" Usage="System.Diagnostics.FileVersionInfo.ProductMinorPart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ProductMinorPart { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1412,10 +1641,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1445,9 +1676,9 @@
 ## Examples  
  The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the <xref:System.Diagnostics.FileVersionInfo.ProductMinorPart%2A> in a text box. This code assumes `textBox1` has been instantiated.  
   
- [!code-cpp[Classic FileVersionInfo.ProductMinorPart Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.ProductMinorPart Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileVersionInfo.ProductMinorPart Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileVersionInfo.ProductMinorPart Example/CS/source.cs#1)]
- [!code-vb[Classic FileVersionInfo.ProductMinorPart Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.ProductMinorPart Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.ProductMinorPart Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/FileVersionInfo/ProductMinorPart/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.ProductMinorPart Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1457,18 +1688,25 @@
       </Docs>
     </Member>
     <Member MemberName="ProductName">
-      <MemberSignature Language="C#" Value="public string ProductName { get; }" />
+      <MemberSignature Language="C#" Value="public string? ProductName { get; }" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".property instance string ProductName" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.ProductName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProductName As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProductName { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.ProductName : string" Usage="System.Diagnostics.FileVersionInfo.ProductName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProductName { System::String ^ get(); };" />
+      <MemberSignature Language="C#" Value="public string ProductName { get; }" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1480,10 +1718,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1498,9 +1738,9 @@
 ## Examples  
  The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the <xref:System.Diagnostics.FileVersionInfo.ProductName%2A> in a text box. This code assumes `textBox1` has been instantiated.  
   
- [!code-cpp[Classic FileVersionInfo.ProductName Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.ProductName Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileVersionInfo.ProductName Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileVersionInfo.ProductName Example/CS/source.cs#1)]
- [!code-vb[Classic FileVersionInfo.ProductName Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.ProductName Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.ProductName Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/FileVersionInfo/ProductName/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.ProductName Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1511,14 +1751,20 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 ProductPrivatePart" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.ProductPrivatePart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProductPrivatePart As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ProductPrivatePart { int get(); };" />
       <MemberSignature Language="F#" Value="member this.ProductPrivatePart : int" Usage="System.Diagnostics.FileVersionInfo.ProductPrivatePart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ProductPrivatePart { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1530,10 +1776,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1563,9 +1811,9 @@
 ## Examples  
  The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the <xref:System.Diagnostics.FileVersionInfo.ProductPrivatePart%2A> in a text box. This code assumes `textBox1` has been instantiated.  
   
- [!code-cpp[Classic FileVersionInfo.ProductPrivatePart Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.ProductPrivatePart Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileVersionInfo.ProductPrivatePart Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileVersionInfo.ProductPrivatePart Example/CS/source.cs#1)]
- [!code-vb[Classic FileVersionInfo.ProductPrivatePart Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.ProductPrivatePart Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.ProductPrivatePart Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/FileVersionInfo/ProductPrivatePart/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.ProductPrivatePart Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1576,18 +1824,25 @@
       </Docs>
     </Member>
     <Member MemberName="ProductVersion">
-      <MemberSignature Language="C#" Value="public string ProductVersion { get; }" />
+      <MemberSignature Language="C#" Value="public string? ProductVersion { get; }" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".property instance string ProductVersion" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.ProductVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProductVersion As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProductVersion { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.ProductVersion : string" Usage="System.Diagnostics.FileVersionInfo.ProductVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProductVersion { System::String ^ get(); };" />
+      <MemberSignature Language="C#" Value="public string ProductVersion { get; }" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1599,10 +1854,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1630,9 +1887,9 @@
 ## Examples  
  The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the <xref:System.Diagnostics.FileVersionInfo.ProductVersion%2A> in a text box. This code assumes `textBox1` has been instantiated.  
   
- [!code-cpp[Classic FileVersionInfo.ProductVersion Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.ProductVersion Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileVersionInfo.ProductVersion Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileVersionInfo.ProductVersion Example/CS/source.cs#1)]
- [!code-vb[Classic FileVersionInfo.ProductVersion Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.ProductVersion Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.ProductVersion Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/FileVersionInfo/ProductVersion/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.ProductVersion Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1643,18 +1900,25 @@
       </Docs>
     </Member>
     <Member MemberName="SpecialBuild">
-      <MemberSignature Language="C#" Value="public string SpecialBuild { get; }" />
+      <MemberSignature Language="C#" Value="public string? SpecialBuild { get; }" FrameworkAlternate="net-5.0;net-6.0;net-7.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".property instance string SpecialBuild" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.FileVersionInfo.SpecialBuild" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SpecialBuild As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SpecialBuild { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.SpecialBuild : string" Usage="System.Diagnostics.FileVersionInfo.SpecialBuild" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SpecialBuild { System::String ^ get(); };" />
+      <MemberSignature Language="C#" Value="public string SpecialBuild { get; }" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1666,10 +1930,12 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1689,9 +1955,9 @@
 ## Examples  
  The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it prints the special build information in a text box. This code assumes `textBox1` has been instantiated.  
   
- [!code-cpp[Classic FileVersionInfo.SpecialBuild Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.SpecialBuild Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileVersionInfo.SpecialBuild Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileVersionInfo.SpecialBuild Example/CS/source.cs#1)]
- [!code-vb[Classic FileVersionInfo.SpecialBuild Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.SpecialBuild Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.SpecialBuild Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/FileVersionInfo/SpecialBuild/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.SpecialBuild Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1703,14 +1969,20 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.FileVersionInfo.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="fileVersionInfo.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.FileVersionInfo</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1722,7 +1994,14 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -1742,9 +2021,9 @@
 ## Examples  
  The following example calls <xref:System.Diagnostics.FileVersionInfo.GetVersionInfo%2A> to get the <xref:System.Diagnostics.FileVersionInfo> for the Notepad. Then it calls <xref:System.Diagnostics.FileVersionInfo.ToString%2A> to print a list of the file version information in a text box. This code assumes `textBox1` has been instantiated.  
   
- [!code-cpp[Classic FileVersionInfo.ToString Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.ToString Example/CPP/source.cpp#1)]
- [!code-csharp[Classic FileVersionInfo.ToString Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic FileVersionInfo.ToString Example/CS/source.cs#1)]
- [!code-vb[Classic FileVersionInfo.ToString Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.ToString Example/VB/source.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_Classic/classic FileVersionInfo.ToString Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/FileVersionInfo/ToString/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_Classic/classic FileVersionInfo.ToString Example/VB/source.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>

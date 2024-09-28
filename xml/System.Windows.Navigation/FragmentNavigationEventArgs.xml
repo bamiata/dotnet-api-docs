@@ -1,14 +1,19 @@
-﻿<Type Name="FragmentNavigationEventArgs" FullName="System.Windows.Navigation.FragmentNavigationEventArgs">
+<Type Name="FragmentNavigationEventArgs" FullName="System.Windows.Navigation.FragmentNavigationEventArgs">
   <TypeSignature Language="C#" Value="public class FragmentNavigationEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FragmentNavigationEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.FragmentNavigationEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class FragmentNavigationEventArgs&#xA;Inherits EventArgs" />
-  <TypeSignature Language="C++ CLI" Value="public ref class FragmentNavigationEventArgs : EventArgs" />
   <TypeSignature Language="F#" Value="type FragmentNavigationEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FragmentNavigationEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.EventArgs</BaseTypeName>
@@ -36,11 +41,11 @@
 <TextBlock Name="FragmentName">...</TextBlock>  
 ```  
   
- You navigate to a [!INCLUDE[TLA2#tla_titlexaml](~/includes/tla2sharptla-titlexaml-md.md)] fragment by providing a [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] with a suffix in the following format:  
+ You navigate to a XAML fragment by providing a URI with a suffix in the following format:  
   
  \#*FragmentName*  
   
- The following shows an example of a [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] that refers to a content fragment:  
+ The following shows an example of a URI that refers to a content fragment:  
   
  [http://www.microsoft.com/targetpage.xaml#FragmentName](http://www.www.com/homepage.xaml)  
   
@@ -55,25 +60,31 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Fragment" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.FragmentNavigationEventArgs.Fragment" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Fragment As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Fragment { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Fragment : string" Usage="System.Windows.Navigation.FragmentNavigationEventArgs.Fragment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Fragment { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] fragment.</summary>
-        <value>The [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] fragment. If you set the property to an empty string, the top of the content will be navigated to by default.</value>
+        <summary>Gets the uniform resource identifier (URI) fragment.</summary>
+        <value>The URI fragment. If you set the property to an empty string, the top of the content will be navigated to by default.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,20 +93,27 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool Handled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.FragmentNavigationEventArgs.Handled" />
       <MemberSignature Language="VB.NET" Value="Public Property Handled As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Handled { bool get(); void set(bool value); };" />
       <MemberSignature Language="F#" Value="member this.Handled : bool with get, set" Usage="System.Windows.Navigation.FragmentNavigationEventArgs.Handled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Handled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -122,25 +140,31 @@
       <MemberSignature Language="ILAsm" Value=".property instance object Navigator" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.FragmentNavigationEventArgs.Navigator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Navigator As Object" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Navigator { System::Object ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Navigator : obj" Usage="System.Windows.Navigation.FragmentNavigationEventArgs.Navigator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Navigator { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The navigator that raised the <see cref="E:System.Windows.Navigation.NavigationService.FragmentNavigation" /> event.</summary>
-        <value>A <see cref="T:System.Object" /> that refers to the navigator ([!INCLUDE[TLA2#tla_iegeneric](~/includes/tla2sharptla-iegeneric-md.md)], <see cref="T:System.Windows.Navigation.NavigationWindow" />, <see cref="T:System.Windows.Controls.Frame" />.) that is navigating to the content fragment.</value>
+        <summary>Gets the navigator that raised the <see cref="E:System.Windows.Navigation.NavigationService.FragmentNavigation" /> event.</summary>
+        <value>The navigator (browser, <see cref="T:System.Windows.Navigation.NavigationWindow" />, or <see cref="T:System.Windows.Controls.Frame" />) that's navigating to the content fragment.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

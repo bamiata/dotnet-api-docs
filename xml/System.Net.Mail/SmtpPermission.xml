@@ -1,10 +1,11 @@
-﻿<Type Name="SmtpPermission" FullName="System.Net.Mail.SmtpPermission">
+<Type Name="SmtpPermission" FullName="System.Net.Mail.SmtpPermission">
   <TypeSignature Language="C#" Value="public sealed class SmtpPermission : System.Security.CodeAccessPermission, System.Security.Permissions.IUnrestrictedPermission" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SmtpPermission extends System.Security.CodeAccessPermission implements class System.Security.Permissions.IUnrestrictedPermission" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SmtpPermission extends System.Security.CodeAccessPermission implements class System.Security.Permissions.IUnrestrictedPermission" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netstandard-2.0;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
   <TypeSignature Language="DocId" Value="T:System.Net.Mail.SmtpPermission" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SmtpPermission&#xA;Inherits CodeAccessPermission&#xA;Implements IUnrestrictedPermission" />
-  <TypeSignature Language="C++ CLI" Value="public ref class SmtpPermission sealed : System::Security::CodeAccessPermission, System::Security::Permissions::IUnrestrictedPermission" />
   <TypeSignature Language="F#" Value="type SmtpPermission = class&#xA;    inherit CodeAccessPermission&#xA;    interface IUnrestrictedPermission" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SmtpPermission sealed : System::Security::CodeAccessPermission, System::Security::Permissions::IUnrestrictedPermission" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SmtpPermission extends System.Security.CodeAccessPermission implements class System.Security.Permissions.IUnrestrictedPermission" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -12,9 +13,18 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Security.Permissions</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+    <AssemblyVersion>4.0.3.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Security.Permissions" FromVersion="9.0.0.0" To="System" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Security.CodeAccessPermission</BaseTypeName>
   </Base>
@@ -24,8 +34,13 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
-      <AttributeName>System.Serializable</AttributeName>
+    <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0">
+      <AttributeName Language="C#">[System.Obsolete("Code Access Security is not supported or honored by the runtime.", DiagnosticId="SYSLIB0003", UrlFormat="https://aka.ms/dotnet-warnings/{0}")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("Code Access Security is not supported or honored by the runtime.", DiagnosticId="SYSLIB0003", UrlFormat="https://aka.ms/dotnet-warnings/{0}")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -33,7 +48,10 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
+## Remarks
+
+[!INCLUDE[cas-deprecated](~/includes/cas-deprecated.md)]
+
  The <xref:System.Net.Mail.SmtpPermission> and <xref:System.Net.Mail.SmtpPermissionAttribute> classes control access to SMTP host computers. The <xref:System.Net.Mail.SmtpClient> class demands an <xref:System.Net.Mail.SmtpPermission> when sending electronic mail to the SMTP host for delivery.  
   
  The <xref:System.Net.Mail.SmtpAccess> enumeration specifies the level of access controlled by an instance of this permission.  
@@ -43,8 +61,8 @@
 ## Examples  
  The following code example creates an instance of an <xref:System.Net.Mail.SmtpPermission>.  
   
- [!code-cpp[NclMailPerms#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp#1)]
- [!code-csharp[NclMailPerms#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclMailPerms/CS/mailpermissions.cs#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net.Mail/SmtpAccess/Overview/mailpermissions.cs" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -64,8 +82,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool unrestricted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpPermission.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (unrestricted As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SmtpPermission(bool unrestricted);" />
       <MemberSignature Language="F#" Value="new System.Net.Mail.SmtpPermission : bool -&gt; System.Net.Mail.SmtpPermission" Usage="new System.Net.Mail.SmtpPermission unrestricted" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SmtpPermission(bool unrestricted);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -74,8 +92,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="unrestricted" Type="System.Boolean" />
@@ -95,8 +118,8 @@
 ## Examples  
  The following code example demonstrates calling this constructor.  
   
- [!code-cpp[NclMailPerms#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp#4)]
- [!code-csharp[NclMailPerms#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclMailPerms/CS/mailpermissions.cs#4)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp" id="Snippet4":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net.Mail/SmtpAccess/Overview/mailpermissions.cs" id="Snippet4":::  
   
  ]]></format>
         </remarks>
@@ -107,8 +130,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Net.Mail.SmtpAccess access) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpPermission.#ctor(System.Net.Mail.SmtpAccess)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (access As SmtpAccess)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SmtpPermission(System::Net::Mail::SmtpAccess access);" />
       <MemberSignature Language="F#" Value="new System.Net.Mail.SmtpPermission : System.Net.Mail.SmtpAccess -&gt; System.Net.Mail.SmtpPermission" Usage="new System.Net.Mail.SmtpPermission access" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SmtpPermission(System::Net::Mail::SmtpAccess access);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -117,12 +140,18 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -142,8 +171,8 @@
 ## Examples  
  The following code example demonstrates calling this constructor.  
   
- [!code-cpp[NclMailPerms#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp#1)]
- [!code-csharp[NclMailPerms#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclMailPerms/CS/mailpermissions.cs#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net.Mail/SmtpAccess/Overview/mailpermissions.cs" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -154,8 +183,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpPermission.#ctor(System.Security.Permissions.PermissionState)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SmtpPermission(System::Security::Permissions::PermissionState state);" />
       <MemberSignature Language="F#" Value="new System.Net.Mail.SmtpPermission : System.Security.Permissions.PermissionState -&gt; System.Net.Mail.SmtpPermission" Usage="new System.Net.Mail.SmtpPermission state" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SmtpPermission(System::Security::Permissions::PermissionState state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -164,8 +193,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="state" Type="System.Security.Permissions.PermissionState" />
@@ -184,8 +218,8 @@
 ## Examples  
  The following code example demonstrates calling this constructor.  
   
- [!code-cpp[NclMailPerms#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp#2)]
- [!code-csharp[NclMailPerms#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NclMailPerms/CS/mailpermissions.cs#2)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net.Mail/SmtpAccess/Overview/mailpermissions.cs" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -196,8 +230,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Mail.SmtpAccess Access" />
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.SmtpPermission.Access" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Access As SmtpAccess" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Mail::SmtpAccess Access { System::Net::Mail::SmtpAccess get(); };" />
       <MemberSignature Language="F#" Value="member this.Access : System.Net.Mail.SmtpAccess" Usage="System.Net.Mail.SmtpPermission.Access" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Mail::SmtpAccess Access { System::Net::Mail::SmtpAccess get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -206,12 +240,18 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -226,8 +266,8 @@
 ## Examples  
  The following code example demonstrates displaying the value of this property.  
   
- [!code-cpp[NclMailPerms#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp#1)]
- [!code-csharp[NclMailPerms#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclMailPerms/CS/mailpermissions.cs#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net.Mail/SmtpAccess/Overview/mailpermissions.cs" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -238,8 +278,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddPermission(valuetype System.Net.Mail.SmtpAccess access) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpPermission.AddPermission(System.Net.Mail.SmtpAccess)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddPermission (access As SmtpAccess)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPermission(System::Net::Mail::SmtpAccess access);" />
       <MemberSignature Language="F#" Value="member this.AddPermission : System.Net.Mail.SmtpAccess -&gt; unit" Usage="smtpPermission.AddPermission access" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPermission(System::Net::Mail::SmtpAccess access);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -248,8 +288,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -271,8 +316,8 @@
 ## Examples  
  The following code example adds <xref:System.Net.Mail.SmtpAccess.Connect> access to a permission object.  
   
- [!code-cpp[NclMailPerms#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp#5)]
- [!code-csharp[NclMailPerms#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NclMailPerms/CS/mailpermissions.cs#5)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp" id="Snippet5":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net.Mail/SmtpAccess/Overview/mailpermissions.cs" id="Snippet5":::  
   
  ]]></format>
         </remarks>
@@ -283,8 +328,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Copy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpPermission.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As IPermission" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
       <MemberSignature Language="F#" Value="override this.Copy : unit -&gt; System.Security.IPermission" Usage="smtpPermission.Copy " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -293,8 +338,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.IPermission</ReturnType>
@@ -314,8 +364,8 @@
 ## Examples  
  The following code example creates copy of a permission object.  
   
- [!code-cpp[NclMailPerms#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp#3)]
- [!code-csharp[NclMailPerms#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclMailPerms/CS/mailpermissions.cs#3)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp" id="Snippet3":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net.Mail/SmtpAccess/Overview/mailpermissions.cs" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -325,8 +375,9 @@
       <MemberSignature Language="C#" Value="public override void FromXml (System.Security.SecurityElement securityElement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXml(class System.Security.SecurityElement securityElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpPermission.FromXml(System.Security.SecurityElement)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ securityElement);" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub FromXml (securityElement As SecurityElement)" />
       <MemberSignature Language="F#" Value="override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="smtpPermission.FromXml securityElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ securityElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -335,8 +386,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -370,8 +426,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Intersect(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpPermission.Intersect(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Intersect (target As IPermission) As IPermission" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
       <MemberSignature Language="F#" Value="override this.Intersect : System.Security.IPermission -&gt; System.Security.IPermission" Usage="smtpPermission.Intersect target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -380,8 +436,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.IPermission</ReturnType>
@@ -404,8 +465,8 @@
 ## Examples  
  The following code example creates a permission object that is the intersection of an existing permission with an object that grants full access to SMTP servers.  
   
- [!code-cpp[NclMailPerms#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp#6)]
- [!code-csharp[NclMailPerms#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclMailPerms/CS/mailpermissions.cs#6)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp" id="Snippet6":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net.Mail/SmtpAccess/Overview/mailpermissions.cs" id="Snippet6":::  
   
  ]]></format>
         </remarks>
@@ -418,8 +479,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsSubsetOf(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpPermission.IsSubsetOf(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSubsetOf (target As IPermission) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSubsetOf(System::Security::IPermission ^ target);" />
       <MemberSignature Language="F#" Value="override this.IsSubsetOf : System.Security.IPermission -&gt; bool" Usage="smtpPermission.IsSubsetOf target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSubsetOf(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -428,8 +489,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -453,8 +519,8 @@
 ## Examples  
  The following code example displays the subset relationship between two permissions.  
   
- [!code-cpp[NclMailPerms#7](~/samples/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp#7)]
- [!code-csharp[NclMailPerms#7](~/samples/snippets/csharp/VS_Snippets_Remoting/NclMailPerms/CS/mailpermissions.cs#7)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp" id="Snippet7":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net.Mail/SmtpAccess/Overview/mailpermissions.cs" id="Snippet7":::  
   
  ]]></format>
         </remarks>
@@ -467,8 +533,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUnrestricted() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpPermission.IsUnrestricted" />
       <MemberSignature Language="VB.NET" Value="Public Function IsUnrestricted () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsUnrestricted : unit -&gt; bool&#xA;override this.IsUnrestricted : unit -&gt; bool" Usage="smtpPermission.IsUnrestricted " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsUnrestricted();" />
-      <MemberSignature Language="F#" Value="override this.IsUnrestricted : unit -&gt; bool" Usage="smtpPermission.IsUnrestricted " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.Permissions.IUnrestrictedPermission.IsUnrestricted</InterfaceMember>
@@ -480,8 +546,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -502,8 +573,8 @@
 ## Examples  
  The following example creates a permission object and displays its state.  
   
- [!code-cpp[NclMailPerms#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp#2)]
- [!code-csharp[NclMailPerms#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NclMailPerms/CS/mailpermissions.cs#2)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net.Mail/SmtpAccess/Overview/mailpermissions.cs" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -514,8 +585,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.SecurityElement ToXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpPermission.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As SecurityElement" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::SecurityElement ^ ToXml();" />
       <MemberSignature Language="F#" Value="override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="smtpPermission.ToXml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::SecurityElement ^ ToXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -524,8 +595,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.SecurityElement</ReturnType>
@@ -549,8 +625,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Union(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpPermission.Union(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Union (target As IPermission) As IPermission" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Union(System::Security::IPermission ^ target);" />
       <MemberSignature Language="F#" Value="override this.Union : System.Security.IPermission -&gt; System.Security.IPermission" Usage="smtpPermission.Union target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Union(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -559,8 +635,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.IPermission</ReturnType>
@@ -583,8 +664,8 @@
 ## Examples  
  The following example creates a permission object that is the union of two permission objects.  
   
- [!code-cpp[NclMailPerms#8](~/samples/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp#8)]
- [!code-csharp[NclMailPerms#8](~/samples/snippets/csharp/VS_Snippets_Remoting/NclMailPerms/CS/mailpermissions.cs#8)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NclMailPerms/CPP/mailpermissions.cpp" id="Snippet8":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net.Mail/SmtpAccess/Overview/mailpermissions.cs" id="Snippet8":::  
   
  ]]></format>
         </remarks>

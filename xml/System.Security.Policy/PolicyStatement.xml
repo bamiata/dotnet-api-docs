@@ -1,10 +1,12 @@
-﻿<Type Name="PolicyStatement" FullName="System.Security.Policy.PolicyStatement">
+<Type Name="PolicyStatement" FullName="System.Security.Policy.PolicyStatement">
   <TypeSignature Language="C#" Value="public sealed class PolicyStatement : System.Security.ISecurityEncodable, System.Security.ISecurityPolicyEncodable" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit PolicyStatement extends System.Object implements class System.Security.ISecurityEncodable, class System.Security.ISecurityPolicyEncodable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PolicyStatement extends System.Object implements class System.Security.ISecurityEncodable, class System.Security.ISecurityPolicyEncodable" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netstandard-2.0;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.PolicyStatement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PolicyStatement&#xA;Implements ISecurityEncodable, ISecurityPolicyEncodable" />
+  <TypeSignature Language="F#" Value="type PolicyStatement = class&#xA;    interface ISecurityEncodable&#xA;    interface ISecurityPolicyEncodable" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
   <TypeSignature Language="C++ CLI" Value="public ref class PolicyStatement sealed : System::Security::ISecurityEncodable, System::Security::ISecurityPolicyEncodable" />
-  <TypeSignature Language="F#" Value="type PolicyStatement = class&#xA;    interface ISecurityEncodable&#xA;    interface ISecurityPolicyEncodable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit PolicyStatement extends System.Object implements class System.Security.ISecurityEncodable, class System.Security.ISecurityPolicyEncodable" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  <TypeSignature Language="F#" Value="type PolicyStatement = class&#xA;    interface ISecurityPolicyEncodable&#xA;    interface ISecurityEncodable" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -14,9 +16,18 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Security.Permissions</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+    <AssemblyVersion>4.0.3.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System.Security.Permissions" FromVersion="9.0.0.0" To="mscorlib" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -29,11 +40,13 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-      <AttributeName>System.Serializable</AttributeName>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(true)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -51,9 +64,9 @@
 ## Examples  
  The following code example shows the use of members of the <xref:System.Security.Policy.PolicyStatement> class  
   
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#1)]
- [!code-csharp[System.Security.Policy.PolicyStatement_Evt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#1)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Policy/PolicyStatement/Overview/members.cs" id="Snippet1":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -74,8 +87,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.PermissionSet permSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyStatement.#ctor(System.Security.PermissionSet)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (permSet As PermissionSet)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; PolicyStatement(System::Security::PermissionSet ^ permSet);" />
       <MemberSignature Language="F#" Value="new System.Security.Policy.PolicyStatement : System.Security.PermissionSet -&gt; System.Security.Policy.PolicyStatement" Usage="new System.Security.Policy.PolicyStatement permSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PolicyStatement(System::Security::PermissionSet ^ permSet);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -86,9 +99,20 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Obsolete("Code Access Security is not supported or honored by the runtime.", DiagnosticId="SYSLIB0003", UrlFormat="https://aka.ms/dotnet-warnings/{0}")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Code Access Security is not supported or honored by the runtime.", DiagnosticId="SYSLIB0003", UrlFormat="https://aka.ms/dotnet-warnings/{0}")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="permSet" Type="System.Security.PermissionSet" />
       </Parameters>
@@ -96,14 +120,18 @@
         <param name="permSet">The <see cref="T:System.Security.PermissionSet" /> with which to initialize the new instance.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.PolicyStatement" /> class with the specified <see cref="T:System.Security.PermissionSet" />.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+[!INCLUDE[cas-deprecated](~/includes/cas-deprecated.md)]
   
 ## Examples  
  The following code example shows the use of the <xref:System.Security.Policy.PolicyStatement.%23ctor%2A> constructor. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
   
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#2)]
- [!code-csharp[System.Security.Policy.PolicyStatement_Evt#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#2)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#2)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Policy/PolicyStatement/Overview/members.cs" id="Snippet2":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb" id="Snippet2":::  
   
  ]]></format>
         </remarks>
@@ -114,8 +142,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.PermissionSet permSet, valuetype System.Security.Policy.PolicyStatementAttribute attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyStatement.#ctor(System.Security.PermissionSet,System.Security.Policy.PolicyStatementAttribute)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (permSet As PermissionSet, attributes As PolicyStatementAttribute)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; PolicyStatement(System::Security::PermissionSet ^ permSet, System::Security::Policy::PolicyStatementAttribute attributes);" />
       <MemberSignature Language="F#" Value="new System.Security.Policy.PolicyStatement : System.Security.PermissionSet * System.Security.Policy.PolicyStatementAttribute -&gt; System.Security.Policy.PolicyStatement" Usage="new System.Security.Policy.PolicyStatement (permSet, attributes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PolicyStatement(System::Security::PermissionSet ^ permSet, System::Security::Policy::PolicyStatementAttribute attributes);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -126,9 +154,20 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Obsolete("Code Access Security is not supported or honored by the runtime.", DiagnosticId="SYSLIB0003", UrlFormat="https://aka.ms/dotnet-warnings/{0}")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Code Access Security is not supported or honored by the runtime.", DiagnosticId="SYSLIB0003", UrlFormat="https://aka.ms/dotnet-warnings/{0}")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="permSet" Type="System.Security.PermissionSet" />
         <Parameter Name="attributes" Type="System.Security.Policy.PolicyStatementAttribute" />
@@ -138,14 +177,18 @@
         <param name="attributes">A bitwise combination of the <see cref="T:System.Security.Policy.PolicyStatementAttribute" /> values.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.PolicyStatement" /> class with the specified <see cref="T:System.Security.PermissionSet" /> and attributes.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+[!INCLUDE[cas-deprecated](~/includes/cas-deprecated.md)]
   
 ## Examples  
  The following code example shows the use of the <xref:System.Security.Policy.PolicyStatement.%23ctor%2A> constructor. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
   
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#3)]
- [!code-csharp[System.Security.Policy.PolicyStatement_Evt#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#3)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#3)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp" id="Snippet3":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Policy/PolicyStatement/Overview/members.cs" id="Snippet3":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -156,8 +199,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Policy.PolicyStatementAttribute Attributes" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.PolicyStatement.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public Property Attributes As PolicyStatementAttribute" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Policy::PolicyStatementAttribute Attributes { System::Security::Policy::PolicyStatementAttribute get(); void set(System::Security::Policy::PolicyStatementAttribute value); };" />
       <MemberSignature Language="F#" Value="member this.Attributes : System.Security.Policy.PolicyStatementAttribute with get, set" Usage="System.Security.Policy.PolicyStatement.Attributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Policy::PolicyStatementAttribute Attributes { System::Security::Policy::PolicyStatementAttribute get(); void set(System::Security::Policy::PolicyStatementAttribute value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -168,8 +211,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Policy.PolicyStatementAttribute</ReturnType>
@@ -183,9 +231,9 @@
 ## Examples  
  The following code example shows how to use the <xref:System.Security.Policy.PolicyStatement.Attributes%2A> property to set the <xref:System.Security.Policy.PolicyStatementAttribute.All> flag. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
   
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#4)]
- [!code-csharp[System.Security.Policy.PolicyStatement_Evt#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#4)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#4)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp" id="Snippet4":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Policy/PolicyStatement/Overview/members.cs" id="Snippet4":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb" id="Snippet4":::  
   
  ]]></format>
         </remarks>
@@ -196,8 +244,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance string AttributeString" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.PolicyStatement.AttributeString" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AttributeString As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AttributeString { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.AttributeString : string" Usage="System.Security.Policy.PolicyStatement.AttributeString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AttributeString { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -208,8 +256,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -228,9 +281,9 @@
 ## Examples  
  The following code example shows how to use the <xref:System.Security.Policy.PolicyStatement.AttributeString%2A> property to get the policy statement attributes. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
   
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#13](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#13)]
- [!code-csharp[System.Security.Policy.PolicyStatement_Evt#13](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#13)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#13](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#13)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp" id="Snippet13":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Policy/PolicyStatement/Overview/members.cs" id="Snippet13":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb" id="Snippet13":::  
   
  ]]></format>
         </remarks>
@@ -241,8 +294,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Policy.PolicyStatement Copy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyStatement.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Function Copy () As PolicyStatement" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Policy::PolicyStatement ^ Copy();" />
       <MemberSignature Language="F#" Value="member this.Copy : unit -&gt; System.Security.Policy.PolicyStatement" Usage="policyStatement.Copy " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Policy::PolicyStatement ^ Copy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -253,8 +306,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Policy.PolicyStatement</ReturnType>
@@ -269,27 +327,26 @@
 ## Examples  
  The following code example shows how to use the <xref:System.Security.Policy.PolicyStatement.Copy%2A> method to make a copy of the current policy statement. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
   
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#9](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#9)]
- [!code-csharp[System.Security.Policy.PolicyStatement_Evt#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#9)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#9)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp" id="Snippet9":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Policy/PolicyStatement/Overview/members.cs" id="Snippet9":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb" id="Snippet9":::  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
-      <MemberSignature Language="C#" Value="public override bool Equals (object o);" FrameworkAlternate="netcore-2.0;netcore-2.1;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" FrameworkAlternate="netcore-2.0;netcore-2.1;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" FrameworkAlternate="netcore-2.0;netcore-2.1;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" FrameworkAlternate="netcore-2.0;netcore-2.1;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyStatement.Equals(System.Object)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="policyStatement.Equals o" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="policyStatement.Equals obj" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyStatement.Equals(System.Object)" FrameworkAlternate="netframework-2.0" />
+      <MemberSignature Language="C#" Value="public override bool Equals (object o);" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netstandard-2.0;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netstandard-2.0;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyStatement.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netstandard-2.0;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="policyStatement.Equals o" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netstandard-2.0;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netstandard-2.0;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="policyStatement.Equals obj" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -299,24 +356,30 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="o" Type="System.Object" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2" />
-        <Parameter Name="obj" Type="System.Object" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="o" Type="System.Object" Index="0" FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;netstandard-2.0;windowsdesktop-3.0;windowsdesktop-3.1;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0" />
+        <Parameter Name="obj" Type="System.Object" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
       </Parameters>
       <Docs>
         <param name="o">The <see cref="T:System.Security.Policy.PolicyStatement" /> object to compare with the current <see cref="T:System.Security.Policy.PolicyStatement" />.</param>
-        <param name="obj">To be added.</param>
+        <param name="obj">The <see cref="T:System.Security.Policy.PolicyStatement" /> object to compare with the current <see cref="T:System.Security.Policy.PolicyStatement" />.</param>
         <summary>Determines whether the specified <see cref="T:System.Security.Policy.PolicyStatement" /> object is equal to the current <see cref="T:System.Security.Policy.PolicyStatement" />.</summary>
         <returns>
           <see langword="true" /> if the specified <see cref="T:System.Security.Policy.PolicyStatement" /> is equal to the current <see cref="T:System.Security.Policy.PolicyStatement" /> object; otherwise, <see langword="false" />.</returns>
@@ -331,9 +394,9 @@
 ## Examples  
  The following code example shows how to use the <xref:System.Security.Policy.PolicyStatement.Equals%2A> method to determine whether a specified <xref:System.Security.Policy.PolicyStatement> object is equivalent to the current <xref:System.Security.Policy.PolicyStatement> object. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
   
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#10)]
- [!code-csharp[System.Security.Policy.PolicyStatement_Evt#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#10)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#10)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp" id="Snippet10":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Policy/PolicyStatement/Overview/members.cs" id="Snippet10":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb" id="Snippet10":::  
   
  ]]></format>
         </remarks>
@@ -354,8 +417,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FromXml(class System.Security.SecurityElement et) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyStatement.FromXml(System.Security.SecurityElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FromXml (et As SecurityElement)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void FromXml(System::Security::SecurityElement ^ et);" />
       <MemberSignature Language="F#" Value="abstract member FromXml : System.Security.SecurityElement -&gt; unit&#xA;override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="policyStatement.FromXml et" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void FromXml(System::Security::SecurityElement ^ et);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.ISecurityEncodable.FromXml(System.Security.SecurityElement)</InterfaceMember>
@@ -369,12 +432,18 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -392,9 +461,9 @@
 ## Examples  
  The following code example shows how to use the <xref:System.Security.Policy.PolicyStatement.FromXml%2A> method to reconstruct a security object from an XML encoding. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
   
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#7)]
- [!code-csharp[System.Security.Policy.PolicyStatement_Evt#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#7)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#7)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp" id="Snippet7":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Policy/PolicyStatement/Overview/members.cs" id="Snippet7":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb" id="Snippet7":::  
   
  ]]></format>
         </remarks>
@@ -407,8 +476,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FromXml(class System.Security.SecurityElement et, class System.Security.Policy.PolicyLevel level) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyStatement.FromXml(System.Security.SecurityElement,System.Security.Policy.PolicyLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FromXml (et As SecurityElement, level As PolicyLevel)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void FromXml(System::Security::SecurityElement ^ et, System::Security::Policy::PolicyLevel ^ level);" />
       <MemberSignature Language="F#" Value="abstract member FromXml : System.Security.SecurityElement * System.Security.Policy.PolicyLevel -&gt; unit&#xA;override this.FromXml : System.Security.SecurityElement * System.Security.Policy.PolicyLevel -&gt; unit" Usage="policyStatement.FromXml (et, level)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void FromXml(System::Security::SecurityElement ^ et, System::Security::Policy::PolicyLevel ^ level);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.ISecurityPolicyEncodable.FromXml(System.Security.SecurityElement,System.Security.Policy.PolicyLevel)</InterfaceMember>
@@ -422,12 +491,18 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -451,8 +526,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyStatement.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="policyStatement.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -462,12 +537,18 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+          <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(false)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -488,9 +569,9 @@
 ## Examples  
  The following code example shows how to use the <xref:System.Security.Policy.PolicyStatement.GetHashCode%2A> method to get the hash code for the current policy statement. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
   
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#12](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#12)]
- [!code-csharp[System.Security.Policy.PolicyStatement_Evt#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#12)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#12)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp" id="Snippet12":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Policy/PolicyStatement/Overview/members.cs" id="Snippet12":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb" id="Snippet12":::  
   
  ]]></format>
         </remarks>
@@ -501,8 +582,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.PermissionSet PermissionSet" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.PolicyStatement.PermissionSet" />
       <MemberSignature Language="VB.NET" Value="Public Property PermissionSet As PermissionSet" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::PermissionSet ^ PermissionSet { System::Security::PermissionSet ^ get(); void set(System::Security::PermissionSet ^ value); };" />
       <MemberSignature Language="F#" Value="member this.PermissionSet : System.Security.PermissionSet with get, set" Usage="System.Security.Policy.PolicyStatement.PermissionSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::PermissionSet ^ PermissionSet { System::Security::PermissionSet ^ get(); void set(System::Security::PermissionSet ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -513,9 +594,20 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-6.0;net-7.0;net-8.0;net-9.0;windowsdesktop-5.0;windowsdesktop-6.0;windowsdesktop-7.0;windowsdesktop-8.0;windowsdesktop-9.0">
+          <AttributeName Language="C#">[System.Obsolete("Code Access Security is not supported or honored by the runtime.", DiagnosticId="SYSLIB0003", UrlFormat="https://aka.ms/dotnet-warnings/{0}")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Code Access Security is not supported or honored by the runtime.", DiagnosticId="SYSLIB0003", UrlFormat="https://aka.ms/dotnet-warnings/{0}")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.PermissionSet</ReturnType>
       </ReturnValue>
@@ -523,14 +615,18 @@
         <summary>Gets or sets the <see cref="T:System.Security.PermissionSet" /> of the policy statement.</summary>
         <value>The <see cref="T:System.Security.PermissionSet" /> of the policy statement.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+[!INCLUDE[cas-deprecated](~/includes/cas-deprecated.md)]
   
 ## Examples  
  The following code example shows how to use the <xref:System.Security.Policy.PolicyStatement.PermissionSet%2A> property to add permissions to the policy statement. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
   
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#5)]
- [!code-csharp[System.Security.Policy.PolicyStatement_Evt#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#5)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#5)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp" id="Snippet5":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Policy/PolicyStatement/Overview/members.cs" id="Snippet5":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb" id="Snippet5":::  
   
  ]]></format>
         </remarks>
@@ -551,8 +647,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.SecurityElement ToXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyStatement.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public Function ToXml () As SecurityElement" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::SecurityElement ^ ToXml();" />
       <MemberSignature Language="F#" Value="abstract member ToXml : unit -&gt; System.Security.SecurityElement&#xA;override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="policyStatement.ToXml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::SecurityElement ^ ToXml();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.ISecurityEncodable.ToXml</InterfaceMember>
@@ -566,12 +662,18 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -587,9 +689,9 @@
 ## Examples  
  The following code example shows how to use the <xref:System.Security.Policy.PolicyStatement.ToXml%2A> method to create an XML encoding of the security object. This code example is part of a larger example provided for the <xref:System.Security.Policy.PolicyStatement> class.  
   
- [!code-cpp[System.Security.Policy.PolicyStatement_Evt#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp#6)]
- [!code-csharp[System.Security.Policy.PolicyStatement_Evt#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CS/members.cs#6)]
- [!code-vb[System.Security.Policy.PolicyStatement_Evt#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb#6)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/CPP/members.cpp" id="Snippet6":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Policy/PolicyStatement/Overview/members.cs" id="Snippet6":::
+ :::code language="vb" source="~/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.PolicyStatement_Evt/VB/Form1.vb" id="Snippet6":::  
   
  ]]></format>
         </remarks>
@@ -600,8 +702,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.SecurityElement ToXml(class System.Security.Policy.PolicyLevel level) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyStatement.ToXml(System.Security.Policy.PolicyLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToXml (level As PolicyLevel) As SecurityElement" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::SecurityElement ^ ToXml(System::Security::Policy::PolicyLevel ^ level);" />
       <MemberSignature Language="F#" Value="abstract member ToXml : System.Security.Policy.PolicyLevel -&gt; System.Security.SecurityElement&#xA;override this.ToXml : System.Security.Policy.PolicyLevel -&gt; System.Security.SecurityElement" Usage="policyStatement.ToXml level" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::SecurityElement ^ ToXml(System::Security::Policy::PolicyLevel ^ level);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Security.ISecurityPolicyEncodable.ToXml(System.Security.Policy.PolicyLevel)</InterfaceMember>
@@ -615,12 +717,18 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+          <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

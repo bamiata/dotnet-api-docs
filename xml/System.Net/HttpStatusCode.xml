@@ -1,10 +1,10 @@
-﻿<Type Name="HttpStatusCode" FullName="System.Net.HttpStatusCode">
+<Type Name="HttpStatusCode" FullName="System.Net.HttpStatusCode">
   <TypeSignature Language="C#" Value="public enum HttpStatusCode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpStatusCode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.HttpStatusCode" />
   <TypeSignature Language="VB.NET" Value="Public Enum HttpStatusCode" />
-  <TypeSignature Language="C++ CLI" Value="public enum class HttpStatusCode" />
   <TypeSignature Language="F#" Value="type HttpStatusCode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class HttpStatusCode" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>3.9.0.0</AssemblyVersion>
@@ -12,6 +12,12 @@
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -23,34 +29,27 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="System" FromVersion="4.0.0.0" To="System.Net.Primitives" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="System.Net" FromVersion="4.0.0.0" To="System.Net.Primitives" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Primitives" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Primitives" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Primitives" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Primitives" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Primitives" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+    <TypeForwarding From="System.Net" FromVersion="4.0.0.0" To="System" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Contains the values of status codes defined for HTTP.</summary>
-    <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Net.HttpStatusCode> enumeration contains the values of the status codes defined in RFC 2616 for HTTP 1.1.  
-  
- The status of an HTTP request is contained in the <xref:System.Net.HttpWebResponse.StatusCode%2A?displayProperty=nameWithType> property.  
-  
-   
-  
-## Examples  
- The following example compares the status returned by an <xref:System.Net.HttpWebResponse> with a member of the <xref:System.Net.HttpStatusCode> class to determine the status of a response.  
-  
- [!code-cpp[Classic HttpStatusCode Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic HttpStatusCode Example/CPP/source.cpp#1)]
- [!code-csharp[Classic HttpStatusCode Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic HttpStatusCode Example/CS/source.cs#1)]
- [!code-vb[Classic HttpStatusCode Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic HttpStatusCode Example/VB/source.vb#1)]  
-  
- ]]></format>
-    </remarks>
+    <summary>Contains the values of status codes defined for HTTP defined in RFC 2616 for HTTP 1.1.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Accepted">
@@ -58,8 +57,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode Accepted = int32(202)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.Accepted" />
       <MemberSignature Language="VB.NET" Value="Accepted" />
-      <MemberSignature Language="C++ CLI" Value="Accepted" />
       <MemberSignature Language="F#" Value="Accepted = 202" Usage="System.Net.HttpStatusCode.Accepted" />
+      <MemberSignature Language="C++ CLI" Value="Accepted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -68,6 +67,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -79,6 +84,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -96,15 +102,22 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode AlreadyReported = int32(208)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.AlreadyReported" />
       <MemberSignature Language="VB.NET" Value="AlreadyReported" />
-      <MemberSignature Language="C++ CLI" Value="AlreadyReported" />
       <MemberSignature Language="F#" Value="AlreadyReported = 208" Usage="System.Net.HttpStatusCode.AlreadyReported" />
+      <MemberSignature Language="C++ CLI" Value="AlreadyReported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -117,7 +130,7 @@
       </ReturnValue>
       <MemberValue>208</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Equivalent to HTTP status 208. <see cref="F:System.Net.HttpStatusCode.AlreadyReported" /> indicates that the members of a WebDAV binding have already been enumerated in a preceding part of the multistatus response, and are not being included again.</summary>
       </Docs>
     </Member>
     <Member MemberName="Ambiguous">
@@ -125,8 +138,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode Ambiguous = int32(300)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.Ambiguous" />
       <MemberSignature Language="VB.NET" Value="Ambiguous" />
-      <MemberSignature Language="C++ CLI" Value="Ambiguous" />
       <MemberSignature Language="F#" Value="Ambiguous = 300" Usage="System.Net.HttpStatusCode.Ambiguous" />
+      <MemberSignature Language="C++ CLI" Value="Ambiguous" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -135,6 +148,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -146,6 +165,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -155,17 +175,8 @@
       </ReturnValue>
       <MemberValue>300</MemberValue>
       <Docs>
-        <summary>Equivalent to HTTP status 300. <see cref="F:System.Net.HttpStatusCode.Ambiguous" /> indicates that the requested information has multiple representations. The default action is to treat this status as a redirect and follow the contents of the Location header associated with this response.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=nameWithType> property is `false`, Ambiguous will cause an exception to be thrown.  
-  
- Ambiguous is a synonym for MultipleChoices.  
-  
- ]]></format>
-        </remarks>
+        <summary>Equivalent to HTTP status 300. <see cref="F:System.Net.HttpStatusCode.Ambiguous" /> indicates that the requested information has multiple representations. The default action is to treat this status as a redirect and follow the contents of the Location header associated with this response. <c>Ambiguous</c> is a synonym for <c>MultipleChoices</c>.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BadGateway">
@@ -173,8 +184,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode BadGateway = int32(502)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.BadGateway" />
       <MemberSignature Language="VB.NET" Value="BadGateway" />
-      <MemberSignature Language="C++ CLI" Value="BadGateway" />
       <MemberSignature Language="F#" Value="BadGateway = 502" Usage="System.Net.HttpStatusCode.BadGateway" />
+      <MemberSignature Language="C++ CLI" Value="BadGateway" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -183,6 +194,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -194,6 +211,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -211,8 +229,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode BadRequest = int32(400)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.BadRequest" />
       <MemberSignature Language="VB.NET" Value="BadRequest" />
-      <MemberSignature Language="C++ CLI" Value="BadRequest" />
       <MemberSignature Language="F#" Value="BadRequest = 400" Usage="System.Net.HttpStatusCode.BadRequest" />
+      <MemberSignature Language="C++ CLI" Value="BadRequest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -221,6 +239,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -232,6 +256,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -249,8 +274,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode Conflict = int32(409)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.Conflict" />
       <MemberSignature Language="VB.NET" Value="Conflict" />
-      <MemberSignature Language="C++ CLI" Value="Conflict" />
       <MemberSignature Language="F#" Value="Conflict = 409" Usage="System.Net.HttpStatusCode.Conflict" />
+      <MemberSignature Language="C++ CLI" Value="Conflict" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -259,6 +284,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -270,6 +301,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -287,8 +319,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode Continue = int32(100)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.Continue" />
       <MemberSignature Language="VB.NET" Value="Continue" />
-      <MemberSignature Language="C++ CLI" Value="Continue" />
       <MemberSignature Language="F#" Value="Continue = 100" Usage="System.Net.HttpStatusCode.Continue" />
+      <MemberSignature Language="C++ CLI" Value="Continue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -297,6 +329,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -308,6 +346,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -325,8 +364,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode Created = int32(201)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.Created" />
       <MemberSignature Language="VB.NET" Value="Created" />
-      <MemberSignature Language="C++ CLI" Value="Created" />
       <MemberSignature Language="F#" Value="Created = 201" Usage="System.Net.HttpStatusCode.Created" />
+      <MemberSignature Language="C++ CLI" Value="Created" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -335,6 +374,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -346,6 +391,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -363,15 +409,22 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode EarlyHints = int32(103)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.EarlyHints" />
       <MemberSignature Language="VB.NET" Value="EarlyHints" />
-      <MemberSignature Language="C++ CLI" Value="EarlyHints" />
       <MemberSignature Language="F#" Value="EarlyHints = 103" Usage="System.Net.HttpStatusCode.EarlyHints" />
+      <MemberSignature Language="C++ CLI" Value="EarlyHints" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -384,7 +437,7 @@
       </ReturnValue>
       <MemberValue>103</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Equivalent to HTTP status 103. <see cref="F:System.Net.HttpStatusCode.EarlyHints" /> indicates to the client that the server is likely to send a final response with the header fields included in the informational response.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExpectationFailed">
@@ -392,8 +445,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode ExpectationFailed = int32(417)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.ExpectationFailed" />
       <MemberSignature Language="VB.NET" Value="ExpectationFailed" />
-      <MemberSignature Language="C++ CLI" Value="ExpectationFailed" />
       <MemberSignature Language="F#" Value="ExpectationFailed = 417" Usage="System.Net.HttpStatusCode.ExpectationFailed" />
+      <MemberSignature Language="C++ CLI" Value="ExpectationFailed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -402,6 +455,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -413,6 +472,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -430,15 +490,22 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode FailedDependency = int32(424)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.FailedDependency" />
       <MemberSignature Language="VB.NET" Value="FailedDependency" />
-      <MemberSignature Language="C++ CLI" Value="FailedDependency" />
       <MemberSignature Language="F#" Value="FailedDependency = 424" Usage="System.Net.HttpStatusCode.FailedDependency" />
+      <MemberSignature Language="C++ CLI" Value="FailedDependency" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -451,7 +518,7 @@
       </ReturnValue>
       <MemberValue>424</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Equivalent to HTTP status 424. <see cref="F:System.Net.HttpStatusCode.FailedDependency" /> indicates that the method couldn't be performed on the resource because the requested action depended on another action and that action failed.</summary>
       </Docs>
     </Member>
     <Member MemberName="Forbidden">
@@ -459,8 +526,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode Forbidden = int32(403)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.Forbidden" />
       <MemberSignature Language="VB.NET" Value="Forbidden" />
-      <MemberSignature Language="C++ CLI" Value="Forbidden" />
       <MemberSignature Language="F#" Value="Forbidden = 403" Usage="System.Net.HttpStatusCode.Forbidden" />
+      <MemberSignature Language="C++ CLI" Value="Forbidden" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -469,6 +536,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -480,6 +553,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -497,8 +571,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode Found = int32(302)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.Found" />
       <MemberSignature Language="VB.NET" Value="Found" />
-      <MemberSignature Language="C++ CLI" Value="Found" />
       <MemberSignature Language="F#" Value="Found = 302" Usage="System.Net.HttpStatusCode.Found" />
+      <MemberSignature Language="C++ CLI" Value="Found" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -507,6 +581,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -518,6 +598,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -527,17 +608,8 @@
       </ReturnValue>
       <MemberValue>302</MemberValue>
       <Docs>
-        <summary>Equivalent to HTTP status 302. <see cref="F:System.Net.HttpStatusCode.Found" /> indicates that the requested information is located at the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will use the GET method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=nameWithType> property is `false`, Found will cause an exception to be thrown.  
-  
- Found is a synonym for Redirect.  
-  
- ]]></format>
-        </remarks>
+        <summary>Equivalent to HTTP status 302. <see cref="F:System.Net.HttpStatusCode.Found" /> indicates that the requested information is located at the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will use the GET method. <c>Found</c> is a synonym for <c>Redirect</c>.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GatewayTimeout">
@@ -545,8 +617,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode GatewayTimeout = int32(504)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.GatewayTimeout" />
       <MemberSignature Language="VB.NET" Value="GatewayTimeout" />
-      <MemberSignature Language="C++ CLI" Value="GatewayTimeout" />
       <MemberSignature Language="F#" Value="GatewayTimeout = 504" Usage="System.Net.HttpStatusCode.GatewayTimeout" />
+      <MemberSignature Language="C++ CLI" Value="GatewayTimeout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -555,6 +627,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -566,6 +644,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -583,8 +662,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode Gone = int32(410)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.Gone" />
       <MemberSignature Language="VB.NET" Value="Gone" />
-      <MemberSignature Language="C++ CLI" Value="Gone" />
       <MemberSignature Language="F#" Value="Gone = 410" Usage="System.Net.HttpStatusCode.Gone" />
+      <MemberSignature Language="C++ CLI" Value="Gone" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -593,6 +672,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -604,6 +689,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -621,8 +707,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode HttpVersionNotSupported = int32(505)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.HttpVersionNotSupported" />
       <MemberSignature Language="VB.NET" Value="HttpVersionNotSupported" />
-      <MemberSignature Language="C++ CLI" Value="HttpVersionNotSupported" />
       <MemberSignature Language="F#" Value="HttpVersionNotSupported = 505" Usage="System.Net.HttpStatusCode.HttpVersionNotSupported" />
+      <MemberSignature Language="C++ CLI" Value="HttpVersionNotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -631,6 +717,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -642,6 +734,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -659,15 +752,22 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode IMUsed = int32(226)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.IMUsed" />
       <MemberSignature Language="VB.NET" Value="IMUsed" />
-      <MemberSignature Language="C++ CLI" Value="IMUsed" />
       <MemberSignature Language="F#" Value="IMUsed = 226" Usage="System.Net.HttpStatusCode.IMUsed" />
+      <MemberSignature Language="C++ CLI" Value="IMUsed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -680,7 +780,7 @@
       </ReturnValue>
       <MemberValue>226</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Equivalent to HTTP status 226. <see cref="F:System.Net.HttpStatusCode.IMUsed" /> indicates that the server has fulfilled a request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance.</summary>
       </Docs>
     </Member>
     <Member MemberName="InsufficientStorage">
@@ -688,15 +788,22 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode InsufficientStorage = int32(507)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.InsufficientStorage" />
       <MemberSignature Language="VB.NET" Value="InsufficientStorage" />
-      <MemberSignature Language="C++ CLI" Value="InsufficientStorage" />
       <MemberSignature Language="F#" Value="InsufficientStorage = 507" Usage="System.Net.HttpStatusCode.InsufficientStorage" />
+      <MemberSignature Language="C++ CLI" Value="InsufficientStorage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -709,7 +816,7 @@
       </ReturnValue>
       <MemberValue>507</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Equivalent to HTTP status 507. <see cref="F:System.Net.HttpStatusCode.InsufficientStorage" /> indicates that the server is unable to store the representation needed to complete the request.</summary>
       </Docs>
     </Member>
     <Member MemberName="InternalServerError">
@@ -717,8 +824,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode InternalServerError = int32(500)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.InternalServerError" />
       <MemberSignature Language="VB.NET" Value="InternalServerError" />
-      <MemberSignature Language="C++ CLI" Value="InternalServerError" />
       <MemberSignature Language="F#" Value="InternalServerError = 500" Usage="System.Net.HttpStatusCode.InternalServerError" />
+      <MemberSignature Language="C++ CLI" Value="InternalServerError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -727,6 +834,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -738,6 +851,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -755,8 +869,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode LengthRequired = int32(411)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.LengthRequired" />
       <MemberSignature Language="VB.NET" Value="LengthRequired" />
-      <MemberSignature Language="C++ CLI" Value="LengthRequired" />
       <MemberSignature Language="F#" Value="LengthRequired = 411" Usage="System.Net.HttpStatusCode.LengthRequired" />
+      <MemberSignature Language="C++ CLI" Value="LengthRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -765,6 +879,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -776,6 +896,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -793,15 +914,22 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode Locked = int32(423)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.Locked" />
       <MemberSignature Language="VB.NET" Value="Locked" />
-      <MemberSignature Language="C++ CLI" Value="Locked" />
       <MemberSignature Language="F#" Value="Locked = 423" Usage="System.Net.HttpStatusCode.Locked" />
+      <MemberSignature Language="C++ CLI" Value="Locked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -814,7 +942,7 @@
       </ReturnValue>
       <MemberValue>423</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Equivalent to HTTP status 423. <see cref="F:System.Net.HttpStatusCode.Locked" /> indicates that the source or destination resource is locked.</summary>
       </Docs>
     </Member>
     <Member MemberName="LoopDetected">
@@ -822,15 +950,22 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode LoopDetected = int32(508)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.LoopDetected" />
       <MemberSignature Language="VB.NET" Value="LoopDetected" />
-      <MemberSignature Language="C++ CLI" Value="LoopDetected" />
       <MemberSignature Language="F#" Value="LoopDetected = 508" Usage="System.Net.HttpStatusCode.LoopDetected" />
+      <MemberSignature Language="C++ CLI" Value="LoopDetected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -843,7 +978,7 @@
       </ReturnValue>
       <MemberValue>508</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Equivalent to HTTP status 508. <see cref="F:System.Net.HttpStatusCode.LoopDetected" /> indicates that the server terminated an operation because it encountered an infinite loop while processing a WebDAV request with "Depth: infinity". This status code is meant for backward compatibility with clients not aware of the 208 status code <see cref="F:System.Net.HttpStatusCode.AlreadyReported" /> appearing in multistatus response bodies.</summary>
       </Docs>
     </Member>
     <Member MemberName="MethodNotAllowed">
@@ -851,8 +986,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode MethodNotAllowed = int32(405)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.MethodNotAllowed" />
       <MemberSignature Language="VB.NET" Value="MethodNotAllowed" />
-      <MemberSignature Language="C++ CLI" Value="MethodNotAllowed" />
       <MemberSignature Language="F#" Value="MethodNotAllowed = 405" Usage="System.Net.HttpStatusCode.MethodNotAllowed" />
+      <MemberSignature Language="C++ CLI" Value="MethodNotAllowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -861,6 +996,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -872,6 +1013,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -889,15 +1031,22 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode MisdirectedRequest = int32(421)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.MisdirectedRequest" />
       <MemberSignature Language="VB.NET" Value="MisdirectedRequest" />
-      <MemberSignature Language="C++ CLI" Value="MisdirectedRequest" />
       <MemberSignature Language="F#" Value="MisdirectedRequest = 421" Usage="System.Net.HttpStatusCode.MisdirectedRequest" />
+      <MemberSignature Language="C++ CLI" Value="MisdirectedRequest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -910,7 +1059,7 @@
       </ReturnValue>
       <MemberValue>421</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Equivalent to HTTP status 421. <see cref="F:System.Net.HttpStatusCode.MisdirectedRequest" /> indicates that the request was directed at a server that is not able to produce a response.</summary>
       </Docs>
     </Member>
     <Member MemberName="Moved">
@@ -918,8 +1067,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode Moved = int32(301)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.Moved" />
       <MemberSignature Language="VB.NET" Value="Moved" />
-      <MemberSignature Language="C++ CLI" Value="Moved" />
       <MemberSignature Language="F#" Value="Moved = 301" Usage="System.Net.HttpStatusCode.Moved" />
+      <MemberSignature Language="C++ CLI" Value="Moved" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -928,6 +1077,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -939,6 +1094,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -948,15 +1104,8 @@
       </ReturnValue>
       <MemberValue>301</MemberValue>
       <Docs>
-        <summary>Equivalent to HTTP status 301. <see cref="F:System.Net.HttpStatusCode.Moved" /> indicates that the requested information has been moved to the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will use the GET method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Moved is a synonym for MovedPermanently.  
-  
- ]]></format>
-        </remarks>
+        <summary>Equivalent to HTTP status 301. <see cref="F:System.Net.HttpStatusCode.Moved" /> indicates that the requested information has been moved to the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will use the GET method. <c>Moved</c> is a synonym for <c>MovedPermanently</c>.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MovedPermanently">
@@ -964,8 +1113,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode MovedPermanently = int32(301)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.MovedPermanently" />
       <MemberSignature Language="VB.NET" Value="MovedPermanently" />
-      <MemberSignature Language="C++ CLI" Value="MovedPermanently" />
       <MemberSignature Language="F#" Value="MovedPermanently = 301" Usage="System.Net.HttpStatusCode.MovedPermanently" />
+      <MemberSignature Language="C++ CLI" Value="MovedPermanently" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -974,6 +1123,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -985,6 +1140,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -994,15 +1150,8 @@
       </ReturnValue>
       <MemberValue>301</MemberValue>
       <Docs>
-        <summary>Equivalent to HTTP status 301. <see cref="F:System.Net.HttpStatusCode.MovedPermanently" /> indicates that the requested information has been moved to the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- MovedPermanently is a synonym for Moved.  
-  
- ]]></format>
-        </remarks>
+        <summary>Equivalent to HTTP status 301. <see cref="F:System.Net.HttpStatusCode.MovedPermanently" /> indicates that the requested information has been moved to the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. <c>MovedPermanently</c> is a synonym for <c>Moved</c>.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MultipleChoices">
@@ -1010,8 +1159,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode MultipleChoices = int32(300)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.MultipleChoices" />
       <MemberSignature Language="VB.NET" Value="MultipleChoices" />
-      <MemberSignature Language="C++ CLI" Value="MultipleChoices" />
       <MemberSignature Language="F#" Value="MultipleChoices = 300" Usage="System.Net.HttpStatusCode.MultipleChoices" />
+      <MemberSignature Language="C++ CLI" Value="MultipleChoices" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1020,6 +1169,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1031,6 +1186,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1040,17 +1196,8 @@
       </ReturnValue>
       <MemberValue>300</MemberValue>
       <Docs>
-        <summary>Equivalent to HTTP status 300. <see cref="F:System.Net.HttpStatusCode.MultipleChoices" /> indicates that the requested information has multiple representations. The default action is to treat this status as a redirect and follow the contents of the Location header associated with this response.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=nameWithType> property is `false`, MultipleChoices will cause an exception to be thrown.  
-  
- MultipleChoices is a synonym for Ambiguous.  
-  
- ]]></format>
-        </remarks>
+        <summary>Equivalent to HTTP status 300. <see cref="F:System.Net.HttpStatusCode.MultipleChoices" /> indicates that the requested information has multiple representations. The default action is to treat this status as a redirect and follow the contents of the Location header associated with this response. <c>MultipleChoices</c> is a synonym for <c>Ambiguous</c>.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MultiStatus">
@@ -1058,15 +1205,22 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode MultiStatus = int32(207)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.MultiStatus" />
       <MemberSignature Language="VB.NET" Value="MultiStatus" />
-      <MemberSignature Language="C++ CLI" Value="MultiStatus" />
       <MemberSignature Language="F#" Value="MultiStatus = 207" Usage="System.Net.HttpStatusCode.MultiStatus" />
+      <MemberSignature Language="C++ CLI" Value="MultiStatus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1079,7 +1233,7 @@
       </ReturnValue>
       <MemberValue>207</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Equivalent to HTTP status 207. <see cref="F:System.Net.HttpStatusCode.MultiStatus" /> indicates multiple status codes for a single response during a Web Distributed Authoring and Versioning (WebDAV) operation. The response body contains XML that describes the status codes.</summary>
       </Docs>
     </Member>
     <Member MemberName="NetworkAuthenticationRequired">
@@ -1087,15 +1241,22 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode NetworkAuthenticationRequired = int32(511)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.NetworkAuthenticationRequired" />
       <MemberSignature Language="VB.NET" Value="NetworkAuthenticationRequired" />
-      <MemberSignature Language="C++ CLI" Value="NetworkAuthenticationRequired" />
       <MemberSignature Language="F#" Value="NetworkAuthenticationRequired = 511" Usage="System.Net.HttpStatusCode.NetworkAuthenticationRequired" />
+      <MemberSignature Language="C++ CLI" Value="NetworkAuthenticationRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1108,7 +1269,7 @@
       </ReturnValue>
       <MemberValue>511</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Equivalent to HTTP status 511. <see cref="F:System.Net.HttpStatusCode.NetworkAuthenticationRequired" /> indicates that the client needs to authenticate to gain network access; it's intended for use by intercepting proxies used to control access to the network.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoContent">
@@ -1116,8 +1277,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode NoContent = int32(204)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.NoContent" />
       <MemberSignature Language="VB.NET" Value="NoContent" />
-      <MemberSignature Language="C++ CLI" Value="NoContent" />
       <MemberSignature Language="F#" Value="NoContent = 204" Usage="System.Net.HttpStatusCode.NoContent" />
+      <MemberSignature Language="C++ CLI" Value="NoContent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1126,6 +1287,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1137,6 +1304,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1154,8 +1322,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode NonAuthoritativeInformation = int32(203)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.NonAuthoritativeInformation" />
       <MemberSignature Language="VB.NET" Value="NonAuthoritativeInformation" />
-      <MemberSignature Language="C++ CLI" Value="NonAuthoritativeInformation" />
       <MemberSignature Language="F#" Value="NonAuthoritativeInformation = 203" Usage="System.Net.HttpStatusCode.NonAuthoritativeInformation" />
+      <MemberSignature Language="C++ CLI" Value="NonAuthoritativeInformation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1164,6 +1332,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1175,6 +1349,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1184,7 +1359,7 @@
       </ReturnValue>
       <MemberValue>203</MemberValue>
       <Docs>
-        <summary>Equivalent to HTTP status 203. <see cref="F:System.Net.HttpStatusCode.NonAuthoritativeInformation" /> indicates that the returned metainformation is from a cached copy instead of the origin server and therefore may be incorrect.</summary>
+        <summary>Equivalent to HTTP status 203. <see cref="F:System.Net.HttpStatusCode.NonAuthoritativeInformation" /> indicates that the returned meta information is from a cached copy instead of the origin server and therefore may be incorrect.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotAcceptable">
@@ -1192,8 +1367,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode NotAcceptable = int32(406)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.NotAcceptable" />
       <MemberSignature Language="VB.NET" Value="NotAcceptable" />
-      <MemberSignature Language="C++ CLI" Value="NotAcceptable" />
       <MemberSignature Language="F#" Value="NotAcceptable = 406" Usage="System.Net.HttpStatusCode.NotAcceptable" />
+      <MemberSignature Language="C++ CLI" Value="NotAcceptable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1202,6 +1377,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1213,6 +1394,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1230,15 +1412,22 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode NotExtended = int32(510)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.NotExtended" />
       <MemberSignature Language="VB.NET" Value="NotExtended" />
-      <MemberSignature Language="C++ CLI" Value="NotExtended" />
       <MemberSignature Language="F#" Value="NotExtended = 510" Usage="System.Net.HttpStatusCode.NotExtended" />
+      <MemberSignature Language="C++ CLI" Value="NotExtended" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1251,7 +1440,7 @@
       </ReturnValue>
       <MemberValue>510</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Equivalent to HTTP status 510. <see cref="F:System.Net.HttpStatusCode.NotExtended" /> indicates that further extensions to the request are required for the server to fulfill it.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotFound">
@@ -1259,8 +1448,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode NotFound = int32(404)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.NotFound" />
       <MemberSignature Language="VB.NET" Value="NotFound" />
-      <MemberSignature Language="C++ CLI" Value="NotFound" />
       <MemberSignature Language="F#" Value="NotFound = 404" Usage="System.Net.HttpStatusCode.NotFound" />
+      <MemberSignature Language="C++ CLI" Value="NotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1269,6 +1458,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1280,6 +1475,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1297,8 +1493,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode NotImplemented = int32(501)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.NotImplemented" />
       <MemberSignature Language="VB.NET" Value="NotImplemented" />
-      <MemberSignature Language="C++ CLI" Value="NotImplemented" />
       <MemberSignature Language="F#" Value="NotImplemented = 501" Usage="System.Net.HttpStatusCode.NotImplemented" />
+      <MemberSignature Language="C++ CLI" Value="NotImplemented" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1307,6 +1503,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1318,6 +1520,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1335,8 +1538,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode NotModified = int32(304)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.NotModified" />
       <MemberSignature Language="VB.NET" Value="NotModified" />
-      <MemberSignature Language="C++ CLI" Value="NotModified" />
       <MemberSignature Language="F#" Value="NotModified = 304" Usage="System.Net.HttpStatusCode.NotModified" />
+      <MemberSignature Language="C++ CLI" Value="NotModified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1345,6 +1548,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1356,6 +1565,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1373,8 +1583,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode OK = int32(200)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.OK" />
       <MemberSignature Language="VB.NET" Value="OK" />
-      <MemberSignature Language="C++ CLI" Value="OK" />
       <MemberSignature Language="F#" Value="OK = 200" Usage="System.Net.HttpStatusCode.OK" />
+      <MemberSignature Language="C++ CLI" Value="OK" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1383,6 +1593,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1394,6 +1610,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1411,8 +1628,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode PartialContent = int32(206)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.PartialContent" />
       <MemberSignature Language="VB.NET" Value="PartialContent" />
-      <MemberSignature Language="C++ CLI" Value="PartialContent" />
       <MemberSignature Language="F#" Value="PartialContent = 206" Usage="System.Net.HttpStatusCode.PartialContent" />
+      <MemberSignature Language="C++ CLI" Value="PartialContent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1421,6 +1638,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1432,6 +1655,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1449,8 +1673,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode PaymentRequired = int32(402)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.PaymentRequired" />
       <MemberSignature Language="VB.NET" Value="PaymentRequired" />
-      <MemberSignature Language="C++ CLI" Value="PaymentRequired" />
       <MemberSignature Language="F#" Value="PaymentRequired = 402" Usage="System.Net.HttpStatusCode.PaymentRequired" />
+      <MemberSignature Language="C++ CLI" Value="PaymentRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1459,6 +1683,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1470,6 +1700,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1487,15 +1718,22 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode PermanentRedirect = int32(308)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.PermanentRedirect" />
       <MemberSignature Language="VB.NET" Value="PermanentRedirect" />
-      <MemberSignature Language="C++ CLI" Value="PermanentRedirect" />
       <MemberSignature Language="F#" Value="PermanentRedirect = 308" Usage="System.Net.HttpStatusCode.PermanentRedirect" />
+      <MemberSignature Language="C++ CLI" Value="PermanentRedirect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1508,7 +1746,7 @@
       </ReturnValue>
       <MemberValue>308</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Equivalent to HTTP status 308. <see cref="F:System.Net.HttpStatusCode.PermanentRedirect" /> indicates that the request information is located at the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will also use the POST method.</summary>
       </Docs>
     </Member>
     <Member MemberName="PreconditionFailed">
@@ -1516,8 +1754,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode PreconditionFailed = int32(412)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.PreconditionFailed" />
       <MemberSignature Language="VB.NET" Value="PreconditionFailed" />
-      <MemberSignature Language="C++ CLI" Value="PreconditionFailed" />
       <MemberSignature Language="F#" Value="PreconditionFailed = 412" Usage="System.Net.HttpStatusCode.PreconditionFailed" />
+      <MemberSignature Language="C++ CLI" Value="PreconditionFailed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1526,6 +1764,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1537,6 +1781,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1554,15 +1799,22 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode PreconditionRequired = int32(428)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.PreconditionRequired" />
       <MemberSignature Language="VB.NET" Value="PreconditionRequired" />
-      <MemberSignature Language="C++ CLI" Value="PreconditionRequired" />
       <MemberSignature Language="F#" Value="PreconditionRequired = 428" Usage="System.Net.HttpStatusCode.PreconditionRequired" />
+      <MemberSignature Language="C++ CLI" Value="PreconditionRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1575,7 +1827,7 @@
       </ReturnValue>
       <MemberValue>428</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Equivalent to HTTP status 428. <see cref="F:System.Net.HttpStatusCode.PreconditionRequired" /> indicates that the server requires the request to be conditional.</summary>
       </Docs>
     </Member>
     <Member MemberName="Processing">
@@ -1583,15 +1835,22 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode Processing = int32(102)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.Processing" />
       <MemberSignature Language="VB.NET" Value="Processing" />
-      <MemberSignature Language="C++ CLI" Value="Processing" />
       <MemberSignature Language="F#" Value="Processing = 102" Usage="System.Net.HttpStatusCode.Processing" />
+      <MemberSignature Language="C++ CLI" Value="Processing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1604,7 +1863,7 @@
       </ReturnValue>
       <MemberValue>102</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Equivalent to HTTP status 102. <see cref="F:System.Net.HttpStatusCode.Processing" /> indicates that the server has accepted the complete request but hasn't completed it yet.</summary>
       </Docs>
     </Member>
     <Member MemberName="ProxyAuthenticationRequired">
@@ -1612,8 +1871,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode ProxyAuthenticationRequired = int32(407)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.ProxyAuthenticationRequired" />
       <MemberSignature Language="VB.NET" Value="ProxyAuthenticationRequired" />
-      <MemberSignature Language="C++ CLI" Value="ProxyAuthenticationRequired" />
       <MemberSignature Language="F#" Value="ProxyAuthenticationRequired = 407" Usage="System.Net.HttpStatusCode.ProxyAuthenticationRequired" />
+      <MemberSignature Language="C++ CLI" Value="ProxyAuthenticationRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1622,6 +1881,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1633,6 +1898,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1650,8 +1916,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode Redirect = int32(302)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.Redirect" />
       <MemberSignature Language="VB.NET" Value="Redirect" />
-      <MemberSignature Language="C++ CLI" Value="Redirect" />
       <MemberSignature Language="F#" Value="Redirect = 302" Usage="System.Net.HttpStatusCode.Redirect" />
+      <MemberSignature Language="C++ CLI" Value="Redirect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1660,6 +1926,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1671,6 +1943,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1680,17 +1953,8 @@
       </ReturnValue>
       <MemberValue>302</MemberValue>
       <Docs>
-        <summary>Equivalent to HTTP status 302. <see cref="F:System.Net.HttpStatusCode.Redirect" /> indicates that the requested information is located at the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will use the GET method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=nameWithType> property is `false`, Redirect will cause an exception to be thrown.  
-  
- Redirect is a synonym for Found.  
-  
- ]]></format>
-        </remarks>
+        <summary>Equivalent to HTTP status 302. <see cref="F:System.Net.HttpStatusCode.Redirect" /> indicates that the requested information is located at the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will use the GET method. <c>Redirect</c> is a synonym for <c>Found</c>.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RedirectKeepVerb">
@@ -1698,8 +1962,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode RedirectKeepVerb = int32(307)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.RedirectKeepVerb" />
       <MemberSignature Language="VB.NET" Value="RedirectKeepVerb" />
-      <MemberSignature Language="C++ CLI" Value="RedirectKeepVerb" />
       <MemberSignature Language="F#" Value="RedirectKeepVerb = 307" Usage="System.Net.HttpStatusCode.RedirectKeepVerb" />
+      <MemberSignature Language="C++ CLI" Value="RedirectKeepVerb" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1708,6 +1972,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1719,6 +1989,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1728,17 +1999,8 @@
       </ReturnValue>
       <MemberValue>307</MemberValue>
       <Docs>
-        <summary>Equivalent to HTTP status 307. <see cref="F:System.Net.HttpStatusCode.RedirectKeepVerb" /> indicates that the request information is located at the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will also use the POST method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=nameWithType> property is `false`, RedirectKeepVerb will cause an exception to be thrown.  
-  
- RedirectKeepVerb is a synonym for TemporaryRedirect.  
-  
- ]]></format>
-        </remarks>
+        <summary>Equivalent to HTTP status 307. <see cref="F:System.Net.HttpStatusCode.RedirectKeepVerb" /> indicates that the request information is located at the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will also use the POST method. <c>RedirectKeepVerb</c> is a synonym for <c>TemporaryRedirect</c>.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RedirectMethod">
@@ -1746,8 +2008,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode RedirectMethod = int32(303)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.RedirectMethod" />
       <MemberSignature Language="VB.NET" Value="RedirectMethod" />
-      <MemberSignature Language="C++ CLI" Value="RedirectMethod" />
       <MemberSignature Language="F#" Value="RedirectMethod = 303" Usage="System.Net.HttpStatusCode.RedirectMethod" />
+      <MemberSignature Language="C++ CLI" Value="RedirectMethod" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1756,6 +2018,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1767,6 +2035,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1776,17 +2045,8 @@
       </ReturnValue>
       <MemberValue>303</MemberValue>
       <Docs>
-        <summary>Equivalent to HTTP status 303. <see cref="F:System.Net.HttpStatusCode.RedirectMethod" /> automatically redirects the client to the URI specified in the Location header as the result of a POST. The request to the resource specified by the Location header will be made with a GET.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=nameWithType> property is `false`, RedirectMethod will cause an exception to be thrown.  
-  
- RedirectMethod is a synonym for SeeOther.  
-  
- ]]></format>
-        </remarks>
+        <summary>Equivalent to HTTP status 303. <see cref="F:System.Net.HttpStatusCode.RedirectMethod" /> automatically redirects the client to the URI specified in the Location header as the result of a POST. The request to the resource specified by the Location header will be made with a GET. <c>RedirectMethod</c> is a synonym for <c>SeeOther</c>.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequestedRangeNotSatisfiable">
@@ -1794,8 +2054,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode RequestedRangeNotSatisfiable = int32(416)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.RequestedRangeNotSatisfiable" />
       <MemberSignature Language="VB.NET" Value="RequestedRangeNotSatisfiable" />
-      <MemberSignature Language="C++ CLI" Value="RequestedRangeNotSatisfiable" />
       <MemberSignature Language="F#" Value="RequestedRangeNotSatisfiable = 416" Usage="System.Net.HttpStatusCode.RequestedRangeNotSatisfiable" />
+      <MemberSignature Language="C++ CLI" Value="RequestedRangeNotSatisfiable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1804,6 +2064,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1815,6 +2081,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1832,8 +2099,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode RequestEntityTooLarge = int32(413)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.RequestEntityTooLarge" />
       <MemberSignature Language="VB.NET" Value="RequestEntityTooLarge" />
-      <MemberSignature Language="C++ CLI" Value="RequestEntityTooLarge" />
       <MemberSignature Language="F#" Value="RequestEntityTooLarge = 413" Usage="System.Net.HttpStatusCode.RequestEntityTooLarge" />
+      <MemberSignature Language="C++ CLI" Value="RequestEntityTooLarge" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1842,6 +2109,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1853,6 +2126,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1870,15 +2144,22 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode RequestHeaderFieldsTooLarge = int32(431)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.RequestHeaderFieldsTooLarge" />
       <MemberSignature Language="VB.NET" Value="RequestHeaderFieldsTooLarge" />
-      <MemberSignature Language="C++ CLI" Value="RequestHeaderFieldsTooLarge" />
       <MemberSignature Language="F#" Value="RequestHeaderFieldsTooLarge = 431" Usage="System.Net.HttpStatusCode.RequestHeaderFieldsTooLarge" />
+      <MemberSignature Language="C++ CLI" Value="RequestHeaderFieldsTooLarge" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1891,7 +2172,7 @@
       </ReturnValue>
       <MemberValue>431</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Equivalent to HTTP status 431. <see cref="F:System.Net.HttpStatusCode.RequestHeaderFieldsTooLarge" /> indicates that the server is unwilling to process the request because its header fields (either an individual header field or all the header fields collectively) are too large.</summary>
       </Docs>
     </Member>
     <Member MemberName="RequestTimeout">
@@ -1899,8 +2180,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode RequestTimeout = int32(408)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.RequestTimeout" />
       <MemberSignature Language="VB.NET" Value="RequestTimeout" />
-      <MemberSignature Language="C++ CLI" Value="RequestTimeout" />
       <MemberSignature Language="F#" Value="RequestTimeout = 408" Usage="System.Net.HttpStatusCode.RequestTimeout" />
+      <MemberSignature Language="C++ CLI" Value="RequestTimeout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1909,6 +2190,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1920,6 +2207,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1937,8 +2225,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode RequestUriTooLong = int32(414)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.RequestUriTooLong" />
       <MemberSignature Language="VB.NET" Value="RequestUriTooLong" />
-      <MemberSignature Language="C++ CLI" Value="RequestUriTooLong" />
       <MemberSignature Language="F#" Value="RequestUriTooLong = 414" Usage="System.Net.HttpStatusCode.RequestUriTooLong" />
+      <MemberSignature Language="C++ CLI" Value="RequestUriTooLong" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1947,6 +2235,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1958,6 +2252,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -1975,8 +2270,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode ResetContent = int32(205)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.ResetContent" />
       <MemberSignature Language="VB.NET" Value="ResetContent" />
-      <MemberSignature Language="C++ CLI" Value="ResetContent" />
       <MemberSignature Language="F#" Value="ResetContent = 205" Usage="System.Net.HttpStatusCode.ResetContent" />
+      <MemberSignature Language="C++ CLI" Value="ResetContent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1985,6 +2280,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1996,6 +2297,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -2013,8 +2315,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode SeeOther = int32(303)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.SeeOther" />
       <MemberSignature Language="VB.NET" Value="SeeOther" />
-      <MemberSignature Language="C++ CLI" Value="SeeOther" />
       <MemberSignature Language="F#" Value="SeeOther = 303" Usage="System.Net.HttpStatusCode.SeeOther" />
+      <MemberSignature Language="C++ CLI" Value="SeeOther" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -2023,6 +2325,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2034,6 +2342,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -2043,17 +2352,8 @@
       </ReturnValue>
       <MemberValue>303</MemberValue>
       <Docs>
-        <summary>Equivalent to HTTP status 303. <see cref="F:System.Net.HttpStatusCode.SeeOther" /> automatically redirects the client to the URI specified in the Location header as the result of a POST. The request to the resource specified by the Location header will be made with a GET.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=nameWithType> property is `false`, SeeOther will cause an exception to be thrown.  
-  
- SeeOther is a synonym for RedirectMethod.  
-  
- ]]></format>
-        </remarks>
+        <summary>Equivalent to HTTP status 303. <see cref="F:System.Net.HttpStatusCode.SeeOther" /> automatically redirects the client to the URI specified in the Location header as the result of a POST. The request to the resource specified by the Location header will be made with a GET. <c>SeeOther</c> is a synonym for <c>RedirectMethod</c>.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ServiceUnavailable">
@@ -2061,8 +2361,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode ServiceUnavailable = int32(503)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.ServiceUnavailable" />
       <MemberSignature Language="VB.NET" Value="ServiceUnavailable" />
-      <MemberSignature Language="C++ CLI" Value="ServiceUnavailable" />
       <MemberSignature Language="F#" Value="ServiceUnavailable = 503" Usage="System.Net.HttpStatusCode.ServiceUnavailable" />
+      <MemberSignature Language="C++ CLI" Value="ServiceUnavailable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -2071,6 +2371,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2082,6 +2388,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -2099,8 +2406,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode SwitchingProtocols = int32(101)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.SwitchingProtocols" />
       <MemberSignature Language="VB.NET" Value="SwitchingProtocols" />
-      <MemberSignature Language="C++ CLI" Value="SwitchingProtocols" />
       <MemberSignature Language="F#" Value="SwitchingProtocols = 101" Usage="System.Net.HttpStatusCode.SwitchingProtocols" />
+      <MemberSignature Language="C++ CLI" Value="SwitchingProtocols" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -2109,6 +2416,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2120,6 +2433,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -2137,8 +2451,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode TemporaryRedirect = int32(307)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.TemporaryRedirect" />
       <MemberSignature Language="VB.NET" Value="TemporaryRedirect" />
-      <MemberSignature Language="C++ CLI" Value="TemporaryRedirect" />
       <MemberSignature Language="F#" Value="TemporaryRedirect = 307" Usage="System.Net.HttpStatusCode.TemporaryRedirect" />
+      <MemberSignature Language="C++ CLI" Value="TemporaryRedirect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -2147,6 +2461,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2158,6 +2478,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -2167,17 +2488,8 @@
       </ReturnValue>
       <MemberValue>307</MemberValue>
       <Docs>
-        <summary>Equivalent to HTTP status 307. <see cref="F:System.Net.HttpStatusCode.TemporaryRedirect" /> indicates that the request information is located at the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will also use the POST method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the <xref:System.Net.HttpWebRequest.AllowAutoRedirect%2A?displayProperty=nameWithType> property is `false`, TemporaryRedirect will cause an exception to be thrown.  
-  
- TemporaryRedirect is a synonym for RedirectKeepVerb.  
-  
- ]]></format>
-        </remarks>
+        <summary>Equivalent to HTTP status 307. <see cref="F:System.Net.HttpStatusCode.TemporaryRedirect" /> indicates that the request information is located at the URI specified in the Location header. The default action when this status is received is to follow the Location header associated with the response. When the original request method was POST, the redirected request will also use the POST method. <c>TemporaryRedirect</c> is a synonym for <c>RedirectKeepVerb</c>.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TooManyRequests">
@@ -2185,15 +2497,22 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode TooManyRequests = int32(429)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.TooManyRequests" />
       <MemberSignature Language="VB.NET" Value="TooManyRequests" />
-      <MemberSignature Language="C++ CLI" Value="TooManyRequests" />
       <MemberSignature Language="F#" Value="TooManyRequests = 429" Usage="System.Net.HttpStatusCode.TooManyRequests" />
+      <MemberSignature Language="C++ CLI" Value="TooManyRequests" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2206,7 +2525,7 @@
       </ReturnValue>
       <MemberValue>429</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Equivalent to HTTP status 429. <see cref="F:System.Net.HttpStatusCode.TooManyRequests" /> indicates that the user has sent too many requests in a given amount of time.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unauthorized">
@@ -2214,8 +2533,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode Unauthorized = int32(401)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.Unauthorized" />
       <MemberSignature Language="VB.NET" Value="Unauthorized" />
-      <MemberSignature Language="C++ CLI" Value="Unauthorized" />
       <MemberSignature Language="F#" Value="Unauthorized = 401" Usage="System.Net.HttpStatusCode.Unauthorized" />
+      <MemberSignature Language="C++ CLI" Value="Unauthorized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -2224,6 +2543,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2235,6 +2560,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -2252,15 +2578,22 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode UnavailableForLegalReasons = int32(451)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.UnavailableForLegalReasons" />
       <MemberSignature Language="VB.NET" Value="UnavailableForLegalReasons" />
-      <MemberSignature Language="C++ CLI" Value="UnavailableForLegalReasons" />
       <MemberSignature Language="F#" Value="UnavailableForLegalReasons = 451" Usage="System.Net.HttpStatusCode.UnavailableForLegalReasons" />
+      <MemberSignature Language="C++ CLI" Value="UnavailableForLegalReasons" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2273,7 +2606,38 @@
       </ReturnValue>
       <MemberValue>451</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Equivalent to HTTP status 451. <see cref="F:System.Net.HttpStatusCode.UnavailableForLegalReasons" /> indicates that the server is denying access to the resource as a consequence of a legal demand.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnprocessableContent">
+      <MemberSignature Language="C#" Value="UnprocessableContent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode UnprocessableContent = int32(422)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.UnprocessableContent" />
+      <MemberSignature Language="VB.NET" Value="UnprocessableContent" />
+      <MemberSignature Language="F#" Value="UnprocessableContent = 422" Usage="System.Net.HttpStatusCode.UnprocessableContent" />
+      <MemberSignature Language="C++ CLI" Value="UnprocessableContent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.HttpStatusCode</ReturnType>
+      </ReturnValue>
+      <MemberValue>422</MemberValue>
+      <Docs>
+        <summary>Equivalent to HTTP status 422. <see cref="F:System.Net.HttpStatusCode.UnprocessableContent" /> indicates that the request was well-formed but was unable to be followed due to semantic errors.
+        `UnprocessableContent` is a synonym for `UnprocessableEntity`.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnprocessableEntity">
@@ -2281,15 +2645,22 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode UnprocessableEntity = int32(422)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.UnprocessableEntity" />
       <MemberSignature Language="VB.NET" Value="UnprocessableEntity" />
-      <MemberSignature Language="C++ CLI" Value="UnprocessableEntity" />
       <MemberSignature Language="F#" Value="UnprocessableEntity = 422" Usage="System.Net.HttpStatusCode.UnprocessableEntity" />
+      <MemberSignature Language="C++ CLI" Value="UnprocessableEntity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2302,7 +2673,8 @@
       </ReturnValue>
       <MemberValue>422</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Equivalent to HTTP status 422. <see cref="F:System.Net.HttpStatusCode.UnprocessableEntity" /> indicates that the request was well-formed but was unable to be followed due to semantic errors.
+        `UnprocessableEntity` is a synonym for `UnprocessableContent`.</summary>
       </Docs>
     </Member>
     <Member MemberName="UnsupportedMediaType">
@@ -2310,8 +2682,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode UnsupportedMediaType = int32(415)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.UnsupportedMediaType" />
       <MemberSignature Language="VB.NET" Value="UnsupportedMediaType" />
-      <MemberSignature Language="C++ CLI" Value="UnsupportedMediaType" />
       <MemberSignature Language="F#" Value="UnsupportedMediaType = 415" Usage="System.Net.HttpStatusCode.UnsupportedMediaType" />
+      <MemberSignature Language="C++ CLI" Value="UnsupportedMediaType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -2320,6 +2692,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2331,6 +2709,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -2348,8 +2727,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode Unused = int32(306)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.Unused" />
       <MemberSignature Language="VB.NET" Value="Unused" />
-      <MemberSignature Language="C++ CLI" Value="Unused" />
       <MemberSignature Language="F#" Value="Unused = 306" Usage="System.Net.HttpStatusCode.Unused" />
+      <MemberSignature Language="C++ CLI" Value="Unused" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -2358,6 +2737,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2369,6 +2754,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -2386,8 +2772,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode UpgradeRequired = int32(426)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.UpgradeRequired" />
       <MemberSignature Language="VB.NET" Value="UpgradeRequired" />
-      <MemberSignature Language="C++ CLI" Value="UpgradeRequired" />
       <MemberSignature Language="F#" Value="UpgradeRequired = 426" Usage="System.Net.HttpStatusCode.UpgradeRequired" />
+      <MemberSignature Language="C++ CLI" Value="UpgradeRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -2395,6 +2781,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2404,6 +2796,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -2421,8 +2814,8 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode UseProxy = int32(305)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.UseProxy" />
       <MemberSignature Language="VB.NET" Value="UseProxy" />
-      <MemberSignature Language="C++ CLI" Value="UseProxy" />
       <MemberSignature Language="F#" Value="UseProxy = 305" Usage="System.Net.HttpStatusCode.UseProxy" />
+      <MemberSignature Language="C++ CLI" Value="UseProxy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -2431,6 +2824,12 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2442,6 +2841,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -2459,15 +2859,22 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.HttpStatusCode VariantAlsoNegotiates = int32(506)" />
       <MemberSignature Language="DocId" Value="F:System.Net.HttpStatusCode.VariantAlsoNegotiates" />
       <MemberSignature Language="VB.NET" Value="VariantAlsoNegotiates" />
-      <MemberSignature Language="C++ CLI" Value="VariantAlsoNegotiates" />
       <MemberSignature Language="F#" Value="VariantAlsoNegotiates = 506" Usage="System.Net.HttpStatusCode.VariantAlsoNegotiates" />
+      <MemberSignature Language="C++ CLI" Value="VariantAlsoNegotiates" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2480,7 +2887,7 @@
       </ReturnValue>
       <MemberValue>506</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Equivalent to HTTP status 506. <see cref="F:System.Net.HttpStatusCode.VariantAlsoNegotiates" /> indicates that the chosen variant resource is configured to engage in transparent content negotiation itself and, therefore, isn't a proper endpoint in the negotiation process.</summary>
       </Docs>
     </Member>
   </Members>

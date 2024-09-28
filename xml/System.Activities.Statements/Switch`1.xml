@@ -1,10 +1,10 @@
-﻿<Type Name="Switch&lt;T&gt;" FullName="System.Activities.Statements.Switch&lt;T&gt;">
+<Type Name="Switch&lt;T&gt;" FullName="System.Activities.Statements.Switch&lt;T&gt;">
   <TypeSignature Language="C#" Value="public sealed class Switch&lt;T&gt; : System.Activities.NativeActivity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Switch`1&lt;T&gt; extends System.Activities.NativeActivity" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.Switch`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Switch(Of T)&#xA;Inherits NativeActivity" />
-  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class Switch sealed : System::Activities::NativeActivity" />
   <TypeSignature Language="F#" Value="type Switch&lt;'T&gt; = class&#xA;    inherit NativeActivity" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class Switch sealed : System::Activities::NativeActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,7 +18,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Windows.Markup.ContentProperty("Cases")</AttributeName>
+      <AttributeName Language="C#">[System.Windows.Markup.ContentProperty("Cases")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Windows.Markup.ContentProperty("Cases")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -28,14 +29,13 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Each case in the <xref:System.Activities.Statements.Switch%601.Cases%2A> dictionary consists of a value (serving as the key for the dictionary) and an activity (serving as the value for the dictionary). The <xref:System.Activities.Statements.Switch`1.Expression%2A> is evaluated and compared against the keys in the <xref:System.Activities.Statements.Switch%601.Cases%2A> dictionary. If a match is found, the corresponding activity is executed. Every key in the <xref:System.Activities.Statements.Switch%601.Cases%2A> dictionary must be unique according to the dictionary's equality comparer.  
+ Each case in the <xref:System.Activities.Statements.Switch%601.Cases%2A> dictionary consists of a value (serving as the key for the dictionary) and an activity (serving as the value for the dictionary). The <xref:System.Activities.Statements.Switch`1.Expression%2A> is evaluated and compared against the keys in the <xref:System.Activities.Statements.Switch%601.Cases%2A> dictionary. If a match is found, the corresponding activity is executed. Every key in the <xref:System.Activities.Statements.Switch%601.Cases%2A> dictionary must be unique according to the dictionary's equality comparer.
+
+## Examples
+
+The following code sample demonstrates creating a <xref:System.Activities.Statements.Switch%601> activity.
   
-   
-  
-## Examples  
- The following code sample demonstrates creating a <xref:System.Activities.Statements.Switch%601> activity. This example is from the [Using Procedural Activities](~/docs/framework/windows-workflow-foundation/samples/using-procedural-activities.md) sample.  
-  
- [!code-csharp[wfs_Procedurals#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_procedurals/cs/program.cs#1)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/wfs_procedurals/cs/program.cs" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -51,10 +51,11 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Examples  
- The following code sample demonstrates creating a <xref:System.Activities.Statements.Switch%601> activity. This example is from the [Using Procedural Activities](~/docs/framework/windows-workflow-foundation/samples/using-procedural-activities.md) sample.  
+## Examples
+
+The following code sample demonstrates creating a <xref:System.Activities.Statements.Switch%601> activity.
   
- [!code-csharp[wfs_Procedurals#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_procedurals/cs/program.cs#1)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/wfs_procedurals/cs/program.cs" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -73,7 +74,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -82,10 +84,11 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Examples  
- The following code sample demonstrates creating a <xref:System.Activities.Statements.Switch%601> activity. This example is from the [Using Procedural Activities](~/docs/framework/windows-workflow-foundation/samples/using-procedural-activities.md) sample.  
+## Examples
+
+The following code sample demonstrates creating a <xref:System.Activities.Statements.Switch%601> activity.
   
- [!code-csharp[wfs_Procedurals#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_procedurals/cs/program.cs#1)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/wfs_procedurals/cs/program.cs" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -96,8 +99,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Activity`1&lt;!T&gt; expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Switch`1.#ctor(System.Activities.Activity{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (expression As Activity(Of T))" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Switch(System::Activities::Activity&lt;T&gt; ^ expression);" />
       <MemberSignature Language="F#" Value="new System.Activities.Statements.Switch&lt;'T&gt; : System.Activities.Activity&lt;'T&gt; -&gt; System.Activities.Statements.Switch&lt;'T&gt;" Usage="new System.Activities.Statements.Switch&lt;'T&gt; expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Switch(System::Activities::Activity&lt;T&gt; ^ expression);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -117,8 +120,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.InArgument`1&lt;!T&gt; expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Switch`1.#ctor(System.Activities.InArgument{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (expression As InArgument(Of T))" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Switch(System::Activities::InArgument&lt;T&gt; ^ expression);" />
       <MemberSignature Language="F#" Value="new System.Activities.Statements.Switch&lt;'T&gt; : System.Activities.InArgument&lt;'T&gt; -&gt; System.Activities.Statements.Switch&lt;'T&gt;" Usage="new System.Activities.Statements.Switch&lt;'T&gt; expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Switch(System::Activities::InArgument&lt;T&gt; ^ expression);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -138,8 +141,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;class System.Activities.ActivityContext, !T&gt;&gt; expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Switch`1.#ctor(System.Linq.Expressions.Expression{System.Func{System.Activities.ActivityContext,`0}})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (expression As Expression(Of Func(Of ActivityContext, T)))" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Switch(System::Linq::Expressions::Expression&lt;Func&lt;System::Activities::ActivityContext ^, T&gt; ^&gt; ^ expression);" />
       <MemberSignature Language="F#" Value="new System.Activities.Statements.Switch&lt;'T&gt; : System.Linq.Expressions.Expression&lt;Func&lt;System.Activities.ActivityContext, 'T&gt;&gt; -&gt; System.Activities.Statements.Switch&lt;'T&gt;" Usage="new System.Activities.Statements.Switch&lt;'T&gt; expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Switch(System::Linq::Expressions::Expression&lt;Func&lt;System::Activities::ActivityContext ^, T&gt; ^&gt; ^ expression);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -159,8 +162,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.NativeActivityMetadata metadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Switch`1.CacheMetadata(System.Activities.NativeActivityMetadata)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As NativeActivityMetadata)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::NativeActivityMetadata metadata);" />
       <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.NativeActivityMetadata -&gt; unit" Usage="switch.CacheMetadata metadata" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::NativeActivityMetadata metadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -183,8 +186,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;!T, class System.Activities.Activity&gt; Cases" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Switch`1.Cases" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Cases As IDictionary(Of T, Activity)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;T, System::Activities::Activity ^&gt; ^ Cases { System::Collections::Generic::IDictionary&lt;T, System::Activities::Activity ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Cases : System.Collections.Generic.IDictionary&lt;'T, System.Activities.Activity&gt;" Usage="System.Activities.Statements.Switch&lt;'T&gt;.Cases" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;T, System::Activities::Activity ^&gt; ^ Cases { System::Collections::Generic::IDictionary&lt;T, System::Activities::Activity ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -200,14 +203,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the activity executes, the case that is executed is the first case whose key matches the <xref:System.Activities.Statements.Switch`1.Expression%2A> property.  
+ When the activity executes, the case that is executed is the first case whose key matches the <xref:System.Activities.Statements.Switch`1.Expression%2A> property.
+
+## Examples
+
+The following code sample demonstrates setting the Cases property of a <xref:System.Activities.Statements.Switch%601> activity.
   
-   
-  
-## Examples  
- The following code sample demonstrates setting the Cases property of a <xref:System.Activities.Statements.Switch%601> activity. This example is from the [Using Procedural Activities](~/docs/framework/windows-workflow-foundation/samples/using-procedural-activities.md) sample.  
-  
- [!code-csharp[wfs_Procedurals#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_procedurals/cs/program.cs#1)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/wfs_procedurals/cs/program.cs" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -218,8 +220,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Activity Default" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Switch`1.Default" />
       <MemberSignature Language="VB.NET" Value="Public Property Default As Activity" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity ^ Default { System::Activities::Activity ^ get(); void set(System::Activities::Activity ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Default : System.Activities.Activity with get, set" Usage="System.Activities.Statements.Switch&lt;'T&gt;.Default" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity ^ Default { System::Activities::Activity ^ get(); void set(System::Activities::Activity ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -227,13 +229,16 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -250,8 +255,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Execute(class System.Activities.NativeActivityContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Switch`1.Execute(System.Activities.NativeActivityContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Execute (context As NativeActivityContext)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::NativeActivityContext ^ context);" />
       <MemberSignature Language="F#" Value="override this.Execute : System.Activities.NativeActivityContext -&gt; unit" Usage="switch.Execute context" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::NativeActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -274,8 +279,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InArgument`1&lt;!T&gt; Expression" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Switch`1.Expression" />
       <MemberSignature Language="VB.NET" Value="Public Property Expression As InArgument(Of T)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;T&gt; ^ Expression { System::Activities::InArgument&lt;T&gt; ^ get(); void set(System::Activities::InArgument&lt;T&gt; ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Expression : System.Activities.InArgument&lt;'T&gt; with get, set" Usage="System.Activities.Statements.Switch&lt;'T&gt;.Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;T&gt; ^ Expression { System::Activities::InArgument&lt;T&gt; ^ get(); void set(System::Activities::InArgument&lt;T&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -283,16 +288,20 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Activities.RequiredArgument</AttributeName>
+          <AttributeName Language="C#">[System.Activities.RequiredArgument]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Activities.RequiredArgument&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue(null)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue(null)&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -305,14 +314,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The comparison occurs after the expression is evaluated.  
+ The comparison occurs after the expression is evaluated.
+
+## Examples
+
+The following code sample demonstrates setting the Expression property of a <xref:System.Activities.Statements.Switch%601> activity.
   
-   
-  
-## Examples  
- The following code sample demonstrates setting the Expression property of a <xref:System.Activities.Statements.Switch%601> activity. This example is from the [Using Procedural Activities](~/docs/framework/windows-workflow-foundation/samples/using-procedural-activities.md) sample.  
-  
- [!code-csharp[wfs_Procedurals#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_procedurals/cs/program.cs#1)]  
+ :::code language="csharp" source="~/snippets/csharp/VS_Snippets_CFX/wfs_procedurals/cs/program.cs" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -323,8 +331,8 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnCreateDynamicUpdateMap(class System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata metadata, class System.Activities.Activity originalActivity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Switch`1.OnCreateDynamicUpdateMap(System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata,System.Activities.Activity)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnCreateDynamicUpdateMap (metadata As NativeActivityUpdateMapMetadata, originalActivity As Activity)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnCreateDynamicUpdateMap(System::Activities::DynamicUpdate::NativeActivityUpdateMapMetadata ^ metadata, System::Activities::Activity ^ originalActivity);" />
       <MemberSignature Language="F#" Value="override this.OnCreateDynamicUpdateMap : System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata * System.Activities.Activity -&gt; unit" Usage="switch.OnCreateDynamicUpdateMap (metadata, originalActivity)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnCreateDynamicUpdateMap(System::Activities::DynamicUpdate::NativeActivityUpdateMapMetadata ^ metadata, System::Activities::Activity ^ originalActivity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -334,8 +342,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="metadata" Type="System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata" />
-        <Parameter Name="originalActivity" Type="System.Activities.Activity" />
+        <Parameter Name="metadata" Type="System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
+        <Parameter Name="originalActivity" Type="System.Activities.Activity" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1" />
       </Parameters>
       <Docs>
         <param name="metadata">To be added.</param>

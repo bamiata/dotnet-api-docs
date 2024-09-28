@@ -1,15 +1,19 @@
-﻿<Type Name="ICryptoTransform" FullName="System.Security.Cryptography.ICryptoTransform">
+<Type Name="ICryptoTransform" FullName="System.Security.Cryptography.ICryptoTransform">
   <TypeSignature Language="C#" Value="public interface ICryptoTransform : IDisposable" />
-  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICryptoTransform implements class System.IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICryptoTransform implements class System.IDisposable" FrameworkAlternate="net-5.0;net-6.0;net-7.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ICryptoTransform" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICryptoTransform&#xA;Implements IDisposable" />
-  <TypeSignature Language="C++ CLI" Value="public interface class ICryptoTransform : IDisposable" />
   <TypeSignature Language="F#" Value="type ICryptoTransform = interface&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ICryptoTransform : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit ICryptoTransform implements class System.IDisposable" FrameworkAlternate="net-8.0;net-9.0" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -21,15 +25,37 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Security.Cryptography.Primitives" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Security.Cryptography.Primitives" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Security.Cryptography" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="System.Security.Cryptography.Primitives" FromVersion="7.0.0.0" To="System.Security.Cryptography" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Security.Cryptography" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="System.Security.Cryptography.Primitives" FromVersion="8.0.0.0" To="System.Security.Cryptography" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Security.Cryptography" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+    <TypeForwarding From="System.Security.Cryptography.Primitives" FromVersion="9.0.0.0" To="System.Security.Cryptography" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Interfaces>
     <Interface>
       <InterfaceName>System.IDisposable</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    <Attribute FrameworkAlternate="net-8.0;net-9.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1">
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(true)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -42,7 +68,7 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
+    <related type="Article" href="/dotnet/standard/security/cryptographic-services">Cryptographic Services</related>
   </Docs>
   <Members>
     <Member MemberName="CanReuseTransform">
@@ -50,14 +76,17 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool CanReuseTransform" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ICryptoTransform.CanReuseTransform" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanReuseTransform As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanReuseTransform { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.CanReuseTransform : bool" Usage="System.Security.Cryptography.ICryptoTransform.CanReuseTransform" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanReuseTransform { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -69,6 +98,13 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -78,7 +114,7 @@
         <value>
           <see langword="true" /> if the current transform can be reused; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
+        <related type="Article" href="/dotnet/standard/security/cryptographic-services">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="CanTransformMultipleBlocks">
@@ -86,14 +122,17 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool CanTransformMultipleBlocks" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ICryptoTransform.CanTransformMultipleBlocks" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanTransformMultipleBlocks As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanTransformMultipleBlocks { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.CanTransformMultipleBlocks : bool" Usage="System.Security.Cryptography.ICryptoTransform.CanTransformMultipleBlocks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanTransformMultipleBlocks { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -105,6 +144,13 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -114,7 +160,7 @@
         <value>
           <see langword="true" /> if multiple blocks can be transformed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
+        <related type="Article" href="/dotnet/standard/security/cryptographic-services">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="InputBlockSize">
@@ -122,14 +168,17 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 InputBlockSize" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ICryptoTransform.InputBlockSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InputBlockSize As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int InputBlockSize { int get(); };" />
       <MemberSignature Language="F#" Value="member this.InputBlockSize : int" Usage="System.Security.Cryptography.ICryptoTransform.InputBlockSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int InputBlockSize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -141,6 +190,13 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -149,7 +205,7 @@
         <summary>Gets the input block size.</summary>
         <value>The size of the input data blocks in bytes.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
+        <related type="Article" href="/dotnet/standard/security/cryptographic-services">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="OutputBlockSize">
@@ -157,14 +213,17 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 OutputBlockSize" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ICryptoTransform.OutputBlockSize" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutputBlockSize As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int OutputBlockSize { int get(); };" />
       <MemberSignature Language="F#" Value="member this.OutputBlockSize : int" Usage="System.Security.Cryptography.ICryptoTransform.OutputBlockSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int OutputBlockSize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -176,6 +235,13 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -184,7 +250,7 @@
         <summary>Gets the output block size.</summary>
         <value>The size of the output data blocks in bytes.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
+        <related type="Article" href="/dotnet/standard/security/cryptographic-services">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="TransformBlock">
@@ -192,14 +258,17 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 TransformBlock(unsigned int8[] inputBuffer, int32 inputOffset, int32 inputCount, unsigned int8[] outputBuffer, int32 outputOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ICryptoTransform.TransformBlock(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function TransformBlock (inputBuffer As Byte(), inputOffset As Integer, inputCount As Integer, outputBuffer As Byte(), outputOffset As Integer) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int TransformBlock(cli::array &lt;System::Byte&gt; ^ inputBuffer, int inputOffset, int inputCount, cli::array &lt;System::Byte&gt; ^ outputBuffer, int outputOffset);" />
       <MemberSignature Language="F#" Value="abstract member TransformBlock : byte[] * int * int * byte[] * int -&gt; int" Usage="iCryptoTransform.TransformBlock (inputBuffer, inputOffset, inputCount, outputBuffer, outputOffset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int TransformBlock(cli::array &lt;System::Byte&gt; ^ inputBuffer, int inputOffset, int inputCount, cli::array &lt;System::Byte&gt; ^ outputBuffer, int outputOffset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -211,6 +280,13 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -238,7 +314,7 @@ The return value of <xref:System.Security.Cryptography.ICryptoTransform.Transfor
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
+        <related type="Article" href="/dotnet/standard/security/cryptographic-services">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="TransformFinalBlock">
@@ -246,14 +322,17 @@ The return value of <xref:System.Security.Cryptography.ICryptoTransform.Transfor
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] TransformFinalBlock(unsigned int8[] inputBuffer, int32 inputOffset, int32 inputCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ICryptoTransform.TransformFinalBlock(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function TransformFinalBlock (inputBuffer As Byte(), inputOffset As Integer, inputCount As Integer) As Byte()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ TransformFinalBlock(cli::array &lt;System::Byte&gt; ^ inputBuffer, int inputOffset, int inputCount);" />
       <MemberSignature Language="F#" Value="abstract member TransformFinalBlock : byte[] * int * int -&gt; byte[]" Usage="iCryptoTransform.TransformFinalBlock (inputBuffer, inputOffset, inputCount)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ TransformFinalBlock(cli::array &lt;System::Byte&gt; ^ inputBuffer, int inputOffset, int inputCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -265,6 +344,13 @@ The return value of <xref:System.Security.Cryptography.ICryptoTransform.Transfor
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -288,7 +374,7 @@ The return value of <xref:System.Security.Cryptography.ICryptoTransform.Transfor
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
+        <related type="Article" href="/dotnet/standard/security/cryptographic-services">Cryptographic Services</related>
       </Docs>
     </Member>
   </Members>

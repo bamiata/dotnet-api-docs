@@ -1,10 +1,10 @@
-﻿<Type Name="HttpRequestCachePolicy" FullName="System.Net.Cache.HttpRequestCachePolicy">
+<Type Name="HttpRequestCachePolicy" FullName="System.Net.Cache.HttpRequestCachePolicy">
   <TypeSignature Language="C#" Value="public class HttpRequestCachePolicy : System.Net.Cache.RequestCachePolicy" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HttpRequestCachePolicy extends System.Net.Cache.RequestCachePolicy" />
   <TypeSignature Language="DocId" Value="T:System.Net.Cache.HttpRequestCachePolicy" />
   <TypeSignature Language="VB.NET" Value="Public Class HttpRequestCachePolicy&#xA;Inherits RequestCachePolicy" />
-  <TypeSignature Language="C++ CLI" Value="public ref class HttpRequestCachePolicy : System::Net::Cache::RequestCachePolicy" />
   <TypeSignature Language="F#" Value="type HttpRequestCachePolicy = class&#xA;    inherit RequestCachePolicy" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpRequestCachePolicy : System::Net::Cache::RequestCachePolicy" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -14,12 +14,26 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Net.Requests</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Requests" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Requests" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Requests" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Requests" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Net.Requests" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Net.Cache.RequestCachePolicy</BaseTypeName>
   </Base>
@@ -30,7 +44,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can specify a default cache policy for your application by using the <xref:System.Net.HttpWebRequest.DefaultCachePolicy%2A> property or the application or machine configuration files. For more information, see [&lt;requestCaching&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md).  
+ You can specify a default cache policy for your application by using the <xref:System.Net.HttpWebRequest.DefaultCachePolicy%2A> property or the application or machine configuration files. For more information, see [&lt;requestCaching&gt; Element (Network Settings)](/dotnet/framework/configure-apps/file-schema/network/requestcaching-element-network-settings).  
   
  You can specify the cache policy for an individual request by using the <xref:System.Net.WebRequest.CachePolicy%2A> property.  
   
@@ -41,12 +55,12 @@
 ## Examples  
  The following code example creates a default cache policy for the application domain, and overrides it for a request.  
   
- [!code-cpp[NclSimpleCache#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp#2)]
- [!code-csharp[NclSimpleCache#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSimpleCache/CS/example.cs#2)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/WebRequest/CachePolicy/example.cs" id="Snippet2":::  
   
  ]]></format>
     </remarks>
-    <related type="Article" href="~/docs/framework/network-programming/cache-management-for-network-applications.md">Cache Management for Network Applications</related>
+    <related type="Article" href="/dotnet/framework/network-programming/cache-management-for-network-applications">Cache Management for Network Applications</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -75,15 +89,23 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
@@ -100,8 +122,8 @@
 ## Examples  
  The following code example demonstrates setting the cache policy using this constructor.  
   
- [!code-cpp[NclSimpleCache#11](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp#11)]
- [!code-csharp[NclSimpleCache#11](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSimpleCache/CS/example.cs#11)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp" id="Snippet11":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/WebRequest/CachePolicy/example.cs" id="Snippet11":::  
   
  ]]></format>
         </remarks>
@@ -112,8 +134,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DateTime cacheSyncDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Cache.HttpRequestCachePolicy.#ctor(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (cacheSyncDate As DateTime)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpRequestCachePolicy(DateTime cacheSyncDate);" />
       <MemberSignature Language="F#" Value="new System.Net.Cache.HttpRequestCachePolicy : DateTime -&gt; System.Net.Cache.HttpRequestCachePolicy" Usage="new System.Net.Cache.HttpRequestCachePolicy cacheSyncDate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpRequestCachePolicy(DateTime cacheSyncDate);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -124,11 +146,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="cacheSyncDate" Type="System.DateTime" />
@@ -149,8 +178,8 @@
 ## Examples  
  The following code example demonstrates creating a cache policy based on a cache synchronization date.  
   
- [!code-cpp[NclSimpleCache#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp#3)]
- [!code-csharp[NclSimpleCache#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSimpleCache/CS/example.cs#3)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp" id="Snippet3":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/WebRequest/CachePolicy/example.cs" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -161,8 +190,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Net.Cache.HttpRequestCacheLevel level) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Cache.HttpRequestCachePolicy.#ctor(System.Net.Cache.HttpRequestCacheLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (level As HttpRequestCacheLevel)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpRequestCachePolicy(System::Net::Cache::HttpRequestCacheLevel level);" />
       <MemberSignature Language="F#" Value="new System.Net.Cache.HttpRequestCachePolicy : System.Net.Cache.HttpRequestCacheLevel -&gt; System.Net.Cache.HttpRequestCachePolicy" Usage="new System.Net.Cache.HttpRequestCachePolicy level" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpRequestCachePolicy(System::Net::Cache::HttpRequestCacheLevel level);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -173,11 +202,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="level" Type="System.Net.Cache.HttpRequestCacheLevel" />
@@ -198,8 +234,8 @@
 ## Examples  
  The following code example demonstrates creating a cache policy that allows resources found in the cache to be used from the cache.  
   
- [!code-cpp[NclSimpleCache#12](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp#12)]
- [!code-csharp[NclSimpleCache#12](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSimpleCache/CS/example.cs#12)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp" id="Snippet12":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/WebRequest/CachePolicy/example.cs" id="Snippet12":::  
   
  ]]></format>
         </remarks>
@@ -210,8 +246,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Net.Cache.HttpCacheAgeControl cacheAgeControl, valuetype System.TimeSpan ageOrFreshOrStale) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Cache.HttpRequestCachePolicy.#ctor(System.Net.Cache.HttpCacheAgeControl,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (cacheAgeControl As HttpCacheAgeControl, ageOrFreshOrStale As TimeSpan)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpRequestCachePolicy(System::Net::Cache::HttpCacheAgeControl cacheAgeControl, TimeSpan ageOrFreshOrStale);" />
       <MemberSignature Language="F#" Value="new System.Net.Cache.HttpRequestCachePolicy : System.Net.Cache.HttpCacheAgeControl * TimeSpan -&gt; System.Net.Cache.HttpRequestCachePolicy" Usage="new System.Net.Cache.HttpRequestCachePolicy (cacheAgeControl, ageOrFreshOrStale)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpRequestCachePolicy(System::Net::Cache::HttpCacheAgeControl cacheAgeControl, TimeSpan ageOrFreshOrStale);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -222,11 +258,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="cacheAgeControl" Type="System.Net.Cache.HttpCacheAgeControl" />
@@ -249,8 +292,8 @@
 ## Examples  
  The following code example demonstrates creating a cache policy based on minimum freshness.  
   
- [!code-cpp[NclSimpleCache#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp#5)]
- [!code-csharp[NclSimpleCache#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSimpleCache/CS/example.cs#5)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp" id="Snippet5":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/WebRequest/CachePolicy/example.cs" id="Snippet5":::  
   
  ]]></format>
         </remarks>
@@ -262,8 +305,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Net.Cache.HttpCacheAgeControl cacheAgeControl, valuetype System.TimeSpan maxAge, valuetype System.TimeSpan freshOrStale) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Cache.HttpRequestCachePolicy.#ctor(System.Net.Cache.HttpCacheAgeControl,System.TimeSpan,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (cacheAgeControl As HttpCacheAgeControl, maxAge As TimeSpan, freshOrStale As TimeSpan)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpRequestCachePolicy(System::Net::Cache::HttpCacheAgeControl cacheAgeControl, TimeSpan maxAge, TimeSpan freshOrStale);" />
       <MemberSignature Language="F#" Value="new System.Net.Cache.HttpRequestCachePolicy : System.Net.Cache.HttpCacheAgeControl * TimeSpan * TimeSpan -&gt; System.Net.Cache.HttpRequestCachePolicy" Usage="new System.Net.Cache.HttpRequestCachePolicy (cacheAgeControl, maxAge, freshOrStale)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpRequestCachePolicy(System::Net::Cache::HttpCacheAgeControl cacheAgeControl, TimeSpan maxAge, TimeSpan freshOrStale);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -274,11 +317,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="cacheAgeControl" Type="System.Net.Cache.HttpCacheAgeControl" />
@@ -305,8 +355,8 @@
 ## Examples  
  The following code example demonstrates creating a cache policy based on minimum freshness and maximum age.  
   
- [!code-cpp[NclSimpleCache#9](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp#9)]
- [!code-csharp[NclSimpleCache#9](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSimpleCache/CS/example.cs#9)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp" id="Snippet9":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/WebRequest/CachePolicy/example.cs" id="Snippet9":::  
   
  ]]></format>
         </remarks>
@@ -318,8 +368,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Net.Cache.HttpCacheAgeControl cacheAgeControl, valuetype System.TimeSpan maxAge, valuetype System.TimeSpan freshOrStale, valuetype System.DateTime cacheSyncDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Cache.HttpRequestCachePolicy.#ctor(System.Net.Cache.HttpCacheAgeControl,System.TimeSpan,System.TimeSpan,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (cacheAgeControl As HttpCacheAgeControl, maxAge As TimeSpan, freshOrStale As TimeSpan, cacheSyncDate As DateTime)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpRequestCachePolicy(System::Net::Cache::HttpCacheAgeControl cacheAgeControl, TimeSpan maxAge, TimeSpan freshOrStale, DateTime cacheSyncDate);" />
       <MemberSignature Language="F#" Value="new System.Net.Cache.HttpRequestCachePolicy : System.Net.Cache.HttpCacheAgeControl * TimeSpan * TimeSpan * DateTime -&gt; System.Net.Cache.HttpRequestCachePolicy" Usage="new System.Net.Cache.HttpRequestCachePolicy (cacheAgeControl, maxAge, freshOrStale, cacheSyncDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpRequestCachePolicy(System::Net::Cache::HttpCacheAgeControl cacheAgeControl, TimeSpan maxAge, TimeSpan freshOrStale, DateTime cacheSyncDate);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -330,11 +380,18 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="cacheAgeControl" Type="System.Net.Cache.HttpCacheAgeControl" />
@@ -363,8 +420,8 @@
 ## Examples  
  The following code example demonstrates creating a cache policy based on minimum freshness, maximum age, and a cache synchronization date.  
   
- [!code-cpp[NclSimpleCache#10](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp#10)]
- [!code-csharp[NclSimpleCache#10](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSimpleCache/CS/example.cs#10)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp" id="Snippet10":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/WebRequest/CachePolicy/example.cs" id="Snippet10":::  
   
  ]]></format>
         </remarks>
@@ -375,8 +432,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime CacheSyncDate" />
       <MemberSignature Language="DocId" Value="P:System.Net.Cache.HttpRequestCachePolicy.CacheSyncDate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CacheSyncDate As DateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime CacheSyncDate { DateTime get(); };" />
       <MemberSignature Language="F#" Value="member this.CacheSyncDate : DateTime" Usage="System.Net.Cache.HttpRequestCachePolicy.CacheSyncDate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime CacheSyncDate { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -387,18 +444,25 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Gets the cache synchronization date for this instance.</summary>
-        <value>A <see cref="T:System.DateTime" /> value set to the date specified when this instance was created. If no date was specified, this property's value is <see cref="F:System.DateTime.MinValue" />.</value>
+        <value>A <see cref="T:System.DateTime" /> value set to the date specified when this instance was created. If no date was specified, this property's value is <see cref="F:System.DateTime.MinValue">DateTime.MinValue</see>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -410,8 +474,8 @@
 ## Examples  
  The following code example displays the value of this property.  
   
- [!code-cpp[NclSimpleCache#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp#3)]
- [!code-csharp[NclSimpleCache#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSimpleCache/CS/example.cs#3)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp" id="Snippet3":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/WebRequest/CachePolicy/example.cs" id="Snippet3":::  
   
  ]]></format>
         </remarks>
@@ -422,8 +486,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Cache.HttpRequestCacheLevel Level" />
       <MemberSignature Language="DocId" Value="P:System.Net.Cache.HttpRequestCachePolicy.Level" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Level As HttpRequestCacheLevel" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Cache::HttpRequestCacheLevel Level { System::Net::Cache::HttpRequestCacheLevel get(); };" />
       <MemberSignature Language="F#" Value="member this.Level : System.Net.Cache.HttpRequestCacheLevel" Usage="System.Net.Cache.HttpRequestCachePolicy.Level" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Cache::HttpRequestCacheLevel Level { System::Net::Cache::HttpRequestCacheLevel get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -434,15 +498,23 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -455,15 +527,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Applications typically use <xref:System.Net.Cache.HttpRequestCacheLevel.Default> as their cache policy level. The <xref:System.Net.WebRequest.CachePolicy%2A> property, if not `null`, determines the cache policy in effect for a request. The default policy for the application domain can be set using the <xref:System.Net.HttpWebRequest.DefaultCachePolicy%2A> property or by settings in the machine or application configuration files. For more information, see [&lt;requestCaching&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md).  
+ Applications typically use <xref:System.Net.Cache.HttpRequestCacheLevel.Default> as their cache policy level. The <xref:System.Net.WebRequest.CachePolicy%2A> property, if not `null`, determines the cache policy in effect for a request. The default policy for the application domain can be set using the <xref:System.Net.HttpWebRequest.DefaultCachePolicy%2A> property or by settings in the machine or application configuration files. For more information, see [&lt;requestCaching&gt; Element (Network Settings)](/dotnet/framework/configure-apps/file-schema/network/requestcaching-element-network-settings).  
   
    
   
 ## Examples  
  The following code example demonstrates displaying the value of this property.  
   
- [!code-cpp[NclSimpleCache#11](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp#11)]
- [!code-csharp[NclSimpleCache#11](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSimpleCache/CS/example.cs#11)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp" id="Snippet11":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/WebRequest/CachePolicy/example.cs" id="Snippet11":::  
   
  ]]></format>
         </remarks>
@@ -474,8 +546,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan MaxAge" />
       <MemberSignature Language="DocId" Value="P:System.Net.Cache.HttpRequestCachePolicy.MaxAge" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxAge As TimeSpan" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MaxAge { TimeSpan get(); };" />
       <MemberSignature Language="F#" Value="member this.MaxAge : TimeSpan" Usage="System.Net.Cache.HttpRequestCachePolicy.MaxAge" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MaxAge { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -486,15 +558,23 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -502,7 +582,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the maximum age permitted for a resource returned from the cache.</summary>
-        <value>A <see cref="T:System.TimeSpan" /> value that is set to the maximum age value specified when this instance was created. If no date was specified, this property's value is <see cref="F:System.DateTime.MinValue" />.</value>
+        <value>A <see cref="T:System.TimeSpan" /> value that is set to the maximum age value specified when this instance was created. If no date was specified, this property's value is <see cref="F:System.DateTime.MinValue">DateTime.MinValue</see>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -514,8 +594,8 @@
 ## Examples  
  The following code example demonstrates displaying the value of this property.  
   
- [!code-cpp[NclSimpleCache#7](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp#7)]
- [!code-csharp[NclSimpleCache#7](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSimpleCache/CS/example.cs#7)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp" id="Snippet7":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/WebRequest/CachePolicy/example.cs" id="Snippet7":::  
   
  ]]></format>
         </remarks>
@@ -526,8 +606,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan MaxStale" />
       <MemberSignature Language="DocId" Value="P:System.Net.Cache.HttpRequestCachePolicy.MaxStale" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxStale As TimeSpan" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MaxStale { TimeSpan get(); };" />
       <MemberSignature Language="F#" Value="member this.MaxStale : TimeSpan" Usage="System.Net.Cache.HttpRequestCachePolicy.MaxStale" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MaxStale { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -538,15 +618,23 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -554,7 +642,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the maximum staleness value that is permitted for a resource returned from the cache.</summary>
-        <value>A <see cref="T:System.TimeSpan" /> value that is set to the maximum staleness value specified when this instance was created. If no date was specified, this property's value is <see cref="F:System.DateTime.MinValue" />.</value>
+        <value>A <see cref="T:System.TimeSpan" /> value that is set to the maximum staleness value specified when this instance was created. If no date was specified, this property's value is <see cref="F:System.DateTime.MinValue">DateTime.MinValue</see>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -566,8 +654,8 @@
 ## Examples  
  The following code example demonstrates displaying the value of this property.  
   
- [!code-cpp[NclSimpleCache#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp#6)]
- [!code-csharp[NclSimpleCache#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSimpleCache/CS/example.cs#6)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp" id="Snippet6":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/WebRequest/CachePolicy/example.cs" id="Snippet6":::  
   
  ]]></format>
         </remarks>
@@ -578,8 +666,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan MinFresh" />
       <MemberSignature Language="DocId" Value="P:System.Net.Cache.HttpRequestCachePolicy.MinFresh" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinFresh As TimeSpan" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MinFresh { TimeSpan get(); };" />
       <MemberSignature Language="F#" Value="member this.MinFresh : TimeSpan" Usage="System.Net.Cache.HttpRequestCachePolicy.MinFresh" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MinFresh { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -590,15 +678,23 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -606,7 +702,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the minimum freshness that is permitted for a resource returned from the cache.</summary>
-        <value>A <see cref="T:System.TimeSpan" /> value that specifies the minimum freshness specified when this instance was created. If no date was specified, this property's value is <see cref="F:System.DateTime.MinValue" />.</value>
+        <value>A <see cref="T:System.TimeSpan" /> value that specifies the minimum freshness specified when this instance was created. If no date was specified, this property's value is <see cref="F:System.DateTime.MinValue">DateTime.MinValue</see>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -618,8 +714,8 @@
 ## Examples  
  The following code example demonstrates displaying the value of this property.  
   
- [!code-cpp[NclSimpleCache#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp#5)]
- [!code-csharp[NclSimpleCache#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSimpleCache/CS/example.cs#5)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp" id="Snippet5":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/WebRequest/CachePolicy/example.cs" id="Snippet5":::  
   
  ]]></format>
         </remarks>
@@ -630,8 +726,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Cache.HttpRequestCachePolicy.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="httpRequestCachePolicy.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -642,12 +738,25 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-8.0;net-9.0">
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NullableContext(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NullableContext(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -666,8 +775,8 @@
 ## Examples  
  The following code example demonstrates calling this method.  
   
- [!code-cpp[NclSimpleCache#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp#1)]
- [!code-csharp[NclSimpleCache#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSimpleCache/CS/example.cs#1)]  
+ :::code language="cpp" source="~/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Net/WebRequest/CachePolicy/example.cs" id="Snippet1":::  
   
  ]]></format>
         </remarks>
